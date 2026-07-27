@@ -109,13 +109,25 @@ python build.py --llm-test --base-url https://gw.example.com/v1 --model qwen2.5-
 
 ### 排程方式（三選一）
 
-**A. 本機 crontab** —— 最單純，這台電腦開著就會跑：
+**A. 本機 crontab** —— 最單純，這台電腦開著就會跑（已設定好）：
 
 ```bash
-crontab -e
-# 每天 08:10 執行（錯開整點，RSS 比較穩）
-10 8 * * * cd ~/auto_report_news && ./run_daily.sh >> logs/cron.log 2>&1
+crontab -l    # 確認
+# 每天 08:10（錯開整點，RSS 比較穩）
+MAILTO=""
+10 8 * * * PYTHONUTF8=1 PYTHON=/home/yc/miniforge3/envs/py312/bin/python3 \
+  /home/yc/auto_report_news/run_daily.sh >> /home/yc/auto_report_news/logs/cron.log 2>&1
 ```
+
+三個地方**都必須是絕對路徑或明確指定**，否則會靜默失敗：
+
+| 陷阱 | 原因 |
+| --- | --- |
+| `PYTHON=…/miniforge3/envs/py312/bin/python3` | 套件裝在 conda env，cron 的 PATH 只有 `/usr/bin:/bin`，會抓到沒裝 feedparser 的系統 python |
+| 腳本用絕對路徑 | cron 的工作目錄是 `$HOME`，`./run_daily.sh` 找不到 |
+| 日誌用絕對路徑 | 同上，`logs/cron.log` 會被解讀成 `~/logs/cron.log`（目錄不存在 → 整個 job 失敗） |
+
+`run_daily.sh` 本身也會先檢查 interpreter 有沒有必要套件，缺了會印出安裝指令而不是丟一串 traceback。
 
 **B. Claude Cowork／Claude Code 排程** —— 想要有人幫你看過一遍再發布時用。
 把 `PROMPT_daily.md` 整段貼進排程任務即可：Claude 會先產生、抽查幾則摘要、

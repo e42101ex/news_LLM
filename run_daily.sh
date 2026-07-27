@@ -23,7 +23,28 @@ LOG="logs/$(date +%Y-%m-%d).log"
 exec > >(tee -a "$LOG") 2>&1
 echo "════ $(date '+%Y-%m-%d %H:%M:%S') 開始 ════"
 
-PY="$(command -v python3)"
+# 找 python：優先用 $PYTHON（crontab 會指定），否則 conda env，最後才是 PATH 上的。
+# cron 的 PATH 只有 /usr/bin:/bin，會抓到沒裝套件的系統 python，所以這裡要講清楚。
+PY="${PYTHON:-}"
+if [[ -z "$PY" ]]; then
+  for cand in "$HOME/miniforge3/envs/py312/bin/python3" "$(command -v python3 || true)"; do
+    [[ -x "$cand" ]] && PY="$cand" && break
+  done
+fi
+if [[ -z "$PY" ]]; then
+  echo "✗ 找不到 python3。請設定 PYTHON=/path/to/python3 後重試"
+  exit 1
+fi
+
+# 先確認套件都在（cron 環境最常見的失敗原因）
+if ! "$PY" -c "import feedparser, jinja2, requests" 2>/dev/null; then
+  echo "✗ $PY 缺少必要套件（feedparser / jinja2 / requests）"
+  echo "  安裝：$PY -m pip install -r requirements.txt"
+  echo "  或改用其他 interpreter：PYTHON=/path/to/python3 $0"
+  exit 1
+fi
+echo "使用 python: $PY"
+
 if ! "$PY" -u build.py --llm auto "${BUILD_ARGS[@]}"; then
   echo "✗ 產生失敗，未推送（詳見 $LOG）"
   exit 1
