@@ -1,0 +1,65 @@
+# ⚠️ 這是「範本」，目前刻意不放在 .github/workflows/ 底下，所以不會執行。
+#
+# 原因：摘要用的 LLM 端點在私有網段（10.30.x.x），GitHub Actions 跑在公有雲連不到，
+# 這個 workflow 只會產出「沒有 LLM 摘要」的版本，還會 auto-commit 覆蓋掉
+# Cowork／本機跑出來的好版本。
+#
+# 什麼時候啟用：等你有一個對外可達的 LLM gateway（或你接受沒有摘要的保底版）時，
+#   1. mkdir -p .github/workflows && git mv .github/daily.yml.example .github/workflows/daily.yml
+#   2. repo → Settings → Secrets and variables → Actions 設 LLM_BASE_URL / LLM_MODEL / LLM_API_KEY
+#   3. 推送時要用帶 workflow scope 的 PAT
+#
+name: 每日 AI 新聞彙整
+
+on:
+  schedule:
+    - cron: "0 0 * * *"      # UTC 00:00 = 台北 08:00
+  workflow_dispatch:          # 也可以手動觸發
+    inputs:
+      hours:
+        description: 收錄多少小時內的新聞
+        default: "30"
+
+permissions:
+  contents: write             # 需要把產生的 docs/ 寫回 repo（保留歷史存檔）
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 產生今日彙整
+        env:
+          # 想用 LLM 寫中文摘要就設定這三個（Settings → Secrets and variables → Actions）：
+          #   Variables: LLM_BASE_URL、LLM_MODEL
+          #   Secrets:   LLM_API_KEY
+          # 都沒設也能跑，只是標題摘要會直接沿用原文。
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+        run: python build.py --hours "${{ inputs.hours || '30' }}"
+
+      - name: 提交結果
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs data
+          if git diff --cached --quiet; then
+            echo "內容沒有變化"
+          else
+            git commit -m "chore: AI 每日新聞彙整 $(date -u +%Y-%m-%d)"
+            git push
+          fi

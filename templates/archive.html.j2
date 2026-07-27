@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>歷史存檔 · {{ site_title }}</title>
+<style>
+:root{--bg:#faf9f7;--card:#fff;--ink:#1c1b19;--muted:#6b6862;--line:#e6e2db;--accent:#b4532a}
+@media (prefers-color-scheme:dark){:root{--bg:#16150f;--card:#1f1e18;--ink:#efece4;--muted:#a09b90;--line:#302e26;--accent:#e8875a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.65;
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+.wrap{max-width:640px;margin:0 auto;padding:32px 20px 72px}
+h1{font-size:1.6rem;margin:0 0 4px}
+.back{color:var(--accent);font-size:.85rem;text-decoration:none}
+ul{list-style:none;padding:0;margin:28px 0 0}
+li{border-bottom:1px solid var(--line)}
+li a{display:block;padding:14px 4px;text-decoration:none;color:var(--ink);font-variant-numeric:tabular-nums}
+li a:hover{color:var(--accent)}
+.empty{color:var(--muted);margin-top:28px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>歷史存檔</h1>
+<a class="back" href="../index.html">← 回到今日彙整</a>
+{% if days %}
+<ul>
+  {% for day in days %}
+  <li><a href="{{ day }}.html">{{ day }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="empty">目前還沒有存檔。</p>
+{% endif %}
+</div>
+</body>
+</html>
