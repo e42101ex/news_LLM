@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-07-27T17:14:31.669947+08:00",
+ "generated_at": "2026-07-27T17:37:22.253826+08:00",
  "date": "2026-07-27",
- "window_hours": 36,
+ "window_hours": 30,
  "timezone": "Asia/Taipei",
  "topic_count": 40,
- "article_count": 43,
+ "article_count": 42,
  "topics": [
   {
-   "key": "t0013",
+   "key": "t0017",
    "title": "AMD 與韓國政府簽 MOU，共建國家級 AI 研究中心",
-   "summary": "AMD 與韓國科學技術資訊通信部於舊金山「AMD Advancing AI 2026」活動中簽署合作備忘錄，將以韓國國家科學 AI 研究中心（NAIS）為基地，結合 AMD CPU、GPU 與韓國國產 NPU 打造異構 AI 算力基礎設施，並擴展至半導體生態、人才培育與具身智慧等領域。",
+   "summary": "韓國科學技術資訊通信部與 AMD 於舊金山「AMD Advancing AI 2026」活動中簽署合作備忘錄，雙方將以韓國國家科學 AI 研究中心（NAIS）為基地，整合 AMD CPU、GPU 與韓國國產 NPU 打造異構 AI 運算基礎設施，並擴展至半導體生態、人才培育與具身智慧等領域。AMD 將持續提供高效能運算資源與 AI 軟體支援。",
    "category": "企業與資金",
    "importance": 3,
    "keywords": [
@@ -51,9 +51,9 @@
    ]
   },
   {
-   "key": "t0006",
-   "title": "美團否認 LongCat 負責人離職傳聞，並升級 AI 助手「小團」",
-   "summary": "美團方面回應時代周報稱 LongCat 團隊基礎模型負責人裴鵬離職消息不實；同日美團宣布 AI 助手「小團」升級代理執行能力，可代為完成下單、打車、訂位等本地生活操作，並推出全場景 AI Agent 平台 CatPaw，已在內部覆蓋 9 萬名員工、搭建逾 3 萬個 Agent。",
+   "key": "t0010",
+   "title": "美團否認 LongCat 負責人裴鵬離職，並升級 AI 助手「小團」",
+   "summary": "針對 LongCat 團隊基礎模型負責人裴鵬離職傳聞，美團回應稱「不屬實」。裴鵬主導的 LongCat-2.0 為業界首個在五萬卡國產算力叢集完成推理的萬億參數模型，已於 7 月 6 日開源。同日美團宣布 AI 助手「小團」升級代理執行能力，可協助完成下單、打車、訂位等本地生活操作，並發布全場景 AI Agent 平台 CatPaw，已在內部覆蓋 9 萬名員工、搭建超過 3 萬個 Agent。",
    "category": "產品與應用",
    "importance": 3,
    "keywords": [
@@ -91,59 +91,18 @@
    ]
   },
   {
-   "key": "t0048",
-   "title": "三星 Galaxy Z Fold 8 與 Z Flip 8 折疊機規格比較",
-   "summary": "ZDNet 比較三星新推出的 Galaxy Z Fold 8、Z Fold 8 Ultra 與 Z Flip 8，並與 Motorola Razr Ultra 等競爭對手進行規格對比，協助消費者了解兩款新折疊機的差異與市場定位。",
-   "category": "產品與應用",
-   "importance": 1,
-   "keywords": [
-    "samsung",
-    "galaxy",
-    "fold",
-    "vs.",
-    "foldables",
-    "ultra"
-   ],
-   "llm_enriched": true,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "Samsung Galaxy Z Fold 8 vs. Z Flip 8: How Samsung's two new foldables compare",
-     "url": "https://www.zdnet.com/article/samsung-galaxy-z-fold-8-vs-z-flip-8",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-07-26T03:45:39+00:00",
-     "summary": "Samsung's new foldables are impressive, but how different are they really, by the specs? Let's compare.",
-     "id": "0f55135463d2",
-     "tags": []
-    },
-    {
-     "title": "Samsung Galaxy Z Fold 8 Ultra vs. Motorola Razr Ultra: How Samsung fares against its foldable rival",
-     "url": "https://www.zdnet.com/article/galaxy-z-fold-8-ultra-vs-motorola-razr-ultra-comparison",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-07-26T00:00:40+00:00",
-     "summary": "Samsung isn't the only brand with flagship foldables. Here's how it compares to Motorola's Razr Ultra - one of my favorite phones of the year.",
-     "id": "d8060dabe81d",
-     "tags": []
-    }
-   ]
-  },
-  {
    "key": "t0000",
    "title": "Claude Cowork 遭揭 macOS 沙箱逃逸漏洞，可讀寫主機檔案",
-   "summary": "資安業者 Accomplish 揭露 Anthropic 的 AI 代理工具 Claude Cowork 在 macOS 版本存在沙箱逃逸漏洞，攻擊者可透過提示誘使 AI 代理利用 Linux 核心漏洞 CVE-2026-46331 取得 VM 的 Root 權限，再透過檔案系統共享機制突破沙箱，讀寫 Mac 主機上的任意檔案。",
+   "summary": "AI 代理安全業者 Accomplish 揭露 Anthropic 的 Claude Cowork 工具存在沙箱逃逸漏洞。攻擊者可透過提示誘使 AI 代理利用 Linux 核心漏洞 CVE-2026-46331，在 Cowork 內建的 Linux VM 中取得 Root 權限，再透過檔案系統共享機制突破沙箱，讀寫 macOS 主機上的任意檔案。",
    "category": "安全與倫理",
    "importance": 4,
    "keywords": [
     "cowork",
     "mac",
-    "linux",
     "claude",
+    "linux",
     "anthropic",
-    "accomplish"
+    "agent"
    ],
    "llm_enriched": true,
    "sources": [
@@ -165,11 +124,12 @@
   {
    "key": "t0001",
    "title": "中國駭客以 AI 代理 Hermes 攻擊泰國財政部",
-   "summary": "繼勒索軟體集團 JadePuffer 利用 Langflow 漏洞以 AI 代理發動全自動攻擊後，資安業者揭露有駭客以 AI 代理 Hermes 入侵泰國財政部等政府機關，顯示 AI 代理驅動的攻擊已從概念驗證走向實際針對政府目標的行動。",
+   "summary": "繼威脅情報公司 Sysdig 揭露 JadePuffer 集團以 AI 代理驅動的勒索軟體行動後，資安研究人員發現有駭客利用 AI 代理 Hermes 入侵泰國財政部等政府機關，顯示 AI 代理正被武器化用於自動化攻擊政府基礎設施。",
    "category": "安全與倫理",
    "importance": 4,
    "keywords": [
     "hermes",
+    "agent",
     "sysdig",
     "jadepuffer",
     "langflow"
@@ -193,8 +153,8 @@
   },
   {
    "key": "t0002",
-   "title": "SentinelOne 測試顯示 AI 自主逆向工程惡意程式仍未成熟",
-   "summary": "SentinelLabs 以先前分析的破壞型惡意程式 Fast16 為測試對象，評估頂尖 AI 模型能否自主完成多階段逆向工程；結果顯示 AI 雖能輔助分析，但在自主判斷與關鍵環節仍須專家監督，尚未達到獨立完成的水準。",
+   "title": "SentinelOne 測試：AI 自主逆向工程惡意程式仍未成熟",
+   "summary": "SentinelLabs 以先前分析的破壞型惡意程式 Fast16 為測試對象，該程式可竄改用於模擬核武物理行為的高精度工程求解軟體程式碼。研究團隊讓頂尖 AI 模型嘗試自主完成多階段逆向工程，結果顯示 AI 仍需專家監督，尚未能獨立勝任惡意程式分析工作。",
    "category": "安全與倫理",
    "importance": 3,
    "keywords": [
@@ -223,8 +183,8 @@
   },
   {
    "key": "t0003",
-   "title": "微軟發布 MAI-Image-2.5-Pro 與 MAI-Voice-2-Flash，主打比 GPT 更省成本",
-   "summary": "微軟公布自有圖片生成模型 MAI-Image-2.5-Pro 與語音模型 MAI-Voice-2-Flash，強調成本低於 OpenAI 的 GPT 系列模型，目標是逐步取代微軟產品中對 GPT 的依賴。",
+   "title": "微軟發布 MAI-Image-2.5-Pro 與 MAI-Voice-2-Flash，強調成本低於 GPT",
+   "summary": "微軟公布自有模型 MAI-Image-2.5-Pro（圖片生成）與 MAI-Voice-2-Flash（語音），主打成本低於 OpenAI GPT 模型，目標在逐步取代微軟產品中對 GPT 模型的依賴。",
    "category": "模型與研究",
    "importance": 3,
    "keywords": [
@@ -254,13 +214,13 @@
   },
   {
    "key": "t0004",
-   "title": "Google Gemini Spark 開放美 Pro 與全球 Ultra 用戶使用",
-   "summary": "Google 自主 AI 代理 Gemini Spark 擴大部署範圍，現已提供給美國 AI Pro 訂閱用戶與全球 Ultra 方案用戶使用，並已於台灣地區上線。",
+   "title": "Google Gemini Spark 開放美國 Pro 與全球 Ultra 付費用戶使用",
+   "summary": "Google 自主代理人 Gemini Spark 擴大部署範圍，現已提供給美國 AI Pro 方案及全球 Ultra 方案付費用戶，並已於台灣地區上線。",
    "category": "產品與應用",
    "importance": 3,
    "keywords": [
-    "spark",
     "gemini",
+    "spark",
     "ultra",
     "google",
     "pro",
@@ -285,8 +245,124 @@
   },
   {
    "key": "t0005",
+   "title": "NVIDIA 發表 Cosmos-H-Dreams，將即時生成式模擬導入手術機器人",
+   "summary": "NVIDIA 推出 Cosmos-H-Dreams，聚焦於將即時生成式模擬技術應用於手術機器人領域，透過模擬環境加速機器人訓練與部署。",
+   "category": "模型與研究",
+   "importance": 2,
+   "keywords": [
+    "cosmos-h-dreams",
+    "bringing",
+    "real-time",
+    "generative",
+    "simulation",
+    "surgical"
+   ],
+   "llm_enriched": true,
+   "sources": [
+    "Hugging Face"
+   ],
+   "articles": [
+    {
+     "title": "NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics",
+     "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+     "source": "Hugging Face",
+     "lang": "en",
+     "published": "2026-07-27T01:32:20+00:00",
+     "summary": "",
+     "id": "9101339b1ac2",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0006",
+   "title": "36 氪觀察：2026 年資本轉向「會賺錢」的 AI 應用",
+   "summary": "36 氪指出，2026 年 AI 投資邏輯轉變，資本不再以 DAU 為唯一估值指標。月之暗面半年內估值翻 6 倍至 300 億美元並推進赴港 IPO，創辦人楊植麟在全員信中宣告聚焦 Agent、放棄追求絕對用戶數，顯示市場更看重產品長期可持續的商業化能力。",
+   "category": "企業與資金",
+   "importance": 3,
+   "keywords": [
+    "dau",
+    "compute",
+    "2026"
+   ],
+   "llm_enriched": true,
+   "sources": [
+    "36氪"
+   ],
+   "articles": [
+    {
+     "title": "2026年，为什么资本更青睐“会赚钱”的AI应用？",
+     "url": "https://36kr.com/p/3913479553586310?f=rss",
+     "source": "36氪",
+     "lang": "zh",
+     "published": "2026-07-27T01:27:40+00:00",
+     "summary": "今年 WAIC 前夕，月之暗面发布了 Kimi K3，发布即破圈。但资本市场的注意力，更多地落在了另一件事上。 过去半年，这家明星大模型公司估值翻了 6 倍，目标 300 亿美元，同步推进赴港 IPO。而在 2025 年底的跨年夜全员信中，创始人杨植麟写下了一句话：2026 年聚焦 Agent，不以绝对用户数量为目标。 估值半年翻 6 倍的同时，他们也主动放弃了 DAU 这个过去两年颇被资本市场追着看的指标。 足以证明，用户规模虽仍旧重要，但不再是 AI 应用估值的唯一硬通货，新的叙事主线，重新回到了产品形态长期可持续的商业化。 资本评估 AI 的 benchmark 变了：过去两年盛行的是算力补贴换规模，但账面 DAU 只撑得起估值，撑不起毛利。资本市场发现，互联网时代的圈地打法在 AI 这里行不通，算力成本和留存曲线接连“显出原形”，曾经被寄予厚望的爆款产品也开始一批批退场。 行业拐点由此到来，资本不再为规模本身买单，转向了商业化质量验证。 新逻辑之下，拥有稳健商业模型的公司，反而有了更多作为“良币”留下来的机会，拿到更好的估值。比如，最近完成了超亿元 B 轮融资的海艺，就是一家被资本看好的稳健型企业：来自成都，面向全球，以“为 C 端而生”作为商业哲学，过去几年持续做出了爆款 AI 应用，财务数据也已经比较漂亮。 潮水退去之后，更值得追问的是：什么样的 AI 应用，能“站着赚",
+     "id": "74567981bdb1",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0007",
+   "title": "上海新增 16 款生成式 AI 服務備案，累計達 187 款",
+   "summary": "上海市委網信辦發布公告，截至 7 月 27 日，上海市新增 16 款已完成備案的生成式人工智慧服務，累計已完成 187 款生成式 AI 服務備案。",
+   "category": "政策與法規",
+   "importance": 2,
+   "keywords": [
+    "187"
+   ],
+   "llm_enriched": true,
+   "sources": [
+    "36氪"
+   ],
+   "articles": [
+    {
+     "title": "上海市新增16款已完成备案的生成式人工智能服务",
+     "url": "https://36kr.com/newsflashes/3913684400952448?f=rss",
+     "source": "36氪",
+     "lang": "zh",
+     "published": "2026-07-27T01:25:38+00:00",
+     "summary": "36氪获悉，上海市委网信办发布生成式人工智能服务已备案信息公告。截至7月27日，上海市新增16款已完成备案的生成式人工智能服务，累计已完成187款生成式人工智能服务备案。",
+     "id": "50e081c602f9",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0008",
+   "title": "NVIDIA、微軟、IBM 等數十家企業成立開放安全 AI 聯盟",
+   "summary": "7 月 27 日，NVIDIA、微軟、Adobe、SpaceXAI、IBM、SAP、Dell、Cisco 等數十家企業宣布成立「開放安全人工智慧聯盟」，旨在建構與共享開放工具，促進 AI 的負責任使用。成員還包括 Hugging Face、LangChain、Linux 基金會、Palantir、Salesforce、ServiceNow、Snowflake 等。",
+   "category": "安全與倫理",
+   "importance": 3,
+   "keywords": [
+    "xai",
+    "ibm",
+    "microsoft",
+    "opensource",
+    "adobe",
+    "spacexai"
+   ],
+   "llm_enriched": true,
+   "sources": [
+    "36氪"
+   ],
+   "articles": [
+    {
+     "title": "英伟达、微软、IBM等数十家企业成立新联盟，旨在共同保障AI安全",
+     "url": "https://36kr.com/newsflashes/3913680378893703?f=rss",
+     "source": "36氪",
+     "lang": "zh",
+     "published": "2026-07-27T01:21:33+00:00",
+     "summary": "7月27日，英伟达、微软、Adobe、SpacexAI、IBM、SAP、戴尔、思科等企业宣布成立开放安全人工智能联盟，旨在构建和共享开放工具，以促进AI的负责任使用。该联盟成员还包括Cadence、Capital One、Cloudera、Cloudflare、Cognition、CrowdStrike、Databricks、DoorDash、Elastic、慧与、Hugging Face、LangChain、Linux基金会、NAVER、NetApp、Nous Research、OpenClaw、Palantir、Palo Alto Networks、Red Hat、Reflection AI、Salesforce、SK电讯、ServiceNow、西门子、Snowflake、Synopsys、Thinking Machines Lab和TrendAI。（界面）",
+     "id": "dbcd95a72033",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0009",
    "title": "華為 Vision 智慧屏 6 SE RGB 上架，搭載自研光色同控晶片",
-   "summary": "華為在京东上架 Vision 智慧屏 6 SE RGB 系列，提供 55、65、75 吋三種尺寸，售價 3499 元起；採用 4K RGB-Mini LED 面板與自研光色同控晶片，支援最高 300Hz 刷新率、105% BT.2020 色域，搭載 HarmonyOS 與鴻蒙 AI 功能。",
+   "summary": "華為於京東上架 Vision 智慧屏 6 SE RGB，提供 55/65/75 吋版本，售價 3499 元起（國補後 2974.2 元起）。搭載自研光色同控晶片、4K RGB-Mini LED 面板、最高 300Hz 刷新率，覆蓋 105% BT.2020 色域，內建 HarmonyOS 與鴻蒙 AI 功能。",
    "category": "產品與應用",
    "importance": 1,
    "keywords": [
@@ -315,9 +391,9 @@
    ]
   },
   {
-   "key": "t0007",
-   "title": "LG 電子 600kW CDU 取得 NVIDIA AI Factory 認證",
-   "summary": "LG 電子宣布其 600kW 級冷卻液分配單元（CDU）通過 NVIDIA AI Factory 認證，正式成為 AI Factory 基礎設施官方合作夥伴；該設備採用直接晶片冷卻方案，溫度控制精度達 ±0.25°C，並整合虛擬感測器技術以實現即時監控與洩漏偵測。",
+   "key": "t0011",
+   "title": "LG 電子 600kW CDU 液冷設備取得 NVIDIA AI Factory 認證",
+   "summary": "LG 電子宣布旗下 600kW 級冷卻液分配單元（CDU）通過 NVIDIA AI Factory 認證，正式成為 AI Factory 基礎設施官方夥伴。該設備採用直接晶片冷卻（DTC）方案，溫度控制精度達 ±0.25℃，並通過超過 100 項技術評估標準驗證，可與風冷系統組成混合冷卻架構，專為高發熱 AI GPU 散熱需求設計。",
    "category": "晶片與基礎設施",
    "importance": 3,
    "keywords": [
@@ -346,9 +422,9 @@
    ]
   },
   {
-   "key": "t0008",
-   "title": "抖音升級未成年人模式，引入多模態大語言模型做適齡推薦",
-   "summary": "抖音宣布全面升級未成年人模式推薦演算法，核心引入多模態大語言模型（MLLM），結合文字、圖像、音訊進行內容識別與分級，再經人工專家篩選後納入未成年人專屬內容池，藉此緩解家長的監護焦慮。",
+   "key": "t0012",
+   "title": "抖音升級未成年人模式，導入多模態大語言模型做適齡推薦",
+   "summary": "抖音宣布全面升級未成年人模式的核心推薦引擎，引入多模態大語言模型（MLLM）技術，綜合分析影片的文字、圖像、音訊內容，判斷其認知複雜度與價值觀導向，再結合人工專家篩選建立未成年人專屬內容池。平台強調此舉是為了回應家長監護焦慮與未成年人成長需求。",
    "category": "產品與應用",
    "importance": 3,
    "keywords": [
@@ -372,11 +448,11 @@
    ]
   },
   {
-   "key": "t0009",
-   "title": "AI 大模型周榜：Kimi K3 蟬聯前端開發榜全球第一",
-   "summary": "Arena 平台公布 2026 年第 30 周榜單，綜合榜由 Claude 系列模型佔據前 6 名，claude-fable-5 以 1508 分居首；月之暗面旗下 Kimi K3 蟬聯前端開發榜全球第一，程式碼榜也進入 Top 10，國產模型在多個細分賽道持續突破。",
+   "key": "t0013",
+   "title": "AI 大模型周榜：Kimi K3 蟬聯前端開發榜首，Claude 新模型集中入榜",
+   "summary": "Arena 平台公布 2026 年第 30 周 AI 大模型排行，統計區間為 7 月 20 日至 26 日。月之暗面旗下 Kimi K3 蟬聯前端開發榜全球第一，程式碼榜也進入 Top 10；綜合榜由 Claude-fable-5 以 1508 分持續居冠，Anthropic 多款 Claude 系列新模型佔據前 6 名，頭部分數集中在 1500 分區間。",
    "category": "模型與研究",
-   "importance": 2,
+   "importance": 3,
    "keywords": [
     "meta",
     "kimi-k3"
@@ -399,9 +475,9 @@
    ]
   },
   {
-   "key": "t0010",
-   "title": "AI 工具讓讀者閱讀時可即時向聊天機器人提問",
-   "summary": "新興 AI 工具讓讀者在閱讀電子書或聆聽有聲書時，能直接向 AI 聊天機器人提問，深入了解書中角色與內容。這類應用將書籍轉化為互動式閱讀體驗，顯示生成式 AI 正逐步進入閱讀與內容消費場景。",
+   "key": "t0014",
+   "title": "AI 工具讓電子書化身互動式閱讀夥伴，讀者可即時向聊天機器人提問",
+   "summary": "新興 AI 工具讓讀者在閱讀電子書或聆聽有聲書時，能直接向 AI 聊天機器人提問，深入了解書中角色與情節。這類應用將閱讀從單向接收轉為雙向互動，被視為 AI 進入內容消費場景的新嘗試。",
    "category": "產品與應用",
    "importance": 2,
    "keywords": [
@@ -431,9 +507,9 @@
    ]
   },
   {
-   "key": "t0011",
-   "title": "中國新版一帶一路主打開源 AI，台廠須有兩點覺悟",
-   "summary": "中國開源 AI 模型陣營快速崛起，已逼近美國水準，並成為其新版一帶一路的技術輸出重點。文章指出，台灣廠商面對此趨勢須有兩項關鍵認知，包括正視開源模型的競爭力與重新定位自身在全球 AI 供應鏈中的角色。",
+   "key": "t0015",
+   "title": "中國新版一帶一路主打開源 AI，台廠面臨供應鏈與技術雙重挑戰",
+   "summary": "報導指出，中國開源模型陣營在過去兩年快速崛起，已成為國家級 AI 競賽的核心戰略，並將開源 AI 納入新版一帶一路布局。文章提醒台廠需正視兩項關鍵課題，包括在開源生態中的定位以及供應鏈角色的調整。",
    "category": "政策與法規",
    "importance": 3,
    "keywords": [
@@ -463,9 +539,9 @@
    ]
   },
   {
-   "key": "t0012",
-   "title": "Claude 對話分享連結遭 Google 收錄，用戶隱私內容曝光",
-   "summary": "大量 Claude 對話分享連結意外出現在 Google 搜尋結果中，引發 AI 聊天紀錄隱私保護疑慮。Reddit 用戶發現，這些公開分享頁面原本設有「noindex」標籤，理論上應避免被搜尋引擎收錄，但實際上仍被 Google 索引，顯示 noindex 機制並非萬全。",
+   "key": "t0016",
+   "title": "Claude 對話分享連結遭 Google 收錄，用戶隱私聊天內容外洩",
+   "summary": "Reddit 用戶發現大量 Claude 公開分享連結出現在 Google 搜尋結果中，搜尋關鍵字「site: claude.ai/share」即可取得。雖然這些頁面原本設有 noindex 標籤，但 Google 仍將其收錄，引發外界對 AI 聊天紀錄隱私保護的疑慮；即使設有 noindex，知道網址者仍可直接存取。",
    "category": "安全與倫理",
    "importance": 3,
    "keywords": [
@@ -494,11 +570,11 @@
    ]
   },
   {
-   "key": "t0014",
-   "title": "宇瞻預警：DRAM 與企業級 SSD 供需失衡將延續至明年上半年",
-   "summary": "宇瞻科技 CEO 張家騉指出，三星、SK 海力士、美光三大 DRAM 廠將新增產能全數投入 HBM、伺服器 DDR5 與 LPDDR5X 等 AI 產品，導致一般 DDR5、DDR4 及工控市場供應持續吃緊。企業級 SSD 也因 LLM 與 AI 推理需求升溫同步缺貨，預估這波供需失衡短期難以緩解。",
+   "key": "t0018",
+   "title": "宇瞻示警：DRAM 與企業級 SSD 供需失衡將延續至明年上半年",
+   "summary": "宇瞻科技 CEO 張家騉指出，三星、SK 海力士、美光三大 DRAM 廠將新增產能全數投入 HBM、伺服器 DDR5 與 LPDDR5X 等 AI 產品，導致一般 DDR5、DDR4 及工控市場供應持續縮減。企業級 SSD 也因 LLM 與 AI 推理需求升溫而缺貨，預估供需失衡短期難以緩解，價格將持續走高。",
    "category": "晶片與基礎設施",
-   "importance": 3,
+   "importance": 4,
    "keywords": [
     "dram",
     "ssd",
@@ -522,14 +598,14 @@
    ]
   },
   {
-   "key": "t0015",
-   "title": "三星與博通簽 2,000 億美元合作，涵蓋 HBM 與 2 奈米製程",
-   "summary": "三星將向博通提供業界領先的 HBM 記憶體解決方案，晶圓代工方面則聚焦三星 2 奈米及以下製程技術，並將延伸至基於 2 奈米的先進封裝。這筆高達 2,000 億美元的合作顯示雙方在 AI 晶片與高效能運算領域的深度結盟。",
+   "key": "t0019",
+   "title": "三星與博通結盟攻 AI 晶片，2,000 億美元合作涵蓋 HBM 與 2 奈米製程",
+   "summary": "三星將向博通提供業界領先的記憶體解決方案，包括高頻寬記憶體（HBM）；晶圓代工方面則聚焦三星 2 奈米及以下製程技術，並將擴展至基於 2 奈米的先進封裝技術，雙方合作規模上看 2,000 億美元，目標搶攻 AI 晶片市場。",
    "category": "晶片與基礎設施",
    "importance": 4,
    "keywords": [
-    "hbm",
     "samsung",
+    "hbm",
     "2000",
     "funding"
    ],
@@ -557,16 +633,16 @@
    ]
   },
   {
-   "key": "t0016",
-   "title": "Momenta 進軍無人貨運 Robovan，已於蘇州落地",
-   "summary": "自動駕駛公司 Momenta 宣布旗下 Robovan 無人貨運業務落地蘇州相城，已推進至快遞配送與夜間配送等場景。該方案基於自研的 R7 世界模型，並導入無圖方案以擺脫高精地圖依賴；Momenta 目標以同一套大模型支援乘用車、Robovan、Robotruck 與 Robotaxi 的規模化落地。",
+   "key": "t0020",
+   "title": "Momenta 進軍無人貨運 Robovan，於蘇州落地並採用 R7 世界模型",
+   "summary": "自動駕駛公司 Momenta 宣布旗下 Robovan 業務已在蘇州相城落地，實現快遞配送與夜間配送等場景。該方案基於自研 R7 世界模型，採用無圖方案擺脫高精地圖依賴，並以同一套大模型支撐乘用車、Robotruck、Robotaxi 與具身智能等領域。Momenta 已於 7 月 8 日在港交所主板掛牌上市。",
    "category": "產品與應用",
    "importance": 3,
    "keywords": [
     "momenta",
     "robovan",
-    "robot",
-    "100"
+    "100",
+    "robot"
    ],
    "llm_enriched": true,
    "sources": [
@@ -586,39 +662,9 @@
    ]
   },
   {
-   "key": "t0017",
-   "title": "店匠科技 Shoplazza 登 Product Hunt 日榜第一，發表 AI 智慧體 Athena",
-   "summary": "全球首個 AI 原生電商 OS 店匠科技（Shoplazza）於 7 月 26 日登上 Product Hunt，發布 AI 智慧體 Athena 並拿下日榜第一。Product Hunt 被視為科技產品風向標，匯聚創業者、開發者與投資人關注前沿創新產品。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [
-    "product",
-    "hunt",
-    "funding",
-    "shoplazza",
-    "athena"
-   ],
-   "llm_enriched": true,
-   "sources": [
-    "36氪"
-   ],
-   "articles": [
-    {
-     "title": "店匠科技斩获Product Hunt日榜第一",
-     "url": "https://36kr.com/newsflashes/3913601601951108?f=rss",
-     "source": "36氪",
-     "lang": "zh",
-     "published": "2026-07-27T00:01:25+00:00",
-     "summary": "7月26日，全球首个AI原生电商OS店匠科技（Shoplazza）正式登陆Product Hunt，发布AI智能体Athena并斩获日榜第一。据了解，Product Hunt是全球知名科技创新产品社区，被誉为“科技产品风向标”，汇聚创业者、开发者及投资人，持续发现前沿创新产品。",
-     "id": "a2b395a2909a",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0018",
-   "title": "全新一代 BMW X5 國產版官圖發布，燃油與純電並行、2027 年上市",
-   "summary": "BMW 發布中大型 SUV 全新一代 X5 國產車型官方圖片，造型融入「新世代」設計理念，搭載動態數位 LED 燈組，提供 8 種車漆選擇。動力採燃油與純電並行，預計 2027 年正式上市，並為中國市場推出專屬車色。",
+   "key": "t0021",
+   "title": "全新一代 BMW X5 國產版官圖發表，燃油與純電並行、2027 年上市",
+   "summary": "BMW 發布全新一代 X5 國產車型官方圖片，導入「新世代」設計語彙，搭載動態數位 LED 燈組並整合日行燈與近光燈。動力提供燃油與純電兩種選擇，車色新增開普敦銅與磨砂尤加利綠兩款中國市場專屬配色，預計 2027 年正式上市。",
    "category": "其他",
    "importance": 1,
    "keywords": [
@@ -642,9 +688,9 @@
    ]
   },
   {
-   "key": "t0020",
-   "title": "高通驍龍 8 Elite Gen 6 Pro 傳內建 AI 超解析度與幀生成功能",
-   "summary": "外媒爆料高通 SM8975（預計命名驍龍 8 Elite Gen 6 Pro）將內建 AI Frame Fusion 功能，支援 AI 驅動的超解析度與幀生成，硬體基礎為 GPU 內兩個專為 GEMM 與卷積運算設計的矩陣 ALU 模組。此功能為 SM8975 獨占，未出現在 SM8950（驍龍 8 Elite Gen 6）中。",
+   "key": "t0023",
+   "title": "高通驍龍 8 Elite Gen 6 Pro 傳內建 AI Frame Fusion，支援超解析度與幀生成",
+   "summary": "外媒爆料高通 SM8975（預計命名驍龍 8 Elite Gen 6 Pro）將獨佔 AI Frame Fusion 功能，硬體基礎為 GPU 內兩顆專為 GEMM 與卷積運算設計的矩陣 ALU 模組。該功能可在超解析度模式下將畫面提升至 1080p 或 1440p，並透過光流重投影在兩幀之間插入生成幀。",
    "category": "晶片與基礎設施",
    "importance": 3,
    "keywords": [
@@ -673,12 +719,14 @@
    ]
   },
   {
-   "key": "t0021",
-   "title": "OpenAI 奧特曼：AI 無法縮短工時，超級智慧時代人們會更忙碌",
-   "summary": "OpenAI 執行長奧特曼在《Relentless》播客中表示，AI 無法幫助大多數人類縮短工作時間，因為生產力提升會驅使人們提出更高要求並加強競爭。他認為超級智慧時代來臨後，人們會變得更忙碌，但內心會更快樂。",
+   "key": "t0024",
+   "title": "奧特曼：AI 無法縮短大多數人工時，超級智慧時代人們會更忙碌",
+   "summary": "OpenAI 執行長奧特曼在《Relentless》播客中表示，AI 雖能提升生產力，但人類會因競爭意識而不斷提出更高要求，因此 AI 無法實現每週工作四天的承諾。他認為超級智慧時代來臨後，人們會變得更忙碌，雖然會抱怨，但內心會更快樂。",
    "category": "其他",
    "importance": 2,
-   "keywords": [],
+   "keywords": [
+    "ceo"
+   ],
    "llm_enriched": true,
    "sources": [
     "IT之家"
@@ -697,15 +745,14 @@
    ]
   },
   {
-   "key": "t0022",
-   "title": "NVIDIA 與 Broadcom CPO 交換器展開小量出貨，光引擎良率成擴產瓶頸",
-   "summary": "根據 TrendForce 光通訊產業研究，NVIDIA 新一代 Spectrum-X CPO 與 Broadcom CPO 交換器已開始小量出貨，但光引擎良率與先進封裝產能成為擴大出貨規模的最大瓶頸。CPO 技術被視為下一代 AI 資料中心高速互連的關鍵解方。",
+   "key": "t0025",
+   "title": "NVIDIA 與 Broadcom CPO 交換器啟動小量出貨，光引擎良率成擴產瓶頸",
+   "summary": "根據 TrendForce 光通訊產業研究，NVIDIA 新一代 Spectrum-X CPO 交換器與 Broadcom 相關產品已進入小量出貨階段，但光引擎良率與先進封裝產能不足成為擴大出貨的主要瓶頸。CPO（共封裝光學）技術被視為下一代資料中心交換器的關鍵方向，良率與產能問題若未解決，將影響 AI 基礎設施的建置速度。",
    "category": "晶片與基礎設施",
    "importance": 3,
    "keywords": [
     "cpo",
     "broadcom",
-    "nvidia",
     "trendforce",
     "spectrum-x"
    ],
@@ -733,11 +780,11 @@
    ]
   },
   {
-   "key": "t0024",
-   "title": "月之暗面開放 Kimi K3 下載，成全球最大開源模型",
-   "summary": "中國 AI 大模型新創月之暗面（Moonshot）正式開放旗艦模型 Kimi K3 供大眾下載，據稱成為全球參數量最大的開源模型。此舉顯示中國開源模型陣營持續擴張，與美國頂級模型在開源領域展開正面競爭。",
+   "key": "t0027",
+   "title": "月之暗面開放 Kimi K3 下載，稱為全球最大開源模型",
+   "summary": "中國 AI 新創月之暗面（Moonshot）正式開放旗艦模型 Kimi K3 供大眾下載，並宣稱其為目前全球最大的開源模型。此舉顯示中國大模型廠商持續以開源策略搶攻市場，也為全球開源模型生態注入新一波競爭。",
    "category": "開源社群",
-   "importance": 4,
+   "importance": 3,
    "keywords": [
     "kimi",
     "opensource",
@@ -767,45 +814,16 @@
    ]
   },
   {
-   "key": "t0025",
-   "title": "Google 執行長皮查伊證實 Gemini 4 已投入訓練，目標年底前發布",
-   "summary": "Google 執行長桑達爾·皮查伊在 2026 年第二季財報會議上透露，Gemini 3.5 Pro 未依原訂計畫於 6 月推出，但下一代旗艦模型 Gemini 4 已開始訓練並投入大量資源。他坦言 Gemini 在程式編寫與智慧代理等領域仍有不足，希望 Gemini 4 發布時能追上前沿水準。",
-   "category": "模型與研究",
-   "importance": 4,
-   "keywords": [
-    "gemini",
-    "to5google",
-    "ceo"
-   ],
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "谷歌 CEO 桑达尔 · 皮查伊称 Gemini 4 已投入训练，按以往节奏有望年底发布",
-     "url": "https://www.ithome.com/0/982/040.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-07-26T22:47:43+00:00",
-     "summary": "IT之家 7 月 27 日消息，据科技媒体 9To5Google 昨天报道，谷歌 CEO 桑达尔 · 皮查伊最近在 2026 年第二季度财报电话会议上透露不少信息，但是此前 Gemini 3.5 Pro 并未按计划在 6 月发布。 问答环节中，有分析师询问皮查伊：“您对 Gemini 模型能否保持行业领先水平有多大信心？”；他回答道：“我认为，前沿模型是一个非常动态的空间，并且正在快速发展。 无论什么时候观察 ， 都会感觉它在不断变化 。谷歌此前已经推出过领先行业的模型，并在多个维度始终保持领先。” 不过皮查伊也承认，谷歌 Gemini 在编程、智能体等领域仍存在不足，团队正在高度关注这些方向，他希望 Gemini 4 发布时能追上前沿水平。 他继续说道：“下一代前沿模型需要规模更大的基础模型， 我们目前正在训练 Gemini 4 ，并且投入了非常大的资源。我对 Gemini 4 的进展感到非常欣喜，并且相信用户会满意。” 9To5Google 根据谷歌过往节奏预测， Gemini 4 有望在今年 11 月或 12 月发布 。",
-     "id": "b23c1d353f44",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0026",
-   "title": "記憶體成本飆升，傳 NVIDIA 削減 Vera Rubin NV72 機櫃記憶體容量",
-   "summary": "因應記憶體價格高漲與供應短缺，市場傳出 NVIDIA 正大幅降低下一代 Vera Rubin NV72 機櫃平台的記憶體配置以控制成本。此舉反映 HBM 等關鍵元件供應吃緊已直接影響旗艦 AI 基礎設施的產品規劃。",
+   "key": "t0028",
+   "title": "記憶體價格飆漲，NVIDIA 傳削減 Vera Rubin NV72 機櫃記憶體容量",
+   "summary": "市場傳出 NVIDIA 為因應 HBM 等記憶體價格高漲與供應短缺，正大幅降低下一代 Vera Rubin NV72 機櫃平台的記憶體配置以控制成本。此調整凸顯 AI 晶片設計受記憶體供應鏈制約的程度，也將影響下一代 AI 系統的整體效能與規模。",
    "category": "晶片與基礎設施",
    "importance": 3,
    "keywords": [
     "rubin",
     "vera",
     "nv72",
-    "hbm",
-    "nvidia"
+    "hbm"
    ],
    "llm_enriched": true,
    "sources": [
@@ -831,9 +849,9 @@
    ]
   },
   {
-   "key": "t0027",
-   "title": "SK 海力士受惠 AI 記憶體熱潮，Q2 獲利可望超越去年全年",
-   "summary": "受 AI 需求帶動高頻寬記憶體（HBM）超級循環，韓國記憶體大廠 SK 海力士第二季獲利預估將創歷史新高，並超越 2024 年全年水準。HBM 成為 AI 基礎設施中最關鍵且最稀缺的零組件之一。",
+   "key": "t0029",
+   "title": "SK 海力士受惠 AI 記憶體需求，第二季獲利可望超越去年全年",
+   "summary": "受惠於 AI 帶動的高頻寬記憶體（HBM）超級循環，韓國記憶體大廠 SK 海力士第二季獲利預估將創新高，並超越 2024 年全年水準。HBM 已成為 AI 加速器不可或缺的核心元件，SK 海力士在 HBM3 與 HBM3E 的市占優勢直接轉化為營收與獲利爆發。",
    "category": "企業與資金",
    "importance": 3,
    "keywords": [
@@ -865,11 +883,11 @@
    ]
   },
   {
-   "key": "t0028",
-   "title": "前大疆工程師創辦一思智能，AI 網球發球機啟動海外批量交貨",
-   "summary": "由前大疆機器人工程師劉禮謙創立的「一思智能」（AceiiLab）已完成逾千萬人民幣天使輪融資，投資人包括零以資本、變量資本與海益資本。公司以 AI 網球機器人為切入點，目標建構涵蓋硬體、軟體、資料與 AI 教練的智能訓練生態，產品已開始海外批量交付。",
+   "key": "t0030",
+   "title": "前大疆工程師創立一思智能，AI 網球發球機啟動海外批量交付",
+   "summary": "由前大疆與 KUKA 工程師劉禮謙創立的智能體育硬體公司「一思智能」（AceiiLab）已完成逾千萬元人民幣天使輪融資，並開始向海外市場批量交付 AI 網球機器人。該公司以 AI 教練、數據與訓練服務為核心，試圖打造軟硬整合的智能運動生態。",
    "category": "產品與應用",
-   "importance": 2,
+   "importance": 1,
    "keywords": [],
    "llm_enriched": true,
    "sources": [
@@ -889,9 +907,9 @@
    ]
   },
   {
-   "key": "t0029",
+   "key": "t0031",
    "title": "Microsoft 與 Mistral 擴大策略合作，鎖定企業與受監管產業 AI 部署",
-   "summary": "Microsoft 與法國 AI 公司 Mistral 宣布深化策略合作，協助企業及受監管產業導入可自主掌控的頂尖 AI 能力。此合作顯示 Microsoft 在維持與 OpenAI 關係之際，也積極拓展多元模型生態系。",
+   "summary": "Microsoft 與法國 AI 公司 Mistral 宣布擴大策略合作，協助企業及受監管產業導入可自主掌控的頂尖 AI 能力。此合作顯示 Microsoft 在維持與 OpenAI 關係之餘，也積極透過多元模型供應商布局歐洲與合規市場。",
    "category": "企業與資金",
    "importance": 3,
    "keywords": [
@@ -923,16 +941,16 @@
    ]
   },
   {
-   "key": "t0030",
-   "title": "黃仁勳發起開放權重 AI 連署破 50 家，OpenAI、Google 補簽但 Anthropic 缺席",
-   "summary": "由 NVIDIA 主導、呼籲美國政府勿對開放權重 AI 模型過早管制的連署信，一天內簽署家數翻倍突破 50 家，OpenAI 與 Google 相繼補簽。值得注意的是 Anthropic 仍未加入，凸顯業界對開源 AI 監管立場仍有分歧。",
+   "key": "t0032",
+   "title": "黃仁勳發起開放權重連署破 50 家，OpenAI 與 Google 補簽但 Anthropic 缺席",
+   "summary": "由 NVIDIA 黃仁勳主導、呼籲美國政府勿對開放權重 AI 模型過早管制的連署信，一天內簽署家數翻倍突破 50 家，OpenAI 與 Google 相繼補簽，但 Anthropic 仍未加入。此舉凸顯產業界對 AI 監管立場的分歧，也顯示開源模型在政策辯論中的影響力持續擴大。",
    "category": "政策與法規",
    "importance": 4,
    "keywords": [
     "google",
     "openai",
     "anthropic",
-    "nvidia"
+    "open-weight"
    ],
    "llm_enriched": true,
    "sources": [
@@ -958,17 +976,16 @@
    ]
   },
   {
-   "key": "t0031",
-   "title": "黃仁勳：AI 將讓半導體產業規模擴大 10 倍，NVIDIA 與 SK 結盟 5000 億美元合作",
-   "summary": "NVIDIA 執行長黃仁勳表示 AI 將推動半導體產業規模擴張 10 倍，並宣布與 SK 集團建立總額達 5000 億美元的合作版圖。不過他也坦言 HBM、土地、電力與資料中心建設資源吃緊，每年產能翻倍已屬極限。",
-   "category": "晶片與基礎設施",
+   "key": "t0033",
+   "title": "黃仁勳：AI 將讓半導體產業擴大 10 倍，NVIDIA 與 SK 打造 5000 億美元合作",
+   "summary": "NVIDIA 黃仁勳表示 AI 將推動半導體產業規模擴大 10 倍，並宣布與 SK 集團建立總值約 5000 億美元的合作版圖，涵蓋晶片、記憶體與資料中心等領域。他同時坦言 HBM、土地、電力與資料中心建設資源吃緊，每年產能翻倍已屬極限。",
+   "category": "企業與資金",
    "importance": 4,
    "keywords": [
     "5000",
     "datacenter",
     "hbm",
-    "funding",
-    "nvidia"
+    "funding"
    ],
    "llm_enriched": true,
    "sources": [
@@ -994,9 +1011,9 @@
    ]
   },
   {
-   "key": "t0032",
-   "title": "AI 投資進入回本考驗，科技巨頭資本支出狂飆但現金流轉弱",
-   "summary": "外媒 Axios 指出，AI 熱潮推升半導體與資料中心類股後，市場情緒開始轉變。科技巨頭為搶攻 AI 基礎設施大舉投入資本支出，但獲利與現金流能否跟上投資速度成為市場新焦點。",
+   "key": "t0034",
+   "title": "AI 投資進入回本考驗，科技巨頭資本支出與現金流成市場焦點",
+   "summary": "外媒 Axios 指出，AI 熱潮推升半導體與資料中心類股後，市場開始關注科技巨頭鉅額資本支出的回收能力。隨著現金流結構轉移，誰能真正從 AI 投資中獲利成為新一輪檢視焦點，也為後續類股走勢增添不確定性。",
    "category": "企業與資金",
    "importance": 3,
    "keywords": [
@@ -1028,10 +1045,10 @@
    ]
   },
   {
-   "key": "t0033",
+   "key": "t0035",
    "title": "NVIDIA 擬為 OpenAI 俄亥俄資料中心提供 2500 億美元擔保",
-   "summary": "華爾街日報報導，NVIDIA 計劃為 OpenAI 在俄亥俄州的資料中心計畫提供高達 2500 億美元的擔保。由於 OpenAI 為未獲利私人公司、缺乏投資等級評級，NVIDIA 背書可協助軟銀等開發方降低發債成本，並讓 OpenAI 以長期租約鎖定算力。",
-   "category": "晶片與基礎設施",
+   "summary": "《華爾街日報》報導，NVIDIA 計劃為 OpenAI 在俄亥俄州的資料中心計畫提供約 2500 億美元擔保。由於 OpenAI 為未獲利私人公司、缺乏投資等級評級，NVIDIA 背書可協助軟銀等開發方降低發債成本，讓 OpenAI 以長期租約鎖定算力。",
+   "category": "企業與資金",
    "importance": 4,
    "keywords": [
     "wsj",
@@ -1065,9 +1082,9 @@
    ]
   },
   {
-   "key": "t0034",
-   "title": "Anthropic 啟動自研 AI 晶片計畫，向 SK 海力士尋求記憶體供應",
-   "summary": "SK 集團董事長崔泰源證實，Anthropic 已向 SK 海力士洽詢記憶體零組件供應，顯示其自研 AI 晶片計畫進入執行階段。此舉反映 Anthropic 跟進科技巨頭垂直整合策略，試圖降低對外部供應商的依賴。",
+   "key": "t0036",
+   "title": "Anthropic 啟動自研 AI 晶片，向 SK 海力士尋求記憶體供應",
+   "summary": "SK 集團董事長崔泰源證實，Anthropic 已向 SK 海力士尋求記憶體零組件供應，顯示其自研 AI 晶片計畫進入執行階段。Anthropic 此舉旨在降低對外部供應商依賴，跟進 Google、Meta 等科技巨頭的垂直整合策略。",
    "category": "晶片與基礎設施",
    "importance": 4,
    "keywords": [
@@ -1099,15 +1116,14 @@
    ]
   },
   {
-   "key": "t0035",
+   "key": "t0037",
    "title": "NVIDIA、AMD、Intel 齊聲建議：補幀技術應在 60FPS 以上啟用",
-   "summary": "近期 PC 遊戲圈熱議的補幀技術再度成為焦點。整理顯示，無論 NVIDIA DLSS、AMD FSR 或 Intel 的對應方案，三大廠皆建議遊戲原始幀率至少達到 60FPS 再啟用補幀，以避免延遲與畫面瑕疵。",
+   "summary": "最新整理指出，無論 NVIDIA DLSS、AMD FSR 或 Intel XeSS 等補幀技術，三大 GPU 廠商都建議玩家在遊戲原始幀率至少達到 60FPS 時再啟用，否則可能帶來延遲與畫面瑕疵。該建議為近期 PC 遊戲圈補幀技術討論提供官方參考基準。",
    "category": "產品與應用",
    "importance": 1,
    "keywords": [
     "fps",
     "amd",
-    "nvidia",
     "dlss",
     "fsr"
    ],
@@ -1135,9 +1151,9 @@
    ]
   },
   {
-   "key": "t0036",
-   "title": "AI 晶片應用擴大，台積電 3 奈米製程再添高通旗艦處理器訂單",
-   "summary": "AI 晶片市場朝分眾化發展，帶動台積電 3 奈米製程需求更加多元。高通最新旗艦處理器 Snapdragon 也採用 3 奈米製程，顯示高效能運算與行動晶片市場對先進製程的依賴持續加深。",
+   "key": "t0038",
+   "title": "AI 晶片需求分眾化，台積電 3 奈米製程迎來高通等多元訂單",
+   "summary": "AI 晶片市場朝分眾化發展，帶動台積電 3 奈米製程需求更加多元。高通最新旗艦處理器 Snapdragon 系列也採用 3 奈米製程，顯示高效能運算與行動晶片對先進製程的依賴持續加深。",
    "category": "晶片與基礎設施",
    "importance": 3,
    "keywords": [
@@ -1167,9 +1183,9 @@
    ]
   },
   {
-   "key": "t0037",
-   "title": "Anthropic 研發新分析工具，試圖解讀 Claude 內部運作以防範惡意行為",
-   "summary": "Anthropic 研究員接受日經專訪，說明團隊正開發新的模型分析工具，試圖深入解讀大型語言模型 Claude 的內部運作機制，目標是及早辨識並防範模型產生惡意行為。這項研究屬於 AI 可解釋性（interpretability）領域，被視為模型安全治理的基礎工程。",
+   "key": "t0039",
+   "title": "Anthropic 研發模型分析工具，試圖解讀 Claude 內部運作以防範惡意行為",
+   "summary": "Anthropic 研究員接受日經專訪，說明團隊正以新開發的分析工具深入解讀大型語言模型 Claude 的內部運作機制，目標是理解並防範模型可能出現的惡意行為。這項研究屬於 AI 可解釋性（interpretability）領域的實務探索。",
    "category": "安全與倫理",
    "importance": 3,
    "keywords": [
@@ -1200,43 +1216,9 @@
    ]
   },
   {
-   "key": "t0038",
-   "title": "梁文鋒指中美 AI 差距在算力，DeepSeek 第二輪融資暫緩",
-   "summary": "DeepSeek 創辦人梁文鋒公開表示，中美 AI 競爭的真正瓶頸在算力而非人才，引發業界熱議。知情人士透露，DeepSeek 已通知第二輪募資的潛在投資人暫緩簽署投資協議，未來時程仍未明朗。",
-   "category": "企業與資金",
-   "importance": 3,
-   "keywords": [
-    "deepseek",
-    "compute",
-    "funding"
-   ],
-   "llm_enriched": true,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "中美 AI 差距在「算力」非人才！梁文鋒直言引熱議，DeepSeek 新輪融資喊卡",
-     "url": "https://technews.tw/2026/07/27/deepseek-suspends-fundraising-after-viral-us-china-posts",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-07-26T19:00:13+00:00",
-     "summary": "據知情人士透露，DeepSeek 已通知第二輪募資的潛在投資人，原本預期近期簽署投資協議的安排暫時喊停，未來不 […]",
-     "id": "79d808eeba6e",
-     "tags": [
-      "AI 人工智慧",
-      "中國觀察",
-      "AI 產業",
-      "DeepSeek",
-      "梁文鋒"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0039",
-   "title": "Anthropic 推出 Claude Opus 5，效能逼近旗艦款且成本減半",
-   "summary": "Anthropic 於 7 月 24 日發表 Claude Opus 5，主打程式設計、知識工作及電腦操作等日常任務，效能接近自家前沿模型 Claude Fable 5，但使用成本僅約一半。Opus 5 即日起成為 Claude Max 方案的預設模型，也是 Claude Pro 方案中最高階的選項。",
+   "key": "t0040",
+   "title": "Anthropic 推出 Claude Opus 5，效能逼近旗艦款且使用成本減半",
+   "summary": "Anthropic 於 7 月 24 日推出 Claude Opus 5，主打程式設計、知識工作及電腦操作等日常任務，效能接近自家前沿模型 Claude Fable 5，但使用成本僅約一半。Opus 5 即日起成為 Claude Max 方案預設模型，也是 Claude Pro 方案中提供的最強模型。",
    "category": "模型與研究",
    "importance": 4,
    "keywords": [
@@ -1264,18 +1246,18 @@
    ]
   },
   {
-   "key": "t0040",
-   "title": "Meta、微軟、OpenAI 等聯名致信美國政府，籲避免過早限制開放權重模型",
-   "summary": "微軟於 7 月 24 日發布《開放權重與美國 AI 領導地位》聯合公開信，呼籲美國決策者支持開放權重 AI 模型，不要過早限制可下載的模型。連署者涵蓋 Meta、微軟、Nvidia、OpenAI、Google、IBM、AMD、GitHub、Hugging Face 及 Linux 基金會等十餘家業者與組織。",
+   "key": "t0041",
+   "title": "Meta、微軟、OpenAI 等聯名致信美國政府，籲避免過早限制開放權重 AI 模型",
+   "summary": "微軟於 7 月 24 日發布《開放權重與美國 AI 領導地位》聯合公開信，呼籲美國決策者支持開放權重 AI 模型，避免過早限制可供下載的模型。連署者涵蓋 Meta、微軟、Nvidia、OpenAI、Google、IBM、AMD、GitHub、Hugging Face 及 Linux 基金會等主要業者與組織。",
    "category": "政策與法規",
    "importance": 4,
    "keywords": [
     "meta",
-    "microsoft",
     "amd",
-    "opensource",
+    "microsoft",
+    "google",
     "openai",
-    "google"
+    "opensource"
    ],
    "llm_enriched": true,
    "sources": [
