@@ -1,5 +1,12 @@
 # auto_report_news · AI 每日新聞彙整
 
+兩個分頁（上方選單切換）：
+
+| 分頁 | 內容 | 資料來源 |
+| --- | --- | --- |
+| **AI 相關新聞** | 24 個媒體的 AI 新聞，同主題併成一則 | RSS / 網頁 / WP API |
+| **社群熱門** | 台灣即時熱搜、Bluesky 熱門話題、AI 熱門貼文 | Google Trends、Bluesky 公開 API |
+
 抓取 24 個中英文科技媒體，把**講同一件事的報導併成一個主題**，排版成靜態網頁後部署到 GitHub Pages。
 
 ```
@@ -94,6 +101,31 @@ python build.py --llm-test --base-url https://gw.example.com/v1 --model qwen2.5-
 - **需要額外 header** 的 gateway，在 `config.toml` 的 `[llm.extra_headers]` 加即可。
 - 想改回 Anthropic Messages API：`LLM_PROVIDER=anthropic` 或 `config.toml` 設
   `provider = "anthropic"`（`model` 例如 `claude-opus-4-8`）。
+
+## 社群熱門分頁
+
+`config.toml` 的 `[social]`，全部免 API key：
+
+| 區塊 | 來源 | 說明 |
+| --- | --- | --- |
+| 台灣即時熱搜 | `trends.google.com/trending/rss?geo=TW` | 每個熱搜附熱度值與最多 3 則相關新聞（含來源、連結、圖） |
+| Bluesky 熱門話題 | `app.bsky.unspecced.getTrends` | 話題名稱與貼文數；內容以英語圈娛樂／體育／政治為主，頁面上有註明 |
+| AI 熱門貼文 | `app.bsky.feed.searchPosts` | 依 `bluesky_queries` 搜尋，30 小時內、依讚數＋轉發排序 |
+
+貼文的過濾（`bluesky_min_likes` 之外）：必須命中 AI 強訊號詞（詞界比對，避免 `llm`
+命中別的單字）、排除 AI 繪圖／成人洗版標籤、標籤超過 5 個的丟掉、有標語言且不在
+`bluesky_langs` 內的丟掉。
+
+> **為什麼不是 Threads**：官方 API 沒有 trending 端點；`keyword_search` 在 app review
+> 通過前只能搜「自己的貼文」；而 insights（讚／回覆數）文件明訂只能讀自己的貼文，
+> 所以**拿不到別人貼文的熱度、無法排序熱門**。網頁端是純 JS 殼（實測 258KB HTML 裡
+> 0 個貼文欄位），自動化抓取也違反 Meta 服務條款。
+
+```bash
+python build.py --section social     # 只重建社群熱門
+python build.py --section news       # 只重建 AI 新聞
+python build.py                      # 兩個都做（預設）
+```
 
 ## 縮圖
 
@@ -206,8 +238,16 @@ ainews/cluster.py        分群（簡繁正規化、實體同義詞、TF-IDF）
 ainews/llm.py            選用：呼叫 LLM 產生中文摘要（OpenAI-compatible／Anthropic）
 ainews/render.py         Jinja2 渲染、日期存檔
 templates/               HTML 模板（深淺色自動切換、手機版）
+ainews/social.py         社群熱門：Google Trends + Bluesky
+templates/_style.html.j2 兩個分頁共用的 CSS
+templates/_sections.html.j2 分頁選單
+templates/social.html.j2 社群熱門頁
+tools/shot.py            版面截圖驗證
 docs/                    產出（GitHub Pages 的根目錄）
-data/latest.json         中繼資料，摘要階段的交接點
+docs/social/             社群熱門分頁
+data/latest.json         AI 新聞中繼資料
+data/social.json         社群熱門中繼資料
+data/pagecache.json      非 RSS 來源的文章頁 metadata 快取
 ```
 
 ## 版面驗證

@@ -22,8 +22,10 @@
      `python curate.py set <key> --title "…" --summary "…"`
    - 重要度明顯不合理（多家報導的大事卻只有 2） → `--importance <1-5>`
 4. 若第 3 步有任何改動，跑 `python build.py --stage render` 重新產生 HTML。
-5. `./deploy.sh` 推送到 GitHub Pages。
-6. 回報：主題數、報導數、你修正了哪幾項、最重要的 3 則標題、網站網址。
+5. `python build.py --section social` 更新「社群熱門」分頁（Google Trends + Bluesky，
+   不需要人工潤稿；若某個區塊回 0 筆就在回報中提一下）。
+6. `./deploy.sh` 推送到 GitHub Pages。
+7. 回報：主題數、報導數、你修正了哪幾項、最重要的 3 則標題、社群熱門的三個區塊筆數、網站網址。
 
 注意事項：
 - 只依據 `data/latest.json` 的內容判斷，不要另外上網查證或加入未出現的事實與數字。

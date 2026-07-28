@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社群熱門 · {{ meta.date }}</title>
+<meta name="description" content="{{ meta.date }} 社群熱門：台灣即時熱搜 {{ d.trends | length }} 則、Bluesky 熱門話題 {{ d.bsky_trends | length }} 個、AI 相關熱門貼文 {{ d.bsky_posts | length }} 篇。">
+{% include "_style.html.j2" %}
+</head>
+<body>
+<div class="wrap">
+{% include "_sections.html.j2" %}
+<header>
+  <h1><a href="{{ root }}social/index.html">社群熱門</a></h1>
+  <div class="meta">
+    <span>{{ meta.date }}</span>
+    <span>{{ d.trends | length }} 熱搜 · {{ d.bsky_trends | length }} 話題 · {{ d.bsky_posts | length }} 貼文</span>
+    <span>收錄近 {{ meta.window_hours }} 小時</span>
+    <span>更新於 {{ meta.generated_at | localtime(tz) }}</span>
+    <a href="{{ root }}social/archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="區塊">
+  <a href="#tw">台灣即時熱搜<b>{{ d.trends | length }}</b></a>
+  <a href="#bsky">Bluesky 熱門話題<b>{{ d.bsky_trends | length }}</b></a>
+  <a href="#posts">AI 熱門貼文<b>{{ d.bsky_posts | length }}</b></a>
+</nav>
+
+{% if not d.trends and not d.bsky_trends and not d.bsky_posts %}
+<div class="empty">今天沒有抓到社群熱門資料。</div>
+{% endif %}
+
+{% if d.trends %}
+<h2 class="cat" id="tw">台灣即時熱搜</h2>
+<section class="briefs compact">
+  {% for t in d.trends %}
+  <article class="brief">
+    {% if t.image %}
+    <a class="brief-hero" href="{{ t.url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '' if t.image.startswith('http') else root }}{{ t.image }}"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">{{ loop.index }}</span>
+      {% if t.traffic %}<span class="trend-rank">{{ t.traffic }} 次搜尋</span>{% endif %}
+    </a>
+    {% endif %}
+    <div class="brief-body">
+      {% if not t.image %}<span class="brief-tag plain">{{ loop.index }}</span>{% endif %}
+      <h3 class="brief-lead">
+        <a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">{{ t.title }}</a>
+      </h3>
+      {% if not t.image and t.traffic %}<p class="trend-meta">{{ t.traffic }} 次搜尋</p>{% endif %}
+      {% if t.news %}
+      <ul class="brief-list">
+        {% for n in t.news %}
+        <li>
+          <a href="{{ n.url }}" target="_blank" rel="noopener noreferrer">{{ n.title }}</a>
+          {% if n.source %}<div class="post-who">{{ n.source }}</div>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="trend-meta">（這個熱搜目前沒有相關新聞）</p>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if d.bsky_trends %}
+<h2 class="cat" id="bsky">Bluesky 熱門話題</h2>
+<p class="note">Bluesky 的全站熱門話題，以英語圈的娛樂、體育、政治為主，僅供參考。</p>
+<div class="pills">
+  {% for t in d.bsky_trends %}
+  <a class="pill{% if t.status == 'hot' %} hot{% endif %}" href="{{ t.url }}"
+     target="_blank" rel="noopener noreferrer">
+    <b>{% if t.status == 'hot' %}🔥 {% endif %}{{ t.topic }}</b>
+    <span>{{ '{:,}'.format(t.post_count) }} 篇</span>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if d.bsky_posts %}
+<h2 class="cat" id="posts">AI 熱門貼文（Bluesky）</h2>
+<p class="note">以 {{ meta.window_hours }} 小時內、依讚數與轉發數排序，已過濾掉 AI 繪圖標籤與明顯洗版內容。</p>
+<ul class="posts">
+  {% for p in d.bsky_posts %}
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/{{ p.handle }}" target="_blank" rel="noopener noreferrer">{{ p.display_name or p.handle }}</a>
+        <span>@{{ p.handle }}</span>
+        {% if p.created_at %}· {{ p.created_at | localtime(tz) }}{% endif %}
+        {% if p.query %}· 命中「{{ p.query }}」{% endif %}
+      </div>
+      <p class="post-text">{{ p.text }}</p>
+      <div class="post-stats">
+        <span>♥ {{ '{:,}'.format(p.likes) }}</span>
+        <span>↻ {{ '{:,}'.format(p.reposts) }}</span>
+        <span>💬 {{ '{:,}'.format(p.replies) }}</span>
+        {% if p.external %}<span>🔗 {{ p.external | domain }}</span>{% endif %}
+        {% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">看原文 →</a>{% endif %}
+      </div>
+    </div>
+    {% if p.image %}
+    <div class="post-thumb">
+      <img src="{{ '' if p.image.startswith('http') else root }}{{ p.image }}"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 熱搜來自 Google Trends（{{ meta.geo }}）、
+    話題與貼文來自 Bluesky 公開 API。</div>
+  <div class="srcs">Threads 未納入：官方 API 沒有 trending 端點，且熱度數據（讚／回覆）只能讀自己的貼文，無法排序熱門。</div>
+</footer>
+</div>
+</body>
+</html>

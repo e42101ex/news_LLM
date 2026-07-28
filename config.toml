@@ -10,6 +10,22 @@ max_topics = 40
 timezone = "Asia/Taipei"
 site_title = "AI 每日新聞彙整"
 
+[social]
+# 「社群熱門」分頁。全部免 API key。
+# 註：Threads 沒有 trending 端點，且熱度數據只能讀自己的貼文，無法做熱門排序，故不納入。
+enabled = true
+hours = 30
+trends_geo = "TW"          # Google Trends 地區
+trends_max = 10
+bluesky_trends_max = 12
+bluesky_posts_max = 18
+bluesky_min_likes = 15     # 讚數門檻，越高越乾淨
+bluesky_langs = ["zh", "en", "ja"]
+bluesky_queries = [
+  "OpenAI", "Anthropic", "Claude AI", "Gemini", "LLM", "AI agent",
+  "人工智慧", "生成式AI", "NVIDIA AI", "AI safety",
+]
+
 [images]
 # 新聞縮圖。來源：RSS 帶的圖 → 找不到就抓文章頁的 og:image。
 #   mode = "local"   下載並裁成統一尺寸的 WebP 放進 docs/img/<日期>/

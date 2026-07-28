@@ -21,10 +21,11 @@ import tomllib
 from pathlib import Path
 
 from ainews import cluster as clustering
-from ainews import fetch, images, llm, render
+from ainews import fetch, images, llm, render, social
 
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "data" / "latest.json"
+SOCIAL_STATE = ROOT / "data" / "social.json"
 
 
 def load_config(path: Path) -> dict:
@@ -68,6 +69,8 @@ def main() -> int:
     parser.add_argument("--stage", choices=["all", "collect", "render"], default="all",
                         help="collect＝只抓取分群；render＝只從 data/latest.json 產生 HTML")
     parser.add_argument("--no-archive", action="store_true", help="不寫入日期存檔頁")
+    parser.add_argument("--section", choices=["all", "news", "social"], default="all",
+                        help="要產生哪個分頁（預設兩個都做）")
     args = parser.parse_args()
 
     llm.load_dotenv(ROOT / ".env")
@@ -86,6 +89,9 @@ def main() -> int:
     site_title = build.get("site_title", "AI 每日新聞彙整")
     hours = args.hours or int(build.get("hours", 30))
     threshold = args.similarity or float(build.get("similarity", 0.26))
+
+    if args.section == "social":
+        return build_social(cfg, args, tz)
 
     if args.stage == "render":
         if not STATE.exists():
@@ -129,6 +135,53 @@ def main() -> int:
         site_title=site_title, tz=tz, hours=hours, archive=not args.no_archive,
     )
     print(f"HTML → {index.relative_to(ROOT)}（{len(topics)} 個主題）")
+
+    if args.section == "all":
+        print()
+        return build_social(cfg, args, tz)
+    return 0
+
+
+def build_social(cfg: dict, args, tz: str) -> int:
+    """社群熱門分頁：Google Trends + Bluesky。"""
+    scfg = cfg.get("social", {})
+    if not scfg.get("enabled", True):
+        print("（[social] enabled = false，跳過社群熱門）")
+        return 0
+
+    if args.stage == "render":
+        if not SOCIAL_STATE.exists():
+            print(f"找不到 {SOCIAL_STATE}，請先跑 --stage collect", file=sys.stderr)
+            return 1
+        digest = social.SocialDigest.from_dict(
+            json.loads(SOCIAL_STATE.read_text(encoding="utf-8")))
+    else:
+        digest = social.build(scfg, tz=tz)
+        if digest.total == 0:
+            print("! 社群熱門沒有抓到任何資料，跳過", file=sys.stderr)
+            return 0
+
+        img_cfg = images.ImageConfig.from_config(cfg.get("images", {}))
+        if img_cfg.mode != "off":
+            mapping = images.localize(
+                [t.image for t in digest.trends] + [p.image for p in digest.bsky_posts],
+                img_cfg, args.out, digest.date, ratio=(16, 9))
+            for trend in digest.trends:
+                trend.image = mapping.get(trend.image, "")
+            for post in digest.bsky_posts:
+                post.image = mapping.get(post.image, "")
+
+        SOCIAL_STATE.parent.mkdir(parents=True, exist_ok=True)
+        SOCIAL_STATE.write_text(
+            json.dumps(digest.to_dict(), ensure_ascii=False, indent=1), encoding="utf-8")
+
+    if args.stage == "collect":
+        return 0
+
+    path = render.render_social(digest, args.out, geo=scfg.get("trends_geo", "TW"),
+                                archive=not args.no_archive)
+    print(f"HTML → {path.relative_to(ROOT)}"
+          f"（{len(digest.trends)} 熱搜 / {len(digest.bsky_trends)} 話題 / {len(digest.bsky_posts)} 貼文）")
     return 0
 
 

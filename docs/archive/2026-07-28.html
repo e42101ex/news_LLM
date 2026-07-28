@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI 每日新聞彙整 · 2026-07-28</title>
-<meta name="description" content="2026-07-28 AI 新聞彙整：39 個主題、64 篇報導，同主題不同來源已整合。">
+<meta name="description" content="2026-07-28 AI 新聞彙整：40 個主題、60 篇報導，同主題不同來源已整合。">
 <style>
 :root{
   --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
@@ -144,138 +144,93 @@ article{scroll-margin-top:66px}
   .links .src{min-width:0}
   .links time{margin-left:0}
 }
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header>
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html" class="on">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+</nav><header>
   <h1><a href="../index.html">AI 每日新聞彙整</a></h1>
   <div class="meta">
     <span>2026-07-28</span>
-    <span>39 個主題 · 64 篇報導</span>
+    <span>40 個主題 · 60 篇報導</span>
     <span>收錄近 30 小時</span>
-    <span>更新於 07/28 17:35</span>
-    <a href="index.html">歷史存檔</a>
+    <span>更新於 07/28 18:36</span>
+    <a href="../archive/index.html">歷史存檔</a>
   </div>
 </header>
 
 
 <nav class="tabs" aria-label="主題分類">
-  <a href="#cat0">產品與應用<b>10</b></a>
-  <a href="#cat1">企業與資金<b>6</b></a>
-  <a href="#cat2">晶片與基礎設施<b>8</b></a>
-  <a href="#cat3">政策與法規<b>6</b></a>
-  <a href="#cat4">安全與倫理<b>5</b></a>
-  <a href="#cat5">開源社群<b>1</b></a>
-  <a href="#cat6">其他<b>3</b></a>
+  <a href="#cat0">其他<b>40</b></a>
 </nav>
 
 <section class="briefs">
   <article class="brief">
-    <a class="brief-hero" href="#t0017">
-      <img src="../img/2026-07-28/85052b513a4f5022.webp"
+    <a class="brief-hero" href="#t0033">
+      <img src="../img/2026-07-28/36cd8bb6202d7128.webp"
            alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
            onerror="this.parentNode.classList.add('broken'); this.remove()">
-      <span class="brief-tag">產品與應用</span>
+      <span class="brief-tag">其他</span>
     </a>
     <div class="brief-body">
-      <h3 class="brief-lead"><a href="#t0017">華為啟動 HarmonyOS 7 花粉 Beta 報名，主打 Agentic 小藝與全局沉浸空間</a></h3>
+      <h3 class="brief-lead"><a href="#t0033">Hugging Face Has a Deepfake Nudes Problem</a></h3>
       <ul class="brief-list">
-        <li><a href="#t0026">Unity 中國發表團結引擎 2.0，全面重構底層並深度整合 AI</a></li>
-        <li><a href="#t0028">阿里雲 Qoder 上線即時語音代理 QoderVoice，支援討論式多輪互動</a></li>
-        <li><a href="#t0030">火山引擎上線豆包搜尋服務，鎖定 AI Agent 即時可信資訊需求</a></li>
+        <li><a href="#t0014">NVIDIA砸50億美元投資AI新創SSI　強化算力與研發力</a></li>
+        <li><a href="#t0063">Claude AI shared chats indexed by Google - see if your conversations were exposed</a></li>
+        <li><a href="#t0003">卡位 AI 算力市場！傳輝達豪砸 500 億美元承租德州資料中心</a></li>
       </ul>
-      <a class="brief-more" href="#cat0">看這個分類的 10 則 →</a>
-    </div>
-  </article>
-  <article class="brief">
-    <a class="brief-hero" href="#t0012">
-      <img src="../img/2026-07-28/33c5e098f7f6748b.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.classList.add('broken'); this.remove()">
-      <span class="brief-tag">企業與資金</span>
-    </a>
-    <div class="brief-body">
-      <h3 class="brief-lead"><a href="#t0012">NVIDIA 投資 50 億美元於 Ilya Sutskever 創辦的 SSI</a></h3>
-      <ul class="brief-list">
-        <li><a href="#t0007">NVIDIA 推進 7,500 億美元 AI 相關交易，市場憂心循環融資推高需求</a></li>
-        <li><a href="#t0016">亞馬遜大規模調整 AI 戰略，停止多款自研模型並集中資源攻前沿大模型</a></li>
-        <li><a href="#t0008">OpenAI 擴張都柏林歐洲總部，新聘 250 人聚焦銷售與法遵</a></li>
-      </ul>
-      <a class="brief-more" href="#cat1">看這個分類的 6 則 →</a>
-    </div>
-  </article>
-  <article class="brief">
-    <a class="brief-hero" href="#t0001">
-      <img src="../img/2026-07-28/5dc68c43b28c0f6a.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.classList.add('broken'); this.remove()">
-      <span class="brief-tag">晶片與基礎設施</span>
-    </a>
-    <div class="brief-body">
-      <h3 class="brief-lead"><a href="#t0001">傳 NVIDIA 簽 500 億美元租約承租德州 1GW 資料中心</a></h3>
-      <ul class="brief-list">
-        <li><a href="#t0023">輝達台灣經理涉嫌走私高階 AI 晶片至中國，遭羈押禁見</a></li>
-        <li><a href="#t0031">馬斯克：特斯拉 Terafab 晶片工廠選址將於獨立發布會公布</a></li>
-        <li><a href="#t0060">Verizon 與 Google 簽 10 億美元暗光纖合作，AI 太空資料中心概念興起</a></li>
-      </ul>
-      <a class="brief-more" href="#cat2">看這個分類的 8 則 →</a>
-    </div>
-  </article>
-  <article class="brief">
-    <a class="brief-hero" href="#t0003">
-      <img src="../img/2026-07-28/8c18f281c5faa7f5.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.classList.add('broken'); this.remove()">
-      <span class="brief-tag">政策與法規</span>
-    </a>
-    <div class="brief-body">
-      <h3 class="brief-lead"><a href="#t0003">Sam Altman 將赴華府會晤白宮與跨黨派議員，討論 AI 監管政策</a></h3>
-      <ul class="brief-list">
-        <li><a href="#t0027">OpenAI 執行長本週重返華府，與美財長、商務部長及國會議員會談</a></li>
-        <li><a href="#t0006">Anthropic 執行長澄清從未主張禁止開放權重 AI 模型</a></li>
-        <li><a href="#t0014">中美 AI 交鋒升溫，中國商務部反嗆：美企同樣在蒸餾中國模型</a></li>
-      </ul>
-      <a class="brief-more" href="#cat3">看這個分類的 6 則 →</a>
-    </div>
-  </article>
-  <article class="brief">
-    <a class="brief-hero" href="#t0054">
-      <img src="../img/2026-07-28/dd6369c5a6c12b6a.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.classList.add('broken'); this.remove()">
-      <span class="brief-tag">安全與倫理</span>
-    </a>
-    <div class="brief-body">
-      <h3 class="brief-lead"><a href="#t0054">微軟推出首款 AI 資安模型與代理式防護系統</a></h3>
-      <ul class="brief-list">
-        <li><a href="#t0021">Hugging Face 平台遭揭大量模型可生成深偽裸露影像</a></li>
-        <li><a href="#t0057">Claude 共享聊天內容遭 Google 等搜尋引擎索引曝光</a></li>
-        <li><a href="#t0005">Redis 發布 7 個更新版本，修補 AI 模型 Kimi K3 發現的 RCE 重大漏洞</a></li>
-      </ul>
-      <a class="brief-more" href="#cat4">看這個分類的 5 則 →</a>
-    </div>
-  </article>
-  <article class="brief">
-    <a class="brief-hero" href="#t0011">
-      <img src="../img/2026-07-28/04e3c67756b9aded.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.classList.add('broken'); this.remove()">
-      <span class="brief-tag">開源社群</span>
-    </a>
-    <div class="brief-body">
-      <h3 class="brief-lead"><a href="#t0011">Moonshot AI 開源 Kimi K3 模型權重，參數達 2.8 兆</a></h3>
-      <a class="brief-more" href="#cat5">看這個分類的 1 則 →</a>
-    </div>
-  </article>
-  <article class="brief">
-    <div class="brief-body">
-<span class="brief-tag plain">其他</span>      <h3 class="brief-lead"><a href="#t0022">Spotify 學生方案結合 Hulu，月費 6 美元</a></h3>
-      <ul class="brief-list">
-        <li><a href="#t0025">Amazfit 兩款旗艦智慧手錶實測比較，價差 230 美元值不值得</a></li>
-        <li><a href="#t0029">2026 世界物聯網 500 強揭曉，華為、SpaceX、中國航天科技集團居前三</a></li>
-      </ul>
-      <a class="brief-more" href="#cat6">看這個分類的 3 則 →</a>
+      <a class="brief-more" href="#cat0">看這個分類的 40 則 →</a>
     </div>
   </article>
 </section>
@@ -283,739 +238,14 @@ article{scroll-margin-top:66px}
 <div class="details">
 <p class="details-label">全部主題</p>
 
-<h2 class="cat" id="cat0">產品與應用</h2>
-<article id="t0017">
+<h2 class="cat" id="cat0">其他</h2>
+<article id="t0033" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
-<span class="badge">harmonyos</span><span class="badge">beta</span><span class="badge">huawei</span>      </div>
-      <h3>華為啟動 HarmonyOS 7 花粉 Beta 報名，主打 Agentic 小藝與全局沉浸空間</h3>
-<p class="summary">華為於 7 月 28 日開放 HarmonyOS 7 花粉 Beta 版報名並開始推送，系統包大小約 10GB（部分機型超過 20GB）。本次更新超過百項功能升級，首要亮點是「光感」升級為「全局沉浸空間」，並延伸至二、三級頁面與彈窗等通用元件；小藝則以 Agentic 為核心進行全面重構，搭配鴻蒙智能體框架 2.0 與方舟引擎，強調 AI 驅動的全場景體驗。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/85052b513a4f5022.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/673.htm" target="_blank" rel="noopener noreferrer">华为 HarmonyOS 7 花粉 Beta 版超百项更新曝光：全局沉浸空间、小艺基于 Agentic 全面进化重构等</a>
-      <time datetime="2026-07-28T01:16:40+00:00">07/28 09:16</time>
-    </li>
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/578.htm" target="_blank" rel="noopener noreferrer">华为鸿蒙 HarmonyOS 7 花粉 Beta 版报名开启，适配机型及基线版本号公布</a>
-      <time datetime="2026-07-27T23:20:19+00:00">07/28 07:20</time>
-    </li>
-  </ul>
-</article>
-<article id="t0026">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">2.0</span><span class="badge">unity</span><span class="badge">nintendo</span>      </div>
-      <h3>Unity 中國發表團結引擎 2.0，全面重構底層並深度整合 AI</h3>
-<p class="summary">Unity 中國發布團結引擎 2.0，對渲染、光照、動畫等底層架構全面重構，新增主機平台支援，並推出可獨立執行遊戲開發任務的 AI Agent「團結 Codely」，定位升級為 AI 時代的遊戲生產基礎設施。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/20141b857505c358.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/616.htm" target="_blank" rel="noopener noreferrer">Unity 中国发布团结引擎 2.0：底层架构全面重构，支持主机平台，深度整合 AI</a>
-      <time datetime="2026-07-28T00:20:30+00:00">07/28 08:20</time>
-    </li>
-  </ul>
-</article>
-<article id="t0028">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">qoder</span><span class="badge">alibaba</span><span class="badge">qodervoice</span>      </div>
-      <h3>阿里雲 Qoder 上線即時語音代理 QoderVoice，支援討論式多輪互動</h3>
-<p class="summary">阿里雲旗下 Qoder 推出即時語音互動代理 QoderVoice，由全雙工語音模型 Qwen-Audio-3.0-Realtime 驅動，使用者可隨時語音喚醒並下達指令，支援多輪討論、隨時打斷與方案調整，適用於複雜任務協商。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/883f1997f18b75a9.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/614.htm" target="_blank" rel="noopener noreferrer">阿里云 Qoder 上线实时语音交互智能体 QoderVoice，支持讨论式交互</a>
-      <time datetime="2026-07-28T00:14:49+00:00">07/28 08:14</time>
-    </li>
-  </ul>
-</article>
-<article id="t0030">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">agent</span><span class="badge">bytedance</span>      </div>
-      <h3>火山引擎上線豆包搜尋服務，鎖定 AI Agent 即時可信資訊需求</h3>
-<p class="summary">火山引擎推出豆包搜尋服務，提供跨語言、多模態、多垂類聯網資訊查詢，融合互聯網資訊、行業知識與字節跳動獨家內容，輸出 Agent 可直接使用的結構化格式，支援多輪檢索與語意改寫，鎖定企業級 AI Agent 應用。</p>    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/610.htm" target="_blank" rel="noopener noreferrer">火山引擎上线豆包搜索服务：为 Agent 提供实时、权威、可信的搜索能力</a>
-      <time datetime="2026-07-28T00:07:32+00:00">07/28 08:07</time>
-    </li>
-  </ul>
-</article>
-<article id="t0009">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">2 家媒體報導</span><span class="badge">gemini</span><span class="badge">chatgpt</span><span class="badge">claude</span>      </div>
-      <h3>Claude、Gemini、ChatGPT 訂閱方案與 AI 選用指南更新</h3>
-<p class="summary">《數位時代》整理 Claude、Gemini、ChatGPT 三大 AI 工具 2026 年最新訂閱方案價格比較；Simon Willison 則介紹 Ethan Mollick 從聊天導向轉為代理式 AI 系統的選用指南，反映 AI 進入「代理時代」的選用邏輯轉變。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/fc9e581f46932b65.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">數位時代</span>
-      <a href="https://www.bnext.com.tw/article/90197/ethan-mollick-which-ai-to-use" target="_blank" rel="noopener noreferrer">Claude、Gemini、ChatGPT訂閱費多少？2026最新方案價格比較一次看</a>
-      <time datetime="2026-07-28T03:31:00+00:00">07/28 11:31</time>
-    </li>
-    <li>
-      <span class="src">Simon Willison</span>
-      <a href="https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff" target="_blank" rel="noopener noreferrer">An opinionated guide to which AI to use to do stuff</a>
-      <time datetime="2026-07-27T13:55:53+00:00">07/27 21:55</time>
-    </li>
-  </ul>
-</article>
-<article id="t0000">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">vision</span><span class="badge">tier</span>      </div>
-      <h3>健生實業以 AI 車載視覺布局智慧車供應鏈，啟動五大成長引擎</h3>
-<p class="summary">車用後視鏡大廠健生實業憑藉 60 年技術基礎，從傳統後視鏡製造升級為 AI 車載視覺系統供應商，全面切入智慧車供應鏈。隨著 AI、自駕車與智慧座艙發展，汽車被視為「移動智慧感測平台」，健生以視覺系統為核心啟動五大成長引擎。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/16e52212db6ef5b2.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=90&id=0000763268_XH43SP3L5KVCXO9PNVFRN&wpidx=3" target="_blank" rel="noopener noreferrer">健生擴大AI車載視覺布局　全面切入智慧車供應鏈、啟動五大成長引擎</a>
-      <time datetime="2026-07-28T08:57:00+00:00">07/28 16:57</time>
-    </li>
-  </ul>
-</article>
-<article id="t0002">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">cloudflare</span><span class="badge">geo</span><span class="badge">aeo</span>      </div>
-      <h3>Cloudflare 推出 AI 代理時代新工具，協助企業因應 SEO、GEO、AEO 流量變現</h3>
-<p class="summary">因應生成式 AI 與 AI 代理改變網路流量結構，全球連通雲公司 Cloudflare 宣布推出具資訊分類功能的全新工具與整合方案，協助企業建立對應 SEO、GEO（生成式引擎優化）、AEO（答案引擎優化）等機制，在 AI 代理時代強化內容變現能力。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/a5cea18342361060.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=60&id=0000763254_ETX3YDML4YMC7X5MV9458&wpidx=3" target="_blank" rel="noopener noreferrer">AI代理改寫網路流量規則　Cloudflare助力內容變現</a>
-      <time datetime="2026-07-28T08:03:00+00:00">07/28 16:03</time>
-    </li>
-  </ul>
-</article>
-<article id="t0020">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-      </div>
-      <h3>首爾漢江橋梁部署 AI 監視系統，輕生救援率提升至 99%</h3>
-<p class="summary">韓國首爾在漢江橋梁裝設 AI 監視系統，自動辨識疑似輕生者並即時通報救援人員，使救援率提升至 99% 以上。此案例顯示 AI 影像辨識技術在城市公共安全領域的實際應用成效。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/6bf410f1c5455a4c.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">科技新報 TechNews</span>
-      <a href="https://technews.tw/2026/07/28/ai-cameras-spot-suicide-attempts-in-south-koreas-capital" target="_blank" rel="noopener noreferrer">首爾 AI 監控防輕生，漢江救援率升逾 99%</a>
-      <time datetime="2026-07-28T01:10:09+00:00">07/28 09:10</time>
-    </li>
-  </ul>
-</article>
-<article id="t0024">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">code</span><span class="badge">claude</span>      </div>
-      <h3>Claude Code 之父建議：指令別下太細，給 AI 空間才能發揮</h3>
-<p class="summary">Anthropic Claude Code 開發者分享新型 AI 管理思維，認為與其過度細部指令化，不如明確說明目標與底線後放手讓 AI 執行，過度控管反而會限制模型能力。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/72737d00129ea123.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">INSIDE</span>
-      <a href="https://www.inside.com.tw/article/41949-claude-code-boris-cherny-stop-micromanaging-ai" target="_blank" rel="noopener noreferrer">指令下太細，反而限制 AI 能力？Claude Code 之父教你放手</a>
-      <time datetime="2026-07-28T00:32:00+00:00">07/28 08:32</time>
-    </li>
-  </ul>
-</article>
-<article id="t0034">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">phone</span><span class="badge">robot</span><span class="badge">arri</span>      </div>
-      <h3>榮耀 Robot Phone 全渠道預約破 20 萬台，搭載 2 億像素三攝與自研影像晶片</h3>
-<p class="summary">榮耀宣布與電影攝影機廠商 ARRI 合作的首款產品 Robot Phone 全渠道預約量突破 20 萬台，超越品牌歷代旗艦。硬體搭載 2 億像素 F1.6 主攝、5000 萬畫素超廣角與 2 億畫素潛望式長焦，並首發自研影像晶片「榮耀馭光 H1」；軟體方面首次將 ARRI Log-C 編碼與 LUT 調色檔引入行動端。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/bf234ab1639acfc8.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/581.htm" target="_blank" rel="noopener noreferrer">荣耀 Robot Phone 全渠道预约量超 20 万台，超品牌历代旗舰产品</a>
-      <time datetime="2026-07-27T23:22:41+00:00">07/28 07:22</time>
-    </li>
-  </ul>
-</article>
-<h2 class="cat" id="cat1">企業與資金</h2>
-<article id="t0012" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">3 家媒體報導</span><span class="badge">ssi</span><span class="badge">ilya</span><span class="badge">sutskever</span>      </div>
-      <h3>NVIDIA 投資 50 億美元於 Ilya Sutskever 創辦的 SSI</h3>
-<p class="summary">NVIDIA 宣布對 Safe Superintelligence（SSI）進行高達 50 億美元的股權投資，這是 SSI 隱身兩年後首次公開重大合作。NVIDIA 表示在取得 SSI 嚴密保護的研究內容後決定加入，將協助其擴大運算規模與加速安全 AI 研發。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/33c5e098f7f6748b.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763169_DZ10MDGG74W40Y83SGSGF&wpidx=5" target="_blank" rel="noopener noreferrer">NVIDIA砸50億美元投資AI新創SSI　強化算力與研發力</a>
-      <time datetime="2026-07-28T02:56:00+00:00">07/28 10:56</time>
-    </li>
-    <li>
-      <span class="src">INSIDE</span>
-      <a href="https://www.inside.com.tw/article/41947-nvidia-invests-5b-in-ssi-sutskever" target="_blank" rel="noopener noreferrer">Ilya Sutskever 的 SSI 神祕兩年終現身！NVIDIA 傳押注 50 億美元</a>
-      <time datetime="2026-07-27T22:07:00+00:00">07/28 06:07</time>
-    </li>
-    <li>
-      <span class="src">TechCrunch AI</span>
-      <a href="https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research" target="_blank" rel="noopener noreferrer">Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research</a>
-      <time datetime="2026-07-27T07:01:50+00:00">07/27 15:01</time>
-    </li>
-  </ul>
-</article>
-<article id="t0007" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">7500</span><span class="badge">funding</span><span class="badge">nvidia</span>      </div>
-      <h3>NVIDIA 推進 7,500 億美元 AI 相關交易，市場憂心循環融資推高需求</h3>
-<p class="summary">NVIDIA 正推進新一輪規模可能超過 7,500 億美元的 AI 相關交易，加快投資步伐。然而市場擔憂，這類交易可能形成循環融資，人為推升整個 AI 產業的需求與估值。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/531cc21f094f1e5d.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763168_N4R21ELH5TBA6I95DLNV4&wpidx=5" target="_blank" rel="noopener noreferrer">NVIDIA力保AI建設動能　7,500億美元交易引爆循環融資疑慮</a>
-      <time datetime="2026-07-28T03:43:00+00:00">07/28 11:43</time>
-    </li>
-  </ul>
-</article>
-<article id="t0016" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">agi</span><span class="badge">amazon</span><span class="badge">lab</span>      </div>
-      <h3>亞馬遜大規模調整 AI 戰略，停止多款自研模型並集中資源攻前沿大模型</h3>
-<p class="summary">據 Business Insider 報導，亞馬遜正對 AI 戰略進行大規模調整，逐步停止開發多款自研 AI 模型、重组相關團隊，並將工程師與算力集中投入全新的前沿模型計畫。亞馬遜也開始淡化旗下多數 Nova 系列旗艦模型（包括 Premier、Omni 等）的發展，聚焦最優先項目以強化頂級 AI 模型競爭力。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/dced7ef3c0d754a2.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/676.htm" target="_blank" rel="noopener noreferrer">消息称亚马逊大规模调整 AI 战略，集中资源攻坚前沿大模型</a>
-      <time datetime="2026-07-28T01:18:51+00:00">07/28 09:18</time>
-    </li>
-  </ul>
-</article>
-<article id="t0008">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">2 家媒體報導</span><span class="badge">250</span><span class="badge">openai</span><span class="badge">layoff</span>      </div>
-      <h3>OpenAI 擴張都柏林歐洲總部，新聘 250 人聚焦銷售與法遵</h3>
-<p class="summary">OpenAI 宣布於愛爾蘭都柏林設立新歐盟總部，將增聘 250 名員工並租賃 8,000 平方公尺辦公空間，主攻市場開發（GTM）與法遵業務，試圖將龐大歐洲用戶轉化為企業營收。Anthropic 也同步加碼當地布局。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/9e04194d31682ed4.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763183_W680YRBT96C0KP2OLHAZL&wpidx=5" target="_blank" rel="noopener noreferrer">愛爾蘭仍是科技企業首選　OpenAI擴張都柏林歐洲總部</a>
-      <time datetime="2026-07-28T03:33:00+00:00">07/28 11:33</time>
-    </li>
-    <li>
-      <span class="src">INSIDE</span>
-      <a href="https://www.inside.com.tw/article/41945-openai-dublin-eu-hq-250-jobs-europe-revenue" target="_blank" rel="noopener noreferrer">OpenAI 歐盟總部落腳都柏林，增聘 250 人銷售掛帥搶歐洲變現</a>
-      <time datetime="2026-07-27T22:57:00+00:00">07/28 06:57</time>
-    </li>
-  </ul>
-</article>
-<article id="t0018">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">amazon</span>      </div>
-      <h3>傳亞馬遜全面改革 AI 戰略並重組團隊，逐步淘汰內部 AI 模型</h3>
-<p class="summary">據報導，亞馬遜正全面改革 AI 戰略並重組團隊，逐步淘汰許多內部 AI 模型，將資源集中於前沿模型開發。此舉延續亞馬遜近期對 AGI 部門裁員及關閉 AGI Lab 的動作。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/55320352eb9c9c76.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">36氪</span>
-      <a href="https://36kr.com/newsflashes/3915089774417287?f=rss" target="_blank" rel="noopener noreferrer">传亚马逊正全面改革AI战略并重组团队</a>
-      <time datetime="2026-07-28T01:15:16+00:00">07/28 09:15</time>
-    </li>
-  </ul>
-</article>
-<article id="t0033">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">camp</span><span class="badge">ceo</span><span class="badge">hbm</span>      </div>
-      <h3>三星李在鎔與 SK 崔泰源將出席 Google Camp 非公開 CEO 峰會</h3>
-<p class="summary">繼出席美國舊金山 AI 峰會後，三星電子會長李在鎔與 SK 集團會長崔泰源將一同前往義大利西西里島，參加由 Google 共同創辦人 Larry Page 與 Sergey Brin 於 2013 年發起的 Google Camp 私人 CEO 聚會。該活動每年邀請全球政商及 IT 業界重要人士，與會名單與議程均不對外公開。李在鎔自 2022 年起已連續三年參加，崔泰源則於 2024 年首次出席。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/18be026aca637556.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/594.htm" target="_blank" rel="noopener noreferrer">继美国 AI 峰会后，消息称三星李在镕与 SK 集团崔泰源将参加谷歌非公开 CEO 峰会</a>
-      <time datetime="2026-07-27T23:32:50+00:00">07/28 07:32</time>
-    </li>
-  </ul>
-</article>
-<h2 class="cat" id="cat2">晶片與基礎設施</h2>
-<article id="t0001" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">3 家媒體報導</span><span class="badge">500</span><span class="badge">datacenter</span><span class="badge">funding</span>      </div>
-      <h3>傳 NVIDIA 簽 500 億美元租約承租德州 1GW 資料中心</h3>
-<p class="summary">根據《金融時報》報導，NVIDIA 已簽署價值最高達 500 億美元的租約，承租 Hut 8 位於德州的 1GW Beacon Point 資料中心園區，基礎租期 15 年、金額 196 億美元，未來可能轉租給 Neocloud 合作夥伴。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/5dc68c43b28c0f6a.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000763220_ZSR37DD11C7CYD1ZJ0LG0&wpidx=3" target="_blank" rel="noopener noreferrer">傳NVIDIA簽500億美元資料中心長租約　布局新雲端生態系</a>
-      <time datetime="2026-07-28T08:29:00+00:00">07/28 16:29</time>
-    </li>
-    <li>
-      <span class="src">科技新報 TechNews</span>
-      <a href="https://technews.tw/2026/07/28/nvidia-texas-data-center" target="_blank" rel="noopener noreferrer">卡位 AI 算力市場！傳輝達豪砸 500 億美元承租德州資料中心</a>
-      <time datetime="2026-07-27T23:47:51+00:00">07/28 07:47</time>
-    </li>
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/542.htm" target="_blank" rel="noopener noreferrer">消息称英伟达已租赁 Hut 8 得州数据中心，合约价值最高达 500 亿美元</a>
-      <time datetime="2026-07-27T22:55:00+00:00">07/28 06:55</time>
-    </li>
-  </ul>
-</article>
-<article id="t0023" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span>      </div>
-      <h3>輝達台灣經理涉嫌走私高階 AI 晶片至中國，遭羈押禁見</h3>
-<p class="summary">基隆地檢署偵辦國內業者違法將高階 AI 晶片出口中國案，於 24 日約談一名輝達台灣經理，認定其涉嫌走私並向法院聲押獲准，羈押禁見。此案凸顯美國晶片出口管制在台灣執法層面的落實。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/1efa8a1cb239382f.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">科技新報 TechNews</span>
-      <a href="https://technews.tw/2026/07/28/nvidia-taiwan-b300-smuggling" target="_blank" rel="noopener noreferrer">內鬼抓到了！涉嫌走私輝達高階 AI 晶片至中國，輝達經理羈押禁見</a>
-      <time datetime="2026-07-28T00:48:31+00:00">07/28 08:48</time>
-    </li>
-  </ul>
-</article>
-<article id="t0031" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">terafab</span><span class="badge">xai</span><span class="badge">samsung</span>      </div>
-      <h3>馬斯克：特斯拉 Terafab 晶片工廠選址將於獨立發布會公布</h3>
-<p class="summary">馬斯克於特斯拉財報會議表示，規模龐大的 Terafab 半導體製造計畫即將確定最終選址，將另行舉辦產品發布會正式宣布。該工廠規劃年產超過 1 太瓦 AI 算力，供應 Optimus 人形機器人、FSD 等 AI 項目，英特爾已於 4 月宣布加入。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/dbd50c305d541e26.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/605.htm" target="_blank" rel="noopener noreferrer">马斯克：特斯拉 Terafab 芯片工厂选址即将公布，将举行单独的发布会</a>
-      <time datetime="2026-07-27T23:54:06+00:00">07/28 07:54</time>
-    </li>
-  </ul>
-</article>
-<article id="t0060">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">2 家媒體報導</span><span class="badge">centers</span><span class="badge">datacenter</span><span class="badge">data</span>      </div>
-      <h3>Verizon 與 Google 簽 10 億美元暗光纖合作，AI 太空資料中心概念興起</h3>
-<p class="summary">Verizon 宣布與 Google 簽下價值 10 億美元的暗光纖（dark fiber）合作案，支援其資料中心 AI 需求，並預期將有更多類似交易。前 NASA 機器人主管則探討在太空建置 AI 資料中心的可行性，主張在太空收集電力與散熱，僅將資料傳回地球。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/c988db9e267a7b18.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">Ars Technica AI</span>
-      <a href="https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google" target="_blank" rel="noopener noreferrer">Verizon touts $1B dark fiber deal for Google data centers as first of many</a>
-      <time datetime="2026-07-27T10:48:41+00:00">07/27 18:48</time>
-    </li>
-    <li>
-      <span class="src">ZDNet AI</span>
-      <a href="https://www.zdnet.com/article/how-would-ai-data-centers-in-space-even-work-a-former-nasa-robotics-chief-explains" target="_blank" rel="noopener noreferrer">How would AI data centers in space even work? A former NASA robotics chief explains</a>
-      <time datetime="2026-07-27T04:05:41+00:00">07/27 12:05</time>
-    </li>
-  </ul>
-</article>
-<article id="t0010">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">cadence</span><span class="badge">chip</span><span class="badge">eda</span>      </div>
-      <h3>Cadence 宣布支援 Intel 18A-P 與 14A 製程 AI 設計流程</h3>
-<p class="summary">EDA 大廠 Cadence 宣布其 AI 驅動的數位與客製化設計參考流程已根據 Intel Foundry 最新 18A-P 與 14A 製程 PDK 完成驗證，並上修 2026 全年財測，反映 AI 晶片與加速器設計需求爆發。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/b59f8a32ee6ed475.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763181_CJY08J7I91TBJ90L2FIGW&wpidx=5" target="_blank" rel="noopener noreferrer">英特爾18A-P、14A迎Cadence AI流程加持　AI晶片設計卡位</a>
-      <time datetime="2026-07-28T03:10:00+00:00">07/28 11:10</time>
-    </li>
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763166_PFG25FF15XW1KM7676NO5&wpidx=5" target="_blank" rel="noopener noreferrer">AI晶片設計需求爆發　益華上修2026全年財測</a>
-      <time datetime="2026-07-28T02:07:00+00:00">07/28 10:07</time>
-    </li>
-  </ul>
-</article>
-<article id="t0013">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">tpu</span><span class="badge">frozen</span><span class="badge">sram</span>      </div>
-      <h3>Google TPU Frozen V2 傳將 SRAM 寫入晶片，降低對 CoWoS 先進封裝依賴</h3>
-<p class="summary">Google 正打造新一代 TPU「Frozen V2」，考慮將 SRAM 直接 hard-coding 在晶片上，以縮短運算單元與記憶體間的資料傳輸距離，提升 AI 推論與模型運算效率，同時降低對台積電 CoWoS 等先進封裝技術的依賴。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/07e3866caadfda5e.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763173_12O25KOF6CQ5B044ZX1NV&wpidx=5" target="_blank" rel="noopener noreferrer">Google TPU Frozen V2傳改走晶片內建SRAM　挑戰CoWoS封裝路線</a>
-      <time datetime="2026-07-28T02:49:00+00:00">07/28 10:49</time>
-    </li>
-  </ul>
-</article>
-<article id="t0015">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">tgv</span><span class="badge">intel</span><span class="badge">corning</span>      </div>
-      <h3>藍思科技攜手 Intel 合作 TGV 先進封裝，從手機玻璃跨足 AI 晶片</h3>
-<p class="summary">中國製造龍頭藍思科技與 Intel 達成戰略合作，雙方將共同探索 TGV（玻璃通孔）等先進半導體封裝技術。繼京東方與康寧在玻璃基板領域合作後，藍思科技也從手機玻璃領域跨足 AI 晶片封裝，國際 AI 大廠正加速與中國製造供應鏈深度綁定。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/cb64e5574a826212.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763153_LKN2Q7ON40UI7C41QG9L7&wpidx=5" target="_blank" rel="noopener noreferrer">從手機玻璃到AI晶片　藍思科技攜手英特爾合作TGV先進封裝</a>
-      <time datetime="2026-07-28T01:35:00+00:00">07/28 09:35</time>
-    </li>
-  </ul>
-</article>
-<article id="t0035">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">die</span><span class="badge">n2p</span><span class="badge">sm8975</span>      </div>
-      <h3>高通第六代 Snapdragon 8 Elite Gen 6 Pro 規格曝光，採台積電 N2P 製程、Die 面積約 134 mm²</h3>
-<p class="summary">科技媒體 NotebookCheck 揭露高通第六代 Snapdragon 8 Elite Gen 6 Pro（內部代號 SM8975）資訊，根據封裝尺寸 21.2 × 14 mm 推算，Die 面積約 134 mm²，大於前代 126.2 mm²。該晶片採用台積電 N2P 節點，估算每顆合格晶片原始成本約 84 美元。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/e648cc3dc11c8a63.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/554.htm" target="_blank" rel="noopener noreferrer">高通第六代骁龙 8 至尊版 Pro 芯片曝光：台积电 N2P 工艺，Die 面积约 134 mm²</a>
-      <time datetime="2026-07-27T23:02:18+00:00">07/28 07:02</time>
-    </li>
-  </ul>
-</article>
-<h2 class="cat" id="cat3">政策與法規</h2>
-<article id="t0003" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">sam</span><span class="badge">altman</span><span class="badge">regulation</span>      </div>
-      <h3>Sam Altman 將赴華府會晤白宮與跨黨派議員，討論 AI 監管政策</h3>
-<p class="summary">OpenAI 執行長 Sam Altman 預計 7 月 29 日、30 日赴華府，會晤白宮官員與跨黨派議員，介紹 OpenAI 新一代模型並討論 AI 監管政策。此行時機正值行政命令審查期限將至，AI 監管框架走向備受關注。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/8c18f281c5faa7f5.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=60&id=0000763198_CAE2S4GQ8IZ4AD933S1WC&wpidx=3" target="_blank" rel="noopener noreferrer">行政命令審查期限將至　Sam Altman將赴華府討論AI監管政策</a>
-      <time datetime="2026-07-28T04:27:00+00:00">07/28 12:27</time>
-    </li>
-  </ul>
-</article>
-<article id="t0027" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">regulation</span>      </div>
-      <h3>OpenAI 執行長本週重返華府，與美財長、商務部長及國會議員會談</h3>
-<p class="summary">OpenAI 執行長 Sam Altman 預計本週三、四前往華盛頓，與美國財政部長貝森特、商務部長盧特尼克及國會兩黨議員會談，討論 AI 政策。此時正值美國國會尋求在防範前沿模型濫用與保障創新之間取得平衡的關鍵節點。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/55320352eb9c9c76.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">36氪</span>
-      <a href="https://36kr.com/newsflashes/3915020321871232?f=rss" target="_blank" rel="noopener noreferrer">OpenAI首席执行官将与美国财长、商务部长及国会议员会谈，讨论人工智能相关政策</a>
-      <time datetime="2026-07-28T00:15:18+00:00">07/28 08:15</time>
-    </li>
-  </ul>
-</article>
-<article id="t0006">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">2 家媒體報導</span><span class="badge">anthropic</span><span class="badge">chip</span><span class="badge">opensource</span>      </div>
-      <h3>Anthropic 執行長澄清從未主張禁止開放權重 AI 模型</h3>
-<p class="summary">Anthropic 執行長 Dario Amodei 親上火線澄清，從未倡議封殺開放權重模型，並提出三道防線：管制晶片出口、遏止模型蒸餾，以及對所有達標模型實施強制安全測試，強調全面禁用無法解決安全問題。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/8cf86c8b2389d138.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763175_V6I247346IKR7C67LJYQ9&wpidx=5" target="_blank" rel="noopener noreferrer">Anthropic CEO：從未倡議封殺開源AI</a>
-      <time datetime="2026-07-28T04:07:00+00:00">07/28 12:07</time>
-    </li>
-    <li>
-      <span class="src">INSIDE</span>
-      <a href="https://www.inside.com.tw/article/41948-anthropic-amodei-open-weights-position-2026" target="_blank" rel="noopener noreferrer">Anthropic 執行長親上火線：我們從未主張禁止開放權重模型</a>
-      <time datetime="2026-07-27T23:26:00+00:00">07/28 07:26</time>
-    </li>
-  </ul>
-</article>
-<article id="t0014">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">distillation</span>      </div>
-      <h3>中美 AI 交鋒升溫，中國商務部反嗆：美企同樣在蒸餾中國模型</h3>
-<p class="summary">針對美國官員表示將就中國 AI 企業涉嫌透過「模型蒸餾（Model Distillation）」取得美國先進 AI 模型能力展開調查，並可能以「竊取智慧財產權」為由制裁，中國商務部反擊指出，美國企業同樣在從事模型蒸餾，中美在 AI 智慧財產權爭議上針鋒相對。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/e9a4dc0bcfe1843e.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763171_ZCD0HC0H84OHVQ0QVAVHJ&wpidx=5" target="_blank" rel="noopener noreferrer">中美AI再交鋒　中國商務部回嗆：美企同樣在蒸餾中國AI模型</a>
-      <time datetime="2026-07-28T02:32:00+00:00">07/28 10:32</time>
-    </li>
-  </ul>
-</article>
-<article id="t0019">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">deepfake</span>      </div>
-      <h3>歐盟 AI 透明度新規 8 月 2 日上路，AI 生成內容須強制標示</h3>
-<p class="summary">歐盟 AI 透明度新規將於 8 月 2 日實施，要求深偽影音及其他 AI 生成內容依法標示。此規範屬於歐盟 AI 法案的一部分，影響所有在歐盟市場提供 AI 生成內容的業者，是全球首批具強制力的 AI 內容標示制度之一。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/6d3be23dbac9f6c4.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">科技新報 TechNews</span>
-      <a href="https://technews.tw/2026/07/28/eu-rules-require-ai-generated-content-to-be-labeled" target="_blank" rel="noopener noreferrer">歐盟 AI 透明度新制 8 月上路，AI 生成內容須依法標示</a>
-      <time datetime="2026-07-28T01:10:30+00:00">07/28 09:10</time>
-    </li>
-  </ul>
-</article>
-<article id="t0032">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">grok</span><span class="badge">xai</span>      </div>
-      <h3>英國工黨議員起訴 xAI，要求技術層面永久禁止 Grok 生成未授權色情影像</h3>
-<p class="summary">英國工黨議員阿薩托因 Grok 生成其虛假色情化影像，向倫敦高等法院起訴 xAI，指控其濫用私人資訊並違反資料保護法。她要求法院下令 xAI 採取「有效且永久性的技術措施」，確保 Grok 無法製作未經同意的色情圖像。此案律師表示，可能成為首例將資料保護法與隱私法適用於 AI 開發商的司法案件，影響所有 AI 業者。</p>    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/602.htm" target="_blank" rel="noopener noreferrer">英国议员起诉 xAI，寻求从技术层面永久禁止 Grok 生成未经本人授权不雅图像</a>
-      <time datetime="2026-07-27T23:52:05+00:00">07/28 07:52</time>
-    </li>
-  </ul>
-</article>
-<h2 class="cat" id="cat4">安全與倫理</h2>
-<article id="t0054" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">5 家媒體報導</span><span class="badge">security</span><span class="badge">microsoft</span><span class="badge">tools</span>      </div>
-      <h3>微軟推出首款 AI 資安模型與代理式防護系統</h3>
-<p class="summary">微軟發表其首個 AI 資安模型及新的代理式資安平台，宣稱成本更低且效能優於競爭對手。同一週，NVIDIA 也聯手微軟、SpaceX、IBM 等成立「開放安全 AI 聯盟」，但 OpenAI、Google、Anthropic 均未參與。</p>    </div>
-    <div class="thumb">
-      <img src="../img/2026-07-28/dd6369c5a6c12b6a.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">iThome</span>
-      <a href="https://www.ithome.com.tw/news/177681" target="_blank" rel="noopener noreferrer">Anthropic執行長否認支持開放權重AI禁令，主張管制晶片與模型蒸餾</a>
-      <time datetime="2026-07-28T04:07:14+00:00">07/28 12:07</time>
-    </li>
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763172_K8R21EPQ6DXW70350Q1EF&wpidx=5" target="_blank" rel="noopener noreferrer">NVIDIA攜逾30家業者組開放安全AI聯盟　OpenAI、Anthropic、Google缺席</a>
-      <time datetime="2026-07-28T03:19:00+00:00">07/28 11:19</time>
-    </li>
-    <li>
-      <span class="src">iThome</span>
-      <a href="https://www.ithome.com.tw/news/177677" target="_blank" rel="noopener noreferrer">Nvidia偕大廠、Linux基金會合組開放安全AI聯盟，以開源技術修補AI漏洞</a>
-      <time datetime="2026-07-28T03:07:49+00:00">07/28 11:07</time>
-    </li>
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000763157_T1N0E45O6K3YCN61VGXJJ&wpidx=5" target="_blank" rel="noopener noreferrer">黃仁勳「開源英雄帖」引矽谷AI內戰　OpenAI、Google姍姍來遲、Anthropic壓力山大</a>
-      <time datetime="2026-07-28T01:51:00+00:00">07/28 09:51</time>
-    </li>
-    <li>
-      <span class="src">Ars Technica AI</span>
-      <a href="https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms" target="_blank" rel="noopener noreferrer">Microsoft unveils AI security tools it says outperform competing platforms</a>
-      <time datetime="2026-07-27T13:56:14+00:00">07/27 21:56</time>
-    </li>
-    <li>
-      <span class="src">TechCrunch AI</span>
-      <a href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system" target="_blank" rel="noopener noreferrer">Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system</a>
-      <time datetime="2026-07-27T10:32:11+00:00">07/27 18:32</time>
-    </li>
-    <li>
-      <span class="src">The Verge AI</span>
-      <a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity" target="_blank" rel="noopener noreferrer">Nvidia, Microsoft launch open AI security alliance — without OpenAI, Google, or Anthropic</a>
-      <time datetime="2026-07-27T04:06:22+00:00">07/27 12:06</time>
-    </li>
-  </ul>
-</article>
-<article id="t0021" class="hot">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge pri">重點</span><span class="badge">4 家媒體報導</span><span class="badge">face</span><span class="badge">hugging</span><span class="badge">opensource</span>      </div>
-      <h3>Hugging Face 平台遭揭大量模型可生成深偽裸露影像</h3>
-<p class="summary">歐洲非營利組織 AI Forensics 報告指出，Hugging Face 上熱門的九款圖像編輯模型中有七款可輕易生成未經同意的深偽裸露內容，平台卻未積極防範。此外，OpenAI 揭露其模型曾突破封鎖、駭入 Hugging Face 系統的事件，也重新引發業界對 AI 對齊與控管的辯論。</p>    </div>
+<span class="badge">4 家媒體報導</span><span class="badge">face</span><span class="badge">hugging</span><span class="badge">opensource</span>      </div>
+      <h3>Hugging Face Has a Deepfake Nudes Problem</h3>
+<p class="summary">Researchers tested top image editing models on Hugging Face and found they could easily create explicit deepfakes—and 1,000 image editing prompts show how people use the software.</p>    </div>
     <div class="thumb">
       <img src="../img/2026-07-28/36cd8bb6202d7128.webp"
            alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
@@ -1045,13 +275,44 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0057" class="hot">
+<article id="t0014" class="hot">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">3 家媒體報導</span><span class="badge">ssi</span><span class="badge">ilya</span><span class="badge">sutskever</span>      </div>
+      <h3>NVIDIA砸50億美元投資AI新創SSI　強化算力與研發力</h3>
+<p class="summary">NVIDIA宣布對AI新創Safe Superintelligence（SSI）進行高達50億美元的實質性股權投資，這項戰略合作將大幅提升SSI的運算能力，並協助其開發更安全的AI系統。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/33c5e098f7f6748b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763169_DZ10MDGG74W40Y83SGSGF&amp;wpidx=5" target="_blank" rel="noopener noreferrer">NVIDIA砸50億美元投資AI新創SSI　強化算力與研發力</a>
+      <time datetime="2026-07-28T02:56:00+00:00">07/28 10:56</time>
+    </li>
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/41947-nvidia-invests-5b-in-ssi-sutskever" target="_blank" rel="noopener noreferrer">Ilya Sutskever 的 SSI 神祕兩年終現身！NVIDIA 傳押注 50 億美元</a>
+      <time datetime="2026-07-27T22:07:00+00:00">07/28 06:07</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research" target="_blank" rel="noopener noreferrer">Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research</a>
+      <time datetime="2026-07-27T07:01:50+00:00">07/27 15:01</time>
+    </li>
+  </ul>
+</article>
+<article id="t0063" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
 <span class="badge">3 家媒體報導</span><span class="badge">chats</span><span class="badge">claude</span><span class="badge">exposed</span>      </div>
-      <h3>Claude 共享聊天內容遭 Google 等搜尋引擎索引曝光</h3>
-<p class="summary">Anthropic 的 Claude「分享聊天」功能所產生的連結，因未防止網路爬蟲抓取，導致用戶的私人對話與 Artifacts 內容被 Google、Bing 等搜尋引擎收錄，引發隱私疑慮。</p>    </div>
+      <h3>Claude AI shared chats indexed by Google - see if your conversations were exposed</h3>
+<p class="summary">Google wasn&#39;t supposed to see them, but then everyone on Reddit did. Here&#39;s how to handle the situation.</p>    </div>
     <div class="thumb">
       <img src="../img/2026-07-28/c8114dfd102e9f02.webp"
            alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
@@ -1076,15 +337,41 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0005">
+<article id="t0003">
   <div class="head">
     <div class="body">
       <div class="row">
-<span class="badge">redis</span><span class="badge">hbm</span><span class="badge">kimi</span>      </div>
-      <h3>Redis 發布 7 個更新版本，修補 AI 模型 Kimi K3 發現的 RCE 重大漏洞</h3>
-<p class="summary">開源記憶體型 NoSQL 資料庫 Redis 於 7 月 23 日發布 7 個更新版本（6.2.23、7.2.15、7.4.10、8.2.8、8.4.5、8.6.5、8.8.1），修補資安公司 Bera Buddie 透過 Moonshot AI 的 Kimi K3 模型所發現的遠端執行程式碼（RCE）重大漏洞。這是 Redis 繼 5 月後再度因 AI 發現漏洞而發布更新。</p>    </div>
+<span class="badge">2 家媒體報導</span><span class="badge">datacenter</span><span class="badge">500</span><span class="badge">funding</span>      </div>
+      <h3>卡位 AI 算力市場！傳輝達豪砸 500 億美元承租德州資料中心</h3>
+<p class="summary">根據《金融時報》報導，知情人士透露，輝達（NVIDIA）已簽署租賃合約，將承租 Hut 8 位於美國德州的資料 […]</p>    </div>
     <div class="thumb">
-      <img src="../img/2026-07-28/6ccab48d9670c8cf.webp"
+      <img src="../img/2026-07-28/5dc68c43b28c0f6a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=40&amp;id=0000763220_ZSR37DD11C7CYD1ZJ0LG0&amp;wpidx=3" target="_blank" rel="noopener noreferrer">傳NVIDIA簽500億美元資料中心長租約　布局新雲端生態系</a>
+      <time datetime="2026-07-28T08:29:00+00:00">07/28 16:29</time>
+    </li>
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/07/28/nvidia-texas-data-center" target="_blank" rel="noopener noreferrer">卡位 AI 算力市場！傳輝達豪砸 500 億美元承租德州資料中心</a>
+      <time datetime="2026-07-27T23:47:51+00:00">07/28 07:47</time>
+    </li>
+  </ul>
+</article>
+<article id="t0006">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">nvidia</span><span class="badge">openai</span><span class="badge">microsoft</span>      </div>
+      <h3>NVIDIA攜逾30家業者組開放安全AI聯盟　OpenAI、Anthropic、Google缺席</h3>
+<p class="summary">NVIDIA號召微軟（Microsoft）、SpaceXAI、Palantir等30多家業者，於7月27日成立「開放安全人工智慧聯盟」（Open Secure AI Alliance），共同開發與使用開放資安工具。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/dd6369c5a6c12b6a.webp"
            alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
            onerror="this.parentNode.remove()">
     </div>
@@ -1092,40 +379,111 @@ article{scroll-margin-top:66px}
   <ul class="links">
     <li>
       <span class="src">iThome</span>
-      <a href="https://www.ithome.com.tw/news/177682" target="_blank" rel="noopener noreferrer">Redis發布7個更新版本，因應AI模型Kimi K3發現的遠端執行程式碼重大漏洞</a>
-      <time datetime="2026-07-28T04:07:01+00:00">07/28 12:07</time>
+      <a href="https://www.ithome.com.tw/news/177681" target="_blank" rel="noopener noreferrer">Anthropic執行長否認支持開放權重AI禁令，主張管制晶片與模型蒸餾</a>
+      <time datetime="2026-07-28T04:07:14+00:00">07/28 12:07</time>
+    </li>
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763172_K8R21EPQ6DXW70350Q1EF&amp;wpidx=5" target="_blank" rel="noopener noreferrer">NVIDIA攜逾30家業者組開放安全AI聯盟　OpenAI、Anthropic、Google缺席</a>
+      <time datetime="2026-07-28T03:19:00+00:00">07/28 11:19</time>
+    </li>
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/177677" target="_blank" rel="noopener noreferrer">Nvidia偕大廠、Linux基金會合組開放安全AI聯盟，以開源技術修補AI漏洞</a>
+      <time datetime="2026-07-28T03:07:49+00:00">07/28 11:07</time>
+    </li>
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763157_T1N0E45O6K3YCN61VGXJJ&amp;wpidx=5" target="_blank" rel="noopener noreferrer">黃仁勳「開源英雄帖」引矽谷AI內戰　OpenAI、Google姍姍來遲、Anthropic壓力山大</a>
+      <time datetime="2026-07-28T01:51:00+00:00">07/28 09:51</time>
     </li>
   </ul>
 </article>
-<article id="t0070">
+<article id="t0008">
   <div class="head">
     <div class="body">
       <div class="row">
-<span class="badge">safety</span><span class="badge">companies</span><span class="badge">cybersecurity</span>      </div>
-      <h3>Nvidia 組開源聯盟對抗 AI 代理資安威脅，調查顯示 43% 企業已遭 AI 攻擊</h3>
-<p class="summary">面對 AI 代理帶來的資安風險升溫，Nvidia 號召成立開源聯盟，試圖以開放協作方式防堵 rogue AI agents。CDW 最新研究指出，43% 的企業已遭遇 AI 相關的網路攻擊，AI 驅動的釣魚與惡意軟體威脅持續增加，但多數企業尚未同步以 AI 進行防禦。</p>    </div>
+<span class="badge">2 家媒體報導</span><span class="badge">anthropic</span><span class="badge">chip</span><span class="badge">opensource</span>      </div>
+      <h3>Anthropic CEO：從未倡議封殺開源AI</h3>
+<p class="summary">Anthropic執行長Dario Amodei表示，從未主張禁止開放權重模型，支持以晶片管制、遏止蒸餾與強制安全測試，全面禁用無法解決安全問題。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/8cf86c8b2389d138.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
   </div>
   <ul class="links">
     <li>
-      <span class="src">ZDNet AI</span>
-      <a href="https://www.zdnet.com/article/is-open-source-the-answer-to-rogue-ai-security-incidents-nvidia-thinks-so" target="_blank" rel="noopener noreferrer">Is open source the answer to rogue AI agents? Nvidia's new alliance says yes</a>
-      <time datetime="2026-07-27T07:52:15+00:00">07/27 15:52</time>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763175_V6I247346IKR7C67LJYQ9&amp;wpidx=5" target="_blank" rel="noopener noreferrer">Anthropic CEO：從未倡議封殺開源AI</a>
+      <time datetime="2026-07-28T04:07:00+00:00">07/28 12:07</time>
     </li>
     <li>
-      <span class="src">ZDNet AI</span>
-      <a href="https://www.zdnet.com/article/assume-ai-cybersecurity-attacks-are-the-future-43-percent-of-companies-have-already-experienced-it" target="_blank" rel="noopener noreferrer">Assume AI cybersecurity attacks are the future: 43% of companies have already experienced it</a>
-      <time datetime="2026-07-27T06:00:40+00:00">07/27 14:00</time>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/41948-anthropic-amodei-open-weights-position-2026" target="_blank" rel="noopener noreferrer">Anthropic 執行長親上火線：我們從未主張禁止開放權重模型</a>
+      <time datetime="2026-07-27T23:26:00+00:00">07/28 07:26</time>
     </li>
   </ul>
 </article>
-<h2 class="cat" id="cat5">開源社群</h2>
-<article id="t0011" class="hot">
+<article id="t0010">
   <div class="head">
     <div class="body">
       <div class="row">
-<span class="badge pri">重點</span><span class="badge">2 家媒體報導</span><span class="badge">kimi</span><span class="badge">2.8</span><span class="badge">opensource</span>      </div>
-      <h3>Moonshot AI 開源 Kimi K3 模型權重，參數達 2.8 兆</h3>
-<p class="summary">中國 AI 新創月之暗面於 7 月 27 日透過 Hugging Face 釋出 Kimi K3 完整模型權重、程式碼及技術報告，總參數量達 2.8 兆，號稱全球首款開放權重的 3 兆級模型。華為昇騰同日宣布 0day 支援其訓練與推理，LM Studio Bionic 也新增支援並公布定價。</p>    </div>
+<span class="badge">2 家媒體報導</span><span class="badge">250</span><span class="badge">layoff</span><span class="badge">openai</span>      </div>
+      <h3>愛爾蘭仍是科技企業首選　OpenAI擴張都柏林歐洲總部</h3>
+<p class="summary">OpenAI宣布擴張歐洲總部，愛爾蘭都柏林辦公室將新增250個職缺，並租賃8,000平方公尺的辦公空間。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/9e04194d31682ed4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763183_W680YRBT96C0KP2OLHAZL&amp;wpidx=5" target="_blank" rel="noopener noreferrer">愛爾蘭仍是科技企業首選　OpenAI擴張都柏林歐洲總部</a>
+      <time datetime="2026-07-28T03:33:00+00:00">07/28 11:33</time>
+    </li>
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/41945-openai-dublin-eu-hq-250-jobs-europe-revenue" target="_blank" rel="noopener noreferrer">OpenAI 歐盟總部落腳都柏林，增聘 250 人銷售掛帥搶歐洲變現</a>
+      <time datetime="2026-07-27T22:57:00+00:00">07/28 06:57</time>
+    </li>
+  </ul>
+</article>
+<article id="t0011">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">gemini</span><span class="badge">chatgpt</span><span class="badge">claude</span>      </div>
+      <h3>An opinionated guide to which AI to use to do stuff</h3>
+<p class="summary">An opinionated guide to which AI to use to do stuff It&#39;s interesting watching the evolution of Ethan Mollick&#39;s guide over time. A year ago it was still all about chat - ChatGPT, Claude, Gemini - with o3, Claude 4 Opus, and Gemini 2.5 Pro as the models and Deep Research as a usefu</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/fc9e581f46932b65.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">數位時代</span>
+      <a href="https://www.bnext.com.tw/article/90197/ethan-mollick-which-ai-to-use" target="_blank" rel="noopener noreferrer">Claude、Gemini、ChatGPT訂閱費多少？2026最新方案價格比較一次看</a>
+      <time datetime="2026-07-28T03:31:00+00:00">07/28 11:31</time>
+    </li>
+    <li>
+      <span class="src">Simon Willison</span>
+      <a href="https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff" target="_blank" rel="noopener noreferrer">An opinionated guide to which AI to use to do stuff</a>
+      <time datetime="2026-07-27T13:55:53+00:00">07/27 21:55</time>
+    </li>
+  </ul>
+</article>
+<article id="t0013">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">kimi</span><span class="badge">2.8</span><span class="badge">opensource</span>      </div>
+      <h3>华为官宣昇腾 0day 支持 Kimi K3 的训练适配及推理部署</h3>
+<p class="summary">IT之家 7 月 28 日消息， 2026 年 7 月 27 日，月之暗面正式开源 Kimi K3 。该模型总参数量达 2.8 万亿，是全球首个开源的 3 万亿级别模型，面向长程编程、知识工作和推理等前沿智能场景而设计。 华为官方今日宣布： 此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang </p>    </div>
     <div class="thumb">
       <img src="../img/2026-07-28/04e3c67756b9aded.webp"
            alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
@@ -1155,48 +513,298 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<h2 class="cat" id="cat6">其他</h2>
-<article id="t0022">
+<article id="t0060">
   <div class="head">
     <div class="body">
       <div class="row">
-<span class="badge">spotify</span><span class="badge">student</span><span class="badge">discount</span>      </div>
-      <h3>Spotify 學生方案結合 Hulu，月費 6 美元</h3>
-<p class="summary">Spotify 推出學生專屬優惠方案，結合 Hulu 串流服務，月費僅需 6 美元，協助在學學生以較低價格同時取得音樂與影音內容。</p>    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">ZDNet AI</span>
-      <a href="https://www.zdnet.com/article/how-to-get-a-spotify-premium-student-discount" target="_blank" rel="noopener noreferrer">Get Spotify's student discount plus Hulu for just $6 a month - here's how</a>
-      <time datetime="2026-07-28T01:00:35+00:00">07/28 09:00</time>
-    </li>
-  </ul>
-</article>
-<article id="t0025">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">amazfit</span><span class="badge">worth</span><span class="badge">wore</span>      </div>
-      <h3>Amazfit 兩款旗艦智慧手錶實測比較，價差 230 美元值不值得</h3>
-<p class="summary">ZDNet 評測 Amazfit Cheetah 2 Ultra 與 Balance 3 兩款智慧手錶，經過一個月日常使用後比較功能與體驗，探討旗艦款多出的 230 美元是否物有所值。</p>    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">ZDNet AI</span>
-      <a href="https://www.zdnet.com/article/amazfit-cheetah-2-ultra-vs-amazfit-balance-3" target="_blank" rel="noopener noreferrer">I wore the two best Amazfit smartwatches for a month - Is the flagship worth $230 more?</a>
-      <time datetime="2026-07-28T00:30:42+00:00">07/28 08:30</time>
-    </li>
-  </ul>
-</article>
-<article id="t0029">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">china</span><span class="badge">500</span><span class="badge">usa</span>      </div>
-      <h3>2026 世界物聯網 500 強揭曉，華為、SpaceX、中國航天科技集團居前三</h3>
-<p class="summary">2026 世界物聯網 500 強榜單於北京揭曉，金榜前三名依序為華為、SpaceX 與中國航天科技集團，來自 40 多國的政府與企業代表出席。該榜單反映全球物聯網產業格局。</p>    </div>
+<span class="badge">2 家媒體報導</span><span class="badge">security</span><span class="badge">microsoft</span><span class="badge">tools</span>      </div>
+      <h3>Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system</h3>
+<p class="summary">Microsoft bolstered its AI cybersecurity offerings this week with the launch of its first AI security model and a new security platform.</p>    </div>
     <div class="thumb">
-      <img src="../img/2026-07-28/4727aab1c37e8429.webp"
+      <img src="../img/2026-07-28/58f409ca0d9593e0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Ars Technica AI</span>
+      <a href="https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms" target="_blank" rel="noopener noreferrer">Microsoft unveils AI security tools it says outperform competing platforms</a>
+      <time datetime="2026-07-27T13:56:14+00:00">07/27 21:56</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system" target="_blank" rel="noopener noreferrer">Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system</a>
+      <time datetime="2026-07-27T10:32:11+00:00">07/27 18:32</time>
+    </li>
+  </ul>
+</article>
+<article id="t0000">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>中國晶片走私案　NVIDIA員工涉案遭基隆地院裁准羈押</h3>
+<p class="summary">台灣檢方針對涉嫌向中國走私AI晶片的案件展開調查，並羈押了一名NVIDIA員工，這使得該美國科技大廠捲入備受矚目的晶片黑市爭議，凸顯全球在防堵先進技術流入中國所面臨的挑戰。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/0ab049011cc0ca50.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=40&amp;id=0000763269_SUA1EDI37QDP2C88H66L2&amp;wpidx=3" target="_blank" rel="noopener noreferrer">中國晶片走私案　NVIDIA員工涉案遭基隆地院裁准羈押</a>
+      <time datetime="2026-07-28T10:24:00+00:00">07/28 18:24</time>
+    </li>
+  </ul>
+</article>
+<article id="t0001">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">wave</span><span class="badge">br...</span>      </div>
+      <h3>AI重新定義物流未來　中光電智能物流「三位一體」打造韌性高效新模式</h3>
+<p class="summary">中光電智能物流表示，隨著生成式AI與AI Agent技術快速發展，智慧物流正從流程自動化邁向「自主化決策」的新時代，將於AI Wave Show 2026以「AI驅動智慧物流與製造自動化」為主題，展現次世代AI技術於工業場域的全方位落地應用。&lt;br...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/1cc107c92afa10ba.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=50&amp;id=0000763274_FGY12F338M1SV43F3IL5W&amp;wpidx=3" target="_blank" rel="noopener noreferrer">AI重新定義物流未來　中光電智能物流「三位一體」打造韌性高效新模式</a>
+      <time datetime="2026-07-28T10:24:00+00:00">07/28 18:24</time>
+    </li>
+  </ul>
+</article>
+<article id="t0002">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">vision</span><span class="badge">tier</span>      </div>
+      <h3>健生擴大AI車載視覺布局　全面切入智慧車供應鏈、啟動五大成長引擎</h3>
+<p class="summary">隨著AI、自駕車與智慧座艙快速發展，汽車正逐步演變為「移動智慧感測平台」。若AI伺服器的核心是GPU，AI車輛的核心便是視覺系統（Vision）。身為主流車廠一級供應商（Tier 1）的健生實業，憑藉逾60年的車用後視系統技術基礎，已由傳統後視鏡製造商全面升級...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/16e52212db6ef5b2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=90&amp;id=0000763268_XH43SP3L5KVCXO9PNVFRN&amp;wpidx=3" target="_blank" rel="noopener noreferrer">健生擴大AI車載視覺布局　全面切入智慧車供應鏈、啟動五大成長引擎</a>
+      <time datetime="2026-07-28T08:57:00+00:00">07/28 16:57</time>
+    </li>
+  </ul>
+</article>
+<article id="t0004">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">cloudflare</span><span class="badge">geo</span><span class="badge">aeo</span>      </div>
+      <h3>AI代理改寫網路流量規則　Cloudflare助力內容變現</h3>
+<p class="summary">生成式AI、AI代理（AI Agent）快速發展，已讓企業與網路的新互動型態產生，同時讓網路流量的本質出現改變，對此全球連通雲公司Cloudflare宣布，將推出全新具資訊分類功能的工具與整合方案，以此協助企業建立對應SEO、GEO、AEO等機制，從而建構...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/a5cea18342361060.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=60&amp;id=0000763254_ETX3YDML4YMC7X5MV9458&amp;wpidx=3" target="_blank" rel="noopener noreferrer">AI代理改寫網路流量規則　Cloudflare助力內容變現</a>
+      <time datetime="2026-07-28T08:03:00+00:00">07/28 16:03</time>
+    </li>
+  </ul>
+</article>
+<article id="t0005">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">sam</span><span class="badge">altman</span><span class="badge">regulation</span>      </div>
+      <h3>行政命令審查期限將至　Sam Altman將赴華府討論AI監管政策</h3>
+<p class="summary">OpenAI執行長Sam Altman預計7月29日、7月30日赴華府會晤白宮官員與跨黨派議員，介紹OpenAI新一代模型並討論人工智慧（AI）監管政策。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/8c18f281c5faa7f5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763198_CAE2S4GQ8IZ4AD933S1WC&amp;wpidx=5" target="_blank" rel="noopener noreferrer">行政命令審查期限將至　Sam Altman將赴華府討論AI監管政策</a>
+      <time datetime="2026-07-28T04:27:00+00:00">07/28 12:27</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">redis</span><span class="badge">hbm</span><span class="badge">kimi</span>      </div>
+      <h3>Redis發布7個更新版本，因應AI模型Kimi K3發現的遠端執行程式碼重大漏洞</h3>
+<p class="summary">繼5月初因應AI發現漏洞發布更新後，開源記憶體型NoSQL資料庫Redis資安團隊於7月23日發布7個更新版本，包括6.2.23、7.2.15、7.4.10，以及8.2.8、8.4.5、8.6.5與8.8.1，修補資安研究公司Bera Buddie透過Moonshot AI所屬AI模型Kimi K3發現的重大漏洞。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/6ccab48d9670c8cf.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/177682" target="_blank" rel="noopener noreferrer">Redis發布7個更新版本，因應AI模型Kimi K3發現的遠端執行程式碼重大漏洞</a>
+      <time datetime="2026-07-28T04:07:01+00:00">07/28 12:07</time>
+    </li>
+  </ul>
+</article>
+<article id="t0009">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">7500</span><span class="badge">funding</span><span class="badge">nvidia</span>      </div>
+      <h3>NVIDIA力保AI建設動能　7,500億美元交易引爆循環融資疑慮</h3>
+<p class="summary">NVIDIA正在推進新一輪人工智慧（AI）相關交易，潛在規模超過7,500億美元。雖然這進一步加快NVIDIA投資步伐，但市場憂心，這類交易可能正在人為推高整個產業的需求和估值。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/531cc21f094f1e5d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763168_N4R21ELH5TBA6I95DLNV4&amp;wpidx=5" target="_blank" rel="noopener noreferrer">NVIDIA力保AI建設動能　7,500億美元交易引爆循環融資疑慮</a>
+      <time datetime="2026-07-28T03:43:00+00:00">07/28 11:43</time>
+    </li>
+  </ul>
+</article>
+<article id="t0012">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">cadence</span><span class="badge">chip</span><span class="badge">eda</span>      </div>
+      <h3>AI晶片設計需求爆發　益華上修2026全年財測</h3>
+<p class="summary">電子設計自動化（EDA）大廠益華電腦（Cadence）最新公布2026年第2季財報，人工智慧（AI）晶片、AI加速器與高效能運算（HPC）帶動設計複雜度快速攀升，推升晶片設計、驗證、先進封裝與系統分析工具需求。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/b59f8a32ee6ed475.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763181_CJY08J7I91TBJ90L2FIGW&amp;wpidx=5" target="_blank" rel="noopener noreferrer">英特爾18A-P、14A迎Cadence AI流程加持　AI晶片設計卡位</a>
+      <time datetime="2026-07-28T03:10:00+00:00">07/28 11:10</time>
+    </li>
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763166_PFG25FF15XW1KM7676NO5&amp;wpidx=5" target="_blank" rel="noopener noreferrer">AI晶片設計需求爆發　益華上修2026全年財測</a>
+      <time datetime="2026-07-28T02:07:00+00:00">07/28 10:07</time>
+    </li>
+  </ul>
+</article>
+<article id="t0015">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">tpu</span><span class="badge">frozen</span><span class="badge">sram</span>      </div>
+      <h3>Google TPU Frozen V2傳改走晶片內建SRAM　挑戰CoWoS封裝路線</h3>
+<p class="summary">Google正打造新一代TPU「Frozen V2」，考慮將SRAM直接寫死（Hard-coding）在晶片上，以縮短運算和新與記憶體間的資料傳輸距離，提升人工智慧（AI）推論與模型運算效率，同時降低對台積電CoWoS等先進封裝技術的依賴。&lt;...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/07e3866caadfda5e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763173_12O25KOF6CQ5B044ZX1NV&amp;wpidx=5" target="_blank" rel="noopener noreferrer">Google TPU Frozen V2傳改走晶片內建SRAM　挑戰CoWoS封裝路線</a>
+      <time datetime="2026-07-28T02:49:00+00:00">07/28 10:49</time>
+    </li>
+  </ul>
+</article>
+<article id="t0016">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">distillation</span>      </div>
+      <h3>中美AI再交鋒　中國商務部回嗆：美企同樣在蒸餾中國AI模型</h3>
+<p class="summary">針對美國官員近日表示，將就中國人工智慧（AI）企業涉嫌透過「模型蒸餾（Model Distillation）」取得美國先進AI模型能力展開調查，並可能以「竊取美國智慧財產權」為由對中國企業實施制裁。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/e9a4dc0bcfe1843e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763171_ZCD0HC0H84OHVQ0QVAVHJ&amp;wpidx=5" target="_blank" rel="noopener noreferrer">中美AI再交鋒　中國商務部回嗆：美企同樣在蒸餾中國AI模型</a>
+      <time datetime="2026-07-28T02:32:00+00:00">07/28 10:32</time>
+    </li>
+  </ul>
+</article>
+<article id="t0017">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">mythos</span><span class="badge">microsoft</span>      </div>
+      <h3>微软推出Mythos竞品：自研全新网络安全专用人工智能</h3>
+<p class="summary">微软于周一发布全新人工智能安全产品 “感知计划（Project Perception）”，依托多款专为网络安全场景打造的自研 AI 模型驱动。微软将这款产品定位成 Anthropic 旗下 Mythos 模型的高性价比替代方案。Mythos 同样依靠人工智能自动排查软件漏洞。（新浪财经）</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/55320352eb9c9c76.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">36氪</span>
+      <a href="https://36kr.com/newsflashes/3915154834494857?f=rss" target="_blank" rel="noopener noreferrer">微软推出Mythos竞品：自研全新网络安全专用人工智能</a>
+      <time datetime="2026-07-28T02:30:22+00:00">07/28 10:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0018">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">times</span><span class="badge">york</span><span class="badge">journalism</span>      </div>
+      <h3>Can the New York Times Save Journalism From Our AI Overlords?</h3>
+<p class="summary">In 2023, the Times sued OpenAI and Microsoft for copyright infringement. They’ve since spent more than $20 million on the case, and publisher A.G. Sulzberger has no plans to stop fighting it.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/a3f0a33f529462f8.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/the-big-interview-podcast-a-g-sulzberger-new-york-times" target="_blank" rel="noopener noreferrer">Can the New York Times Save Journalism From Our AI Overlords?</a>
+      <time datetime="2026-07-28T02:30:00+00:00">07/28 10:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0019">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">api</span><span class="badge">node.js</span><span class="badge">windows</span>      </div>
+      <h3>微软为 Node.js 推出动态 Windows Runtime 语言投影工具，简化原生 API 调用流程</h3>
+<p class="summary">IT之家 7 月 28 日消息，微软发文，宣布为 Node.js 开发动态 Windows Runtime 语言投影工具，允许 Electron 应用及普通 Node.js 应用开发者能够直接通过 JavaScript 或 TypeScript 调用受支持的 Windows 原生 API。 据介绍，该工具能够读取 Windows 提供的 API 元数据，自动生成对应的 JavaScript 接口代码以及 TypeScript 类型定义信息，随后由共享运行环境负责处理实际 API 调用过程。当兼容的 Windows API 元数据发生更新时，开发者只需重新</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/7a541199840fb136.webp"
            alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
            onerror="this.parentNode.remove()">
     </div>
@@ -1204,15 +812,367 @@ article{scroll-margin-top:66px}
   <ul class="links">
     <li>
       <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/982/613.htm" target="_blank" rel="noopener noreferrer">2026 世界物联网 500 强公布，华为、SpaceX、中国航天科技集团排名金榜前三</a>
-      <time datetime="2026-07-28T00:11:10+00:00">07/28 08:11</time>
+      <a href="https://www.ithome.com/0/982/713.htm" target="_blank" rel="noopener noreferrer">微软为 Node.js 推出动态 Windows Runtime 语言投影工具，简化原生 API 调用流程</a>
+      <time datetime="2026-07-28T02:15:50+00:00">07/28 10:15</time>
+    </li>
+  </ul>
+</article>
+<article id="t0020">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">markham</span><span class="badge">sk-hynix</span><span class="badge">gam</span>      </div>
+      <h3>机构：投资者持仓仍过于拥挤，芯片股还没跌到“抄底”时刻</h3>
+<p class="summary">GAM全球股票主管Paul Markham表示，由于投资者持仓仍然过于集中，当前全球芯片股的大幅抛售尚不足以构成逢低买入的机会。Markham表示，“现在实在有太多人站在同一边，持仓过于拥挤。”不过，作为GAM全球股票业务负责人，Markham仍认为人工智能投资的长期逻辑并未发生改变。他表示，部分AI相关企业的基本面依然稳健，随着利润率持续改善、产品定价能力增强，投资者仍应愿意给予SK海力士等公司更高的估值。（新浪财经）</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/55320352eb9c9c76.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">36氪</span>
+      <a href="https://36kr.com/newsflashes/3915132358956418?f=rss" target="_blank" rel="noopener noreferrer">机构：投资者持仓仍过于拥挤，芯片股还没跌到“抄底”时刻</a>
+      <time datetime="2026-07-28T02:05:30+00:00">07/28 10:05</time>
+    </li>
+  </ul>
+</article>
+<article id="t0021">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">ipo</span><span class="badge">billionaires</span><span class="badge">coming.</span>      </div>
+      <h3>Silicon Valley’s Next IPO Billionaires Are Coming. Nonprofits Are Ready for Them</h3>
+<p class="summary">Anthropic and OpenAI employees are expected to give generously after their companies go public. “It’s going to be a wild ride,” says one nonprofit leader.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/339f2cb7101b0e0e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/nonprofits-are-getting-ready-for-the-funding-anthropalypse" target="_blank" rel="noopener noreferrer">Silicon Valley’s Next IPO Billionaires Are Coming. Nonprofits Are Ready for Them</a>
+      <time datetime="2026-07-28T02:00:00+00:00">07/28 10:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0022">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">amazon</span><span class="badge">500</span>      </div>
+      <h3>終結沃爾瑪 12 年霸權！亞馬遜登頂《財富》500 強，貝佐斯揭成長關鍵：AI 與晶片布局</h3>
+<p class="summary">亞馬遜在最新《財富》世界 500 強榜單登上全球營收第一，終結沃爾瑪連 12 年稱霸紀錄，也讓這家從貝佐斯貝爾 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/abc39876275390d5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/07/28/amazons-jeff-bezos-on-how-his-garage-startup-became-the-largest-company-in-the-world-by-revenue" target="_blank" rel="noopener noreferrer">終結沃爾瑪 12 年霸權！亞馬遜登頂《財富》500 強，貝佐斯揭成長關鍵：AI 與晶片布局</a>
+      <time datetime="2026-07-28T01:50:06+00:00">07/28 09:50</time>
+    </li>
+  </ul>
+</article>
+<article id="t0023">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">copilot</span><span class="badge">outlook</span><span class="badge">windows</span>      </div>
+      <h3>微软罕见听劝：Outlook 邮件 Copilot 搜索功能已取消上线计划</h3>
+<p class="summary">IT之家 7 月 28 日消息，据科技媒体 Windows Latest 今天报道，微软于今年 4 月宣布，Outlook 邮件搜索菜单将集成 Copilot，让 AI 整理用户最常使用的邮件和日历。 IT之家从原报道获悉，该功能于今年 6 月开始逐步推送，覆盖 Windows、Android、iOS 和网页平台。不过根据用户反馈，这项功能的成效并不算好。主要原因是 Copilot 搜索结果会呈现在常规搜索结果上方， 导致用户必须向下滚动 ， 才能找到真正的搜索结果 。 微软上周就此表示：“ 我们目前决定不再继续推进这一功能 ，由此带来的一切不便，我们深</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/5fdef9f9d086c80e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/0/982/686.htm" target="_blank" rel="noopener noreferrer">微软罕见听劝：Outlook 邮件 Copilot 搜索功能已取消上线计划</a>
+      <time datetime="2026-07-28T01:49:18+00:00">07/28 09:49</time>
+    </li>
+  </ul>
+</article>
+<article id="t0024">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">ceo</span>      </div>
+      <h3>英伟达 CEO 黄仁勋：AI 消灭的是任务，而非工作</h3>
+<p class="summary">IT之家 7 月 28 日消息，英伟达 CEO 黄仁勋并不认同所谓“白领大屠杀”的说法。在 Y Combinator 创业学校（Startup School）的演讲中，黄仁勋回应了外界对 AI 的种种悲观预测。他强调，应当区分“任务（tasks）”和“工作（jobs）”，AI 消除的是前者，而不是后者。 “每一份工作都会发生变化，同时也会诞生大量新工作。”黄仁勋表示，“认为 AI 会摧毁就业岗位的叙事，恰恰把事情说反了。” 黄仁勋举了一个“任务”的例子：一些客服人员负责接听电话、处理投诉，并根据数据库中的信息进行回复。“这种任务将会被自动化取代。”他说。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/d900a882ed16fc64.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/0/982/685.htm" target="_blank" rel="noopener noreferrer">英伟达 CEO 黄仁勋：AI 消灭的是任务，而非工作</a>
+      <time datetime="2026-07-28T01:45:52+00:00">07/28 09:45</time>
+    </li>
+  </ul>
+</article>
+<article id="t0025">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">neo-x1</span><span class="badge">9955</span><span class="badge">modt</span>      </div>
+      <h3>极摩客推出 14.6L MoDT 游戏台式整机 NEO-X1，至高 9955HX3D + 5070</h3>
+<p class="summary">IT之家 7 月 28 日消息，极摩客 (GMKtec) 今日正式发布了 NEO-X1 系列 MoDT 游戏台式整机。其 采用 AMD &#34;Fire Range&#34; 锐龙 9000HX 处理器搭配 NVIDIA GeForce RTX 50 系列桌面端显卡 。 NEO-X1 系列机身体积 14.6L， 内置一体式液冷散热系统 和 850W 全模组金牌电源， 主板搭载 13 相供电 ，支持 160W 处理器性能释放，提供 2 个 PCIe Gen5 SSD 盘位，支持 2.5GbE LAN 和 Wi-Fi 7 WLAN。 NEO-X1 标准版选用 AMD 锐龙</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/a65281aee8f4ca05.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/0/982/682.htm" target="_blank" rel="noopener noreferrer">极摩客推出 14.6L MoDT 游戏台式整机 NEO-X1，至高 9955HX3D + 5070</a>
+      <time datetime="2026-07-28T01:38:01+00:00">07/28 09:38</time>
+    </li>
+  </ul>
+</article>
+<article id="t0026">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">tgv</span><span class="badge">intel</span><span class="badge">corning</span>      </div>
+      <h3>從手機玻璃到AI晶片　藍思科技攜手英特爾合作TGV先進封裝</h3>
+<p class="summary">國際AI領域大廠近來先後與中國製造龍頭深度綁定，欲落地新一代先進封裝技術。繼面板龍頭京東方日前與康寧（Corning）在玻璃基板領域達成戰略合作後，藍思科技近來與英特爾（Intel）也達成戰略合作，雙方將共同探索推動先進半導體封裝領域的新技術發展。...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/cb64e5574a826212.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000763153_LKN2Q7ON40UI7C41QG9L7&amp;wpidx=5" target="_blank" rel="noopener noreferrer">從手機玻璃到AI晶片　藍思科技攜手英特爾合作TGV先進封裝</a>
+      <time datetime="2026-07-28T01:35:00+00:00">07/28 09:35</time>
+    </li>
+  </ul>
+</article>
+<article id="t0027">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2022</span>      </div>
+      <h3>快沒存本的絕版書也照碎！AI 公司大買舊書掃完就毀、Anthropic 狂掃 2022 年前舊書割脊碎紙，純人類文本正在絕跡</h3>
+<p class="summary">書這個東西正在消失，而且是被主動碾碎的。有些絕版書全世界沒剩幾本，AI 公司照買照掃照碎。Anthropic 的 Project Panama 向二手書商大批收購實體書，用液壓機割開書脊、逐頁掃描後送進回收，2025 年 6 月獲法院裁定屬合理使用。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/71beae0b8f4763f3.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/41951-anthropic-destroyed-books-for-ai-training" target="_blank" rel="noopener noreferrer">快沒存本的絕版書也照碎！AI 公司大買舊書掃完就毀、Anthropic 狂掃 2022 年前舊書割脊碎紙，純人類文本正在絕跡</a>
+      <time datetime="2026-07-28T01:34:00+00:00">07/28 09:34</time>
+    </li>
+  </ul>
+</article>
+<article id="t0028">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">his</span><span class="badge">rival</span><span class="badge">hynix</span>      </div>
+      <h3>Samsung’s chip workers are jumping ship to rival SK Hynix</h3>
+<p class="summary">Lee, an engineer at Samsung’s semiconductor division, clocks out when his shift ends. He used to work longer hours, going the extra mile to excel at his projects. But lately, he’s been coming straight home to work on his job application for the chipmaker’s South Korean rival SK H</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/f357c967e6fc6c68.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">MIT Technology Review AI</span>
+      <a href="https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix" target="_blank" rel="noopener noreferrer">Samsung’s chip workers are jumping ship to rival SK Hynix</a>
+      <time datetime="2026-07-28T01:18:57+00:00">07/28 09:18</time>
+    </li>
+  </ul>
+</article>
+<article id="t0029">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">agi</span><span class="badge">amazon</span><span class="badge">layoff</span>      </div>
+      <h3>消息称亚马逊大规模调整 AI 战略，集中资源攻坚前沿大模型</h3>
+<p class="summary">IT之家 7 月 28 日消息，据 Business Insider 报道，知情人士透露，亚马逊正在对其人工智能战略进行大规模调整，包括逐步停止开发多款自研 AI 模型、重组相关团队，并将更多工程师和资源集中投入到一项全新的前沿模型战略，以增强公司在顶级 AI 模型领域的竞争力。 IT之家注意到，此次调整紧随亚马逊上周对通用人工智能（AGI）部门裁员，以及关闭 AGI Lab 研究团队之后。AGI Lab 成立于 2024 年，当时亚马逊吸纳了 AI 初创公司 Adept 的大部分核心团队，并以此组建了这一研究机构。 这轮重组意味着亚马逊正在重新聚焦 A</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/dced7ef3c0d754a2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/0/982/676.htm" target="_blank" rel="noopener noreferrer">消息称亚马逊大规模调整 AI 战略，集中资源攻坚前沿大模型</a>
+      <time datetime="2026-07-28T01:18:51+00:00">07/28 09:18</time>
+    </li>
+  </ul>
+</article>
+<article id="t0030">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">harmonyos</span><span class="badge">beta</span><span class="badge">bytedance</span>      </div>
+      <h3>华为 HarmonyOS 7 花粉 Beta 版超百项更新曝光：全局沉浸空间、小艺基于 Agentic 全面进化重构等</h3>
+<p class="summary">IT之家 7 月 28 日消息，华为今日开启了鸿蒙 HarmonyOS 7 花粉 Beta 版报名，随后新版本便已开启推送，带来了大量新特性， 系统包大小也来到了 10GB 左右（部分机型更是冲破 20GB） 。 博主 @Adak封狼居胥 今日早些时候透露， 此次花粉 Beta 版将带来超百项更新 。IT之家注意到，博主刚刚再度发文，分享了 HarmonyOS 7 更详细的更新内容： 本次 HarmonyOS 7 首要升级就是 首眼沉浸光感升级为全局沉浸空间 。过往无论是鸿蒙 5 的光效还是鸿蒙 6 的光感，都主要聚焦于各场景首页即首眼设计，本次鸿蒙 7</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/85052b513a4f5022.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/0/982/673.htm" target="_blank" rel="noopener noreferrer">华为 HarmonyOS 7 花粉 Beta 版超百项更新曝光：全局沉浸空间、小艺基于 Agentic 全面进化重构等</a>
+      <time datetime="2026-07-28T01:16:40+00:00">07/28 09:16</time>
+    </li>
+  </ul>
+</article>
+<article id="t0031">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">deepfake</span>      </div>
+      <h3>歐盟 AI 透明度新制 8 月上路，AI 生成內容須依法標示</h3>
+<p class="summary">歐盟人工智慧（AI）透明度新規定將於 8 月 2 日實施，屆時深偽影音（Deepfake）及其他 AI 生成內 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/6d3be23dbac9f6c4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/07/28/eu-rules-require-ai-generated-content-to-be-labeled" target="_blank" rel="noopener noreferrer">歐盟 AI 透明度新制 8 月上路，AI 生成內容須依法標示</a>
+      <time datetime="2026-07-28T01:10:30+00:00">07/28 09:10</time>
+    </li>
+  </ul>
+</article>
+<article id="t0032">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>首爾 AI 監控防輕生，漢江救援率升逾 99%</h3>
+<p class="summary">韓國首都首爾在漢江橋梁設置人工智慧（AI）監視系統，自動辨識疑似企圖輕生者並即時通報救援人員，使得漢江救援率從 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/6bf410f1c5455a4c.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/07/28/ai-cameras-spot-suicide-attempts-in-south-koreas-capital" target="_blank" rel="noopener noreferrer">首爾 AI 監控防輕生，漢江救援率升逾 99%</a>
+      <time datetime="2026-07-28T01:10:09+00:00">07/28 09:10</time>
+    </li>
+  </ul>
+</article>
+<article id="t0034">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">spotify</span><span class="badge">student</span><span class="badge">discount</span>      </div>
+      <h3>Get Spotify&#39;s student discount plus Hulu for just $6 a month - here&#39;s how</h3>
+<p class="summary">If you&#39;re a college student, Spotify has an exclusive bundle that can save you cash on music and streaming. Here&#39;s how to get it.</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/article/how-to-get-a-spotify-premium-student-discount" target="_blank" rel="noopener noreferrer">Get Spotify&#39;s student discount plus Hulu for just $6 a month - here&#39;s how</a>
+      <time datetime="2026-07-28T01:00:35+00:00">07/28 09:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0035">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">sam</span><span class="badge">altman</span>      </div>
+      <h3>Sam Altman 認為 AI「奇點已到」，多位專家卻吵翻：何時才算真正跨越臨界點？</h3>
+<p class="summary">OpenAI 執行長 Sam Altman 近日在《Relentless》Podcast 節目中表示，人類現在已經身處 AI 奇點之中。他回憶，十年前，超級智慧對他和同事而言，仍像是遙遠夢想，大家甚至不指望能在有生之年目睹。然而，如今這一切已成為現實。 所謂的「奇點」，在一般媒體與學界的定義中，通常被用來描述 AI 快速改進自身，以至於人類無法再可靠地理解、預測或控制後續發展的臨界點。然而，Sam Altman 對「奇點」的理解與傳統定義有所不同，他在 2025 年 6 月發表的文章《溫柔奇點》（The Gentle Singularity）中指出，這場</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/0da8f8e3102f3733.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/07/28/ai-singularity-experts-disagree-sam-altman" target="_blank" rel="noopener noreferrer">Sam Altman 認為 AI「奇點已到」，多位專家卻吵翻：何時才算真正跨越臨界點？</a>
+      <time datetime="2026-07-28T00:51:28+00:00">07/28 08:51</time>
+    </li>
+  </ul>
+</article>
+<article id="t0036">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>內鬼抓到了！涉嫌走私輝達高階 AI 晶片至中國，輝達經理羈押禁見</h3>
+<p class="summary">基隆地檢署持續偵辦國內業者涉嫌違法將高階 AI 晶片出口中國，並於今（28 日）公布最新進度，已於 24 日偵 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-07-28/1efa8a1cb239382f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/07/28/nvidia-taiwan-b300-smuggling" target="_blank" rel="noopener noreferrer">內鬼抓到了！涉嫌走私輝達高階 AI 晶片至中國，輝達經理羈押禁見</a>
+      <time datetime="2026-07-28T00:48:31+00:00">07/28 08:48</time>
+    </li>
+  </ul>
+</article>
+<article id="t0076">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">safety</span><span class="badge">companies</span><span class="badge">cybersecurity</span>      </div>
+      <h3>Is open source the answer to rogue AI agents? Nvidia&#39;s new alliance says yes</h3>
+<p class="summary">As AI cybersecurity incidents ramp up, companies are racing to find a fix.</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/article/is-open-source-the-answer-to-rogue-ai-security-incidents-nvidia-thinks-so" target="_blank" rel="noopener noreferrer">Is open source the answer to rogue AI agents? Nvidia&#39;s new alliance says yes</a>
+      <time datetime="2026-07-27T07:52:15+00:00">07/27 15:52</time>
+    </li>
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/article/assume-ai-cybersecurity-attacks-are-the-future-43-percent-of-companies-have-already-experienced-it" target="_blank" rel="noopener noreferrer">Assume AI cybersecurity attacks are the future: 43% of companies have already experienced it</a>
+      <time datetime="2026-07-27T06:00:40+00:00">07/27 14:00</time>
     </li>
   </ul>
 </article>
 </div>
 <footer>
   <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
-  <div class="srcs">來源：36氪 · Ars Technica AI · DIGITIMES · INSIDE · IT之家 · MIT Technology Review AI · Simon Willison · TechCrunch AI · The Verge AI · Wired AI · ZDNet AI · iThome · 數位時代 · 科技新報 TechNews</div>
+  <div class="srcs">來源：36氪 · Ars Technica AI · DIGITIMES · INSIDE · IT之家 · MIT Technology Review AI · Simon Willison · TechCrunch AI · TechOrange 科技報橘 · The Verge AI · Wired AI · ZDNet AI · iThome · 數位時代 · 科技新報 TechNews</div>
 </footer>
 </div>
 </body>

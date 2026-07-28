@@ -8,10 +8,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader
 
 from .cluster import Topic
 from .fetch import Article
+from .social import SocialDigest
 
 CATEGORY_ORDER = [
     "模型與研究", "產品與應用", "企業與資金", "晶片與基礎設施",
@@ -23,7 +24,9 @@ TEMPLATES = Path(__file__).resolve().parent.parent / "templates"
 def _env() -> Environment:
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES)),
-        autoescape=select_autoescape(["html"]),
+        # 一律開 autoescape：select_autoescape(["html"]) 對 *.html.j2 這種副檔名
+        # 不會生效，RSS 內容裡的角括號會直接注入頁面
+        autoescape=True,
         trim_blocks=True,
         lstrip_blocks=True,
     )
@@ -101,8 +104,8 @@ def render(topics: list[Topic], out_dir: Path, *, site_title: str, tz: str,
         groups=_grouped(topics),
         sources=sorted({a.source for t in topics for a in t.articles}),
         tz=tz,
-        is_archive=False,
-        img_prefix="",
+        section="news",
+        root="",
     )
 
     index = out_dir / "index.html"
@@ -114,7 +117,7 @@ def render(topics: list[Topic], out_dir: Path, *, site_title: str, tz: str,
             template.render(
                 site_title=site_title, meta=meta, groups=_grouped(topics),
                 sources=sorted({a.source for t in topics for a in t.articles}),
-                tz=tz, is_archive=True, img_prefix="../",
+                tz=tz, section="news", root="../",
             ),
             encoding="utf-8",
         )
@@ -134,3 +137,36 @@ def _render_archive_index(out_dir: Path, site_title: str) -> None:
     )
     html = _env().get_template("archive.html.j2").render(site_title=site_title, days=days)
     (out_dir / "archive" / "index.html").write_text(html, encoding="utf-8")
+
+
+def render_social(digest: SocialDigest, out_dir: Path, *, geo: str = "TW",
+                  archive: bool = True) -> Path:
+    """社群熱門頁：docs/social/index.html（+ 每日存檔）。"""
+    social_dir = out_dir / "social"
+    (social_dir / "archive").mkdir(parents=True, exist_ok=True)
+
+    meta = {
+        "date": digest.date, "generated_at": digest.generated_at,
+        "window_hours": digest.window_hours, "geo": geo,
+    }
+    template = _env().get_template("social.html.j2")
+
+    def build(root: str) -> str:
+        return template.render(meta=meta, d=digest, tz=digest.timezone,
+                               section="social", root=root)
+
+    index = social_dir / "index.html"
+    index.write_text(build("../"), encoding="utf-8")
+
+    if archive:
+        (social_dir / "archive" / f"{digest.date}.html").write_text(
+            build("../../"), encoding="utf-8")
+        days = sorted((p.stem for p in (social_dir / "archive").glob("*.html")
+                       if p.stem != "index"), reverse=True)
+        html = _env().get_template("archive.html.j2").render(
+            site_title="社群熱門", days=days)
+        (social_dir / "archive" / "index.html").write_text(html, encoding="utf-8")
+
+    (social_dir / "data.json").write_text(
+        json.dumps(digest.to_dict(), ensure_ascii=False, indent=1), encoding="utf-8")
+    return index

@@ -16,7 +16,7 @@ import hashlib
 import re
 import shutil
 from concurrent.futures import ThreadPoolExecutor
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime, timedelta
 from io import BytesIO
 from pathlib import Path
@@ -156,8 +156,14 @@ def _download_thumb(url: str, dest: Path, cfg: ImageConfig, referer: str = "",
             if im.width < 200 or im.height < 120:   # 太小的圖放大只會模糊
                 return False
             im = im.convert("RGB")
+            # 不放大：來源比目標小的話（例如 Google Trends 的 275x183 縮圖），
+            # 按來源尺寸裁成同樣比例，避免放大變模糊
+            tw, th = cfg.width, cfg.height
+            if im.width < tw and im.height < th:
+                scale = min(im.width / tw, im.height / th)
+                tw, th = max(1, int(tw * scale)), max(1, int(th * scale))
             # fit＝等比縮放後居中裁切，卡片尺寸才會一致
-            thumb = ImageOps.fit(im, (cfg.width, cfg.height), Image.Resampling.LANCZOS)
+            thumb = ImageOps.fit(im, (tw, th), Image.Resampling.LANCZOS)
             dest.parent.mkdir(parents=True, exist_ok=True)
             thumb.save(dest, "WEBP", quality=cfg.quality, method=6)
         return True
@@ -256,3 +262,37 @@ def attach(topics: list["Topic"], cfg: ImageConfig, out_dir: Path, date: str) ->
     pruned = _prune(img_root, cfg.keep_days)
     if pruned:
         print(f"  · 清掉 {pruned} 個超過 {cfg.keep_days} 天的圖片目錄")
+
+
+def localize(urls: list[str], cfg: ImageConfig, out_dir: Path, date: str,
+             ratio: tuple[int, int] | None = None) -> dict[str, str]:
+    """把一批遠端圖片下載成縮圖，回傳 {原網址: docs 下的相對路徑}。
+
+    給「社群熱門」頁用（Google Trends 的熱搜圖、Bluesky 貼文圖）。下載失敗的
+    網址不會出現在回傳的 dict 裡，呼叫端就當成沒有圖處理。
+    """
+    if cfg.mode == "off" or not urls:
+        return {}
+    unique = [u for u in dict.fromkeys(urls) if u and u.startswith("http")]
+    if cfg.mode == "hotlink":
+        return {u: u for u in unique}
+
+    shot = cfg
+    if ratio:
+        width = cfg.width
+        shot = replace(cfg, width=width, height=max(1, round(width * ratio[1] / ratio[0])))
+
+    day_dir = out_dir / "img" / date
+
+    def work(url: str) -> tuple[str, str]:
+        name = hashlib.sha1(url.encode()).hexdigest()[:16] + ".webp"
+        dest = day_dir / name
+        if dest.exists() or _download_thumb(url, dest, shot):
+            return url, f"img/{date}/{name}"
+        return url, ""
+
+    with ThreadPoolExecutor(max_workers=cfg.workers) as pool:
+        done = dict(pool.map(work, unique))
+    ok = {u: rel for u, rel in done.items() if rel}
+    print(f"  · 社群圖片：{len(ok)}/{len(unique)} 張處理成功")
+    return ok

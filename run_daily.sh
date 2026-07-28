@@ -56,6 +56,13 @@ import json;d=json.load(open('data/latest.json'))
 print(sum(1 for t in d['topics'] if t['llm_enriched']))" 2>/dev/null || echo "?")
 echo "→ 產出 ${TOPICS} 個主題（其中 ${ENRICHED} 個有 LLM 摘要）"
 
+if [[ -f data/social.json ]]; then
+  SOCIAL=$("$PY" -c "
+import json;d=json.load(open('data/social.json'))
+print(f\"{len(d['trends'])} 熱搜 / {len(d['bsky_trends'])} 話題 / {len(d['bsky_posts'])} 貼文\")" 2>/dev/null || echo "?")
+  echo "→ 社群熱門：${SOCIAL}"
+fi
+
 if [[ "$ENRICHED" == "0" && "$TOPICS" != "0" ]]; then
   echo "⚠ 沒有任何 LLM 摘要 —— 檢查 .env 或端點：python build.py --llm-test"
 fi
