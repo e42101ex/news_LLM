@@ -75,6 +75,41 @@ url = "https://36kr.com/feed"
 lang = "zh"
 ai_only = false
 
+[[sources]]
+name = "TechOrange 科技報橘"
+url = "https://techorange.com/feed/"
+lang = "zh"
+ai_only = false
+
+# 以下三個站沒有可用的 RSS，改用其他方式抓：
+# type = "html"    → 抓列表頁符合 link_pattern 的連結，再逐篇讀 og / JSON-LD metadata
+# type = "wp_json" → WordPress REST API（RSS 被 Cloudflare 擋 403 時的替代）
+[[sources]]
+name = "DIGITIMES"
+type = "html"
+url = "https://www.digitimes.com.tw/tech/"
+link_pattern = "shwnws\\.asp\\?.*id="
+max_items = 40
+lang = "zh"
+ai_only = false
+
+[[sources]]
+name = "數位時代"
+type = "html"
+url = "https://www.bnext.com.tw/categories/ai"
+link_pattern = "/article/\\d+"
+max_items = 25
+lang = "zh"
+ai_only = false
+
+[[sources]]
+name = "坂本電腦"
+type = "wp_json"
+url = "https://www.sakamoto.blog/wp-json/wp/v2/posts"
+max_items = 20
+lang = "zh"
+ai_only = false
+
 # ---------------- 英文來源 ----------------
 [[sources]]
 name = "TechCrunch AI"

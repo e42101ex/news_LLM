@@ -1,6 +1,6 @@
 # auto_report_news · AI 每日新聞彙整
 
-抓取 20 個中英文科技媒體的 RSS，把**講同一件事的報導併成一個主題**，排版成靜態網頁後部署到 GitHub Pages。
+抓取 24 個中英文科技媒體，把**講同一件事的報導併成一個主題**，排版成靜態網頁後部署到 GitHub Pages。
 
 ```
 RSS 抓取 ──► 同主題分群 ──► 摘要（三種模式任選） ──► HTML ──► GitHub Pages
@@ -9,7 +9,7 @@ fetch.py     cluster.py     llm.py／Claude／不用      render.py    deploy.sh
 
 每則主題會自動配一張縮圖（RSS 帶的圖 → 抓不到就用文章頁的 og:image），實測覆蓋率約 80%。
 
-分群完全靠演算法（TF-IDF + cosine + union-find），**不需要 API key**，而且處理過：
+分群完全靠演算法（TF-IDF + cosine + 質心式分群），**不需要 API key**，而且處理過：
 
 - **簡繁差異**：`英伟达`／`輝達`／`NVIDIA` 會收斂成同一個 token（用 opencc + 實體同義詞表）
 - **中英夾雜**：同一則新聞被中文媒體與英文媒體各報一次也能併在一起
@@ -38,8 +38,21 @@ open docs/index.html
 | `python curate.py merge A B` | 手動把 B 併進 A |
 | `python curate.py set A --title … --importance 5` | 手動改寫某個主題 |
 
-來源、時間範圍、分群門檻、模型都在 `config.toml`；要加來源就多一段 `[[sources]]`
-（綜合媒體設 `ai_only = false`，會自動用 AI 關鍵字過濾）。
+來源、時間範圍、分群門檻、模型都在 `config.toml`。
+
+### 三種來源型態
+
+| `type` | 適用 | 需要的欄位 |
+| --- | --- | --- |
+| `rss`（預設） | 有 RSS 的站台 | `url` 指向 feed |
+| `html` | **沒有 RSS 的站台**：抓列表頁連結，再逐篇讀 og / JSON-LD metadata | `url` 指向列表頁、`link_pattern`（文章網址的正則）、`max_items` |
+| `wp_json` | WordPress 站但 RSS 被擋（如 Cloudflare 403） | `url` 指向 `/wp-json/wp/v2/posts` |
+
+綜合媒體設 `ai_only = false`，會自動用 AI 關鍵字過濾。`html` 型態的文章頁 metadata
+會快取在 `data/pagecache.json`（保留 21 天），所以每天只有新文章需要連線。
+
+目前的非 RSS 來源：DIGITIMES 與數位時代（兩家都沒有可用 RSS —— 數位時代的
+feedburner 停在 2009 年）走 `html`；坂本電腦的 `/feed` 被 Cloudflare 擋 403，走 `wp_json`。
 
 ## 摘要的三種模式
 
@@ -199,7 +212,11 @@ data/latest.json         中繼資料，摘要階段的交接點
 
 ## 已知限制
 
-- 分群是機器判定，偶爾會漏併或誤併；`curate.py merge` 就是為了補這一刀。
+- 分群是機器判定，偶爾會漏併或誤併；`curate.py merge` / `curate.py split` 就是為了補這一刀。
+  演算法用質心式分群（新文章要和整群的質心夠像才會加入），比 single-linkage
+  不容易把不相干的新聞串成一團，但邊界案例仍需人工判斷。
+- 坂本電腦大約每月才發一篇文，在 30 小時的收錄範圍內幾乎不會出現；留著不影響
+  其他來源（每天多兩個 HTTP 請求）。
 - 週末與台灣時間的清晨，英文媒體常常沒有新文章，這時 `--hours 48` 比較合適。
 - RSS 來源會改網址或關閉。抓不到的來源只會印警告，不會中斷整個流程；
   長期抓不到就直接從 `config.toml` 移掉。

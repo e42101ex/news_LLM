@@ -181,23 +181,23 @@ def _cosine(a: dict[str, float], b: dict[str, float]) -> float:
     return sum(weight * b.get(tok, 0.0) for tok, weight in a.items())
 
 
-class _UnionFind:
-    def __init__(self, n: int) -> None:
-        self.parent = list(range(n))
+def _add(centroid_sum: dict[str, float], vec: dict[str, float]) -> None:
+    for tok, weight in vec.items():
+        centroid_sum[tok] = centroid_sum.get(tok, 0.0) + weight
 
-    def find(self, x: int) -> int:
-        while self.parent[x] != x:
-            self.parent[x] = self.parent[self.parent[x]]
-            x = self.parent[x]
-        return x
 
-    def union(self, a: int, b: int) -> None:
-        ra, rb = self.find(a), self.find(b)
-        if ra != rb:
-            self.parent[rb] = ra
+def _normalized(vec: dict[str, float]) -> dict[str, float]:
+    norm = math.sqrt(sum(v * v for v in vec.values())) or 1.0
+    return {k: v / norm for k, v in vec.items()}
 
 
 def cluster(articles: list[Article], threshold: float = 0.26) -> list[Topic]:
+    """把講同一件事的文章分到同一群。
+
+    用「質心式（leader）分群」而非 single-linkage：一篇文章要加入某群，必須和
+    該群『整體的質心』夠像。single-linkage 只要和群裡任一篇像就會合併，文章量
+    一大就會串成一團（例如把「Claude 對話外洩」和「Verizon 暗光纖交易」併在一起）。
+    """
     if not articles:
         return []
 
@@ -205,11 +205,10 @@ def cluster(articles: list[Article], threshold: float = 0.26) -> list[Topic]:
     docs = [tokenize(f"{a.title} {a.title} {a.summary}") for a in articles]
     vectors, df = _vectors(docs)
     token_sets = [set(d) for d in docs]
-
     idf = {tok: math.log((len(docs) + 1) / (count + 1)) for tok, count in df.items()}
 
     def shares_signature(left: int, right: int) -> bool:
-        """判斷兩篇是否共享『同一個主角 + 具辨識度的細節』。
+        """兩篇是否共享『同一個主角 + 具辨識度的細節』。
 
         例如 @nvidia + vera + eda，或 @nvidia + 2500（億美元）。這種組合幾乎
         一定是同一則新聞，即使一篇是英文、一篇是簡體中文，cosine 也不會高。
@@ -228,44 +227,72 @@ def cluster(articles: list[Article], threshold: float = 0.26) -> list[Topic]:
                 distinctive += 1
         return distinctive >= 2
 
-    # 只比較共享至少一個 token 的文章對，避免 O(n²) 全比
-    inverted: dict[str, list[int]] = defaultdict(list)
-    for idx, vec in enumerate(vectors):
-        # 取權重最高的 token 建索引，足以抓到候選對
-        for tok in sorted(vec, key=vec.get, reverse=True)[:14]:
-            inverted[tok].append(idx)
+    # 新的排在前面當「群首」，比較容易長出以最新報導為代表的主題
+    order = sorted(range(len(articles)), key=lambda i: articles[i].published, reverse=True)
 
-    candidates: set[tuple[int, int]] = set()
-    for idxs in inverted.values():
-        if len(idxs) > 60:      # 極常見的 token 沒有區辨力
-            continue
-        for i, left in enumerate(idxs):
-            for right in idxs[i + 1:]:
-                candidates.add((min(left, right), max(left, right)))
+    groups: list[dict] = []      # {members: [idx], sum: 質心累加, centroid: 正規化質心}
+    for idx in order:
+        best, best_sim = None, 0.0
+        for group in groups:
+            sim = _cosine(vectors[idx], group["centroid"])
+            if sim > best_sim:
+                best, best_sim = group, sim
 
-    uf = _UnionFind(len(articles))
-    for left, right in candidates:
-        score = _cosine(vectors[left], vectors[right])
-        if score >= threshold or (score >= threshold * 0.35 and shares_signature(left, right)):
-            uf.union(left, right)
+        join = False
+        if best is not None:
+            if best_sim >= threshold:
+                join = True
+            elif best_sim >= threshold * 0.35:
+                # 相似度不足時的例外：跨語言／跨簡繁的同一則新聞。要求和群裡
+                # 「每一篇」都共享主角＋辨識細節，避免又變成鏈式誤併。
+                join = all(shares_signature(idx, member) for member in best["members"])
 
-    groups: dict[int, list[int]] = defaultdict(list)
-    for idx in range(len(articles)):
-        groups[uf.find(idx)].append(idx)
+        if join:
+            best["members"].append(idx)
+            _add(best["sum"], vectors[idx])
+            best["centroid"] = _normalized(best["sum"])
+        else:
+            centroid_sum = dict(vectors[idx])
+            groups.append({"members": [idx], "sum": centroid_sum,
+                           "centroid": _normalized(centroid_sum)})
+
+    # 貪婪分配會受處理順序影響：先形成的群可能把後來更適合別群的文章吸走。
+    # 做兩輪「重新分配到最近質心」（k-means 式）修正，只在明確更好時才搬動。
+    for _ in range(2):
+        moved = 0
+        for group in groups:
+            for idx in list(group["members"]):
+                if len(group["members"]) == 1:
+                    continue
+                current = _cosine(vectors[idx], group["centroid"])
+                target, target_sim = None, current
+                for other in groups:
+                    if other is group:
+                        continue
+                    sim = _cosine(vectors[idx], other["centroid"])
+                    if sim > target_sim:
+                        target, target_sim = other, sim
+                # 只有「新群明顯更像」且超過門檻才搬，避免破壞跨語言的例外合併
+                if target is not None and target_sim >= threshold and target_sim > current + 0.05:
+                    group["members"].remove(idx)
+                    target["members"].append(idx)
+                    for holder in (group, target):
+                        holder["sum"] = {}
+                        for member in holder["members"]:
+                            _add(holder["sum"], vectors[member])
+                        holder["centroid"] = _normalized(holder["sum"])
+                    moved += 1
+        if not moved:
+            break
+    groups = [g for g in groups if g["members"]]
 
     topics: list[Topic] = []
-    for root, idxs in groups.items():
-        members = [articles[i] for i in idxs]
-        members.sort(key=lambda a: a.published, reverse=True)
+    for n, group in enumerate(groups):
+        idxs = group["members"]
+        members = sorted((articles[i] for i in idxs), key=lambda a: a.published, reverse=True)
 
-        # 代表標題：跟群內其他文章平均相似度最高的那篇（最「中心」）
-        if len(idxs) == 1:
-            lead = idxs[0]
-        else:
-            lead = max(
-                idxs,
-                key=lambda i: sum(_cosine(vectors[i], vectors[j]) for j in idxs if j != i),
-            )
+        # 代表標題：和質心最接近的那篇（最能代表整群）
+        lead = max(idxs, key=lambda i: _cosine(vectors[i], group["centroid"]))
         rep = articles[lead]
 
         merged: Counter[str] = Counter()
@@ -276,14 +303,13 @@ def cluster(articles: list[Article], threshold: float = 0.26) -> list[Topic]:
             label = tok[1:] if tok.startswith("@") else tok
             if len(label) > 2 and not CJK_RUN.fullmatch(label) and label not in keywords:
                 keywords.append(label)
-        keywords = keywords[:6]
 
         topics.append(Topic(
-            key=f"t{root:04d}",
+            key=f"t{n:04d}",
             title=rep.title,
             summary=rep.summary[:280],
             articles=members,
-            keywords=keywords,
+            keywords=keywords[:6],
         ))
 
     # 排序：來源數多的（多家報導＝重要）優先，其次時間新

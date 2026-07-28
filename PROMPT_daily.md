@@ -15,6 +15,8 @@
    - 若腳本警告「沒有任何 LLM 摘要」：跑 `python build.py --llm-test` 診斷後回報，先不要部署。
 3. `python curate.py list -v` 檢查結果，只處理這幾種明顯問題：
    - 同一件事被拆成兩個主題 → `python curate.py merge <保留的key> <被併入的key>`
+   - 一個主題裡混進不相干的文章 → `python curate.py split <key> <文章編號…>`
+     （編號看 `list -v`；拆完記得用 `set` 給新主題寫標題與摘要）
    - 完全不是 AI 新聞（手機規格、汽車、字典出版之類）→ `python curate.py drop <key>`
    - 標題或摘要明顯錯誤、簡體殘留、或與來源內容不符 →
      `python curate.py set <key> --title "…" --summary "…"`

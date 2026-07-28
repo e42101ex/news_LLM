@@ -6,6 +6,7 @@
 
     python curate.py list
     python curate.py merge t0003 t0011          # 把 t0011 併進 t0003
+    python curate.py split t0007 1              # 把 t0007 的第 1 篇拆成獨立主題
     python curate.py set t0003 --title "…" --summary "…" --category 企業與資金 --importance 5
     python curate.py drop t0020                 # 移除不相關的主題
 """
@@ -50,8 +51,8 @@ def cmd_list(data: dict, args) -> None:
         print(f'{flag} {topic["key"]}  [{len(topic["articles"])}篇/{len(topic["sources"])}家] '
               f'{topic.get("category", "其他")}  {topic["title"][:52]}')
         if args.verbose:
-            for art in topic["articles"]:
-                print(f'      · {art["source"]}: {art["title"][:66]}')
+            for n, art in enumerate(topic["articles"], 1):
+                print(f'      {n}. {art["source"]}: {art["title"][:62]}')
     print(f'\n共 {len(data["topics"])} 個主題 / {sum(len(t["articles"]) for t in data["topics"])} 篇報導')
 
 
@@ -86,6 +87,40 @@ def cmd_set(data: dict, args) -> None:
     print(f'{topic["key"]} 已更新：{topic["title"][:60]}')
 
 
+def cmd_split(data: dict, args) -> None:
+    """把誤併進來的文章拆成獨立主題（編號用 `list -v` 顯示的那個）。"""
+    topic = find(data, args.key)
+    picked = sorted({n for n in args.index if 1 <= n <= len(topic["articles"])}, reverse=True)
+    if not picked:
+        sys.exit(f"編號要在 1-{len(topic['articles'])} 之間")
+    if len(picked) >= len(topic["articles"]):
+        sys.exit("不能把整個主題都拆走")
+
+    moved = [topic["articles"].pop(n - 1) for n in picked][::-1]
+    used = {t["key"] for t in data["topics"]}
+    new_key = next(f"t{n:04d}" for n in range(9000, 9999) if f"t{n:04d}" not in used)
+    lead = moved[0]
+    new_topic = {
+        "key": new_key,
+        "title": lead["title"],
+        "summary": lead.get("summary", "")[:280],
+        "category": topic.get("category", "其他"),
+        "importance": max(1, int(topic.get("importance", 3)) - 1),
+        "keywords": [],
+        "image": lead.get("image", ""),
+        "llm_enriched": False,
+        "sources": list(dict.fromkeys(a["source"] for a in moved)),
+        "articles": moved,
+    }
+    topic["sources"] = list(dict.fromkeys(a["source"] for a in topic["articles"]))
+    if topic["image"] and topic["image"] == new_topic["image"]:
+        new_topic["image"] = ""      # 兩個主題不要掛同一張圖
+    data["topics"].insert(data["topics"].index(topic) + 1, new_topic)
+    save(data)
+    print(f'{args.key} 拆出 {len(moved)} 篇 → {new_key}：{new_topic["title"][:52]}')
+    print(f'  記得用 set 給新主題寫標題與摘要：python curate.py set {new_key} --title "…" --summary "…"')
+
+
 def cmd_drop(data: dict, args) -> None:
     for key in args.keys:
         data["topics"].remove(find(data, key))
@@ -112,6 +147,11 @@ def main() -> int:
     p_set.add_argument("--category", choices=CATEGORIES)
     p_set.add_argument("--importance", type=int, choices=[1, 2, 3, 4, 5])
     p_set.set_defaults(func=cmd_set)
+
+    p_split = sub.add_parser("split", help="把誤併的文章拆成新主題")
+    p_split.add_argument("key")
+    p_split.add_argument("index", nargs="+", type=int, help="要拆走的文章編號（list -v 會顯示）")
+    p_split.set_defaults(func=cmd_split)
 
     p_drop = sub.add_parser("drop", help="移除主題")
     p_drop.add_argument("keys", nargs="+")

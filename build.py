@@ -34,6 +34,7 @@ def load_config(path: Path) -> dict:
 
 def collect(cfg: dict, hours: int, threshold: float) -> list[clustering.Topic]:
     build = cfg.get("build", {})
+    fetch.CACHE_PATH = ROOT / "data" / "pagecache.json"
     articles = fetch.fetch_all(cfg["sources"], hours=hours)
     if not articles:
         return []
