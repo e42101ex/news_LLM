@@ -210,6 +210,28 @@ docs/                    產出（GitHub Pages 的根目錄）
 data/latest.json         中繼資料，摘要階段的交接點
 ```
 
+## 版面驗證
+
+改過模板之後用這支檢查，避免「結構對但看起來壞掉」：
+
+```bash
+python tools/shot.py                    # 桌機淺色/深色 + 手機淺色/深色，截頂部
+python tools/shot.py --full             # 整頁
+python tools/shot.py --url https://e42101ex.github.io/news_LLM/   # 截線上版
+```
+
+截圖放在 `.shots/`（不進 git）。腳本會先滾一遍觸發 lazy loading、再等所有
+`<img>` decode 完才截圖，並回報有幾張圖沒載入。
+
+需要 Playwright：
+
+```bash
+python -m pip install playwright && python -m playwright install chromium
+```
+
+> 為什麼不用 Firefox 的 `--screenshot`：它不等圖片解碼，頁面上有 40 張縮圖時
+> 會全部拍成灰色佔位框，看不出真正的版面。
+
 ## 已知限制
 
 - 分群是機器判定，偶爾會漏併或誤併；`curate.py merge` / `curate.py split` 就是為了補這一刀。
