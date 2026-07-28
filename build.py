@@ -21,7 +21,7 @@ import tomllib
 from pathlib import Path
 
 from ainews import cluster as clustering
-from ainews import fetch, llm, render
+from ainews import fetch, images, llm, render
 
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "data" / "latest.json"
@@ -105,6 +105,13 @@ def main() -> int:
                   f"改用演算法摘要", file=sys.stderr)
         elif args.llm == "auto" and args.stage != "render":
             print("（未使用 LLM 摘要，標題與摘要取自原文）")
+
+        img_cfg = images.ImageConfig.from_config(cfg.get("images", {}))
+        if img_cfg.mode != "off" and topics and args.stage != "collect":
+            from datetime import datetime
+            from zoneinfo import ZoneInfo
+            images.attach(topics, img_cfg, args.out,
+                          datetime.now(ZoneInfo(tz)).strftime("%Y-%m-%d"))
 
         STATE.parent.mkdir(parents=True, exist_ok=True)
         STATE.write_text(

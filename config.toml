@@ -10,6 +10,22 @@ max_topics = 40
 timezone = "Asia/Taipei"
 site_title = "AI 每日新聞彙整"
 
+[images]
+# 新聞縮圖。來源：RSS 帶的圖 → 找不到就抓文章頁的 og:image。
+#   mode = "local"   下載並裁成統一尺寸的 WebP 放進 docs/img/<日期>/
+#                    （頁面自包含、存檔不會破圖；repo 每天約增加 0.5-1 MB）
+#   mode = "hotlink" 直接連原站圖片（repo 不會長大，但存檔頁日後可能破圖）
+#   mode = "off"     不放縮圖
+mode = "local"
+width = 400
+height = 267               # 3:2，裁切成統一比例讓卡片整齊
+quality = 72
+og_fallback = true         # RSS 沒帶圖時去抓文章頁的 og:image
+keep_days = 60             # local 模式：清掉幾天前的圖片目錄
+timeout = 12
+workers = 8
+generic_threshold = 3     # 同一張圖被 N 個以上主題共用＝站台預設圖，丟棄
+
 [llm]
 # 摘要用的 LLM。API key 一律走環境變數或 .env，不要寫在這個檔案裡。
 #   provider = "openai"    → 任何 OpenAI-compatible 的 /v1/chat/completions

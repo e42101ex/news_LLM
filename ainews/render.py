@@ -71,6 +71,7 @@ def json_to_topics(data: dict) -> list[Topic]:
             category=raw.get("category", "其他"),
             importance=int(raw.get("importance", 3)),
             keywords=raw.get("keywords", []),
+            image=raw.get("image", ""),
             llm_enriched=bool(raw.get("llm_enriched")),
             articles=[Article(**a) for a in raw.get("articles", [])],
         ))
@@ -101,6 +102,7 @@ def render(topics: list[Topic], out_dir: Path, *, site_title: str, tz: str,
         sources=sorted({a.source for t in topics for a in t.articles}),
         tz=tz,
         is_archive=False,
+        img_prefix="",
     )
 
     index = out_dir / "index.html"
@@ -112,7 +114,7 @@ def render(topics: list[Topic], out_dir: Path, *, site_title: str, tz: str,
             template.render(
                 site_title=site_title, meta=meta, groups=_grouped(topics),
                 sources=sorted({a.source for t in topics for a in t.articles}),
-                tz=tz, is_archive=True,
+                tz=tz, is_archive=True, img_prefix="../",
             ),
             encoding="utf-8",
         )

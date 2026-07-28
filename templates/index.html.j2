@@ -40,6 +40,13 @@ article{
   padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
 }
 article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; aspect-ratio:3/2; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{width:100%; height:100%; object-fit:cover; display:block}
 h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
 .summary{margin:0 0 14px; color:var(--ink)}
 .row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
@@ -60,6 +67,8 @@ footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); colo
 footer .srcs{margin-top:8px; line-height:1.9}
 .empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
 @media (max-width:520px){
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
   .links li{flex-wrap:wrap}
   .links .src{min-width:0}
   .links time{margin-left:0}
@@ -87,13 +96,24 @@ footer .srcs{margin-top:8px; line-height:1.9}
 <h2 class="cat">{{ category }}</h2>
 {% for t in topics %}
 <article{% if t.importance >= 4 or t.sources | length >= 3 %} class="hot"{% endif %}>
-  <div class="row">
-    {% if t.importance >= 4 %}<span class="badge pri">重點</span>{% endif %}
-    {% if t.sources | length > 1 %}<span class="badge">{{ t.sources | length }} 家媒體報導</span>{% endif %}
-    {% for kw in t.keywords[:3] %}<span class="badge">{{ kw }}</span>{% endfor %}
+  <div class="head">
+    <div class="body">
+      <div class="row">
+        {% if t.importance >= 4 %}<span class="badge pri">重點</span>{% endif %}
+        {% if t.sources | length > 1 %}<span class="badge">{{ t.sources | length }} 家媒體報導</span>{% endif %}
+        {% for kw in t.keywords[:3] %}<span class="badge">{{ kw }}</span>{% endfor %}
+      </div>
+      <h3>{{ t.title }}</h3>
+      {% if t.summary %}<p class="summary">{{ t.summary }}</p>{% endif %}
+    </div>
+    {% if t.image %}
+    <div class="thumb">
+      <img src="{{ '' if t.image.startswith('http') else img_prefix }}{{ t.image }}"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+    {% endif %}
   </div>
-  <h3>{{ t.title }}</h3>
-  {% if t.summary %}<p class="summary">{{ t.summary }}</p>{% endif %}
   <ul class="links">
     {% for a in t.articles %}
     <li>

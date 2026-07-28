@@ -7,6 +7,8 @@ RSS 抓取 ──► 同主題分群 ──► 摘要（三種模式任選） �
 fetch.py     cluster.py     llm.py／Claude／不用      render.py    deploy.sh
 ```
 
+每則主題會自動配一張縮圖（RSS 帶的圖 → 抓不到就用文章頁的 og:image），實測覆蓋率約 80%。
+
 分群完全靠演算法（TF-IDF + cosine + union-find），**不需要 API key**，而且處理過：
 
 - **簡繁差異**：`英伟达`／`輝達`／`NVIDIA` 會收斂成同一個 token（用 opencc + 實體同義詞表）
@@ -79,6 +81,29 @@ python build.py --llm-test --base-url https://gw.example.com/v1 --model qwen2.5-
 - **需要額外 header** 的 gateway，在 `config.toml` 的 `[llm.extra_headers]` 加即可。
 - 想改回 Anthropic Messages API：`LLM_PROVIDER=anthropic` 或 `config.toml` 設
   `provider = "anthropic"`（`model` 例如 `claude-opus-4-8`）。
+
+## 縮圖
+
+`config.toml` 的 `[images]`：
+
+| `mode` | 行為 | 取捨 |
+| --- | --- | --- |
+| `local`（預設） | 下載後裁成 400×267 的 WebP 放進 `docs/img/<日期>/` | 頁面自包含、存檔不會破圖；repo 每天增加約 0.35-0.5 MB |
+| `hotlink` | 直接連原站圖片 | repo 不會長大；但存檔頁的圖日後可能失效，且讀者瀏覽器會連向十幾個網域 |
+| `off` | 不放圖 | — |
+
+實作細節：
+
+- **來源優先序**：RSS 的 `media:thumbnail` / `media:content` / `enclosure` / 內文第一張 `<img>`
+  → 都沒有才去抓文章頁的 `og:image`（只抓前 200KB，不下載整頁）。
+- **濾掉站台預設圖**：同一張圖被 3 個以上主題共用就丟掉 —— 例如 36氪 的 `og:image`
+  是站台 logo，不濾掉會有好幾則新聞掛同一張圖。門檻可用 `generic_threshold` 調。
+- **統一裁切**：`ImageOps.fit` 等比縮放後居中裁切成 3:2，卡片高度才會一致（不會有信箱黑邊）。
+- **失敗不影響版面**：下載失敗的主題就不顯示圖；圖片載入失敗時前端的 `onerror` 也會把
+  框移除，不會留下破圖圖示。
+- **自動清理**：`keep_days`（預設 60）天前的圖片目錄會被刪掉，HTML 存檔保留。
+- 覆蓋率約 80%。剩下的通常是本來就沒有配圖的來源（Simon Willison）或 og:image
+  指向 404 的站（ZDNet 有時如此）。
 
 ## 部署到 GitHub Pages
 

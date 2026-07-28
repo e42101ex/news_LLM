@@ -14,6 +14,8 @@ from urllib.parse import urlsplit, urlunsplit
 import feedparser
 import requests
 
+from . import images
+
 UA = "Mozilla/5.0 (compatible; auto-report-news/1.0; +https://github.com)"
 
 # 命中任一關鍵字才算 AI 新聞（只對 ai_only = false 的綜合媒體生效）
@@ -43,6 +45,7 @@ class Article:
     lang: str
     published: str            # ISO 8601 (UTC)
     summary: str = ""
+    image: str = ""           # RSS 帶的縮圖網址（沒有就留空，後續由 images.py 補 og:image）
     id: str = ""
     tags: list[str] = field(default_factory=list)
 
@@ -149,6 +152,7 @@ def _fetch_one(source: dict, cutoff: datetime, timeout: int = 20) -> list[Articl
             lang=source.get("lang", "en"),
             published=published.isoformat(),
             summary=summary,
+            image=images.from_entry(entry, url),
             id=hashlib.sha1(url.encode()).hexdigest()[:12],
             tags=[t.get("term", "") for t in entry.get("tags", []) if t.get("term")][:5],
         ))

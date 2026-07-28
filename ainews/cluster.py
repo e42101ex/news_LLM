@@ -92,6 +92,7 @@ class Topic:
     importance: int = 3
     articles: list[Article] = field(default_factory=list)
     keywords: list[str] = field(default_factory=list)
+    image: str = ""            # 代表縮圖：docs/ 底下的相對路徑，或遠端 URL
     llm_enriched: bool = False
 
     @property
@@ -114,6 +115,7 @@ class Topic:
             "category": self.category,
             "importance": self.importance,
             "keywords": self.keywords,
+            "image": self.image,
             "llm_enriched": self.llm_enriched,
             "sources": self.sources,
             "articles": [a.to_dict() for a in self.articles],
