@@ -66,7 +66,63 @@ h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
 footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
 footer .srcs{margin-top:8px; line-height:1.9}
 .empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; gap:6px; overflow-x:auto; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(215px, 1fr));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+.brief-hero{display:block; position:relative; aspect-ratio:16/9; background:var(--badge)}
+.brief-hero img{width:100%; height:100%; object-fit:cover; display:block}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; display:inline-block}
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
 @media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px}
+  .brief-lead{font-size:.9rem}
   .head{gap:12px}
   .thumb{flex-basis:96px; width:96px}
   .links li{flex-wrap:wrap}
@@ -92,10 +148,49 @@ footer .srcs{margin-top:8px; line-height:1.9}
 <div class="empty">這個時間範圍內沒有抓到符合條件的 AI 新聞。</div>
 {% endif %}
 
+{% if groups %}
+<nav class="tabs" aria-label="主題分類">
+  {% for category, topics in groups %}
+  <a href="#cat{{ loop.index0 }}">{{ category }}<b>{{ topics | length }}</b></a>
+  {% endfor %}
+</nav>
+
+<section class="briefs">
+  {% for category, topics in groups %}
+  {% set lead = topics[0] %}
+  <article class="brief">
+    {% if lead.image %}
+    <a class="brief-hero" href="#{{ lead.key }}">
+      <img src="{{ '' if lead.image.startswith('http') else img_prefix }}{{ lead.image }}"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">{{ category }}</span>
+    </a>
+    {% endif %}
+    <div class="brief-body">
+      {% if not lead.image %}<span class="brief-tag plain">{{ category }}</span>{% endif %}
+      <h3 class="brief-lead"><a href="#{{ lead.key }}">{{ lead.title }}</a></h3>
+      {% if topics | length > 1 %}
+      <ul class="brief-list">
+        {% for t in topics[1:4] %}
+        <li><a href="#{{ t.key }}">{{ t.title }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <a class="brief-more" href="#cat{{ loop.index0 }}">看這個分類的 {{ topics | length }} 則 →</a>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+{% endif %}
+
 {% for category, topics in groups %}
-<h2 class="cat">{{ category }}</h2>
+<h2 class="cat" id="cat{{ loop.index0 }}">{{ category }}</h2>
 {% for t in topics %}
-<article{% if t.importance >= 4 or t.sources | length >= 3 %} class="hot"{% endif %}>
+<article id="{{ t.key }}"{% if t.importance >= 4 or t.sources | length >= 3 %} class="hot"{% endif %}>
   <div class="head">
     <div class="body">
       <div class="row">
@@ -126,6 +221,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
 </article>
 {% endfor %}
 {% endfor %}
+{% if groups %}</div>{% endif %}
 
 <footer>
   <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>

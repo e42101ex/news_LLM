@@ -66,7 +66,63 @@ h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
 footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
 footer .srcs{margin-top:8px; line-height:1.9}
 .empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; gap:6px; overflow-x:auto; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(215px, 1fr));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+.brief-hero{display:block; position:relative; aspect-ratio:16/9; background:var(--badge)}
+.brief-hero img{width:100%; height:100%; object-fit:cover; display:block}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; display:inline-block}
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
 @media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px}
+  .brief-lead{font-size:.9rem}
   .head{gap:12px}
   .thumb{flex-basis:96px; width:96px}
   .links li{flex-wrap:wrap}
@@ -83,14 +139,155 @@ footer .srcs{margin-top:8px; line-height:1.9}
     <span>2026-07-28</span>
     <span>38 個主題 · 62 篇報導</span>
     <span>收錄近 30 小時</span>
-    <span>更新於 07/28 15:34</span>
+    <span>更新於 07/28 16:37</span>
     <a href="archive/index.html">歷史存檔</a>
   </div>
 </header>
 
 
-<h2 class="cat">模型與研究</h2>
-<article>
+<nav class="tabs" aria-label="主題分類">
+  <a href="#cat0">模型與研究<b>2</b></a>
+  <a href="#cat1">產品與應用<b>9</b></a>
+  <a href="#cat2">企業與資金<b>6</b></a>
+  <a href="#cat3">晶片與基礎設施<b>6</b></a>
+  <a href="#cat4">政策與法規<b>6</b></a>
+  <a href="#cat5">安全與倫理<b>7</b></a>
+  <a href="#cat6">開源社群<b>1</b></a>
+  <a href="#cat7">其他<b>1</b></a>
+</nav>
+
+<section class="briefs">
+  <article class="brief">
+    <a class="brief-hero" href="#t0022">
+      <img src="img/2026-07-28/5d43edbaeaada6da.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">模型與研究</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0022">「潛在推理」技術挑戰思維鏈，AI 思考不再依賴文字</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0034">ESP32-S3 開發板成功部署 2890 萬參數本地 AI 模型</a></li>
+      </ul>
+      <a class="brief-more" href="#cat0">看這個分類的 2 則 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="#t0032">
+      <img src="img/2026-07-28/867787c643395566.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">產品與應用</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0032">微軟推出資安專用模型 MAI-Cyber-1-Flash，主打小模型低成本防禦</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0019">AT&T 擴大與 D-Wave 合作，量子計算將網路優化提速 240 倍</a></li>
+        <li><a href="#t0023">Cursor 推印度專屬方案，月付 649 盧比搶攻第三大市場</a></li>
+        <li><a href="#t0029">中國首個具身智慧特種機器人亮相，可攀爬牆面執行焊接打磨</a></li>
+      </ul>
+      <a class="brief-more" href="#cat1">看這個分類的 9 則 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="#t0009">
+      <img src="img/2026-07-28/33c5e098f7f6748b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">企業與資金</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0009">NVIDIA 投資 50 億美元入股 SSI，助 Ilya Sutskever 擴展 AI 研究</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0004">NVIDIA推進逾7,500億美元AI相關交易，市場憂心循環融資推高估值</a></li>
+        <li><a href="#t0017">傳NVIDIA擬投資50億美元於OpenAI共同創辦人SSI新創公司</a></li>
+        <li><a href="#t0024">AI 算力需求帶動 Applied Digital 轉盈，單季營收暴增 407%</a></li>
+      </ul>
+      <a class="brief-more" href="#cat2">看這個分類的 6 則 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="#t0016">
+      <img src="img/2026-07-28/deff18326e61445a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">晶片與基礎設施</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0016">傳NVIDIA簽約租用Hut 8德州資料中心，合約總值最高達500億美元</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0010">Google TPU Frozen V2 擬採片上 SRAM，繞開台積電 CoWoS 封裝</a></li>
+        <li><a href="#t0007">益華電腦宣布支援英特爾18A-P與14A製程，AI晶片設計需求推升上修2026財測</a></li>
+        <li><a href="#t0012">藍思科技攜手英特爾合作TGV先進封裝，從手機玻璃跨足AI晶片</a></li>
+      </ul>
+      <a class="brief-more" href="#cat3">看這個分類的 6 則 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="#t0000">
+      <img src="img/2026-07-28/8c18f281c5faa7f5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">政策與法規</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0000">Sam Altman將赴華府會晤白宮與跨黨派議員，介紹新模型並討論AI監管</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0003">Anthropic 執行長澄清：從未主張禁止開放權重 AI 模型</a></li>
+        <li><a href="#t0011">中美AI交鋒升溫，中國商務部反嗆：美企同樣在蒸餾中國AI模型</a></li>
+        <li><a href="#t0018">面對中國開放權重模型進逼，Anthropic執行長公開回應</a></li>
+      </ul>
+      <a class="brief-more" href="#cat4">看這個分類的 6 則 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="#t0001">
+      <img src="img/2026-07-28/dd6369c5a6c12b6a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">安全與倫理</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0001">NVIDIA 號召 30 家業者成立開放安全 AI 聯盟，OpenAI 與 Anthropic 缺席</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0025">奧特曼談 OpenAI 模型入侵 Hugging Face：AI 權力過度集中很危險</a></li>
+        <li><a href="#t0026">數百人向 ChatGPT 詢問生化武器製作方式，專家稱內容精確致命</a></li>
+        <li><a href="#t0051">Claude 分享對話遭 Google 與 Bing 索引，用戶私密聊天外洩</a></li>
+      </ul>
+      <a class="brief-more" href="#cat5">看這個分類的 7 則 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="#t0008">
+      <img src="img/2026-07-28/a6145eb85a460fd9.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">開源社群</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0008">Moonshot AI 開源 Kimi K3，2.8 兆參數模型權重完整釋出</a></h3>
+      <a class="brief-more" href="#cat6">看這個分類的 1 則 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="#t0028">
+      <img src="img/2026-07-28/b7d27c6f70cb5c09.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">其他</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0028">華碩 ROG 絕神 27 PLUS 電競顯示器上架，4K 240Hz 三模切換售 3499 元</a></h3>
+      <a class="brief-more" href="#cat7">看這個分類的 1 則 →</a>
+    </div>
+  </article>
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+
+<h2 class="cat" id="cat0">模型與研究</h2>
+<article id="t0022">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -111,7 +308,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0034">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -132,8 +329,8 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<h2 class="cat">產品與應用</h2>
-<article>
+<h2 class="cat" id="cat1">產品與應用</h2>
+<article id="t0032">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -159,7 +356,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0019">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -180,7 +377,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0023">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -201,7 +398,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0029">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -222,7 +419,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0031">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -243,7 +440,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0013">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -269,7 +466,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0014">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -290,7 +487,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0035">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -311,7 +508,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0006">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -337,8 +534,8 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<h2 class="cat">企業與資金</h2>
-<article class="hot">
+<h2 class="cat" id="cat2">企業與資金</h2>
+<article id="t0009" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -369,7 +566,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article class="hot">
+<article id="t0004" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -390,7 +587,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article class="hot">
+<article id="t0017" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -411,7 +608,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0024">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -432,7 +629,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0005">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -458,7 +655,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0021">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -479,8 +676,8 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<h2 class="cat">晶片與基礎設施</h2>
-<article class="hot">
+<h2 class="cat" id="cat3">晶片與基礎設施</h2>
+<article id="t0016" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -501,7 +698,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article class="hot">
+<article id="t0010" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -532,7 +729,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0007">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -558,7 +755,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0012">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -579,7 +776,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0015">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -610,7 +807,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0054">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -636,8 +833,8 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<h2 class="cat">政策與法規</h2>
-<article class="hot">
+<h2 class="cat" id="cat4">政策與法規</h2>
+<article id="t0000" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -658,7 +855,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0003">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -684,7 +881,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0011">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -705,7 +902,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0018">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -726,7 +923,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0020">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -747,7 +944,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0030">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -763,8 +960,8 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<h2 class="cat">安全與倫理</h2>
-<article class="hot">
+<h2 class="cat" id="cat5">安全與倫理</h2>
+<article id="t0001" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -815,7 +1012,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article class="hot">
+<article id="t0025" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -831,7 +1028,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article class="hot">
+<article id="t0026" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -852,7 +1049,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article class="hot">
+<article id="t0051" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -883,7 +1080,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0027">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -909,7 +1106,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0002">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -930,7 +1127,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<article>
+<article id="t0064">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -951,8 +1148,8 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<h2 class="cat">開源社群</h2>
-<article class="hot">
+<h2 class="cat" id="cat6">開源社群</h2>
+<article id="t0008" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -978,8 +1175,8 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-<h2 class="cat">其他</h2>
-<article>
+<h2 class="cat" id="cat7">其他</h2>
+<article id="t0028">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -1000,7 +1197,7 @@ footer .srcs{margin-top:8px; line-height:1.9}
     </li>
   </ul>
 </article>
-
+</div>
 <footer>
   <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
   <div class="srcs">來源：36氪 · Ars Technica AI · DIGITIMES · INSIDE · IT之家 · Simon Willison · TechCrunch AI · TechOrange 科技報橘 · The Verge AI · Wired AI · ZDNet AI · iThome · 數位時代 · 科技新報 TechNews</div>
