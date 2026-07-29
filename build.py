@@ -163,13 +163,20 @@ def build_social(cfg: dict, args, tz: str) -> int:
 
         img_cfg = images.ImageConfig.from_config(cfg.get("images", {}))
         if img_cfg.mode != "off":
+            board_leads = [b.items[0].image for b in digest.boards if b.items]
             mapping = images.localize(
-                [t.image for t in digest.trends] + [p.image for p in digest.bsky_posts],
+                [t.image for t in digest.trends] + [p.image for p in digest.bsky_posts]
+                + [a.image for a in digest.dailyview] + board_leads,
                 img_cfg, args.out, digest.date, ratio=(16, 9))
             for trend in digest.trends:
                 trend.image = mapping.get(trend.image, "")
             for post in digest.bsky_posts:
                 post.image = mapping.get(post.image, "")
+            for article in digest.dailyview:
+                article.image = mapping.get(article.image, "")
+            for board in digest.boards:
+                for item in board.items:
+                    item.image = mapping.get(item.image, "")
 
         SOCIAL_STATE.parent.mkdir(parents=True, exist_ok=True)
         SOCIAL_STATE.write_text(

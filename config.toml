@@ -21,10 +21,32 @@ bluesky_trends_max = 12
 bluesky_posts_max = 18
 bluesky_min_likes = 15     # 讚數門檻，越高越乾淨
 bluesky_langs = ["zh", "en", "ja"]
+dailyview = true           # 網路溫度計 dailyview.tw/popular
+dailyview_max = 8
+board_items = 3            # 每個平台排行榜取最近幾週
+
 bluesky_queries = [
   "OpenAI", "Anthropic", "Claude AI", "Gemini", "LLM", "AI agent",
   "人工智慧", "生成式AI", "NVIDIA AI", "AI safety",
 ]
+
+# Social Lab（OpView）各平台排行榜。榜上數據是圖表圖片，抓不到數字，
+# 這裡取每週彙整文章的標題與觀測期間。
+[[social.boards]]
+name = "PTT"
+url = "https://www.social-lab.cc/ptt_charts/"
+
+[[social.boards]]
+name = "Facebook"
+url = "https://www.social-lab.cc/facebook-charts/"
+
+[[social.boards]]
+name = "Dcard"
+url = "https://www.social-lab.cc/dcard_charts/"
+
+[[social.boards]]
+name = "Instagram"
+url = "https://www.social-lab.cc/instagram%e6%8e%92%e8%a1%8c%e6%a6%9c/"
 
 [images]
 # 新聞縮圖。來源：RSS 帶的圖 → 找不到就抓文章頁的 og:image。

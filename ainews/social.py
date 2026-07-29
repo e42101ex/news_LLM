@@ -22,8 +22,11 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 import requests
+from concurrent.futures import ThreadPoolExecutor
 
 UA = "Mozilla/5.0 (compatible; auto-report-news/1.0)"
+BROWSER_UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36")
 TRENDS_RSS = "https://trends.google.com/trending/rss"
 # 注意：public.api.bsky.app 在台灣會被 CDN 擋 403，要用 api.bsky.app
 BSKY = "https://api.bsky.app/xrpc"
@@ -102,6 +105,33 @@ class BskyPost:
 
 
 @dataclass
+class HotArticle:
+    """網路溫度計（dailyview）的熱門話題文章。"""
+    title: str
+    url: str
+    summary: str = ""
+    category: str = ""
+    date: str = ""
+    image: str = ""
+
+
+@dataclass
+class RankItem:
+    title: str
+    url: str
+    period: str = ""      # 觀測時間：2026.07.20-2026.07.26
+    image: str = ""
+
+
+@dataclass
+class RankBoard:
+    """Social Lab 的單一平台排行榜（每週一篇彙整文章）。"""
+    platform: str
+    url: str
+    items: list[RankItem] = field(default_factory=list)
+
+
+@dataclass
 class SocialDigest:
     date: str
     generated_at: str
@@ -110,6 +140,8 @@ class SocialDigest:
     trends: list[Trend] = field(default_factory=list)
     bsky_trends: list[BskyTrend] = field(default_factory=list)
     bsky_posts: list[BskyPost] = field(default_factory=list)
+    dailyview: list[HotArticle] = field(default_factory=list)
+    boards: list[RankBoard] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -124,11 +156,16 @@ class SocialDigest:
                     for t in data.get("trends", [])],
             bsky_trends=[BskyTrend(**t) for t in data.get("bsky_trends", [])],
             bsky_posts=[BskyPost(**p) for p in data.get("bsky_posts", [])],
+            dailyview=[HotArticle(**a) for a in data.get("dailyview", [])],
+            boards=[RankBoard(platform=b["platform"], url=b.get("url", ""),
+                              items=[RankItem(**i) for i in b.get("items", [])])
+                    for b in data.get("boards", [])],
         )
 
     @property
     def total(self) -> int:
-        return len(self.trends) + len(self.bsky_trends) + len(self.bsky_posts)
+        return (len(self.trends) + len(self.bsky_trends) + len(self.bsky_posts)
+                + len(self.dailyview) + sum(len(b.items) for b in self.boards))
 
 
 # --------------------------------------------------------- 1) Google Trends
@@ -319,7 +356,127 @@ def build(cfg: dict, tz: str = "Asia/Taipei") -> SocialDigest:
             limit=int(cfg.get("bluesky_posts_max", 18)),
             langs=tuple(cfg.get("bluesky_langs", ["zh", "en", "ja"])),
         ),
+        dailyview=fetch_dailyview(int(cfg.get("dailyview_max", 8)))
+        if cfg.get("dailyview", True) else [],
+        boards=fetch_rank_boards(list(cfg.get("boards", DEFAULT_BOARDS)),
+                                 int(cfg.get("board_items", 4))),
     )
     print(f"社群熱門：{len(digest.trends)} 熱搜 / {len(digest.bsky_trends)} 話題 / "
-          f"{len(digest.bsky_posts)} 貼文")
+          f"{len(digest.bsky_posts)} 貼文 / {len(digest.dailyview)} 溫度計 / "
+          f"{sum(len(b.items) for b in digest.boards)} 排行（{len(digest.boards)} 平台）")
     return digest
+
+
+# ------------------------------------------- 4) 網路溫度計 dailyview.tw/popular
+
+
+DV_BASE = "https://dailyview.tw"
+
+
+def fetch_dailyview(limit: int = 8, timeout: int = 25) -> list[HotArticle]:
+    """dailyview 是 Next.js，資料放在 RSC payload 裡，沒有 RSS 也沒有公開 API。
+
+    以「每個 ArticleList_block 為一個單位」解析，避免用兩串 list 對位而錯開。
+    """
+    try:
+        response = requests.get(f"{DV_BASE}/popular", headers={"User-Agent": UA}, timeout=timeout)
+        if response.status_code != 200:
+            print(f"  ! 網路溫度計: HTTP {response.status_code}")
+            return []
+    except requests.RequestException as exc:
+        print(f"  ! 網路溫度計: {type(exc).__name__}")
+        return []
+
+    raw = response.text.replace('\\"', '"').replace("\\n", " ")
+    out: list[HotArticle] = []
+    for chunk in raw.split("ArticleList_block__")[1:]:
+        chunk = chunk[:4000]
+        def one(pattern: str) -> str:
+            m = re.search(pattern, chunk, re.S)
+            return html_lib.unescape(m.group(1)).strip() if m else ""
+
+        path = one(r'"pathname":"(/popular/detail/\d+)"')
+        title = one(r'"h2",null,\{"children":"([^"]+)"')
+        if not path or not title:
+            continue
+        out.append(HotArticle(
+            title=title,
+            url=DV_BASE + path,
+            summary=one(r'ArticleList_desc__\w+","children":"([^"]*)"')[:200],
+            category=one(r'ArticleList_label__\w+","children":"([^"]+)"'),
+            date=one(r'"time",null,\{"children":"([^"]+)"'),
+            image=one(r'"src":"(https://[^"]+?\.(?:jpe?g|png|webp)[^"]*)"'),
+        ))
+        if len(out) >= limit:
+            break
+    print(f"  · 網路溫度計：{len(out)} 篇熱門話題")
+    return out
+
+
+# ------------------------------------------- 5) Social Lab 各平台排行榜
+
+
+def _short_period(match: re.Match | None) -> str:
+    """把「觀測時間：2026.07.20-2026.07.26」壓成「07/20–07/26」，避免卡片內折行。"""
+    if not match:
+        return ""
+    def fmt(raw: str) -> str:
+        parts = raw.strip(".").split(".")
+        return "/".join(parts[1:]) if len(parts) == 3 else raw
+    return f"{fmt(match.group(1))}–{fmt(match.group(2))}"
+
+
+def fetch_rank_board(platform: str, url: str, limit: int = 4,
+                     timeout: int = 25) -> RankBoard:
+    """Social Lab（OpView）的平台排行榜頁：每週一篇彙整文章。
+
+    榜上的數字是圖表圖片，抓不到；但週報標題本身就是熱門事件摘要，這才是有用的部分。
+    """
+    board = RankBoard(platform=platform, url=url)
+    try:
+        response = requests.get(url, headers={"User-Agent": BROWSER_UA}, timeout=timeout)
+        if response.status_code != 200:
+            print(f"  ! Social Lab {platform}: HTTP {response.status_code}")
+            return board
+    except requests.RequestException as exc:
+        print(f"  ! Social Lab {platform}: {type(exc).__name__}")
+        return board
+
+    # WordPress 的 Visual Portfolio：每個 <article class="vp-portfolio__item-wrap"> 一則
+    for chunk in response.text.split('class="vp-portfolio__item-wrap')[1:]:
+        chunk = chunk[:6000]
+        # 各頁的 <a> 寫法不一致：href 前有換行與 tab，Dcard 還多了 target/rel 屬性
+        link = re.search(
+            r'vp-portfolio__item-meta-title"[^>]*>\s*<a\s[^>]*?href="([^"]+)"[^>]*>\s*(.+?)\s*</a>',
+            chunk, re.S)
+        if not link:
+            continue
+        period_raw = re.search(r"觀測時間：\s*([\d.]+)\s*-\s*([\d.]+)", chunk)
+        image = re.search(r'<img[^>]+src="(https://[^"]+?\.(?:jpe?g|png|webp))"', chunk)
+        board.items.append(RankItem(
+            title=html_lib.unescape(link.group(2)).strip(),
+            url=link.group(1),
+            period=_short_period(period_raw),
+            image=(image.group(1) if image else ""),
+        ))
+        if len(board.items) >= limit:
+            break
+    print(f"  · Social Lab {platform}：{len(board.items)} 則")
+    return board
+
+
+DEFAULT_BOARDS = [
+    {"name": "PTT", "url": "https://www.social-lab.cc/ptt_charts/"},
+    {"name": "Facebook", "url": "https://www.social-lab.cc/facebook-charts/"},
+    {"name": "Dcard", "url": "https://www.social-lab.cc/dcard_charts/"},
+    {"name": "Instagram", "url": "https://www.social-lab.cc/instagram%e6%8e%92%e8%a1%8c%e6%a6%9c/"},
+]
+
+
+def fetch_rank_boards(boards: list[dict], per_board: int = 4) -> list[RankBoard]:
+    if not boards:
+        return []
+    with ThreadPoolExecutor(max_workers=min(4, len(boards))) as pool:
+        return [b for b in pool.map(
+            lambda cfg: fetch_rank_board(cfg["name"], cfg["url"], per_board), boards)
+            if b.items]

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>社群熱門 · {{ meta.date }}</title>
-<meta name="description" content="{{ meta.date }} 社群熱門：台灣即時熱搜 {{ d.trends | length }} 則、Bluesky 熱門話題 {{ d.bsky_trends | length }} 個、AI 相關熱門貼文 {{ d.bsky_posts | length }} 篇。">
+<meta name="description" content="{{ meta.date }} 社群熱門：台灣即時熱搜 {{ d.trends | length }} 則、網路溫度計 {{ d.dailyview | length }} 篇、台灣社群排行 {{ d.boards | length }} 平台、Bluesky 話題 {{ d.bsky_trends | length }} 個、AI 貼文 {{ d.bsky_posts | length }} 篇。">
 {% include "_style.html.j2" %}
 </head>
 <body>
@@ -14,7 +14,7 @@
   <h1><a href="{{ root }}social/index.html">社群熱門</a></h1>
   <div class="meta">
     <span>{{ meta.date }}</span>
-    <span>{{ d.trends | length }} 熱搜 · {{ d.bsky_trends | length }} 話題 · {{ d.bsky_posts | length }} 貼文</span>
+    <span>{{ d.trends | length }} 熱搜 · {{ d.dailyview | length }} 溫度計 · {{ d.boards | length }} 平台排行 · {{ d.bsky_trends | length }} 話題 · {{ d.bsky_posts | length }} 貼文</span>
     <span>收錄近 {{ meta.window_hours }} 小時</span>
     <span>更新於 {{ meta.generated_at | localtime(tz) }}</span>
     <a href="{{ root }}social/archive/index.html">歷史存檔</a>
@@ -23,6 +23,8 @@
 
 <nav class="tabs" aria-label="區塊">
   <a href="#tw">台灣即時熱搜<b>{{ d.trends | length }}</b></a>
+  {% if d.dailyview %}<a href="#dv">網路溫度計<b>{{ d.dailyview | length }}</b></a>{% endif %}
+  {% if d.boards %}<a href="#boards">台灣社群排行<b>{{ d.boards | length }}</b></a>{% endif %}
   <a href="#bsky">Bluesky 熱門話題<b>{{ d.bsky_trends | length }}</b></a>
   <a href="#posts">AI 熱門貼文<b>{{ d.bsky_posts | length }}</b></a>
 </nav>
@@ -63,6 +65,65 @@
       {% else %}
       <p class="trend-meta">（這個熱搜目前沒有相關新聞）</p>
       {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if d.dailyview %}
+<h2 class="cat" id="dv">網路溫度計 熱門話題</h2>
+<section class="briefs compact">
+  {% for a in d.dailyview %}
+  <article class="brief">
+    {% if a.image %}
+    <a class="brief-hero" href="{{ a.url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '' if a.image.startswith('http') else root }}{{ a.image }}"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      {% if a.category %}<span class="brief-tag">{{ a.category }}</span>{% endif %}
+      {% if a.date %}<span class="trend-rank">{{ a.date }}</span>{% endif %}
+    </a>
+    {% endif %}
+    <div class="brief-body">
+      {% if not a.image and a.category %}<span class="brief-tag plain">{{ a.category }}</span>{% endif %}
+      <h3 class="brief-lead">
+        <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer">{{ a.title }}</a>
+      </h3>
+      {% if a.summary %}<p class="trend-meta">{{ a.summary }}</p>{% endif %}
+      {% if not a.image and a.date %}<p class="trend-meta">{{ a.date }}</p>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if d.boards %}
+<h2 class="cat" id="boards">台灣社群排行</h2>
+<p class="note">Social Lab（OpView 社群口碑資料庫）每週彙整各平台熱門事件。榜上的數據以圖表呈現，
+  這裡列出每週彙整的標題與觀測期間，點進去看完整排行。</p>
+<section class="briefs compact">
+  {% for b in d.boards %}
+  <article class="brief">
+    {% if b.items and b.items[0].image %}
+    <a class="brief-hero" href="{{ b.items[0].url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '' if b.items[0].image.startswith('http') else root }}{{ b.items[0].image }}"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">{{ b.platform }}</span>
+    </a>
+    {% endif %}
+    <div class="brief-body">
+      {% if not (b.items and b.items[0].image) %}<span class="brief-tag plain">{{ b.platform }}</span>{% endif %}
+      <ul class="brief-list">
+        {% for i in b.items %}
+        <li>
+          <a href="{{ i.url }}" target="_blank" rel="noopener noreferrer">{{ i.title }}</a>
+          {% if i.period %}<div class="post-who">{{ i.period }}</div>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <a class="brief-more" href="{{ b.url }}" target="_blank" rel="noopener noreferrer">{{ b.platform }}排行榜 →</a>
     </div>
   </article>
   {% endfor %}
@@ -119,6 +180,7 @@
 
 <footer>
   <div>由 <code>auto_report_news</code> 自動產生 · 熱搜來自 Google Trends（{{ meta.geo }}）、
+    熱門話題來自網路溫度計 DailyView、平台排行來自 Social Lab（OpView）、
     話題與貼文來自 Bluesky 公開 API。</div>
   <div class="srcs">Threads 未納入：官方 API 沒有 trending 端點，且熱度數據（讚／回覆）只能讀自己的貼文，無法排序熱門。</div>
 </footer>
