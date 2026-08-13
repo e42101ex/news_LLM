@@ -109,7 +109,8 @@ python build.py --llm-test --base-url https://gw.example.com/v1 --model qwen2.5-
 | 區塊 | 來源 | 說明 |
 | --- | --- | --- |
 | 台灣即時熱搜 | `trends.google.com/trending/rss?geo=TW` | 每個熱搜附熱度值與最多 3 則相關新聞（含來源、連結、圖） |
-| 台灣社群排行 | Social Lab（OpView） | PTT / Facebook / Dcard / Instagram / Mobile01 / YouTube / 新聞 共 7 個平台，各取最近 3 則週報 |
+| 台灣社群排行 | Social Lab（OpView） | 10 個榜：PTT / Facebook / Dcard / Instagram / Mobile01 / YouTube / 新聞，加上 Facebook / Instagram / YouTube 意見領袖榜，各取最近 3 則週報 |
+| 人氣意見領袖 TOP 3 | Social Lab `kol_ranking` | 三大平台的 KOL 前三名（該頁上的榜單表格） |
 | Bluesky 熱門話題 | `app.bsky.unspecced.getTrends` | 話題名稱與貼文數；內容以英語圈娛樂／體育／政治為主，頁面上有註明 |
 | AI 熱門貼文 | `app.bsky.feed.searchPosts` | 依 `bluesky_queries` 搜尋，30 小時內、依讚數＋轉發排序 |
 

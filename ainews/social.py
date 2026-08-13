@@ -132,6 +132,14 @@ class RankBoard:
 
 
 @dataclass
+class KolRank:
+    """人氣意見領袖 TOP 3（來自 Social Lab 的 kol_ranking 頁）。"""
+    platform: str
+    names: list[str] = field(default_factory=list)
+    url: str = ""
+
+
+@dataclass
 class SocialDigest:
     date: str
     generated_at: str
@@ -142,6 +150,7 @@ class SocialDigest:
     bsky_posts: list[BskyPost] = field(default_factory=list)
     dailyview: list[HotArticle] = field(default_factory=list)
     boards: list[RankBoard] = field(default_factory=list)
+    kols: list[KolRank] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -160,12 +169,14 @@ class SocialDigest:
             boards=[RankBoard(platform=b["platform"], url=b.get("url", ""),
                               items=[RankItem(**i) for i in b.get("items", [])])
                     for b in data.get("boards", [])],
+            kols=[KolRank(**k) for k in data.get("kols", [])],
         )
 
     @property
     def total(self) -> int:
         return (len(self.trends) + len(self.bsky_trends) + len(self.bsky_posts)
-                + len(self.dailyview) + sum(len(b.items) for b in self.boards))
+                + len(self.dailyview) + sum(len(b.items) for b in self.boards)
+                + sum(len(k.names) for k in self.kols))
 
 
 # --------------------------------------------------------- 1) Google Trends
@@ -360,10 +371,13 @@ def build(cfg: dict, tz: str = "Asia/Taipei") -> SocialDigest:
         if cfg.get("dailyview", True) else [],
         boards=fetch_rank_boards(list(cfg.get("boards", DEFAULT_BOARDS)),
                                  int(cfg.get("board_items", 4))),
+        kols=fetch_kol_ranking(cfg.get("kol_url", KOL_URL))
+        if cfg.get("kol_ranking", True) else [],
     )
     print(f"社群熱門：{len(digest.trends)} 熱搜 / {len(digest.bsky_trends)} 話題 / "
           f"{len(digest.bsky_posts)} 貼文 / {len(digest.dailyview)} 溫度計 / "
-          f"{sum(len(b.items) for b in digest.boards)} 排行（{len(digest.boards)} 平台）")
+          f"{sum(len(b.items) for b in digest.boards)} 排行（{len(digest.boards)} 平台）/ "
+          f"{len(digest.kols)} 平台 KOL")
     return digest
 
 
@@ -421,7 +435,7 @@ def _short_period(match: re.Match | None) -> str:
     if not match:
         return ""
     def fmt(raw: str) -> str:
-        parts = raw.strip(".").split(".")
+        parts = re.split(r"[./]", raw.strip("./"))
         return "/".join(parts[1:]) if len(parts) == 3 else raw
     return f"{fmt(match.group(1))}–{fmt(match.group(2))}"
 
@@ -451,7 +465,8 @@ def fetch_rank_board(platform: str, url: str, limit: int = 4,
             chunk, re.S)
         if not link:
             continue
-        period_raw = re.search(r"觀測時間：\s*([\d.]+)\s*-\s*([\d.]+)", chunk)
+        # 兩種寫法都有：2026.08.03-2026.08.09（熱門事件頁）、2026/08/03~2026/08/09（KOL 頁）
+        period_raw = re.search(r"觀測時間：\s*([\d./]+)\s*[-~–]\s*([\d./]+)", chunk)
         image = re.search(r'<img[^>]+src="(https://[^"]+?\.(?:jpe?g|png|webp))"', chunk)
         board.items.append(RankItem(
             title=html_lib.unescape(link.group(2)).strip(),
@@ -486,3 +501,57 @@ def fetch_rank_boards(boards: list[dict], per_board: int = 4) -> list[RankBoard]
         return [b for b in pool.map(
             lambda cfg: fetch_rank_board(cfg["name"], cfg["url"], per_board), boards)
             if b.items]
+
+
+# ------------------------------------------- 6) 人氣意見領袖 TOP 3
+
+
+KOL_URL = "https://www.social-lab.cc/kol_ranking/"
+
+
+def _clean_kol_name(name: str) -> str:
+    """來源的 CMS 會把部分字元寫成問號（例如韓文名變 "?????? (@le_dahye)"）。
+
+    整個名字都壞掉時改用還完好的 @handle；只壞幾個字就原樣保留，不猜原名。
+    """
+    handle = re.search(r"\(@([\w.\-]+)\)", name)
+    body = re.sub(r"\(@[\w.\-]+\)", "", name).strip()
+    if handle and (not body or body.count("?") >= max(1, len(body) * 0.5)):
+        return "@" + handle.group(1)
+    return re.sub(r"\?{2,}", "?", name).strip()
+
+
+def fetch_kol_ranking(url: str = KOL_URL, timeout: int = 25) -> list[KolRank]:
+    """kol_ranking 是入口頁，但頁面上有三張真正的 TOP 3 表格。
+
+    三張表的標題都一樣（「最新社群意見領袖排行榜」），所以用「表格之前最後出現的
+    平台字樣」來判斷它屬於哪個平台，而不是靠表格順序。
+    """
+    try:
+        response = requests.get(url, headers={"User-Agent": BROWSER_UA}, timeout=timeout)
+        if response.status_code != 200:
+            print(f"  ! 意見領袖排行榜: HTTP {response.status_code}")
+            return []
+    except requests.RequestException as exc:
+        print(f"  ! 意見領袖排行榜: {type(exc).__name__}")
+        return []
+
+    html = response.text
+    out: list[KolRank] = []
+    for match in re.finditer(r"<table.*?</table>", html, re.S):
+        platforms = re.findall(r"(Facebook|Instagram|YouTube)", html[:match.start()][-3000:], re.I)
+        if not platforms:
+            continue
+        platform = platforms[-1].capitalize().replace("Youtube", "YouTube")
+        names: list[str] = []
+        for row in re.findall(r"<tr.*?</tr>", match.group(0), re.S):
+            cells = [html_lib.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", c))).strip()
+                     for c in re.findall(r"<t[dh].*?</t[dh]>", row, re.S)]
+            cells = [c for c in cells if c and not re.fullmatch(r"No\.?\d+", c)]
+            if cells:
+                names.append(_clean_kol_name(cells[-1])[:60])
+        if names:
+            out.append(KolRank(platform=platform, names=names[:3], url=url))
+
+    print(f"  · 意見領袖 TOP 3：{len(out)} 個平台")
+    return out

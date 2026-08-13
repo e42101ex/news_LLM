@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>社群熱門 · 2026-08-13</title>
-<meta name="description" content="2026-08-13 社群熱門：台灣即時熱搜 10 則、網路溫度計 8 篇、台灣社群排行 7 平台、Bluesky 話題 12 個、AI 貼文 18 篇。">
+<meta name="description" content="2026-08-13 社群熱門：台灣即時熱搜 10 則、網路溫度計 8 篇、台灣社群排行 10 平台、Bluesky 話題 12 個、AI 貼文 18 篇。">
 <style>
 :root{
   --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
@@ -171,6 +171,17 @@ article{scroll-margin-top:66px}
 .pill b{font-weight:700}
 .pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
 .pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
 .posts{list-style:none; margin:0; padding:0}
 .post{
   background:var(--card); border:1px solid var(--line); border-radius:12px;
@@ -203,16 +214,16 @@ article{scroll-margin-top:66px}
   <h1><a href="../../social/index.html">社群熱門</a></h1>
   <div class="meta">
     <span>2026-08-13</span>
-    <span>10 熱搜 · 8 溫度計 · 7 平台排行 · 12 話題 · 18 貼文</span>
+    <span>10 熱搜 · 8 溫度計 · 10 平台排行 · 3 KOL 榜 · 12 話題 · 18 貼文</span>
     <span>收錄近 30 小時</span>
-    <span>更新於 08/13 10:54</span>
+    <span>更新於 08/13 11:04</span>
     <a href="../../social/archive/index.html">歷史存檔</a>
   </div>
 </header>
 
 <nav class="tabs" aria-label="區塊">
   <a href="#tw">台灣即時熱搜<b>10</b></a>
-<a href="#dv">網路溫度計<b>8</b></a><a href="#boards">台灣社群排行<b>7</b></a>  <a href="#bsky">Bluesky 熱門話題<b>12</b></a>
+<a href="#dv">網路溫度計<b>8</b></a><a href="#boards">台灣社群排行<b>10</b></a><a href="#kol">意見領袖 TOP 3<b>3</b></a>  <a href="#bsky">Bluesky 熱門話題<b>12</b></a>
   <a href="#posts">AI 熱門貼文<b>18</b></a>
 </nav>
 
@@ -253,35 +264,11 @@ article{scroll-margin-top:66px}
   </article>
   <article class="brief">
     <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
-      <img src="../../img/2026-08-13/99b538d3f26441cd.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.classList.add('broken'); this.remove()">
-      <span class="brief-tag">3</span>
-<span class="trend-rank">1000+ 次搜尋</span>    </a>
-    <div class="brief-body">
-      <h3 class="brief-lead">
-        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">奇鋐</a>
-      </h3>
-      <ul class="brief-list">
-        <li>
-          <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000764941_QF886HK05DEFU10BFXT6E" target="_blank" rel="noopener noreferrer">AI伺服器液冷滲透率攀升 奇鋐估2027年達5成</a>
-<div class="post-who">DIGITIMES</div>        </li>
-        <li>
-          <a href="https://udn.com/news/story/7239/9688499" target="_blank" rel="noopener noreferrer">外資調升奇鋐、健策散熱雙雄目標價 營收、毛利率可望持續提高</a>
-<div class="post-who">UDN</div>        </li>
-        <li>
-          <a href="https://ec.ltn.com.tw/article/paper/1766391" target="_blank" rel="noopener noreferrer">法說會速報</a>
-<div class="post-who">自由財經</div>        </li>
-      </ul>
-    </div>
-  </article>
-  <article class="brief">
-    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
       <img src="../../img/2026-08-13/b5f0b4cb61a06454.webp"
            alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
            onerror="this.parentNode.classList.add('broken'); this.remove()">
-      <span class="brief-tag">4</span>
-<span class="trend-rank">100+ 次搜尋</span>    </a>
+      <span class="brief-tag">3</span>
+<span class="trend-rank">200+ 次搜尋</span>    </a>
     <div class="brief-body">
       <h3 class="brief-lead">
         <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">南亞科目標價</a>
@@ -296,6 +283,30 @@ article{scroll-margin-top:66px}
         <li>
           <a href="https://wantrich.chinatimes.com/news/20260812900268-420101" target="_blank" rel="noopener noreferrer">目標價狂飆1,000元！法人喊瘋了「2檔記憶體最被看好躋身千金股」難道又是主力準備出貨信號？ - 上市櫃</a>
 <div class="post-who">旺得富理財網</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-08-13/e7daf14a5b5b0677.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">4</span>
+<span class="trend-rank">1000+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">奇鋐</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E7%8B%82%E6%8E%83ai%E9%8F%88-%E5%81%A5%E7%AD%96-%E5%A5%87%E9%8B%90-%E8%8F%AF%E7%A2%A9%E9%9B%86%E9%AB%94%E5%8D%87%E7%9B%AE%E6%A8%99-rubin-023934718.html" target="_blank" rel="noopener noreferrer">外資狂掃AI鏈！健策、奇鋐、華碩集體升目標 Rubin＋ASIC引爆台股新主升段</a>
+<div class="post-who">Yahoo股市</div>        </li>
+        <li>
+          <a href="https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=17d0752c-6775-43a3-b30c-20bda666e4e1" target="_blank" rel="noopener noreferrer">跨足CDU系統商機，奇鋐不排除策略投資布局當地- 新聞</a>
+<div class="post-who">MoneyDJ</div>        </li>
+        <li>
+          <a href="https://ec.ltn.com.tw/article/paper/1766391" target="_blank" rel="noopener noreferrer">法說會速報</a>
+<div class="post-who">自由財經</div>        </li>
       </ul>
     </div>
   </article>
@@ -639,70 +650,165 @@ article{scroll-margin-top:66px}
       <a class="brief-more" href="https://www.social-lab.cc/news_charts/" target="_blank" rel="noopener noreferrer">新聞排行榜 →</a>
     </div>
   </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/08/opinion-leadership/facebook-kol/%e8%94%a1%e8%8b%b1%e6%96%87%ef%bc%9a%e4%ba%ba%e6%b0%91%e4%b8%8d%e5%bf%85%e5%8f%aa%e4%bf%a1%e5%96%ae%e4%b8%80%e6%94%bf%e9%bb%a8%e4%bd%86%e8%a6%81%e4%bf%a1%e5%b0%88%e6%a5%ad-%e6%9e%97%e5%bf%97%e7%8e%b2/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-08-13/35d06f8f233d9e17.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">Facebook 意見領袖</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/08/opinion-leadership/facebook-kol/%e8%94%a1%e8%8b%b1%e6%96%87%ef%bc%9a%e4%ba%ba%e6%b0%91%e4%b8%8d%e5%bf%85%e5%8f%aa%e4%bf%a1%e5%96%ae%e4%b8%80%e6%94%bf%e9%bb%a8%e4%bd%86%e8%a6%81%e4%bf%a1%e5%b0%88%e6%a5%ad-%e6%9e%97%e5%bf%97%e7%8e%b2/" target="_blank" rel="noopener noreferrer">蔡英文：人民不必只信單一政黨但要信專業 林志玲兒子下廚做Pizza慶父親節</a>
+<div class="post-who">08/03–08/09</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/08/opinion-leadership/facebook-kol/%e6%9e%97%e5%bf%83%e5%a6%82%e7%b5%90%e5%a9%9a10%e9%80%b1%e5%b9%b4%e7%94%9c%e6%9b%ac%e9%96%83%e7%85%a7-%e9%bb%83%e5%a4%a7%e8%ac%99%e9%81%87%e8%91%a1%e8%90%84%e7%89%99%e6%9c%80%e7%98%8b%e6%85%b6/" target="_blank" rel="noopener noreferrer">林心如結婚10週年甜曬閃照 黃大謙遇葡萄牙最瘋慶典大開眼界？</a>
+<div class="post-who">07/27–08/02</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/07/opinion-leadership/facebook-kol/%e8%94%a1%e8%8b%b1%e6%96%87%e7%82%ba%e6%bb%85%e7%81%ab%e5%99%a8%e9%bc%93%e6%8e%8c%ef%bc%9a26%e5%b9%b4%e9%a6%96%e5%ba%a6%e6%94%bb%e9%80%b2%e5%b0%8f%e5%b7%a8%e8%9b%8b-%e8%ac%9d%e8%ac%9d%e4%bd%a0/" target="_blank" rel="noopener noreferrer">蔡英文為滅火器鼓掌：26年首度攻進小巨蛋 謝謝你們陪台灣走過每個重要時刻</a>
+<div class="post-who">07/20–07/26</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/facebook%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/" target="_blank" rel="noopener noreferrer">Facebook 意見領袖排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/08/opinion-leadership/instagram-kol/%e5%b0%8f%e7%99%bd%e8%b2%93%e7%9a%84%e5%bf%8d%e8%a1%93%e9%9a%b1%e8%ba%ab%e8%a1%93%ef%bc%9f-%e6%9d%8e%e5%a4%9a%e6%85%a7%e6%94%9c%e8%be%a3%e5%aa%bd%e5%90%8c%e6%a1%86%e6%8b%8d%e7%89%87%e7%b6%b2%e5%8f%8b/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-08-13/6cd3ed6ba93c53d1.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">Instagram 意見領袖</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/08/opinion-leadership/instagram-kol/%e5%b0%8f%e7%99%bd%e8%b2%93%e7%9a%84%e5%bf%8d%e8%a1%93%e9%9a%b1%e8%ba%ab%e8%a1%93%ef%bc%9f-%e6%9d%8e%e5%a4%9a%e6%85%a7%e6%94%9c%e8%be%a3%e5%aa%bd%e5%90%8c%e6%a1%86%e6%8b%8d%e7%89%87%e7%b6%b2%e5%8f%8b/" target="_blank" rel="noopener noreferrer">小白貓的忍術隱身術？ 李多慧攜辣媽同框拍片網友讚：媽媽像姐姐</a>
+<div class="post-who">08/03–08/09</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/08/opinion-leadership/instagram-kol/%e9%bb%83%e5%a4%a7%e8%ac%99%e7%98%8b%e7%8e%a9%e8%91%a1%e8%90%84%e7%89%99%e4%ba%92%e6%95%b2%e6%85%b6%e5%85%b8%ef%bc%9f-%e8%b3%a4%e8%91%86%e9%90%b5%e9%8e%9a%e7%88%ac%e8%85%b3%e6%8c%91%e6%88%b0%e7%b6%b2/" target="_blank" rel="noopener noreferrer">黃大謙瘋玩葡萄牙互敲慶典？ 賤葆鐵鎚爬腳挑戰網笑：文藝復興</a>
+<div class="post-who">07/27–08/02</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/07/opinion-leadership/instagram-kol/%e6%b3%b0%e5%9c%8b%e8%a1%97%e9%a0%ad%e9%81%87%e6%b3%a2%e8%98%ad%e6%b5%81%e6%b5%aa%e6%bc%a2-%e5%86%8d%e6%ac%a1%e7%9b%b8%e7%b4%84%e7%99%bc%e7%8f%be%e7%ab%9f%e6%98%af%e5%b0%8f%e5%b0%91%e7%88%ba%ef%bc%9f/" target="_blank" rel="noopener noreferrer">泰國街頭遇波蘭流浪漢 再次相約發現竟是小少爺？</a>
+<div class="post-who">07/20–07/26</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/instagram%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/" target="_blank" rel="noopener noreferrer">Instagram 意見領袖排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/08/opinion-leadership/youtube-kol/%e5%92%96%e6%b3%a2%e7%b5%82%e6%a5%b5%e7%b5%84%e5%90%88%e6%8a%80%e5%87%ba%e6%8b%9b%ef%bc%81-%e9%90%b5%e9%81%93%e8%bf%b7%e9%85%b7%e7%9a%84%e5%a4%a2%e6%8c%91%e6%88%b072%e5%b0%8f%e6%99%82%e7%81%ab/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-08-13/607185b55b7724cd.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube 意見領袖</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/08/opinion-leadership/youtube-kol/%e5%92%96%e6%b3%a2%e7%b5%82%e6%a5%b5%e7%b5%84%e5%90%88%e6%8a%80%e5%87%ba%e6%8b%9b%ef%bc%81-%e9%90%b5%e9%81%93%e8%bf%b7%e9%85%b7%e7%9a%84%e5%a4%a2%e6%8c%91%e6%88%b072%e5%b0%8f%e6%99%82%e7%81%ab/" target="_blank" rel="noopener noreferrer">咖波終極組合技出招！ 鐵道迷酷的夢挑戰72小時火車環島</a>
+<div class="post-who">08/03–08/09</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/08/opinion-leadership/youtube-kol/%e9%8c%ab%e8%98%ad%ef%bc%9a%e8%aa%aa%e6%84%9f%e8%ac%9d%e9%82%84%e5%b0%81%e9%8e%96%e4%bb%80%e9%ba%bc%e9%82%8f%e8%bc%af%ef%bc%9f-183%e5%85%ac%e5%88%86%e7%be%8e%e5%9c%8b%e5%a5%b3%e5%ad%a9%e5%ae%9a/" target="_blank" rel="noopener noreferrer">錫蘭：說感謝還封鎖什麼邏輯？ 183公分美國女孩定居台灣的原因？</a>
+<div class="post-who">07/27–08/02</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/07/opinion-leadership/youtube-kol/%e8%80%81%e9%ab%98%e6%8f%ad%e5%af%86%e6%af%80%e6%bb%85%e4%ba%ba%e9%a1%9e%e7%9a%84%e5%ad%98%e5%9c%a8%ef%bc%9f-%e7%b1%b3%e5%85%b6%e6%9e%97%e4%b8%bb%e5%bb%9a%e8%a9%95%e6%af%94%e5%8f%b0%e7%81%a3%e7%b6%93/" target="_blank" rel="noopener noreferrer">老高揭密毀滅人類的存在？ 米其林主廚評比台灣經典小吃</a>
+<div class="post-who">07/20–07/26</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/youtube%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/" target="_blank" rel="noopener noreferrer">YouTube 意見領袖排行榜 →</a>
+    </div>
+  </article>
+</section>
+
+<h2 class="cat" id="kol">人氣意見領袖 TOP 3</h2>
+<p class="note">Social Lab 依社群聲量統計的各平台人氣意見領袖前三名。</p>
+<section class="briefs compact">
+  <article class="brief">
+    <div class="brief-body">
+      <span class="brief-tag plain">Facebook</span>
+      <ol class="kol-list">
+<li>蔡英文 Tsai Ing-wen</li><li>林志玲Chiling Lin</li><li>李玖哲 Nicky Lee</li>      </ol>
+      <a class="brief-more" href="https://www.social-lab.cc/kol_ranking/" target="_blank" rel="noopener noreferrer">完整榜單 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <div class="brief-body">
+      <span class="brief-tag plain">Instagram</span>
+      <ol class="kol-list">
+<li>小熊yuniko (@yuniko0720)</li><li>@le_dahye</li><li>焦凡凡? (@fan0914fan)</li>      </ol>
+      <a class="brief-more" href="https://www.social-lab.cc/kol_ranking/" target="_blank" rel="noopener noreferrer">完整榜單 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <div class="brief-body">
+      <span class="brief-tag plain">YouTube</span>
+      <ol class="kol-list">
+<li>cat capoo</li><li>Ku’s dream酷的夢-</li><li>大?嘟嘟</li>      </ol>
+      <a class="brief-more" href="https://www.social-lab.cc/kol_ranking/" target="_blank" rel="noopener noreferrer">完整榜單 →</a>
+    </div>
+  </article>
 </section>
 
 <h2 class="cat" id="bsky">Bluesky 熱門話題</h2>
 <p class="note">Bluesky 的全站熱門話題，以英語圈的娛樂、體育、政治為主，僅供參考。</p>
 <div class="pills">
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/e024e6e6f115"
+     target="_blank" rel="noopener noreferrer">
+    <b>Public backlash grows against AI data centers</b>
+    <span>10,365 篇</span>
+  </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/80c0cc1ae3a4"
      target="_blank" rel="noopener noreferrer">
     <b>Perseid meteor shower peaks August 12</b>
-    <span>6,042 篇</span>
+    <span>6,049 篇</span>
   </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/ff47920a198c"
      target="_blank" rel="noopener noreferrer">
     <b>ICE agents to get electric shock gloves</b>
-    <span>3,614 篇</span>
+    <span>3,633 篇</span>
   </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/c8b1898504cd"
      target="_blank" rel="noopener noreferrer">
     <b>Twitch trains AI on channel content by default</b>
-    <span>3,108 篇</span>
+    <span>3,117 篇</span>
   </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/97edfcbc54a5"
      target="_blank" rel="noopener noreferrer">
     <b>Karoline Leavitt leaves press secretary role</b>
-    <span>2,772 篇</span>
+    <span>2,793 篇</span>
   </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/f83935e27d86"
      target="_blank" rel="noopener noreferrer">
     <b>USS Abraham Lincoln deployment crisis</b>
-    <span>2,432 篇</span>
+    <span>2,456 篇</span>
   </a>
-  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/0ea82d7abe91"
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/4ead6a749e07"
      target="_blank" rel="noopener noreferrer">
-    <b>Lakers sold to Kushner and Iger</b>
-    <span>2,266 篇</span>
+    <b>Trump claims control of Hormuz</b>
+    <span>1,529 篇</span>
   </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/ca041f076ce0"
      target="_blank" rel="noopener noreferrer">
     <b>Hegseth joined Trump&#39;s secret flight</b>
-    <span>948 篇</span>
+    <span>958 篇</span>
   </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/e3dcdf33fb56"
      target="_blank" rel="noopener noreferrer">
     <b>Games that didn&#39;t click for players</b>
-    <span>866 篇</span>
+    <span>902 篇</span>
   </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/c10b0bea2b33"
      target="_blank" rel="noopener noreferrer">
     <b>ICE enforcement harms communities</b>
-    <span>454 篇</span>
+    <span>468 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/cb99272eb7f7"
+     target="_blank" rel="noopener noreferrer">
+    <b>Ukraine drone strikes Russia</b>
+    <span>357 篇</span>
   </a>
   <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/8d88ff1aa057"
      target="_blank" rel="noopener noreferrer">
     <b>Alex Bregman hits three home runs</b>
-    <span>232 篇</span>
-  </a>
-  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/e364ed6ecb96"
-     target="_blank" rel="noopener noreferrer">
-    <b>Super Mario Sunshine on Switch 2</b>
-    <span>174 篇</span>
-  </a>
-  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/975338cff407"
-     target="_blank" rel="noopener noreferrer">
-    <b>Trump repeals shell company disclosure rule</b>
-    <span>109 篇</span>
+    <span>239 篇</span>
   </a>
 </div>
 
@@ -719,8 +825,8 @@ article{scroll-margin-top:66px}
 
 You can opt out of some training here: www.twitch.tv/settings/sec...</p>
       <div class="post-stats">
-        <span>♥ 7,648</span>
-        <span>↻ 7,825</span>
+        <span>♥ 7,667</span>
+        <span>↻ 7,837</span>
         <span>💬 219</span>
 <a href="https://bsky.app/profile/zachbussey.tos.gg/post/3msvjoyz7ns22" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
     </div>
@@ -753,8 +859,8 @@ You can opt out of some training here: www.twitch.tv/settings/sec...</p>
       <p class="post-text">Joined CNBC&#39;s Squawk Box to talk about how 70% of AI revenues are coming from Anthropic and OpenAI, NVIDIA&#39;s vendor financing by proxy, and how outside of unprofitable AI labs, there&#39;s single-digit billions of dollars of demand for AI compute and software.
 youtu.be/8GWPjTDPVIM</p>
       <div class="post-stats">
-        <span>♥ 785</span>
-        <span>↻ 146</span>
+        <span>♥ 790</span>
+        <span>↻ 149</span>
         <span>💬 21</span>
 <span>🔗 youtu.be</span><a href="https://bsky.app/profile/edzitron.com/post/3msv6ezeu4224" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
     </div>
@@ -769,7 +875,7 @@ youtu.be/8GWPjTDPVIM</p>
 
 AI has no place in human writing.</p>
       <div class="post-stats">
-        <span>♥ 337</span>
+        <span>♥ 338</span>
         <span>↻ 151</span>
         <span>💬 0</span>
 <a href="https://bsky.app/profile/ellipsus.com/post/3msvbi55ok22a" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
@@ -783,7 +889,7 @@ AI has no place in human writing.</p>
 · 08/12 21:33· 命中「OpenAI」      </div>
       <p class="post-text">Despite myths that there&#39;s &#34;incredible demand for AI,&#34; 70%+ of hyperscaler AI revenues come from OpenAI and Anthropic. In FY26, $24.1bn of Microsoft&#39;s $34.33bn in AI revenue came from OpenAI - meaning that GPU rentals and AI software are single-digit billion dollar businesses.</p>
       <div class="post-stats">
-        <span>♥ 304</span>
+        <span>♥ 305</span>
         <span>↻ 68</span>
         <span>💬 11</span>
 <a href="https://bsky.app/profile/edzitron.com/post/3msvakkcgek2z" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
@@ -797,7 +903,7 @@ AI has no place in human writing.</p>
 · 08/12 21:07· 命中「Anthropic」      </div>
       <p class="post-text">Dario Amodei of Anthropic claims to love American values, and I can think of nothing more American than competition. Yet his approach - masked as an &#34;AI arms race with China&#34; - is focused on crushing open source models that are competing with Claude at a lower price.</p>
       <div class="post-stats">
-        <span>♥ 241</span>
+        <span>♥ 242</span>
         <span>↻ 37</span>
         <span>💬 2</span>
 <a href="https://bsky.app/profile/edzitron.com/post/3msv746rrek2z" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
@@ -842,7 +948,7 @@ united24media.com/defense-tech...</p>
       <p class="post-text">UBS estimates that 48% of Google Cloud&#39;s 2027 revenues will come from Anthropic and OpenAI, who represent 70% of AI revenues across Amazon, Google and Microsoft. 
 For hyperscalers to meet analyst expectations, AI labs must raise hundreds of billions of dollars in the next three years.</p>
       <div class="post-stats">
-        <span>♥ 179</span>
+        <span>♥ 180</span>
         <span>↻ 24</span>
         <span>💬 1</span>
 <a href="https://bsky.app/profile/edzitron.com/post/3msv7ygg5lk2z" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
@@ -857,7 +963,7 @@ For hyperscalers to meet analyst expectations, AI labs must raise hundreds of bi
       <p class="post-text">The crucial part is that an exchange of value occurred. Circular financing still involves CoreWeave or whomever receiving and installing GPUs at some point, or like when Amazon invests in OpenAI and OpenAI pays it for compute, it’s still using compute
 bsky.app/profile/yeld...</p>
       <div class="post-stats">
-        <span>♥ 196</span>
+        <span>♥ 198</span>
         <span>↻ 9</span>
         <span>💬 10</span>
 <a href="https://bsky.app/profile/edzitron.com/post/3msuxznbtzc2b" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
@@ -907,7 +1013,7 @@ forbesjapan.com/articles/det...</p>
 · 08/12 19:06· 命中「OpenAI」      </div>
       <p class="post-text">On CNBC’s Squawk Box at 7:50am ET talking about the AI bubble, NVIDIA’s No IT Loads Refused $500 Billion Infrastructure fund, and how the future of hyperscaler growth is dependent on Anthropic and OpenAI paying them over a hundred billion dollars in 2027 alone.</p>
       <div class="post-stats">
-        <span>♥ 173</span>
+        <span>♥ 174</span>
         <span>↻ 13</span>
         <span>💬 16</span>
 <a href="https://bsky.app/profile/edzitron.com/post/3msuyek3gw22b" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>

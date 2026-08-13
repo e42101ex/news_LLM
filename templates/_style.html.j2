@@ -164,6 +164,17 @@ article{scroll-margin-top:66px}
 .pill b{font-weight:700}
 .pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
 .pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
 .posts{list-style:none; margin:0; padding:0}
 .post{
   background:var(--card); border:1px solid var(--line); border-radius:12px;

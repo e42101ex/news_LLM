@@ -24,6 +24,7 @@ bluesky_langs = ["zh", "en", "ja"]
 dailyview = true           # 網路溫度計 dailyview.tw/popular
 dailyview_max = 8
 board_items = 3            # 每個平台排行榜取最近幾週
+kol_ranking = true         # 人氣意見領袖 TOP 3（kol_ranking 頁上的三張榜單表格）
 
 bluesky_queries = [
   "OpenAI", "Anthropic", "Claude AI", "Gemini", "LLM", "AI agent",
@@ -59,6 +60,18 @@ url = "https://www.social-lab.cc/hot-youtube/"
 [[social.boards]]
 name = "新聞"
 url = "https://www.social-lab.cc/news_charts/"
+
+[[social.boards]]
+name = "Facebook 意見領袖"
+url = "https://www.social-lab.cc/facebook%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/"
+
+[[social.boards]]
+name = "Instagram 意見領袖"
+url = "https://www.social-lab.cc/instagram%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/"
+
+[[social.boards]]
+name = "YouTube 意見領袖"
+url = "https://www.social-lab.cc/youtube%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/"
 
 [images]
 # 新聞縮圖。來源：RSS 帶的圖 → 找不到就抓文章頁的 og:image。

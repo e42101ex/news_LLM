@@ -14,7 +14,7 @@
   <h1><a href="{{ root }}social/index.html">社群熱門</a></h1>
   <div class="meta">
     <span>{{ meta.date }}</span>
-    <span>{{ d.trends | length }} 熱搜 · {{ d.dailyview | length }} 溫度計 · {{ d.boards | length }} 平台排行 · {{ d.bsky_trends | length }} 話題 · {{ d.bsky_posts | length }} 貼文</span>
+    <span>{{ d.trends | length }} 熱搜 · {{ d.dailyview | length }} 溫度計 · {{ d.boards | length }} 平台排行 · {{ d.kols | length }} KOL 榜 · {{ d.bsky_trends | length }} 話題 · {{ d.bsky_posts | length }} 貼文</span>
     <span>收錄近 {{ meta.window_hours }} 小時</span>
     <span>更新於 {{ meta.generated_at | localtime(tz) }}</span>
     <a href="{{ root }}social/archive/index.html">歷史存檔</a>
@@ -25,6 +25,7 @@
   <a href="#tw">台灣即時熱搜<b>{{ d.trends | length }}</b></a>
   {% if d.dailyview %}<a href="#dv">網路溫度計<b>{{ d.dailyview | length }}</b></a>{% endif %}
   {% if d.boards %}<a href="#boards">台灣社群排行<b>{{ d.boards | length }}</b></a>{% endif %}
+  {% if d.kols %}<a href="#kol">意見領袖 TOP 3<b>{{ d.kols | length }}</b></a>{% endif %}
   <a href="#bsky">Bluesky 熱門話題<b>{{ d.bsky_trends | length }}</b></a>
   <a href="#posts">AI 熱門貼文<b>{{ d.bsky_posts | length }}</b></a>
 </nav>
@@ -124,6 +125,24 @@
         {% endfor %}
       </ul>
       <a class="brief-more" href="{{ b.url }}" target="_blank" rel="noopener noreferrer">{{ b.platform }}排行榜 →</a>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if d.kols %}
+<h2 class="cat" id="kol">人氣意見領袖 TOP 3</h2>
+<p class="note">Social Lab 依社群聲量統計的各平台人氣意見領袖前三名。</p>
+<section class="briefs compact">
+  {% for k in d.kols %}
+  <article class="brief">
+    <div class="brief-body">
+      <span class="brief-tag plain">{{ k.platform }}</span>
+      <ol class="kol-list">
+        {% for name in k.names %}<li>{{ name }}</li>{% endfor %}
+      </ol>
+      <a class="brief-more" href="{{ k.url }}" target="_blank" rel="noopener noreferrer">完整榜單 →</a>
     </div>
   </article>
   {% endfor %}
