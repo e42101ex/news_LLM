@@ -1,1033 +1,1268 @@
 {
- "generated_at": "2026-08-12T08:13:02.527813+08:00",
- "date": "2026-08-12",
+ "generated_at": "2026-08-13T08:10:12.584037+08:00",
+ "date": "2026-08-13",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
- "topic_count": 39,
- "article_count": 56,
+ "topic_count": 40,
+ "article_count": 72,
  "topics": [
   {
-   "key": "t0013",
-   "title": "Google Gemini 月活躍用戶突破 10 億，成 Google 史上成長最快產品",
-   "summary": "Google 執行長 Sundar Pichai 宣布 Gemini 月活躍用戶已達 10 億，成為 Google 史上成長最快的產品。TechCrunch 報導指出，63% 的 Gemini 用戶使用語音功能，平台每日生成超過 1.5 億張圖片。Gemini 是繼 ChatGPT 之後第二個突破 10 億用戶的 AI 應用。",
-   "category": "產品與應用",
-   "importance": 4,
+   "key": "t0021",
+   "title": "Every Pixel device announced at Made by Google 2026: 11 Pro Fold, Pixel Watch 5, and more",
+   "summary": "Google's latest Pixel lineup is a little pricier, has a new LED lighting feature, and debuts alongside a new finder tag.",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "users",
-    "gemini",
+    "pixel",
     "google",
-    "billion",
-    "product",
-    "fastest-growing"
+    "pro",
+    "watch",
+    "latest",
+    "apple"
    ],
-   "image": "img/2026-08-12/e003a3a446993ca8.webp",
-   "llm_enriched": true,
+   "image": "",
+   "llm_enriched": false,
    "sources": [
-    "Simon Willison",
-    "Ars Technica AI",
+    "ZDNet AI",
+    "TechCrunch AI",
     "The Verge AI",
-    "TechCrunch AI"
+    "Wired AI"
    ],
    "articles": [
     {
-     "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-     "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces",
-     "source": "Simon Willison",
+     "title": "Every Amazon Google Pixel 11 preorder deal - get up to $350 on an Amazon gift card, free",
+     "url": "https://www.zdnet.com/article/google-pixel-11-amazon-deals",
+     "source": "ZDNet AI",
      "lang": "en",
-     "published": "2026-08-11T14:40:45+00:00",
-     "summary": "Stealing Reasoning Traces from Proprietary LLM APIs A vanity domain name ( stolen-thoughts.com ) for a neat paper : Anthropic, OpenAI, and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users, and models. We take a trace produced by a frontier model, replay it into a weaker sibling, jailbreak the weaker model, and recover the stronger model’s hidden reasoning in plaintext You can see an example of these encrypted blocks by running: curl https://api.openai.com/v1/responses \\ -H \" Content-Type: application/json \" \\ -H \" Authorization: Bearer $( l",
+     "published": "2026-08-12T09:34:05+00:00",
+     "summary": "Google's latest lineup of Pixel 11 phones is here, and Amazon has a free gift card offer on every single one.",
      "image": "",
-     "id": "9098acb81a29",
-     "tags": [
-      "jailbreaking",
-      "ai",
-      "openai",
-      "prompt-injection",
-      "generative-ai"
-     ]
+     "id": "5593fbcb2381",
+     "tags": []
     },
     {
-     "title": "Gemini becomes Google's fastest-growing product ever as it hits 1B users",
-     "url": "https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product",
-     "source": "Ars Technica AI",
+     "title": "Every Pixel 11 deal at T-Mobile right now: Trade-in offers, free phones with new line, and more",
+     "url": "https://www.zdnet.com/article/t-mobile-google-pixel-deals",
+     "source": "ZDNet AI",
      "lang": "en",
-     "published": "2026-08-11T11:48:12+00:00",
-     "summary": "But will Gemini's surge survive slowing model releases?",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-2-500x500.jpg",
-     "id": "fc18235bff71",
-     "tags": [
-      "AI",
-      "Google",
-      "Artificial Intelligence",
-      "gemini",
-      "generative ai"
-     ]
+     "published": "2026-08-12T07:29:00+00:00",
+     "summary": "Google's new flagship Pixel series was just announced, and T-Mobile has plenty of preorder offers to choose from.",
+     "image": "",
+     "id": "61f11e6385ee",
+     "tags": []
     },
     {
-     "title": "ChatGPT and Gemini both just passed 1 billion users",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
-     "source": "The Verge AI",
+     "title": "How to preorder every new Google Pixel device - and the best deals I found",
+     "url": "https://www.zdnet.com/article/how-to-preorder-everything-announced-at-made-by-google-2026",
+     "source": "ZDNet AI",
      "lang": "en",
-     "published": "2026-08-11T11:41:42+00:00",
-     "summary": "For the 14th time, a Google product has hit 1 billion users. Google CEO Sundar Pichai posted on X that a billion people are using Gemini every month, and that Gemini is Google's fastest-growing product ever. A billion users is a huge milestone, but Google isn't the first AI app to hit it. OpenAI's ChatGPT […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/gemini-live-ai-ad.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "72f52ad1b938",
-     "tags": [
-      "AI",
-      "Google",
-      "OpenAI",
-      "Tech"
-     ]
+     "published": "2026-08-12T07:23:00+00:00",
+     "summary": "We've got the scoop on where you can preorder the latest Google devices announced at Made by Google, including the Pixel 11 lineup and the Pixel Watch 5.",
+     "image": "",
+     "id": "c71645c4d1ca",
+     "tags": []
     },
     {
-     "title": "Google’s Gemini app surges to 1 billion users",
-     "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users",
+     "title": "The Pixel Tag is Google's $29 AirTag alternative - with one big advantage",
+     "url": "https://www.zdnet.com/article/google-pixel-tag-ultra-wideband-bluetooth-channel-sounding",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:30:00+00:00",
+     "summary": "Google's new finder tags use an emerging Bluetooth technology to stand apart from competing devices made by Apple and Samsung.",
+     "image": "",
+     "id": "19b5bde04773",
+     "tags": []
+    },
+    {
+     "title": "Everything announced at Made by Google ’26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features",
+     "url": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026",
      "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-08-11T10:49:12+00:00",
-     "summary": "Google also shared numbers of how people are actually using the chatbot, with 63% of Gemini users talking directly to the assistant using the voice feature. Plus, Gemini now generates more than 150 million images every day, according to Google.",
+     "published": "2026-08-12T06:20:33+00:00",
+     "summary": "From the Pixel 11 series and a brand new competitor to Apple’s AirTag, here are all the announcements from the Made by Google 2026 event.",
      "image": "",
-     "id": "a49e2df2d449",
+     "id": "77da1d8caea4",
      "tags": [
       "AI",
-      "Apps",
+      "Gadgets",
+      "Hardware",
       "gemini",
       "Google"
      ]
-    }
-   ]
-  },
-  {
-   "key": "t0007",
-   "title": "OpenAI 推出 Linux 版 ChatGPT 桌面應用，並開始測試 ChatGPT 內廣告",
-   "summary": "OpenAI 釋出 Linux 版 ChatGPT 桌面應用預覽版，支援 Ubuntu、Debian、Fedora 等發行版，提供 x64 與 arm64 的 .deb 與 .rpm 安裝包，整合 ChatGPT、ChatGPT Work 與 Codex 三項功能。此外，OpenAI 也宣布開始在 ChatGPT 中測試廣告，以支援免費使用，強調明確標示、不影響回答中立性及保護隱私。",
-   "category": "產品與應用",
-   "importance": 3,
-   "keywords": [
-    "chatgpt",
-    "linux",
-    "openai",
-    "testing",
-    "ads",
-    "desktop"
-   ],
-   "image": "img/2026-08-12/f790a4394c0038a7.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家",
-    "TechCrunch AI",
-    "OpenAI"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI 推出预览版 ChatGPT for Linux 桌面端应用",
-     "url": "https://www.ithome.com/0/988/562.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-11T15:48:03+00:00",
-     "summary": "IT之家 8 月 12 日消息，OpenAI 宣布推出 Linux 版 ChatGPT 桌面端应用（预览版），在受支持的 Linux 系统上可直接使用 ChatGPT、ChatGPT Work 和 Codex。 官方提供了适用于 x64 及 arm64 架构的 .deb 和 .rpm 安装包，IT之家附支持的 Linux 发行版如下： Ubuntu 24.04 LTS 和 26.04 LTS Debian 13 Fedora 43 和 44 今年 7 月， OpenAI 宣布推出全新桌面应用程序 ，整合 Codex 和 ChatGPT。桌面版 Codex 更新后变成全新的 ChatGPT 桌面应用，包括 Chat（聊天）、ChatGPT Work（工作）和 Codex 三个组成部分，更新后应用会保留现有的 Codex 任务和项目，也可以在设置中选择 Codex 应用图标。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/d29bec68-9cdc-4478-9b6c-66a721a76804.jpg?x-bce-process=image/format,f_auto",
-     "id": "59fc429dec79",
-     "tags": []
     },
     {
-     "title": "OpenAI launches ChatGPT desktop app for Linux",
-     "url": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-11T11:15:35+00:00",
-     "summary": "OpenAI is finally bringing a dedicated ChatGPT desktop app to Linux operating systems.",
-     "image": "",
-     "id": "2f7f031cc515",
-     "tags": [
-      "AI",
-      "Apps",
-      "TC",
-      "ChatGPT",
-      "codex"
-     ]
-    },
-    {
-     "title": "Testing ads in ChatGPT",
-     "url": "https://openai.com/index/testing-ads-in-chatgpt",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-08-11T02:00:00+00:00",
-     "summary": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
-     "image": "",
-     "id": "de2ca3d7578d",
-     "tags": [
-      "Company"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0036",
-   "title": "NVIDIA 發表 Nemotron 3.5 Lightning 開源模型，主打本地端代理型 AI 效率",
-   "summary": "NVIDIA 擴展 Nemotron 3 模型家族，推出 Nemotron 3.5 Lightning，強調在長時間執行的代理型 AI 工作負載中具備同級最高效率，並搭配 NeMo Switchyard 軟體。NVIDIA 同時宣布八月起將與本地 AI 社群合作，推動開源模型與智慧代理生態系發展。",
-   "category": "模型與研究",
-   "importance": 3,
-   "keywords": [
-    "open",
-    "nemotron",
-    "nvidia",
-    "lightning",
-    "local",
-    "3.5"
-   ],
-   "image": "img/2026-08-12/3bbea3cbb30c36a6.webp",
-   "llm_enriched": true,
-   "sources": [
-    "NVIDIA Blog",
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "NVIDIA and Local AI Community Fuel Open Source Models and Intelligent Agents",
-     "url": "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron",
-     "source": "NVIDIA Blog",
-     "lang": "en",
-     "published": "2026-08-11T05:00:25+00:00",
-     "summary": "The open source ecosystem is making it easier for AI enthusiasts and developers to build, customize and run increasingly capable agents locally. Throughout August, NVIDIA is celebrating the partners and open source communities moving local AI forward, along with the models, applications and tools emerging across the ecosystem. That includes NVIDIA’s latest open models, software […]",
-     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/08/raig-rolling-blog-local-ai-community-open-source-842x450.jpg",
-     "id": "5389972db876",
-     "tags": [
-      "AI",
-      "Agentic AI",
-      "Artificial Intelligence",
-      "DGX Spark",
-      "Local AI"
-     ]
-    },
-    {
-     "title": "NVIDIA Nemotron 3.5 Lightning and NeMo Switchyard Deliver Faster, Smarter, More Efficient Agentic AI",
-     "url": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx",
-     "source": "NVIDIA Blog",
-     "lang": "en",
-     "published": "2026-08-11T05:00:05+00:00",
-     "summary": "As AI shifts from chatbots to autonomous agents, open models are serving market demands for full control over where AI runs and how it’s deployed and evolves. Today, NVIDIA is expanding its Nemotron 3 model family with Nemotron 3.5 Lightning, the highest-efficiency model in its class for long-running agentic AI workloads. This release follows Nemotron […]",
-     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/08/image1-842x450.jpeg",
-     "id": "d9fbf12b504c",
-     "tags": [
-      "AI",
-      "Agentic AI",
-      "Nemotron",
-      "Open Source"
-     ]
-    },
-    {
-     "title": "Nvidia's open Nemotron 3.5 Lightning model is all about specialized, local agentic AI",
-     "url": "https://www.zdnet.com/article/ai-model-release-tracker",
+     "title": "The best Pixel 11 and Pixel 11 Pro cases of 2026: Expert recommended",
+     "url": "https://www.zdnet.com/article/best-google-pixel-11-cases",
      "source": "ZDNet AI",
      "lang": "en",
-     "published": "2026-08-11T05:00:00+00:00",
-     "summary": "Our AI Model Release Tracker keeps new models in context with their peers, so you know which are worth your time.",
+     "published": "2026-08-12T06:16:00+00:00",
+     "summary": "Google's latest Pixel phones are here, and we found the best cases to protect your new Pixel 11, Pixel 11 Pro, Pixel 11 Pro XL, or Pixel 11 Pro Fold.",
      "image": "",
-     "id": "0dacb5a83afe",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0044",
-   "title": "OpenAI 將資安計畫 Daybreak 拆分為 Blue 與 Red 兩級，Red 級模型已找到逾 400 項系統核心漏洞",
-   "summary": "OpenAI 將提供給資安人員的 Daybreak 計畫分為 Blue 與 Red 兩種存取層級。Red 層級採用全新資安專用模型 GPT-5.6-Cyber，已在某一熱門作業系統核心中發現超過 400 項可能導致權限提升的漏洞。此升級正值 AI 產業接連爆出資安事件之際，OpenAI 希望讓合作夥伴運用最先進模型對抗網路威脅。",
-   "category": "安全與倫理",
-   "importance": 3,
-   "keywords": [
-    "daybreak",
-    "red",
-    "blue",
-    "safety",
-    "openai",
-    "400"
-   ],
-   "image": "",
-   "llm_enriched": true,
-   "sources": [
-    "iThome",
-    "TechOrange 科技報橘"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI Daybreak拆成Blue與Red兩級，後者找出逾400項作業系統核心漏洞",
-     "url": "https://www.ithome.com.tw/news/178022",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-08-11T03:08:12+00:00",
-     "summary": "OpenAI周一（8/10）宣布，把提供給資安人員使用的Daybreak計畫分成Blue與Red兩種存取級別。其中，Daybreak Red採用全新的資安專用模型GPT-5.6-Cyber，並已在某款熱門作業系統核心找到逾400項可能造成權限提升的漏洞。",
-     "image": "",
-     "id": "bfe15a1f9d99",
+     "id": "2e8f8fa894e3",
      "tags": []
     },
     {
-     "title": "解除 AI 資安封印：OpenAI 擴大 Daybreak 計畫推「紅藍雙軌」，降低防禦任務拒絕率",
-     "url": "https://techorange.com/2026/08/11/open-ai-daybreak-cybersecurity",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-08-10T21:16:24+00:00",
-     "summary": "OpenAI 宣布擴大網路安全計畫 Daybreak，進一步為參與企業提供防禦網路攻擊所需的 AI 能力。《CNBC》報導，OpenAI 今年 5 月首次推出 Daybreak，當時競爭對手 Anthropic 才剛成立網路安全聯盟 Project Glasswing，引發華爾街及美國政府關注。這次，OpenAI 希望讓合作夥伴運用旗下最先進的 AI 模型，因應日益快速變化的網路安全威脅。 OpenAI 升級 Daybreak 服務：推雙層級迎戰資安風險 《CNBC》指出，這項升級正值 AI 產業接連爆出網路安全事件之際，OpenAI、Anthropic 和 Meta 近來都曾揭露，旗下 AI 模型在進行安全測試時，意外進入原本不應存取的系統，引發研究人員及政府官員對 AI 安全防護的疑慮。 OpenAI 表示，Daybreak 將新增 Blue、Red 兩種服務層級。Daybreak Blue 主要用於防禦性的資安工作，使用者可以取得 OpenAI 先進的通用型模型，並在調整後的安全限制下執行相關防禦任務。Daybreak Red 則提供專門訓練的網路安全模型，可進一步用於資安測試、漏洞研究及漏洞利用驗證。OpenAI 會針對網路防禦需求調整模型的安全限制，讓企業能將 AI 用於防禦性的資安工作。 OpenAI 釋出專屬資安模型 GPT-5.6-Cyber，IBM、CrowdSt",
-     "image": "https://techorange.com/app/uploads/2026/08/dd7d4cd5be5dfa60-720x480.jpg",
-     "id": "8ba291c2e755",
-     "tags": [
-      "AI 人工智慧"
-     ]
+     "title": "AT&T will give you the new Google Pixel 11 Pro for free with trade-in - any year, any condition",
+     "url": "https://www.zdnet.com/article/google-pixel-11-pro-at-t-deal",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:01:00+00:00",
+     "summary": "Google just announced the new Pixel 11 line, and right now at AT&T, you can get one for free when you trade in any older phone.",
+     "image": "",
+     "id": "8ec67846be5b",
+     "tags": []
     },
     {
-     "title": "【資安日報】8月11日，N‑central身分驗證漏洞遭到積極利用，攻擊者藉此存取受害組織網域控制器等重要設施",
-     "url": "https://www.ithome.com.tw/news/178032",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-08-10T19:08:18+00:00",
-     "summary": "本日新聞焦點 ● N‑central身分驗證漏洞遭積極利用，攻擊者存取受害者重要設施 ● AI代理組織與管理平臺Paperclip存在滿分漏洞 ● OpenAI資安研究存取計畫Daybreak拆成Blue與Red兩級",
+     "title": "Pixel Watch 5's strength training feature could replace my top lifting app - no phone needed",
+     "url": "https://www.zdnet.com/article/strength-training-pixel-watch-5-workout-apps",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:01:00+00:00",
+     "summary": "Strength training is all the buzz. Google built a special exercise experience into the Pixel Watch 5 to make it easier to get started.",
      "image": "",
-     "id": "e46112989e2b",
+     "id": "ebf5d30f6bdf",
      "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0018",
-   "title": "OpenAI 營運長 Brad Lightcap 宣布離職，將另起新項目",
-   "summary": "OpenAI 資深副總裁暨前營運長 Brad Lightcap 在任職八年後宣布離開公司，並在內部備忘中表示將「展開新事業」。他是 OpenAI 在任最久的核心高階主管之一，離職消息凸顯近期 OpenAI 高層人事持續異動。",
-   "category": "企業與資金",
-   "importance": 3,
-   "keywords": [
-    "coo",
-    "lightcap",
-    "something",
-    "brad",
-    "longtime",
-    "openai"
-   ],
-   "image": "img/2026-08-12/a00fb930d416234e.webp",
-   "llm_enriched": true,
-   "sources": [
-    "The Verge AI",
-    "TechCrunch AI"
-   ],
-   "articles": [
+    },
     {
-     "title": "Another OpenAI executive takes off",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
+     "title": "Google Pixel 11 Pro vs. Apple iPhone 17 Pro: Which Pro model should you buy?",
+     "url": "https://www.zdnet.com/article/google-pixel-11-pro-vs-apple-iphone-17-pro",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:01:00+00:00",
+     "summary": "The two Google and Apple phones go neck to neck against each other, but only one will suit your needs.",
+     "image": "",
+     "id": "acba9a7a2ebf",
+     "tags": []
+    },
+    {
+     "title": "Google Pixel 11 vs. Pixel 9: Why the Pixel 11 is actually worth upgrading",
+     "url": "https://www.zdnet.com/article/google-pixel-11-vs-pixel-9",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:01:00+00:00",
+     "summary": "If you passed on the Pixel 10 in favor of your Pixel 9, you may find the latest Google Pixel 11 a more compelling upgrade.",
+     "image": "",
+     "id": "9bea8d25b960",
+     "tags": []
+    },
+    {
+     "title": "Google Pixel Watch 5 vs. Apple Watch Series 11: How Google competes against Apple",
+     "url": "https://www.zdnet.com/article/google-pixel-watch-5-vs-apple-watch-series-11",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:01:00+00:00",
+     "summary": "The Google Pixel Watch 5 is a big upgrade over its predecessor, but is it enough to take on the Apple Watch Series 11?",
+     "image": "",
+     "id": "00d92075cadc",
+     "tags": []
+    },
+    {
+     "title": "Google’s Pixel Watch 5 dives deeper into AI and health",
+     "url": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-08-11T09:50:01+00:00",
-     "summary": "Brad Lightcap, OpenAI's special projects lead and the company's former COO, announced his departure after an eight-year stint at the AI lab. In an internal memo he later posted to X, Lightcap told colleagues he'd be starting \"something new.\" \"Over the last few months, I've been focused on the next horizon and what would stand […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2151647832.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "4b76f34b9372",
+     "published": "2026-08-12T06:00:00+00:00",
+     "summary": "The $399 Google Pixel Watch 5 isn't about the hardware. Sure, there's a new satin pyrite case finish, a few new strap colors, and a Steph Curry Special Edition. Under the hood, there's a slightly faster Qualcomm processor and an itty-bitty battery bump. There's a $50 price hike from last year, too, because the Pixel […]",
+     "image": "",
+     "id": "1b0e93cced6d",
      "tags": [
       "AI",
-      "News",
-      "OpenAI"
+      "Gadgets",
+      "Google",
+      "Google Pixel",
+      "Hands-on"
      ]
     },
     {
-     "title": "Brad Lightcap, OpenAI’s longtime COO, is leaving to ‘start something new’",
-     "url": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new",
-     "source": "TechCrunch AI",
+     "title": "4 New Camera Tricks on Google’s Latest Pixel 11 Smartphones",
+     "url": "https://www.wired.com/story/new-camera-tricks-on-google-latest-pixel-11-smartphones",
+     "source": "Wired AI",
      "lang": "en",
-     "published": "2026-08-11T09:41:34+00:00",
-     "summary": "One of OpenAI's longest-serving executives is headed out the door, although the longtime COO told staff that he was \"excited to help you all advance the mission from a different vantage point.\"",
+     "published": "2026-08-12T06:00:00+00:00",
+     "summary": "From Magic Capture and Instant Night Sight to a built-in teleprompter, here’s a look at a few camera features on Google’s new Pixel 11 series.",
      "image": "",
-     "id": "e476216d8f62",
+     "id": "5cd7a3fff1b2",
      "tags": [
-      "AI",
-      "Brad Lightcap",
-      "OpenAI"
+      "Gear",
+      "Gear / Gear News and Events",
+      "Gear / Products / Phones",
+      "phones",
+      "smartphones"
      ]
+    },
+    {
+     "title": "Every Pixel device announced at Made by Google 2026: 11 Pro Fold, Pixel Watch 5, and more",
+     "url": "https://www.zdnet.com/article/everything-announced-at-made-by-google-2026-pixel-11-pro-fold-pixel-watch-5",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:00:00+00:00",
+     "summary": "Google's latest Pixel lineup is a little pricier, has a new LED lighting feature, and debuts alongside a new finder tag.",
+     "image": "",
+     "id": "ae29fe9938bf",
+     "tags": []
+    },
+    {
+     "title": "Google Pixel 11 vs Samsung Galaxy Z Fold 8: I compared the latest flagships - here's my take",
+     "url": "https://www.zdnet.com/article/google-pixel-11-vs-samsung-galaxy-z-fold-8",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:00:00+00:00",
+     "summary": "The Pixel 11 and the Galaxy Z Fold 8 offer very different user experiences. Which is for you? Here's how they compare.",
+     "image": "",
+     "id": "4cb654cd3d70",
+     "tags": []
+    },
+    {
+     "title": "I saw the Google Pixel 11 Pro Fold - and found 3 key reasons to buy it over Samsung",
+     "url": "https://www.zdnet.com/article/google-pixel-11-pro-fold-hands-on",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:00:00+00:00",
+     "summary": "It's not as cutesy and charming as the Galaxy Z Fold 8, but the latest Pixel foldable is still the top choice for key aspects.",
+     "image": "",
+     "id": "bb904c8dbdf3",
+     "tags": []
+    },
+    {
+     "title": "Google's new Pixel 11 makes a strong case for skipping the Pro models - here's why",
+     "url": "https://www.zdnet.com/article/google-pixel-11-first-look",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:00:00+00:00",
+     "summary": "Although the design is largely unchanged, the Pixel 11 packs meaningful upgrades, including the Tensor G6 chip and improved cameras.",
+     "image": "",
+     "id": "f7ad93b73cf1",
+     "tags": []
+    },
+    {
+     "title": "This subtle Pixel 11 Pro feature reminds me of the golden days of Android phones",
+     "url": "https://www.zdnet.com/article/google-pixel-11-pro-hilight-feature-android-golden-days",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-12T06:00:00+00:00",
+     "summary": "The new Google Pixel 11 Pro models feature a useful HiLight indicator that pays homage to classic notification LEDs.",
+     "image": "",
+     "id": "38a024446f86",
+     "tags": []
     }
    ]
   },
   {
-   "key": "t0037",
-   "title": "Spotify 將標示 AI 虛擬藝人，並將其音樂從推薦中排除",
-   "summary": "Spotify 將於 9 月中旬起推出「AI Persona」標籤，標示不代表真人的 AI 生成藝人檔案，並預設將其音樂從編輯推薦、演算法推薦與個人化歌單中排除。平台同時允許藝人主動揭露其 AI 身分。",
-   "category": "政策與法規",
+   "key": "t0016",
+   "title": "Twitch streamers can now opt out from training Amazon’s AI",
+   "summary": "Twitch users can now opt out of allowing their content to be used to train Amazon's generative AI models. Opting out means that \"your streams, VODs, clips, stream chats, and pictures and text on your channel\" won't be used in \"future training\" of an Amazon AI model \"whose purpose",
+   "category": "其他",
    "importance": 3,
    "keywords": [
-    "music",
-    "spotify",
-    "persona",
-    "label",
-    "profiles",
-    "exclude"
+    "twitch",
+    "amazon",
+    "opt",
+    "content",
+    "streamers",
+    "train"
    ],
-   "image": "img/2026-08-12/7cd17a0c50f2d3d2.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/2e39d185e318eaf7.webp",
+   "llm_enriched": false,
    "sources": [
+    "Ars Technica AI",
     "TechCrunch AI",
     "The Verge AI"
    ],
    "articles": [
     {
-     "title": "Spotify will label ‘AI Persona’ profiles and exclude their music from recommendations",
-     "url": "https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations",
-     "source": "TechCrunch AI",
+     "title": "Twitch content has trained Amazon AI for years, but users can opt out now",
+     "url": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now",
+     "source": "Ars Technica AI",
      "lang": "en",
-     "published": "2026-08-11T05:00:00+00:00",
-     "summary": "Spotify is introducing “AI Persona” labels for artist profiles that represent AI-generated identities and will exclude their music from editorial, algorithmic, and personalized recommendations by default.",
-     "image": "",
-     "id": "5753088d6849",
+     "published": "2026-08-12T13:00:30+00:00",
+     "summary": "Streaming platform says user-generated content \"may be used for future Gen AI model improvements.\"",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2286491305-500x500.jpg",
+     "id": "1b2cafc3ae42",
      "tags": [
       "AI",
-      "Media & Entertainment",
-      "Spotify"
+      "Policy",
+      "Tech",
+      "Amazon",
+      "generative ai"
      ]
     },
     {
-     "title": "Spotify says it won’t recommend music from ‘AI Personas’",
-     "url": "https://www.theverge.com/entertainment/977815/spotify-ai-persona-label-recommendations",
-     "source": "The Verge AI",
+     "title": "Amazon will train on Twitch streamers’ content by default, unless they opt out",
+     "url": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out",
+     "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-08-11T05:00:00+00:00",
-     "summary": "Spotify will soon label AI artists and remove their music from your recommendations. The change, which will start rolling out in mid-September, means you'll see an \"AI Persona\" badge on an artist's profile across the app if they do \"not represent a real person.\" The music streaming platform will allow artists to disclose that they're […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/AI-Personas-Display-2.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "5f3f98dab4f3",
+     "published": "2026-08-12T12:10:40+00:00",
+     "summary": "\"If this was opt-in, nobody would opt in,\" Twitch CPO Mike Minton said on a livestream responding to user feedback. \"That's honestly the answer.\"",
+     "image": "",
+     "id": "2f233deb4aaf",
      "tags": [
       "AI",
-      "Entertainment",
-      "Music",
+      "Social",
+      "Amazon",
+      "Twitch"
+     ]
+    },
+    {
+     "title": "Twitch streamers can now opt out from training Amazon’s AI",
+     "url": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-08-12T09:29:10+00:00",
+     "summary": "Twitch users can now opt out of allowing their content to be used to train Amazon's generative AI models. Opting out means that \"your streams, VODs, clips, stream chats, and pictures and text on your channel\" won't be used in \"future training\" of an Amazon AI model \"whose purpose is to generate or synthesize text, […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK044_VRG_Illo_N_Barclay_1_twitch.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "70c73a35f66a",
+     "tags": [
+      "AI",
+      "Creators",
       "News",
-      "Spotify"
+      "Tech",
+      "Twitch"
      ]
     }
    ]
   },
   {
-   "key": "t0041",
-   "title": "Anthropic 將為 Claude 生成文字與圖片加入隱形浮水印",
-   "summary": "Anthropic 宣布將為 Claude 生成的文字嵌入機器可讀浮水印，並在支援的檔案中加入數位簽署的來源中繼資料，以符合歐盟 AI 透明度規範。相關機制對使用者不可見，且 Anthropic 表示將把浮水印支援延伸至舊版模型。",
-   "category": "安全與倫理",
-   "importance": 4,
+   "key": "t0049",
+   "title": "SpaceXAI推出Grok Bot！主打「幕僚長+專責Bot」AI協作，切入OpenAI與Anthropic戰場",
+   "summary": "SpaceXAI發表Grok Bot早期測試版，官方稱Bot有自己的雲端電腦，能登入既有帳號把事做完。",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "text",
-    "generated",
-    "watermark",
-    "anthropic",
-    "models",
-    "invisible"
+    "bot",
+    "grok",
+    "xai",
+    "spacexai",
+    "work",
+    "teammate"
    ],
-   "image": "img/2026-08-12/76a70fcd2a806583.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/fdc45d7f805ac513.webp",
+   "llm_enriched": false,
    "sources": [
     "The Verge AI",
-    "TechCrunch AI",
-    "INSIDE",
-    "iThome",
-    "科技新報 TechNews"
+    "數位時代",
+    "TechOrange 科技報橘"
    ],
    "articles": [
     {
-     "title": "Claude will apply invisible watermarks to AI text and images",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images",
+     "title": "Grok is now an AI ‘teammate’ you can assign work",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-08-11T04:22:20+00:00",
-     "summary": "Anthropic has pledged to start marking Claude-generated text and images with machine-readable data, in an effort to comply with European rules for AI transparency. \"Generated text will carry embedded watermarks, and generated files will include digitally signed provenance metadata where supported,\" Anthropic says on a new Claude support page. The changes are invisible to human […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STKB364_CLAUDE_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "fe459dc13f2f",
+     "published": "2026-08-12T03:58:54+00:00",
+     "summary": "SpaceXAI has introduced Grok Bot, an always-on AI agent service designed to behave like independent \"AI teammates\" that can do your work for you. The bots share their own cloud-based computer environment, and can sign into apps, tools, and websites you already use to complete multi-step workplace tasks, only coming back when their assigned work […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Grok-Bot-desktop-and-iOS.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "4312292f9917",
      "tags": [
       "AI",
-      "Anthropic",
       "News",
-      "Policy",
-      "Politics"
+      "Tech",
+      "xAI"
      ]
     },
     {
-     "title": "Anthropic says it will watermark text generated by its AI models",
-     "url": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-11T04:13:47+00:00",
-     "summary": "Anthropic will extend support for watermarking AI generations for older models as well.",
-     "image": "",
-     "id": "53c498c7722b",
-     "tags": [
-      "AI",
-      "Anthropic",
-      "claude code",
-      "watermarks"
-     ]
-    },
-    {
-     "title": "複製貼上也能追蹤！Claude AI 生成內容浮水印技術解析",
-     "url": "https://www.inside.com.tw/article/42065-claude-ai-watermark-provenance-analysis",
-     "source": "INSIDE",
+     "title": "SpaceXAI推出Grok Bot！主打「幕僚長+專責Bot」AI協作，切入OpenAI與Anthropic戰場",
+     "url": "https://www.bnext.com.tw/article/91832/spacexai-grok-bot-ai-agent-team",
+     "source": "數位時代",
      "lang": "zh",
-     "published": "2026-08-11T03:27:00+00:00",
-     "summary": "你用 AI 寫的每一段文字，以後可能都會被追蹤到。Anthropic 宣布 Claude 新模型全面嵌入隱形浮水印，複製貼上也帶著走，生成圖檔則附上 C2PA 數位簽章。這是回應歐盟 AI 法案第 50 條的產業第一槍，但 Anthropic 自己也承認，改寫就可能讓浮水印失效。技術能走多遠、檢測該由誰把關，本文完整拆解。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/08/3537c6e0-f3b2-438a-a774-69e55f218954.webp",
-     "id": "bee747df0c0b",
-     "tags": [
-      "人工智慧",
-      "INSIDE 解析",
-      "Anthropic",
-      "C2PA",
-      "AI 浮水印"
-     ]
-    },
-    {
-     "title": "Claude新模型將加入AI內容標記，文字藏浮水印、檔案附C2PA來源資訊",
-     "url": "https://www.ithome.com.tw/news/178044",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-08-11T01:08:32+00:00",
-     "summary": "Anthropic公布Claude的AI生成內容標記規畫，8月2日起在歐盟推出的新Claude模型，將從推出第一天支援機器可讀標記。Claude產生的文字會加入肉眼看不見的浮水印，支援的SVG、PNG與JPEG等檔案則加入符合C2PA標準、經數位簽署的來源中繼資料，用來記錄內容來源。相關機制不只適用歐盟，也會套用至支援模型在全球提供的Claude服務。",
-     "image": "",
-     "id": "0a11f2335c4c",
+     "published": "2026-08-12T03:47:00+00:00",
+     "summary": "SpaceXAI發表Grok Bot早期測試版，官方稱Bot有自己的雲端電腦，能登入既有帳號把事做完。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-08/hinw-1786507519.png?w=900&output=webp",
+     "id": "0eba98990a5f",
      "tags": []
     },
     {
-     "title": "Anthropic 推出 Claude 文字浮水印，摧毀某些人將 AI 小說當成自己作品的夢想",
-     "url": "https://technews.tw/2026/08/11/anthropic-puts-hidden-watermarks-on-claude-text-under-new-eu-rules",
-     "source": "科技新報 TechNews",
+     "title": "SpaceXAI 推 Grok Bot 加入企業 Agent 戰局：真正差異不只是「會操作電腦」",
+     "url": "https://techorange.com/2026/08/12/spacexai-grok-bot-ai-agent",
+     "source": "TechOrange 科技報橘",
      "lang": "zh",
-     "published": "2026-08-10T22:50:17+00:00",
-     "summary": "Anthropic 剛宣布，新 Claude 模型產生文字將嵌入「無法察覺」的機器可讀浮水印，並為支援的檔案加 […]",
-     "image": "",
-     "id": "971578a34d21",
+     "published": "2026-08-11T20:20:29+00:00",
+     "summary": "SpaceXAI 於 8 月 11 日推出企業 AI Agent 新產品 Grok Bot，目前以 early beta 形式開放。與一般使用者有需求時才打開 AI 助手、交付單次任務不同，SpaceXAI 將 Grok Bot 定位成可以持續工作的「AI 隊友」：使用者可以建立具有特定職責的 Bot，讓它登入企業既有的 App、網站，甚至在使用者關掉電腦後繼續工作，直到完成任務或需要人工核准時才回來找人。 Grok Bot 並不是第一個能操作電腦的 AI Agent。Anthropic、OpenAI 等業者早已讓 Agent 能操作網頁、使用工具，近期也陸續把 Agent 延伸至企業工作。Grok Bot 想做出的差異，在於把持續運作的工作環境、電腦操作、工作流程學習與多 Agent 協作整合在一起，讓使用者不只叫 AI 做一件事，而是建立一組具有不同職責、可以長期工作的數位同事。 Grok Bot 不只接任務，而是擁有可以持續工作的電腦環境 Grok Bot 第一個特色，是它不是一段完成任務後就結束的聊天 session，而是讓 Agent 擁有可以持續使用的工作環境。《VentureBeat》指出，每個 Bot 都透過自己的 computer environment 執行工作，即使使用者闔上筆電，它仍可以繼續運作，直到完成任務或碰到需要使用者核准的環節。SpaceXAI 官方",
+     "image": "https://techorange.com/app/uploads/2026/08/a12951cf822e5dad-720x402.png",
+     "id": "39ca57058f15",
      "tags": [
-      "AI 人工智慧",
-      "Claude",
-      "Anthropic",
-      "文字浮水印",
-      "歐盟"
+      "AI 人工智慧"
      ]
     }
    ]
   },
   {
-   "key": "t0047",
-   "title": "開發者以 MitM 代理觀察 GitHub Copilot 行為，NVIDIA 商業模式風險引發熱議",
-   "summary": "Hacker News 兩則熱門討論：其一為開發者將 GitHub Copilot 置於中間人代理後觀察其行為，引發對資料傳輸與隱私的討論；其二為 Stratechery 文章分析 NVIDIA 在 AI 基礎設施熱潮中的商業模式風險，獲 284 點與 130 則留言。",
+   "key": "t0024",
+   "title": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index",
+   "summary": "Article URL: https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis Comments URL: https://news.ycombinator.com/item?id=49275385 Points: 304 # Comments: 307",
    "category": "其他",
-   "importance": 2,
+   "importance": 3,
    "keywords": [
+    "4.6",
     "url",
     "comments",
-    "https",
-    "risky",
-    "business",
-    "article"
+    "xai",
+    "grok",
+    "https"
    ],
-   "image": "img/2026-08-12/f2016e18b5f7f4b2.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/4d0290b86ce2d3f7.webp",
+   "llm_enriched": false,
    "sources": [
-    "Hacker News (100+)"
-   ],
-   "articles": [
-    {
-     "title": "What I learned by putting GitHub Copilot behind a MitM proxy",
-     "url": "https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-08-11T02:40:47+00:00",
-     "summary": "Article URL: https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm Comments URL: https://news.ycombinator.com/item?id=49256057 Points: 149 # Comments: 24",
-     "image": "",
-     "id": "220d5105e6c7",
-     "tags": []
-    },
-    {
-     "title": "Nvidia's Risky Business",
-     "url": "https://stratechery.com/2026/nvidias-risky-business",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-08-11T02:02:00+00:00",
-     "summary": "Article URL: https://stratechery.com/2026/nvidias-risky-business/ Comments URL: https://news.ycombinator.com/item?id=49255710 Points: 284 # Comments: 130",
-     "image": "",
-     "id": "a4ba7633e2be",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0066",
-   "title": "趨勢科技於黑帽大會展示 AI Security Blueprint 與 Agentic Governance Gateway",
-   "summary": "趨勢科技旗下 TrendAI 事業群在 Black Hat USA 展示 Security for AI 解決方案，包括 AI Security Blueprint 與 Agentic Governance Gateway，預計 2026 年下半年正式推出。趨勢主張企業應從可視性、所有權、可觀測性與治理四大面向，重塑 AI 資安風險管理架構。",
-   "category": "安全與倫理",
-   "importance": 3,
-   "keywords": [
-    "agentic",
-    "trendai",
-    "safety",
-    "gateway",
-    "blueprint",
-    "governance"
-   ],
-   "image": "img/2026-08-12/4f0ade7209ae30f1.webp",
-   "llm_enriched": true,
-   "sources": [
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "趨勢科技公開AI Security Blueprint與Agentic Governance Gateway最新進展，聚焦能見度的提升與自主AI代理的治理",
-     "url": "https://www.ithome.com.tw/news/178036",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-08-10T20:08:05+00:00",
-     "summary": "【拉斯維加斯直擊】隨著AI代理時代來臨，在傳統AI Gateway、AI Guardrails發展之外，如何更完善地管控企業內部AI應用，已成為企業資安防線升級的全新課題。在8月美國黑帽大會現場，趨勢科技旗下TrendAI企業資安事業群展示最新發展的Security for AI解決方案，分別是AI Security Blueprint與Agentic Governance Gateway，預計都將在2026年下半年正式登場。",
-     "image": "",
-     "id": "90f7f239bc5c",
-     "tags": []
-    },
-    {
-     "title": "布局Agentic AI時代防禦！趨勢科技TrendAI主張從4大關鍵層面出發：聚焦可視性、所有權、可觀測性與治理",
-     "url": "https://www.ithome.com.tw/news/178013",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-08-10T20:08:05+00:00",
-     "summary": "【拉斯維加斯直擊】隨著LLM（大型語言模型）應用普及，以及Agentic AI快速崛起，新技術用於推動企業轉型的同時，也帶來前所未有的資安威脅，促使全球資安廠商紛紛提出對策，並加速研發對應的防護方案。資安大廠趨勢科技（Trend Micro）亦不例外，該公司旗下TrendAI事業群在8月初美國黑帽大會（Black Hat USA）期間，建議企業應從4大核心面向切入，重塑新一代AI資安風險管理架構。",
-     "image": "",
-     "id": "da51f15d68e7",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0000",
-   "title": "甲骨文為籌資 AI 基建數百億美元債務，傳將啟動新一輪裁員",
-   "summary": "知情人士透露甲骨文正制定新一輪裁員計畫，部分團隊裁員比例可能達兩位數，目標在 9 月 1 日新財季開始前完成。甲骨文目前背負數百億美元債務用於資料中心與 AI 晶片投資，2026 財年截至 5 月底員工總數已減少 2.1 萬人，降幅 13%。",
-   "category": "企業與資金",
-   "importance": 3,
-   "keywords": [
-    "layoff"
-   ],
-   "image": "img/2026-08-12/f9e0f8a46225c7fc.webp",
-   "llm_enriched": true,
-   "sources": [
+    "Hacker News (100+)",
     "IT之家"
    ],
    "articles": [
     {
-     "title": "举债重金押注 AI 基建，消息称甲骨文正制定新一轮裁员计划",
-     "url": "https://www.ithome.com/0/988/567.htm",
+     "title": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index",
+     "url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-08-12T08:54:25+00:00",
+     "summary": "Article URL: https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis Comments URL: https://news.ycombinator.com/item?id=49275385 Points: 304 # Comments: 307",
+     "image": "",
+     "id": "32cdb4e18a7e",
+     "tags": []
+    },
+    {
+     "title": "剑指 GPT-5.6 Sol，SpaceXAI 发布 Grok 4.6 模型",
+     "url": "https://www.ithome.com/0/988/999.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-08-11T16:00:24+00:00",
-     "summary": "IT之家 8 月 12 日消息，据知情人士透露，甲骨文正在制定新一轮裁员计划，以削减员工成本。与此同时，公司正背负数百亿美元债务，用于大举投资 AI 基础设施。 Business Insider 查阅的一份内部文件显示，部分团队的裁员比例可能达到两位数。另一名直接了解相关计划的人士透露，公司已经要求管理人员提交受影响员工名单，目标是在 9 月 1 日开始第二财季之前完成降本并削减员工成本。 如果此次裁员最终实施，将是甲骨文今年以来的又一轮裁员。今年早些时候，公司已经进行过裁员。根据甲骨文近期提交的文件，截至 5 月 31 日结束的 2026 财年，公司员工总数减少了 2.1 万人，降幅达到 13%，其中包括裁员造成的人员减少。目前甲骨文约有 14.1 万名员工。 此次裁员也凸显了 AI 基础设施热潮背后的成本权衡。甲骨文正在借入数百亿美元，用于建设数据中心和采购芯片，同时也在其他领域寻找节省成本的空间，其中就包括员工队伍。这表明，即使是受益于 AI 需求激增的企业，也面临着如何在巨额资本支出与华尔街对盈利能力的要求之间取得平衡的压力。 2026 财年，甲骨文在基础设施方面投入了 557 亿美元 （IT之家注：现汇率约合 3,762.74 亿元人民币） ，其中包括建设新的数据中心。全年公司现金支出比现金收入多 237 亿美元 （现汇率约合 1,601.02 亿元人民币） 。 在 20",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/fdd7781e-3b81-48ad-a664-9e21ac2c7d40.jpg?x-bce-process=image/format,f_auto",
-     "id": "cc6c3d612578",
+     "published": "2026-08-12T07:57:46+00:00",
+     "summary": "IT之家 8 月 12 日消息，北京时间今天（12 日）晚间，Grok 4.6 正式发布。新模型在 Grok 4.5 基础上进一步强化长时间运行的智能体任务，以及复杂的交互和视觉工作。 按照发布信息，Grok 4.6 能够持续处理包含大量步骤的复杂任务，包括 资料研究、信息分析、大型代码库处理 ，以及将产品构想转化为完整应用或工作成果。 基准测试方面，Grok 4.6 在多项智能体编程和知识工作测试中达到前沿水平。在综合 9 项基准测试的 Artificial Analysis Intelligence Index 上， Grok 4.6 与 GPT-5.6 Sol 取得相同成绩 。 据IT之家了解，Grok 4.6 已在 Cursor 和 Grok Build 上线。首周，两项服务将向用户 提供两倍的内含使用额度 。 训练方面，Grok 4.6 经历了 比 Grok 4.5 更长的补充训练 。训练数据包括经过筛选的模型生成推理数据和高级技术概念数据，以及高质量工程数据，并配合改进后的优化器和训练方案，为后续监督微调（SFT）和强化学习（RL）提供基础。 训练团队随后利用 Grok 4.5 重新生成 SFT 轨迹，覆盖不同推理强度、智能体运行框架，以及 STEM、软件工程和知识工作等领域，并使用基于模型的检查剔除存在问题的轨迹。Grok 4.6 还接受了广泛的智能体强化学习训练，任",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/8fc29b3d-5170-4145-b0fe-082801adf5b1.png?x-bce-process=image/format,f_auto",
+     "id": "22f184bc31e8",
+     "tags": []
+    },
+    {
+     "title": "Grok 4.6",
+     "url": "https://x.ai/news/grok-4-6",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-08-12T07:32:50+00:00",
+     "summary": "Article URL: https://x.ai/news/grok-4-6 Comments URL: https://news.ycombinator.com/item?id=49274027 Points: 368 # Comments: 372",
+     "image": "",
+     "id": "abadfb45f943",
      "tags": []
     }
    ]
   },
   {
    "key": "t0001",
-   "title": "仁寶董事長陳瑞聰：仁寶已從 AI 伺服器門外漢晉升中段班",
-   "summary": "仁寶董事長陳瑞聰表示，兩年前仁寶仍是 AI 伺服器門外漢，如今已位居中段班，期望再努力進入前段班。DIGITIMES 評析指出，仁寶要打入 NVIDIA 與 AMD 供應鏈難度較高，反觀企業品牌端代工機會較大。",
-   "category": "企業與資金",
-   "importance": 2,
+   "title": "AI重塑半導體測試價值　京元電張高薰拋「四大整合」新模式",
+   "summary": "AI晶片價值與整合複雜度持續攀升，京元電總經理張高薰認為，半導體測試正在從「Part of the Supply Chain」變成「Part of the Process」，供應鏈也逐漸走向整合設備（Equipment）、配件（Accessory）、測試服務（Test...",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "amd",
-    "nvidia"
+    "chip"
    ],
-   "image": "img/2026-08-12/9520ed253907af40.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/56d1959d4e19e1be.webp",
+   "llm_enriched": false,
    "sources": [
-    "DIGITIMES"
+    "DIGITIMES",
+    "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "評析：NVIDIA、超微大門難進　仁寶如何拚進AI伺服器前段班？",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=10&id=0000764797_ETM6GWTELY0MR06X31931&wpidx=3",
+     "title": "AI重塑半導體測試價值　京元電張高薰拋「四大整合」新模式",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000764940_ZG88BYVF5VBYS0LEO4USW&wpidx=3",
      "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-11T16:00:00+00:00",
-     "summary": "仁寶董事長陳瑞聰表示，2年前仁寶還是AI伺服器的門外漢，2年後的現在已在中段班，期望未來再加油趕上前段班。然從目前情勢看，仁寶若要能趕上前段班，NVIDIA與超微（AMD）的機會之門不易敲，反倒是品牌企業（enterprise）代工機會較大。...",
-     "image": "https://img.digitimes.com/newsimg/2026/0812/764797-1-31931_l.jpg",
-     "id": "756c86cab103",
+     "published": "2026-08-12T16:00:00+00:00",
+     "summary": "AI晶片價值與整合複雜度持續攀升，京元電總經理張高薰認為，半導體測試正在從「Part of the Supply Chain」變成「Part of the Process」，供應鏈也逐漸走向整合設備（Equipment）、配件（Accessory）、測試服務（Test...",
+     "image": "https://img.digitimes.com/newsimg/2026/0813/764940-1-o4usw_l.jpg",
+     "id": "dbb6e5c14e0f",
+     "tags": []
+    },
+    {
+     "title": "AI 顛覆半導體測試！京元電總經理張高薰：測試定位從供應鏈轉為製程核心",
+     "url": "https://finance.technews.tw/2026/08/12/testing-focus-shifts-from-supply-chain-to-core-process",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-08-11T23:50:45+00:00",
+     "summary": "隨著人工智慧（AI）科技強勢崛起，半導體產業正迎來前所未有的轉型與挑戰。京元電子總經理張高薰在SEMICON […]",
+     "image": "",
+     "id": "866f8dbbbe91",
+     "tags": [
+      "AI 人工智慧",
+      "半導體",
+      "封裝測試",
+      "財經",
+      "AI"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0018",
+   "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
+   "summary": "Hey HN, we're Advaith and Akash from Discovered Materials ( https://discoveredmaterials.com/ ). We build AI agents that discover new materials for the semiconductor industry. GPUs today have a heat problem. Nvidia & AMD are almost doubling the TDP (Thermal Design Power) in every ",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "agents",
+    "they",
+    "rogue",
+    "aren",
+    "evil.",
+    "eager"
+   ],
+   "image": "img/2026-08-13/fe57220a7fda3f31.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Wired AI",
+    "Hacker News (100+)"
+   ],
+   "articles": [
+    {
+     "title": "Rogue AI Agents Aren’t Evil. They’re Just Eager to Please",
+     "url": "https://www.wired.com/story/rogue-ai-is-just-misunderstood",
+     "source": "Wired AI",
+     "lang": "en",
+     "published": "2026-08-12T10:45:00+00:00",
+     "summary": "AI agents that break free and hack into other systems are only trying to make us happy.",
+     "image": "https://media.wired.com/photos/6a7b77e36e37f6db6a06a372/master/pass/AI-Lab-Why-Are-AI-Agents-So-Naughty-Business.jpg",
+     "id": "0f717f95cc18",
+     "tags": [
+      "Business",
+      "Business / Artificial Intelligence",
+      "AI Lab",
+      "artificial intelligence",
+      "cybersecurity"
+     ]
+    },
+    {
+     "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
+     "url": "https://discoveredmaterials.com/research",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-08-11T23:51:20+00:00",
+     "summary": "Hey HN, we're Advaith and Akash from Discovered Materials ( https://discoveredmaterials.com/ ). We build AI agents that discover new materials for the semiconductor industry. GPUs today have a heat problem. Nvidia & AMD are almost doubling the TDP (Thermal Design Power) in every chip they release - the H100 (released 2022) has a TDP of 700W, Blackwell (2024) gives out 1.2 kW and Rubin (2026) gives out at 2.3 kW of heat. This trend is expected to continue, and getting rid of this heat is one of the major reasons datacenters consume so much power and water today - they need it to keep chips cool",
+     "image": "",
+     "id": "3783053d9ef9",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0056",
+   "title": "大客戶開始自研 AI 晶片，NVIDIA 反而加碼開放模型：Nemotron 如何擴大下一波 GPU 需求？",
+   "summary": "NVIDIA 在 8 月 11 日正式推出全新 Nemotron 3.5 Lightning。這是一款專為 AI 代理（Agent）設計的輕量化開放模型，企業不僅可以免費下載、使用與修改，也能直接在個人電腦的單張 GPU 上運行。 然而，這款主打速度與效率的 Lightning 模型，只是 NVIDIA 更大規模開放模型布局的一環。《The Information》披露，NVIDIA 內部正積極研發新一代 Nemotron 4 模型家族，希望讓其中最大的版本在性能上躋身全球頂尖開放模型之列。 NVIDIA 大舉投資開放模型，背後其中一項重要商業考量，是希",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "nemotron",
+    "lightning",
+    "nvidia",
+    "3.5",
+    "switchyard",
+    "opensource"
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "iThome",
+    "TechOrange 科技報橘"
+   ],
+   "articles": [
+    {
+     "title": "Nvidia開源Nemotron 3.5 Lightning及模型路由工具Switchyard",
+     "url": "https://www.ithome.com.tw/news/178054",
+     "source": "iThome",
+     "lang": "zh",
+     "published": "2026-08-12T02:08:42+00:00",
+     "summary": "Nvidia周二（8/11）開源AI模型Nemotron 3.5 Lightning及模型路由工具NeMo Switchyard，前者可替AI代理人執行特定工作，後者則能依照工作內容，自動選擇最適合的AI模型。",
+     "image": "",
+     "id": "275ba99afeb5",
+     "tags": []
+    },
+    {
+     "title": "大客戶開始自研 AI 晶片，NVIDIA 反而加碼開放模型：Nemotron 如何擴大下一波 GPU 需求？",
+     "url": "https://techorange.com/2026/08/12/nemotron-lightning-switchyard",
+     "source": "TechOrange 科技報橘",
+     "lang": "zh",
+     "published": "2026-08-11T18:49:44+00:00",
+     "summary": "NVIDIA 在 8 月 11 日正式推出全新 Nemotron 3.5 Lightning。這是一款專為 AI 代理（Agent）設計的輕量化開放模型，企業不僅可以免費下載、使用與修改，也能直接在個人電腦的單張 GPU 上運行。 然而，這款主打速度與效率的 Lightning 模型，只是 NVIDIA 更大規模開放模型布局的一環。《The Information》披露，NVIDIA 內部正積極研發新一代 Nemotron 4 模型家族，希望讓其中最大的版本在性能上躋身全球頂尖開放模型之列。 NVIDIA 大舉投資開放模型，背後其中一項重要商業考量，是希望透過高品質、相對低成本的模型，讓更多新創與大型傳統企業投入 AI 應用，進一步刺激 GPU 需求。正如 NVIDIA 執行長黃仁勳所說，免費 AI 反而有利於硬體與晶片市場，因為模型使用愈普及，就愈能帶動運算需求。 對 NVIDIA 而言，即使模型本身免費，只要開放模型能帶動更廣泛的 AI 使用，就有機會進一步擴大硬體市場。 不只靠少數 AI 巨頭買 GPU，NVIDIA 用開放模型擴大需求版圖 目前，NVIDIA 相當一部分 GPU 需求來自少數前沿 AI 實驗室與雲端服務業者，包括 OpenAI、微軟與 SpaceX，其中一些公司也正在投入自研 AI 晶片。OpenAI 更是 NVIDIA […]",
+     "image": "https://techorange.com/app/uploads/2026/08/7eef0bab64ee6e90-720x405.jpeg",
+     "id": "1171c45ebb54",
+     "tags": [
+      "AI 人工智慧"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0019",
+   "title": "Lovable confirms new $13.3B valuation, raises another $400M",
+   "summary": "This new funding comes after Lovable hit $500 million in annualized run rate revenue in June, the startup told TechCrunch.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "valuation",
+    "raises",
+    "billion",
+    "funding",
+    "another",
+    "lovable"
+   ],
+   "image": "img/2026-08-13/022f2f20dff07567.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation",
+     "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-12T10:19:12+00:00",
+     "summary": "Cognition may be looking to raise another mega round just a few months after raising $1 billion at a $26 billion valuation.",
+     "image": "",
+     "id": "8a66cb32dff8",
+     "tags": [
+      "AI",
+      "Fundraising",
+      "Startups",
+      "TC",
+      "cognition"
+     ]
+    },
+    {
+     "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
+     "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-12T09:41:29+00:00",
+     "summary": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
+     "image": "",
+     "id": "6585ea3c34af",
+     "tags": [
+      "AI",
+      "Enterprise",
+      "Fundraising",
+      "Venture",
+      "Enterprise AI"
+     ]
+    },
+    {
+     "title": "Lovable confirms new $13.3B valuation, raises another $400M",
+     "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-12T08:04:27+00:00",
+     "summary": "This new funding comes after Lovable hit $500 million in annualized run rate revenue in June, the startup told TechCrunch.",
+     "image": "",
+     "id": "b1e003665ffe",
+     "tags": [
+      "AI",
+      "Fundraising",
+      "Startups",
+      "Lovable"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0038",
+   "title": "荣耀罗巍：Robot Phone 手机预定超过 40 万台",
+   "summary": "IT之家 8 月 12 日消息，在今晚的荣耀 Robot Phone 全球新品发布会上， 全球首款机器人手机 —— 荣耀 Robot Phone 正式发布 ，定价 9,999 元起。 12GB+512GB：9,999 元 16GB+1TB：12,999 元 京东 荣耀 Robot Phone 9999 元起 直达链接 IT之家注意到，荣耀首席影像工程师罗巍透露， Robot Phone 手机预定超过 40 万台 。他直言：“再不下手估计买不到了。” IT之家从荣耀发布会了解到，Robot Phone 是荣耀与顶级电影摄影机厂商 ARRI（阿莱）合作的首款",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "robot",
+    "phone",
+    "9999",
+    "chip"
+   ],
+   "image": "img/2026-08-13/eddd61d333339be3.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "全球首款机器人手机荣耀 Robot Phone 正式发布，天马宣布独家供屏",
+     "url": "https://www.ithome.com/0/988/986.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-12T06:11:08+00:00",
+     "summary": "IT之家 8 月 12 日消息，在今晚的荣耀 Robot Phone 全球新品发布会上， 全球首款机器人手机 —— 荣耀 Robot Phone 正式发布 ， 定价 9999 元起 。 天马微电子宣布， 为本款机型独家供应屏幕，深度定制天马天工屏高端 OLED 显示方案 。天马表示，这是天工屏首次应用于具备具身交互能力的 AI 终端，适配机器人手机的创作、随行交互等场景。 据介绍，荣耀 Robot Phone 手机配备一块 6.31 英寸 1.5K OLED 直屏， 屏幕分辨率 2640×1216 ，支持 P3 影院级广色域与专业色彩校准；峰值亮度可达 6800nits， 支持 1‑120Hz LTPO 自适应刷新率 ；采用中置挖孔设计，拥有 1.08mm 极窄四等边，并实现了 94.58% 高屏占比。 这块屏幕采用天工屏 U9 护眼基材，支持 4320Hz 超高频 PWM 调光 ，可实现全亮度无频闪；拥有 1nit 硬件级极暗护眼方案，支持荣耀 AI 绿洲护眼，集合芯片级 AI 离焦护眼、AI 干眼友好、AI 助眠显示等十余项护眼技术。 IT之家注意到，荣耀 Robot Phone 的屏幕局部峰值亮度高达 6800nits，支持最低 1nit 极暗显示、真 10.7 亿色显示与 P3 广色域， 并通过了 HDR Vivid 与杜比视界 Dolby Vision 双重认证 。 相关",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/1e234e58-a429-4f89-9ea9-8a8c2a4a42c7.jpg",
+     "id": "9954080cd40d",
+     "tags": []
+    },
+    {
+     "title": "荣耀罗巍：Robot Phone 手机预定超过 40 万台",
+     "url": "https://www.ithome.com/0/988/965.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-12T05:04:21+00:00",
+     "summary": "IT之家 8 月 12 日消息，在今晚的荣耀 Robot Phone 全球新品发布会上， 全球首款机器人手机 —— 荣耀 Robot Phone 正式发布 ，定价 9,999 元起。 12GB+512GB：9,999 元 16GB+1TB：12,999 元 京东 荣耀 Robot Phone 9999 元起 直达链接 IT之家注意到，荣耀首席影像工程师罗巍透露， Robot Phone 手机预定超过 40 万台 。他直言：“再不下手估计买不到了。” IT之家从荣耀发布会了解到，Robot Phone 是荣耀与顶级电影摄影机厂商 ARRI（阿莱）合作的首款落地产品，融合了荣耀的移动影像以及 ARRI 百年底蕴的电影摄影技术。 硬件方面，荣耀 Robot Phone 后置三摄方案包含一颗 2 亿像素 F1.6 光圈、等效 23 毫米的 4D 云台主摄，一颗 5000 万像素超广角镜头，以及一颗 2 亿像素潜望式长焦镜头。该机还首发自研影像芯片“荣耀驭光 H1”，云台主摄 CMOS 尺寸达 1/1.28 英寸。 参数方面，荣耀 Robot Phone 搭载第五代骁龙 8 至尊版芯片，配备一块 6.31 英寸的 1.5K 分辨率四等边直屏。该机内置端侧大模型 YOYO，具备情感感知能力，能够主动识别用户的情绪状态、使用习惯及当前所处环境。 京东 荣耀 Robot Phone 9999 元起",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/086c21cd-aaa9-4194-a563-59c222553e8b.jpg?x-bce-process=image/auto-orient,o_1",
+     "id": "0a2e49681dad",
+     "tags": []
+    },
+    {
+     "title": "9999 元起，荣耀 Robot Phone 手机正式发布",
+     "url": "https://www.ithome.com/0/988/961.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-12T04:37:23+00:00",
+     "summary": "IT之家 8 月 12 日消息，荣耀在今天的发布会中正式推出了 Robot Phone 手机，定价为 9999 元起。 12GB RAM + 512GB 存储空间：9999 元 16GB RAM + 1TB 存储空间：12999 元 该机可选星轨银 / 月影灰两种配色，整体厚度 9.59mm，重量 248g，正面配备一块 6.3 英寸 2640x1216 分辨率 LTPO 直屏（峰值亮度 6800 尼特，配备 AR 反射膜）。手机搭载高通骁龙 8 Elite Gen5 处理器，内置 7060mAh 电池。 影像方面，该机行业首发钛合金云台架构，架构采用航空级钛合金，与行业主流云台相比体积缩减 65%；行业首发钛合金云台电机，云台电机最大转速 360°/秒。云台配备 200Mp 1/1.28\" F1.6 23mm 超大底传感器。同时手机也拥有 50Mp 122° 超广角、200Mp 1/1.4\" 2.7X F2.6 大底潜望长焦。 该机首发自研影像芯片“荣耀驭光 H1”，提供“大师电影”拍摄模式，首次将阿莱 Log-C 编码和 LUT 调色文件引入移动端，支持 C-Log、LUTs 全部可用，同时提供了摄影师和导演常用的锁焦、锁白平衡、锁 AE 和运镜数据等功能。此外，相机支持 AI 物体追踪、AI 视频剪辑与智能拍摄，可实时感知与补偿以确保画面稳定。 官方强调，该机首发 YOYO ",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/99c6e473-f3f6-45fd-85d1-3ddc382536e4.jpg?x-bce-process=image/format,f_auto",
+     "id": "d91fb01163d3",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0009",
+   "title": "腾讯微信公布 WeLM 模型：80B 版已在 AI 助手小微上应用，617B 版正在开发",
+   "summary": "IT之家 8 月 13 日消息，腾讯微信团队在 X 平台公布了由微信团队打造的大语言模型 WeLM ，该模型以资源利用效率为核心。 根据官方公布的海报，WeLM 系列大语言模型目前已经明确的两个规格是： WeLM-80B：800 亿总参数，30 亿激活参数 WeLM-617B：6170 亿总参数，230 亿激活参数 其中，WeLM-80B 模型已部署于微信原生 AI 助手“小微”，支持以下功能： 聊天与搜索 使用微信原生功能 调用小程序服务 IT之家获悉，WeLM-671B 模型正在开发中，为混合专家模型（MoE）；在保持适度激活参数的前提下，显著提升通",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "tencent",
+    "welm",
+    "617",
+    "welm-80b"
+   ],
+   "image": "img/2026-08-13/9b45e04aab12ee8f.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "腾讯微信公布 WeLM 模型：80B 版已在 AI 助手小微上应用，617B 版正在开发",
+     "url": "https://www.ithome.com/0/989/007.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-12T15:03:31+00:00",
+     "summary": "IT之家 8 月 13 日消息，腾讯微信团队在 X 平台公布了由微信团队打造的大语言模型 WeLM ，该模型以资源利用效率为核心。 根据官方公布的海报，WeLM 系列大语言模型目前已经明确的两个规格是： WeLM-80B：800 亿总参数，30 亿激活参数 WeLM-617B：6170 亿总参数，230 亿激活参数 其中，WeLM-80B 模型已部署于微信原生 AI 助手“小微”，支持以下功能： 聊天与搜索 使用微信原生功能 调用小程序服务 IT之家获悉，WeLM-671B 模型正在开发中，为混合专家模型（MoE）；在保持适度激活参数的前提下，显著提升通用理解与逻辑推理能力，面向微信生态内的复杂任务： 智能小程序开发 小微工具生成 相关阅读： 《 微信 AI 助手“小微”再扩容，灰度测试朋友圈“帮写”及“点评”功能 》",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/db20fc8c-cbe6-4fed-983f-25ae947742ee.jpg",
+     "id": "9725f274ea74",
+     "tags": []
+    },
+    {
+     "title": "腾讯总裁刘炽平：微信将成为以 AI 为先的生态系统，未来能转化为巨大价值",
+     "url": "https://www.ithome.com/0/988/977.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-12T05:44:38+00:00",
+     "summary": "IT之家 8 月 12 日消息，在今天（12 日）晚间的腾讯 2026Q2 财报业绩电话会上，腾讯总裁刘炽平谈及二季度微信 AI“小微”灰测的反馈。 刘炽平认为，AI 可以让微信变得更加智能化，能够 帮助用户进行交易、探索内容以及管理日常生活 。“在 PC 时代，QQ 主要是一个通信和社交工具，到了移动互联网时代，微信又将 QQ 的价值放大了 10 倍以上。而到了 AI 时代，随着时间的推移，微信将成为 以 AI 为先的生态系统 。用户给出一个指令，系统就自行执行。” 刘炽平表示，如果腾讯能够在控制成本的同时提供这种体验，并且满足用户隐私需求、成本效益，就能为微信赋予强大的能力。“未来微信的生态系统将会扩大， 基于目前的盈利机制转化为巨大的价值 。这就是我们看到的未来。随着原型的推出，我们对此越来越有信心。” 延伸阅读 IT之家从腾讯 2026 年第二季度财报获悉，当季实现营收 2047.9 亿元，同比增长 11%；Non-IFRS 经营利润为 756.4 亿元，同比增长 9%；资本开支达 527.8 亿元，同比增长 176%，AI 投入力度持续加大。 微信 AI 助手“小微”于 2026 年 6 月启动灰度测试，底层由微信团队自研的 MoE 架构中文大语言模型 WeLM 驱动，部分复杂推理场景调用 DeepSeek 进行补充。目前其入口已从微信首页侧滑主入口延伸至公众号消息总结、",
+     "image": "",
+     "id": "1fc50b1a264d",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0026",
+   "title": "Why Stream ring-maker Sandbar says the future of AI wearables is voice",
+   "summary": "AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especiall",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "sandbar",
+    "wearables",
+    "capture",
+    "hardware",
+    "notetaking",
+    "couple"
+   ],
+   "image": "img/2026-08-13/d327b33f56b79199.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Why Stream ring-maker Sandbar says the future of AI wearables is voice",
+     "url": "https://techcrunch.com/video/why-stream-ring-maker-sandbar-says-the-future-of-ai-wearables-is-voice",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-12T08:46:02+00:00",
+     "summary": "AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way. One of […]",
+     "image": "",
+     "id": "d496da02476b",
+     "tags": [
+      "AI",
+      "Gadgets",
+      "Hardware",
+      "Startups",
+      "AI wearables"
+     ]
+    },
+    {
+     "title": "Why Sandbar thinks it’s voice-enabled ring can avoid the AI hardware graveyard",
+     "url": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-12T06:22:00+00:00",
+     "summary": "AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way. One of […]",
+     "image": "",
+     "id": "ed15c3fb5382",
+     "tags": [
+      "AI",
+      "Hardware",
+      "Startups",
+      "AI hardware",
+      "Sandbar"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0000",
+   "title": "维基百科信息遭恶意篡改，谷歌搜索误显示 OpenAI CEO 奥尔特曼死讯",
+   "summary": "IT之家 8 月 13 日消息，当地时间周三凌晨，一些 X 和 Reddit 用户发现，在谷歌搜索 OpenAI CEO 萨姆 · 奥尔特曼的名字时，搜索结果显示他于当天去世。 几个小时后，谷歌承认该搜索结果存在错误。 谷歌在 X 上回应称：“感谢指出这一问题，目前该信息已经不再显示，而且这并非谷歌人为修改的结果。当有人恶意篡改公开信息来源时，可能会影响搜索结果中显示的信息。” 一些网友认为，这可能与维基百科遭到恶意篡改有关。维基百科将这种行为定义为“以故意扰乱或恶意的方式编辑页面”。作为一个免费网络百科全书，维基百科主要依靠志愿者编辑和更新页面内容。 ",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-08-13/ff61fea60c25d5ed.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "维基百科信息遭恶意篡改，谷歌搜索误显示 OpenAI CEO 奥尔特曼死讯",
+     "url": "https://www.ithome.com/0/989/024.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-12T16:06:49+00:00",
+     "summary": "IT之家 8 月 13 日消息，当地时间周三凌晨，一些 X 和 Reddit 用户发现，在谷歌搜索 OpenAI CEO 萨姆 · 奥尔特曼的名字时，搜索结果显示他于当天去世。 几个小时后，谷歌承认该搜索结果存在错误。 谷歌在 X 上回应称：“感谢指出这一问题，目前该信息已经不再显示，而且这并非谷歌人为修改的结果。当有人恶意篡改公开信息来源时，可能会影响搜索结果中显示的信息。” 一些网友认为，这可能与维基百科遭到恶意篡改有关。维基百科将这种行为定义为“以故意扰乱或恶意的方式编辑页面”。作为一个免费网络百科全书，维基百科主要依靠志愿者编辑和更新页面内容。 萨姆 · 奥尔特曼维基百科页面的修订历史显示，编辑人员周三的活动异常频繁，仅当天就进行了 22 次修改。而在此之前，从本月初开始，该页面总共只进行过 5 次更新，而且每次更新都发生在不同日期。 协调世界时上午 9 点 47 分，该页面被修改为虚假信息，声称奥尔特曼于周三遭到刺杀并死亡。上午 10 点 29 分，该内容被纠正。此后，该页面又经历了一系列修改，包括加入奥尔特曼是“辍学生”的描述、再次声称他已经死亡，以及将他的姓氏从“Altman”改成“Gayman”等。 截至报道发布时，最新一次更新似乎已经纠正了此前所有错误修改。 谷歌的知识面板是部分搜索结果顶部显示的信息区域，其内容来自多种公开信息来源。 IT之家注意到，谷歌此前在一",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/2/8ad2304d-c61b-4004-9483-e1a55ca43342.png?x-bce-process=image/format,f_auto",
+     "id": "352c0404f438",
      "tags": []
     }
    ]
   },
   {
    "key": "t0002",
-   "title": "北醫採購兩套 NVIDIA GB300 機櫃，強化醫療 AI 算力",
-   "summary": "台北醫學大學校長吳麥斯指出，數位病歷、MRI 等醫療資料暴增，儲存與運算已成兩大瓶頸。為取得可自主調度的醫療算力，北醫已採購兩套 NVIDIA GB300 機櫃，展現醫療機構以高階 GPU 設備因應 AI 化的趨勢。",
-   "category": "晶片與基礎設施",
+   "title": "AI伺服器液冷滲透率攀升　奇鋐估2027年達5成",
+   "summary": "AI下半年動能更強！機構件廠奇鋐指出，下半年包括ASIC與NVIDIA的Vera Rubin出貨放量，成長動能可期，除了NVIDIA的Vera Rubin系列，ASIC導入液冷散熱比重也將拉升，預估整體AI伺服器的液冷散熱滲透率，到2027年將一舉拉升至5...",
+   "category": "其他",
    "importance": 3,
    "keywords": [
-    "gb300",
-    "300",
-    "compute",
-    "nvidia",
-    "mri"
+    "2027",
+    "asic",
+    "vera",
+    "rubin",
+    "nvidia"
    ],
-   "image": "img/2026-08-12/fae9c3eff205fd15.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/9a7d6e2652db6527.webp",
+   "llm_enriched": false,
    "sources": [
     "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "醫療資料數位化遇兩大瓶頸　北醫採購GB300機櫃擴充算力",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=10&id=0000764764_O0Z8KZAR5JBONY56ZAKTR&wpidx=3",
+     "title": "AI伺服器液冷滲透率攀升　奇鋐估2027年達5成",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=10&id=0000764941_QF886HK05DEFU10BFXT6E&wpidx=3",
      "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-11T16:00:00+00:00",
-     "summary": "台北醫學大學校長吳麥斯11日出席「AI醫療新局，台灣鏈結全球」論壇時指出，數位病歷、數位X光片、磁振造影（MRI）等數位化趨勢使各大醫院的資料量大增，資料儲存和運算成為兩大瓶頸。北醫就採購了2套NVIDIA GB300機櫃，以獲取可自主使用的醫療算力。<...",
-     "image": "https://img.digitimes.com/newsimg/2026/0812/764764-1-zaktr.jpg",
-     "id": "5c3a71b8ea15",
+     "published": "2026-08-12T16:00:00+00:00",
+     "summary": "AI下半年動能更強！機構件廠奇鋐指出，下半年包括ASIC與NVIDIA的Vera Rubin出貨放量，成長動能可期，除了NVIDIA的Vera Rubin系列，ASIC導入液冷散熱比重也將拉升，預估整體AI伺服器的液冷散熱滲透率，到2027年將一舉拉升至5...",
+     "image": "https://img.digitimes.com/newsimg/2026/0813/764941-1-fxt6e_l.jpg",
+     "id": "c379374ca7c6",
      "tags": []
     }
    ]
   },
   {
    "key": "t0003",
-   "title": "祖克柏主張美國應加速 AI 基建，反對限制本國業者發展",
-   "summary": "Meta 執行長 Mark Zuckerberg 認為，與其防堵 AI 個別風險，美國在產業競賽中落後才是更大國安隱憂。他主張政策應優先加速基礎建設、推動政府與實驗室協作防禦，不應以管制手段限制美國業者發展。",
-   "category": "政策與法規",
+   "title": "AI算力跨站部署　全光網路繞過中繼交換、降低延遲與能耗",
+   "summary": "隨著AI運算規模持續擴張，大型資料中心面臨電力供給、空間與散熱的極限，單純建造更大規模的機房已經難以為繼，業界焦點開始轉向跨資料中心、跨地區的分散式架構。",
+   "category": "其他",
    "importance": 3,
    "keywords": [
-    "mark",
-    "zuckerberg",
-    "opensource",
-    "meta"
+    "datacenter",
+    "compute"
    ],
-   "image": "img/2026-08-12/b4926c715a252926.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/12de8754e92084f1.webp",
+   "llm_enriched": false,
    "sources": [
     "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "Mark Zuckerberg力挺晶片管制　籲美國領軍開源生態",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000764785_BJQ81ZJZ7RQW846J1F6VU&wpidx=5",
+     "title": "AI算力跨站部署　全光網路繞過中繼交換、降低延遲與能耗",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=70&id=0000764942_SS388V3S5LOD1S1LBEC61&wpidx=3",
      "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-11T16:00:00+00:00",
-     "summary": "Meta執行長Mark Zuckerberg認為，比起人工智慧（AI）發展過程中的個別風險，美國在產業競賽中落後，才是更大的國安隱憂，政策應以加速基礎建設、政府與實驗室協作防禦優先，不應限制美國業者發展。",
-     "image": "https://img.digitimes.com/newsimg/2026/0812/764785-1-1f6vu_l.jpg",
-     "id": "c4224914470c",
+     "published": "2026-08-12T16:00:00+00:00",
+     "summary": "隨著AI運算規模持續擴張，大型資料中心面臨電力供給、空間與散熱的極限，單純建造更大規模的機房已經難以為繼，業界焦點開始轉向跨資料中心、跨地區的分散式架構。",
+     "image": "https://img.digitimes.com/newsimg/2026/0813/764942-1-bec61_l.jpg",
+     "id": "948f4bf3c44d",
      "tags": []
     }
    ]
   },
   {
    "key": "t0004",
-   "title": "AI 推升高階被動元件需求，日電貿：MLCC 最長交期上看 36 週",
-   "summary": "通路商日電貿指出，AI 伺服器與 ASIC 應用帶動小型化、高容值、高耐壓被動元件需求大增，原廠將產能挪移至高階應用，排擠一般規格產品供應，部分 MLCC 交期最長已上看 36 週。",
-   "category": "晶片與基礎設施",
-   "importance": 2,
+   "title": "客戶抵押「未來AI算力」拿融資　黃仁勳將難題拋給金融業",
+   "summary": "AI基礎設施（AI基建）正從科技業者的資本支出，變成資本市場爭相布局的新資產。而AI算力軍備競賽延燒至今，科技大廠如微軟、Meta、OpenAI、亞馬遜等已無需獨自掏腰包買單。",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "mlcc",
-    "asic"
+    "meta",
+    "microsoft",
+    "amazon",
+    "nvidia",
+    "compute"
    ],
-   "image": "img/2026-08-12/9ab53354126e4195.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/85a90b9b5ca675d9.webp",
+   "llm_enriched": false,
    "sources": [
     "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "日電貿觀察MLCC等供應續吃緊　AI推升最長交期上看36週",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000764758_QOA85P2H4MBG0B9LIB6YV&wpidx=5",
+     "title": "客戶抵押「未來AI算力」拿融資　黃仁勳將難題拋給金融業",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000764864_OOO93DUO5TCSJL56599U7&wpidx=5",
      "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-11T16:00:00+00:00",
-     "summary": "AI伺服器和特用晶片（ASIC）應用持續成長，對小型化、高容值、高耐溫、高壓等高階規格被動元件的需求大幅增加，被動元件通路商日電貿表示，原廠將產能挪去支援高階應用，因此對一般規格產品造成排擠效應。",
-     "image": "https://img.digitimes.com/newsimg/2026/0812/764758-1-ib6yv_l.jpg",
-     "id": "b0e37660f3d1",
+     "published": "2026-08-12T16:00:00+00:00",
+     "summary": "AI基礎設施（AI基建）正從科技業者的資本支出，變成資本市場爭相布局的新資產。而AI算力軍備競賽延燒至今，科技大廠如微軟、Meta、OpenAI、亞馬遜等已無需獨自掏腰包買單。",
+     "image": "https://img.digitimes.com/newsimg/2026/0813/764864-1-599u7_l.jpg",
+     "id": "ce22945d3af1",
      "tags": []
     }
    ]
   },
   {
    "key": "t0005",
-   "title": "AI 算力擴張遇電力天花板，資料中心競爭轉向搶電力",
-   "summary": "隨 AI 運算需求急速成長，超大規模雲端業者與科技大廠擴建資料中心的需求同步升溫。報導指出，電力供應已成為繼晶片之後，下一階段資料中心布局的關鍵瓶頸。",
-   "category": "晶片與基礎設施",
+   "title": "AI榮景持續邁達特看旺至2027　預期「記憶體缺貨成常態」",
+   "summary": "AI算力需求持續強勁，佳世達旗下邁達特董事長曾文興表示，隨著國內企業及政府單位加快導入AI，大型金融、高階製造業也開始建立AI資料中心，持續帶動硬體、伺服器、儲存及網路建設需求，對2026年下半及2027年營運呈現樂觀看法。",
+   "category": "其他",
    "importance": 3,
    "keywords": [
+    "hbm",
+    "2027",
     "datacenter",
     "compute"
    ],
-   "image": "img/2026-08-12/6f51e2d616a6e194.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/0ea65064f0436f6a.webp",
+   "llm_enriched": false,
    "sources": [
     "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "AI算力遇上電力天花板　資料中心從搶晶片轉向搶電力？",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000764775_0YP67YZC8CQBMU4E37NNI&wpidx=5",
+     "title": "AI榮景持續邁達特看旺至2027　預期「記憶體缺貨成常態」",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000764926_VLM8SSQK32SFX25UAABD4&wpidx=5",
      "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-11T16:00:00+00:00",
-     "summary": "隨著人工智慧（AI）運算需求快速成長，超大規模（Hyperscaler）雲端服務供應商、科技大廠與企業本身擴展資料中心的需求也跟著水漲船高。",
-     "image": "https://img.digitimes.com/newsimg/2026/0812/764775-1-37nni_l.jpg",
-     "id": "8bd2656d2e6b",
+     "published": "2026-08-12T16:00:00+00:00",
+     "summary": "AI算力需求持續強勁，佳世達旗下邁達特董事長曾文興表示，隨著國內企業及政府單位加快導入AI，大型金融、高階製造業也開始建立AI資料中心，持續帶動硬體、伺服器、儲存及網路建設需求，對2026年下半及2027年營運呈現樂觀看法。",
+     "image": "https://img.digitimes.com/newsimg/2026/0813/764926-1-aabd4_l.jpg",
+     "id": "3e8ef9f154a3",
      "tags": []
     }
    ]
   },
   {
    "key": "t0006",
-   "title": "台灣臨床 AI 落地四大優勢浮現，國際醫療大廠來台對接",
-   "summary": "經濟部國貿署與外貿協會舉辦「AI 醫療新局，台灣鏈結全球」論壇，邀請麻省總醫院 MESH 創辦人 Marc Succi 與 GE HealthCare 全球 AI 負責人 Jan Beger 來台。Succi 指出台灣在臨床 AI 落地方面具備四大優勢，有助接軌國際市場。",
-   "category": "產品與應用",
-   "importance": 2,
+   "title": "三星晶片設計導入AI　負責人指幻覺、失控仍是硬傷",
+   "summary": "生成式AI浪潮席捲晶片產業，不過在效率躍進的同時，幻覺、失控與資安風險仍未完全解決。三星電子（Samsung Electronics）系統LSI事業部設計技術（DT）團隊負責人金永植（音譯）直言，軟體業已靠AI大幅精簡人力、創造可觀效益，但硬體業至今仍未受AI...",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "marc",
-    "succi",
-    "mesh",
-    "healthcare",
-    "jan",
-    "beger"
+    "samsung",
+    "safety",
+    "chip",
+    "electronics",
+    "lsi",
+    "ai..."
    ],
-   "image": "img/2026-08-12/ad7e57443f848d95.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/2913f39d076339db.webp",
+   "llm_enriched": false,
    "sources": [
     "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "台灣具臨床AI落地4大優勢　接軌國際市場",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000764757_43N6JFJO6R6E106KVTFGC&wpidx=5",
+     "title": "三星晶片設計導入AI　負責人指幻覺、失控仍是硬傷",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000764869_DA77744K7W7QEJ8V584AM&wpidx=5",
      "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-11T16:00:00+00:00",
-     "summary": "經濟部國貿署主辦、外貿協會執行的「AI醫療新局，台灣鏈結全球」論壇，11日邀請美國麻省總醫院MESH創新孵化器創辦人暨執行長Marc Succi、奇異醫療（GE HealthCare）全球人工智慧倡導負責人Jan Beger來台演講。Marc Succi提到台灣擁...",
-     "image": "https://img.digitimes.com/newsimg/2026/0812/764757-1-vtfgc.jpg",
-     "id": "ee3012740f01",
+     "published": "2026-08-12T16:00:00+00:00",
+     "summary": "生成式AI浪潮席捲晶片產業，不過在效率躍進的同時，幻覺、失控與資安風險仍未完全解決。三星電子（Samsung Electronics）系統LSI事業部設計技術（DT）團隊負責人金永植（音譯）直言，軟體業已靠AI大幅精簡人力、創造可觀效益，但硬體業至今仍未受AI...",
+     "image": "https://img.digitimes.com/newsimg/2026/0813/764869-1-584am_l.jpg",
+     "id": "8f48c6722fa8",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0007",
+   "title": "黃仁勳撫平循環融資隱憂　NVIDIA與6大金融機構豎起防護網",
+   "summary": "NVIDIA近期頻傳為客戶提供高額融資，讓市場產生人工智慧（AI）資產泡沫的疑慮。為化解危機，NVIDIA執行長黃仁勳宣布拉攏6大金融機構合作，透過引入外部資金與獨立審查機制，顯著降低NVIDIA自身財務風險部位。消息一出，信貸市場獲得安撫，出現初步紓解...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "nvidia"
+   ],
+   "image": "img/2026-08-13/b7f969dc548586d4.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "黃仁勳撫平循環融資隱憂　NVIDIA與6大金融機構豎起防護網",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000764921_55BLDTX316CWLD2Q0UA6D&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-12T16:00:00+00:00",
+     "summary": "NVIDIA近期頻傳為客戶提供高額融資，讓市場產生人工智慧（AI）資產泡沫的疑慮。為化解危機，NVIDIA執行長黃仁勳宣布拉攏6大金融機構合作，透過引入外部資金與獨立審查機制，顯著降低NVIDIA自身財務風險部位。消息一出，信貸市場獲得安撫，出現初步紓解...",
+     "image": "https://img.digitimes.com/newsimg/2026/0813/764921-1-0ua6d_l.jpg",
+     "id": "782f87bee516",
      "tags": []
     }
    ]
   },
   {
    "key": "t0008",
-   "title": "高盛導入代理式 AI 虛擬工程師，宣稱開發效率提升三倍",
-   "summary": "高盛將代理式 AI（Agentic AI）導入軟體工程核心，讓虛擬工程師與約 1.2 萬名真人工程師協作，內部宣稱開發效率提升約三倍，顯示金融業正加速以 AI 代理重塑工程團隊運作模式。",
-   "category": "產品與應用",
+   "title": "科技巨頭賣 AI 願景高喊週休三日制，基層卻慘陷「每週 90 小時」爆肝地獄",
+   "summary": "科技業高層多年來不斷描繪一幅美好願景：人工智慧（AI）將大幅縮短人類的工作時間，甚至迎來「週休三日」（四天工作 […]",
+   "category": "其他",
    "importance": 3,
-   "keywords": [
-    "agent",
-    "1.2"
-   ],
-   "image": "img/2026-08-12/09e74e4740fc38f0.webp",
-   "llm_enriched": true,
+   "keywords": [],
+   "image": "img/2026-08-13/15caf604444bf8a9.webp",
+   "llm_enriched": false,
    "sources": [
     "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "高盛引進代理式 AI 化身「虛擬工程師」，開發效率狂飆三倍",
-     "url": "https://finance.technews.tw/2026/08/12/how-goldman-sachs-is-using-agentic-ai-for-software-engineering-at-scale",
+     "title": "科技巨頭賣 AI 願景高喊週休三日制，基層卻慘陷「每週 90 小時」爆肝地獄",
+     "url": "https://technews.tw/2026/08/13/tech-giants-tout-ai-reduces-work-hours-employees-push-back",
      "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-08-11T15:40:27+00:00",
-     "summary": "高盛正將代理式人工智慧（Agentic AI）推向軟體工程的核心，讓虛擬工程師與約 1.2 萬名人類工程師並肩 […]",
+     "published": "2026-08-12T15:20:35+00:00",
+     "summary": "科技業高層多年來不斷描繪一幅美好願景：人工智慧（AI）將大幅縮短人類的工作時間，甚至迎來「週休三日」（四天工作 […]",
      "image": "",
-     "id": "91af492a8d59",
+     "id": "1b1b80a3edec",
      "tags": [
       "AI 人工智慧",
+      "Meta",
+      "OpenAI",
       "人力資源",
-      "公司治理",
-      "軟體、系統",
-      "AI 代理"
+      "職場"
      ]
-    }
-   ]
-  },
-  {
-   "key": "t0009",
-   "title": "OpenAI 營運主管 Lightcap 宣布離職創業，Altman 公開致謝",
-   "summary": "OpenAI 高級主管 Brad Lightcap 於 8 月 12 日在 X 平台宣布將離職創業。他 2018 年加入 OpenAI，今年 4 月才從 COO 轉任特殊項目負責人；執行長 Sam Altman 隨後留言感謝其多年貢獻。",
-   "category": "企業與資金",
-   "importance": 3,
-   "keywords": [
-    "brad",
-    "lightcap",
-    "funding",
-    "openai",
-    "sam",
-    "altman"
-   ],
-   "image": "img/2026-08-12/9531a6f370816c4e.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI 高管莱特卡普宣布离职创业，奥尔特曼感谢其贡献",
-     "url": "https://www.ithome.com/0/988/556.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-11T15:19:12+00:00",
-     "summary": "IT之家 8 月 12 日消息，OpenAI 高级主管布拉德 · 莱特卡普（Brad Lightcap）今天（8 月 12 日）在 X 平台发布推文，宣布将离职创业。 IT之家查询公开资料， 莱特卡普此前和 OpenAI 现任首席执行官萨姆 · 奥尔特曼（Sam Altman）在风险投资公司 Y Combinator 共事 ，于 2018 年加入 OpenAI 公司。莱特卡普于今年 4 月发生人事调动，从 OpenAI 首席运营官职位调任至专注于领导特殊项目。 随后奥尔特曼在该推文下方评论，表示感谢莱特卡普对 OpenAI 公司的贡献： 布拉德 · 莱特卡普（Brad Lightcap），图源：X 账号",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/ab104911-5dd8-4a06-a5d3-a48ee03a1aa0.png?x-bce-process=image/format,f_auto",
-     "id": "304e46a528a2",
-     "tags": []
     }
    ]
   },
   {
    "key": "t0010",
-   "title": "台積電核准 294 億美元資本預算，衝先進製程與封裝穩 AI 軍心",
-   "summary": "在全球半導體類股因 AI 基建支出疑慮承壓之際，台積電董事會核准約 294 億美元資本預算，鎖定先進製程與先進封裝擴產，藉實際投資動作回應市場對 AI 需求持續性的擔憂。",
-   "category": "晶片與基礎設施",
-   "importance": 4,
+   "title": "Claude 打破平台壁垒：Chrome 侧边栏 AI 对话互通全平台历史记录",
+   "summary": "IT之家 8 月 13 日消息，Anthropic 今天（8 月 13 日）在 X 平台发布推文，宣布升级适用于谷歌 Chrome 浏览器的 Claude 扩展程序， 在侧边栏带来完整的 Claude Cowork 会话体验。 在体验方面，本次更新主要打破了浏览器和 Claude 其它平台的数据壁垒，浏览器内的任务和对话现可跨 Claude 桌面端、网页端及移动端无缝同步。IT之家附上相关视频演示如下： 侧边栏中发起的对话将保存至 Claude 历史记录，用户可在其他平台恢复会话。此外用户无需二次设置，可以直接在浏览器中使用账户已配置的 Agent Sk",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "294",
-    "funding"
+    "claude",
+    "chrome",
+    "anthropic"
    ],
-   "image": "img/2026-08-12/c1af717c41a1fed6.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/afc23c90bc3fc2b3.webp",
+   "llm_enriched": false,
    "sources": [
-    "科技新報 TechNews"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "台積電核准 294 億美元資本預算，布局先進製程與封裝打破市場對 AI 發展憂慮",
-     "url": "https://finance.technews.tw/2026/08/12/tsmc-approves-us29-4-billion-capital-budget",
-     "source": "科技新報 TechNews",
+     "title": "Claude 打破平台壁垒：Chrome 侧边栏 AI 对话互通全平台历史记录",
+     "url": "https://www.ithome.com/0/989/006.htm",
+     "source": "IT之家",
      "lang": "zh",
-     "published": "2026-08-11T15:15:59+00:00",
-     "summary": "儘管市場近期對人工智慧（AI）基礎建設支出的持續性產生疑慮，導致全球半導體類股承壓，但全球晶圓代工龍頭台積電卻 […]",
-     "image": "",
-     "id": "81da8e108f41",
-     "tags": [
-      "公司治理",
-      "半導體",
-      "國際觀察",
-      "晶圓",
-      "晶片"
-     ]
+     "published": "2026-08-12T15:03:20+00:00",
+     "summary": "IT之家 8 月 13 日消息，Anthropic 今天（8 月 13 日）在 X 平台发布推文，宣布升级适用于谷歌 Chrome 浏览器的 Claude 扩展程序， 在侧边栏带来完整的 Claude Cowork 会话体验。 在体验方面，本次更新主要打破了浏览器和 Claude 其它平台的数据壁垒，浏览器内的任务和对话现可跨 Claude 桌面端、网页端及移动端无缝同步。IT之家附上相关视频演示如下： 侧边栏中发起的对话将保存至 Claude 历史记录，用户可在其他平台恢复会话。此外用户无需二次设置，可以直接在浏览器中使用账户已配置的 Agent Skills 和 Connectors。 Chrome 版 Claude 能查看当前网页，并利用用户现有的浏览器登录状态执行具体操作，包括点击链接、页面跳转、输入文本及填写表单等。 安全方面，Anthropic 警告，浏览器智能体仍易受提示词注入攻击。为提升安全性，启用自动批准时，系统会通过单独检查审查重大操作。 在执行购买或共享个人数据等操作前，Claude 仍会征询用户意见。公司强调，这些保障措施可降低风险，但无法完全消除风险。 推送范围上，Anthropic 自今天开始已经面向 Max 和 Team 客户开放，未来几周内将向 Pro 用户推出。企业管理员可启用该功能，并限制 Claude 仅访问已批准的域名。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/a5b977ed-dcd3-4324-ba54-bea9ad9b06d6.png?x-bce-process=image/format,f_auto",
+     "id": "45e6402bc82b",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0011",
-   "title": "前阿里林俊旸創辦 Pragmatik Labs，攻跨虛實 AI 代理",
-   "summary": "今年 3 月離開阿里巴巴的「基模四傑」之一林俊旸，於上海成立新公司 Pragmatik Labs（p7k），聚焦橫跨數位與物理世界的下一代 AI 代理。本輪由高榕創投與紅杉中國共同領投各約 1 億美元，騰訊與上海未來產業基金參投，融資規模達數億美元。",
-   "category": "企業與資金",
+   "title": "AI 代理應用崛起將從端到雲帶動核心半導體元件需求",
+   "summary": "AI 代理是 AIGC 時代下最高層次的應用解決方案，隨著 LLM 的能力越強，AIGC 應用切入的領域越來越 […]",
+   "category": "其他",
    "importance": 3,
    "keywords": [
-    "pragmatik",
-    "labs",
-    "tencent",
-    "alibaba",
-    "p10"
+    "aigc",
+    "chip",
+    "agent",
+    "llm"
    ],
-   "image": "img/2026-08-12/cd8baab793c70478.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/6e41745c8cb5274e.webp",
+   "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "从阿里离职五个月后，林俊旸官宣创办 AI 公司语用科技 Pragmatik Labs",
-     "url": "https://www.ithome.com/0/988/555.htm",
-     "source": "IT之家",
+     "title": "AI 代理應用崛起將從端到雲帶動核心半導體元件需求",
+     "url": "https://technews.tw/2026/08/13/ai-agent-applications-drive-core-semiconductor-component-demand-edge-cloud",
+     "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-08-11T15:14:27+00:00",
-     "summary": "IT之家 8 月 12 日消息，林俊旸（yáng）今日宣布，他在上海创办了一家新公司 Pragmatik Labs（语用科技），简称 p7k。新公司的研究方向为 横跨数字世界和物理世界的下一代智能体 （Agent）。 公开资料显示，出生于 1993 年的林俊旸，曾是阿里最年轻的 P10 级技术专家，与智谱 AI 创始人唐杰、月之暗面（Kimi）创始人杨植麟、腾讯首席 AI 科学家姚顺雨并称为“基模四杰”。今年 3 月，林俊旸宣布从阿里巴巴离职。 林俊旸还透露，高榕创投和红杉中国共同领投本轮融资，腾讯和上海未来产业基金提供支持。 据 The Information 今年 6 月报道， Pragmatik Labs 此轮融资规模达数亿美元 ，高榕创投和红杉中国各投资约 1 亿美元 （IT之家注：现汇率约合 6.76 亿元人民币） ，腾讯投资约 2,000 万美元 （现汇率约合 1.35 亿元人民币） ， 公司投后估值约 20 亿美元 （现汇率约合 135.11 亿元人民币） 。 《 阿里千问技术负责人林俊旸宣布卸任 》 《 阿里批准千问技术负责人林俊旸辞职，将成立基础模型支持小组 》 《 原“阿里最年轻 P10”林俊旸被曝创立新 AI 实验室，寻求 20 亿美元估值 》",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/89543a7c-c025-4971-965b-3ee28de31a3b.jpg?x-bce-process=image/format,f_auto",
-     "id": "56685df9efde",
-     "tags": []
+     "published": "2026-08-12T15:00:12+00:00",
+     "summary": "AI 代理是 AIGC 時代下最高層次的應用解決方案，隨著 LLM 的能力越強，AIGC 應用切入的領域越來越 […]",
+     "image": "",
+     "id": "9426f9510cdd",
+     "tags": [
+      "AI 人工智慧",
+      "伺服器",
+      "儲存設備",
+      "半導體",
+      "技術分析"
+     ]
     }
    ]
   },
   {
    "key": "t0012",
-   "title": "Gemini 應用月活躍突破 10 億，Google 史上成長最快產品",
-   "summary": "Google 執行長 Sundar Pichai 宣布 Gemini 應用月活躍用戶達 10 億，成為 Google 史上成長最快的產品，也是該公司第 14 款跨越十億用戶門檻的產品，相較 6 月的 9 億在不到兩個月內再上一階。",
-   "category": "產品與應用",
-   "importance": 4,
+   "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes",
+   "summary": "Is Anthropic's new watermarking system a travesty? Some have taken to social media to complain that it is.",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "gemini",
-    "flash",
-    "google"
+    "some",
+    "watermarks",
+    "catch",
+    "jobs",
+    "classes",
+    "mad"
    ],
-   "image": "img/2026-08-12/45fc450ddbea5ace.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "谷歌有史以来增长最快的产品：Gemini 应用月活跃用户达 10 亿",
-     "url": "https://www.ithome.com/0/988/552.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-11T14:59:14+00:00",
-     "summary": "IT之家 8 月 12 日消息，谷歌 CEO 桑达尔 · 皮查伊（Sundar Pichai）宣布， Gemini 应用月活跃用户达到 10 亿 ，是谷歌有史以来增长最快的产品，也是该公司第 14 款跨越十亿用户大关的产品。 据IT之家此前报道，今年 6 月， 谷歌宣布 Gemini 应用月活跃用户数超过 9 亿 ，为该公司当时所拥有的 13 款超 10 亿用户产品提供支持，其中包括 5 款用户量超过 30 亿的产品（谷歌搜索、Gmail 邮箱、Android 系统、Chrome 浏览器、YouTube）。 相关阅读： 《 3.6 Flash 发布不到 1 个月，谷歌 Gemini 3.7 Flash AI 模型踪迹曝光 》 《 消息称谷歌已搁置发布 Gemini 3.5 Pro AI 模型 》 《 曝谷歌测试新版主页：能创建图片、解读文件，唯独少了搜索按钮 》",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/856d4ab0-0309-419f-8cc5-a1c1b1e76568.jpg?x-bce-process=image/format,f_auto",
-     "id": "09aea360a0a7",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0014",
-   "title": "Accel 數週內超額認購完成 5.5 億美元印度新基金",
-   "summary": "美國創投 Accel 在前一支 6.5 億美元印度基金仍有逾 55% 可動用額度的情況下，數週內即超額認購完成新一檔 5.5 億美元印度基金，顯示資金對印度新創市場仍具高度興趣。",
-   "category": "企業與資金",
-   "importance": 2,
-   "keywords": [
-    "india",
-    "fund",
-    "accel",
-    "closes",
-    "oversubscribed",
-    "within"
-   ],
-   "image": "img/2026-08-12/79bc9b8e1c62c5af.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/cc208483fb5eb8fe.webp",
+   "llm_enriched": false,
    "sources": [
     "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "Accel closes oversubscribed $550M India fund within weeks, 19 months after its last",
-     "url": "https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last",
+     "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes",
+     "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes",
      "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-08-11T13:39:11+00:00",
-     "summary": "The U.S. VC firm still has more than 55% of its previous $650 million India fund available for deployment.",
+     "published": "2026-08-12T14:26:37+00:00",
+     "summary": "Is Anthropic's new watermarking system a travesty? Some have taken to social media to complain that it is.",
      "image": "",
-     "id": "7b040f1e2d69",
+     "id": "3daa30d9847f",
      "tags": [
       "AI",
-      "Venture",
-      "Accel"
+      "Anthropic",
+      "Claude",
+      "watermarks"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0013",
+   "title": "The web’s newest weapon against AI scrapers is a font",
+   "summary": "“ShieldFont” aims to poison AI training data without making pages unreadable for people.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "web",
+    "weapon",
+    "scrapers",
+    "font",
+    "newest",
+    "against"
+   ],
+   "image": "img/2026-08-13/fbdb260801331bb5.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "The web’s newest weapon against AI scrapers is a font",
+     "url": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-08-12T14:02:25+00:00",
+     "summary": "“ShieldFont” aims to poison AI training data without making pages unreadable for people.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2261896328-500x500.jpg",
+     "id": "343894e169ac",
+     "tags": [
+      "AI",
+      "AI scrapers",
+      "Font",
+      "LLMs",
+      "models"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0014",
+   "title": "Terabytes of credentials leaked in massive supply-chain attack",
+   "summary": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "terabytes",
+    "credentials",
+    "leaked",
+    "massive",
+    "supply-chain",
+    "attack"
+   ],
+   "image": "img/2026-08-13/82eb6dfb61142937.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "Terabytes of credentials leaked in massive supply-chain attack",
+     "url": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-08-12T13:43:21+00:00",
+     "summary": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2021/07/data-breach-500x500.jpeg",
+     "id": "916c4f909f54",
+     "tags": [
+      "AI",
+      "Biz & IT",
+      "Security",
+      "litellm",
+      "supply chain attacks"
      ]
     }
    ]
   },
   {
    "key": "t0015",
-   "title": "台積電 CoWoS 2029 年拚 14 倍光罩以上，傳微軟洽談 30 萬顆 AI 晶片產能",
-   "summary": "台積電先進封裝副總何軍表示，5.5 倍光罩 CoWoS 已進入量產，AI 客戶良率穩定超過 98%，部分達 99%；路線圖顯示 2028 年擴至 14 倍光罩，2029 年再推進至 14 倍以上。過去三年 CoWoS 產能幾乎每年翻倍，目前已有 10 座先進封裝廠。另有消息指出微軟正洽談逾 30 萬顆 AI 晶片產能。",
-   "category": "晶片與基礎設施",
-   "importance": 4,
+   "title": "【科技早餐】CoreWeave 算力幾乎售罄，IBM 簽 2.4 億美元 NVIDIA 推論協議",
+   "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊CoreWeave 算力幾乎售罄，客戶以長約搶 AI 運算資源 專門提供 GPU 雲端服務的 CoreWeave 表示，近期可供客戶使用的運算容量已接近售罄。截至 6 月底，公司營收積壓達到 1,042 億美元，高於前一季的 994 億美元，代表已簽約、預計在未來陸續認列的收入；其中超過一半的合約已開始提供服務。進入第 3 季後，CoreWeave 又取得超過 250 億美元的新客戶承諾，這部分尚未計入前述數字。客戶除大型 AI 模型業者，也已擴及 Meta、Anthropic 及 Caterpilla",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "cowos",
-    "2029",
-    "microsoft",
-    "hbm",
-    "5.5"
+    "coreweave",
+    "ibm",
+    "2.4",
+    "meta",
+    "350",
+    "gpu"
    ],
-   "image": "img/2026-08-12/adf1f7c5448d7efc.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/5d16a2eff8dec205.webp",
+   "llm_enriched": false,
    "sources": [
     "TechOrange 科技報橘"
    ],
    "articles": [
     {
-     "title": "【科技早餐】台積電 CoWoS 2029 年挑戰 14 倍以上，Microsoft 傳洽談逾 30 萬顆 AI 晶片產能",
-     "url": "https://techorange.com/2026/08/12/tsmc-cowos-microsoft-maia-300-ai-chip-capacity",
+     "title": "【科技早餐】CoreWeave 算力幾乎售罄，IBM 簽 2.4 億美元 NVIDIA 推論協議",
+     "url": "https://techorange.com/2026/08/13/coreweave-ai-capacity-ibm-nvidia-inference",
      "source": "TechOrange 科技報橘",
      "lang": "zh",
-     "published": "2026-08-11T13:30:00+00:00",
-     "summary": "【科技早餐】今天精選 6 則國內外重要科技新聞。 ＊台積電 5.5 倍光罩 CoWoS 量產，2029 年挑戰 14 倍以上 台積電先進封裝技術暨服務副總經理何軍表示，相當於單一光罩面積 5.5 倍的 CoWoS 先進封裝已進入量產，多家 AI 客戶產品的良率穩定超過 98%，部分更達到 99%。封裝面積擴大後，單一封裝可整合更多運算晶片與高頻寬記憶體，讓客戶透過多顆小晶片整合，持續提高運算能力與記憶體頻寬。台積電先前公布的技術路線圖顯示，CoWoS 預計在 2028 年擴大至 14 倍光罩尺寸，並於 2029 年進一步推進至 14 倍以上。 因應 AI 客戶需求，台積電過去三年的 CoWoS 產能幾乎每年翻倍，目前已有 10 座先進封裝廠，供應能力正逐漸接近客戶需求。何軍指出，先進封裝已從晶片製造的後段製程，成為支撐 AI 算力擴張及公司營運的重要環節。當封裝尺寸超過 3 倍光罩後，晶片、電路板、散熱與系統結構之間的交互影響會更加複雜；隨著零組件增加，個別零組件的品質也必須同步提高。台積電在擴大尺寸與產能的同時，仍須維持量產良率及系統可靠度。 ＊Microsoft 傳最快 9 月發布 Maia 300，洽談台積電逾 30 萬顆產能 《The Information》引述知情人士報導，Microsoft 計畫在 2026 年秋季發表新一代自研 AI 晶片 […]",
-     "image": "https://techorange.com/app/uploads/2026/08/cbff43077b8a9e5d-720x405.png",
-     "id": "eeab21c3d7d7",
+     "published": "2026-08-12T13:30:00+00:00",
+     "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊CoreWeave 算力幾乎售罄，客戶以長約搶 AI 運算資源 專門提供 GPU 雲端服務的 CoreWeave 表示，近期可供客戶使用的運算容量已接近售罄。截至 6 月底，公司營收積壓達到 1,042 億美元，高於前一季的 994 億美元，代表已簽約、預計在未來陸續認列的收入；其中超過一半的合約已開始提供服務。進入第 3 季後，CoreWeave 又取得超過 250 億美元的新客戶承諾，這部分尚未計入前述數字。客戶除大型 AI 模型業者，也已擴及 Meta、Anthropic 及 Caterpillar 等企業。 為了交付這批算力，CoreWeave 將 2026 年資本支出預估，由原本的 310 億至 350 億美元，提高至 350 億至 390 億美元，用於擴建資料中心及運算設備。公司第 2 季新增約 500 MW 運算容量，顯示 AI 算力競爭已不只取決於取得多少 GPU，更取決於電力、土地、資料中心施工與系統整合能否同步到位。多年期合約與持續增加的客戶承諾，也反映部分企業正提前鎖定未來數年的模型訓練與 AI 服務資源，把算力供給從臨時採購轉為長期基礎設施規畫。 ＊IBM、Together AI 簽 2.4 […]",
+     "image": "https://techorange.com/app/uploads/2026/08/d5a0ec93c2da460e-720x405.png",
+     "id": "137667311a14",
      "tags": [
       "科技動態"
      ]
@@ -1035,554 +1270,540 @@
    ]
   },
   {
-   "key": "t0016",
-   "title": "軟體工廠概念在 AI 時代復興，強調自動化驗證與量產",
-   "summary": "ZDNet 報導，「軟體工廠」概念在 AI 時代重新受到關注。這類服務能接收 vibe-coded 應用，自動進行驗證、測試，再以可重複的方式量產並交付給廣大使用者，被視為 AI 輔助開發流程的下一步演進。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [
-    "factories",
-    "age",
-    "software",
-    "back",
-    "work",
-    "they"
-   ],
-   "image": "",
-   "llm_enriched": true,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "Why software factories are back - and how they work in the age of AI",
-     "url": "https://www.zdnet.com/article/why-software-factories-are-back-ai",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-08-11T13:23:33+00:00",
-     "summary": "Imagine submitting your vibe-coded app to a service that validates, tests, and then mass-produces it in a repeatable, automated fashion for delivery to a wide audience.",
-     "image": "",
-     "id": "249faa15021a",
-     "tags": []
-    }
-   ]
-  },
-  {
    "key": "t0017",
-   "title": "用 AI 製作不惹人厭的傳單：八個實用提示與指令",
-   "summary": "ZDNet 整理出用 AI 生成傳單的八個技巧與提示詞。多數 AI 生成的傳單品質仍不佳，但透過正確的指令設計，可大幅改善排版與視覺效果，讓成品不再令人反感。",
-   "category": "產品與應用",
-   "importance": 1,
+   "title": "The White House Is Going to Expand Its AI Policy",
+   "summary": "Open models may soon be added to an updated AI framework, sources tell WIRED, as the White House continues to grapple with how to regulate a technology it has tried not to regulate.",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "flyers",
-    "prompts",
-    "create",
-    "hate",
-    "tips",
-    "really"
+    "white",
+    "house",
+    "going",
+    "expand",
+    "policy",
+    "apple"
    ],
-   "image": "",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/2141d40ee216c739.webp",
+   "llm_enriched": false,
    "sources": [
-    "ZDNet AI"
+    "Wired AI"
    ],
    "articles": [
     {
-     "title": "How to create flyers with AI that people won't hate: 8 tips (and prompts) that really work",
-     "url": "https://www.zdnet.com/article/how-to-make-generate-ai-flyer-tips-prompts-that-work",
-     "source": "ZDNet AI",
+     "title": "The White House Is Going to Expand Its AI Policy",
+     "url": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy",
+     "source": "Wired AI",
      "lang": "en",
-     "published": "2026-08-11T12:53:19+00:00",
-     "summary": "Most AI flyers are still a mess, but the right prompts can make all the difference.",
-     "image": "",
-     "id": "10c0c3871d53",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0019",
-   "title": "xAI 共同創辦人新創 River AI 成立兩個月募得 11 億美元",
-   "summary": "由 xAI 共同創辦人 Igor Babuschkin 創立的 River AI，僅成立兩個月便獲得 General Catalyst 領投的 11 億美元資金。該公司聚焦「個人代理人」（personal agents）願景，創下新創極速募資紀錄。",
-   "category": "企業與資金",
-   "importance": 4,
-   "keywords": [
-    "river",
-    "xai",
-    "1.1",
-    "general",
-    "catalyst",
-    "leads"
-   ],
-   "image": "img/2026-08-12/1fc170f74d816f8e.webp",
-   "llm_enriched": true,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "General Catalyst leads $1.1B round into 2-month-old River AI",
-     "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-11T09:41:22+00:00",
-     "summary": "River AI, a startup founded by xAI co-founder Igor Babuschkin, has a fascinating vision for personal agents and secured $1.1 billion out of the gate.",
-     "image": "",
-     "id": "f66a8ff91a41",
+     "published": "2026-08-12T13:00:00+00:00",
+     "summary": "Open models may soon be added to an updated AI framework, sources tell WIRED, as the White House continues to grapple with how to regulate a technology it has tried not to regulate.",
+     "image": "https://media.wired.com/photos/6a7bbf68f5d2df0bb3e19f91/master/pass/politics_white_house_ai_policy.jpg",
+     "id": "2337ec71a760",
      "tags": [
-      "AI",
-      "Startups",
-      "TC",
-      "General Catalyst"
+      "Politics",
+      "Politics / Politics News",
+      "Inner Loop",
+      "politics",
+      "government"
      ]
     }
    ]
   },
   {
    "key": "t0020",
-   "title": "Google 將於 8 月 12 日發表 Pixel 11 系列等多款新機",
-   "summary": "Google 預計在 8 月 12 日舉行 Made by Google 2026 活動，發表多款 Pixel 新裝置。根據洩漏資訊，Pixel 11 系列將推出多種顏色，Pro 機型可能內建補光燈，Google 官方預告也呼應了這些方向。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [
-    "pixel",
-    "announcements",
-    "google",
-    "made",
-    "news",
-    "gearing"
-   ],
-   "image": "img/2026-08-12/f66d51420077787d.webp",
-   "llm_enriched": true,
-   "sources": [
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Made by Google 2026: all the Pixel news and announcements",
-     "url": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-08-11T09:00:00+00:00",
-     "summary": "Google is gearing up to reveal a bunch of new Pixel devices on August 12th. A series of leaks leading up to the event suggest that the Pixel 11 lineup will come in an array of colors, with signs pointing to a built-in light coming to Pro models. Teasers from Google also indicate that it […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/made-by-google-.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "816ed2f1a2f2",
-     "tags": [
-      "AI",
-      "Gadgets",
-      "Google",
-      "Google Pixel",
-      "Mobile"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0021",
-   "title": "Google 醫療 AI 系統 AMIE 展示即時臨床視訊問診能力",
-   "summary": "Google 發表研究醫療 AI 系統 AMIE 的最新進展，透過首創研究展示即時臨床視訊諮詢能力。AMIE 被定位為可與病患即時互動的醫療對話系統，凸顯 Google 在醫療 AI 領域的研發推進。",
-   "category": "模型與研究",
+   "title": "As AI safety concerns mount, three pioneers make the case for staying open",
+   "summary": "At Ai4, three of the world's most respected AI experts — Geoffrey Hinton, Fei-Fei Li, and Andrew Ng — debated regulation, open source access, and how America can compete as China advances in Asia.",
+   "category": "其他",
    "importance": 3,
    "keywords": [
-    "amie",
-    "video",
-    "medical",
-    "demonstrates",
-    "real-time",
-    "clinical"
+    "regulation",
+    "three",
+    "open",
+    "safety",
+    "concerns",
+    "mount"
    ],
-   "image": "img/2026-08-12/aa030039504fde78.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/06c39505db1ead68.webp",
+   "llm_enriched": false,
    "sources": [
-    "Google AI"
+    "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-     "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
-     "source": "Google AI",
+     "title": "As AI safety concerns mount, three pioneers make the case for staying open",
+     "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open",
+     "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-08-11T09:00:00+00:00",
-     "summary": "AMIE promotional video",
-     "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIME_SIZZLE_THUMBNAIL.Aug10.max-600x600.format-webp.webp",
-     "id": "9514940f045b",
+     "published": "2026-08-12T09:51:00+00:00",
+     "summary": "At Ai4, three of the world's most respected AI experts — Geoffrey Hinton, Fei-Fei Li, and Andrew Ng — debated regulation, open source access, and how America can compete as China advances in Asia.",
+     "image": "",
+     "id": "5e396f86f43f",
      "tags": [
-      "Google Health",
-      "Google Research",
-      "Google DeepMind",
-      "AI"
+      "AI",
+      "andrew ng",
+      "Artificial Intelligence (AI)",
+      "Fei-Fei Li",
+      "Geoffrey Hinton"
      ]
     }
    ]
   },
   {
    "key": "t0022",
-   "title": "開發者成功讓 1990 年 Word 1.1a 在 Windows 11 上運行",
-   "summary": "一名開發者將 1990 年推出的 Microsoft Word 1.1a 移植到 Windows 11 環境執行。這項成果讓使用者能體驗沒有 AI 雜訊與多餘功能的極簡文書編輯器，純粹出於懷舊與技術挑戰。",
+   "title": "Sparky Linux just restored 32-bit support - why that still matters",
+   "summary": "Got an old 32-bit computer lying around? Don't throw it away - Sparky Linux has decided not to give up on the aging architecture.",
    "category": "其他",
-   "importance": 1,
+   "importance": 3,
    "keywords": [
-    "word",
-    "developer",
-    "run",
-    "1.1",
-    "got",
-    "windows"
+    "sparky",
+    "bit",
+    "linux",
+    "restored",
+    "support",
+    "matters"
    ],
    "image": "",
-   "llm_enriched": true,
+   "llm_enriched": false,
    "sources": [
     "ZDNet AI"
    ],
    "articles": [
     {
-     "title": "A developer got Word 1.1a from 1990 to run on Windows 11 - try it yourself",
-     "url": "https://www.zdnet.com/article/microsoft-word-1-1a-windows",
+     "title": "Sparky Linux just restored 32-bit support - why that still matters",
+     "url": "https://www.zdnet.com/article/sparky-linux-32-bit-support",
      "source": "ZDNet AI",
      "lang": "en",
-     "published": "2026-08-11T08:55:09+00:00",
-     "summary": "Longing for a plain, old-fashioned version of Microsoft Word without all the bells, whistles, and AI slop? One developer managed to coax Word 1.1a to run on today's Windows.",
+     "published": "2026-08-12T09:33:54+00:00",
+     "summary": "Got an old 32-bit computer lying around? Don't throw it away - Sparky Linux has decided not to give up on the aging architecture.",
      "image": "",
-     "id": "5a3e3cbc39db",
+     "id": "d8f42e6e08cd",
      "tags": []
     }
    ]
   },
   {
    "key": "t0023",
-   "title": "Anthropic 未發表模型在黎曼猜想上取得進展",
-   "summary": "TechCrunch 報導，Anthropic 一款尚未發表的模型在數學重大未解問題「黎曼猜想」上取得超乎預期的進展。雖然並未真正解決這個懸而未決超過 150 年的難題，但成果顯示大型語言模型在數學研究上的潛力。",
-   "category": "模型與研究",
-   "importance": 4,
+   "title": "Mesh, Automattic’s CRM for everyone, comes to Android",
+   "summary": "Mesh, an AI-powered contacts app and relationship manager from Automattic, is now an Android app.",
+   "category": "其他",
+   "importance": 3,
    "keywords": [
-    "progress",
-    "unsolved",
-    "problems",
-    "made",
-    "unreleased",
-    "math"
+    "mesh",
+    "automattic",
+    "android",
+    "crm",
+    "everyone",
+    "comes"
    ],
-   "image": "img/2026-08-12/cc208483fb5eb8fe.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/a7af335cc6d2adda.webp",
+   "llm_enriched": false,
    "sources": [
     "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "An unreleased Anthropic model made progress on one of math’s biggest unsolved problems",
-     "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems",
+     "title": "Mesh, Automattic’s CRM for everyone, comes to Android",
+     "url": "https://techcrunch.com/2026/08/12/mesh-automattics-crm-for-everyone-comes-to-android",
      "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-08-11T08:25:20+00:00",
-     "summary": "For more than 150 years, the Riemann hypothesis has stood as one of the major unsolved problems in mathematics. Anthropic hasn't solved it — but the company's models made more progress than you might expect.",
+     "published": "2026-08-12T08:57:58+00:00",
+     "summary": "Mesh, an AI-powered contacts app and relationship manager from Automattic, is now an Android app.",
      "image": "",
-     "id": "f98cc01492f6",
+     "id": "40176bc88ca1",
      "tags": [
       "AI",
-      "Anthropic",
-      "mathematics"
+      "Apps",
+      "android apps",
+      "Automattic",
+      "mesh"
      ]
-    }
-   ]
-  },
-  {
-   "key": "t0024",
-   "title": "2026 年 AI 概念股出爐：以黃仁勳五層蛋糕拆解台股受惠鏈",
-   "summary": "《數位時代》以黃仁勳提出的「AI 五層蛋糕」架構，整理 2026 年台股 AI 概念股。從電力、晶片到應用層，涵蓋大同、川湖、日月光等代表個股，協助投資人一次掌握五大產業鏈的受惠廠商。",
-   "category": "企業與資金",
-   "importance": 2,
-   "keywords": [
-    "2026",
-    "nvidia"
-   ],
-   "image": "img/2026-08-12/8654024f31e4c3e0.webp",
-   "llm_enriched": true,
-   "sources": [
-    "數位時代"
-   ],
-   "articles": [
-    {
-     "title": "2026 AI概念股有哪些？大同、川湖、日月光⋯5大產業鏈受惠股一次看",
-     "url": "https://www.bnext.com.tw/article/91817/ai-stocks-full-map-2026",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-08-11T08:21:00+00:00",
-     "summary": "AI浪潮牽動從電力、晶片到應用的一整條產業鏈。本文以黃仁勳「AI五層蛋糕」為架構，拆解2026 AI概念股，一表看懂台股在五層中站哪個位置。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-08/2ifm-1786435657.png?w=900&output=webp",
-     "id": "e99bd3f7b782",
-     "tags": []
     }
    ]
   },
   {
    "key": "t0025",
-   "title": "Apple iOS 27 測試版內建照片真偽驗證機制以對抗深偽",
-   "summary": "The Verge 報導，Apple 正在 iOS 27 beta 5 中開發「Apple Reference Image」系統，可在 iPhone 拍照當下嵌入來源詮釋資料（provenance metadata）。這項功能讓使用者能驗證照片確實由 iPhone 相機拍攝，藉此對抗深偽影像。",
-   "category": "安全與倫理",
+   "title": "Scaling AI agents with trustworthy data",
+   "summary": "Business and technology leaders need no convincing that the time of agentic AI is here. Organizations are rapidly adopting agents, and few executives doubt the technology’s potential to transform work. But many organizations find that realizing the desired return on investment (R",
+   "category": "其他",
    "importance": 3,
    "keywords": [
-    "iphone",
-    "apple",
-    "prove",
-    "photos",
-    "aren",
-    "deepfakes"
+    "agents",
+    "scaling",
+    "trustworthy",
+    "organizations",
+    "data",
+    "technology"
    ],
-   "image": "img/2026-08-12/cf924f07bbd62880.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/3f63e3fcb9c31083.webp",
+   "llm_enriched": false,
    "sources": [
-    "The Verge AI"
+    "MIT Technology Review AI"
    ],
    "articles": [
     {
-     "title": "Apple could help you prove your iPhone photos aren’t deepfakes",
-     "url": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata",
-     "source": "The Verge AI",
+     "title": "Scaling AI agents with trustworthy data",
+     "url": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data",
+     "source": "MIT Technology Review AI",
      "lang": "en",
-     "published": "2026-08-11T08:19:15+00:00",
-     "summary": "Apple is seemingly developing an iOS feature that can verify when a photograph was taken using an iPhone camera. 9to5Mac reports that the iOS 27 beta 5 includes code references for an \"Apple Reference Image\" system that can embed provenance metadata into iPhone photographs at the point of capture - enabling users to prove where […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25626274/247263_iphone_16_pro_AKrales_0368.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "95bd5da674d9",
+     "published": "2026-08-12T08:51:57+00:00",
+     "summary": "Business and technology leaders need no convincing that the time of agentic AI is here. Organizations are rapidly adopting agents, and few executives doubt the technology’s potential to transform work. But many organizations find that realizing the desired return on investment (ROI) from AI hinges on having the right foundation, with inadequate infrastructure and data…",
+     "image": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Google-Report-2026-cover.png",
+     "id": "109e5b269968",
      "tags": [
-      "AI",
-      "Apple",
-      "Cameras",
-      "Gadgets",
-      "iPhone"
+      "Artificial intelligence",
+      "sponsored"
      ]
     }
    ]
   },
   {
-   "key": "t0026",
-   "title": "Sony 115 吋 RGB LED 旗艦電視 9 系 II 開賣，售價 14.9 萬人民幣",
-   "summary": "Sony 超旗艦 RGB LED 電視 9 系 II 新增 115 吋版本（K-115XR90M2），於 8 月 10 日正式開賣，定價 149,999 元人民幣。搭載 XR 晶片，主打頂級家庭劇院與遊戲顯示市場。",
-   "category": "產品與應用",
-   "importance": 1,
-   "keywords": [
-    "rgb",
-    "115",
-    "led",
-    "149999",
-    "amd",
-    "k-115xr90m2"
-   ],
-   "image": "img/2026-08-12/3828bb3d83b516db.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "索尼 115 英寸超旗舰 RGB LED 电视 9 系 Ⅱ 新品开售：149999 元",
-     "url": "https://www.ithome.com/0/988/535.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-11T07:19:10+00:00",
-     "summary": "IT之家 8 月 11 日消息，索尼超旗舰 RGB LED 电视 9 系 Ⅱ 新上架的 115 英寸版本（K-115XR90M2）已于 8 月 10 日开售，定价为 149999 元。 京东 索尼（SONY）顶奢 | 超旗舰 9 系 真彩 RGB 游戏电视 115 英寸 XR 芯片 K-115XR90M2 蜘蛛侠观影 149999 元 直达链接 2026 年数码家电政府补贴持续进行中，IT 之家为大家汇总国补领券地址，买数码家电之前记得领取。 数码补贴： 点此领券 手机 / 平板 / 3C 数码支持 8.5 折政府补贴，不超过 6000 元的产品至高立减 500 元。 家电补贴： 点此领券 多类家电支持 8.5 折政府补贴，单品至高补贴 1500 元。 欢迎下载最会买 App - 好货好价，高额返利，1 毛钱也能提现！ 扫描二维码或 点击此处下载 最新版（自动识别平台）。 索尼表示，这款电视采用了 True RGB 真彩原色技术，搭载 RGB 背光大师系统 Pro，专为 RGB 背光控制研发。这款电视采用真彩芯链，从全域到细小灯珠实现全链路控制：由 XR 认知芯片提供 AI 视频信号优化，RGB 屏光芯片全局统筹，既控屏又控 RGB 背光，搭配 RGB 超微光芯实现分区精准控制，还有 RGB 实时光校传感器对 RGB LED 灯珠细节精调。 独立驱动的 RGB LED 单元直接生成",
-     "image": "https://img14.360buyimg.com/pop/jfs/t1/483753/2/15074/453704/6a74225bF59874773/0083320320690910.png",
-     "id": "2c4835795b07",
-     "tags": []
-    }
-   ]
-  },
-  {
    "key": "t0027",
-   "title": "寧波以 AI 預報模型 5 秒產出防汛調度方案",
-   "summary": "面對颱風「白海豚」帶來的強降雨，浙江寧波導入 AI 預報模型處理水庫調度難題。以往需 5 到 10 分鐘的方案運算，如今縮短至 5 到 10 秒，模型每 5 分鐘更新建議，協助調度員即時調整水庫下洩流量。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [],
-   "image": "img/2026-08-12/2816babec38c407b.webp",
-   "llm_enriched": true,
+   "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+   "summary": "",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "olmoearth",
+    "embeddings",
+    "custom",
+    "embedding",
+    "downstream",
+    "exports"
+   ],
+   "image": "img/2026-08-13/b1b912e0a653179c.webp",
+   "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "Hugging Face"
    ],
    "articles": [
     {
-     "title": "台风过境：宁波用 AI“算”出防汛最优解，预报模型 5 秒生成方案",
-     "url": "https://www.ithome.com/0/988/529.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-11T07:08:39+00:00",
-     "summary": "IT之家 8 月 11 日消息，今年第 13 号台风“白海豚”于 8 月 9 日登陆，给地处三江交汇、濒临海湾的浙江宁波带来强降雨。 据央视报道，作为人均水资源占有量远低于全国平均水平的缺水城市，宁波在台风防御中面临水库既要腾库防洪、又要蓄水保供的两难困境。当地依托数字孪生等智慧水利手段，实现了防洪与蓄水的精细化平衡。 水库调度在台风防御中常面临矛盾：水放多了怕台风改道导致后续用水紧张，放少了又怕雨量超预期威胁大坝安全。 宁波市水利水电规划设计研究院防灾减灾部总监江雨田介绍，这一平衡点需要靠调度软件不断滚动分析计算。该调度软件的核心是一套 AI 预报模型。 以甬江流域为例，以往开展一场完整的方案计算需要 5 到 10 分钟，如今 AI 预报模型仅需 5 到 10 秒，预报时效性从分钟级提升至秒级。根据降雨预报和水位变化，该模型每 5 分钟更新一次调度建议，调度员可据此实时调整下泄流量。 在数字孪生调度平台上，皎口水库与其上游的周公宅水库实现了联合调度。IT之家从央视获悉，两座水库构成“梯级水库”，周公宅的泄流量直接影响皎口的水位。 目前，宁波全市 16 座大中型水库已接入统一调度平台，实现市级、县级、水库管理单位三级联动。哪座水库接近汛限、哪座尚有库容，在大屏上一目了然。 此外，皎口水库大坝内安装了上百个传感器和监测点，包括 121 个坝基渗流点、32 个测压管、19 组三向测缝仪",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/e55bf6d4-3bd7-47a5-8cdd-80258739017f.jpg",
-     "id": "07c3799bc5c3",
+     "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+     "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+     "source": "Hugging Face",
+     "lang": "en",
+     "published": "2026-08-12T08:14:36+00:00",
+     "summary": "",
+     "image": "",
+     "id": "e43158037a35",
      "tags": []
     }
    ]
   },
   {
    "key": "t0028",
-   "title": "NVIDIA 指出 AI 算力擴張需要全新電力架構",
-   "summary": "NVIDIA 部落格文章指出，每一代加速運算都對基礎設施提出更高要求，真正的瓶頸不在總瓦數，而是從電網到 GPU 的供電方式。文章主張需要全新的電力架構，以支援更高的機櫃密度與可擴展的配電效率。",
-   "category": "晶片與基礎設施",
+   "title": "阿里开放 Qwen3.8-2.4T-A95B 模型权重：2.4T MoE、激活 95B、原生 256K 上下文",
+   "summary": "IT之家 8 月 13 日消息，阿里云“魔搭 ModelScope 社区”公众号昨天（12 日）深夜宣布，阿里 Qwen 团队正式开放 Qwen3.8-2.4T-A95B 模型权重。 此次是 Qwen-Max 级别的模型首次开源权重：模型总参数为 2.4T，每个 Token 激活 95B 参数， 原生支持 262,144 Token 上下文，并可扩展至 1,010,000 Token 。 Qwen3.8 延续 Qwen3.5 的混合架构，重点提升 编程、办公、科研和长周期 Agent 任务 的端到端完成能力。官方云端版 Qwen3.8-Max 基于该开放",
+   "category": "其他",
    "importance": 3,
    "keywords": [
-    "power",
-    "compute",
-    "performance",
-    "scaling",
-    "requires",
-    "grid"
+    "3.8",
+    "2.4",
+    "qwen3.8-2.4t-a95b",
+    "alibaba",
+    "qwen",
+    "token"
    ],
-   "image": "img/2026-08-12/0ef5775a9007822c.webp",
-   "llm_enriched": true,
-   "sources": [
-    "NVIDIA Blog"
-   ],
-   "articles": [
-    {
-     "title": "Why Scaling AI Compute Performance Requires a New Power Architecture",
-     "url": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory",
-     "source": "NVIDIA Blog",
-     "lang": "en",
-     "published": "2026-08-11T07:00:06+00:00",
-     "summary": "Every new generation of accelerated computing demands more from the infrastructure underneath it — more compute performance, higher rack density and more efficient, scalable power distribution. The bottleneck isn’t just wattage. It’s how power gets from the grid to the GPU. In traditional power delivery, electricity travels from the grid as an alternating current (AC) […]",
-     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/08/800vdc-842x450.jpg",
-     "id": "ba987098891b",
-     "tags": [
-      "AI Infrastructure",
-      "Hardware",
-      "AI Factory",
-      "NVIDIA DSX",
-      "Open Source"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0029",
-   "title": "傳英偉達研發萬億參數開源模型 Nemotron 4，劍指全球頂級開源陣營",
-   "summary": "The Information 引述參與者消息指出，NVIDIA 正研發新一代 AI 模型系列 Nemotron 4，目標與全球最先進的開源模型競爭。NVIDIA 是少數積極推出開源模型的美國大型科技企業，生成式 AI 副總裁 Kari Briski 表示，投資 Nemotron 是因為相信每家企業都應能使用開源模型。此舉也呼應近期中國低價模型逼近美系頂尖系統、開源模型關注度上升的趨勢。",
-   "category": "模型與研究",
-   "importance": 4,
-   "keywords": [
-    "nemotron",
-    "opensource",
-    "microsoft",
-    "compute"
-   ],
-   "image": "",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/39661355b3c21439.webp",
+   "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "消息称英伟达开发万亿参数开源 AI 模型 Nemotron 4，目标挑战全球顶级",
-     "url": "https://www.ithome.com/0/988/524.htm",
+     "title": "阿里开放 Qwen3.8-2.4T-A95B 模型权重：2.4T MoE、激活 95B、原生 256K 上下文",
+     "url": "https://www.ithome.com/0/989/001.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-08-11T06:54:16+00:00",
-     "summary": "IT之家 8 月 11 日消息，今天（11 日）晚间，The Information 援引项目参与者消息称，芯片巨头英伟达正在 研发新一代 AI 模型系列 Nemotron 4 ，希望借此与全球最先进的开源模型展开竞争。 英伟达是美国少数 主动推出开源模型 的大型科技企业之一。今年以来，AI 开发和运行成本持续攀升，而价格更低的中国模型在性能上逐步逼近 Anthropic、OpenAI 等美国领先 AI 实验室的顶尖系统，使开源模型获得更多关注。 近期接连披露的多起涉及自主 AI 智能体的黑客攻击事件，也进一步加大了外界对开源模型的关注，尤其是因为开源模型通常不会对网络安全用途施加限制。 英伟达希望通过开放模型生态扩大 AI 应用范围，并进一步推动市场对其 GPU 算力的需求。英伟达生成式 AI 副总裁 Kari Briski 在邮件中透露：“投资 Nemotron，是因为我们相信 每家企业、每个国家都需要可及的前沿开源模型 。” 多名参与 Nemotron 4 开发的员工透露，其中规模最大的模型预计 至少拥有 1 万亿个参数 。英伟达目前尚未确定 Nemotron 4 的发布日期，最终训练也尚未完成。不过报道称，员工认为该模型最早可能在 今年秋末 准备就绪。 据IT之家了解，英伟达上个月还与多家企业成立联盟，共同开发并共享 AI 安全和网络安全工具。此外，英伟达与微软等科技巨头共",
-     "image": "",
-     "id": "f520ee4ee8e7",
+     "published": "2026-08-12T08:10:01+00:00",
+     "summary": "IT之家 8 月 13 日消息，阿里云“魔搭 ModelScope 社区”公众号昨天（12 日）深夜宣布，阿里 Qwen 团队正式开放 Qwen3.8-2.4T-A95B 模型权重。 此次是 Qwen-Max 级别的模型首次开源权重：模型总参数为 2.4T，每个 Token 激活 95B 参数， 原生支持 262,144 Token 上下文，并可扩展至 1,010,000 Token 。 Qwen3.8 延续 Qwen3.5 的混合架构，重点提升 编程、办公、科研和长周期 Agent 任务 的端到端完成能力。官方云端版 Qwen3.8-Max 基于该开放权重模型，并加入更多生产环境能力。 官方公布的评测覆盖编程 Agent、通用 Agent、专业工作和长上下文等方向；与 Opus 4.8、Fable 5、GPT 5.6 Sol 等模型相比，各项结果 互有高低 ，并在 PaperBench、IFBench 等 Benchmark 中取得所列模型中的较高成绩。 IT之家附上有关链接如下： 模型： https://modelscope.cn/models/Qwen/Qwen3.8-2.4T-A95B blog： https://qwen.ai/blog?id=qwen3.8 Qwen Studio： https://chat.qwen.ai Qwen3.8-2.4T-A95B 是一个因果",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/88db3fc8-af98-480a-b388-5968c026936f.png",
+     "id": "f23f549d42d2",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0030",
-   "title": "社群實測：透過 macOS 虛擬機 GPU 直通，llama.cpp 推論速度顯著提升",
-   "summary": "GitHub 上的 trycua 專案展示如何在 macOS 虛擬機中透過 GPU 直通技術，讓 llama.cpp 在 Apple Silicon 上獲得更快的 LLM 推論效能。該文在 Hacker News 獲得 278 點與 43 則討論，反映開發者社群對本地端高效能推論的高度興趣。",
-   "category": "開源社群",
+   "key": "t0029",
+   "title": "Guitar company D’Addario admits that AI music was used in a promotional video",
+   "summary": "After weeks of controversy and speculation, music company D'Addario has admitted that AI, specifically Suno, was used as part of a recent promotional video. For nearly two weeks, the company has denied the allegations, even as evidence piled up against it. It offered various expl",
+   "category": "其他",
    "importance": 3,
    "keywords": [
-    "apple",
-    "silicon",
-    "macos",
-    "vms",
-    "inference",
-    "llama.cpp"
+    "company",
+    "addario",
+    "music",
+    "promotional",
+    "used",
+    "guitar"
    ],
-   "image": "img/2026-08-12/05977c8976eba280.webp",
-   "llm_enriched": true,
-   "sources": [
-    "Hacker News (100+)"
-   ],
-   "articles": [
-    {
-     "title": "Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp",
-     "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-08-11T06:50:33+00:00",
-     "summary": "Article URL: https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md Comments URL: https://news.ycombinator.com/item?id=49259339 Points: 278 # Comments: 43",
-     "image": "",
-     "id": "800ebb0d7846",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0031",
-   "title": "研究人員以不到 20 個 AI 提示發現 Zoom 重大漏洞，官方已修補",
-   "summary": "資安公司 A Security 研究人員僅用不到 20 個公開 AI 模型的提示，就發現 Zoom 註解功能中的重大漏洞，攻擊者可在會議中劫持任何與會者裝置。Zoom 已於週二發布修補。此事件凸顯 AI 輔助漏洞挖掘的門檻大幅降低，也引發外界對 AI 工具被用於攻擊的關注。",
-   "category": "安全與倫理",
-   "importance": 3,
-   "keywords": [
-    "uncovered",
-    "fewer",
-    "prompts",
-    "zoomsday",
-    "hack",
-    "using"
-   ],
-   "image": "img/2026-08-12/89f2ef2965a425f3.webp",
-   "llm_enriched": true,
+   "image": "img/2026-08-13/2b5bb5cb031ce5a0.webp",
+   "llm_enriched": false,
    "sources": [
     "The Verge AI"
    ],
    "articles": [
     {
-     "title": "‘Zoomsday’ hack uncovered using fewer than 20 AI prompts",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/977909/zoom-vulnerability-ai-attack",
+     "title": "Guitar company D’Addario admits that AI music was used in a promotional video",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/978982/daddario-guitar-ai-music-suno",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-08-11T06:45:44+00:00",
-     "summary": "Zoom has patched a major security vulnerability that could allow an attacker to hijack anyone's device during a meeting. In a blog post on Tuesday, researchers at A Security say they uncovered the flaw using \"fewer than 20 prompts on publicly available AI models,\" as reported earlier by Wired. The exploit involved Zoom's annotation feature, […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/acastro_STK059_zoom_03.webp?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "493648df61c5",
+     "published": "2026-08-12T07:52:07+00:00",
+     "summary": "After weeks of controversy and speculation, music company D'Addario has admitted that AI, specifically Suno, was used as part of a recent promotional video. For nearly two weeks, the company has denied the allegations, even as evidence piled up against it. It offered various explanations, from low-quality exports, to combinations of plug-ins like Autotune introducing […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/1583922033086.jpeg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "617b8a3f0682",
      "tags": [
       "AI",
-      "Apps",
-      "Security",
-      "Tech"
+      "Entertainment",
+      "Music",
+      "News"
      ]
     }
    ]
   },
   {
-   "key": "t0032",
-   "title": "Cloudflare 數據顯示 Linux 桌面市占單日衝上 22%，成長動能強勁",
-   "summary": "根據 Cloudflare 觀察到的流量數據，Linux 桌面在某個工作日的使用比例一度衝高至 22%，顯示其市占率正快速攀升。ZDNet 指出，此趨勢背後有多項因素驅動，反映使用者對替代作業系統的接受度持續提高。",
+   "key": "t0030",
+   "title": "How a $250 million acquisition collapsed into allegations of fraud and forged signatures",
+   "summary": "Investors are still waiting for their share of the $250 million windfall, and VideoVerse co-founder Vinayak Shrivastav is now at the center of multiple legal cases.",
    "category": "其他",
-   "importance": 2,
+   "importance": 3,
    "keywords": [
-    "desktop",
-    "linux",
-    "use",
-    "surged",
-    "workday",
-    "shows"
+    "250",
+    "million",
+    "acquisition",
+    "collapsed",
+    "fraud",
+    "forged"
+   ],
+   "image": "img/2026-08-13/cc902665dce27996.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "How a $250 million acquisition collapsed into allegations of fraud and forged signatures",
+     "url": "https://techcrunch.com/2026/08/12/how-a-250-million-acquisition-collapsed-into-allegations-of-fraud-and-forged-signatures",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-12T07:44:56+00:00",
+     "summary": "Investors are still waiting for their share of the $250 million windfall, and VideoVerse co-founder Vinayak Shrivastav is now at the center of multiple legal cases.",
+     "image": "",
+     "id": "806059b3fc9f",
+     "tags": [
+      "AI",
+      "Startups",
+      "fraud",
+      "Mergers and Acquisitions",
+      "video clips"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0031",
+   "title": "Hackers are hunting for your private photos, FBI warns: 6 ways to avoid a sextortion nightmare",
+   "summary": "Hackers who steal compromising images of you from social media and personal accounts are selling them on the dark web. Here's how to protect yourself.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "hackers",
+    "hunting",
+    "private",
+    "photos",
+    "fbi",
+    "warns"
    ],
    "image": "",
-   "llm_enriched": true,
+   "llm_enriched": false,
    "sources": [
     "ZDNet AI"
    ],
    "articles": [
     {
-     "title": "Linux desktop use surged to 22% on one workday, Cloudflare data shows",
-     "url": "https://www.zdnet.com/article/linux-desktop-use-surged-on-one-workday-cloudflare-data-shows",
+     "title": "Hackers are hunting for your private photos, FBI warns: 6 ways to avoid a sextortion nightmare",
+     "url": "https://www.zdnet.com/article/hackers-private-photos-fbi-avoid-sextortion",
      "source": "ZDNet AI",
      "lang": "en",
-     "published": "2026-08-11T05:55:00+00:00",
-     "summary": "The Linux desktop's popularity is growing fast, and there are a few reasons why.",
+     "published": "2026-08-12T07:37:36+00:00",
+     "summary": "Hackers who steal compromising images of you from social media and personal accounts are selling them on the dark web. Here's how to protect yourself.",
      "image": "",
-     "id": "ec5d01a2284f",
+     "id": "e84ec7fb519d",
      "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0032",
+   "title": "Booksellers suspect AI firms are buying and then destroying rare books",
+   "summary": "AI firms quietly bulk buying rare books face resistance from booksellers.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "buying",
+    "rare",
+    "books",
+    "firms",
+    "booksellers",
+    "suspect"
+   ],
+   "image": "img/2026-08-13/35b70c635e6af2da.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "Booksellers suspect AI firms are buying and then destroying rare books",
+     "url": "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-08-12T07:19:17+00:00",
+     "summary": "AI firms quietly bulk buying rare books face resistance from booksellers.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-162426304-500x500-1786543365.jpg",
+     "id": "d13dbc01d02c",
+     "tags": [
+      "AI",
+      "Features",
+      "Policy",
+      "AI training",
+      "Anthropic"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0033",
+   "title": "到 2030 年全国算力用电量将达 8000 亿度，届时 6 万亿度绿电奔涌入网",
+   "summary": "IT之家 8 月 12 日消息，据央视财经今天（12 日）报道，当前，一个万卡集群一天至少吞掉 20 万度电。据测算，到 2030 年全国算力用电量将达到 8000 亿千瓦时。人工智能的未来，不仅是“算”的比拼，更是“电”的竞赛。 报道指出，算力在狂奔，绿电在托底。截至 6 月底， 我国非化石能源发电装机容量 25.2 亿千瓦，占总装机容量比重的 62.4% ，我国新增用电需求 几乎全部由绿电满足 。 东数西算八大枢纽内，大型绿色算力集群绿电使用率持续攀升。内蒙古和林格尔、甘肃庆阳等地新建数据中心的绿电消费占比已超 80%，全国 172 个算力中心通过绿",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "2030",
+    "8000"
+   ],
+   "image": "img/2026-08-13/d47724641922078f.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "到 2030 年全国算力用电量将达 8000 亿度，届时 6 万亿度绿电奔涌入网",
+     "url": "https://www.ithome.com/0/988/994.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-12T07:14:02+00:00",
+     "summary": "IT之家 8 月 12 日消息，据央视财经今天（12 日）报道，当前，一个万卡集群一天至少吞掉 20 万度电。据测算，到 2030 年全国算力用电量将达到 8000 亿千瓦时。人工智能的未来，不仅是“算”的比拼，更是“电”的竞赛。 报道指出，算力在狂奔，绿电在托底。截至 6 月底， 我国非化石能源发电装机容量 25.2 亿千瓦，占总装机容量比重的 62.4% ，我国新增用电需求 几乎全部由绿电满足 。 东数西算八大枢纽内，大型绿色算力集群绿电使用率持续攀升。内蒙古和林格尔、甘肃庆阳等地新建数据中心的绿电消费占比已超 80%，全国 172 个算力中心通过绿色低碳 4A 认证。 IT之家从报道中获悉，如今，东数西算工程已撬动万亿级社会投资，有效解决算力高能耗、新能源发电波动等问题，绿色能源底座正在托举中国 AI 全球竞争力。到 2030 年，近 6 万亿度绿电奔涌入网 。",
+     "image": "https://img.ithome.com/newsuploadfiles/2025/8/c7b39e5b-06df-4c96-8efc-b4b4edc8e810.jpg?x-bce-process=image/watermark,text_QUnnlJ_miJA,type_RlpMYW5UaW5nSGVpU0JHQg==,size_28,color_ffffffdd,skw_1,skc_00000051,g_7,blr_50,bls_50,x_11,y_11",
+     "id": "2d70fb91eff4",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0034",
+   "title": "Quoting Florian Herrengt",
+   "summary": "But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable can figure it out. You go talk to the person who worked on this feature. \"So where does the data come from",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "quoting",
+    "florian",
+    "herrengt",
+    "fix",
+    "seems",
+    "it."
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "Simon Willison"
+   ],
+   "articles": [
+    {
+     "title": "Quoting Florian Herrengt",
+     "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt",
+     "source": "Simon Willison",
+     "lang": "en",
+     "published": "2026-08-12T07:08:47+00:00",
+     "summary": "But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable can figure it out. You go talk to the person who worked on this feature. \"So where does the data come from?\" \"Hmm... actually I don't know. Let me ask Claude.\" You sit next to each other watching an endless wall of text appear on the screen. Neither of you has any idea whether any of it is true but Claude seems very confident. [...] This project has become so convoluted, with so many layers and services, that no one on you",
+     "image": "",
+     "id": "60d2827b3273",
+     "tags": [
+      "ai-misuse",
+      "cognitive-debt",
+      "generative-ai",
+      "ai",
+      "llms"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0035",
+   "title": "谷歌 Pixel Buds Pro 2 耳机升级：主动降噪、同声传译功能均获增强",
+   "summary": "IT之家 8 月 12 日消息，今天（12 日）晚间随 Pixel 11 系列一同亮相的 Pixel Buds Pro 2 和 Pixel Buds 2a，将从今年秋季起加入一系列免手操作功能，让日常使用更加灵活。 谷歌新款耳机把升级重点从硬件转向了更智能的软件功能。其中最重要的升级是动态 ANC（主动降噪），针对的是耳机使用中一个很常见的问题：佩戴一段时间后，耳机与耳道之间的贴合程度可能发生变化。 Pixel Buds Pro 2 能够根据轻微的密封变化调整降噪效果，从而维持更强的噪声抑制能力。谷歌称，Pixel Buds Pro 2 现有 ANC 系",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "buds",
+    "anc",
+    "pro",
+    "pixel"
+   ],
+   "image": "img/2026-08-13/82ce283a21201444.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "谷歌 Pixel Buds Pro 2 耳机升级：主动降噪、同声传译功能均获增强",
+     "url": "https://www.ithome.com/0/988/991.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-12T06:33:27+00:00",
+     "summary": "IT之家 8 月 12 日消息，今天（12 日）晚间随 Pixel 11 系列一同亮相的 Pixel Buds Pro 2 和 Pixel Buds 2a，将从今年秋季起加入一系列免手操作功能，让日常使用更加灵活。 谷歌新款耳机把升级重点从硬件转向了更智能的软件功能。其中最重要的升级是动态 ANC（主动降噪），针对的是耳机使用中一个很常见的问题：佩戴一段时间后，耳机与耳道之间的贴合程度可能发生变化。 Pixel Buds Pro 2 能够根据轻微的密封变化调整降噪效果，从而维持更强的噪声抑制能力。谷歌称，Pixel Buds Pro 2 现有 ANC 系统的降噪能力最高已经达到 初代 Pixel Buds Pro 的两倍 ，动态 ANC 相当于在原有基础上进一步提升稳定性。 Gemini 进一步融入耳机控制功能中。用户可以 直接通过语音调整设置 ，例如让谷歌提高低音强度，不必再拿出手机操作。 睡眠追踪也获得了 Pixel 生态系统的联动支持。Pixel Watch 检测到用户入睡后，可以自动暂停播放、关闭耳机触控并将通知静音。 Live Translate 实时翻译同样迎来大幅升级。按下 Pixel Buds 后即可进入聆听模式，不用操作手机，就能近乎实时理解 70 多种语言的大意。用户也可以 直接开口说话，再由 Pixel 手机向对方播放翻译后的回答 。 Pixel Buds P",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/d5ce8883-9311-449a-9cbf-ae74ed22cd49.png?x-bce-process=image/format,f_auto",
+     "id": "083f57cfe065",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0036",
+   "title": "Inside the Data Bottleneck Slowing Visual and Physical AI",
+   "summary": "A survey of over 700 professionals examines how visual and physical AI teams build systems, why models fail, and where data work drives production. Download this free whitepaper now!",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "visual",
+    "physical",
+    "inside",
+    "bottleneck",
+    "slowing",
+    "data"
+   ],
+   "image": "img/2026-08-13/9aff6a7e8bf108e0.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IEEE Spectrum AI"
+   ],
+   "articles": [
+    {
+     "title": "Inside the Data Bottleneck Slowing Visual and Physical AI",
+     "url": "https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-models-and-production",
+     "source": "IEEE Spectrum AI",
+     "lang": "en",
+     "published": "2026-08-12T06:18:05+00:00",
+     "summary": "A survey of over 700 professionals examines how visual and physical AI teams build systems, why models fail, and where data work drives production. Download this free whitepaper now!",
+     "image": "https://assets.rbl.ms/67607900/origin.png",
+     "id": "8ead5858e2bb",
+     "tags": [
+      "Type-whitepaper",
+      "Artificial-intelligence",
+      "Computer-models",
+      "Data-bottleneck"
+     ]
     }
    ]
   }
