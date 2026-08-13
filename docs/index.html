@@ -171,6 +171,17 @@ article{scroll-margin-top:66px}
 .pill b{font-weight:700}
 .pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
 .pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
 .posts{list-style:none; margin:0; padding:0}
 .post{
   background:var(--card); border:1px solid var(--line); border-radius:12px;
@@ -206,7 +217,7 @@ article{scroll-margin-top:66px}
     <span>2026-08-13</span>
     <span>40 個主題 · 68 篇報導</span>
     <span>收錄近 30 小時</span>
-    <span>更新於 08/13 10:54</span>
+    <span>更新於 08/13 11:05</span>
     <a href="archive/index.html">歷史存檔</a>
   </div>
 </header>
@@ -221,9 +232,9 @@ article{scroll-margin-top:66px}
     <div class="brief-body">
 <span class="brief-tag plain">其他</span>      <h3 class="brief-lead"><a href="#t0049">Every Pixel device announced at Made by Google 2026: 11 Pro Fold, Pixel Watch 5, and more</a></h3>
       <ul class="brief-list">
-        <li><a href="#t0010">Grok 4.6</a></li>
+        <li><a href="#t0013">Grok 4.6</a></li>
         <li><a href="#t0044">Twitch streamers can now opt out from training Amazon’s AI</a></li>
-        <li><a href="#t0019">报道称微软限制 Microsoft 365 和 OneDrive，推动 Win10 用户升级 Win11</a></li>
+        <li><a href="#t0022">报道称微软限制 Microsoft 365 和 OneDrive，推动 Win10 用户升级 Win11</a></li>
       </ul>
       <a class="brief-more" href="#cat0">看這個分類的 40 則 →</a>
     </div>
@@ -330,13 +341,13 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0010" class="hot">
+<article id="t0013" class="hot">
   <div class="head">
     <div class="body">
       <div class="row">
 <span class="badge">3 家媒體報導</span><span class="badge">4.6</span><span class="badge">xai</span><span class="badge">grok</span>      </div>
       <h3>Grok 4.6</h3>
-<p class="summary">https://artificialanalysis.ai/articles/grok-4-6-benchmarks-a... Comments URL: https://news.ycombinator.com/item?id=49274027 Points: 421 # Comments: 412</p>    </div>
+<p class="summary">https://artificialanalysis.ai/articles/grok-4-6-benchmarks-a... Comments URL: https://news.ycombinator.com/item?id=49274027 Points: 423 # Comments: 414</p>    </div>
     <div class="thumb">
       <img src="img/2026-08-13/cec255e0e626e59f.webp"
            alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
@@ -392,7 +403,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0019">
+<article id="t0022">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -533,7 +544,7 @@ article{scroll-margin-top:66px}
   <ul class="links">
     <li>
       <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=10&amp;id=0000765009_HT718651LHGKB7LXE7ML4&amp;wpidx=3" target="_blank" rel="noopener noreferrer">缺料漲價擋不住　飛捷2Q26毛利率靠備料與支付POS支撐</a>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000765009_HT718651LHGKB7LXE7ML4&amp;wpidx=5" target="_blank" rel="noopener noreferrer">缺料漲價擋不住　飛捷2Q26毛利率靠備料與支付POS支撐</a>
       <time datetime="2026-08-13T02:24:00+00:00">08/13 10:24</time>
     </li>
   </ul>
@@ -554,7 +565,7 @@ article{scroll-margin-top:66px}
   <ul class="links">
     <li>
       <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=70&amp;id=0000765016_J0DLDU3H2ALI9Z5M81BZC&amp;wpidx=3" target="_blank" rel="noopener noreferrer">榮耀發表全球首款機器人手機Robot Phone　可動雲台揭新變局</a>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000765016_J0DLDU3H2ALI9Z5M81BZC&amp;wpidx=5" target="_blank" rel="noopener noreferrer">榮耀發表全球首款機器人手機Robot Phone　可動雲台揭新變局</a>
       <time datetime="2026-08-13T02:16:00+00:00">08/13 10:16</time>
     </li>
   </ul>
@@ -610,6 +621,69 @@ article{scroll-margin-top:66px}
   <div class="head">
     <div class="body">
       <div class="row">
+<span class="badge">cowos</span><span class="badge">nvidia</span><span class="badge">chip</span>      </div>
+      <h3>矽品精密云林斗六厂动工，预计导入 CoWoS 先进封装</h3>
+<p class="summary">IT之家 8 月 13 日消息，日月光投控旗下集成电路封装测试企业矽品精密 (SPIL) 本月 11 日举行云林斗六厂动土典礼。这座投资近千亿新台币的 AI 半导体先进封测设施 预计将导入 CoWoS 2.5D 异构集成产能 。 IT之家获悉，矽品精密斗六厂开发面积达 6 公顷，满载情况下可创造超 2200 个优质岗位， 首期启用时间预计在 2028 年 。 作为全球半导体产业链的重要成员， 矽品正在岛内多地设厂扩产 。矽品 2022 年在云林虎尾动工的制造设施已于 2025 年 9 月启用，当前处于盈利状态。 相关阅读： 《 黄仁勋访问矽品精密，透露英</p>    </div>
+    <div class="thumb">
+      <img src="img/2026-08-13/39259aede68d4493.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/0/989/132.htm" target="_blank" rel="noopener noreferrer">矽品精密云林斗六厂动工，预计导入 CoWoS 先进封装</a>
+      <time datetime="2026-08-12T19:02:12+00:00">08/13 03:02</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">nebius</span><span class="badge">nvidia</span><span class="badge">group</span>      </div>
+      <h3>麥可貝瑞遭軋空？Nebius 財報報喜、股價飆 34%</h3>
+<p class="summary">輝達（Nvidia）擁有近 10% 股權的荷蘭 AI 基礎建設供應商 Nebius Group 最新公布的第二 […]</p>    </div>
+    <div class="thumb">
+      <img src="img/2026-08-13/744b6f8d9a9e231d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/08/13/nebius-surges-34-on-strong-earnings-report" target="_blank" rel="noopener noreferrer">麥可貝瑞遭軋空？Nebius 財報報喜、股價飆 34%</a>
+      <time datetime="2026-08-12T19:00:09+00:00">08/13 03:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0008">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>阿里千问开放平台上线菜鸟智能体，可协助用户规划寄件方案</h3>
+<p class="summary">IT之家 8 月 13 日消息，据千问 App 消息，千问开放平台近日上线菜鸟智能体。提出寄件需求就能让菜鸟智能体根据物品类型、价格要求、上门时间等，找到合适的寄件方案和快递公司。 保证千问是最新版，就可以用以下方式唤起菜鸟智能体： 对话框里 @菜鸟 点击页面右上角的“圆点图标”进入 在对话中提出你的寄件需求，千问会为你智能调用 IT之家附官方详细介绍如下： 以后寄快递的这些小事，都可以来和千问聊聊： 寄件避坑，随时答疑 寄快递前不确定政策，或者拿不准怎么寄最划算，随时问：“防晒喷雾能寄吗？”“我有一箱很重的书，寄哪个快递更便宜？” 基于丰富知识库与实时</p>    </div>
+    <div class="thumb">
+      <img src="img/2026-08-13/956dedf74a3e2d65.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/0/989/126.htm" target="_blank" rel="noopener noreferrer">阿里千问开放平台上线菜鸟智能体，可协助用户规划寄件方案</a>
+      <time datetime="2026-08-12T18:54:18+00:00">08/13 02:54</time>
+    </li>
+  </ul>
+</article>
+<article id="t0009">
+  <div class="head">
+    <div class="body">
+      <div class="row">
 <span class="badge">opensource</span>      </div>
       <h3>消息称美国 AI 网络安全审查机制未来很可能会覆盖前沿开源模型</h3>
 <p class="summary">IT之家 8 月 13 日消息，外媒《连线》(Wired) 援引消息人士报道称，当前仅针对该国闭源模型的美国前沿人工智能模型网络安全审查机制 “几乎肯定”会在未来数月扩展至开源（开放权重）模型 。 据称 这里的“前沿”定义是与 Anthropic Claude Mythos 或 OpenAI GPT-5.6 能力相当 。报道并未给出详细的对应模型版本。 图源：Pexels 知情人士透露， 这一审查框架目前仍为自愿性质 。部分美国官员意识到强制性的审查可能抑制 AI 发展。 此外，当过审闭源模型推出后美国企业可能降低对未过审的开源模型兴趣，从而抑制美国企业</p>    </div>
@@ -627,7 +701,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0007">
+<article id="t0010">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -648,7 +722,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0008">
+<article id="t0011">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -669,7 +743,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0009">
+<article id="t0012">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -690,7 +764,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0011">
+<article id="t0014">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -711,7 +785,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0012">
+<article id="t0015">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -732,11 +806,11 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0013">
+<article id="t0016">
   <div class="head">
     <div class="body">
       <div class="row">
-<span class="badge">decart</span><span class="badge">anthropic</span><span class="badge">funding</span>      </div>
+<span class="badge">decart</span><span class="badge">anthropic</span><span class="badge">chip</span>      </div>
       <h3>消息称 Anthropic 正洽谈以 60 亿美元收购 AI 初创公司 Decart AI</h3>
 <p class="summary">IT之家 8 月 13 日消息，据彭博社报道，知情人士透露，Anthropic PBC 正在洽谈收购人工智能初创公司 Decart AI，交易金额约为 60 亿美元 （IT之家注：现汇率约合 405.41 亿元人民币） 。 知情人士表示，目前双方尚未最终敲定交易，谈判仍有破裂的可能。由于涉及私人谈判，这些人士要求匿名。 Decart 致力于帮助 AI 开发者充分发挥各种不同芯片的性能，同时也专注于生成式视频领域。该公司使用所谓的“世界模型”（world models），能够对实时视频画面进行即时修改。</p>    </div>
     <div class="thumb">
@@ -753,11 +827,11 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0014">
+<article id="t0017">
   <div class="head">
     <div class="body">
       <div class="row">
-<span class="badge">sk-hynix</span><span class="badge">samsung</span><span class="badge">agent</span>      </div>
+<span class="badge">sk-hynix</span><span class="badge">samsung</span><span class="badge">chip</span>      </div>
       <h3>突破產能與良率瓶頸，三星、SK 海力士掀起半導體設備 AI 化革命</h3>
 <p class="summary">三星電子與 SK 海力士正全面加速於半導體製造設備中導入「人工智慧代理」（AI agent），並已進入實機場域 […]</p>    </div>
     <div class="thumb">
@@ -774,7 +848,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0015">
+<article id="t0018">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -795,7 +869,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0016">
+<article id="t0019">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -816,7 +890,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0017">
+<article id="t0020">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -837,7 +911,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0018">
+<article id="t0021">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -858,7 +932,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0020">
+<article id="t0023">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -879,7 +953,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0021">
+<article id="t0024">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -900,7 +974,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0022">
+<article id="t0025">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -916,7 +990,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0023">
+<article id="t0026">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -937,7 +1011,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0024">
+<article id="t0027">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -958,7 +1032,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0025">
+<article id="t0028">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -974,7 +1048,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0026">
+<article id="t0029">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -995,7 +1069,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0027">
+<article id="t0030">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -1016,7 +1090,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0028">
+<article id="t0031">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -1037,7 +1111,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0029">
+<article id="t0032">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -1058,7 +1132,7 @@ article{scroll-margin-top:66px}
     </li>
   </ul>
 </article>
-<article id="t0030">
+<article id="t0033">
   <div class="head">
     <div class="body">
       <div class="row">
@@ -1076,69 +1150,6 @@ article{scroll-margin-top:66px}
       <span class="src">IT之家</span>
       <a href="https://www.ithome.com/0/989/030.htm" target="_blank" rel="noopener noreferrer">Anthropic 为 Claude 生成 AI 内容添加水印，网友吵翻了</a>
       <time datetime="2026-08-12T16:40:00+00:00">08/13 00:40</time>
-    </li>
-  </ul>
-</article>
-<article id="t0031">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-      </div>
-      <h3>维基百科信息遭恶意篡改，谷歌搜索误显示 OpenAI CEO 奥尔特曼死讯</h3>
-<p class="summary">IT之家 8 月 13 日消息，当地时间周三凌晨，一些 X 和 Reddit 用户发现，在谷歌搜索 OpenAI CEO 萨姆 · 奥尔特曼的名字时，搜索结果显示他于当天去世。 几个小时后，谷歌承认该搜索结果存在错误。 谷歌在 X 上回应称：“感谢指出这一问题，目前该信息已经不再显示，而且这并非谷歌人为修改的结果。当有人恶意篡改公开信息来源时，可能会影响搜索结果中显示的信息。” 一些网友认为，这可能与维基百科遭到恶意篡改有关。维基百科将这种行为定义为“以故意扰乱或恶意的方式编辑页面”。作为一个免费网络百科全书，维基百科主要依靠志愿者编辑和更新页面内容。 </p>    </div>
-    <div class="thumb">
-      <img src="img/2026-08-13/ff61fea60c25d5ed.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">IT之家</span>
-      <a href="https://www.ithome.com/0/989/024.htm" target="_blank" rel="noopener noreferrer">维基百科信息遭恶意篡改，谷歌搜索误显示 OpenAI CEO 奥尔特曼死讯</a>
-      <time datetime="2026-08-12T16:06:49+00:00">08/13 00:06</time>
-    </li>
-  </ul>
-</article>
-<article id="t0032">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">part</span><span class="badge">chip</span><span class="badge">supply</span>      </div>
-      <h3>AI重塑半導體測試價值　京元電張高薰拋「四大整合」新模式</h3>
-<p class="summary">AI晶片價值與整合複雜度持續攀升，京元電總經理張高薰認為，半導體測試正在從「Part of the Supply Chain」變成「Part of the Process」，供應鏈也逐漸走向整合設備（Equipment）、配件（Accessory）、測試服務（Test...</p>    </div>
-    <div class="thumb">
-      <img src="img/2026-08-13/56d1959d4e19e1be.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000764940_ZG88BYVF5VBYS0LEO4USW&amp;wpidx=5" target="_blank" rel="noopener noreferrer">AI重塑半導體測試價值　京元電張高薰拋「四大整合」新模式</a>
-      <time datetime="2026-08-12T16:00:00+00:00">08/13 00:00</time>
-    </li>
-  </ul>
-</article>
-<article id="t0033">
-  <div class="head">
-    <div class="body">
-      <div class="row">
-<span class="badge">2027</span><span class="badge">asic</span><span class="badge">vera</span>      </div>
-      <h3>AI伺服器液冷滲透率攀升　奇鋐估2027年達5成</h3>
-<p class="summary">AI下半年動能更強！機構件廠奇鋐指出，下半年包括ASIC與NVIDIA的Vera Rubin出貨放量，成長動能可期，除了NVIDIA的Vera Rubin系列，ASIC導入液冷散熱比重也將拉升，預估整體AI伺服器的液冷散熱滲透率，到2027年將一舉拉升至5...</p>    </div>
-    <div class="thumb">
-      <img src="img/2026-08-13/9a7d6e2652db6527.webp"
-           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-           onerror="this.parentNode.remove()">
-    </div>
-  </div>
-  <ul class="links">
-    <li>
-      <span class="src">DIGITIMES</span>
-      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000764941_QF886HK05DEFU10BFXT6E&amp;wpidx=5" target="_blank" rel="noopener noreferrer">AI伺服器液冷滲透率攀升　奇鋐估2027年達5成</a>
-      <time datetime="2026-08-12T16:00:00+00:00">08/13 00:00</time>
     </li>
   </ul>
 </article>
