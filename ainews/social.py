@@ -459,8 +459,11 @@ def fetch_rank_board(platform: str, url: str, limit: int = 4,
             period=_short_period(period_raw),
             image=(image.group(1) if image else ""),
         ))
-        if len(board.items) >= limit:
+        if len(board.items) >= limit * 4:      # 多抓一些再排序，避免漏掉最新的
             break
+    # 依觀測期間新到舊排序（各頁的 DOM 順序不一定一致），再取前 limit 則
+    board.items.sort(key=lambda i: i.period, reverse=True)
+    board.items = board.items[:limit]
     print(f"  · Social Lab {platform}：{len(board.items)} 則")
     return board
 
@@ -470,6 +473,9 @@ DEFAULT_BOARDS = [
     {"name": "Facebook", "url": "https://www.social-lab.cc/facebook-charts/"},
     {"name": "Dcard", "url": "https://www.social-lab.cc/dcard_charts/"},
     {"name": "Instagram", "url": "https://www.social-lab.cc/instagram%e6%8e%92%e8%a1%8c%e6%a6%9c/"},
+    {"name": "Mobile01", "url": "https://www.social-lab.cc/mobile01-charts/"},
+    {"name": "YouTube", "url": "https://www.social-lab.cc/hot-youtube/"},
+    {"name": "新聞", "url": "https://www.social-lab.cc/news_charts/"},
 ]
 
 
