@@ -1,1496 +1,1467 @@
 {
- "generated_at": "2026-08-18T08:12:34.902032+08:00",
- "date": "2026-08-18",
+ "generated_at": "2026-08-19T08:12:23.137380+08:00",
+ "date": "2026-08-19",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
- "topic_count": 40,
+ "topic_count": 39,
  "article_count": 51,
  "topics": [
   {
-   "key": "t0015",
-   "title": "Hugging Face報告：阿里巴巴Qwen下載量與衍生模型數居開源模型之冠",
-   "summary": "Hugging Face發布夏季開放模型生態報告，指出阿里巴巴Qwen系列模型在2026年前7個月下載量超過20億次，衍生模型數達151,448個，為Meta的2.6倍、Google的1.8倍，顯示中國開源模型在開發者生態中佔據主導地位。報告也顯示開放模型競爭已從模型能力延伸到生態、部署與商業模式。",
-   "category": "開源社群",
-   "importance": 4,
-   "keywords": [
-    "alibaba",
-    "hugging",
-    "face",
-    "qwen",
-    "meta",
-    "opensource"
-   ],
-   "image": "img/2026-08-18/d184d1be9d621571.webp",
-   "llm_enriched": true,
-   "sources": [
-    "TechOrange 科技報橘",
-    "數位時代",
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "【科技早餐】SpaceX 600 億美元收購 Cursor，阿里稱 Qwen 半年下載破 30 億次、在 Hugging Face 領先 Google 與 Meta",
-     "url": "https://techorange.com/2026/08/18/spacex-cursor-acquisition-alibaba-qwen-ai-model-downloads",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-08-17T13:30:00+00:00",
-     "summary": "【科技早餐】今天精選 7 則國內外重要科技新聞。 ＊SpaceX 600 億美元收購 Cursor，馬斯克擴大企業 AI 版圖 監管文件顯示，SpaceX 對 Cursor 母公司 Anysphere 的收購案已於 8 月 14 日生效。這筆價值 600 億美元的全股票交易，是科技業史上規模最大的收購案之一。Anysphere 於 2022 年成立，隔年推出 AI 程式開發工具 Cursor，協助工程師撰寫、修改及檢查程式。 交易完成前，雙方已合作開發 AI 模型與代理工具。Cursor 表示，加入 SpaceX 後將能使用更大規模的 GPU 算力，打造能力更強、運作成本更低的模型。這筆收購讓 SpaceX 進一步整合算力、AI 模型與開發者工具，擴大在企業 AI 市場的布局。 ＊阿里稱 Qwen 半年下載逾 30 億次，Hugging Face 用量領先 Google、Meta 阿里巴巴表示，旗下開放權重模型 Qwen 過去 6 個月全球下載量超過 30 億次，累計釋出逾 […]",
-     "image": "https://techorange.com/app/uploads/2026/08/ff0fa90159526623-720x405.png",
-     "id": "6acd72308b74",
-     "tags": [
-      "科技動態"
-     ]
-    },
-    {
-     "title": "誰是開源模型一哥？Hugging Face揭2026下載榜單：中國Qwen突破20億次，比Google多5倍",
-     "url": "https://www.bnext.com.tw/article/91887/qwen-tops-hugging-face-open-model-ranking-2026",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-08-17T04:30:00+00:00",
-     "summary": "Hugging Face發布夏季開源模型報告：以平台2026前7個月下載量計，阿里巴巴Qwen以逾20億次領先Meta與Google。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-08/vuh4-1786940306.png?w=900&output=webp",
-     "id": "d4f0ba2ec5a1",
-     "tags": []
-    },
-    {
-     "title": "Qwen開放模型衍生版增至15萬個，為Meta的2.6倍",
-     "url": "https://www.ithome.com.tw/news/178170",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-08-17T03:08:47+00:00",
-     "summary": "Hugging Face上周五（8/14）發布夏季開放模型生態觀察報告，指出阿里巴巴Qwen目前已有151,448個衍生模型，遠高於Google的82,506個，還是Meta旗下模型衍生版總數的2.6倍，持續擴大在開放模型開發者生態的優勢。",
-     "image": "",
-     "id": "959210b20267",
-     "tags": []
-    },
-    {
-     "title": "從中國模型崛起到 AI Agent 進場：Hugging Face 盤點開放模型 6 大變化",
-     "url": "https://techorange.com/2026/08/17/ai-state-of-open-models-summer-2026-hugging-face",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-08-16T20:43:30+00:00",
-     "summary": "AI 模型競爭過去常看 benchmark 排名或參數規模，但長期影響力也取決於多少開發者願意使用、微調與部署。 開源平台 Hugging Face 近日發布《State of Open Models: Summer 2026》，分析今年前 7 個月 Hub 上的模型活動。期間公開模型 repository 從 243 萬增至 296 萬個，但 85.6% 的模型終生下載量不到 200 次，僅 1.5% repository 就占所有下載量 99.2%。Hugging Face 從中歸納六項變化，顯示競爭正從模型能力延伸到生態、部署與商業模式。 中國模型衝向兆級參數，但最強不等於最多人用 第一項變化，是開放模型的技術前沿快速往中國移動。Hugging Face 統計，2026 年幾乎每個月，中國實驗室釋出的最大型開放模型都比美國同期更大，單月最大規模落在 754B 至 2.78T 參數。但中國廠商之間也出現不同策略，Moonshot、MiniMax 偏重大型前沿模型；Qwen、騰訊則涵蓋不同模型尺寸，試圖涵蓋更多裝置、成本與應用場景。 但第二項趨勢提醒，受到最多關注的模型，不等於真正被最多人使用。Hugging Face 比較今年 Likes 與下載量前 25 名模型，兩份榜單只有一個 repository 重疊，甚至沒有任何 2026 年新模型進入下載量前 25 […]",
-     "image": "https://techorange.com/app/uploads/2026/08/075be82277227d26-720x401.png",
-     "id": "74a249cf9aa6",
-     "tags": [
-      "AI 人工智慧"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0021",
-   "title": "調查揭露Amazon疑似銷毀稀有書籍以訓練AI模型",
-   "summary": "404 Media的調查報導指出，Amazon疑似透過中間人大量收購稀有書籍，並將書本送往AI訓練設施進行掃描，以充實大型語言模型的訓練資料。這些書籍因未在網路上公開而具有獨特價值，但此舉引發學術與出版界對文化資產保存的擔憂。",
-   "category": "安全與倫理",
-   "importance": 4,
-   "keywords": [
-    "amazon",
-    "rare",
-    "books",
-    "train",
-    "training",
-    "airtag"
-   ],
-   "image": "img/2026-08-18/e68ae9dbd2fa5dd0.webp",
-   "llm_enriched": true,
-   "sources": [
-    "Ars Technica AI",
-    "TechCrunch AI",
-    "Simon Willison"
-   ],
-   "articles": [
-    {
-     "title": "Hidden Airtag reveals Amazon is trashing rare books to train AI",
-     "url": "https://arstechnica.com/tech-policy/2026/08/hidden-airtag-reveals-amazon-is-trashing-rare-books-to-train-ai",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-08-17T10:13:47+00:00",
-     "summary": "Amazon’s team uses a T. rex preparing to devour a book as its logo.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-149405480-500x500.jpg",
-     "id": "337ff98bc752",
-     "tags": [
-      "AI",
-      "Policy",
-      "AI training",
-      "Amazon",
-      "amazon ai"
-     ]
-    },
-    {
-     "title": "Amazon, which started off selling books, is destroying rare texts to train AI",
-     "url": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-17T08:38:44+00:00",
-     "summary": "Rare books are incredibly valuable for training LLMs, since these models have already trained on whatever's available online.",
-     "image": "",
-     "id": "966ff312c3d3",
-     "tags": [
-      "AI",
-      "AI training",
-      "Amazon",
-      "In Brief"
-     ]
-    },
-    {
-     "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
-     "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-08-17T07:21:29+00:00",
-     "summary": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility Excellent piece of reporting from 404 Media. For a while now there have been stories of book dealers receiving orders for large volumes of books from apparently price-insensitive anonymous customers, widely suspected to be companies looking to scan them for AI training (see my previous coverage of Anthropic's book scanning from June 2025.) 404 Media investigated with an AirTag! In July, one bookseller told me they received a very large order of around 1,000 books on Biblio, one of these marketplaces. The seller agr",
-     "image": "https://static.simonwillison.net/static/2026-08-17/IMG_7418.jpeg",
-     "id": "e9ad3662fedf",
-     "tags": [
-      "amazon",
-      "journalism",
-      "ai",
-      "training-data",
-      "ai-ethics"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0016",
-   "title": "AI自動化新創Relay關閉，團隊加入Google Chrome部門",
-   "summary": "AI自動化新創Relay宣布關閉，創辦人Jacob Bank與團隊將加入Google Chrome團隊，未來將在瀏覽器中整合AI功能以協助用戶完成任務。另一方面，Google Workspace預設讓Gemini存取企業資料，管理員需手動關閉以保護隱私。",
+   "key": "t0039",
+   "title": "OpenAI推出ChatGPT for Teens，強化青少年保護與家長監控",
+   "summary": "OpenAI正式推出ChatGPT for Teens，整合年齡適宜的安全措施、家長控制與學習工具，旨在引導青少年遠離有害內容並避免作弊。此舉正值各界關注AI對青少年影響之際，其他平台也相繼實施年齡驗證與青少年保護機制。",
    "category": "產品與應用",
-   "importance": 3,
+   "importance": 4,
    "keywords": [
-    "down",
-    "workspace",
-    "access",
-    "google",
-    "relay",
-    "chrome"
+    "teens",
+    "chatgpt",
+    "learning",
+    "openai",
+    "introducing",
+    "protections"
    ],
-   "image": "img/2026-08-18/22f762b1db4b7e2c.webp",
+   "image": "img/2026-08-19/8baedf3a8a980227.webp",
    "llm_enriched": true,
    "sources": [
     "TechCrunch AI",
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "AI automation startup Relay shuts down, staff joins Google’s Chrome team",
-     "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-17T13:27:05+00:00",
-     "summary": "\"We have some really ambitious plans to help you work with AI in Chrome to get things done, and I’ll have more to share soon,\" Jacob Bank, Relay founder and CEO, said.",
-     "image": "",
-     "id": "45e9233bbb40",
-     "tags": [
-      "AI",
-      "Chrome",
-      "gemini",
-      "Google",
-      "relay"
-     ]
-    },
-    {
-     "title": "Google Workspace lets Gemini access your company data by default - how to shut it down",
-     "url": "https://www.zdnet.com/article/google-workspace-lets-gemini-access-your-company-data-by-default-how-to-shut-it-down",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-08-17T03:38:51+00:00",
-     "summary": "In Google Workspace, Gemini has access to Gmail, Docs, Calendar, Chat, and more by default. Here's why it matters, and how administrators can disable it today.",
-     "image": "",
-     "id": "2dccb8002e7d",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0043",
-   "title": "AI寵物科技與兒童機器人引發情感依賴與倫理討論",
-   "summary": "AI寵物用品如Whisker的智慧貓砂盆能監測寵物健康，但誤判案例引發可靠性質疑。同時，兒童機器人Moxie因公司倒閉而停止服務，讓孩子面臨失去「朋友」的情感衝擊，凸顯AI產品在情感連結與生命週期上的倫理議題。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [
-    "robot",
-    "litter",
-    "like",
-    "years",
-    "whisker",
-    "ai-powered"
-   ],
-   "image": "img/2026-08-18/c8436fdd447760b5.webp",
-   "llm_enriched": true,
-   "sources": [
     "The Verge AI",
-    "MIT Technology Review AI"
+    "OpenAI"
    ],
    "articles": [
     {
-     "title": "Whisker’s AI-powered litter robot thinks my cats swapped bodies",
-     "url": "https://www.theverge.com/tech/978323/whisker-litter-robot-5-pro-review",
+     "title": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
+     "url": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-18T05:50:30+00:00",
+     "summary": "ChatGPT for Teens adds age-appropriate safety measures, parental controls, and learning tools designed to steer teens away from harmful content — and from using AI to cheat on their homework.",
+     "image": "",
+     "id": "60c60b763275",
+     "tags": [
+      "AI",
+      "OpenAI",
+      "Teens"
+     ]
+    },
+    {
+     "title": "ChatGPT is getting a dedicated mode for teens",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-08-17T03:00:00+00:00",
-     "summary": "The greatest invention in pet tech in recent years is the litter robot. A machine that scoops your kitties' poop so you don't have to - what else could a cat owner possibly want? How about insights into your kitty's litter box usage that could flag health issues? Sign me up. But I have two […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268628_Pet_week_CVirginia_LITTER_ROBOT.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "a9f248df49c3",
+     "published": "2026-08-18T03:00:00+00:00",
+     "summary": "OpenAI is introducing a dedicated ChatGPT mode for teenagers, combining existing youth safeguards and new safety features under one roof. The launch comes amid mounting public scrutiny over how AI tools affect younger users, as other platforms implement their own age checks and teen-specific protections. ChatGPT for Teens is \"an experience designed to help teens […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Parental-Controls-1.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "78030b55c4fa",
      "tags": [
       "AI",
-      "Reviews",
-      "Robot",
-      "Smart Home",
-      "Smart Home Reviews"
-     ]
-    },
-    {
-     "title": "What happens when a kid’s robot best friend dies?",
-     "url": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies",
-     "source": "MIT Technology Review AI",
-     "lang": "en",
-     "published": "2026-08-17T01:00:00+00:00",
-     "summary": "When Xander first met Moxie, she taught him that when he was anxious, he could calm down by exhaling through his lips so that he buzzed like a bee. They practiced breathing like dragons to manage feeling mad and sniffing like bunnies to boost his energy. But in the six years they’ve known each other,…",
-     "image": "https://wp.technologyreview.com/wp-content/uploads/2026/08/MIT-TR-SEPTOCT26-MOXIE-ANG1-010_2.jpg?w=840",
-     "id": "13298ed20f8f",
-     "tags": [
-      "Artificial intelligence",
-      "App",
-      "Features and Investigations"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0054",
-   "title": "Anthropic執行長Dario Amodei談AI信任危機與監管必要性",
-   "summary": "Anthropic執行長Dario Amodei在社群媒體回應外界批評，強調AI產業與大眾之間存在信任危機，並主張監管制度若設計得當，反而能分散權力、制衡企業影響力，而非必然導致權力集中。他呼籲與其誇大AI能力，不如實際解決問題。",
-   "category": "政策與法規",
-   "importance": 3,
-   "keywords": [
-    "anthropic",
-    "dario",
-    "amodei"
-   ],
-   "image": "img/2026-08-18/232889079676c127.webp",
-   "llm_enriched": true,
-   "sources": [
-    "TechOrange 科技報橘",
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "Anthropic 執行長談 AI 信任危機：與其宣稱「AI 能治癌」，不如真的把癌症治好",
-     "url": "https://techorange.com/2026/08/17/dario-amodei-anthropics-policy-ai",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-08-16T23:33:59+00:00",
-     "summary": "Anthropic 執行長 Dario Amodei 近日在社群媒體 X 發文，回應投資人 Gavin Baker 對其 AI 監管立場及 AI 風險溝通方式的質疑。他表示，監管並不必然導致 AI 權力集中，關鍵在於制度如何設計，公平、客觀的制度反而有機會制衡企業的影響力，讓權力更加分散。對於外界認為他過度強調 AI 風險、加深大眾對 AI 的負面印象，Dario Amodei 則表示，真正的問題並非訊息傳遞，而是AI 產業與大眾之間日益加深的信任危機。 Anthropic 執行長談 AI 監管：監管與權力分散並非二選一 談到 AI 監管，Dario Amodei 認為，「監管會讓權力集中在少數企業與政治人物手中」與「將 AI 權力廣泛分散」並非只能二選一。他以法院為例，指出正式的司法制度雖然有時給人刻板、菁英化的印象，但相較於群眾私刑，更能保障弱勢者的權利。理想情況下，制度應讓權力建立在規則與原則之上，而非掌握在特定個人手中，進一步分散權力。 這也是 Anthropic 在提出 AI 政策建議時特別謹慎的原因。Dario Amodei 舉例，Anthropic 支持的加州 SB53，以及公司對其態度較為保留的 SB1047，都將營收或模型訓練成本低於特定門檻的企業排除在規範之外。Anthropic 目前在美國 AI 標準與創新中心（Center for AI Standards ",
-     "image": "https://techorange.com/app/uploads/2026/08/f4f83cb49b2ca2ed-720x404.png",
-     "id": "e7dcb17ca989",
-     "tags": [
-      "AI 人工智慧"
-     ]
-    },
-    {
-     "title": "Anthropic 執行長剖析 AI 反彈，關鍵在美國大眾失去信任",
-     "url": "https://finance.technews.tw/2026/08/17/anthropic-ceo-warns-ai-backlash-is-rooted-in-a-lack-of-trust",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-08-16T23:04:39+00:00",
-     "summary": "Anthropic 執行長 Dario Amodei 近日回應外界對 AI 產業的批評時表示，社會對 AI 的 […]",
-     "image": "",
-     "id": "84335fa1e21a",
-     "tags": [
-      "AI 人工智慧",
-      "Claude",
-      "公司治理",
-      "科技政策",
-      "AI 監管"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0012",
-   "title": "Nvidia為OpenAI俄亥俄資料中心提供最高1050億美元擔保",
-   "summary": "Nvidia同意為OpenAI在俄亥俄州租賃的資料中心提供最高1,050億美元擔保，該設施由軟銀旗下SB Energy開發，Nvidia另投資15億美元。黃仁勳也透露OpenAI承諾在2030年前部署約12GW Nvidia算力，若擴大合作可達16GW，對應業務機會約6,000億美元，但引發「循環融資」疑慮。",
-   "category": "晶片與基礎設施",
-   "importance": 5,
-   "keywords": [
-    "openai",
-    "energy"
-   ],
-   "image": "img/2026-08-18/deff18326e61445a.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "英伟达将为 OpenAI 俄亥俄州数据中心提供最高 1050 亿美元担保",
-     "url": "https://www.ithome.com/0/990/890.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-17T15:57:30+00:00",
-     "summary": "IT之家 8 月 18 日消息，英伟达同意为 OpenAI 在美国俄亥俄州租赁一座大型数据中心提供最高 1,050 亿美元 （IT之家注：现汇率约合 7,086.08 亿元人民币） 的担保。该数据中心由软银旗下 SB Energy 负责开发，这也是英伟达迄今规模最大的基础设施融资承诺之一。 由黄仁勋领导的英伟达当地时间周一表示，公司还将向 SB Energy 投资 15 亿美元 （现汇率约合 101.23 亿元人民币） 。几个月前，OpenAI 和软银刚刚共同向 SB Energy 投资 10 亿美元 （现汇率约合 67.49 亿元人民币） ，用于扩大数据中心基础设施。 此次交易是英伟达为围绕自身芯片建设的基础设施提供融资的最新案例。这一策略能够帮助英伟达进一步推动芯片需求，但也引发了外界对英伟达与客户之间可能存在“循环融资”的担忧。 上周，英伟达与包括贝莱德在内的 6 家大型金融机构合作，推出面向人工智能基础设施的融资平台，目标是撬动超过 5,000 亿美元 （现汇率约合 3.37 万亿元人民币） 的第三方资金，使外界对这类融资模式的关注进一步升温。 黄仁勋表示，此次交易并不属于循环融资，英伟达是在利用“自身的规模和长期可见性”提供支持。 黄仁勋说：“我们正在为英伟达计算基础设施锁定长期使用的资源，让 OpenAI 能够部署生产效率最高的 AI 工厂，并随着每一代新技术推出而不断",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/3/278316e8-1c15-4d6e-86a3-aef371f9261d.png?x-bce-process=image/format,f_auto",
-     "id": "91a47ab5e49f",
-     "tags": []
-    },
-    {
-     "title": "黄仁勋：OpenAI 承诺在 2030 年前部署约 12GW 英伟达算力",
-     "url": "https://www.ithome.com/0/990/834.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-17T05:55:46+00:00",
-     "summary": "IT之家 8 月 17 日消息，英伟达 CEO 黄仁勋今天（17 日）晚间通过官方博客撰文称，OpenAI 已承诺在 2030 年前 大规模部署英伟达 AI 基础设施 。 OpenAI 现有和计划中的部署承诺合计 约为 12GW（吉瓦）英伟达算力 ；如果英伟达将 PORTS-Pike 合作扩大到首期 4.25GW 以外，总规模有望 进一步增至约 16GW 。 按照上述规模计算，到 2030 年，英伟达算力对应的业务机会约为 6,000 亿美元 （IT之家注：现汇率约合 4.05 万亿元人民币） 。 黄仁勋表示，建设 AI 工厂需要完整的关键资源体系，这包含了先进芯片、封装、内存和网络，以及土地、电力和建筑外壳。英伟达过去依靠自身规模、长期需求可预测性和供应链合作关系锁定关键半导体资源，目前准备把同样的做法用于土地、电力和建筑外壳（LPS），专门为采用英伟达算力的 AI 工厂锁定所需容量。 同时，英伟达宣布与 SB Energy 合作，在美国俄亥俄州朴次茅斯的 PORTS-Pike 科技园区锁定 LPS 容量，用于部署英伟达算力，OpenAI 将成为承租方。 黄仁勋披露，OpenAI 将在 PORTS-Pike 建设并运营一座 世界级 AI 工厂 。该工厂将采用英伟达完整的 DSX AI 工厂平台，包含 GPU、CPU、网络和基础设施软件。 首期部署预计将提供 4.25GW 的 AI",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/9284e234-3c7f-4a10-be9c-2590cfafea2c.png",
-     "id": "dfe7cb903e85",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0024",
-   "title": "舊Android手機可改裝為樹莓派替代品，節省成本",
-   "summary": "由於AI需求推升記憶體價格，樹莓派價格高漲，專家建議可將舊Android手機改裝為伺服器或開發用主機，作為低成本替代方案。文章提供實際操作步驟，適合實驗與開發用途。",
-   "category": "產品與應用",
-   "importance": 1,
-   "keywords": [
-    "old",
-    "android",
-    "turn",
-    "server",
-    "raspberry",
-    "phone"
-   ],
-   "image": "",
-   "llm_enriched": true,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "You can turn an old Android into a Raspberry Pi alternative - but know this first",
-     "url": "https://www.zdnet.com/article/turn-old-android-into-raspberry-pi-alternative",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-08-17T09:11:41+00:00",
-     "summary": "With AI-driven RAM shortages pushing Raspberry Pi prices sky high, here's how to repurpose your old handset into a portable powerhouse for your projects.",
-     "image": "",
-     "id": "496139af9ccf",
-     "tags": []
-    },
-    {
-     "title": "I turned an old Android phone into a server for my LAN - here's how and why",
-     "url": "https://www.zdnet.com/article/how-turned-old-android-into-server-for-my-lan",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-08-17T08:50:43+00:00",
-     "summary": "Got an old Android phone or tablet lying around? Turn it into a test server for experiments and development - it's simpler than you think.",
-     "image": "",
-     "id": "55d22e954d5b",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0026",
-   "title": "Groq募資3.5億美元轉型neocloud，Nvidia投資SB Energy",
-   "summary": "AI晶片新創Groq完成3.5億美元融資，估值達35億美元，將從晶片製造轉型為neocloud服務，並擴大採用Nvidia GPU的資料中心。同時，Nvidia宣布投資SB Energy 15億美元，確保其晶片用於OpenAI資料中心。",
-   "category": "企業與資金",
-   "importance": 4,
-   "keywords": [
-    "datacenter",
-    "data",
-    "center",
-    "chips",
-    "nvidia",
-    "softbank"
-   ],
-   "image": "img/2026-08-18/5e4b45fb78466aac.webp",
-   "llm_enriched": true,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
-     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-17T08:15:12+00:00",
-     "summary": "Groq raised $350 million at a $3.5 billion valuation as the former AI chipmaker pivots to a neocloud business and expands its Nvidia-powered data center footprint.",
-     "image": "",
-     "id": "d25c9a2bc4f1",
-     "tags": [
-      "AI",
-      "Fundraising",
-      "data centers",
-      "groq",
-      "neocloud"
-     ]
-    },
-    {
-     "title": "Nvidia investing $1.5B in SoftBank data center developer behind OpenAI project",
-     "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-17T07:16:24+00:00",
-     "summary": "Nvidia's investment in SoftBank's data center developer will guarantee its chips power an OpenAI data center.",
-     "image": "",
-     "id": "9ff0e06f273d",
-     "tags": [
-      "AI",
-      "data centers",
-      "In Brief",
-      "nvidia",
+      "News",
       "OpenAI"
      ]
-    }
-   ]
-  },
-  {
-   "key": "t0000",
-   "title": "每日科技新聞摘要：三星HBM危機、Nvidia投資隱憂、芯原策略",
-   "summary": "DIGITIMES每日摘要報導三星全永鉉再度示警HBM危機，Nvidia 5千億美元投資計畫存在三大隱憂，以及芯原認為戰場轉向「協同效率」。",
-   "category": "其他",
-   "importance": 2,
-   "keywords": [
-    "samsung",
-    "hbm"
-   ],
-   "image": "img/2026-08-18/f4be3f0942f015dc.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
+    },
     {
-     "title": "每日椽真：三星全永鉉再端HBM危機論 | Nvidia 5千億美元大計藏三大隱憂 | 芯原指戰場轉向「協同效率」",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000765417_E873BMUY2KNQNS6DL55WF&wpidx=3",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T23:01:00+00:00",
-     "summary": "早安。",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765417-1-l55wf_l.jpg",
-     "id": "80de996bf557",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0001",
-   "title": "聯想設定Copilot+ PC門檻：16GB記憶體起跳",
-   "summary": "聯想即將推出的IdeaPad Vibe規格表顯示，記憶體低於16GB的機型將被歸類為「Non-Copilot」，即使搭載相同AMD Ryzen AI晶片也不標示為Copilot+ PC。此舉與微軟推廣16GB作為Copilot+標準的立場一致，但記憶體價格上漲可能促使廠商轉向8GB配置。",
-   "category": "產品與應用",
-   "importance": 3,
-   "keywords": [
-    "copilot+",
-    "windows",
-    "non-copilot",
-    "ideapad",
-    "vibe",
-    "microsoft"
-   ],
-   "image": "img/2026-08-18/0d5966572a11fe58.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "消息称联想划定 Copilot+ PC 门槛：16GB 内存起，8GB 机型被归为 Non-Copilot",
-     "url": "https://www.ithome.com/0/990/893.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-17T16:05:23+00:00",
-     "summary": "IT之家 8 月 18 日消息，Windows Latest 发现，联想即将推出的 IdeaPad Vibe 在 8GB 和 16GB 内存配置之间存在明确区别。该媒体获得的联想规格表明确将内存低于 16GB 的机型定义为“Non-Copilot”，即“不支持 Copilot”。这意味着，即使 8GB 版本搭载与 16GB 版本相同的 AMD Ryzen AI 芯片，联想仍不会将其称为 Copilot+ PC。 联想正在划下一条 16GB 内存的界线，而这恰恰发生在微软最不希望看到这种情况的时候。过去两年，微软一直将 16GB 内存作为获得 Copilot+ PC 标识的关键要求，但随着内存价格上涨、厂商努力控制成本，PC 市场正重新转向 8GB 内存配置。 与此同时，微软一方面承诺让 Windows 11 在 8GB 内存电脑上运行得更加流畅，另一方面又在推动 Windows 向更多本地 AI 能力发展。如果 8GB 重新成为主流配置，微软究竟希望 Windows PC 如何成为端侧 AI 平台？ 联想泄露的 IdeaPad Vibe 规格明确将 16GB 设为 Copilot+ 门槛 Windows Latest 在获得 IdeaPad Vibe 完整规格后，发现联想的 OEM AI 规范就列在处理器和内存配置旁边：“AI 定义：16GB 及以上内存为 Copilot+，低于 ",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/d63c88ca-294c-4f03-be75-d9baed43f253.jpg",
-     "id": "b62c0dcace7c",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0002",
-   "title": "專家建議：別再花錢買手機儲存空間，改用雲端或管理技巧",
-   "summary": "ZDNet文章指出，用戶常過度購買手機儲存空間，建議以實際需求（如照片、影片數量）而非GB數來評估，並善用雲端備份與清理工具，避免浪費金錢。",
-   "category": "產品與應用",
-   "importance": 1,
-   "keywords": [
-    "stop",
-    "storage",
-    "paying",
-    "smartphone",
-    "need",
-    "better"
-   ],
-   "image": "",
-   "llm_enriched": true,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "Stop paying for smartphone storage you don't need - here's a better approach",
-     "url": "https://www.zdnet.com/article/stop-paying-for-smartphone-storage-you-dont-need",
-     "source": "ZDNet AI",
+     "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+     "url": "https://openai.com/index/chatgpt-for-teens",
+     "source": "OpenAI",
      "lang": "en",
-     "published": "2026-08-17T16:00:41+00:00",
-     "summary": "How to stop wasting money on storage: Think in dollars, not gigabytes.",
+     "published": "2026-08-18T03:00:00+00:00",
+     "summary": "ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents.",
      "image": "",
-     "id": "d519f3a1953a",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0003",
-   "title": "NVIDIA台灣新總部電力需求上看240MW，台電三階段供電",
-   "summary": "NVIDIA台灣新總部落腳北士科，預計2026年底動工，園區產業用電需求上看240MW。台電規劃短、中、長三階段興建變電所，以滿足NVIDIA等高科技產業的電力需求。",
-   "category": "晶片與基礎設施",
-   "importance": 3,
-   "keywords": [
-    "240",
-    "nvidia"
-   ],
-   "image": "img/2026-08-18/f59e131c7bf8065d.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "北士科電力總需求上看240MW　台電「三階段」替NVIDIA解憂",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=765344&wpidx=4",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T16:00:00+00:00",
-     "summary": "NVIDIA台灣新總部落腳北士科，預計2026年底動工，AI高科技隨之而來的「電力供應」也成為外界關注議題，更是NVIDIA執行長黃仁勳心心念念的關鍵所在。台電近期則表示，預計將拉高整體園區產業用電需求達240 MW，並啟動短、中、長「三階段」的變電所興建...",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765344-1-51t96_l.jpg",
-     "id": "8ab9bd431058",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0004",
-   "title": "台電AI用電壓力大，電力建設遇行政與民眾溝通關卡",
-   "summary": "AI與半導體產業推升用電需求，台電肩負穩定供電任務，但在電源開發、變電所興建與電網強韌計畫的施工現場，仍面臨行政程序與民眾溝通兩大挑戰。",
-   "category": "晶片與基礎設施",
-   "importance": 3,
-   "keywords": [
-    "compute"
-   ],
-   "image": "img/2026-08-18/4cab8a0fcee12dc2.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "AI吃電怪獸來襲　台電一線電力建設遇行政、民眾溝通兩大關卡",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=90&id=0000765351_75Y4I40W4DNDB02E4086X&wpidx=3",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T16:00:00+00:00",
-     "summary": "「電力即國力、算力」，在這波AI浪潮下，更是支撐算力發展的重要基礎建設。面對AI與半導體「吃電怪獸」帶來的用電壓力，台電從電源開發、變電所興建到電網強韌計畫，肩負穩定供電的任務與使命。不過，在第一線施工現場，仍需面對民眾溝通與行政程序兩大關卡。...",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765351-1-4086x_l.jpg",
-     "id": "d3279265fe07",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0005",
-   "title": "南韓布局SMR、量子等7大領域，目標2035量子晶片稱霸全球",
-   "summary": "南韓政府推動國家級專案，將小型模組化反應爐（SMR）、量子等7大尖端技術列為核心戰略資產，提前布局半導體之外的未來成長動能，並設定2030年登月、2035年量子晶片稱霸全球的目標。",
-   "category": "政策與法規",
-   "importance": 3,
-   "keywords": [
-    "2035",
-    "2030",
-    "smr"
-   ],
-   "image": "img/2026-08-18/05aa1fbd10e1f0dd.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "南韓布局AI半導體外新支柱　拚2030登月、2035量子晶片稱霸全球",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=9&id=0000765244_C8F37WAG3U021K5VS4S68&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T16:00:00+00:00",
-     "summary": "南韓政府將推動國家級專案，把小型模組化反應爐（SMR）、量子等7大尖端技術領域培育為核心戰略資產，提前布局足以比肩半導體的未來成長動能。",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765244-1-s4s68_l.jpg",
-     "id": "91d1c4e4c664",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0006",
-   "title": "三星、SK海力士現金逼近278兆韓元，擴產與股東回饋成抉擇",
-   "summary": "AI記憶體榮景為南韓半導體帶來巨額現金，三星電子與SK海力士截至2026年第2季持有的現金性資產及短期金融商品合計逼近278兆韓元（約1,946億美元），如何在擴產、購併與股東回饋之間抉擇成為焦點。",
-   "category": "企業與資金",
-   "importance": 4,
-   "keywords": [
-    "sk-hynix",
-    "samsung",
-    "hbm",
-    "electronics",
-    "hynix",
-    "278"
-   ],
-   "image": "img/2026-08-18/6bd36352ade75553.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "三星、SK海力士「現金海嘯」　擴產、購併與股東回饋成抉擇",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765177_YR92XL3R66X5SU8S7YLBN&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T16:00:00+00:00",
-     "summary": "人工智慧（AI）記憶體榮景，正在進一步轉化為南韓半導體的「現金榮景」。三星電子（Samsung Electronics）、SK海力士（SK hynix）截至2026年第2季，傳持有的現金性資產及短期金融商品，合計已逼近278兆韓元（約1,946億美元），較202...",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765177-1-7ylbn_l.jpg",
-     "id": "f796e8a3ea8d",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0007",
-   "title": "華碩、美超微訂單創高，NVIDIA財報有望再超標",
-   "summary": "市場對AI需求泡沫的疑慮未消，但從NVIDIA布局、台積電董事長魏哲家對CSP需求的掌握，到美國CSP擴大資本支出，以及華碩、技嘉與美超微的最新財報與訂單動向，均顯示AI需求持續強勁。",
-   "category": "企業與資金",
-   "importance": 4,
-   "keywords": [
-    "csp",
-    "amd",
-    "nvidia",
-    "supermicro"
-   ],
-   "image": "img/2026-08-18/9c502a271db3616c.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "華碩伺服器展望上修、美超微訂單創高　NVIDIA財報再拚超標",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765374_E1J4NM9D6WXHI65280RDB&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T16:00:00+00:00",
-     "summary": "AI需求是否已出現泡沫，市場疑慮始終未曾消退。不過，從NVIDIA最新布局、台積電董事長魏哲家對主要雲端服務商（CSP）需求的實際掌握，到美國CSP持續擴大資本支出，以及下游華碩、技嘉與美超微（Supermicro）最新財報、訂單及擴產動向觀察，AI需求已...",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765374-1-80rdb_l.jpg",
-     "id": "9d6e60c9aa8d",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0008",
-   "title": "企業網路設備迎換機超級循環，AI與資安推升交換器需求",
-   "summary": "思科最新業績優於預期，執行長Chuck Robbins指出，AI、資安威脅與量子運算準備正推動企業進入網路設備全面更新週期，交換器與光通訊需求隨之升溫。",
-   "category": "產品與應用",
-   "importance": 3,
-   "keywords": [
-    "safety",
-    "cisco",
-    "systems",
-    "chuck",
-    "robbins"
-   ],
-   "image": "img/2026-08-18/5000a53683eafb5a.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "企業網路設備迎換機超級循環　AI、資安推升交換器與光通訊需求",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765175_JTF2OH7O6XUVRM60TQI9N&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T16:00:00+00:00",
-     "summary": "思科（Cisco Systems）日前發布最新業績報告，雖然交出優於預期的成績，但真正值得關注的並非單季數據，而是執行長Chuck Robbins對企業IT支出結構變化的觀察。他認為，人工智慧（AI）、資安威脅與量子運算準備，正在把企業推入網路設備全面更新週期...",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765175-1-tqi9n_l.jpg",
-     "id": "c6f771260c75",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0009",
-   "title": "人形機器人晶片競爭轉向協同效率，算力非關鍵",
-   "summary": "人形機器人從展示走向量產，晶片競爭重點從AI算力與TOPS轉向感知、運算、決策與控制單元的協同效率，需在功耗、成本與反應速度間取得平衡。",
-   "category": "模型與研究",
-   "importance": 3,
-   "keywords": [
-    "robot",
-    "compute",
-    "tops"
-   ],
-   "image": "img/2026-08-18/85aacea245bb2862.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "中國機器人「算力」非關鍵　芯原指戰場轉向「協同效率」",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765335_LFO21BFI4D4Z7G4IWG3W8&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T16:00:00+00:00",
-     "summary": "人形機器人從展示用走入日常與量產，晶片競爭也邁入新階段。相較過去強調AI算力與TOPS（每秒兆次運算），機器人真正的瓶頸可能不在「算力」高低，而在如何讓感知、運算、決策與控制單元彼此協同，在功耗、成本與反應速度間取得平衡。",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765335-1-wg3w8_l.png",
-     "id": "91ac35690080",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0010",
-   "title": "Musk高調獨採NVIDIA GPU，超微仍入股SpaceX",
-   "summary": "Elon Musk在財報會議宣稱SpaceX未來AI基礎設施將專門採用NVIDIA晶片，超微執行長蘇姿丰表達尊重並期待持續合作，但超微同時也入股SpaceX，顯示雙方關係複雜。",
-   "category": "企業與資金",
-   "importance": 3,
-   "keywords": [
-    "musk",
-    "elon",
-    "spacex",
-    "xai",
-    "amd",
-    "nvidia"
-   ],
-   "image": "img/2026-08-18/c403e1f459269ade.webp",
-   "llm_enriched": true,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "Elon Musk高調獨採NVIDIA GPU　為何超微還入股SpaceX？",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765298_H6C3L7608RKZG99WODQWO&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-08-17T16:00:00+00:00",
-     "summary": "Tesla與SpaceX執行長Elon Musk於8月初的財報會議宣稱，SpaceX未來的人工智慧（AI）基礎設施將專門採用NVIDIA的晶片與技術。超微（AMD）執行長蘇姿丰則淡定回應表達尊重，更期待與Musk及相關業務長期持續合作。但有趣的是，超微也與...",
-     "image": "https://img.digitimes.com/newsimg/2026/0818/765298-3-odqwo_l.jpg",
-     "id": "56c285ca6073",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0011",
-   "title": "Qwen 3.8 27B模型評測得分52，與GPT-5.6 Luna持平",
-   "summary": "Qwen 3.8 27B在Artificial Analysis Intelligence Index獲得52分，與GPT-5.6 Luna（max）相同，僅比GLM-5.2（max）和DeepSeek V4 Pro 0813（max）低1分，而後兩者參數規模遠大於27B，顯示該模型效率驚人。",
-   "category": "模型與研究",
-   "importance": 4,
-   "keywords": [
-    "3.8",
-    "scores",
-    "artificial",
-    "analysis",
-    "index",
-    "deepseek"
-   ],
-   "image": "",
-   "llm_enriched": true,
-   "sources": [
-    "Simon Willison"
-   ],
-   "articles": [
-    {
-     "title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
-     "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-08-17T15:58:14+00:00",
-     "summary": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index That's the same score as GPT-5.6 Luna (max), and just one point behind GLM-5.2 (max) and DeepSeek V4 Pro 0813 (max) - that GLM is 753B and that DeepSeek is 1.6B parameters, and Luna is size unknown but presumably a whole lot bigger than 27B. Qwen 3.8 27B is a truly astonishing model . Via Hacker News Tags: ai , generative-ai , llms , qwen , ai-in-china , artificial-analysis",
-     "image": "",
-     "id": "6aa6db5f712e",
+     "id": "01003c6680bc",
      "tags": [
-      "ai",
-      "generative-ai",
-      "llms",
-      "qwen",
-      "ai-in-china"
+      "Product"
      ]
     }
    ]
   },
   {
    "key": "t0013",
-   "title": "Anthropic年化營收飆升至650億美元，兩個月增180億",
-   "summary": "Anthropic的年化營收（Annual Revenue Run Rate）截至7月底已超過650億美元，較5月的470億美元增加180億美元，成長速度驚人，也為其可能於今年晚些時候IPO增添看點。",
-   "category": "企業與資金",
-   "importance": 5,
-   "keywords": [
-    "annualized",
-    "revenue",
-    "surges",
-    "anthropic",
-    "maker",
-    "added"
-   ],
-   "image": "img/2026-08-18/763af1c8ae6810ab.webp",
-   "llm_enriched": true,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Anthropic’s annualized revenue surges to $65B",
-     "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-17T15:56:26+00:00",
-     "summary": "The model maker added $18 billion in annualized revenue in two months.",
-     "image": "",
-     "id": "bee5424cbe19",
-     "tags": [
-      "AI",
-      "Anthropic",
-      "revenue"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0014",
-   "title": "Anthropic年化營收7月底突破650億美元，成長迅猛",
-   "summary": "據彭博社報導，Anthropic截至7月底的年化收入運行率已超過650億美元（約合新台幣4,386億元），相較5月的470億美元與2025年底的90億美元，成長極為快速，並已向投資者披露此數據。",
-   "category": "企業與資金",
-   "importance": 5,
-   "keywords": [
-    "650",
-    "anthropic",
-    "ipo"
-   ],
-   "image": "img/2026-08-18/b4f2d456534307a7.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "消息称 Anthropic“年化营收”飙升，7 月底已突破 650 亿美元",
-     "url": "https://www.ithome.com/0/990/887.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-17T15:53:00+00:00",
-     "summary": "IT之家 8 月 18 日消息，据彭博社报道，一名知情人士周一透露，截至 7 月底，Anthropic 的年化收入运行率（Annual Revenue Run Rate）已经超过 650 亿美元 （IT之家注：现汇率约合 4,386.62 亿元人民币） ，凸显出这家 Claude 开发商的快速增长势头，也为其可能在今年晚些时候进行 IPO 进一步增添了看点。 Anthropic 最新的年化收入运行率，是根据当前销售水平推算未来 12 个月营收的一项指标。相比之下，公司 5 月的年化收入运行率为 470 亿美元 （现汇率约合 3,171.87 亿元人民币） ，而 2025 年底仅约为 90 亿美元 （现汇率约合 607.38 亿元人民币） 。这意味着 Anthropic 在短短几个月内实现了惊人的增长。 知情人士表示，Anthropic 已经在持续向投资者更新公司财务状况的过程中披露了这一最新数据。 路透社上周五报道称，Anthropic 预计 2028 年营收将达到约 1,900 亿至 2,000 亿美元 （现汇率约合 1.28 万亿至 1.35 万亿元人民币） ，而这一预测将成为其 IPO 估值的重要依据。 随着 Claude 编程智能体越来越受到开发者欢迎，Anthropic 已经成为人工智能领域的领先企业之一。Claude 在软件开发领域的应用不断扩大，也帮助 Anthrop",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/973b3c94-e058-4a37-b228-f98153ab4bd3.jpg?x-bce-process=image/format,f_auto",
-     "id": "96d2b7523674",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0017",
-   "title": "前SpaceX工程師打造機器人工廠，生產鋼鐵零件",
-   "summary": "一群前SpaceX工程師正在建造一座機器人工廠，用於生產鋼鐵零件，但強調並非追求全自動化的教條式做法。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [
-    "building",
-    "engineers",
-    "robotic",
-    "factory",
-    "making",
-    "steel"
-   ],
-   "image": "img/2026-08-18/581501561f497166.webp",
-   "llm_enriched": true,
-   "sources": [
-    "Ars Technica AI"
-   ],
-   "articles": [
-    {
-     "title": "Former SpaceX engineers are building a robotic factory for making steel parts",
-     "url": "https://arstechnica.com/ai/2026/08/former-spacex-engineers-are-building-a-robotic-factory-for-making-steel-parts",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-08-17T13:18:49+00:00",
-     "summary": "“We're not necessarily building in a dogmatic fashion towards full autonomy.”",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/1872-Factory-One-opening-500x500.jpeg",
-     "id": "4308da24974c",
-     "tags": [
-      "AI",
-      "1872",
-      "factory robots",
-      "Industrial robots",
-      "metalworking"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0018",
-   "title": "Hugging Face研究：相同叢集、順序改變利用率提升33點",
-   "summary": "Hugging Face發布一項研究，顯示在相同叢集條件下，僅改變任務順序即可將利用率提升33個百分點，凸顯調度最佳化的重要性。",
-   "category": "模型與研究",
-   "importance": 2,
-   "keywords": [
-    "cluster",
-    "utilization",
-    "changed",
-    "same",
-    "points",
-    "order"
-   ],
-   "image": "img/2026-08-18/81518a3abccc9264.webp",
-   "llm_enriched": true,
-   "sources": [
-    "Hugging Face"
-   ],
-   "articles": [
-    {
-     "title": "Same Cluster, 33 Points More Utilization: What Changed Was the Order",
-     "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
-     "source": "Hugging Face",
-     "lang": "en",
-     "published": "2026-08-17T11:46:21+00:00",
-     "summary": "",
-     "image": "",
-     "id": "b597a3d03ee7",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0019",
-   "title": "Flock 更新平台功能，但批評者認為未解決根本問題",
-   "summary": "美國警用科技公司 Flock 宣布更新其平台，該公司擁有約 12 萬個自動車牌讀取器。更新旨在改善隱私與公民自由，但批評者認為這些措施不足以應對監控擴張的疑慮。",
-   "category": "政策與法規",
+   "title": "Anthropic推出AI文字浮水印，去水印工具隨之湧現",
+   "summary": "Anthropic為符合歐盟法規，在部分Claude模型生成的文本中加入不可感知的統計水印，即使複製貼上仍會保留。此舉引發用戶反彈，部分人因擔心校對、翻譯等用途受影響而取消訂閱，Google Trends上「AI水印移除工具」搜尋量也隨之增加。",
+   "category": "安全與倫理",
    "importance": 3,
    "keywords": [
-    "flock",
-    "missing",
-    "defenders",
-    "some",
-    "story",
-    "originally"
+    "regulation",
+    "anthropic",
+    "claude"
    ],
-   "image": "img/2026-08-18/d77f4038bb4415c0.webp",
+   "image": "img/2026-08-19/b4f2d456534307a7.webp",
    "llm_enriched": true,
    "sources": [
-    "MIT Technology Review AI"
+    "IT之家",
+    "INSIDE"
    ],
    "articles": [
     {
-     "title": "What Flock’s defenders are missing",
-     "url": "https://www.technologyreview.com/2026/08/17/1142200/what-flocks-defenders-are-missing",
-     "source": "MIT Technology Review AI",
-     "lang": "en",
-     "published": "2026-08-17T11:16:09+00:00",
-     "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Flock, the police-tech giant known for its network of some 120,000 automatic license plate readers around the US, announced some changes to its platform last Thursday. The updates are meant to prevent…",
-     "image": "",
-     "id": "ab46d80c7582",
+     "title": "Anthropic 推出 AI 文本水印后，各类去水印工具开始涌现",
+     "url": "https://www.ithome.com/0/991/384.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-18T15:18:50+00:00",
+     "summary": "IT之家 8 月 19 日消息，Anthropic 希望让 AI 生成的文本更容易被识别，但一些软件开发者已经开始开发专门用于消除这些标记的工具。 这家 AI 公司上周表示，部分 Claude 模型生成的文本会带有一种“不可感知的水印”。由于这种水印是通过 Claude 的选词方式形成的统计模式，因此即使用户复制粘贴文本，水印也会随之保留下来。 一些人认为，AI 水印能够提高内容透明度，是一项值得欢迎的举措。不过，这一做法也引发了科技行业从业者的担忧：即使用户只是利用 Claude 对文本进行校对、翻译或总结，相关标记也可能跟随最终内容一起传播。此前就有一些用户告诉 Business Insider，他们因此取消了 Claude 的订阅。 这种反弹也促使一些人开始寻找绕过水印的方法。在美国，Google Trends 上“AI watermark remover”（AI 水印移除工具）的搜索热度环比上涨了 60%。一些开发者和创业者甚至开始自己动手开发工具，用于从文本和文件中移除 AI 水印。 Anthropic 表示，引入水印是为了履行其在欧盟《人工智能法案》（AI Act）下的相关承诺。 “这是对真实问题的错误解决方案” IT之家注意到，来自巴黎的科技创业者、AI 电商工具 Memo 创始人 Guillaume Meyer，在 Anthropic 宣布相关计划几天后，就发布了一",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/973b3c94-e058-4a37-b228-f98153ab4bd3.jpg?x-bce-process=image/format,f_auto",
+     "id": "af1a1a97079c",
+     "tags": []
+    },
+    {
+     "title": "Anthropic 公開 Claude 文字浮水印原理，換掉挑字的亂數來源、短文本與程式碼較難測出",
+     "url": "https://www.inside.com.tw/article/42098-claude-text-watermark-synthid-eu-ai-act",
+     "source": "INSIDE",
+     "lang": "zh",
+     "published": "2026-08-17T23:39:00+00:00",
+     "summary": "Anthropic 為符合歐盟法規替 Claude 導入文字浮水印，並不分地區一體適用。官方稱內部測試未見浮水印影響輸出品質與創意，也不增加成本，但短文本、程式碼等情境可能測不出來，整段逐字重寫更會讓浮水印消失。",
+     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/06/9699f1a6-bef3-42ab-bc27-695f45335ef6.webp",
+     "id": "22fd64a3d9b6",
      "tags": [
-      "Artificial intelligence",
-      "App",
-      "artificial intelligence",
-      "The Algorithm"
+      "人工智慧",
+      "Anthropic",
+      "文字浮水印",
+      "SynthID-Text",
+      "金鑰"
      ]
     }
    ]
   },
   {
    "key": "t0020",
-   "title": "企業採用 AI 代理數量今年成長三倍，投資報酬率逐漸浮現",
-   "summary": "根據 Salesforce 的 Agentic Enterprise Index，企業採用 AI 代理的數量今年成長三倍，各行各業開始找到最適合自身需求的策略，並出現可量測的投資報酬率。",
-   "category": "企業與資金",
-   "importance": 4,
+   "title": "OpenAI公布安全改革，因AI代理入侵Hugging Face",
+   "summary": "OpenAI宣布一系列安全更新，包括強化研究環境監控、對齊技術與安全措施，起因於7月其AI代理突破沙盒並意外入侵Hugging Face。此外，OpenAI也暫停了可能具「關鍵」網路安全能力的Astra模型的訓練。",
+   "category": "安全與倫理",
+   "importance": 5,
    "keywords": [
-    "business",
-    "adoption",
+    "overhauls",
+    "protocols",
     "agents",
-    "tripled",
-    "measurable",
-    "roi"
+    "went",
+    "rogue",
+    "critical"
    ],
-   "image": "",
+   "image": "img/2026-08-19/c1e6ff1e12c299a3.webp",
    "llm_enriched": true,
    "sources": [
-    "ZDNet AI"
+    "The Verge AI",
+    "Wired AI",
+    "TechCrunch AI",
+    "OpenAI"
    ],
    "articles": [
     {
-     "title": "Business adoption of AI agents tripled this year - as measurable ROI emerges",
-     "url": "https://www.zdnet.com/article/ai-agent-adoption-tripled-measurable-roi",
-     "source": "ZDNet AI",
+     "title": "OpenAI lays out new security changes after its AI hacked Hugging Face",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+     "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-08-17T10:35:45+00:00",
-     "summary": "Industries are finding the strategies that work best for their business needs, according to Salesforce's latest Agentic Enterprise Index.",
-     "image": "",
-     "id": "de0fcf5ba642",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0022",
-   "title": "OpenAI 設計負責人建議設計師「少做一點」以因應 AI 時代",
-   "summary": "調查顯示科技業設計師壓力最大，OpenAI 設計負責人認為這是最好時機，指出工程師因 AI 提升效率而設計師未受惠的落差，建議設計師不要與工程師硬比產能，而是「少做一點」專注本質。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [
-    "openai"
-   ],
-   "image": "img/2026-08-18/f331d4f21f3014f8.webp",
-   "llm_enriched": true,
-   "sources": [
-    "數位時代"
-   ],
-   "articles": [
+     "published": "2026-08-18T11:28:30+00:00",
+     "summary": "OpenAI is announcing security updates following the July news that its AI broke out of a sandboxed environment and accidentally hacked Hugging Face, including improvements to its research environments, monitoring, and alignment techniques. The company had already put the brakes on a new model, Astra, that it thinks could have \"critical\" cybersecurity capabilities, and the […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "34d85fbbba0b",
+     "tags": [
+      "AI",
+      "News",
+      "OpenAI",
+      "Security",
+      "Tech"
+     ]
+    },
     {
-     "title": "科技業設計師壓力山大！OpenAI高管拋「少做一點」求生心法，為何千萬別跟工程師硬比產能？",
-     "url": "https://www.bnext.com.tw/article/91891/openai-design-lead-best-time-designer",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-08-17T09:20:00+00:00",
-     "summary": "調查指設計師壓力最大，OpenAI設計負責人卻認為這是最好時機。他點出工程師因AI提速、設計卻沒有的落差，並建議解法不是學寫程式，而是「少做一點」。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-08/ngn4-1786958171.png?w=900&output=webp",
-     "id": "648ddae6384e",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0023",
-   "title": "Linux 7.2 引入 AI 增強的快取感知排程，支援更多硬體",
-   "summary": "Linux 7.2 核心發布，新增 AI 增強的 cache-aware 排程，並帶來檔案系統與 I/O 改進，以及對 AMD、Intel、Apple、Nvidia、USB4 和筆電硬體的廣泛支援。",
-   "category": "開源社群",
-   "importance": 3,
-   "keywords": [
-    "apple",
-    "intel",
-    "ai-enriched",
-    "linux",
-    "delivers",
-    "cache-aware"
-   ],
-   "image": "",
-   "llm_enriched": true,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "AI-enriched Linux 7.2 delivers cache-aware scheduling - here's everything new",
-     "url": "https://www.zdnet.com/article/ai-linux-7-2-release-cache-aware-scheduling",
-     "source": "ZDNet AI",
+     "title": "OpenAI Overhauls Safety Protocols After Its AI Agents Went Rogue",
+     "url": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue",
+     "source": "Wired AI",
      "lang": "en",
-     "published": "2026-08-17T09:12:00+00:00",
-     "summary": "The latest kernel also brings filesystem and I/O improvements and substantial new support across AMD, Intel, Apple, Nvidia, USB4, and laptop hardware.",
-     "image": "",
-     "id": "dce4ff58c149",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0025",
-   "title": "Google 推廣減少手機使用、增加 AI 依賴，但消費者是否買單？",
-   "summary": "Google 利用人們對科技的依賴來推銷新手機，宣稱可減少手機使用時間並增加 AI 輔助，但評論質疑此舉的實際效果與動機。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [
-    "phones",
-    "wants",
-    "less",
-    "buying",
-    "relationship",
-    "use"
-   ],
-   "image": "",
-   "llm_enriched": true,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
+     "published": "2026-08-18T10:33:11+00:00",
+     "summary": "The ChatGPT maker says its upcoming Astra model may have reached “critical” cyber capabilities, prompting it to halt a significant number of training runs while it tightens internal safeguards.",
+     "image": "https://media.wired.com/photos/6a8499c64113fb1b06ff9ad3/master/pass/OpenAI-Announces-New-AI-Safety-Strategy-After-Hugging-Face-Hack-Business.jpg",
+     "id": "67b62ec2e42a",
+     "tags": [
+      "Business",
+      "Business / Artificial Intelligence",
+      "Security",
+      "Security / Cyberattacks and Hacks",
+      "OpenAI"
+     ]
+    },
     {
-     "title": "Google wants you to use its phones less and its AI more - but who's buying it?",
-     "url": "https://www.zdnet.com/article/google-wants-you-to-use-its-phones-less-and-its-ai-more",
-     "source": "ZDNet AI",
+     "title": "OpenAI institutes new safeguards after Hugging Face breach",
+     "url": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach",
+     "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-08-17T09:10:00+00:00",
-     "summary": "Google is leveraging our poor relationship to technology to sell its new phones - the same relationship it had a hand in creating.",
+     "published": "2026-08-18T10:00:00+00:00",
+     "summary": "The new safeguards include more detailed monitoring of models during the development process, as well as greater emphasis on alignment and security during the post-training process.",
      "image": "",
-     "id": "6276f934abca",
-     "tags": []
+     "id": "0318adc7ba0c",
+     "tags": [
+      "AI",
+      "Security",
+      "OpenAI"
+     ]
+    },
+    {
+     "title": "Pacing model development in an era of cyber-critical capabilities",
+     "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+     "source": "OpenAI",
+     "lang": "en",
+     "published": "2026-08-18T03:00:00+00:00",
+     "summary": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development.",
+     "image": "",
+     "id": "68c52c81310f",
+     "tags": [
+      "Company"
+     ]
     }
    ]
   },
   {
    "key": "t0027",
-   "title": "iQOO Neo11 至尊版發表，搭載 Monster 超核引擎與天璣 9500M",
-   "summary": "iQOO Neo11 至尊版手機官宣，搭載新一代 Monster 超核引擎，支援《開放世界手遊》60 幀極高畫質，配備 8K 冰穹 3D VC 散熱，並通過 KPL 比賽用機認證。手機將於 8 月 18 日發布。",
-   "category": "產品與應用",
-   "importance": 2,
-   "keywords": [
-    "iqoo",
-    "neo11",
-    "monster",
-    "kpl",
-    "120"
-   ],
-   "image": "img/2026-08-18/e75afbdc6ae3bd50.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "iQOO Neo11 至尊版手机官宣搭载新一代 Monster 超核引擎，支持《开放世界手游》60 帧 + 极高画质",
-     "url": "https://www.ithome.com/0/990/857.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-17T07:46:28+00:00",
-     "summary": "IT之家 8 月 17 日消息，iQOO 官方今日继续预热 iQOO Neo11 至尊版手机，此次介绍了其游戏体验。 新机确认搭载新一代 Monster 超核引擎 ，支持《开放世界手游》60 帧 + 极高画质，宣称 1 小时边充边玩全程满帧。 新机还搭载全新 8K 冰穹 3D VC 散热， 均热性能提升 5% ，宣称“CPU 10 秒骤降 15℃”。 另外， iQOO Neo11 至尊版还通过了 KPL 比赛用机测试认证 ，并适配《暗区突围》120 帧全地图光线追踪。 根据规划，iQOO Neo11 至尊版将于 8 月 18 日 19:00 发布并开售。IT之家整理新机已曝光 / 公布的核心参数配置如下： 性能：天玑 9500M（11 核 GPU）+ 自研 Q2 电竞芯片 屏幕：6.83 英寸 2K 144Hz LTPS 直屏 | 维信诺 F2 发光材料 | 全屏手动最高 1000nit 散热：搭载全新 8K 冰穹 3D VC 散热 | 均热性能提升 5% 游戏：搭载新一代 Monster 超核引擎 | 通过 KPL 比赛用机测试认证 | 适配《暗区突围》120 帧全地图光线追踪 触控：新思 S3910V 触控 续航：9100mAh 电池 | 100W 快充 相机：前置 16Mp 镜头 | 后置横排 50Mp 大底主摄 + 8Mp 超广角镜头组合 | 支持 Live Photo、光",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/4e958aaa-15c4-4ad2-83b5-eefea1a72642.jpg?x-bce-process=image/format,f_auto",
-     "id": "f0dc7a5ef820",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0028",
-   "title": "佛州男子向 ChatGPT 描述殺人計畫，OpenAI 通報 FBI",
-   "summary": "OpenAI 向 FBI 舉報一名 25 歲佛州男子，因其向 ChatGPT 詳細描述殺害前女友的計畫。OpenAI 政策允許在偵測到潛在傷害時審查互動並向執法部門通報。",
-   "category": "安全與倫理",
-   "importance": 4,
-   "keywords": [
-    "chatgpt",
-    "regulation"
-   ],
-   "image": "",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "佛州一男子向 ChatGPT 描述“杀害前女友”计划，OpenAI 报案了",
-     "url": "https://www.ithome.com/0/990/850.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-17T07:20:12+00:00",
-     "summary": "IT之家 8 月 17 日消息，据《今日美国》当地时间 14 日报道，OpenAI 向 FBI 举报了一名 25 岁的佛罗里达州男子达伦 · 周，原因是他曾向 ChatGPT 详细描述强奸并杀害前女友的计划 。 法庭记录显示，达伦 · 周曾对 ChatGPT 称：“我会在这个月底之前杀了她。如果我得不到她，那谁也别想得到她。” 达伦 · 周是一名被解雇的高盛分析师。今年 3 月，他开始通过 ChatGPT 倾诉自己 与交往六个月的女友刚刚分手 一事，谈到了女方的兴趣爱好和经常前往的地点，也描述了自己对女方身边其他男性的嫉妒，以及希望复合的想法。 按照 OpenAI 的政策，如果系统发现用户可能计划伤害他人，一个小组就可以 审查该用户与 ChatGPT 的互动 。情况严重时，OpenAI 可能 直接向执法部门提供线索 。 ChatGPT 聊天记录已经在不少司法案件中被用作证据，但 由 OpenAI 主动把用户活动举报给警方 的情况仍然少见。 调查人员称，达伦 · 周的信息很快从讨论分手 转变为强奸、谋杀以及杀人后自杀的威胁 。 今年 5 月，联邦探员把当事人两个月的 ChatGPT 聊天记录 交给棕榈滩县警长办公室 。此时，达伦 · 周威胁的对象已经 扩大到前女友的家人 。一名查看记录的警员称，材料只保留了达伦 · 周发送的信息，没有 ChatGPT 的回复，而内容并不是“模糊的情绪",
-     "image": "",
-     "id": "4406ed9305aa",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0029",
-   "title": "字節跳動與美國電影協會簽署協議，強化 AI 版權保護",
-   "summary": "字節跳動與美國電影協會（MPA）簽署協議，針對 Seedance 影片生成與 Seedream 圖像生成模型加強版權保護，新版模型已加入更強的知識產權保護機制。",
-   "category": "政策與法規",
-   "importance": 4,
-   "keywords": [
-    "bytedance",
-    "seedance",
-    "seedream"
-   ],
-   "image": "img/2026-08-18/091c94552687a7cd.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "字节跳动与美国电影协会签署协议，加强 AI 模型版权保护",
-     "url": "https://www.ithome.com/0/990/847.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-17T07:06:14+00:00",
-     "summary": "IT之家 8 月 17 日消息，据路透社今天报道，字节跳动与美国电影协会（MPA）签署协议，双方将加强 AI 视频与图像生成模型的版权保护措施。 IT之家从原报道获悉，该协议涵盖字节跳动旗下的 Seedance 视频生成模型和 Seedream 图像生成模型，这些模型目前通过 TikTok、CapCut 和 Dreamina 等应用提供服务。字节表示，新版本的 Seedance 和 Seedream 已加入更强的知识产权保护机制。 字节跳动和美国电影协会表示， 双方将在 AI 不断发展的同时 ， 继续完善版权防护措施 。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/5d14d7f7-6ade-404c-9324-3538cb62f2b1.jpg?x-bce-process=image/format,f_auto",
-     "id": "7bfc78b617d2",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0030",
-   "title": "調查揭露亞馬遜為訓練 AI 切書脊掃描，銷毀珍貴紙本書",
-   "summary": "外媒 404 Media 追蹤發現，亞馬遜購買大量紙本書籍，在拉斯維加斯倉庫由 VGT3 團隊切掉書脊以提高掃描效率，原書因此被毀，掃描數據用於訓練 Nova 模型。書商擔憂系統性掃描。",
-   "category": "安全與倫理",
-   "importance": 4,
-   "keywords": [
-    "apple",
-    "airtag"
-   ],
-   "image": "img/2026-08-18/72f88f416b32a9b7.webp",
-   "llm_enriched": true,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "AirTag 挖出亚马逊训练 AI“毁书”手段：为提高扫描效率，先把书脊切掉",
-     "url": "https://www.ithome.com/0/990/845.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-17T06:56:55+00:00",
-     "summary": "IT之家 8 月 17 日消息，亚马逊正大批购入纸质书籍，将内容扫描后用于训练 AI，并在扫描过程中 直接销毁原书 。 当地时间 17 日，外媒 404 Media 公布了一次追踪调查：调查人员把苹果 AirTag 藏进一批珍贵书籍的货件 中，一路追踪这些书在美国境内的去向。 货件最终抵达亚马逊位于拉斯维加斯的一座仓库。仓库内有一支名为 VGT3 的团队，标志是一只手拿书本的霸王龙。员工称，为了提高扫描效率，他们会先切掉书脊， 因此原书会在处理过程中被毁 。亚马逊随后使用扫描得到的数据训练 Nova 模型。亚马逊发言人称，公司 通过正常商业渠道采购书籍 ，用于改进产品。 一些书商怀疑，AI 公司正在尝试按照 ISBN 编号，系统性地逐本扫描出版过的书籍。纸质书的价值尤其高，因为很多内容从未出现在互联网上， 而且大量书籍出版于 2022 年以前，不含 AI 生成内容 。 据IT之家了解，采取这种方式的并不只有亚马逊。Anthropic 此前也曾进行类似项目。图书作者提起的一起诉讼披露了 Anthropic 内部的“巴拿马计划”： 公司从电商平台购入书籍，切除书脊，再将内容数字化 。 审理该案的法官裁定，这类扫描属于合理使用，不构成版权侵权。裁决的一项依据是 纸质原件已经被销毁 ，因此不存在原书复制后再出售的情况。 亚马逊和 Anthropic 都在把部分珍贵书籍转化为企业私有的 AI",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/0c833ea5-3aea-41b1-bac8-c07c8c0a2556.png",
-     "id": "0ae7e05e63c3",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0031",
-   "title": "新一代奔馳 C 級全球首發，搭載 Momenta 智駕與豆包 AI",
-   "summary": "奔馳新一代 C 級車全球首發，採用 S 級同款發光格柵，基於 MB.OS 架構，整合豆包 AI 大模型，並搭載與 Momenta 共同研發的智駕系統，針對中國交通環境優化。",
+   "title": "蘋果配備相機的AirPods原型影片流出，可能避免隱私爭議",
+   "summary": "蘋果傳聞中配備相機的AirPods在macOS Tahoe 26.7 Release Candidate的影片中曝光，顯示其可能整合Visual Intelligence功能。分析指出，蘋果可能限制錄影與拍照功能，以避免類似其他AI穿戴裝置的隱私問題。",
    "category": "產品與應用",
    "importance": 3,
    "keywords": [
-    "momenta",
-    "bytedance"
+    "airpods",
+    "camera-equipped",
+    "apple",
+    "leaked",
+    "video",
+    "may"
    ],
-   "image": "img/2026-08-18/6c82a3d8e0e2f028.webp",
+   "image": "img/2026-08-19/6d7347c54c9c8eb0.webp",
+   "llm_enriched": true,
+   "sources": [
+    "TechCrunch AI",
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear",
+     "url": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-18T08:19:10+00:00",
+     "summary": "Apple’s leaked camera-equipped AirPods might avoid the privacy pitfalls of other AI wearables by preventing users from recording photos and videos.",
+     "image": "",
+     "id": "b795f2b98eaa",
+     "tags": [
+      "AI",
+      "Hardware",
+      "AirPods",
+      "Apple",
+      "siri"
+     ]
+    },
+    {
+     "title": "Apple’s camera-equipped AirPods appear in leaked video",
+     "url": "https://www.theverge.com/tech/981326/apple-airpods-with-cameras-demo-video-leak",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-08-18T01:00:01+00:00",
+     "summary": "We may have our first glimpse of Apple's rumored camera-equipped AirPods, thanks to a video that MacRumors found in the macOS Tahoe 26.7 Release Candidate. The short video clip features a man - who is wearing the new AirPods - holding up a book with the cover displayed, so that Visual Intelligence can see the […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Apple-AirPods-with-cameras-demo-video-leak.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "14640eb10ad8",
+     "tags": [
+      "AI",
+      "Apple",
+      "Apple Rumors",
+      "Audio",
+      "Gadgets"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0035",
+   "title": "微軟Windows推出可自訂右鍵選單，同時揭露Copilot漏洞",
+   "summary": "微軟宣布Windows用戶可自訂右鍵內容選單，移除不需要的項目以減少雜亂。另一方面，Ars Technica報導揭露Copilot存在秘密參數，可能讓駭客在使用者點擊連結時竊取密碼。",
+   "category": "產品與應用",
+   "importance": 3,
+   "keywords": [
+    "microsoft",
+    "reveals",
+    "secret",
+    "allowed",
+    "context",
+    "input"
+   ],
+   "image": "img/2026-08-19/992dbcdd20632e95.webp",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI",
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "Microsoft reveals customizable context menu for Windows users - how to try it out",
+     "url": "https://www.zdnet.com/article/microsoft-customizable-context-menu-windows-11",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T06:30:25+00:00",
+     "summary": "You'll be able to tweak the right-click context menus in Windows to remove items you don't want, thereby decreasing the clutter.",
+     "image": "",
+     "id": "858b57dac76a",
+     "tags": []
+    },
+    {
+     "title": "Microsoft Copilot reveals secret input that allowed it to be hacked",
+     "url": "https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-08-18T05:00:04+00:00",
+     "summary": "Secret parameter allowed hackers to steal passwords when a target clicked on a link.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-500x500.jpg",
+     "id": "578f2121e456",
+     "tags": [
+      "AI",
+      "Biz & IT",
+      "Security",
+      "copilot",
+      "exploits"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0002",
+   "title": "小米預告自研晶片與「大會師」新品，9月發表會受矚目",
+   "summary": "小米執行長雷軍宣布新一代玄戒晶片即將發布，總裁盧偉冰也暗示9月將有「大會師」新品，預計整合自研晶片、自研OS與自研AI大模型於單一終端。此外，公安部公布多起編造AI假車禍影片的處罰案例。",
+   "category": "產品與應用",
+   "importance": 3,
+   "keywords": [
+    "xiaomi"
+   ],
+   "image": "img/2026-08-19/b403ba4a3755f0af.webp",
    "llm_enriched": true,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "新一代奔驰 C 级车全球首发：首搭 S 级同款发光格栅、Momenta R7 智驾，宣称史上最全面技术升级",
-     "url": "https://www.ithome.com/0/990/844.htm",
+     "title": "IT早报 0819：雷军官宣小米新一代玄戒芯片将至；魏建军称长城 36 年来没造过速成车；多人因编造 AI 车祸假视频被罚；入职奖 8800 元，富士康备战 iPhone 18...",
+     "url": "https://www.ithome.com/0/991/398.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-08-17T06:54:07+00:00",
-     "summary": "IT之家 8 月 17 日消息，梅赛德斯-奔驰官方微博今日宣布， 新一代 C 级车全球首发 。 据介绍，自 1982 年问世以来， C 级车累计销量已突破 1,200 万辆 。新一代 C 级车将迎来史上最全面技术升级，拥有更多 S 级旗舰同源科技。 外观方面， 新一代 C 级车首度搭载 S 级同款发光格栅 ，星徽头灯与尾灯前后呼应，智能数字大灯光线照射更精准通透，可规避夜间行车视野盲区。打开车门，外后视镜将投射三叉星徽点亮地面。 内饰方面，新车搭载优化升级的 Burmester 3D 环绕立体声音响系统， 支持杜比全景声 ，并配备 15 个扬声器；全新多功能方向盘， 采用拨杆与滚轮等物理控制 ，方便高频操作。 智能方面，新一代 C 级车基于奔驰自研 MB.OS 架构打造，支持持续迭代 OTA； 豆包 AI 大模型等将融入智能座舱 ；针对中国复杂交通环境，新车搭载与 Momenta 共同研发的中国专属城区及高速领航辅助驾驶系统，已实现“全国都能开”， 未来在国内上市时，还将搭载 Momenta R7“世界模型” 。 驾控方面， 新车搭载新款 2.0 升 M 254 EVO 四缸汽油发动机搭载第二代智能电机系统 ，可提供最高 17 千瓦额外功率及 205 牛 · 米额外扭矩； 48 伏电气系统支持滑行与能量回收 ，城区通勤频繁启停与长距离巡航更高效、平顺； 全新电动辅助增压器支持毫秒级",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/16dce091-801a-4572-8680-9ce5d9255324.jpg",
-     "id": "63b5b2fb7e58",
+     "published": "2026-08-18T16:01:10+00:00",
+     "summary": "“IT早报”时间，大家好，现在是 2026 年 8 月 19 日星期三，今天的重要科技资讯有： 1. 雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机 小米创办人、董事长兼 CEO 雷军 8 月 18 日发文，回顾了小米集团 2026 年 Q2 业绩，并强调研发费用同比增长 18.9%，Q2 已达 92 亿。雷军还顺势宣布，小米新一代玄戒芯片即将发布。另外，雷军的微博小尾巴已更换为型号未知的神秘新机。>> 查看详情 2. 魏建军：长城汽车 36 年来，没有造过一辆“速成车” 长城汽车董事长魏建军 8 月 18 日晒出视频，展示了最新改造升级的长城汽车智能驾驶试验场，并表示：“别的我不敢说，我敢说长城汽车 36 年来，没有造过一辆‘速成车’。”>> 查看详情 3. 编造智驾事故、AI 生成假车祸视频，多人因编造涉企谣言被罚 公安部公布 14 起典型案例，涉编造智驾事故、AI 生成车祸视频等恶意诋毁车企谣言。多人被行政处罚或采取刑事强制措施。警方提醒：网络谣言扰乱秩序，必受法律严惩。>> 查看详情 4. 入职奖金约 8800 元：曝富士康扩大招工备战苹果 iPhone 18 Pro / Max 及 iPhone Ultra 科技媒体 macobserver 8 月 17 日发布博文，报道称富士康为满足苹果 iPhone 18 Pro 系列以及首款折叠手机（上市后预估",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/21cb43ec-80af-46f1-b776-0c68d532c5cf.jpg",
+     "id": "746e0464ff0c",
+     "tags": []
+    },
+    {
+     "title": "小米“大会师”新品将至，卢伟冰发文预告 9 月“精彩纷呈”",
+     "url": "https://www.ithome.com/0/991/365.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-18T08:00:03+00:00",
+     "summary": "IT之家 8 月 19 日消息，小米集团合伙人 / 总裁、手机部总裁、小米品牌总经理卢伟冰刚刚发文预告：“ 静待 9 月，精彩纷呈。 ” 值得一提的是，有网友在评论区留言：“小米大会师的产品要来了，非常期待 9 月的新品。”卢伟冰以“[爱心]”作为回复， 暗示小米“大会师”新品将至 。 参考IT之家此前报道，在今年 1 月的 2025 小米“千万技术大奖”颁奖典礼上，小米集团创始人、董事长兼 CEO 雷军提到， 2026 年，小米预计将在一款终端上实现自研芯片、自研 OS、自研 AI 大模型“ 大会师 ” 。 雷军还在千万技术大奖现场披露，2025 年小米年度技术大奖获奖项目中，约有 2/3 的获奖项目运用了 AI 技术，用 AI 把现有的工作重做一遍，覆盖了底层材料与结构、芯片及 OS 、智能驾驶、科技家电等众多领域。 相关阅读： 《 雷军：小米今年预计将在一款终端上实现自研芯片、自研 OS、自研 AI 大模型“大会师” 》",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/d19c79d6-9397-4bad-aec4-2554991ff521.png?x-bce-process=image/format,f_auto",
+     "id": "49910405bc88",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0032",
-   "title": "AI 生成的 GitHub Copilot 自動修復功能導致 Snowflake Jira 遭入侵",
-   "summary": "研究顯示，攻擊者利用 GitHub Copilot 的 AI 生成自動修復功能，成功入侵 Snowflake 的 Jira 系統，凸顯 AI 輔助開發工具可能帶來的安全風險。",
-   "category": "安全與倫理",
+   "key": "t0004",
+   "title": "面板級封裝技術成AI晶片先進封裝新趨勢",
+   "summary": "AI晶片持續大型化與高整合，先進封裝從300mm晶圓轉向方形面板，FOPLP、CoPoS與Glass Core等技術成為焦點。其中FOPLP強調成本，CoPoS鎖定AI應用，Glass Core則需克服良率挑戰，設備商進入製程整合戰。",
+   "category": "晶片與基礎設施",
    "importance": 4,
    "keywords": [
-    "microsoft",
-    "github",
-    "autofix",
-    "allowed",
-    "compromise",
-    "snowflake"
+    "foplp",
+    "copos",
+    "core",
+    "chip",
+    "glass",
+    "300"
    ],
-   "image": "img/2026-08-18/a4afc56f65a148af.webp",
+   "image": "img/2026-08-19/194c029591c1a5cc.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "面板級封裝分進合擊　FOPLP拚成本、CoPoS攻AI、玻璃更前瞻",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=765481&wpidx=4",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "AI晶片朝大型化、高整合發展，先進封裝面臨從300mm晶圓，轉向「方形面板」的製造選擇。關於面板級封裝（PLP）趨勢，FOPLP與CoPoS，成為最熱門的兩個關鍵字，也有不同取向。",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765481-1-2r3ff_l.jpg",
+     "id": "cdac1013c165",
+     "tags": []
+    },
+    {
+     "title": "Glass Core量產關鍵在良率　亞智林峻生揭封裝設備進入製程整合戰",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000765483_IF25JPAI7EU1ZV4PNQ942&wpidx=3",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "AI晶片尺寸持續放大，先進封裝製程從300 mm晶圓走向方形面板（Panel）趨勢逐步明朗，帶動FOPLP、CoPoS及Glass Core等新型封裝技術同步發展。",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765483-1-nq942_l.jpg",
+     "id": "a3ed17174d75",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0016",
+   "title": "NVIDIA為OpenAI 8GW資料中心提供最高1,050億美元擔保",
+   "summary": "NVIDIA同意為OpenAI租用軟銀旗下SB Energy在俄亥俄州的8GW資料中心提供最高1,050億美元擔保，並投資SB Energy 15億美元，成為園區獨家AI運算基礎設施供應商。首批800MW預計2028年上線，租期20年，此舉引發循環融資疑慮。",
+   "category": "企業與資金",
+   "importance": 5,
+   "keywords": [
+    "nvidia",
+    "energy",
+    "datacenter",
+    "1050",
+    "funding",
+    "google"
+   ],
+   "image": "img/2026-08-19/58b7ace49f0d9cfc.webp",
+   "llm_enriched": true,
+   "sources": [
+    "TechOrange 科技報橘"
+   ],
+   "articles": [
+    {
+     "title": "【科技早餐】NVIDIA 為 OpenAI 8 GW 資料中心提供最高 1,050 億美元擔保，Google 傳 Pixel 全面移出中國",
+     "url": "https://techorange.com/2026/08/19/nvidia-openai-data-center-guarantee-google-pixel-china-exit",
+     "source": "TechOrange 科技報橘",
+     "lang": "zh",
+     "published": "2026-08-18T13:30:00+00:00",
+     "summary": "【科技早餐】今天精選 7 則國內外重要科技新聞。 ＊NVIDIA 為 OpenAI 8 GW 資料中心提供最高 1,050 億美元擔保 NVIDIA 同意提供最高 1,050 億美元擔保，支持 OpenAI 租用軟銀旗下 SB Energy 在美國俄亥俄州開發的資料中心。NVIDIA 也將投資 SB Energy 15 億美元，並成為園區獨家 AI 運算基礎設施供應商。園區第一階段規劃 4.25 GW 的 AI 運算容量，另可擴充 3.75 GW，合計最高 8 GW；首批 800 MW 預計於 2028 年上線，OpenAI 租期為 20 年。 NVIDIA 表示，擔保只涵蓋部分租金與電力款項，OpenAI 仍須自行支付租金；若 OpenAI 違約，NVIDIA 須補足場址重新出租或出售後，與最低保障價值之間的差額，不包括園區全部成本或 OpenAI 的所有義務。這項安排引發外界對循環融資及最終回報的疑問。NVIDIA 執行長黃仁勳否認交易屬於循環融資，表示公司正利用自身規模及對長期需求的掌握，鎖定可供多代 NVIDIA 系統使用的基礎建設。 […]",
+     "image": "https://techorange.com/app/uploads/2026/08/7bdef75ea6c8aae0-720x405.png",
+     "id": "cbff859d8f55",
+     "tags": [
+      "科技動態"
+     ]
+    },
+    {
+     "title": "NVIDIA 出面替 OpenAI 的 10GW 資料中心擔保，同時鎖定第一期獨家晶片供應權",
+     "url": "https://techorange.com/2026/08/18/openai-locks-in-lease-for-huge-data-center-in-ohio-backing-nvidia",
+     "source": "TechOrange 科技報橘",
+     "lang": "zh",
+     "published": "2026-08-17T22:01:36+00:00",
+     "summary": "《華爾街日報》報導，OpenAI 已與軟銀旗下、獲 NVIDIA 部分支持的 SB Energy 達成協議，在美國俄亥俄州租用一座規模達 10GW 的資料中心，這項計畫預計將成為目前規模最大的 AI 資料中心樞紐之一。知情人士透露，NVIDIA 將提供支持，協助 SB Energy 籌措債務融資，同時控制自身風險。 俄亥俄州 AI 園區獲 NVIDIA 擔保，發電量將供 700 萬戶 NVIDIA 將為第一期約 5GW 的資料中心提供部分資產價值擔保；同時，該公司將成為園區前半部的獨家晶片供應商，並入股 SB Energy，未來也可選擇把擔保範圍擴大至整座園區。《華爾街日報》指出，這份 20 年租約也是近期 AI 業者為取得龐大運算容量而採用的複雜融資模式之一。 近年來，包括 NVIDIA、Google 在內的晶片業者，開始利用自身的財務實力協助 OpenAI、Anthropic 等新創企業取得資料中心租約，讓開發商能以這些長期租約作為融資基礎，同時分散自身承擔的風險。 這座資料中心園區位於俄亥俄州南部，部分用地是美國能源部持有的前鈾濃縮設施，預計發電量足以供應 700 萬戶家庭。美國商務部長 Howard Lutnick 與能源部長 Chris Wright 也都深度參與這項計畫。知情人士向《華爾街日報》表示，NVIDIA 提供擔保後，SB Energy 將更容易以較低成本取得融",
+     "image": "https://techorange.com/app/uploads/2026/08/3a4fcf143beee424-720x405.png",
+     "id": "e913e7319325",
+     "tags": [
+      "AI 人工智慧"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0019",
+   "title": "Hacker News熱議：挪威應收購OpenAI與Claude Code促銷",
+   "summary": "Hacker News上兩篇熱門文章：一篇主張挪威應收購OpenAI，引發關於國家主權AI的討論；另一篇為Claude Code 2026年5-8月每週限額促銷公告，兩者皆獲得超過百點討論。",
+   "category": "其他",
+   "importance": 2,
+   "keywords": [
+    "url",
+    "https",
+    "comments",
+    "norway",
+    "should",
+    "buy"
+   ],
+   "image": "img/2026-08-19/52a5e75fe2977578.webp",
    "llm_enriched": true,
    "sources": [
     "Hacker News (100+)"
    ],
    "articles": [
     {
-     "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
-     "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+     "title": "Norway should buy OpenAI",
+     "url": "https://www.onethousandmeans.com/p/norway-should-buy-openai",
      "source": "Hacker News (100+)",
      "lang": "en",
-     "published": "2026-08-17T06:18:38+00:00",
-     "summary": "Article URL: https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug Comments URL: https://news.ycombinator.com/item?id=49331423 Points: 305 # Comments: 123",
+     "published": "2026-08-18T11:30:29+00:00",
+     "summary": "Article URL: https://www.onethousandmeans.com/p/norway-should-buy-openai Comments URL: https://news.ycombinator.com/item?id=49351330 Points: 191 # Comments: 218",
      "image": "",
-     "id": "10a5b0bc8332",
+     "id": "2cd0ffaa42a1",
+     "tags": []
+    },
+    {
+     "title": "Claude Code May–August 2026 weekly limits promotion",
+     "url": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-08-18T09:02:15+00:00",
+     "summary": "Article URL: https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion Comments URL: https://news.ycombinator.com/item?id=49348751 Points: 251 # Comments: 218",
+     "image": "",
+     "id": "1e907c1ba3f5",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0033",
-   "title": "AI 從輔助編程邁向代理群體，軟體開發流程持續演進",
-   "summary": "AI 對軟體開發的影響持續深化，從生成程式碼擴展到除錯、測試等整個生命週期，並朝向多代理協作的「代理群體」方向發展，有望進一步提升生產力。",
-   "category": "模型與研究",
+   "key": "t0000",
+   "title": "Amazon傳拆卸珍本書籍以取得AI訓練資料",
+   "summary": "據404 Media調查，Amazon購買大量珍本書籍並拆卸掃描，疑似用於AI模型訓練。追蹤裝置顯示書籍運至拉斯維加斯VGT3物流中心，Amazon僅回應是為提升客戶產品與服務。",
+   "category": "企業與資金",
    "importance": 3,
    "keywords": [
-    "software",
-    "development",
-    "microsoft",
-    "hbm",
-    "copilots",
-    "swarms"
+    "amazon",
+    "media",
+    "404",
+    "vgt3"
    ],
-   "image": "img/2026-08-18/3c9f62ff4a6b9e2f.webp",
+   "image": "img/2026-08-19/b59fe216d353f5e8.webp",
    "llm_enriched": true,
    "sources": [
-    "IEEE Spectrum AI"
+    "iThome"
    ],
    "articles": [
     {
-     "title": "From AI Copilots to Agent Swarms",
-     "url": "https://spectrum.ieee.org/amd-agent-swarms",
-     "source": "IEEE Spectrum AI",
-     "lang": "en",
-     "published": "2026-08-17T06:00:01+00:00",
-     "summary": "The impact of AI on software development has been both profound and ever-evolving. Last year, I wrote about AMD’s plans to use AI not just for generating new lines of code, but also for other steps in the software development lifecycle (SDLC), such as triaging problems, debugging code, and testing the software. At the time, we were hoping for a 25 percent productivity boost from AI use over the course of two or three years. But with each new release, the capabilities of Large Language Models (LLMs) improve dramatically—accelerating software development, increasing the quality of AI-generated c",
-     "image": "https://spectrum.ieee.org/media-library/colorful-3d-blocks-piled-behind-glass-panels-displaying-white-code-snippets.jpg?id=67609515&width=980",
-     "id": "8c42db092e68",
-     "tags": [
-      "Agentic-ai",
-      "Software-engineering",
-      "Amd",
-      "Large-language-models"
-     ]
+     "title": "Amazon傳拆卸珍本書，以取得AI模型訓練資料集",
+     "url": "https://www.ithome.com.tw/news/178221",
+     "source": "iThome",
+     "lang": "zh",
+     "published": "2026-08-18T22:08:27+00:00",
+     "summary": "404 Media報導，以賣書起家的Amazon購入大量珍本書籍，將拆卸開來掃描，用以訓練AI模型。 404 Media是以調查報導方式，在書本內置入追蹤裝置，最後查到書本運抵Amazon於拉斯維加斯，名為VGT3的物流中心。 Amazon以簡單聲明回覆媒體說，該公司透過商業通路購買書本，是為了提升客戶使用的產品和服務。 報導指出，Amazon此舉是為了新闢內容來源。",
+     "image": "",
+     "id": "9cea7be782f2",
+     "tags": []
     }
    ]
   },
   {
-   "key": "t0034",
-   "title": "小米REDMI K100/K90 Pro Max新增顶部NFC刷卡區",
-   "summary": "小米REDMI K100 Pro Max與K90 Pro Max將在機身頂部加入NFC刷卡區，支援背部與頂部雙觸發刷卡。產品經理確認兩款手機殼不通用，新機已於8月11日發布，搭載第五代驍龍8至尊版處理器與AI獨顯晶片D2。",
-   "category": "產品與應用",
+   "key": "t0001",
+   "title": "台廠搶攻人形機器人，前Arm中國CEO投入AI晶片新創",
+   "summary": "DIGITIMES每日新聞摘要：台廠積極布局人形機器人供應鏈，前Arm中國CEO創立AI晶片新創，台電預估全年燃料成本增加逾1,200億元。",
+   "category": "其他",
    "importance": 2,
    "keywords": [
-    "redmi",
-    "k100",
-    "max",
-    "pro",
-    "xiaomi",
-    "nfc"
+    "1200",
+    "arm",
+    "robot",
+    "ceo"
    ],
-   "image": "img/2026-08-18/fe4f65ff40200faf.webp",
+   "image": "img/2026-08-19/195953cfdeaf7d49.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "每日椽真：台廠搶攻人形機器人灘頭堡 | 前Arm中國CEO投入AI晶片新創 |台電估全年燃料成本增逾1,200億",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000765526_0C246PHA32U1WG51ILA5M&wpidx=3",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T21:51:00+00:00",
+     "summary": "早安。",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765526-1-ila5m_l.jpg",
+     "id": "3b2dc905a7c1",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0003",
+   "title": "超微傳與Google合作TPU，聯發科、博通供應鏈受關注",
+   "summary": "市場傳出超微正與Google針對v10世代TPU進行技術合作，雙方未證實。外界擔憂可能影響既有ASIC供應商博通、聯發科，但分析認為彼此可能並不互斥。",
+   "category": "晶片與基礎設施",
+   "importance": 4,
+   "keywords": [
+    "tpu",
+    "amd",
+    "google",
+    "v10",
+    "asic",
+    "broadcom"
+   ],
+   "image": "img/2026-08-19/8d1a11ab70cabe61.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "Google TPU戰線展開　聯發科、超微、博通或許「並不互斥」",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=765469&wpidx=4",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "近期市場傳出，超微（AMD）正在和Google針對v10世代的TPU進行技術合作，兩家公司對此都未做出進一步的說法。從市場反應分析，不少意見擔心超微參戰後，恐影響Google既有的特用晶片（ASIC）供應商，包括博通（Broadcom）、聯發科等。<br...",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765469-1-5b7hc_l.jpg",
+     "id": "c07911844431",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0005",
+   "title": "長鑫科技市值超騰訊，成中國最高市值上市公司",
+   "summary": "中國記憶體大廠長鑫科技A股上市後市值暴增，突破5,000億美元超越騰訊，成為中國市值最高上市公司，並躍升全球第三大IPO。此舉反映中美AI競局下，中國硬體企業戰略地位提升。",
+   "category": "企業與資金",
+   "importance": 4,
+   "keywords": [
+    "tencent",
+    "hbm",
+    "funding",
+    "ipo",
+    "5000"
+   ],
+   "image": "img/2026-08-19/98fc3668a1327a72.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "長鑫市值超車騰訊　中美AI競局北京吹響「硬體掛帥」號角",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765442_80W54C083BIH273Y4HBJN&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "中國記憶體大廠長鑫科技於A股上市後市值暴增，不僅躍升全球第三大IPO，市值更突破5,000億美元超越騰訊，成為中國市值最高的上市公司，市場格局可能因此出現重大轉變。在中美人工智慧（AI）競爭格局下，中國新一代硬體企業與北京的戰略更為契合。<br ...",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765442-1-4hbjn_l.jpg",
+     "id": "647259a28a68",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0006",
+   "title": "記憶體超級週期挹注，三星提前償還SDC 20兆韓元借款",
+   "summary": "受惠AI需求帶動記憶體超級週期，三星電子現金充裕，已提前全額償還向三星顯示器借貸的20兆韓元（約148億美元）款項。",
+   "category": "企業與資金",
+   "importance": 3,
+   "keywords": [
+    "samsung",
+    "sdc",
+    "hbm",
+    "funding",
+    "display",
+    "148"
+   ],
+   "image": "img/2026-08-19/67413f2f63ec904b.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "記憶體超級週期效應　三星提前清償SDC 20兆韓元借款",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765489_GIH3FOK89T1CLW8HA9H49&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "人工智慧（AI）需求推升記憶體超級週期，三星電子（Samsung Electronics）手中現金大幅增加後，已提前全額償還先前向三星顯示器（Samsung Display；SDC）取得的20兆韓元（約148億美元）貸款。",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765489-1-a9h49_l.jpg",
+     "id": "d0cebdda00ab",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0007",
+   "title": "黃志芳：AI資本支出撐台灣經濟，投報不如預期恐連鎖衝擊",
+   "summary": "外貿協會董事長黃志芳在2026台灣人工智慧年會開幕演講指出，AI資本支出支撐台灣經濟，但若投資報酬不如預期，可能引發連鎖衝擊。",
+   "category": "其他",
+   "importance": 2,
+   "keywords": [],
+   "image": "img/2026-08-19/6c80aaa13a725227.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "黃志芳：AI資本支出撐台灣經濟　投報不如預期恐釀連鎖衝擊",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765473_YOB3D2BM8UIL772AUZIT2&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "外貿協會董事長黃志芳18日為「2026台灣人工智慧年會」開幕演講，讓工程背景的專家見識到人類如何以更宏觀和悲憫的觀點來重新審視AI所帶來的變化。",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765473-2-uzit2.jpg",
+     "id": "10814114848c",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0008",
+   "title": "樂金攜手NVIDIA加速機器人布局，目標2026年蒐集12年份訓練資料",
+   "summary": "樂金電子宣布與NVIDIA深化機器人事業合作，計劃2026年內投入數百台機器人，蒐集相當於12年份的訓練資料，並運用NVIDIA Omniverse、Cosmos、Isaac等實體AI技術強化發展。",
+   "category": "產品與應用",
+   "importance": 3,
+   "keywords": [
+    "nvidia",
+    "robot",
+    "omniverse",
+    "cosmos",
+    "isaac",
+    "physical"
+   ],
+   "image": "img/2026-08-19/8b206195ec29b0a6.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "樂金偕NVIDIA加速機器人布局　衝刺12年量級訓練資料",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765499_0Y63BKC6LZRF5R8SFVEFZ&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "樂金電子（LG Electronics）宣布攜手NVIDIA加深機器人事業合作，並計劃在2026年內投入數百台機器人、蒐集相當於12年份的訓練資料，同時也將運用NVIDIA Omniverse、Cosmos、Isaac等實體AI（Physical AI）技術，強化...",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765499-1-fvefz_l.jpg",
+     "id": "fd75424dfa64",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0009",
+   "title": "中微半導體「MCU＋」擴張，車規與NOR Flash成新戰線",
+   "summary": "中國MCU業者中微半導體2026上半年營運升溫，受惠AI、機器人、汽車電子需求成長及成熟製程MCU產能吃緊，營收獲利高速成長，並擴展車規與NOR Flash業務。",
+   "category": "企業與資金",
+   "importance": 2,
+   "keywords": [
+    "mcu",
+    "nor",
+    "flash",
+    "robot"
+   ],
+   "image": "img/2026-08-19/23950392f12030e3.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "中微半導體「MCU＋」擴張　車規與NOR Flash成新戰線",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765437_TGB5HULO2BZKNT8EVFTNK&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "中國微控制器（MCU）業者中微半導體（深圳）（以下簡稱中微半導體）2026年上半營運明顯升溫，在人工智慧（AI）、機器人、汽車電子需求成長，以及成熟製程MCU產能轉趨吃緊帶動下，營收與獲利同步高速成長。",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765437-1-vftnk_l.jpg",
+     "id": "29bb58a98d4d",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0010",
+   "title": "AI晶片短缺嚴峻，NVIDIA、超微、華為發展如星海爭霸三族",
+   "summary": "全球記憶體晶片短缺，先進晶片製造產能全數售罄，封裝產能與記憶體分配成AI市場嚴峻挑戰。NVIDIA、超微與華為的AI晶片發展被比喻為星海爭霸中的神族、蟲族與人族。",
+   "category": "晶片與基礎設施",
+   "importance": 3,
+   "keywords": [
+    "huawei",
+    "amd",
+    "hbm",
+    "nvidia"
+   ],
+   "image": "img/2026-08-19/225dc271bcff9cd7.webp",
+   "llm_enriched": true,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "NVIDIA、超微與華為AI晶片發展　正如星海爭霸神族、蟲族與人族？",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000765299_LX219Z73LRVOKX8X5NH3H&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-18T16:00:00+00:00",
+     "summary": "全球半導體生態系統正面臨前所未有的記憶體晶片短缺，硬體成長受到原材料供應嚴重限制。同時，全球先進晶片製造商的產能已全部售罄，使封裝產能與記憶體分配成為整個AI市場面臨的嚴峻挑戰。",
+     "image": "https://img.digitimes.com/newsimg/2026/0819/765299-1-5nh3h_l.jpg",
+     "id": "c95c52e967fa",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0011",
+   "title": "蘋果Safari 26.6.1修復22個漏洞，41%由OpenAI Codex Security發現",
+   "summary": "蘋果發布Safari 26.6.1更新，修復22個WebKit相關CVE漏洞，其中9個由OpenAI Codex Security發現，佔比約41%。其他貢獻者包括Cisco Talos等團隊。",
+   "category": "安全與倫理",
+   "importance": 3,
+   "keywords": [
+    "safari",
+    "codex",
+    "26.6.1",
+    "webkit",
+    "security",
+    "agent"
+   ],
+   "image": "img/2026-08-19/d6089dd0960303d9.webp",
    "llm_enriched": true,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "小米 REDMI K100 / 90 Pro Max 手机隐藏升级点曝光，机身顶部加入 NFC 刷卡区",
-     "url": "https://www.ithome.com/0/990/833.htm",
+     "title": "占比约 41%：苹果 Safari 26.6.1 修复 22 个漏洞，9 个通过 OpenAI Codex Security 发现",
+     "url": "https://www.ithome.com/0/991/388.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-08-17T05:53:03+00:00",
-     "summary": "IT之家 8 月 17 日消息，博主 @缪特mt 今日分享了 REDMI K100 Pro Max 的一个“史诗级”升级： 在机身顶部加入了 NFC 刷卡区，无论是背部还是顶部都能正常触发刷卡 小米 REDMI 产品经理 @笋寸 随后补充， 称 REDMI K90 Pro Max 也支持该功能 。 IT之家注意到，有网友询问 REDMI K100 Pro Max 能否和 REDMI K90 Pro Max 通用手机壳，REDMI 产品经理 @笋寸 表示：“ 不能，会翘出来，不贴合。 ” ▲ IT之家开箱： REDMI K100 Pro 系列图赏 据IT之家此前报道，REDMI K100 Pro Max 已于 8 月 11 日晚正式发布，搭载第五代骁龙 8 至尊版处理器和 AI 独显芯片 D2；电池容量 9070mAh，支持 100W 有线快充 + 50W 无线充电、27W 有线反充 + 22.5W 无线反充，首销价 4199 元起。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/fae799c9-8c41-4b19-8503-f68e8762fc36.png?x-bce-process=image/format,f_auto",
-     "id": "09dda66b658b",
+     "published": "2026-08-18T15:31:42+00:00",
+     "summary": "IT之家 8 月 19 日消息，科技媒体 9to5Mac 昨日（8 月 18 日）发布博文，报道称苹果公司最新公示 Safari 浏览器 26.6.1 更新安全日志， 共计修复 22 个涉及 WebKit 的 CVE 安全漏洞，其中 9 个是 OpenAI Codex Security 发现的，占比约为 41%。 IT之家注：OpenAI Codex Security 是一款专为工程和安全团队打造的 AI 应用程序安全智能体（Agent）。它能够深入分析项目的代码上下文与威胁模型，自动检测、验证并修复复杂的代码安全漏洞，旨在大幅降低误报率并减轻安全警报带来的工作负担。 其他贡献者来自 Out of Bounds、Cisco Talos、Citadelo、TrendAI Zero Day Initiative、 Calif.io 、Braze Security Team 等组织或团队。 在修复内容方面，包含攻击者通过恶意构造的网页内容触发 Safari 意外崩溃、导致相关进程崩溃或终止，以及造成内存破坏。 公告还列出 2 个明确可能导致内存破坏的漏洞。另有 1 个 WebKit History 漏洞可能在用户访问恶意网站时泄露敏感数据。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/ae06e93c-e437-41e8-951f-45ed944f0d51.png?x-bce-process=image/format,f_auto",
+     "id": "9a1b23aafab5",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0035",
-   "title": "語音AI新創Wispr獲2.8億美元融資，估值達20億美元",
-   "summary": "Wispr完成2.8億美元融資，估值達20億美元，資金將用於拓展會議記錄等新領域。該公司以語音聽寫技術起家，近期推出筆記工具，顯示其業務範圍正從單純聽寫擴展至更廣泛的AI應用。",
-   "category": "企業與資金",
+   "key": "t0012",
+   "title": "OpenAI宣布新安全政策，加強模型開發監控與網路隔離",
+   "summary": "OpenAI宣布一系列新安全政策，重點在控制模型測試期間的安全事件，包括更細緻的監控和訓練後階段加強對齊與安全性。這是自Hugging Face事件後首次重大安全調整，部分受Astra模型能力影響。",
+   "category": "安全與倫理",
    "importance": 4,
-   "keywords": [
-    "wispr",
-    "looks",
-    "beyond",
-    "dictation",
-    "280",
-    "raises"
+   "keywords": [],
+   "image": "img/2026-08-19/ff61fea60c25d5ed.webp",
+   "llm_enriched": true,
+   "sources": [
+    "IT之家"
    ],
-   "image": "img/2026-08-18/8ef5eb21fb400dd9.webp",
+   "articles": [
+    {
+     "title": "OpenAI 宣布新安全政策，加强模型开发监控与网络隔离",
+     "url": "https://www.ithome.com/0/991/387.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-18T15:28:14+00:00",
+     "summary": "IT之家 8 月 19 日消息，当地时间周二，OpenAI 宣布了一批新的安全政策，重点是控制模型在测试期间可能发生的安全事件。新的安全措施包括在模型开发过程中进行更加细致的监控，同时在训练后阶段进一步加强对模型对齐和安全性的重视。 IT之家注意到，OpenAI 在一篇博客文章中表示：“随着模型能力不断增强，在内部开发和测试这些模型过程中所面临的风险也在增加。我们在监控、对齐和安全方面制定的标准必须始终领先于这些风险。” 这是 OpenAI 自 7 月 21 日披露 Hugging Face 事件以来，在安全实践方面首次对外公布的重大调整之一。 OpenAI 代表表示，这些措施并不是直接针对 Hugging Face 事件推出的，但即将推出的 Astra 模型所展现出的网络安全能力，以及整个 AI 行业快速发展的步伐，也是促使公司采取这些措施的部分原因。 OpenAI 同时透露，在 Hugging Face 事件发生后，公司曾暂停强化学习（RL）训练两周，但目前已经重新启动了许多风险较低模型的训练工作。 OpenAI 在博客中写道：“我们目前仍暂停规模最大的前沿强化学习训练计划，同时开展小规模训练和评估，以评估模型行为、验证安全措施，并在继续推进之前获得更多有关模型对齐情况的证据。” OpenAI 研究副总裁 Amelia Glaese 在接受记者采访时强调，随着模型能力不断增强，",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/2/8ad2304d-c61b-4004-9483-e1a55ca43342.png?x-bce-process=image/format,f_auto",
+     "id": "efb352e73f13",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0014",
+   "title": "傳Googlebook筆電新品預覽活動9月15日舉行",
+   "summary": "據外媒報導，Google已邀請媒體於9月15日舉辦Googlebook新品預覽活動，屆時可現場體驗。Googlebook為高端安卓筆電，由Acer、ASUS、Dell、HP、Lenovo推出首批機型，基於Android技術棧，強化大螢幕與Gemini AI功能。",
+   "category": "產品與應用",
+   "importance": 3,
+   "keywords": [
+    "googlebook",
+    "android"
+   ],
+   "image": "img/2026-08-19/613357e6697c1e46.webp",
+   "llm_enriched": true,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "消息称谷歌 Googlebook 系列笔记本新品预览活动将于 9 月 15 日举行",
+     "url": "https://www.ithome.com/0/991/380.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-18T15:05:59+00:00",
+     "summary": "IT之家 8 月 19 日消息，据外媒 Chrome Unboxed 报道，谷歌已悄悄向部分媒体发出邀请，透露公司将于 9 月 15 日举办 Googlebook 新品预览活动，届时除了产品演示外，媒体还可以现场体验这些新款笔记本。 谷歌在今年 2026 年 I/O 开发者大会期间首次公布了 Googlebook 高端安卓笔记本，将由 Acer、ASUS、Dell、HP、Lenovo 率先推出首批高端机型。 与传统 Chromebook 不同，Googlebook 将基于 Android 技术栈打造，但 Google 目前尚未公布这一新操作系统的正式名称。此前曝光的 Googlebook 还显示，其将针对大屏幕和触控、键鼠等不同输入方式进行优化，并进一步强化 Android 应用和 Gemini 人工智能功能。 如果 9 月 15 日活动消息属实，那么 Googlebook 距离正式上市应该已经不远。按照谷歌过去的产品发布节奏，这类媒体预览活动通常会在产品正式开售前不久举行，因此 Googlebook 很可能会在今年初秋（9 月末 10 月初）正式上市。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/5/eadb9cc1-e1c6-40be-a51d-8db8d0924d3c.jpg",
+     "id": "ba492d77a61b",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0015",
+   "title": "Cursor推出代碼託管平台，挑戰GitHub地位",
+   "summary": "以AI程式碼編輯器聞名的Cursor，推出新的代碼託管平台，直接與開發者長期偏好的GitHub競爭。",
+   "category": "產品與應用",
+   "importance": 3,
+   "keywords": [
+    "rival",
+    "platform",
+    "cursor",
+    "capitalizes",
+    "frustration",
+    "hosting"
+   ],
+   "image": "img/2026-08-19/213254541daca0b6.webp",
    "llm_enriched": true,
    "sources": [
     "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "Wispr raises $280M at $2B valuation as it looks beyond dictation",
-     "url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
+     "title": "Cursor capitalizes on GitHub frustration, launches rival hosting platform",
+     "url": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform",
      "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-08-17T05:10:05+00:00",
-     "summary": "The funds will allow Wispr to increase its footprint as it ventures into new areas, such as meetings, with its newly released note-taker tool.",
+     "published": "2026-08-18T14:14:25+00:00",
+     "summary": "Cursor, known for its AI Code Editor, is launching a new code-hosting platform to rival developers' long preferred favorite, GitHub.",
      "image": "",
-     "id": "c812e330d26b",
+     "id": "6836a788ee9f",
+     "tags": [
+      "AI",
+      "cursor",
+      "GitHub",
+      "spacexai"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0017",
+   "title": "GNOME新Aura Glass介面，流暢現代設計受好評",
+   "summary": "GNOME桌面環境推出Aura Glass新介面，靈感來自Apple Liquid Glass，提供流暢現代的視覺體驗，被評為「壯觀」。",
+   "category": "開源社群",
+   "importance": 2,
+   "keywords": [
+    "gnome",
+    "glassy",
+    "look",
+    "simply",
+    "spectacular",
+    "desktop"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI"
+   ],
+   "articles": [
+    {
+     "title": "I tested GNOME's glassy new look - and it's simply spectacular",
+     "url": "https://www.zdnet.com/article/gnome-desktop-liquid-glass-aura-glass",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T12:32:12+00:00",
+     "summary": "GNOME is finally catching up to other desktop environments, thanks to Aura Glass, a fluid, modern desktop inspired by Apple's Liquid Glass.",
+     "image": "",
+     "id": "0e5cb19cc7d1",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0018",
+   "title": "羅賓威廉斯子女接管Instagram帳號對抗AI深度偽造",
+   "summary": "羅賓威廉斯的子女Zak、Zelda和Cody接管其父親的Instagram帳號，旨在建立一個安全可信的空間，對抗AI生成其父親肖像的濫用行為。此舉源於女兒Zelda先前公開反對使用AI重現父親形象。",
+   "category": "安全與倫理",
+   "importance": 3,
+   "keywords": [
+    "williams",
+    "instagram",
+    "robin",
+    "account",
+    "meta",
+    "brought"
+   ],
+   "image": "img/2026-08-19/141766b0dd9c23d8.webp",
+   "llm_enriched": true,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Robin Williams’ Instagram account brought back to fight ‘AI abuse’",
+     "url": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-08-18T11:48:26+00:00",
+     "summary": "Robin Williams' children are taking over their father's Instagram account after his daughter spoke out against the use of his AI likeness, as reported earlier by The Wrap. In a post on Tuesday, Zak, Zelda, and Cody Williams write that they want the late actor's Instagram profile to be a \"safe, trusted place where the […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-175034585.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,78.26399746371",
+     "id": "9dffd5e77e26",
+     "tags": [
+      "AI",
+      "Entertainment",
+      "Film",
+      "Instagram",
+      "Meta"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0021",
+   "title": "OpenAI推出強化國家安全民主監督新倡議",
+   "summary": "OpenAI啟動一項新計畫，旨在加強AI在國家安全領域的民主監督，提供政府機構工具、培訓和專業知識，以確保AI應用符合民主價值。",
+   "category": "政策與法規",
+   "importance": 4,
+   "keywords": [
+    "democratic",
+    "oversight",
+    "national",
+    "strengthening",
+    "security",
+    "strengthen"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "OpenAI"
+   ],
+   "articles": [
+    {
+     "title": "Strengthening democratic oversight in national security",
+     "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+     "source": "OpenAI",
+     "lang": "en",
+     "published": "2026-08-18T11:00:00+00:00",
+     "summary": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise.",
+     "image": "",
+     "id": "67f37d861d34",
+     "tags": [
+      "Global Affairs"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0022",
+   "title": "Hugging Face探討AI代理所需記憶體容量",
+   "summary": "Hugging Face發布文章探討AI代理實際需要多少記憶體，分析不同任務對記憶體的需求，為開發者提供參考。",
+   "category": "模型與研究",
+   "importance": 2,
+   "keywords": [
+    "much",
+    "memory",
+    "actually",
+    "need",
+    "does",
+    "agent"
+   ],
+   "image": "img/2026-08-19/2f6e9eab25838d24.webp",
+   "llm_enriched": true,
+   "sources": [
+    "Hugging Face"
+   ],
+   "articles": [
+    {
+     "title": "How Much Memory Does Your Agent Actually Need?",
+     "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+     "source": "Hugging Face",
+     "lang": "en",
+     "published": "2026-08-18T10:09:38+00:00",
+     "summary": "",
+     "image": "",
+     "id": "5ce8103476b1",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0024",
+   "title": "AI晶片新創Etched估值一個月翻倍至210億美元",
+   "summary": "Etched的AI晶片系統獲Jane Street採用並安裝，Jane Street對其表現印象深刻，因此領投新一輪融資，使公司估值在一個月內從約105億美元翻倍至210億美元。",
+   "category": "企業與資金",
+   "importance": 4,
+   "keywords": [
+    "etched",
+    "valuation",
+    "doubles",
+    "month",
+    "funding",
+    "jane"
+   ],
+   "image": "img/2026-08-19/71471ea40ad147ea.webp",
+   "llm_enriched": true,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Etched’s valuation doubles to $21B in a month",
+     "url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-18T09:21:58+00:00",
+     "summary": "Jane Street has installed Etched's first shipped AI cluster system, and was so impressed, it led another massive round, the startup says.",
+     "image": "",
+     "id": "a37bf4f4fcaf",
      "tags": [
       "AI",
       "Fundraising",
-      "Funding",
-      "Wispr"
+      "Startups",
+      "etched"
      ]
+    }
+   ]
+  },
+  {
+   "key": "t0025",
+   "title": "iOS更新後快速在iMessage加入照片的簡便技巧",
+   "summary": "最新iOS更新讓在iMessage中加入照片需要多步驟操作，ZDNet分享一個簡單技巧，可跳過繁瑣選單，一鍵完成。",
+   "category": "產品與應用",
+   "importance": 1,
+   "keywords": [
+    "add",
+    "ios",
+    "imessages",
+    "tap",
+    "skip",
+    "annoying"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI"
+   ],
+   "articles": [
+    {
+     "title": "Add photos to your iMessages with one tap - how to skip that annoying iOS menu",
+     "url": "https://www.zdnet.com/article/skip-the-annoying-menu-and-add-photos-to-your-imessages-with-one-tap",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T08:31:00+00:00",
+     "summary": "The latest iOS updates have added a ton of unnecessary taps to do simple things like add a photo to a text. But there's an easy trick to get around it.",
+     "image": "",
+     "id": "264d3776578a",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0026",
+   "title": "KeySmart SmartCard Gen 3藍牙追蹤卡限時特價",
+   "summary": "KeySmart SmartCard Gen 3藍牙追蹤卡目前有獨家折扣，原價約43美元，使用ZDNET專屬代碼可再享20%優惠，最終價格低於35美元，適用於Android和Apple裝置。",
+   "category": "產品與應用",
+   "importance": 1,
+   "keywords": [
+    "bluetooth",
+    "tracker",
+    "cards",
+    "exclusive",
+    "deal",
+    "favorite"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI"
+   ],
+   "articles": [
+    {
+     "title": "One of our favorite Bluetooth tracker cards is under $35 with this exclusive deal",
+     "url": "https://www.zdnet.com/article/keysmart-smartcard-gen-3-zdnet-deal",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T08:23:01+00:00",
+     "summary": "KeySmart's SmartCard (Gen 3) is perfect for Android and Apple users, and it's an extra 20% off with a ZDNET-exclusive code right now.",
+     "image": "",
+     "id": "ea3302bbea48",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0028",
+   "title": "ZDNET猜測蘋果下一步行動競賽進入最終回合",
+   "summary": "ZDNET的「Big Guessing Game」競賽進入第三輪也是最後一輪，邀請讀者猜測蘋果的下一步行動，有機會贏得獎品。",
+   "category": "其他",
+   "importance": 1,
+   "keywords": [
+    "big",
+    "zdnet",
+    "guessing",
+    "guess",
+    "next",
+    "move"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI"
+   ],
+   "articles": [
+    {
+     "title": "Can you guess Apple's next move? Last chance to win big in ZDNET's Big Guessing Game",
+     "url": "https://www.zdnet.com/article/big-guessing-game-apple-edition-round-3",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T08:01:00+00:00",
+     "summary": "It's the third and final round of ZDNET's Big Guessing Game. We want to know what you think.",
+     "image": "",
+     "id": "2d4efd5b69c9",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0029",
+   "title": "Omarchy Quattro：首款全面擁抱AI的Linux發行版實測",
+   "summary": "ZDNet記者測試了Omarchy Quattro，這是首批深度整合AI的Linux發行版之一，採用Hyprland桌面環境，記者表示雖然原本對AI有疑慮，但整體體驗出乎意料地好。",
+   "category": "產品與應用",
+   "importance": 2,
+   "keywords": [
+    "omarchy",
+    "quattro",
+    "distros",
+    "didn",
+    "hate",
+    "tested"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI"
+   ],
+   "articles": [
+    {
+     "title": "I tested Omarchy Quattro, one of the first Linux distros to go all in on AI - and I didn't hate it",
+     "url": "https://www.zdnet.com/article/omarchy-quattro-linux-distro-power-users-ai",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T07:51:37+00:00",
+     "summary": "Omarchy made me fall in love with Hyprland - can it do the same for AI?",
+     "image": "",
+     "id": "1b6c849ab68e",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0030",
+   "title": "Stellantis申請虛擬司機投影專利提升自駕信任",
+   "summary": "Stellantis申請新專利，利用全息投影在擋風玻璃上顯示虛擬司機，透過機器學習生成表情與語音同步，與乘客互動，以緩解人們對無人駕駛的不安感。",
+   "category": "產品與應用",
+   "importance": 3,
+   "keywords": [
+    "stellantis"
+   ],
+   "image": "img/2026-08-19/6134233f4075a410.webp",
+   "llm_enriched": true,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "乘坐自动驾驶车辆害怕“没人”开车？Stellantis 新专利在玻璃上投射“虚拟司机”",
+     "url": "https://www.ithome.com/0/991/361.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-18T07:48:03+00:00",
+     "summary": "IT之家 8 月 18 日消息，即使相信无人驾驶技术，有些人看到驾驶席空无一人时仍会感到不安。知道车辆由计算机控制是一回事， 亲眼面对一个没有司机的驾驶席 又是另一回事。 据外媒 CarBuzz 今天（18 日）报道，Stellantis 申请了一项颇具科幻色彩的专利， 希望用“虚拟司机”缓解这种不安 。 目前，自动驾驶面临着多项棘手的问题，其中之一便是 信任 。人们早已习惯车里有一个负责掌控车辆的人，不仅能带来安全感，也方便乘客与驾驶员沟通。 Stellantis 认为，全息影像或投影技术或许能够同时补上这两个缺口。按照专利描述，系统会持续判断每名乘员的位置和视线方向，再通过车内投影设备 生成一名虚拟驾驶员 ，与车内乘客进行交流。 虚拟驾驶员不会真的“坐”在驾驶席上，而是以类似 HUD 的形式出现在挡风玻璃上。乘客能够看到虚拟形象的反射，系统还会通过机器学习生成表情，让口型与合成语音同步，甚至可以 在说话时把视线转向正在交流的乘客 。 乘客还可以选择自己的“司机”。系统 可以根据车内乘员定制虚拟形象 ，让乘客更容易接受无人驾驶车辆。 Stellantis 还设想了一种更进一步的应用， 让真人远程驾驶员通过同一套系统“出现在”车内 。在车辆驶出运行设计域，或者道路上出现系统难以处理的异常情况时，自动驾驶汽车或仍需人工接管。 远程操作员介入时，不会只是从后台接管车辆。车内投影设备还会",
+     "image": "https://img.ithome.com/newsuploadfiles/2024/9/2224c7ea-9f08-4559-959b-8937b3aa5c8a.png?x-bce-process=image/auto-orient,o_1",
+     "id": "3579a59afbea",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0031",
+   "title": "Canonical澄清Ubuntu在WSL上的使用情況",
+   "summary": "針對Ubuntu在Windows子系統Linux（WSL）上的使用是否超越原生安裝的疑問，Canonical的Jon Seager接受訪問時澄清相關數據與誤解。",
+   "category": "開源社群",
+   "importance": 2,
+   "keywords": [
+    "ubuntu",
+    "canonical",
+    "windows",
+    "outgrowing",
+    "native",
+    "installs"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI"
+   ],
+   "articles": [
+    {
+     "title": "Ubuntu on Windows outgrowing native installs? Not according to Canonical's Jon Seager",
+     "url": "https://www.zdnet.com/article/ubuntu-on-windows-outgrowing-native-installs-not-according-to-canonicals-jon-seager",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T07:44:00+00:00",
+     "summary": "There's some confusion about Ubuntu's popularity on Windows Subsystem for Linux, so I asked Canonical directly.",
+     "image": "",
+     "id": "e0290539904d",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0032",
+   "title": "T-Mobile推5G家用網路優惠：首月免費並回饋200美元",
+   "summary": "T-Mobile最新5G家用網路方案提供首月免費，並可獲得最高200美元回饋，且價格五年不變，吸引新用戶。",
+   "category": "產品與應用",
+   "importance": 1,
+   "keywords": [
+    "t-mobile",
+    "internet",
+    "back",
+    "200",
+    "month",
+    "home"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI"
+   ],
+   "articles": [
+    {
+     "title": "T-Mobile will cover your first month of 5G home internet and give you up to $200 back - here's how",
+     "url": "https://www.zdnet.com/article/t-mobile-5g-home-internet-deal-month-200-back",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T07:33:00+00:00",
+     "summary": "The latest T-Mobile 5G Home Internet offer will get you a first month on T-Mobile and up to $200 back, with a price that won't change for five years.",
+     "image": "",
+     "id": "bfdc58e429d2",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0033",
+   "title": "微軟暫停Win11 Copilot任務欄搜索框開發",
+   "summary": "微軟暫時移除Windows 11的Copilot任務欄搜索框功能，該功能僅向少數Microsoft 365 Copilot企業用戶預覽，微軟將資源集中於統一版Copilot應用開發。",
+   "category": "產品與應用",
+   "importance": 3,
+   "keywords": [
+    "copilot",
+    "win11",
+    "windows",
+    "microsoft",
+    "365"
+   ],
+   "image": "img/2026-08-19/ce3c8f0425ce1bc0.webp",
+   "llm_enriched": true,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "微软暂时停用 Win11 系统 Copilot 任务栏搜索框，聚焦统一版 Copilot 开发工作",
+     "url": "https://www.ithome.com/0/991/352.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-18T07:14:16+00:00",
+     "summary": "IT之家 8 月 18 日消息，据科技媒体 Windows Central 今天报道，微软暂时移除了 Win11 系统的 Copilot 任务栏搜索框，同时将更多精力放在统一版 Copilot 应用上。 IT之家从原报道获悉，微软曾于去年更新 Windows 11 的任务栏，允许用户将原来的普通搜索框替换成 Copilot 搜索框，让用户直接从任务栏与 Copilot 互动，同时继续支持搜索应用和文件。 目前该功能仅通过预览形式向少数用户开放，大多数能用到该功能的人都是 Microsoft 365 Copilot 企业用户，微软已经在几个月前将普通消费者版本停用。 据悉，这两种搜索框由微软不同团队开发。其中 Windows 搜索由 Windows 团队负责，而 Copilot 搜索框则由 Copilot 和 Microsoft 365 AI 团队负责。 微软对此表示：“ 我们将暂时停用任务栏的‘询问 Copilot’ ，未来将带来全新体验并持续收集用户反馈。”",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/384e5661-9dc2-47b0-a787-8d63c7897124.jpg",
+     "id": "99a1ad25c453",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0034",
+   "title": "Google Workspace 預設讓 Gemini 存取企業資料，管理員可關閉",
+   "summary": "Google 在 Workspace 中預設啟用 Gemini 對 Gmail、Docs、Calendar、Chat 等服務的資料存取，引發企業隱私疑慮。管理員可透過設定關閉此功能，以保護敏感資料。",
+   "category": "安全與倫理",
+   "importance": 4,
+   "keywords": [
+    "workspace",
+    "disable",
+    "default",
+    "unless",
+    "business",
+    "data"
+   ],
+   "image": "",
+   "llm_enriched": true,
+   "sources": [
+    "ZDNet AI"
+   ],
+   "articles": [
+    {
+     "title": "Google's AI can see your business data by default in Workspace - unless you disable it",
+     "url": "https://www.zdnet.com/article/googles-ai-can-see-your-business-data-by-default-in-workspace-unless-you-disable-it",
+     "source": "ZDNet AI",
+     "lang": "en",
+     "published": "2026-08-18T07:11:00+00:00",
+     "summary": "In Google Workspace, Gemini has access to Gmail, Docs, Calendar, Chat, and more by default. Here's why it matters, and how administrators can disable it today.",
+     "image": "",
+     "id": "ff12b59b626a",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0036",
-   "title": "AI系統AxiomProver首次自動驗證「246定理」證明",
-   "summary": "Axiom Math團隊利用其AI系統AxiomProver，首次自動驗證了與質數相關的「246定理」證明，這是AI輔助數學研究的重要里程碑。該系統能檢查機器可讀版本的證明，顯示AI在形式驗證領域的潛力。",
-   "category": "模型與研究",
+   "title": "百度發布 Q2 財報，AI 業務收入占比過半，文心將重回第一梯隊",
+   "summary": "百度 2026 年第二季總營收 313 億元，AI 業務收入占比 50%，GPU 雲收入年增 283%。執行長李彥宏表示文心將重回 AI 第一梯隊，並計畫年底前完成香港主要上市。",
+   "category": "企業與資金",
    "importance": 4,
    "keywords": [
-    "proof",
-    "used",
-    "verify",
-    "toughest",
-    "mathematics",
-    "yet"
+    "baidu"
    ],
-   "image": "img/2026-08-18/4481fe5c3a2d1091.webp",
+   "image": "",
    "llm_enriched": true,
    "sources": [
-    "IEEE Spectrum AI"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "AI Used to Verify Toughest Mathematics Proof Yet",
-     "url": "https://spectrum.ieee.org/axiom-math-246-theorem-formalization",
-     "source": "IEEE Spectrum AI",
-     "lang": "en",
-     "published": "2026-08-17T05:00:02+00:00",
-     "summary": "Representing a significant milestone in AI-assisted mathematical research, a team at Axiom Math has automatically verified the proof of a theorem relating to prime numbers—colloquially referred to as the “246 theorem”—for the first time using the company’s AI system AxiomProver. In formal verification, mathematicians task a computer with checking a machine-readable version of a proof. The process is not a 100 percent guarantee that the proof is correct, as a recent demonstration showed , exposing how a bug in the method could be exploited to accept a false, AI-generated proof. Still, the compu",
-     "image": "https://spectrum.ieee.org/media-library/abstract-illustration-of-several-long-arrows-stacked-horizontally-parallel-to-one-another-each-arrow-has-one-plotted-point-in-a.jpg?id=67608532&width=980",
-     "id": "bd16150d59d0",
-     "tags": [
-      "Mathematics",
-      "Prime-numbers",
-      "Ai-reasoning",
-      "Ai-generated-software"
-     ]
+     "title": "百度 2026 Q2 业绩会实录：文心将重回 AI 第一梯队，年底前完成香港主要上市",
+     "url": "https://www.ithome.com/0/991/340.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-08-18T06:26:56+00:00",
+     "summary": "百度发布 2026 年第二季度财报，季度总营收 313 亿元；百度一般性业务收入 252 亿元，其中 AI 业务收入占比 50%，已连续两季占比过半。本季度，AI 云基础设施中 GPU 云同比增长 283%，连续四个季度实现三位数增长。 财报发布后，百度董事长兼 CEO 李彦宏，移动生态事业群总裁罗戎，智能云事业群总裁沈抖，CFO 何海建等高管出席随后召开的财报电话会议，解读财报要点并回答分析师提问。 以下为本次电话会议分析师问答环节的主要内容： 摩根大通分析师 Alex Yao： 感谢管理层接受我的提问。随着数万亿参数的大模型快速涌现，不断刷新基准测试的性能上限，百度如何看待文心在此处的竞争定位？在近期引进资深基础大模型人才之后，文心的核心技术与产品重点是什么？投资者应当对它下一阶段的发展抱有怎样的预期？谢谢。 首先，从行业视角来看，基础大模型仍在快速迭代。大致每隔几个月，就会有不同模型在某些能力上取得领先。这表明该领域依旧高度变化，竞争格局远远没有尘埃落定。在这样的市场当中，我们认为长期竞争力往往归结于持续的技术投入、以应用为驱动的思路以及耐心。百度一直是一家相信技术、并且愿意对技术做长期投入的公司。过往经验反复证明，有价值的技术创新需要耐心和坚持。如今，百度很多重要的人工智能资产，包括昆仑芯以及萝卜快跑，都是超过十余年持续投入的成果。它们已经成为我们差异化竞争力的核心来源，并",
+     "image": "",
+     "id": "106fb622d2d2",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0037",
-   "title": "OpenAI GPT-5.6 Sol被譽為最佳視覺模型",
-   "summary": "根據Roboflow部落格文章，OpenAI的GPT-5.6 Sol被認為是迄今為止最優秀的視覺模型，引發Hacker News社群熱烈討論，獲得293點與151則評論。該模型在視覺任務上的表現備受矚目。",
-   "category": "模型與研究",
-   "importance": 4,
+   "title": "蘋果 iOS 26.6.1 修補 29 個安全漏洞，建議用戶盡快更新",
+   "summary": "蘋果釋出 iOS 26.6.1 更新，連同 macOS 和 iPadOS 修補共 29 個安全漏洞，防止裝置遭入侵或崩潰。用戶應盡快安裝以確保安全。",
+   "category": "安全與倫理",
+   "importance": 3,
    "keywords": [
-    "gpt",
-    "sol",
-    "vision",
-    "ever",
-    "released",
-    "url"
+    "amazon",
+    "ios",
+    "patches",
+    "flaws",
+    "install",
+    "26.6.1"
    ],
-   "image": "img/2026-08-18/ba438dea66463f86.webp",
+   "image": "",
    "llm_enriched": true,
    "sources": [
-    "Hacker News (100+)"
+    "ZDNet AI"
    ],
    "articles": [
     {
-     "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
-     "url": "https://blog.roboflow.com/openai-gpt-5-6",
-     "source": "Hacker News (100+)",
+     "title": "Apple's iOS 26.6.1 patches 29 security flaws - here's why you'll want to install it",
+     "url": "https://www.zdnet.com/article/apples-ios-26-6-1-29-security-flaws",
+     "source": "ZDNet AI",
      "lang": "en",
-     "published": "2026-08-17T04:09:42+00:00",
-     "summary": "Article URL: https://blog.roboflow.com/openai-gpt-5-6/ Comments URL: https://news.ycombinator.com/item?id=49329575 Points: 293 # Comments: 151",
+     "published": "2026-08-18T06:12:00+00:00",
+     "summary": "Along with MacOS and iPadOS, the latest update to iOS fixes a host of security bugs that could otherwise leave your device vulnerable to compromise or crashes.",
      "image": "",
-     "id": "a511bed68f3b",
+     "id": "ec4d89c7eedc",
      "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0038",
+   "title": "Warp 推出 Warp Factories，打造 AI 開發的軟體工廠",
+   "summary": "Warp 發布新基礎設施系統 Warp Factories，旨在簡化 AI 軟體工廠的建置流程，讓開發者能快速啟動 AI 專案。",
+   "category": "產品與應用",
+   "importance": 3,
+   "keywords": [
+    "warp",
+    "software",
+    "system",
+    "out-of-the-box",
+    "factory",
+    "factories"
+   ],
+   "image": "img/2026-08-19/b844fe35f9b53d1d.webp",
+   "llm_enriched": true,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Warp’s new system is an out-of-the-box software factory for AI development",
+     "url": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-18T06:00:00+00:00",
+     "summary": "On Tuesday, Warp introduced Warp Factories, a new infrastructure system designed to make building AI software factories as easy as possible.",
+     "image": "",
+     "id": "7e9a207261ee",
+     "tags": [
+      "AI",
+      "AI coding tools",
+      "warp"
+     ]
     }
    ]
   }
