@@ -1,943 +1,824 @@
 {
- "generated_at": "2026-08-30T08:10:11.706758+08:00",
- "date": "2026-08-30",
+ "generated_at": "2026-08-31T08:10:25.427287+08:00",
+ "date": "2026-08-31",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
- "topic_count": 27,
- "article_count": 28,
+ "topic_count": 24,
+ "article_count": 25,
  "topics": [
   {
-   "key": "t0003",
-   "title": "Sony Music and Warner Chappell are suing Anthropic",
-   "summary": "Sony Music and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "sony",
-    "warner",
-    "music",
-    "anthropic",
-    "amazon",
-    "chappell"
-   ],
-   "image": "img/2026-08-30/87604e4f60e068f9.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
-     "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-29T10:41:59+00:00",
-     "summary": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
-     "image": "",
-     "id": "4d9cf7893a2e",
-     "tags": [
-      "AI",
-      "Anthropic"
-     ]
-    },
-    {
-     "title": "Sony Music and Warner Chappell are suing Anthropic",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-08-29T10:19:53+00:00",
-     "summary": "Sony Music and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance when identifiable copyright data was stripped. In total, the […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "202512972a82",
-     "tags": [
-      "AI",
-      "Anthropic",
-      "Entertainment",
-      "Law",
-      "Music"
-     ]
-    }
-   ]
-  },
-  {
    "key": "t0000",
-   "title": "Introducing Hy4 Preview",
-   "summary": "Introducing Hy4 Preview New open weight text input (no vision) LLM from Chinese company Tencent today: 770B total parameters, 49B active parameters, 1M token context window, 1.56TB on Hugging Face . This is a big size increase from their previous Hy3 in July, which was 295B, 21B ",
+   "title": "Understanding ChatGPT Work",
+   "summary": "OpenAI announced ChatGPT Work on July 9th, and have been furiously iterating on it ever since. It is an extraordinarily confusing and very powerful product. Here's what I've figured out about it so far. ChatGPT Work is actually two products The more interesting version of ChatGPT",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "hy4",
-    "tencent",
-    "preview",
-    "reasoning",
-    "effort",
-    "opensource"
+    "chatgpt",
+    "work",
+    "openai",
+    "understanding",
+    "app",
+    "called"
    ],
-   "image": "img/2026-08-30/48d31e29b3c4998e.webp",
+   "image": "img/2026-08-31/00b53c658ace5337.webp",
    "llm_enriched": false,
    "sources": [
+    "數位時代",
     "Simon Willison"
    ],
    "articles": [
     {
-     "title": "Introducing Hy4 Preview",
-     "url": "https://simonwillison.net/2026/Aug/29/hy4",
+     "title": "懶人福音！ChatGPT Work 新增「代操網站」功能，這19件事以後不用自己來",
+     "url": "https://www.bnext.com.tw/article/92047/chatgpt-work-sign-in-websites",
+     "source": "數位時代",
+     "lang": "zh",
+     "published": "2026-08-30T23:00:00+00:00",
+     "summary": "ChatGPT Work 升級！能跨越登入牆「代客操作網站」，包辦預約看診、保險核銷等 19 項雜務。官方強調全程不留帳密，兼顧便利與隱私。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-08/efnj-1788091961.jpg?w=900&output=webp",
+     "id": "54d1c07bf4ab",
+     "tags": []
+    },
+    {
+     "title": "Understanding ChatGPT Work",
+     "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
      "source": "Simon Willison",
      "lang": "en",
-     "published": "2026-08-29T15:53:13+00:00",
-     "summary": "Introducing Hy4 Preview New open weight text input (no vision) LLM from Chinese company Tencent today: 770B total parameters, 49B active parameters, 1M token context window, 1.56TB on Hugging Face . This is a big size increase from their previous Hy3 in July, which was 295B, 21B active, 256,000 context, 598GB. I recently started using model chat templates to better understand their capabilities. Here's Hy4's chat_template.jinja on Hugging Face, which includes this section: {% - if not reasoning_effort is defined %} {% - set reasoning_effort = 'high' %} {% - elif reasoning_effort not in [ 'high",
-     "image": "https://static.simonwillison.net/static/2026-08-29/IMG_7725.jpeg",
-     "id": "bf0f613e910a",
+     "published": "2026-08-30T15:59:47+00:00",
+     "summary": "OpenAI announced ChatGPT Work on July 9th, and have been furiously iterating on it ever since. It is an extraordinarily confusing and very powerful product. Here's what I've figured out about it so far. ChatGPT Work is actually two products The more interesting version of ChatGPT Work is the one that runs in the cloud. This can be accessed via chatgpt.com or through the ChatGPT mobile apps. Let's call it Work Cloud . If you install the ChatGPT desktop app - the app that used to be called Codex - you gain access to a thing called ChatGPT Work that can access files and run programs directly on y",
+     "image": "https://static.simonwillison.net/static/2026-08-30/IMG_7741.jpeg",
+     "id": "d20b99a49a7d",
      "tags": [
       "ai",
+      "openai",
       "generative-ai",
-      "llms",
-      "pelican-riding-a-bicycle",
-      "llm-reasoning"
+      "chatgpt",
+      "llms"
      ]
     }
    ]
   },
   {
    "key": "t0001",
-   "title": "荣耀 Magic8 系列手机首发的 AI 追色功能迎升级，新增支持类“调色盘”新玩法",
-   "summary": "IT之家 8 月 30 日消息，据荣耀研发工程师 @荣耀曹工 分享，荣耀 Magic8 系列手机上首发的 AI 追色功能， 云端算法一直在持续升级 。 他透露， AI 追色的调节功能最近还上线了一个类似“调色盘”的新玩法 ，可以分“影调”和“颜色”来调整等级。另外，随着 OS 大版本和新产品推进，相机和图库在功能和设计上也一直在持续迭代上线。 IT之家了解到，去年 9 月，荣耀官宣与高通联合研发的高效能端侧 AI 模型方案，带来了新一代向量化检索技术，以及更准确高效的端侧多模态感知能力。用户只需一句话驱动智能体，就可以实现“检索目标图片、关键色提取、对目",
+   "title": "Claude記憶功能大升級！Chat與Cowork正式互通Memory，支援即時儲存與手動編輯",
+   "summary": "Claude 的記憶打通了：聊天裡講過的專案背景，交辦給 Cowork 時直接沿用，反之亦然。記憶改成邊聊邊存，且每一則都看得到、改得動、刪得掉。",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "magic8"
+    "cowork",
+    "anthropic",
+    "claude",
+    "chat",
+    "memory"
    ],
-   "image": "img/2026-08-30/a9b56950ac878ebd.webp",
+   "image": "img/2026-08-31/47feb5047e4235a3.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "數位時代"
    ],
    "articles": [
     {
-     "title": "荣耀 Magic8 系列手机首发的 AI 追色功能迎升级，新增支持类“调色盘”新玩法",
-     "url": "https://www.ithome.com/0/996/058.htm",
-     "source": "IT之家",
+     "title": "Claude記憶功能大升級！Chat與Cowork正式互通Memory，支援即時儲存與手動編輯",
+     "url": "https://www.bnext.com.tw/article/92048/claude-memory-chat-cowork-unified",
+     "source": "數位時代",
      "lang": "zh",
-     "published": "2026-08-29T15:18:24+00:00",
-     "summary": "IT之家 8 月 30 日消息，据荣耀研发工程师 @荣耀曹工 分享，荣耀 Magic8 系列手机上首发的 AI 追色功能， 云端算法一直在持续升级 。 他透露， AI 追色的调节功能最近还上线了一个类似“调色盘”的新玩法 ，可以分“影调”和“颜色”来调整等级。另外，随着 OS 大版本和新产品推进，相机和图库在功能和设计上也一直在持续迭代上线。 IT之家了解到，去年 9 月，荣耀官宣与高通联合研发的高效能端侧 AI 模型方案，带来了新一代向量化检索技术，以及更准确高效的端侧多模态感知能力。用户只需一句话驱动智能体，就可以实现“检索目标图片、关键色提取、对目标图片精准追色”的一系列动作。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/f04560e1-8f37-4fb7-9cdd-6f62e573e359.png?x-bce-process=image/format,f_auto",
-     "id": "419cb405c97f",
+     "published": "2026-08-30T23:00:00+00:00",
+     "summary": "Claude 的記憶打通了：聊天裡講過的專案背景，交辦給 Cowork 時直接沿用，反之亦然。記憶改成邊聊邊存，且每一則都看得到、改得動、刪得掉。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-08/ka1x-1788092333.jpg?w=900&output=webp",
+     "id": "eb31e6fad84e",
      "tags": []
     }
    ]
   },
   {
    "key": "t0002",
-   "title": "iOS 27 版 Siri AI 上线前，苹果 CarPlay 已接入 4 个第三方 AI 应用",
-   "summary": "IT之家 8 月 30 日消息，科技媒体 9to5Mac 昨日（8 月 29 日）发布博文，报道称在苹果 Siri AI 上线之前， 苹果车联方案 CarPlay 目前已接入支持 4 款 AI 聊天机器人。 IT之家援引博文介绍，苹果自 iOS 26.4 起支持对话类应用接入 CarPlay，计划在今年 9 月推出 iOS 27 后，将 Siri AI 纳入该平台。 最新消息称继 ChatGPT、Perplexity、Grok 之后，苹果 CarPlay 界面出现 Meta AI，成为第 4 款接入 CarPlay 的第三方 AI 聊天机器人应用。 此次",
+   "title": "NVIDIA傳天價收購Hugging Face　防堵與收編兩手策略為何",
+   "summary": "NVIDIA在發布2QFY27財報之際，傳出已同意斥資129億美元收購全球知名開放權重人工智慧（AI）模型平台Hugging Face。消息若屬實，凸顯NVIDIA不僅加強對AI領域的...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "carplay",
-    "ios",
-    "siri",
-    "meta",
-    "apple",
-    "xai"
+    "hugging",
+    "face",
+    "opensource",
+    "nvidia",
+    "funding",
+    "qfy27"
    ],
-   "image": "img/2026-08-30/7423ea2625e84b50.webp",
+   "image": "img/2026-08-31/9504f2cf4dac47e0.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "iOS 27 版 Siri AI 上线前，苹果 CarPlay 已接入 4 个第三方 AI 应用",
-     "url": "https://www.ithome.com/0/996/057.htm",
-     "source": "IT之家",
+     "title": "NVIDIA傳天價收購Hugging Face　防堵與收編兩手策略為何",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000766628_NVQ714OU1E6DD89V6RVOU&wpidx=5",
+     "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-29T15:11:16+00:00",
-     "summary": "IT之家 8 月 30 日消息，科技媒体 9to5Mac 昨日（8 月 29 日）发布博文，报道称在苹果 Siri AI 上线之前， 苹果车联方案 CarPlay 目前已接入支持 4 款 AI 聊天机器人。 IT之家援引博文介绍，苹果自 iOS 26.4 起支持对话类应用接入 CarPlay，计划在今年 9 月推出 iOS 27 后，将 Siri AI 纳入该平台。 最新消息称继 ChatGPT、Perplexity、Grok 之后，苹果 CarPlay 界面出现 Meta AI，成为第 4 款接入 CarPlay 的第三方 AI 聊天机器人应用。 此次接入尚未全面开放。报道显示，部分用户虽然能在 CarPlay 中看到 Meta AI 图标，但启动时会出现“当前账号暂不支持 Meta AI 体验”的提示。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/8341028f-76fc-44a5-80be-73d326217717.png",
-     "id": "0783c1760033",
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "NVIDIA在發布2QFY27財報之際，傳出已同意斥資129億美元收購全球知名開放權重人工智慧（AI）模型平台Hugging Face。消息若屬實，凸顯NVIDIA不僅加強對AI領域的...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766628-1-6rvou_l.jpg",
+     "id": "540a450b0bfc",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0003",
+   "title": "中國量子運算跨入AI決策層　國光量超推大模型「玄冪」",
+   "summary": "中國正將量子運算融合生成式AI，將運算效能延伸至AI決策。中國量子科技新創國光量超近期推出「玄幂」大模型，將量子運算導入大型語言模型（LLM）決策與推理流程，鎖定...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-08-31/a30353ccb497350c.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "中國量子運算跨入AI決策層　國光量超推大模型「玄冪」",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000766619_PF87YGJ60DOMUWLTAWT4J&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "中國正將量子運算融合生成式AI，將運算效能延伸至AI決策。中國量子科技新創國光量超近期推出「玄幂」大模型，將量子運算導入大型語言模型（LLM）決策與推理流程，鎖定...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766619-1-awt4j_l.jpg",
+     "id": "8d5db8b8ff3b",
      "tags": []
     }
    ]
   },
   {
    "key": "t0004",
-   "title": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
-   "summary": "Vijay Pande — who left a16z's roughly $4 billion biotech practice last year to start the much smaller, AI-native VZVC — talks about why biology is finally shifting from a \"discovery\" science to an \"engineering\" one, why clinical trials are still brutally expensive, and why he thi",
+   "title": "華為投標埃及AI資料中心開發案　美國擬組隊反制",
+   "summary": "華為被美國制裁多年，在全球市場的布局卻未曾停歇。近年華為自研昇騰晶片嶄露頭角，不僅目標成為中國業者的「國產替代」方案，更在北京的外交政策支持之下，進攻海外市場...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "vijay",
-    "pande",
-    "billion",
-    "a16z",
-    "year",
-    "doing"
+    "huawei",
+    "datacenter",
+    "chip"
    ],
-   "image": "img/2026-08-30/35edadb35eb76b26.webp",
+   "image": "img/2026-08-31/d3e886684587de91.webp",
    "llm_enriched": false,
    "sources": [
-    "TechCrunch AI"
+    "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
-     "url": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-29T09:36:47+00:00",
-     "summary": "Vijay Pande — who left a16z's roughly $4 billion biotech practice last year to start the much smaller, AI-native VZVC — talks about why biology is finally shifting from a \"discovery\" science to an \"engineering\" one, why clinical trials are still brutally expensive, and why he thinks open, shared datasets (not walled-off ones) are what will actually let AI transform medicine.",
-     "image": "",
-     "id": "2555789944ab",
-     "tags": [
-      "AI",
-      "Biotech & Health",
-      "TC",
-      "Andreessen Horowitz",
-      "Vijay Pande"
-     ]
+     "title": "華為投標埃及AI資料中心開發案　美國擬組隊反制",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=9&id=0000766689_8YF7NQ1R78IH5YLZI6UMU&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "華為被美國制裁多年，在全球市場的布局卻未曾停歇。近年華為自研昇騰晶片嶄露頭角，不僅目標成為中國業者的「國產替代」方案，更在北京的外交政策支持之下，進攻海外市場...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766689-1-i6umu_l.jpg",
+     "id": "3d1e65f9654e",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0005",
-   "title": "AI 設計「胞內抗體」有望為阿茲海默症、巴金森氏症與漸凍症開啟新療法",
-   "summary": "英國艾塞克斯大學（University of Essex）運用人工智慧（AI）重新設計抗體，開發出可直接在人類 […]",
+   "title": "三星股東回饋創高、DX員工爭獎酬　記憶體榮景放大內部分配難題",
+   "summary": "人工智慧（AI）記憶體超級榮景，正在三星電子（Samsung Electronics）內部製造新的獎酬難題。就在三星8月21日宣布，2026年股東回饋財源預估達90兆~110兆韓元（65...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "university",
-    "essex"
+    "samsung",
+    "hbm",
+    "electronics",
+    "110"
    ],
-   "image": "img/2026-08-30/29b82f30563e4d36.webp",
+   "image": "img/2026-08-31/5c1f7151499ecc9b.webp",
    "llm_enriched": false,
    "sources": [
-    "科技新報 TechNews"
+    "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "AI 設計「胞內抗體」有望為阿茲海默症、巴金森氏症與漸凍症開啟新療法",
-     "url": "https://technews.tw/2026/08/30/ai-designed-intrabodies-could-unlock-new-treatments-for-alzheimers-parkinsons-and-mnd",
-     "source": "科技新報 TechNews",
+     "title": "三星股東回饋創高、DX員工爭獎酬　記憶體榮景放大內部分配難題",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000766280_1973W1SA7VK5JC1MO1X1A&wpidx=5",
+     "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-29T08:00:30+00:00",
-     "summary": "英國艾塞克斯大學（University of Essex）運用人工智慧（AI）重新設計抗體，開發出可直接在人類 […]",
-     "image": "",
-     "id": "9da359af82f6",
-     "tags": [
-      "AI 人工智慧",
-      "生物科技",
-      "醫療科技",
-      "亨丁頓舞蹈症",
-      "基因療法"
-     ]
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "人工智慧（AI）記憶體超級榮景，正在三星電子（Samsung Electronics）內部製造新的獎酬難題。就在三星8月21日宣布，2026年股東回饋財源預估達90兆~110兆韓元（65...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766280-1-o1x1a_l.jpg",
+     "id": "34f6c5b823b9",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0006",
-   "title": "韩国政府计划向全体国民提供免费 AI 服务",
-   "summary": "IT之家 8 月 29 日消息，据《华尔街日报》昨天报道，韩国政府计划向全体国民提供免费生成式 AI 服务，帮助民众处理预约医疗、寻找住房、办理税务等日常事务。 IT之家从原报道了解到，韩国政府的“All for AI”计划将于 9 月开启 Beta 测试， 并计划今年晚些时候扩大覆盖人口 。该计划由韩国两大电信运营商，以及韩国最大消费互联网平台 Kakao 牵头推进。 据悉，韩国这项的 AI 服务将与政府系统进行对接，居民可利用服务预约医生、搜索公寓并获取税务方面指导。小型企业可利用其计算税款、政策优惠，家长可以获得教育内容推荐。 韩国三大科技联盟计划",
+   "title": "把工程師經驗變成AI能力　台灣製造知識成實體AI稀缺資產",
+   "summary": "人工智慧（AI）技術正快速迭代，和工業應用有關的實體AI（Physical AI）也獲得廣泛的關注，因為可重複性和可擴展性的工作都是AI的強項。全球四大會計師事務所之一的勤...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "chip",
-    "nvidia",
-    "beta",
-    "kakao"
+    "physical"
    ],
-   "image": "img/2026-08-30/f9532645a0fb01f5.webp",
+   "image": "img/2026-08-31/41bb8209826ecb5c.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "韩国政府计划向全体国民提供免费 AI 服务",
-     "url": "https://www.ithome.com/0/996/050.htm",
-     "source": "IT之家",
+     "title": "把工程師經驗變成AI能力　台灣製造知識成實體AI稀缺資產",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000766601_VK47MTMSLFARU32X0QMWO&wpidx=5",
+     "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-29T07:13:23+00:00",
-     "summary": "IT之家 8 月 29 日消息，据《华尔街日报》昨天报道，韩国政府计划向全体国民提供免费生成式 AI 服务，帮助民众处理预约医疗、寻找住房、办理税务等日常事务。 IT之家从原报道了解到，韩国政府的“All for AI”计划将于 9 月开启 Beta 测试， 并计划今年晚些时候扩大覆盖人口 。该计划由韩国两大电信运营商，以及韩国最大消费互联网平台 Kakao 牵头推进。 据悉，韩国这项的 AI 服务将与政府系统进行对接，居民可利用服务预约医生、搜索公寓并获取税务方面指导。小型企业可利用其计算税款、政策优惠，家长可以获得教育内容推荐。 韩国三大科技联盟计划各自推出 AI 应用，并将 AI 功能整合进现有产品。在政府的扶持下，用户可无限量使用服务， 不设 Token 限制 。 同时， 韩国政府计划分配最多 512 块英伟达 B200 芯片 ，帮助各大企业分摊运营成本。该国政府今年早些的一项调查显示，约四分之一的韩国人会为 AI 服务付费。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/3cb3538f-c355-47d3-9281-929ec943aefa.jpg?x-bce-process=image/format,f_auto",
-     "id": "38d9ab6af636",
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "人工智慧（AI）技術正快速迭代，和工業應用有關的實體AI（Physical AI）也獲得廣泛的關注，因為可重複性和可擴展性的工作都是AI的強項。全球四大會計師事務所之一的勤...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766601-1-0qmwo_l.jpg",
+     "id": "54fc5326f52a",
      "tags": []
     }
    ]
   },
   {
    "key": "t0007",
-   "title": "国家数据局：截至 7 月底，我国智算总规模达到 245 万 PFLOPS",
-   "summary": "IT之家 8 月 29 日消息，据新华社报道，8 月 29 日，国家数据局相关负责人在 2026 中国国际大数据产业博览会主题交流活动上表示，截至 2026 年 7 月底，全国智算总规模 达 245 万 PFLOPS（FP16） ，八大国家算力枢纽和三个算电协同发展区已建成智算规模占全国比重超 85%，已有 145 万 PFLOPS 智能算力纳入国家级监测调度平台监测范围，算力资源集约化利用、一体化调度能力不断增强。 IT之家注：PFLOPS（PetaFLOPS）代表 每秒执行 1000 万亿次浮点运算 。 下一步，国家数据局将继续优化算力布局提升供给能",
+   "title": "評析：黃仁勳出手前，為何美國沒有AI業者做開源模型？",
+   "summary": "2025年初DeepSeek橫空出世，重摔NVIDIA單日股價數千億美元，2026年夏天，中國模型業者月之暗面推出Kimi K3模型，不僅把美國晶片股打趴，甚至撕裂矽谷。<b...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "pflops",
-    "245",
-    "2026",
-    "2025",
-    "3400"
+    "deepseek",
+    "opensource",
+    "chip",
+    "nvidia",
+    "funding",
+    "kimi"
    ],
-   "image": "",
+   "image": "img/2026-08-31/dcd74a7385a71f78.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "国家数据局：截至 7 月底，我国智算总规模达到 245 万 PFLOPS",
-     "url": "https://www.ithome.com/0/996/044.htm",
-     "source": "IT之家",
+     "title": "評析：黃仁勳出手前，為何美國沒有AI業者做開源模型？",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000766236_GJT1G7GU42IDSG5XKBVVH&wpidx=5",
+     "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-29T06:08:47+00:00",
-     "summary": "IT之家 8 月 29 日消息，据新华社报道，8 月 29 日，国家数据局相关负责人在 2026 中国国际大数据产业博览会主题交流活动上表示，截至 2026 年 7 月底，全国智算总规模 达 245 万 PFLOPS（FP16） ，八大国家算力枢纽和三个算电协同发展区已建成智算规模占全国比重超 85%，已有 145 万 PFLOPS 智能算力纳入国家级监测调度平台监测范围，算力资源集约化利用、一体化调度能力不断增强。 IT之家注：PFLOPS（PetaFLOPS）代表 每秒执行 1000 万亿次浮点运算 。 下一步，国家数据局将继续优化算力布局提升供给能力，强化监测调度提高利用效率，深化算电协同，培育产业生态，全面推动算力高质量发展。 此外，国家数据发展研究院院长胡坚波 28 日在 2026 中国国际大数据产业博览会开幕式上表示，智能体应用带动词元服务加速发展。2025 年，我国智能体专利授权量超过 3400 件，增速是上一年的两倍以上，创新步伐明显加快。 相关阅读： 《 2025 年我国智能体专利授权量超过 3400 件，增速是上一年两倍以上 》",
-     "image": "",
-     "id": "100592ed0aed",
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "2025年初DeepSeek橫空出世，重摔NVIDIA單日股價數千億美元，2026年夏天，中國模型業者月之暗面推出Kimi K3模型，不僅把美國晶片股打趴，甚至撕裂矽谷。<b...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766236-1-kbvvh_l.jpg",
+     "id": "c08e2bf450d9",
      "tags": []
     }
    ]
   },
   {
    "key": "t0008",
-   "title": "一用户宏碁游戏本因 14900HX 过热送修后，免费升级至 U9 275HX + RTX 5070 Ti 最新款",
-   "summary": "IT之家 8 月 29 日消息，据 Wccftech 今日报道，一名宏碁掠夺者战斧 16（Predator Helios 16）游戏本用户因 i9-14900HX 处理器异常过热而送修后，意外获得了一次升级最新机型的机会。 Reddit 用户“Admirable_Job8155”今日发帖称，其原笔记本搭载英特尔酷睿 i9-14900HX、RTX 4080 和 32GB DDR5-5400 内存，新机则搭载酷睿 Ultra 9 275HX、RTX 5070 Ti 以及 32GB DDR5-6400 内存，同时屏幕从 LCD 升级为 240Hz OLED 面",
+   "title": "Wing無人機全美擴點加速　攜NVIDIA評估Jetson Orin Nano 2運算平台",
+   "summary": "NVIDIA於8月25日發表專為入門級邊緣AI與機器人應用設計的Jetson Orin Nano 2運算平台，預計於2027年上半正式出貨。而在發表日當天，NVIDIA一併公布相關合作夥伴...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "rtx",
-    "14900",
-    "275",
-    "5070",
-    "intel",
-    "predator"
+    "jetson",
+    "orin",
+    "nano",
+    "robot",
+    "wing",
+    "nvidia"
    ],
-   "image": "img/2026-08-30/1de84473cab2ad03.webp",
+   "image": "img/2026-08-31/a8d0561f234ad3c5.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "一用户宏碁游戏本因 14900HX 过热送修后，免费升级至 U9 275HX + RTX 5070 Ti 最新款",
-     "url": "https://www.ithome.com/0/996/043.htm",
-     "source": "IT之家",
+     "title": "Wing無人機全美擴點加速　攜NVIDIA評估Jetson Orin Nano 2運算平台",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000766667_2E75QV7B77JED665ZK51D&wpidx=5",
+     "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-29T05:56:51+00:00",
-     "summary": "IT之家 8 月 29 日消息，据 Wccftech 今日报道，一名宏碁掠夺者战斧 16（Predator Helios 16）游戏本用户因 i9-14900HX 处理器异常过热而送修后，意外获得了一次升级最新机型的机会。 Reddit 用户“Admirable_Job8155”今日发帖称，其原笔记本搭载英特尔酷睿 i9-14900HX、RTX 4080 和 32GB DDR5-5400 内存，新机则搭载酷睿 Ultra 9 275HX、RTX 5070 Ti 以及 32GB DDR5-6400 内存，同时屏幕从 LCD 升级为 240Hz OLED 面板。 据称，他之前的旧机在使用过程中经常出现 CPU 过热的情况，甚至只是播放 YouTube 视频等低负载任务时也会导致 CPU 温度突然升高，并伴随频繁的随机重启。 用户随后将旧机送至宏碁售后服务中心，希望售后人员帮忙重涂硅脂。服务中心原本表示一周后可以取机，但一周过去后用户并未收到通知，前往询问才得知，维修人员决定直接更换主板。 由于原机型已经停产，服务中心无法立即找到对应主板，且没有明确的维修时间。用户对此提出异议后，宏碁最终为其提供了一台最新型号的 Predator Helios 16-73 作为补偿。 这台新机搭载了英特尔酷睿 Ultra 9 275HX 处理器、NVIDIA GeForce RTX 5070 Ti La",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/0f861e2d-2be3-4f5e-8982-9e59d65928ab.jpg?x-bce-process=image/format,f_auto",
-     "id": "4aee923873bd",
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "NVIDIA於8月25日發表專為入門級邊緣AI與機器人應用設計的Jetson Orin Nano 2運算平台，預計於2027年上半正式出貨。而在發表日當天，NVIDIA一併公布相關合作夥伴...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766667-1-zk51d_l.jpg",
+     "id": "176c023d2a59",
      "tags": []
     }
    ]
   },
   {
    "key": "t0009",
-   "title": "英伟达“看中”Hugging Face，开放权重 AI 模型成硅谷热门收购目标",
-   "summary": "IT之家 8 月 29 日消息，据外媒 TechCrunch 今天（29 日）报道，英伟达有望完成本周最受瞩目的一笔科技交易。市场正等待公司确认一项据称价值 130 亿美元 （IT之家注：现汇率约合 876.47 亿元人民币） 的收购案，目标是开放权重 AI 模型平台 Hugging Face。 Hugging Face 承担着“AI 时代的 GitHub”这一角色，为不依附于头部 AI 实验室的模型提供开发、分享和部署生态。 英伟达近期连续把巨额资金投入这一领域。此前，该公司就与开放权重模型公司 Poolside 达成 60 亿美元 （现汇率约合 40",
+   "title": "不只拚擴產　上海「十五五」藍圖押注晶片、AI與先進封裝",
+   "summary": "上海市政府8月26日發布《上海市戰略性新興產業發展「十五五」規畫》，到2030年，戰略性新興產業增加值達人民幣2.1兆元，工業戰略性新興產業產值佔規模以上工業總產值...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "funding",
-    "hugging",
-    "face",
-    "opensource",
-    "chip"
+    "chip",
+    "2030",
+    "2.1"
    ],
-   "image": "",
+   "image": "img/2026-08-31/543904cec12317b6.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "英伟达“看中”Hugging Face，开放权重 AI 模型成硅谷热门收购目标",
-     "url": "https://www.ithome.com/0/996/041.htm",
-     "source": "IT之家",
+     "title": "不只拚擴產　上海「十五五」藍圖押注晶片、AI與先進封裝",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=9&id=0000766607_JTW5CHNN1FH36I6GSK75P&wpidx=5",
+     "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-29T05:39:19+00:00",
-     "summary": "IT之家 8 月 29 日消息，据外媒 TechCrunch 今天（29 日）报道，英伟达有望完成本周最受瞩目的一笔科技交易。市场正等待公司确认一项据称价值 130 亿美元 （IT之家注：现汇率约合 876.47 亿元人民币） 的收购案，目标是开放权重 AI 模型平台 Hugging Face。 Hugging Face 承担着“AI 时代的 GitHub”这一角色，为不依附于头部 AI 实验室的模型提供开发、分享和部署生态。 英伟达近期连续把巨额资金投入这一领域。此前，该公司就与开放权重模型公司 Poolside 达成 60 亿美元 （现汇率约合 404.52 亿元人民币） 协议，后者大部分员工将转投英伟达。 两周前，Stripe 又以超过 70 亿美元 （现汇率约合 471.94 亿元人民币） 收购 OpenRouter，而后者主要帮助企业接入开放权重模型。 一个以开放和免费分享成果为基础的领域突然 吸引如此庞大的资本 ，背后反映的是 AI 产业格局的变化。 英伟达需要降低对大型云服务商和头部 AI 实验室的依赖。OpenAI 和谷歌等模型厂商反过来也开始自研推理芯片，本周早些时候，OpenAI 就详细介绍了 Jalapeño。 模型公司大举进入芯片领域之际，英伟达也希望进入模型市场，从中分一杯羹。 英伟达自己拥有 Nemotron 开放权重模型系列，但目前采用规模有限。如果 ",
-     "image": "",
-     "id": "b77d79af6186",
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "上海市政府8月26日發布《上海市戰略性新興產業發展「十五五」規畫》，到2030年，戰略性新興產業增加值達人民幣2.1兆元，工業戰略性新興產業產值佔規模以上工業總產值...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766607-1-sk75p_l.jpg",
+     "id": "8a005e4fb147",
      "tags": []
     }
    ]
   },
   {
    "key": "t0010",
-   "title": "Anthropic 揭示“AI 训练 AI”新方法，比人类研究员成本更低、速度更快",
-   "summary": "IT之家 8 月 29 日消息， 用 AI 模型训练其他 AI 模型 ，正成为新一代 AI 实验室重点探索的方向。当地时间 28 日，Anthropic 研究员计划的一名研究人员展示了这种思路真正落地后可能呈现的样子。 Anthropic 发布了最新论文《自动化研究员能够可靠缓解对齐失效》，介绍如何利用 AI 系统改善模型在一系列对齐基准测试中的表现。研究团队针对 10 种具体的失调行为设置测试，自动化系统最终 让全部 10 项指标都有所改善，同时没有牺牲模型的整体能力 。 这套系统由 Anthropic 研究员计划成员陈岳翰（音译）领导开发，工作流程与",
+   "title": "NVIDIA參戰HBM競局　推客製化NVHBM、擴張NVLink Fusion戰略",
+   "summary": "隨著兆級參數（Trillion-parameter）大型語言模型（LLM）與代理式AI（Agentic AI）逐漸成為主流，AI基礎設施的效能瓶頸，也正從單純的「算力大小」，轉向運算、記憶...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "safety",
-    "aar"
+    "agent",
+    "nvhbm",
+    "nvlink",
+    "fusion",
+    "hbm",
+    "nvidia"
    ],
-   "image": "img/2026-08-30/b0b0ec1979f17207.webp",
+   "image": "img/2026-08-31/89e3e27ea725e799.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "DIGITIMES"
    ],
    "articles": [
     {
-     "title": "Anthropic 揭示“AI 训练 AI”新方法，比人类研究员成本更低、速度更快",
-     "url": "https://www.ithome.com/0/996/038.htm",
-     "source": "IT之家",
+     "title": "NVIDIA參戰HBM競局　推客製化NVHBM、擴張NVLink Fusion戰略",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000766573_GD661PD56CCY2W44TDO0N&wpidx=5",
+     "source": "DIGITIMES",
      "lang": "zh",
-     "published": "2026-08-29T05:25:27+00:00",
-     "summary": "IT之家 8 月 29 日消息， 用 AI 模型训练其他 AI 模型 ，正成为新一代 AI 实验室重点探索的方向。当地时间 28 日，Anthropic 研究员计划的一名研究人员展示了这种思路真正落地后可能呈现的样子。 Anthropic 发布了最新论文《自动化研究员能够可靠缓解对齐失效》，介绍如何利用 AI 系统改善模型在一系列对齐基准测试中的表现。研究团队针对 10 种具体的失调行为设置测试，自动化系统最终 让全部 10 项指标都有所改善，同时没有牺牲模型的整体能力 。 这套系统由 Anthropic 研究员计划成员陈岳翰（音译）领导开发，工作流程与传统科研相似。自动化系统会先查阅已有文献，提出训练方法，再按照方案训练模型 30 分钟，并通过多轮尝试逐步提高测试成绩。 有效方案会留下，无效方案则被淘汰，使整个研究过程能够快速扩大规模 。 论文指出，总体来看，这些结果初步证明，自动化对齐后训练有望在近期成为一种真正可行的方法。 这项研究也向递归自我改进迈出了一步，而许多人把递归自我改进视为 AI 发展的下一个重要阶段。如果 AI 模型能够改进自身的对齐训练方法，那么进一步改进更广泛的训练流程也并非没有可能。到了那一步，人类 AI 研究人员甚至可能逐渐失去存在的必要。 论文也直接比较了自动化对齐研究员（AAR）和人类研究人员的表现：“最优秀的 AAR 方法平均只需 6 小时，就能超",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/cea6ae3a-35f7-4d7b-b5dc-6c6060f5afe3.png?x-bce-process=image/format,f_auto",
-     "id": "5850b2892b03",
+     "published": "2026-08-30T16:00:00+00:00",
+     "summary": "隨著兆級參數（Trillion-parameter）大型語言模型（LLM）與代理式AI（Agentic AI）逐漸成為主流，AI基礎設施的效能瓶頸，也正從單純的「算力大小」，轉向運算、記憶...",
+     "image": "https://img.digitimes.com/newsimg/2026/0831/766573-1-tdo0n_l.jpg",
+     "id": "47a4e4d7857e",
      "tags": []
     }
    ]
   },
   {
    "key": "t0011",
-   "title": "Debian 社区议案表决：开发者可使用生成式 AI，人类负最终责任",
-   "summary": "IT之家 8 月 29 日消息，据科技媒体 Linuxiac 今天报道，Debian 社区的大语言模型投票议案近日迎来表决。投票结果显示，大部分开发者支持负责任地使用生成式 AI。 IT之家从原报道获悉，本次投票一共有 9 种选项，范围从完全禁止大语言模型辅助开发，到允许特定条件使用 AI。投票结果将影响 Debian 开发者工作方式，以及开发组未来如何应对新 AI 工具。 本次投票采用孔多塞投票制，第 5 个选项“负责任地使用生成式 AI”最终胜出。 同时， Debian 新政策并不禁止软件开发、文档编写流程使用生成式 AI 。该政策承认，人类可在负责",
+   "title": "企業深陷「AI 績效幻象」，研究示警：僅 5% 專案獲利，盲目跟風恐致營運危機",
+   "summary": "隨著生成式 AI 成為企業轉型的熱門關鍵字，職場卻也逐漸浮現一個日益明顯的怪象：企業評價的焦點不再是「成果本身 […]",
    "category": "其他",
    "importance": 3,
-   "keywords": [
-    "debian"
-   ],
-   "image": "img/2026-08-30/6260768170b642bc.webp",
+   "keywords": [],
+   "image": "img/2026-08-31/5f9e25d7e7d396f8.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "Debian 社区议案表决：开发者可使用生成式 AI，人类负最终责任",
-     "url": "https://www.ithome.com/0/996/035.htm",
-     "source": "IT之家",
+     "title": "企業深陷「AI 績效幻象」，研究示警：僅 5% 專案獲利，盲目跟風恐致營運危機",
+     "url": "https://finance.technews.tw/2026/08/31/companies-implementing-ai-misplaced-priorities",
+     "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-08-29T05:11:13+00:00",
-     "summary": "IT之家 8 月 29 日消息，据科技媒体 Linuxiac 今天报道，Debian 社区的大语言模型投票议案近日迎来表决。投票结果显示，大部分开发者支持负责任地使用生成式 AI。 IT之家从原报道获悉，本次投票一共有 9 种选项，范围从完全禁止大语言模型辅助开发，到允许特定条件使用 AI。投票结果将影响 Debian 开发者工作方式，以及开发组未来如何应对新 AI 工具。 本次投票采用孔多塞投票制，第 5 个选项“负责任地使用生成式 AI”最终胜出。 同时， Debian 新政策并不禁止软件开发、文档编写流程使用生成式 AI 。该政策承认，人类可在负责任地使用 AI 情况下，提升生产力，让开发者能够将更多精力放在其他任务上。 不过新政策要求，所有 AI 辅助生成的代码和文档，必须满足质量、法律合规要求， 最终责任由人类开发者承担 。 此外，Debian 不会强制贡献者标注其代码是否使用 AI。虽然官方鼓励披露，但并不要求必须注明。 相关阅读： 《 Debian 项目发起议案，讨论是否允许 AI 大模型参与开发 》",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/a702c626-9d47-46ac-9770-9694f400e089.jpg?x-bce-process=image/format,f_auto",
-     "id": "5af2c3a68c4e",
-     "tags": []
+     "published": "2026-08-30T15:40:48+00:00",
+     "summary": "隨著生成式 AI 成為企業轉型的熱門關鍵字，職場卻也逐漸浮現一個日益明顯的怪象：企業評價的焦點不再是「成果本身 […]",
+     "image": "",
+     "id": "4e243588e5e3",
+     "tags": [
+      "AI 人工智慧",
+      "人力資源",
+      "公司治理",
+      "職場",
+      "企業"
+     ]
     }
    ]
   },
   {
    "key": "t0012",
-   "title": "A week with the Google Pixel 11 changed my mind about Gemini (for the better)",
-   "summary": "In a year of iterative upgrades, Google is introducing smart features that make the base Pixel the standout in its generation.",
+   "title": "AI 推論瓶頸的突圍：從算力瓶頸轉向儲存階層的革新",
+   "summary": "大模型（LLM）與長文本 KV Cache 持續膨脹，再加上大規模的並發推理需求，使運算的效能瓶頸由算力轉向記 […]",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "pixel",
-    "google",
-    "week",
-    "changed",
-    "mind",
-    "gemini"
+    "compute",
+    "cache"
    ],
-   "image": "",
+   "image": "img/2026-08-31/7a79e722bb1f167c.webp",
    "llm_enriched": false,
    "sources": [
-    "ZDNet AI"
+    "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "A week with the Google Pixel 11 changed my mind about Gemini (for the better)",
-     "url": "https://www.zdnet.com/article/google-pixel-11-review",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-08-29T05:00:44+00:00",
-     "summary": "In a year of iterative upgrades, Google is introducing smart features that make the base Pixel the standout in its generation.",
+     "title": "AI 推論瓶頸的突圍：從算力瓶頸轉向儲存階層的革新",
+     "url": "https://technews.tw/2026/08/31/ai-inference-bottlenecks-breakthrough-from-compute-to-storage-hierarchy-innovation",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-08-30T15:00:23+00:00",
+     "summary": "大模型（LLM）與長文本 KV Cache 持續膨脹，再加上大規模的並發推理需求，使運算的效能瓶頸由算力轉向記 […]",
      "image": "",
-     "id": "4e0239f0b9c7",
-     "tags": []
+     "id": "c1030c164595",
+     "tags": [
+      "AI 人工智慧",
+      "半導體",
+      "技術分析",
+      "會員專區",
+      "記憶體"
+     ]
     }
    ]
   },
   {
    "key": "t0013",
-   "title": "Nvidia’s AI advantage is moving beyond the GPU",
-   "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
+   "title": "Uber 曾 4 個月燒完全年 AI 預算，後來怎麼管住 Agent 成本？",
+   "summary": "AI Agent（AI 代理）用得越多，企業的下一道難題也開始從怎麼導入，轉向怎麼控制成本。Uber 今年就碰上這個問題。《Fortune》5 月報導，Uber 前 4 個月便用完原先編列一整年的 AI coding 工具預算。但幾個月後，情況出現明顯反差。 Uber 近期公布，今年 2 月至 8 月，公司內每週 Agent 請求量成長 9.4 倍、活躍使用者增加 7 倍，超過 70% 的程式碼合併請求（pull request，PR）已有 Agent 參與，但整體 AI 支出自 4 月起維持穩定。若固定使用相同模型比較，每 1,000 次模型請求成本較",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "datacenter",
-    "advantage",
-    "moving",
-    "beyond",
-    "gpu",
-    "nvidia"
+    "uber",
+    "agent",
+    "session",
+    "token",
+    "fortune",
+    "coding"
    ],
-   "image": "img/2026-08-30/9a8f3bbd90f2c223.webp",
+   "image": "img/2026-08-31/dcccd5526eee45fa.webp",
    "llm_enriched": false,
    "sources": [
-    "TechCrunch AI"
+    "TechOrange 科技報橘"
    ],
    "articles": [
     {
-     "title": "Nvidia’s AI advantage is moving beyond the GPU",
-     "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-08-29T05:00:00+00:00",
-     "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
-     "image": "",
-     "id": "9764c79bea7c",
+     "title": "Uber 曾 4 個月燒完全年 AI 預算，後來怎麼管住 Agent 成本？",
+     "url": "https://techorange.com/2026/08/31/uber-ai-token-software-factory",
+     "source": "TechOrange 科技報橘",
+     "lang": "zh",
+     "published": "2026-08-30T14:09:00+00:00",
+     "summary": "AI Agent（AI 代理）用得越多，企業的下一道難題也開始從怎麼導入，轉向怎麼控制成本。Uber 今年就碰上這個問題。《Fortune》5 月報導，Uber 前 4 個月便用完原先編列一整年的 AI coding 工具預算。但幾個月後，情況出現明顯反差。 Uber 近期公布，今年 2 月至 8 月，公司內每週 Agent 請求量成長 9.4 倍、活躍使用者增加 7 倍，超過 70% 的程式碼合併請求（pull request，PR）已有 Agent 參與，但整體 AI 支出自 4 月起維持穩定。若固定使用相同模型比較，每 1,000 次模型請求成本較高點下降近 34%，每個工作階段（session）成本也較 6 月高點降低 52%。 也就是說，Uber 沒有靠減少 Agent 使用來控制帳單。從前 4 個月燒完全年預算，到 Agent 使用規模持續擴張、支出卻不再同步暴增，Uber 到底改了什麼？ Uber 先把一筆 Agent 帳單拆開，從使用者、session、互動輪次，到模型請求數、每次請求使用的 token 與 token 單價逐項檢視。在具體做法上，Uber […]",
+     "image": "https://techorange.com/app/uploads/2026/08/3ef1aef3b2419925-720x405.jpg",
+     "id": "71a6e57bff8c",
      "tags": [
-      "TC",
-      "AI",
-      "nvidia",
-      "GPU"
+      "AI 人工智慧"
      ]
     }
    ]
   },
   {
    "key": "t0014",
-   "title": "Anthropic 安全框架自动降级：Claude 误删开发者 700 GB 主目录，自动化清理反成灾难",
-   "summary": "IT之家 8 月 29 日消息，开发者 Sebastien Guillemot 本周三在 X 上反馈称，他在测试 AI 智能体的文件删除防护机制时遭遇严重事故，Claude 直接给他删除了大约 700GB 数据，包括整个用户主目录，相当于一周的工作成果。 据称，事故发生前，Anthropic 的安全机制因判断任务存在风险，自动将执行任务的模型降级至 Opus 4.8。 据介绍，他本人经常使用 AI 智能体，但他发现这些智能体完成任务后几乎从不清理临时目录中的文件，日积月累之下导致 /tmp 目录中存在大量垃圾。因此，他要求 Claude Fable 编写",
+   "title": "【科技早餐】OpenAI 11 月停止供應 Cursor 模型，SK 海力士逾 40 億美元美國 HBM 廠動工",
+   "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊OpenAI 11 月停止向 Cursor 供應模型，SpaceX 600 億美元收購後合作破局 OpenAI 宣布，計畫終止向 AI 程式開發工具 Cursor 提供旗下模型，擬於 11 月 12 日停止服務，並表示已依合約提供最長通知時間。Cursor 母公司 Anysphere 今年由馬斯克旗下 SpaceX 以 600 億美元收購，交易已於 8 月完成。OpenAI 表示，Cursor 控制權改變後，公司依據合約條款啟動終止程序，原因是過去與馬斯克旗下企業合作時曾出現違反合約及服務條款的情況，因",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "opus",
-    "fable",
-    "tmp",
-    "700",
-    "4.8",
-    "claude"
+    "cursor",
+    "openai",
+    "sk-hynix",
+    "anthropic",
+    "xai",
+    "spacex"
    ],
-   "image": "img/2026-08-30/565d3ca129ed0215.webp",
+   "image": "img/2026-08-31/ea7d3f3b6e8c50ed.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "TechOrange 科技報橘"
    ],
    "articles": [
     {
-     "title": "Anthropic 安全框架自动降级：Claude 误删开发者 700 GB 主目录，自动化清理反成灾难",
-     "url": "https://www.ithome.com/0/996/031.htm",
-     "source": "IT之家",
+     "title": "【科技早餐】OpenAI 11 月停止供應 Cursor 模型，SK 海力士逾 40 億美元美國 HBM 廠動工",
+     "url": "https://techorange.com/2026/08/31/openai-cursor-sk-hynix-hbm",
+     "source": "TechOrange 科技報橘",
      "lang": "zh",
-     "published": "2026-08-29T04:59:20+00:00",
-     "summary": "IT之家 8 月 29 日消息，开发者 Sebastien Guillemot 本周三在 X 上反馈称，他在测试 AI 智能体的文件删除防护机制时遭遇严重事故，Claude 直接给他删除了大约 700GB 数据，包括整个用户主目录，相当于一周的工作成果。 据称，事故发生前，Anthropic 的安全机制因判断任务存在风险，自动将执行任务的模型降级至 Opus 4.8。 据介绍，他本人经常使用 AI 智能体，但他发现这些智能体完成任务后几乎从不清理临时目录中的文件，日积月累之下导致 /tmp 目录中存在大量垃圾。因此，他要求 Claude Fable 编写一个脚本，将每个智能体在 /tmp 下创建独立目录，并在任务结束后自动清理对应文件。 核心难点在于确保如何不影响正在使用的文件。为了避免误删，Fable 最初建议加入检测正在运行的智能体、延迟清理对应目录等逻辑。不过他认为生成的代码过于复杂，要求智能体简化方案。 由于脚本涉及直接删除文件，Fable 随后自行进行了一次对抗性安全审查，让另一个实例检查删除逻辑是否存在风险。Anthropic 的安全执行环境随后认为该任务风险较高，并将模型从 Fable 5 自动降级至 Opus 5，最终又降至 Opus 4.8。 Opus 4.8 随后执行安全测试。测试过程中，模型尝试将删除命令的目标与 /tmp 以及用户主目录进行匹配，以确认删除操",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/0be22671-fc55-4f21-b18a-10e8953ceb2b.png?x-bce-process=image/format,f_auto",
-     "id": "8ab200c7b4e3",
-     "tags": []
+     "published": "2026-08-30T13:30:00+00:00",
+     "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊OpenAI 11 月停止向 Cursor 供應模型，SpaceX 600 億美元收購後合作破局 OpenAI 宣布，計畫終止向 AI 程式開發工具 Cursor 提供旗下模型，擬於 11 月 12 日停止服務，並表示已依合約提供最長通知時間。Cursor 母公司 Anysphere 今年由馬斯克旗下 SpaceX 以 600 億美元收購，交易已於 8 月完成。OpenAI 表示，Cursor 控制權改變後，公司依據合約條款啟動終止程序，原因是過去與馬斯克旗下企業合作時曾出現違反合約及服務條款的情況，因此無法確信 SpaceX 將依 OpenAI 的規範使用相關技術。 OpenAI 強調，這項決定並非因 Cursor 本身違反合約，而是所有權改變後重新評估合作風險。Cursor 執行長 Michael Truell 表示，公司仍持續與 OpenAI 討論，希望找到解決方案；另一家模型供應商 Anthropic 則表示，將擴大 Claude 模型對 Cursor 的支援。Cursor 本身採多模型策略，讓開發者可在不同 AI 模型之間選擇，OpenAI 若按計畫終止服務，將改變 […]",
+     "image": "https://techorange.com/app/uploads/2026/08/4280ca94141cbe0e-720x405.png",
+     "id": "680c2a250229",
+     "tags": [
+      "科技動態"
+     ]
     }
    ]
   },
   {
    "key": "t0015",
-   "title": "Musicians-turned-detectives are hunting for AI grifters",
-   "summary": "As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind",
+   "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+   "summary": "Elon Musk says a secretive new SpaceX foundry will let him cast his own turbine blades and get gas power online 18 months faster than anyone else — but it's a bet on a fuel source that's already triggering lawsuits and health studies everywhere his (and others') turbines have gon",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "musicians-turned-detectives",
-    "hunting",
-    "grifters",
-    "using",
-    "audio-focused",
-    "generative"
+    "amazon",
+    "musk",
+    "faster",
+    "gas",
+    "turbines",
+    "xai"
    ],
-   "image": "img/2026-08-30/4f592f03f31b6c27.webp",
+   "image": "img/2026-08-31/460cc55634e12dd0.webp",
    "llm_enriched": false,
    "sources": [
-    "The Verge AI"
+    "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "Musicians-turned-detectives are hunting for AI grifters",
-     "url": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
-     "source": "The Verge AI",
+     "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+     "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem",
+     "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-08-29T04:00:00+00:00",
-     "summary": "As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content immediately own up to using AI, others have denied using the technology […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268714_finding_and_shaming_AI_grifters_CVirginia.jpg?quality=90&#038;strip=all&#038;crop=0,0,85.33125,89.314310632479",
-     "id": "143903ddbe91",
+     "published": "2026-08-30T08:54:25+00:00",
+     "summary": "Elon Musk says a secretive new SpaceX foundry will let him cast his own turbine blades and get gas power online 18 months faster than anyone else — but it's a bet on a fuel source that's already triggering lawsuits and health studies everywhere his (and others') turbines have gone in.",
+     "image": "",
+     "id": "1e0d2ad7cf6c",
      "tags": [
       "AI",
-      "Creators",
-      "Entertainment",
-      "Music",
-      "Spotify"
+      "TC"
      ]
     }
    ]
   },
   {
    "key": "t0016",
-   "title": "OpenAI ChatGPT、Codex 现已支持连接多个谷歌 Gmail 账号",
-   "summary": "IT之家 8 月 29 日消息，OpenAI 开发者体验工程师 Gabriel Chua 今日确认， ChatGPT 和 Codex 用户现可连接多个谷歌 Gmail 和日历账号 。 据官方介绍，许多用户由于个人和工作安排，可能拥有多个 Gmail 或日历账户。此前 ChatGPT 和 Codex 只能连接一个 Google 账户，对用户来说较为不便。 如今 ChatGPT 和 Codex 支持多账户连接后，用户可以打开侧边栏的“插件”，找到 Gmail、Google 日历或 Google 联系人，然后添加多个账户。 IT之家注意到，ChatGPT 还可",
+   "title": "Texas Governor Abbott blocks funding for more Flock cameras",
+   "summary": "As backlash grows over Flock's AI surveillance cameras, Texas Governor Greg Abbott has frozen state spending on them. The move came just ahead of the publication of a Texas Tribune investigation that revealed the state spent over $30 million on Flock cameras. That money was prima",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "codex",
-    "gmail",
-    "chatgpt",
-    "google",
-    "openai",
-    "gabriel"
+    "texas",
+    "flock",
+    "governor",
+    "abbott",
+    "cameras",
+    "blocks"
    ],
-   "image": "img/2026-08-30/c241a8b40a8922a1.webp",
+   "image": "img/2026-08-31/7aeab86ba0744656.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "The Verge AI"
    ],
    "articles": [
     {
-     "title": "OpenAI ChatGPT、Codex 现已支持连接多个谷歌 Gmail 账号",
-     "url": "https://www.ithome.com/0/996/022.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-29T03:50:16+00:00",
-     "summary": "IT之家 8 月 29 日消息，OpenAI 开发者体验工程师 Gabriel Chua 今日确认， ChatGPT 和 Codex 用户现可连接多个谷歌 Gmail 和日历账号 。 据官方介绍，许多用户由于个人和工作安排，可能拥有多个 Gmail 或日历账户。此前 ChatGPT 和 Codex 只能连接一个 Google 账户，对用户来说较为不便。 如今 ChatGPT 和 Codex 支持多账户连接后，用户可以打开侧边栏的“插件”，找到 Gmail、Google 日历或 Google 联系人，然后添加多个账户。 IT之家注意到，ChatGPT 还可以在需要时，从多个已连接账户中提取相关信息，获得更加完整的通信、联系人关系和日程信息，据此提供更有用、更具上下文关联的回答。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/a04dfacf-fcde-4d4b-9e4e-727728637fa0.png?x-bce-process=image/format,f_auto",
-     "id": "6139b639fd55",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0017",
-   "title": "This pocket AI voice recorder took me back to the good old days of dictation (and shorthand)",
-   "summary": "The Comulytic Note Pro AI voice recorder packs a lot of power into a credit card-sized device. But its usefulness is up to you.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "voice",
-    "recorder",
-    "pocket",
-    "took",
-    "back",
-    "good"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "This pocket AI voice recorder took me back to the good old days of dictation (and shorthand)",
-     "url": "https://www.zdnet.com/article/comulytic-note-pro-ai-voice-recorder-review",
-     "source": "ZDNet AI",
+     "title": "Texas Governor Abbott blocks funding for more Flock cameras",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
+     "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-08-29T02:30:48+00:00",
-     "summary": "The Comulytic Note Pro AI voice recorder packs a lot of power into a credit card-sized device. But its usefulness is up to you.",
-     "image": "",
-     "id": "5d5104b77f8e",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0018",
-   "title": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
-   "summary": "Plus: Hackers target over 100 US water systems, ICE puts in an order for robot dogs, and you’ll never guess what “MrChildPorn” was arrested for.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "safety",
-    "cybersecurity",
-    "apocalypse",
-    "coming",
-    "months",
-    "giants"
-   ],
-   "image": "img/2026-08-30/df1e017fa8e4b170.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI"
-   ],
-   "articles": [
-    {
-     "title": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
-     "url": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-08-29T02:30:00+00:00",
-     "summary": "Plus: Hackers target over 100 US water systems, ICE puts in an order for robot dogs, and you’ll never guess what “MrChildPorn” was arrested for.",
-     "image": "https://media.wired.com/photos/6a921e363b3f20c2f80986f3/master/pass/Security-News-This-Week-The-AI-Cybersecurity-Apocalypse-Is-Coming.jpg",
-     "id": "ee794fedc6e2",
+     "published": "2026-08-30T07:35:10+00:00",
+     "summary": "As backlash grows over Flock's AI surveillance cameras, Texas Governor Greg Abbott has frozen state spending on them. The move came just ahead of the publication of a Texas Tribune investigation that revealed the state spent over $30 million on Flock cameras. That money was primarily raised by tacking a $1 fee onto insurance policies, […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268713_Americans_seem_to_agree_that_destroy_Flock_cameras_is_good_CVirginia.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "4538153b570f",
      "tags": [
-      "Security",
-      "Security / Security News",
-      "Security / Cyberattacks and Hacks",
-      "security roundup",
-      "Police"
+      "AI",
+      "News",
+      "Policy",
+      "Politics"
      ]
     }
    ]
   },
   {
-   "key": "t0019",
-   "title": "国内首个车载移动式词元工厂亮相，探索算电协同新模式",
-   "summary": "IT之家 8 月 29 日消息，据央视财经今天报道，国内首个车载移动式词元工厂近日亮相。它通过搭载国产算力和能源管理系统，更加灵活地匹配人工智能算力需求，同时探索算电协同新模式，既能帮助新能源消纳，又能降低算力运营成本。 IT之家从原报道获悉，这台车载移动式词元工厂采用标准化 40 尺集装箱，整车采用电算冷，存算网一体化设计。车头可采用电动牵引车，可支持 9 个机柜部署，具备电力与通讯一体化快接口，可实现多车快速组网部署，形成移动算力集群，从到场接入到完成调试运行只需 6-8 小时。 据悉， 该车在 120 千瓦供电情况下 ， 可提供大概 50P 到 1",
+   "key": "t0017",
+   "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+   "summary": "Caterpillar has spent decades putting autonomous machines to work at remote mining sites. It's now bringing that experience to AI deployment.",
    "category": "其他",
    "importance": 3,
-   "keywords": [],
-   "image": "img/2026-08-30/7392ae8e8c288e24.webp",
+   "keywords": [
+    "caterpillar",
+    "bringing",
+    "mining",
+    "deployment",
+    "learned",
+    "automating"
+   ],
+   "image": "img/2026-08-31/566a6b2025901853.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "国内首个车载移动式词元工厂亮相，探索算电协同新模式",
-     "url": "https://www.ithome.com/0/995/975.htm",
-     "source": "IT之家",
+     "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+     "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-08-30T07:00:00+00:00",
+     "summary": "Caterpillar has spent decades putting autonomous machines to work at remote mining sites. It's now bringing that experience to AI deployment.",
+     "image": "",
+     "id": "8cafc050dee1",
+     "tags": [
+      "AI",
+      "Enterprise",
+      "caterpillar",
+      "mining"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0018",
+   "title": "數發部五大AI政策上路一年，林宜敬盤點最新成果",
+   "summary": "數位發展部部長林宜敬近日在2026數位政府高峰會上，說明上任近一年來，如何運用五大政策工具，推動臺灣AI產業生態圈和主權AI的進展。 去年9月1日，林宜敬從政務次長，接任數發部部長一職，他在上任媒體茶敘中強調，數位發展部將透過算力、資料、人才、行銷、資金等五大政策工具，積極建構一個健康的軟體產業生態系，確保臺灣能在AI革命中佔據領先地位。 林宜敬指出：「科技的創新、突破與發展，必須來自於民間自由而公平的競爭，政府最重要的任務是，創造一個適合 AI 產業發展的生態系。」",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-08-31/a2777d70fba46aa6.webp",
+   "llm_enriched": false,
+   "sources": [
+    "iThome"
+   ],
+   "articles": [
+    {
+     "title": "數發部五大AI政策上路一年，林宜敬盤點最新成果",
+     "url": "https://www.ithome.com.tw/news/178528",
+     "source": "iThome",
      "lang": "zh",
-     "published": "2026-08-29T02:00:03+00:00",
-     "summary": "IT之家 8 月 29 日消息，据央视财经今天报道，国内首个车载移动式词元工厂近日亮相。它通过搭载国产算力和能源管理系统，更加灵活地匹配人工智能算力需求，同时探索算电协同新模式，既能帮助新能源消纳，又能降低算力运营成本。 IT之家从原报道获悉，这台车载移动式词元工厂采用标准化 40 尺集装箱，整车采用电算冷，存算网一体化设计。车头可采用电动牵引车，可支持 9 个机柜部署，具备电力与通讯一体化快接口，可实现多车快速组网部署，形成移动算力集群，从到场接入到完成调试运行只需 6-8 小时。 据悉， 该车在 120 千瓦供电情况下 ， 可提供大概 50P 到 100P 的算力 ，理论上可以支撑两个国产大模型推理任务。 当新能源大发出现低价电力时，算力车可移动至离新能源较近的变电站接入，提升新能源消纳，降低算力运行成本，据测算，用移动方式接入算力，整体成本降低 25% 左右，能够生产更具性价比的词元服务下游不同场景。 除此之外，车载移动式词元工厂还可以实现场站级快速部署，提供应急算力，也可以为大型基建项目实施期间提供弹性就近算力，满足灵活、低延迟的算力刚需，实现算力随着词元走。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/d06bef43-3368-424b-8d0c-05c4d8abfbce.png",
-     "id": "b16b033e16c4",
+     "published": "2026-08-30T04:08:11+00:00",
+     "summary": "數位發展部部長林宜敬近日在2026數位政府高峰會上，說明上任近一年來，如何運用五大政策工具，推動臺灣AI產業生態圈和主權AI的進展。 去年9月1日，林宜敬從政務次長，接任數發部部長一職，他在上任媒體茶敘中強調，數位發展部將透過算力、資料、人才、行銷、資金等五大政策工具，積極建構一個健康的軟體產業生態系，確保臺灣能在AI革命中佔據領先地位。 林宜敬指出：「科技的創新、突破與發展，必須來自於民間自由而公平的競爭，政府最重要的任務是，創造一個適合 AI 產業發展的生態系。」",
+     "image": "",
+     "id": "a1b787407af0",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0020",
-   "title": "How to Run a Chatbot on Your Own Computer",
-   "summary": "Installing a large language model on your personal computer gives you a handy digital assistant that won’t compromise your data privacy.",
+   "key": "t0019",
+   "title": "Inside Meta’s push to put robots to work in data centers",
+   "summary": "The company is testing robots on tasks that can performed by technicians.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "computer",
-    "run",
-    "chatbot",
-    "own",
-    "installing",
-    "large"
+    "meta",
+    "robots",
+    "datacenter",
+    "robot",
+    "inside",
+    "push"
    ],
-   "image": "img/2026-08-30/17fa0c67665beeac.webp",
+   "image": "img/2026-08-31/c649557b52751b14.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "Inside Meta’s push to put robots to work in data centers",
+     "url": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-08-30T03:03:47+00:00",
+     "summary": "The company is testing robots on tasks that can performed by technicians.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/data-center-server-room-500x500.jpg",
+     "id": "2295fda68b4a",
+     "tags": [
+      "AI",
+      "Biz & IT",
+      "ai data centers",
+      "data centers",
+      "Shoot Many Robots"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0020",
+   "title": "Why the Hottest New Wearables Want to Be Ignored",
+   "summary": "Burnt out on wrist buzzes and notification overload? A new crop of minimalist wearables promises to collect your health data without demanding your attention.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "wearables",
+    "hottest",
+    "want",
+    "ignored",
+    "burnt",
+    "wrist"
+   ],
+   "image": "img/2026-08-31/f8f4644d578ccf44.webp",
    "llm_enriched": false,
    "sources": [
     "Wired AI"
    ],
    "articles": [
     {
-     "title": "How to Run a Chatbot on Your Own Computer",
-     "url": "https://www.wired.com/story/how-to-run-your-own-local-llm",
+     "title": "Why the Hottest New Wearables Want to Be Ignored",
+     "url": "https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored",
      "source": "Wired AI",
      "lang": "en",
-     "published": "2026-08-29T02:00:00+00:00",
-     "summary": "Installing a large language model on your personal computer gives you a handy digital assistant that won’t compromise your data privacy.",
-     "image": "https://media.wired.com/photos/6a915ae02fa9a47ca7d480c1/master/pass/RunAChatbot.jpg",
-     "id": "08fcecf340ae",
+     "published": "2026-08-30T02:30:00+00:00",
+     "summary": "Burnt out on wrist buzzes and notification overload? A new crop of minimalist wearables promises to collect your health data without demanding your attention.",
+     "image": "https://media.wired.com/photos/6a8f1c5ba84e455f12fd962b/master/pass/NoScreenWearable.jpg",
+     "id": "7617cf862e1d",
      "tags": [
       "Gear",
-      "Gear / How To and Advice",
-      "chatbots",
-      "artificial intelligence",
-      "how-to"
+      "Gear / Gear News and Events",
+      "Gear / Products / Watches",
+      "Gear / Products / Health and Fitness",
+      "fitbit"
      ]
     }
    ]
   },
   {
    "key": "t0021",
-   "title": "推广 Claude 遭网友狂喷，加拿大博主称使用 AI 正成为社交禁忌",
-   "summary": "IT之家 8 月 29 日消息，据《商业内幕》今天报道，位于加拿大渥太华的社交媒体创作者艾玛 · 奥尔洪（IT之家注：Emma Orhun）近期因推广 Claude 人工智能助手，遭遇网友差评轰炸。 她对此表示：“我一个人在公寓时，大量尖锐的评论突然涌入。最开始一小时我很害怕，而我身边又没有人，他们说得对吗？不对吗？难道是我疯了吗？” 随后艾玛在播客节目《互联网已死》谈到了这段经历，结果又遭遇一轮批评。她的一位老粉对此表示，AI 对地球有害，还有人立刻点了取消关注。 艾玛表示：“当你对别人吼叫，告诉他们‘我是对的，你是错的’，甚至说‘你是个烂人’，这种方",
+   "title": "AI 吃電怪獸逼出全球電網重整！全球瘋搶變壓器，台廠靠快交期突圍",
+   "summary": "當電力從營運成本，升級為決定算力高低的戰略要角，站在供應鏈前端的電力設備商，地位也跟著翻轉。對長期被視為傳統產 […]",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "claude"
-   ],
-   "image": "img/2026-08-30/fd921d7177186a43.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "推广 Claude 遭网友狂喷，加拿大博主称使用 AI 正成为社交禁忌",
-     "url": "https://www.ithome.com/0/995/969.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-08-29T01:35:02+00:00",
-     "summary": "IT之家 8 月 29 日消息，据《商业内幕》今天报道，位于加拿大渥太华的社交媒体创作者艾玛 · 奥尔洪（IT之家注：Emma Orhun）近期因推广 Claude 人工智能助手，遭遇网友差评轰炸。 她对此表示：“我一个人在公寓时，大量尖锐的评论突然涌入。最开始一小时我很害怕，而我身边又没有人，他们说得对吗？不对吗？难道是我疯了吗？” 随后艾玛在播客节目《互联网已死》谈到了这段经历，结果又遭遇一轮批评。她的一位老粉对此表示，AI 对地球有害，还有人立刻点了取消关注。 艾玛表示：“当你对别人吼叫，告诉他们‘我是对的，你是错的’，甚至说‘你是个烂人’，这种方式根本无法让双方达成任何共识。” 显然艾玛并不是唯一一位推广 AI，而被粉丝抵制的人。今年 7 月底，OpenAI 在纽约北部邀请了几十名社交媒体创作者，讨论如何使用 AI 并举办一场养蜂讲座。 这些博主发布印有 OpenAI 品牌的蜂蜜罐照片后，他们的评论区涌入大量愤怒的粉丝。有人将这场活动形容为“反乌托邦”，也有人称其“道德破产”。 艾玛当时在博客节目中认为，互联网的女性往往被当成“道德指南针”，她认为男性使用 AI 工具时，并不会受到同等程度的审视。 遭受网友批评后， 艾玛撤回了此前的观点 。 她指出部分男性博主也会因为推广 AI 被喷 ，因此这次推广引发的反应可能不涉及性别问题。 她担心这种情况如果发酵下去，人们可能会将 A",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/8/e227c8e1-4601-4671-b35c-a9f6b9b4d724.jpg?x-bce-process=image/format,f_auto",
-     "id": "6244d6282cf5",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0022",
-   "title": "首創「AI for All」全民免費代幣！韓國豪擲 10 兆韓元實現算力自由",
-   "summary": "韓國政府最新宣布計劃讓全體民眾免費使用生成式 AI 服務，目標是在讓更多韓國人連結到本土的 AI 聊天機器人， […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "robot",
     "compute"
    ],
-   "image": "img/2026-08-30/24d186a5ac6e0ae9.webp",
+   "image": "img/2026-08-31/8877df240ed209c2.webp",
    "llm_enriched": false,
    "sources": [
     "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "首創「AI for All」全民免費代幣！韓國豪擲 10 兆韓元實現算力自由",
-     "url": "https://finance.technews.tw/2026/08/29/ai-for-all",
+     "title": "AI 吃電怪獸逼出全球電網重整！全球瘋搶變壓器，台廠靠快交期突圍",
+     "url": "https://technews.tw/2026/08/30/ai-power-hungry-nature-forces-global-grid-overhaul-world-scrambles-transformers-taiwanese-firms-emerge-fast-delivery",
      "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-08-28T23:36:08+00:00",
-     "summary": "韓國政府最新宣布計劃讓全體民眾免費使用生成式 AI 服務，目標是在讓更多韓國人連結到本土的 AI 聊天機器人， […]",
+     "published": "2026-08-29T23:00:41+00:00",
+     "summary": "當電力從營運成本，升級為決定算力高低的戰略要角，站在供應鏈前端的電力設備商，地位也跟著翻轉。對長期被視為傳統產 […]",
      "image": "",
-     "id": "566055848748",
+     "id": "8758787241b3",
      "tags": [
       "AI 人工智慧",
-      "ChatGPT",
-      "Nvidia",
-      "OpenAI",
-      "國際觀察"
+      "國際觀察",
+      "能源科技",
+      "AI 資料中心",
+      "出口"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0022",
+   "title": "AI 化身「政治變色龍」，最新研究警告：大型語言模型恐加劇社會兩極化",
+   "summary": "隨著生成式 AI 普及，人們越來越依賴其獲取資訊與分析。然而，一項發表於《Scientific Reports […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "scientific",
+    "reports"
+   ],
+   "image": "img/2026-08-31/f7629b67816de9cd.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "AI 化身「政治變色龍」，最新研究警告：大型語言模型恐加劇社會兩極化",
+     "url": "https://technews.tw/2026/08/30/ai-ideological-chameleon-exacerbates-political-polarization",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-08-29T22:00:16+00:00",
+     "summary": "隨著生成式 AI 普及，人們越來越依賴其獲取資訊與分析。然而，一項發表於《Scientific Reports […]",
+     "image": "",
+     "id": "d391b40fb605",
+     "tags": [
+      "AI 人工智慧",
+      "國際觀察",
+      "數位內容",
+      "科技趣聞",
+      "AI 模型"
      ]
     }
    ]
   },
   {
    "key": "t0023",
-   "title": "科技巨頭的兩手策略：嚴打「AI 垃圾」，卻加速擁抱生成式未來",
-   "summary": "矽谷近來一面加強清理所謂的「AI 垃圾內容」（AI Slop），一面卻沒有放慢擁抱生成式技術的腳步。從音樂、社 […]",
+   "title": "IBM 與 OpenAI 建立策略合作關係，加速企業核心營運安全部署 AI",
+   "summary": "IBM 日前宣布與 OpenAI 建立策略合作夥伴關係。雙方將透過在企業核心營運及複雜工作流程中大規模應用人工 […]",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "slop"
-   ],
-   "image": "img/2026-08-30/86857cd9e46c1461.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "科技巨頭的兩手策略：嚴打「AI 垃圾」，卻加速擁抱生成式未來",
-     "url": "https://technews.tw/2026/08/29/tech-giants-ai-slop",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-08-28T23:30:19+00:00",
-     "summary": "矽谷近來一面加強清理所謂的「AI 垃圾內容」（AI Slop），一面卻沒有放慢擁抱生成式技術的腳步。從音樂、社 […]",
-     "image": "",
-     "id": "414443f9b55b",
-     "tags": [
-      "AI 人工智慧",
-      "數位內容",
-      "社群",
-      "網路",
-      "AI 垃圾"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0024",
-   "title": "馬斯克成導火線！OpenAI 擬斷供 Cursor，執行長稱模型僅占 5% 流量",
-   "summary": "基於過去與馬斯克旗下公司的合作經驗，OpenAI 表示，目前無法確信 SpaceX 未來會依照服務條款使用 OpenAI 技術，因此決定終止向 Cursor 供應 OpenAI 模型。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "cursor",
-    "xai",
-    "openai",
-    "spacex"
-   ],
-   "image": "img/2026-08-30/53c7293ac65a2faa.webp",
-   "llm_enriched": false,
-   "sources": [
-    "INSIDE"
-   ],
-   "articles": [
-    {
-     "title": "馬斯克成導火線！OpenAI 擬斷供 Cursor，執行長稱模型僅占 5% 流量",
-     "url": "https://www.inside.com.tw/article/42242-openai-cursor-spacex-model-supply-end",
-     "source": "INSIDE",
-     "lang": "zh",
-     "published": "2026-08-28T22:35:00+00:00",
-     "summary": "基於過去與馬斯克旗下公司的合作經驗，OpenAI 表示，目前無法確信 SpaceX 未來會依照服務條款使用 OpenAI 技術，因此決定終止向 Cursor 供應 OpenAI 模型。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/08/70bd0a56-df50-46ef-a03b-33a651852009.webp",
-     "id": "0f1f9e7d0ee0",
-     "tags": [
-      "人工智慧",
-      "馬斯克",
-      "SpaceX",
-      "OpenAI",
-      "Anthropic"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0025",
-   "title": "TestMu AI 推出 Agent Assurance，驗證 AI 代理程式能否安全上線",
-   "summary": "全球首個 Agentic AI 原生品質工程平台 TestMu AI（前稱 LambdaTest）今日宣布推出 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "testmu",
-    "agent",
-    "assurance",
-    "agentic",
-    "lambdatest"
-   ],
-   "image": "img/2026-08-30/fd451f999c21d348.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "TestMu AI 推出 Agent Assurance，驗證 AI 代理程式能否安全上線",
-     "url": "https://infosecu.technews.tw/2026/08/29/testmu-ai-agent-assurance-validates-safe-ai-agent-deployment",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-08-28T22:00:05+00:00",
-     "summary": "全球首個 Agentic AI 原生品質工程平台 TestMu AI（前稱 LambdaTest）今日宣布推出 […]",
-     "image": "",
-     "id": "ece1b5dd4739",
-     "tags": [
-      "AI 人工智慧",
-      "市場動態",
-      "資訊安全",
-      "Agent Assurance",
-      "AI 代理"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0026",
-   "title": "Zeabur 環境變數外洩！Anthropic、OpenAI、OpenRouter API 憑證遭盜用，官方公布輪替指南",
-   "summary": "Zeabur 創辦人林沅霖隨後公開致歉，表示團隊已逐一通知可能受到影響的使用者，並已配合上游廠商及執法機關進一步調查。對於使用者最關心的實際損失，Zeabur 表示仍需要時間完成影響範圍與個別損失核實，後續將進行賠償與相關處理，並承諾對此次事件負起責任。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "zeabur",
-    "api",
-    "openrouter",
-    "anthropic",
+    "ibm",
     "openai"
    ],
-   "image": "img/2026-08-30/bb73f8ef3d3d663c.webp",
+   "image": "",
    "llm_enriched": false,
    "sources": [
-    "INSIDE"
+    "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "Zeabur 環境變數外洩！Anthropic、OpenAI、OpenRouter API 憑證遭盜用，官方公布輪替指南",
-     "url": "https://www.inside.com.tw/article/42241-zeabur-environment-variable-leak-api-keys-stolen",
-     "source": "INSIDE",
+     "title": "IBM 與 OpenAI 建立策略合作關係，加速企業核心營運安全部署 AI",
+     "url": "https://infosecu.technews.tw/2026/08/30/ibm-openai-forge-strategic-partnership-accelerate-secure-ai-deployment-enterprise-core-operations",
+     "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-08-28T19:55:00+00:00",
-     "summary": "Zeabur 創辦人林沅霖隨後公開致歉，表示團隊已逐一通知可能受到影響的使用者，並已配合上游廠商及執法機關進一步調查。對於使用者最關心的實際損失，Zeabur 表示仍需要時間完成影響範圍與個別損失核實，後續將進行賠償與相關處理，並承諾對此次事件負起責任。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/08/dcb2d921-f5bf-4af4-a69e-f661d1b94557.webp",
-     "id": "e3779bdb83d0",
+     "published": "2026-08-29T22:00:13+00:00",
+     "summary": "IBM 日前宣布與 OpenAI 建立策略合作夥伴關係。雙方將透過在企業核心營運及複雜工作流程中大規模應用人工 […]",
+     "image": "",
+     "id": "5a5fdbbda76a",
      "tags": [
-      "人工智慧",
-      "資安",
-      "資安事件",
-      "Zeabur",
-      "憑證外洩"
+      "AI 人工智慧",
+      "ChatGPT",
+      "OpenAI",
+      "國際貿易",
+      "市場動態"
      ]
     }
    ]
