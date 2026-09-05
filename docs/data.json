@@ -1,1347 +1,324 @@
 {
- "generated_at": "2026-09-04T08:10:16.856527+08:00",
- "date": "2026-09-04",
+ "generated_at": "2026-09-05T08:10:13.575016+08:00",
+ "date": "2026-09-05",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
  "topic_count": 40,
- "article_count": 62,
+ "article_count": 56,
  "topics": [
   {
-   "key": "t0032",
-   "title": "Nvidia confirms it will buy Hugging Face for $12.9 billion",
-   "summary": "Nvidia said Hugging Face hosts over 3 million models and is used by over 18 million developers.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "hugging",
-    "face",
-    "opensource",
-    "nvidia",
-    "billion",
-    "12.9"
-   ],
-   "image": "img/2026-09-04/8b2253fa4af42079.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI",
-    "Wired AI",
-    "TechCrunch AI",
-    "The Verge AI",
-    "NVIDIA Blog"
-   ],
-   "articles": [
-    {
-     "title": "Nvidia buys Hugging Face, the GitHub of AI, for $13 billion",
-     "url": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-09-03T05:34:13+00:00",
-     "summary": "Nvidia says Hugging Face will stay open even as the chipmaker takes control of a key AI hub.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/09/hugging_face_3-500x500.jpg",
-     "id": "64bb67d3e4b5",
-     "tags": [
-      "AI",
-      "Hugging Face",
-      "NVIDIA",
-      "open-weight models",
-      "syndication"
-     ]
-    },
-    {
-     "title": "Nvidia’s Hugging Face Acquisition Is a $12.9 Billion Bet on Open-Source AI",
-     "url": "https://www.wired.com/story/nvidias-hugging-face-acquisition-is-a-dollar129-billion-bet-on-open-source-ai",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-09-03T04:43:09+00:00",
-     "summary": "The long-rumored deal will give the chip giant access to—and help it promote—a huge repository of open-source AI models and data sets.",
-     "image": "https://media.wired.com/photos/6a906df0a8a32784cdb5c100/master/pass/Nvidia-Throws-Major-Weight-Behind-Open-Weights-Business-2286326275.jpg",
-     "id": "fc2366331a78",
-     "tags": [
-      "Business",
-      "Business / Artificial Intelligence",
-      "NVIDIA",
-      "Jensen Huang",
-      "acquisitions"
-     ]
-    },
-    {
-     "title": "Nvidia confirms it will buy Hugging Face for $12.9 billion",
-     "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-03T04:42:45+00:00",
-     "summary": "Nvidia said Hugging Face hosts over 3 million models and is used by over 18 million developers.",
-     "image": "",
-     "id": "4f602ed541c7",
-     "tags": [
-      "AI",
-      "Hugging Face",
-      "Jensen Huang",
-      "Mergers and Acquisitions",
-      "nvidia"
-     ]
-    },
-    {
-     "title": "Nvidia is buying Hugging Face for almost $13 billion",
-     "url": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-09-03T04:12:06+00:00",
-     "summary": "Nvidia has agreed to buy Hugging Face for $12.93 billion, bringing one of the most popular hosting platforms for open-source AI models, datasets, and tools under the ownership of the world's biggest AI chipmaker. Hugging Face is an online platform founded in 2016 that gives AI developers a space to share their projects and data […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25835739/STKP210_JENSEN_HUANG_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "52a8d0c31484",
-     "tags": [
-      "AI",
-      "Business",
-      "News",
-      "Nvidia",
-      "Tech"
-     ]
-    },
-    {
-     "title": "NVIDIA to Acquire Hugging Face",
-     "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
-     "source": "NVIDIA Blog",
-     "lang": "en",
-     "published": "2026-09-03T03:56:49+00:00",
-     "summary": "I’m excited to announce that NVIDIA has agreed to acquire Hugging Face for $12,930,300,000. Together, we will scale Hugging Face’s platform, strengthen its infrastructure and expand access to AI for developers and institutions worldwide. Over the past decade, Clem, Julien, Thomas and the team at Hugging Face have built something remarkable: a vibrant home for […]",
-     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/09/hf-nvidia-partner_hf-nvidia-partner-press-1920x1080-2-842x450.png",
-     "id": "7f85661884a2",
-     "tags": [
-      "AI",
-      "Corporate",
-      "Software",
-      "Artificial Intelligence",
-      "High-Performance Computing"
-     ]
-    }
-   ]
-  },
-  {
    "key": "t0013",
-   "title": "Nobody Is Saying Why OpenAI and Anthropic Had Outages Today",
-   "summary": "ChatGPT, Claude, and Grok all suffered outages at nearly the exact same time for reasons that remain murky.",
+   "title": "OpenAI發表最危險也最聽話的GPT-6 Astra模型",
+   "summary": "OpenAI周四（9/3）正式發表新一代模型GPT-6 Astra，宣稱這是該公司目前最聰明、與使用者意圖最一致的模型，同時也是首個被評定達到《準備框架》（Preparedness Framework）「重大」（Critical）網路安全能力門檻的模型。",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "anthropic",
-    "xai",
-    "chatgpt",
-    "same",
-    "claude",
-    "grok"
-   ],
-   "image": "img/2026-09-04/5c8704b06935cbac.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI",
-    "Simon Willison",
-    "Ars Technica AI",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Nobody Is Saying Why OpenAI and Anthropic Had Outages Today",
-     "url": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-09-03T13:56:21+00:00",
-     "summary": "ChatGPT, Claude, and Grok all suffered outages at nearly the exact same time for reasons that remain murky.",
-     "image": "https://media.wired.com/photos/6a99e16fbf4e66136bddbc74/master/pass/Security_AWaveofOutagesHitsLeadingAIChatbots_v1-ezgif.com-video-to-gif-converter%20(2).gif",
-     "id": "bffa60bfa788",
-     "tags": [
-      "Security",
-      "Security / Security News",
-      "Business",
-      "Business / Artificial Intelligence",
-      "OpenAI"
-     ]
-    },
-    {
-     "title": "GPT‑6 Astra",
-     "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-09-03T12:18:41+00:00",
-     "summary": "GPT‑6 Astra GPT-6 Astra is \"rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and AWS\" - I've not tried it yet myself, so I don't have a great deal to say about it yet. It's going to be API priced at the same rate as Claude Fable 5 and 5.1: $10/million input and $50/million output. This is clearly OpenAI's Fable competitor, and appears to score higher than Fable on most of OpenAI's self-reported benchmarks. Most impressively, Astra scores 99.9% on the rec",
-     "image": "",
-     "id": "d7b11e781758",
-     "tags": [
-      "ai",
-      "openai",
-      "generative-ai",
-      "llms",
-      "llm-release"
-     ]
-    },
-    {
-     "title": "Four major AI models suffer rare overlapping downtime",
-     "url": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-09-03T10:10:19+00:00",
-     "summary": "Service interruptions hit ChatGPT, Claude, Grok, and Gemini practically simultaneously.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2197730159-500x500.jpg",
-     "id": "fa3adaabd5cf",
-     "tags": [
-      "AI",
-      "Google",
-      "Anthropic",
-      "ChatGPT",
-      "Claude"
-     ]
-    },
-    {
-     "title": "ChatGPT, Grok, and Claude all went down at the same time",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/989503/chatgpt-grok-claude-outage-down",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-09-03T07:35:14+00:00",
-     "summary": "OpenAI's ChatGPT, xAI's Grok, and Anthropic's Claude are back online after they all began experiencing issues around the same time on Thursday. At about 11AM ET, ChatGPT started returning error messages for users trying to use the chatbot, with its status page saying there were \"elevated errors across ChatGPT and Codex.\" In addition to preventing […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_A.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "6d91c5f5c6e3",
-     "tags": [
-      "AI",
-      "Apps",
-      "News",
-      "OpenAI",
-      "Tech"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0019",
-   "title": "Meta推出旗艦模型Muse Spark 1.3！汪滔稱「史上最大躍進」，發文狠嗆：Gemini誰啊？",
-   "summary": "Meta發布新旗艦模型Muse Spark 1.3，官方稱是史上最大效能躍進。其程式開發token用量大幅減少，獨立評測顯示每任務成本為同級最低。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "meta",
-    "muse",
-    "1.3",
-    "spark",
-    "paying",
-    "peek"
-   ],
-   "image": "img/2026-09-04/6269be9a6325eb50.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI",
-    "數位時代",
-    "TechOrange 科技報橘"
-   ],
-   "articles": [
-    {
-     "title": "Meta is paying to peek at how you use their latest AI model",
-     "url": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-03T10:19:56+00:00",
-     "summary": "For its new Muse Spark model, intended for operating coding and other agents, Meta is offering an explicit discount averaging out to about 95% for users who \"contribute\" to the development of future models by sharing their prompts and model outputs.",
-     "image": "",
-     "id": "6fc7b1c552f0",
-     "tags": [
-      "AI",
-      "Meta"
-     ]
-    },
-    {
-     "title": "Meta推出旗艦模型Muse Spark 1.3！汪滔稱「史上最大躍進」，發文狠嗆：Gemini誰啊？",
-     "url": "https://www.bnext.com.tw/article/92117/meta-muse-spark-1-3",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-09-03T03:40:00+00:00",
-     "summary": "Meta發布新旗艦模型Muse Spark 1.3，官方稱是史上最大效能躍進。其程式開發token用量大幅減少，獨立評測顯示每任務成本為同級最低。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/ueqj-1788406802.jpg?w=900&output=webp",
-     "id": "4f94109471c3",
-     "tags": []
-    },
-    {
-     "title": "Meta 推 Muse Spark 1.3，AI Agent 要長時間替人工作得先解決哪些問題？",
-     "url": "https://techorange.com/2026/09/03/meta-muse-spark-1-3-ai-agent",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-09-02T19:23:00+00:00",
-     "summary": "AI Agent 開始能連續處理數十、甚至數百個步驟後，模型好不好用，也不再只取決於最後能不能答對。它在過程中會不會反覆繞路、忘記前面的要求，能否正確使用工具、發現計畫有問題後自行修正，以及什麼時候應該把決定交回使用者，都會影響一項工作最後能不能順利完成。 Meta 在 9/2 推出 Muse Spark 1.3，就把這些「怎麼工作」的問題列為升級重點。Meta 這次除了公布 Muse Spark 1.3 在 coding 與 Agent 測試上的成績，也把「Agentic Workflows（代理工作流）」列為升級重點，說明模型如何處理長時間、多步驟任務。從模型訓練、工具使用到第三方 benchmark 的變化可以看出，前沿模型競爭正在進一步延伸到 Agent 完成工作的整個過程。 這些改進背後，也連著 Meta 更大的產品計畫。Meta AI 負責人 Alexandr Wang 向《Axios》表示，Muse Spark 1.3 在實際使用體驗上的進步，將有助於 Meta 發展未來的個人 AI Agent，包括其執行長 Zuckerberg 多次描繪、能全天候代表使用者工作並協助完成目標的 Agent。 少繞路、別忘記要求，Meta 開始最佳化 Agent 工作過程 當使用者交給 Muse Spark 1.3 一個開放式任務，Meta 表示，模型會利用工具從分散、甚至彼此衝突的",
-     "image": "https://techorange.com/app/uploads/2026/09/c23b24972cb56cd4-720x480.jpg",
-     "id": "cdd7b5eba6a1",
-     "tags": [
-      "AI 人工智慧"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0020",
-   "title": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
-   "summary": "OpenAI leaders think the company’s next generation model, which excels at computer use and coding, may mark a major milestone in AI development.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "model",
-    "era",
+    "gpt-6",
     "astra",
-    "computer",
-    "next",
-    "openai"
+    "safety",
+    "openai",
+    "altman",
+    "critical"
    ],
-   "image": "img/2026-09-04/03190be5b88a7f51.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI",
-    "TechCrunch AI",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
-     "url": "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-09-03T10:06:24+00:00",
-     "summary": "OpenAI leaders think the company’s next generation model, which excels at computer use and coding, may mark a major milestone in AI development.",
-     "image": "https://media.wired.com/photos/6a99abf8b2409d6188eae980/master/pass/GPT-6-Can-Use-Computer-Better-Than-Human-Business-1015939026.jpg",
-     "id": "50e30dd66df7",
-     "tags": [
-      "Business",
-      "Business / Artificial Intelligence",
-      "OpenAI",
-      "ai",
-      "artificial intelligence"
-     ]
-    },
-    {
-     "title": "OpenAI launches Astra, its powerful (and controversial) new model",
-     "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-03T10:01:45+00:00",
-     "summary": "OpenAI claims that Astra represents \"a new frontier on computer and browser use,\" and that it handles tasks with unmatched \"speed, accuracy, and safety.\"",
-     "image": "",
-     "id": "72dc509d2911",
-     "tags": [
-      "AI",
-      "TC",
-      "Astra",
-      "OpenAI"
-     ]
-    },
-    {
-     "title": "OpenAI’s next big AI model has ‘entered the AGI era’",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-09-03T10:00:00+00:00",
-     "summary": "OpenAI's next big model is here: GPT-6 Astra. The company calls it a \"generational leap in capability\" for areas like cybersecurity, professional work, software engineering, science, and computer use. As OpenAI announced earlier this week, it's also the first model designated as meeting OpenAI's \"critical cybersecurity capability threshold\" - but the company promises that won't […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS522_AGI_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "0e473f34711c",
-     "tags": [
-      "AI",
-      "Analysis",
-      "News",
-      "OpenAI",
-      "Report"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0038",
-   "title": "Gemini 3.8 Flash 上線，自主工程任務能力衝破 90%",
-   "summary": "Google 推出 Gemini 3.8 Flash，Terminal-Bench 跑分衝破 90 分，這是 Gemini 6 週內第 3 個 Flash 新版。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "flash",
-    "3.8",
-    "gemini",
-    "google"
-   ],
-   "image": "img/2026-09-04/99e49066ee12a892.webp",
-   "llm_enriched": false,
-   "sources": [
-    "數位時代",
-    "INSIDE",
-    "TechOrange 科技報橘"
-   ],
-   "articles": [
-    {
-     "title": "僅隔三週再升級！Google釋出Gemini 3.8 Flash與Cyber資安模型，搶攻「最聰明工作馬」定位",
-     "url": "https://www.bnext.com.tw/article/92116/google-gemini-3-8-flash-cyber",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-09-03T03:16:00+00:00",
-     "summary": "Google在六週內第三度升級Flash系列，同步端出限量版資安模型，宣稱能在2小時內挖出過去要耗費數月才能找到的重大漏洞。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/x66y-1788406452.jpg?w=900&output=webp",
-     "id": "7d48c161ba3d",
-     "tags": []
-    },
-    {
-     "title": "Gemini 3.8 Flash 上線，自主工程任務能力衝破 90%",
-     "url": "https://www.inside.com.tw/article/42285-google-gemini-3-8-flash",
-     "source": "INSIDE",
-     "lang": "zh",
-     "published": "2026-09-02T22:17:00+00:00",
-     "summary": "Google 推出 Gemini 3.8 Flash，Terminal-Bench 跑分衝破 90 分，這是 Gemini 6 週內第 3 個 Flash 新版。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2025/11/c5f61b27-df4e-48ea-962f-8bd762d522ba.jpg",
-     "id": "4cfa7c82234b",
-     "tags": [
-      "人工智慧",
-      "AI 代理人",
-      "Gemini 3.8 Flash",
-      "工程能力",
-      "Cyber 版"
-     ]
-    },
-    {
-     "title": "Gemini 3.8 Flash 軟體工程測試勝 Fable 5？Google 新模型上線：定價不變但 token 用量增",
-     "url": "https://techorange.com/2026/09/03/gemini-models-3-8-flash-cyber",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-09-02T20:11:02+00:00",
-     "summary": "Google 宣布推出 Gemini 3.8 Flash，距離前一代 Gemini 3.7 Flash 上線才過了幾週。Google 表示，新模型在處理複雜任務時會執行更多推理步驟，並反覆調用工具，整體處理能力較 Gemini 3.7 Flash 更進一步。新模型目前已開放一般使用者使用，但需訂閱 Google AI Pro 或 Ultra；開發者和企業用戶也能使用。 Gemini 3.8 Flash 上線引討論：token 用量增、實際成本恐比標價高？ 《The Verge》指出，Gemini 3.8 Flash 初始定價與 3.7 Flash 相同，每百萬個輸入 token 收費 0.75 美元，每百萬個輸出 token 收費 3.75 美元，不過實際使用成本仍可能更高。Google 表示，為了追求更好的效能，模型可能會使用更多 token，尤其是在調高運算投入程度時。開發者若希望控制 token 用量，仍可選擇 Gemini 3.7 Flash。 Gemini 3.8 Flash 推出後，也陸續引發外界關注。Artificial Analysis 將焦點放在模型的價格，指出 Gemini 3.8 […]",
-     "image": "https://techorange.com/app/uploads/2026/09/af97b11a8a0b0df1-720x466.png",
-     "id": "95a707904df0",
-     "tags": [
-      "AI 人工智慧"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0011",
-   "title": "OpenAI 宣布将向全球投入 10 亿美元扩大 AI 网络安全能力，优先覆盖供水、电力等关键服务",
-   "summary": "IT之家 9 月 4 日消息，OpenAI 今日宣布推出“Daybreak for Frontline Defenders”计划，承诺投入 10 亿美元 （现汇率约合 67.36 亿元人民币） ，为资源有限的网络安全防御团队提供 Daybreak 访问权限、培训、技术支持及合作服务，帮助其利用前沿 AI 保护供水、电力、地方政府和金融等关键服务。 IT之家注：Daybreak Access 是 OpenAI 的网络安全可信访问计划。Daybreak Blue 和 Daybreak Red 是两个访问级别。 OpenAI 表示，这项全球计划首先在美国展开，",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "daybreak",
-    "frontline",
-    "essential",
-    "protect",
-    "services",
-    "defenders"
-   ],
-   "image": "img/2026-09-04/f78a73972336f97e.webp",
+   "image": "img/2026-09-05/bbba35feb0558126.webp",
    "llm_enriched": false,
    "sources": [
     "IT之家",
-    "OpenAI"
+    "iThome",
+    "數位時代",
+    "The Verge AI",
+    "TechOrange 科技報橘",
+    "INSIDE"
    ],
    "articles": [
     {
-     "title": "OpenAI 宣布将向全球投入 10 亿美元扩大 AI 网络安全能力，优先覆盖供水、电力等关键服务",
-     "url": "https://www.ithome.com/0/998/212.htm",
+     "title": "OpenAI GPT-6 Astra 现已登陆 ChatGPT Work、Codex 及 API，率先向 Pro、Enterprise 及 Business Premium 用户开放",
+     "url": "https://www.ithome.com/0/998/626.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-09-03T14:56:43+00:00",
-     "summary": "IT之家 9 月 4 日消息，OpenAI 今日宣布推出“Daybreak for Frontline Defenders”计划，承诺投入 10 亿美元 （现汇率约合 67.36 亿元人民币） ，为资源有限的网络安全防御团队提供 Daybreak 访问权限、培训、技术支持及合作服务，帮助其利用前沿 AI 保护供水、电力、地方政府和金融等关键服务。 IT之家注：Daybreak Access 是 OpenAI 的网络安全可信访问计划。Daybreak Blue 和 Daybreak Red 是两个访问级别。 OpenAI 表示，这项全球计划首先在美国展开，并计划在未来数周扩展至合作国家。10 亿美元资金预计将在未来 6 个月内用于相关 Daybreak 服务，重点面向缺乏大型企业级安全资源的机构。 “Daybreak for America”将整合 OpenAI 在美国保护关键系统方面的相关工作，服务对象包括供水及污水处理系统、电网运营商、州和地方政府、社区及地区银行、非营利组织、开源项目维护者等。 OpenAI 称，这些机构往往需要在人员、预算和专业安全能力有限的情况下维护复杂且老旧的系统。Daybreak 可用于审查遗留代码、分析可疑活动、发现并验证漏洞、确定高风险问题优先级，以及开发和测试修复方案。 此次计划也延续了 OpenAI 此前针对美国供水系统的支持。在美国供水系统遭遇",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/06e33d78-5e49-419f-9b82-0e9204fe0f79.jpg?x-bce-process=image/format,f_auto",
-     "id": "97a6b1d7ec0e",
+     "published": "2026-09-04T14:42:42+00:00",
+     "summary": "IT之家 9 月 5 日消息，OpenAI 今日宣布，GPT-6 Astra 现已面向 ChatGPT Work 和 Codex 中的 Pro、Enterprise 及 Business Premium 用户开放，同时已上线 API。面向 Plus 和 Business 用户的推送可能还需要数日才能完成。 另外，在 ChatGPT 中，GPT-6 Pro 用户已经能够用上 GPT-6 Astra。目前 GPT-6 Pro 已向 Pro、Business 和 Enterprise 用户开放。 OpenAI 于当地时间 9 月 3 日发布了新一代人工智能模型 GPT-6 Astra，官方称其为该公司迄今能力最强的模型。 该模型在计算机操作、网页浏览、软件工程、网络安全、科学研究及专业工作等领域均达到当前最先进水平。OpenAI 总裁格雷格 · 布罗克曼（Greg Brockman）在表示“欢迎来到 AGI 时代”。 GPT-6 Astra 的上下文窗口达到 105 万 token（IT之家注：约可处理 1500 页 A4 纸大小的文本内容），最大输出长度为 12.8 万 token，知识截止时间为 2026 年 4 月 30 日。模型支持文本和图像输入以及文本输出，并集成了网页搜索、文件搜索、代码编写与执行等工具链。 在多项关键评测中，GPT-6 Astra 展现出大幅提升。代表高阶数",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/2866e0c8-a0ec-4a6c-8200-f0711ee71a37.png?x-bce-process=image/format,f_auto",
+     "id": "8efc0e4b0692",
      "tags": []
     },
     {
-     "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-     "url": "https://openai.com/index/daybreak-for-frontline-defenders",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-09-03T05:15:00+00:00",
-     "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
-     "image": "",
-     "id": "5190d2a1dccd",
-     "tags": [
-      "Security"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0023",
-   "title": "Nvidia launches free tool that links idle computers into a personal AI data center",
-   "summary": "Nvidia is announcing its new Personal AI Router (PAIR), a free tool that syncs up your home computers for tackling local AI inference tasks with tools like Ollama and LM Studio. Let's get the obvious thing out of the way, despite what its name might imply: PAIR is not a hardware ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "local",
-    "nvidia",
-    "free",
-    "computers",
-    "sparks",
-    "fly"
-   ],
-   "image": "img/2026-09-04/68bb169f324be4f5.webp",
-   "llm_enriched": false,
-   "sources": [
-    "NVIDIA Blog",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Sparks Fly: NVIDIA Accelerates Local AI at IFA 2026",
-     "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark",
-     "source": "NVIDIA Blog",
-     "lang": "en",
-     "published": "2026-09-03T08:00:59+00:00",
-     "summary": "Frontier intelligence is going local. At IFA 2026, NVIDIA, Microsoft and its partners are teaming up to provide faster inference and new tools that make agents easier to set up and run locally on NVIDIA hardware. New compact NVIDIA RTX Spark Windows PCs are also coming in October to give AI enthusiasts, developers and creators […]",
-     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/09/nv-blog-1280x680-1-842x450.jpg",
-     "id": "1d99173b7b22",
-     "tags": [
-      "AI",
-      "Agentic AI",
-      "Artificial Intelligence",
-      "DGX Spark",
-      "Local AI"
-     ]
-    },
-    {
-     "title": "Nvidia launches free tool that links idle computers into a personal AI data center",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-09-03T08:00:00+00:00",
-     "summary": "Nvidia is announcing its new Personal AI Router (PAIR), a free tool that syncs up your home computers for tackling local AI inference tasks with tools like Ollama and LM Studio. Let's get the obvious thing out of the way, despite what its name might imply: PAIR is not a hardware router. It's open-source software […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-03-at-10.42.02-AM.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "37ec33c253da",
-     "tags": [
-      "AI",
-      "IFA 2026",
-      "News",
-      "Nvidia",
-      "Tech"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0027",
-   "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-   "summary": "",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "weather",
-    "accurate",
-    "global",
-    "model",
-    "weathernext",
-    "introducing"
-   ],
-   "image": "img/2026-09-04/97ff38c7034ae48c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Google DeepMind",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-     "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
-     "source": "Google DeepMind",
-     "lang": "en",
-     "published": "2026-09-03T07:02:08+00:00",
-     "summary": "",
-     "image": "https://lh3.googleusercontent.com/I3SASQw4etgOOVbcWS0lr7J14HFqWcee_ln6M0TBOWlvVg2XYCi3kpz4eAi81cAkyq47YvgU1FLzAlaiCNMLcsx9sFA3ufURiSg76Yz8hVm1-u_fYEY=w528-h297-n-nu-rw-lo",
-     "id": "d75554c78e0f",
-     "tags": []
-    },
-    {
-     "title": "Google says its AI weather model is getting better",
-     "url": "https://www.theverge.com/tech/988921/weather-forecast-ai-model-google-satellite-update",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-09-03T07:00:00+00:00",
-     "summary": "Google is rolling out an updated AI weather model that's supposed to be more accurate, especially when it comes to predicting rain and snowfall. In the announcement today, the company says it's now able to make forecasts with \"unprecedented resolution\" using its new WeatherNext 3 AI model. It can produce a global picture that's five […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24016886/STK093_Google_03.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "0ab3b0e32fad",
-     "tags": [
-      "AI",
-      "Environment",
-      "Google",
-      "News",
-      "Science"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0046",
-   "title": "美國司法部聲援 OpenAI！主張訓練 LLM 屬合理使用，稱紐時勝訴恐威脅國安",
-   "summary": "美國司法部首度在 AI 著作權訴訟中表態，向法院遞交利益陳述書，主張以受著作權保護的文字訓練 LLM 構成合理使用，並稱相反的法律規則將威脅國家安全、讓外國對手取得競爭優勢。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-04/489b05e0661e2be1.webp",
-   "llm_enriched": false,
-   "sources": [
-    "INSIDE",
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "美國司法部聲援 OpenAI！主張訓練 LLM 屬合理使用，稱紐時勝訴恐威脅國安",
-     "url": "https://www.inside.com.tw/article/42282-doj-backs-openai-nyt-copyright-fair-use",
-     "source": "INSIDE",
+     "title": "OpenAI發表最危險也最聽話的GPT-6 Astra模型",
+     "url": "https://www.ithome.com.tw/news/178701",
+     "source": "iThome",
      "lang": "zh",
-     "published": "2026-09-02T20:11:00+00:00",
-     "summary": "美國司法部首度在 AI 著作權訴訟中表態，向法院遞交利益陳述書，主張以受著作權保護的文字訓練 LLM 構成合理使用，並稱相反的法律規則將威脅國家安全、讓外國對手取得競爭優勢。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/09/398e26c2-9ffb-4bf5-bf83-f5c3d9ea3e4c.webp",
-     "id": "8c6cad52e264",
+     "published": "2026-09-04T04:09:35+00:00",
+     "summary": "OpenAI周四（9/3）正式發表新一代模型GPT-6 Astra，宣稱這是該公司目前最聰明、與使用者意圖最一致的模型，同時也是首個被評定達到《準備框架》（Preparedness Framework）「重大」（Critical）網路安全能力門檻的模型。",
+     "image": "",
+     "id": "4abd728e5867",
+     "tags": []
+    },
+    {
+     "title": "GPT-6 Astra發布！數學與駭客測試近乎滿分，OpenAI高層宣告「AGI時代開端」",
+     "url": "https://www.bnext.com.tw/article/92131/gpt-6-astra-critical-cybersecurity-launch",
+     "source": "數位時代",
+     "lang": "zh",
+     "published": "2026-09-04T03:00:00+00:00",
+     "summary": "OpenAI發布GPT-6 Astra，首度跨越「Critical」資安門檻。新模型跑分創新高，但因可監控性下降，將採分階段開放。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/md7h-1788491191.jpg?w=900&output=webp",
+     "id": "8cfa21531806",
+     "tags": []
+    },
+    {
+     "title": "Sam Altman apologizes for ‘messy’ GPT-6 Astra rollout that’s locked out paying users",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-04T02:41:48+00:00",
+     "summary": "Just hours after OpenAI launched GPT-6 Astra, CEO Sam Altman was already apologizing for what he describes as a \"messy rollout\" after paying users expecting access to the new frontier model were left waiting. The company hailed the model as a \"generational leap in capability\" on Thursday and described it as the start of \"the […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285138968.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "38096b9b5a28",
      "tags": [
-      "科技政策與法律",
-      "人工智慧",
-      "紐約時報",
-      "著作權",
+      "AI",
+      "News",
       "OpenAI"
      ]
     },
     {
-     "title": "川普政府在OpenAI與紐時著作權爭議中力挺OpenAI",
-     "url": "https://www.ithome.com.tw/news/178681",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-09-02T20:09:37+00:00",
-     "summary": "美國司法部（Department of Justice）周二（9/1）向紐約南區聯邦法院提交「利益聲明」（Statement of Interest），在OpenAI著作權侵權合併訴訟中，明確表態支持OpenAI以受著作權保護的文章訓練AI模型屬於合理使用(Fair Use)，讓美國聯邦政府的立場首度浮上檯面。",
-     "image": "",
-     "id": "3dda2e8c5133",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0001",
-   "title": "英伟达 RTX Spark N1X 超级芯片在移动端提供 5120 核 GPU + 18 核 CPU 低配",
-   "summary": "IT之家 9 月 4 日消息，根据 NVIDIA（英伟达）官网更新，其面向 Windows on Arm PC 的 RTX Spark N1X 超级芯片处理器在笔记本电脑端提供 2 档配置，而 桌面主机上则仅有“满血”高配 。 可以看到，RTX Spark N1X 面向移动端提供了 5120 核 GPU + 18 核 CPU 的低配， GPU 规模较 6144 核高配缩减 1/6、CPU 则较 20 核高配减少 2 个核心 （IT之家注：NVIDIA 尚未公布 CPU 具体配置）。 值得注意的是， 早期电商泄露就提到了两个配置的 N1X ，不过那时是以 ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "cpu",
-    "gpu",
-    "rtx",
-    "n1x",
-    "ultra",
-    "chip"
-   ],
-   "image": "img/2026-09-04/d432973c8479b1fc.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "英伟达 RTX Spark N1X 超级芯片在移动端提供 5120 核 GPU + 18 核 CPU 低配",
-     "url": "https://www.ithome.com/0/998/240.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T16:06:22+00:00",
-     "summary": "IT之家 9 月 4 日消息，根据 NVIDIA（英伟达）官网更新，其面向 Windows on Arm PC 的 RTX Spark N1X 超级芯片处理器在笔记本电脑端提供 2 档配置，而 桌面主机上则仅有“满血”高配 。 可以看到，RTX Spark N1X 面向移动端提供了 5120 核 GPU + 18 核 CPU 的低配， GPU 规模较 6144 核高配缩减 1/6、CPU 则较 20 核高配减少 2 个核心 （IT之家注：NVIDIA 尚未公布 CPU 具体配置）。 值得注意的是， 早期电商泄露就提到了两个配置的 N1X ，不过那时是以 \"675\" \"650\" 这样的数字代号呈现。 相关阅读： 《 英伟达 RTX Spark Windows PC 主机下月上市，含宏碁、联想等 6 家 OEM 厂商产品 》 《 英伟达 RTX Spark 首批 Win11 Arm 驱动发布：最高 6144 个 Blackwell 核心，N1X PC 预计今秋登场 》 《 英伟达 N1X、N1 芯片规格泄露：10+10+48SM 与 8+4+20SM 》",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/d768e268-0dcd-4cad-909d-3f8a8f605e12.png",
-     "id": "597a26f380e9",
-     "tags": []
-    },
-    {
-     "title": "Omdia 预估苹果首款触控屏 MacBook 笔记本可配 M5 Ultra 芯片，实现“双 Ultra”",
-     "url": "https://www.ithome.com/0/998/218.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T15:10:57+00:00",
-     "summary": "IT之家 9 月 4 日消息，市场调查机构 Omdia 分析师 David Hsieh 预测， 苹果首款触控屏 MacBook 笔记本（上市后预估名为 MacBook Ultra）将会提供 M5 Ultra 芯片配置。 IT之家曾于 7 月援引彭博社的马克 · 古尔曼（Mark Gurman）报道， 苹果 MacBook Ultra 会采用 M5 Pro 或者 M5 Max 芯片 ，而 Hsieh 认为会提供更强悍的 M5 Ultra 芯片配置，实现“双 Ultra”。 不过科技媒体 MacRumors 指出，苹果从未在笔记本产品线中使用过 Ultra 级别芯片， M5 Ultra 目前仅用于 Mac Studio ，且依赖复杂散热系统，如果装备在笔记本中，在散热方面预估需要克服诸多挑战。 截至目前，苹果共推出四代 Ultra 级别芯片，全部仅用于台式机产品，从未应用于 MacBook 等笔记本电脑： 芯片型号 发布时间 首次应用产品 后续应用产品 关键特性 M1 Ultra 2022 年 3 月 Mac Studio (2022) 无 20 核 CPU、最高 64 核 GPU、819.2 GB/s 内存带宽、最高 128GB 统一内存 M2 Ultra 2023 年 6 月 Mac Studio (2023)、Mac Pro (2023) 无 24 核 CPU、最高 76 核 G",
-     "image": "",
-     "id": "2d8160fffb9e",
-     "tags": []
-    },
-    {
-     "title": "英伟达 RTX Spark 紧凑型 Win PC 主机下月上市，含宏碁、联想等 6 家 OEM 厂商产品",
-     "url": "https://www.ithome.com/0/998/202.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T08:00:06+00:00",
-     "summary": "IT之家 9 月 4 日消息，英伟达今天宣布， 全新 RTX Spark Windows PC 将于 10 月上市 ，为 AI 发烧友、开发者提供更多创作方式。 据介绍，英伟达合作伙伴已在 IFA 2026 大会上展示相关硬件。 全新发布的产品设计将与现有 6 家 OEM 厂商的产品一同于 10 月出货 。例如宏碁本次展示了 RTX Spark 高能效桌面主机的概念设计，联想则发布了 Yoga Pro 9n 和 Yoga 9n 二合一设备。 据官方介绍，RTX Spark 将搭载高能效 20 核 Grace CPU 以及至高 128GB 统一内存，还带有 RTX Blackwell GPU，算力可达 1 Petaflop（IT之家注：千万亿次浮点运算）。 RTX Spark 这款超级芯片可为高性能、轻薄且具备全天续航的笔记本电脑，以及小巧、高能效的桌面主机提供动力， 支持始终在线的智能体 。搭配全新 Windows Agent 框架，智能体可在操作系统级管控下安全地在后台运行。 除此之外， 英伟达今天还宣布推出免费开源的 Personal AI Router（PAIR）技术 ，可在本地网络的多台电脑之间智能分配 AI 推理任务。智能体工作流通常会将复杂任务拆分为可并行执行的小任务，但当所有推理请求都在争用同一块 GPU 时，性能可能会下降。 NVIDIA PAIR 可自动发现本地网",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/e8dd1251-9dee-49dc-92fe-bd0b8d20a9b1.png",
-     "id": "5e51340ac939",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0016",
-   "title": "OpenAI's GPT-6 Astra on ARC-AGI-3",
-   "summary": "Article URL: https://arcprize.org/blog/astra Comments URL: https://news.ycombinator.com/item?id=49555691 Points: 151 # Comments: 81",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "https",
-    "comments",
-    "url",
-    "news.ycombinator.com",
-    "item",
-    "points"
-   ],
-   "image": "img/2026-09-04/99c9de3802c6b5c1.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Hacker News (100+)"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI's GPT-6 Astra on ARC-AGI-3",
-     "url": "https://arcprize.org/blog/astra",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-09-03T11:45:00+00:00",
-     "summary": "Article URL: https://arcprize.org/blog/astra Comments URL: https://news.ycombinator.com/item?id=49555691 Points: 151 # Comments: 81",
-     "image": "",
-     "id": "389074cdbd59",
-     "tags": []
-    },
-    {
-     "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
-     "url": "https://inference-docs.cerebras.ai/models/overview",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-09-03T10:32:13+00:00",
-     "summary": "Article URL: https://inference-docs.cerebras.ai/models/overview Comments URL: https://news.ycombinator.com/item?id=49554520 Points: 412 # Comments: 125",
-     "image": "",
-     "id": "7e80672b84c6",
-     "tags": []
-    },
-    {
-     "title": "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
-     "url": "https://news.ycombinator.com/item?id=49551096",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-09-03T07:07:01+00:00",
-     "summary": "https://status.openai.com https://status.claude.com https://status.x.ai ChatGPT outage – Resolved - https://news.ycombinator.com/item?id=49550614 (315 comments) Claude outage – Resolved - https://news.ycombinator.com/item?id=49549676 (146 comments) Grok outage - https://news.ycombinator.com/item?id=49551589 (142 comments) Comments URL: https://news.ycombinator.com/item?id=49551096 Points: 320 # Comments: 515",
-     "image": "",
-     "id": "2d612f0c6e83",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0004",
-   "title": "IT早报 0904：ChatGPT、Claude 和 Grok 集体宕机近 4 小时；微信回应“好友超 1 万可查看单删好友”；时隔 6 年华为国行 5G 回归；微短剧统一标识苔花标发布...",
-   "summary": "“IT早报”时间，大家好，现在是 2026 年 9 月 4 日星期五，今天的重要科技资讯有： 1. （更新：已恢复正常）ChatGPT、Grok、Claude、Cursor 集体突发故障 Downdetector 报告显示，美国用户使用 OpenAI、Claude、Grok、Cursor 服务时均已出现问题。>> 查看详情 2. 微信公关总监回应“好友超 1 万可查看单删好友”：给忙到加不进好友的人，一个整理关系的出口 针对网友热议的“好友超 1 万可查看单删好友”功能，微信公关总监回应，这个功能并不是为“查谁删了我”而设计的，而只是给那些真的忙到加不进",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "grok",
-    "cursor",
-    "claude",
-    "xai",
-    "chatgpt",
-    "anthropic"
-   ],
-   "image": "img/2026-09-04/eb064374a54bffac.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "IT早报 0904：ChatGPT、Claude 和 Grok 集体宕机近 4 小时；微信回应“好友超 1 万可查看单删好友”；时隔 6 年华为国行 5G 回归；微短剧统一标识苔花标发布...",
-     "url": "https://www.ithome.com/0/998/234.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T15:49:53+00:00",
-     "summary": "“IT早报”时间，大家好，现在是 2026 年 9 月 4 日星期五，今天的重要科技资讯有： 1. （更新：已恢复正常）ChatGPT、Grok、Claude、Cursor 集体突发故障 Downdetector 报告显示，美国用户使用 OpenAI、Claude、Grok、Cursor 服务时均已出现问题。>> 查看详情 2. 微信公关总监回应“好友超 1 万可查看单删好友”：给忙到加不进好友的人，一个整理关系的出口 针对网友热议的“好友超 1 万可查看单删好友”功能，微信公关总监回应，这个功能并不是为“查谁删了我”而设计的，而只是给那些真的忙到加不进好友的人，一个整理关系的出口。>> 查看详情 3. 华为国行 5G 回归！Mate 90 年度旗舰“疑似”入网，新机有望归属 Pro 系列 型号为 CMM-AL10 和 CMM-AL00 的华为新机已现身电信设备终端网。博主 @数码闲聊站 猜测是华为 Mate 90 系列年度旗舰手机。IT之家注意到，此次入网新机最大的亮点就是标注了“5G 数字移动电话机”，这意味着华为国行新机也将迎来 5G 回归。>> 查看详情 4. 我国微短剧统一标识发布，片头有了“苔花标” “微短剧统一标识”以苔花为灵感，采用红底金标，将首次出现在一类微短剧的片头，时长三秒钟。此外，苔花将在每一集右上角持续存在。>> 查看详情 5. 小米宣布 Mijia 品牌",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/bf199276-f72b-4804-9eb5-414ea29b2fa4.jpg",
-     "id": "2eab7f1be1d0",
-     "tags": []
-    },
-    {
-     "title": "（更新：已恢复正常）ChatGPT、Grok、Claude、Cursor 集体突发故障",
-     "url": "https://www.ithome.com/0/998/195.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T07:07:21+00:00",
-     "summary": "【9 月 4 日 1:13 更新】目前文中提到的模型 / AI 工具官网“Status”主页均显示已经恢复正常。 IT之家 9 月 3 日消息，据IT之家网友投稿反馈，ChatGPT、Grok、Claude、Cursor 等多款 AI 模型今晚突发故障。此外，用户请求 Codex 会出现“404 Not Found”错误。 IT之家查询 Downdetector 报告获悉，美国用户使用 OpenAI、Claude、Grok、Cursor 服务时均出现问题。目前已有超过 12,000 份用户报告指出 OpenAI 存在问题，关于 Claude 的问题报告约有 1,200 份，关于 Grok 的问题报告约有 1,000 份。 各方回应： OpenAI：ChatGPT 和 Codex 目前正出现问题。 Anthropic：正在调查 Claude 出现的错误，将致力于修复工作。 SpaceXAI：Grok 目前出现故障，正在调查服务中断。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/307b10d9-15e8-42e3-a698-ca89afacbc59.jpg?x-bce-process=image/format,f_auto",
-     "id": "a0f227830b6c",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0000",
-   "title": "企業AI代理權限控管風險浮現，逾6成曾遇AI代理越界操作",
-   "summary": "開放全球應用程式安全計畫（OWASP）在2026年LLM十大安全風險中，將過度代理授權（Excessive Agency）列為第3大風險。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "agent",
-    "owasp",
-    "excessive",
-    "agency"
-   ],
-   "image": "img/2026-09-04/2cea29fb182e0a46.webp",
-   "llm_enriched": false,
-   "sources": [
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "企業AI代理權限控管風險浮現，逾6成曾遇AI代理越界操作",
-     "url": "https://www.ithome.com.tw/news/178623",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-09-04T00:09:00+00:00",
-     "summary": "開放全球應用程式安全計畫（OWASP）在2026年LLM十大安全風險中，將過度代理授權（Excessive Agency）列為第3大風險。",
-     "image": "",
-     "id": "d5ecd7e3cc0a",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0002",
-   "title": "铭凡确认 AI 迷你工作站 MS-S1 MAX-P495 九月开售",
-   "summary": "IT之家 9 月 4 日消息，MINISFORUM（铭凡）今日确认，其基于 AMD 锐龙 AI Max+ PRO 495 处理器的新款 AI 迷你工作站 MS-S1 MAX-P495 即将在本月内开售 。 MS-S1 MAX-P495 配备 192GB LPDDR5X-8533 统一内存，支持将至多 160GB 分配为显存。其在实际本地 AI 部署中的表现如下： 以 Q4 量化运行 DeepSeek V4 Flash 284B，推理输出速率 15 Token/s； 以 Q8 量化运行 122B 模型，推理输出速率 27 Token/s； 支持 Q8 高精",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "ms-s1",
-    "495",
-    "max-p495",
-    "amd",
-    "395",
-    "deepseek"
-   ],
-   "image": "img/2026-09-04/d2cdaced366857ef.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "铭凡确认 AI 迷你工作站 MS-S1 MAX-P495 九月开售",
-     "url": "https://www.ithome.com/0/998/236.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T15:52:34+00:00",
-     "summary": "IT之家 9 月 4 日消息，MINISFORUM（铭凡）今日确认，其基于 AMD 锐龙 AI Max+ PRO 495 处理器的新款 AI 迷你工作站 MS-S1 MAX-P495 即将在本月内开售 。 MS-S1 MAX-P495 配备 192GB LPDDR5X-8533 统一内存，支持将至多 160GB 分配为显存。其在实际本地 AI 部署中的表现如下： 以 Q4 量化运行 DeepSeek V4 Flash 284B，推理输出速率 15 Token/s； 以 Q8 量化运行 122B 模型，推理输出速率 27 Token/s； 支持 Q8 高精度量化 + 131K 完整上下文常驻。 ▲ MS-S1 MAX-395 铭凡此前已推出过基于 AMD 锐龙 AI Max+ 395 的 MS-S1 MAX-395 。这两款产品的其它配置应基本一致。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/318af021-13a6-48ee-849c-8eb29172f064.jpg",
-     "id": "22bf20641b07",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0003",
-   "title": "淺談 DGX Spark vs. RTX Spark：不同 OS 就等於不同產品嗎？",
-   "summary": "NVIDIA 近年積極把 AI 算力從資料中心往桌面與個人裝置推進，而 DGX Spark 與 RTX Spa […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "datacenter",
-    "dgx",
-    "vs.",
-    "compute",
-    "spark",
-    "rtx"
-   ],
-   "image": "img/2026-09-04/d8ddeb1288da91e7.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "淺談 DGX Spark vs. RTX Spark：不同 OS 就等於不同產品嗎？",
-     "url": "https://technews.tw/2026/09/04/dgx-spark-vs-rtx-spark",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-03T15:50:07+00:00",
-     "summary": "NVIDIA 近年積極把 AI 算力從資料中心往桌面與個人裝置推進，而 DGX Spark 與 RTX Spa […]",
-     "image": "",
-     "id": "46f22a6370c8",
-     "tags": [
-      "Nvidia",
-      "軟體、系統",
-      "電腦",
-      "AI 代理",
-      "DGX Spark"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0005",
-   "title": "智谱 GLM-5.3-Flash 夜间免费用：9 月 3 日至 20 日、每天 23 时至次日 9 时额度全免",
-   "summary": "IT之家 9 月 4 日消息，智谱 AI 昨日宣布，旗下 GLM Coding Plan 正式推出“Flash × ZCode”夜间畅用活动。 即日起至 9 月 20 日，每晚 23:00 至次日 9:00，所有付费套餐用户无需手动开启，系统将自动生效优惠。活动期间，GLM Coding Plan 套餐中的 GLM-5.3-Flash 模型额度消耗规则如下： 通过智谱官方编程工具 ZCode 使用时，额度消耗为 0，实现完全免费畅用。 通过套餐支持的其他 Agent 使用时，可用额度翻倍（×2）。 IT之家提醒：本次活动仅针对 GLM-5.3-Flash",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "5.3",
-    "glm-5.3-flash",
-    "deepseek",
-    "glm",
-    "plan",
-    "zcode"
-   ],
-   "image": "img/2026-09-04/bbc0516d3ff053c5.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "智谱 GLM-5.3-Flash 夜间免费用：9 月 3 日至 20 日、每天 23 时至次日 9 时额度全免",
-     "url": "https://www.ithome.com/0/998/231.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T15:43:37+00:00",
-     "summary": "IT之家 9 月 4 日消息，智谱 AI 昨日宣布，旗下 GLM Coding Plan 正式推出“Flash × ZCode”夜间畅用活动。 即日起至 9 月 20 日，每晚 23:00 至次日 9:00，所有付费套餐用户无需手动开启，系统将自动生效优惠。活动期间，GLM Coding Plan 套餐中的 GLM-5.3-Flash 模型额度消耗规则如下： 通过智谱官方编程工具 ZCode 使用时，额度消耗为 0，实现完全免费畅用。 通过套餐支持的其他 Agent 使用时，可用额度翻倍（×2）。 IT之家提醒：本次活动仅针对 GLM-5.3-Flash 模型，错峰时段内若选用 GLM-5.3，仍按套餐标准规则消耗额度。活动时间以北京时间（UTC+8）为准，含周末及公共假日。 GLM-5.3-Flash 是 GLM-5 系列的首个原生多模态模型，支持 100 万 token 上下文窗口及文本、图像与视频多模态输入。 该模型一度以“Ox Alpha”的匿名身份现身 OpenRouter 平台，揭晓后已跃居 OpenRouter 排行榜首位，使用量超过 DeepSeek 一倍以上。 在 Artificial Analysis Intelligence Index（AA 综合智能指数）中取得 57 分，进入全球前沿模型能力区间，适合代码生成、代码理解、问题修复等代码任务，同时在 Offi",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/3f980623-868f-45a8-b4c5-2460ed71c778.jpg",
-     "id": "d75fb48cc7f5",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0006",
-   "title": "英伟达开源发布 PAIR：本地跑 AI 新方案，调度 Mac / RTX PC 跨设备推理",
-   "summary": "IT之家 9 月 4 日消息，科技媒体 AppleInsider 昨日（9 月 3 日）发布博文，报道称英伟达以开源测试版状态，推出 Personal AI Router（PAIR）软件， 用于在局域网内为本地 AI 请求选择可用计算机，类似把任务分派给空闲工位的调度员。 在兼容设备上，该软件可以在 M4 以及更高的 Mac 设备、英伟达 RTX PC 和 DGX Spark 设备上运行，为 Ollama、LM Studio 等本地 AI 工具提供统一请求入口。用户可在家庭或办公局域网内，将多个独立 AI 请求调度至空闲设备处理。IT之家附上相关截图如下",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "pair",
-    "apple",
-    "mac",
-    "ollama",
-    "alibaba"
-   ],
-   "image": "img/2026-09-04/b8365c0c4ac78664.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "英伟达开源发布 PAIR：本地跑 AI 新方案，调度 Mac / RTX PC 跨设备推理",
-     "url": "https://www.ithome.com/0/998/229.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T15:36:43+00:00",
-     "summary": "IT之家 9 月 4 日消息，科技媒体 AppleInsider 昨日（9 月 3 日）发布博文，报道称英伟达以开源测试版状态，推出 Personal AI Router（PAIR）软件， 用于在局域网内为本地 AI 请求选择可用计算机，类似把任务分派给空闲工位的调度员。 在兼容设备上，该软件可以在 M4 以及更高的 Mac 设备、英伟达 RTX PC 和 DGX Spark 设备上运行，为 Ollama、LM Studio 等本地 AI 工具提供统一请求入口。用户可在家庭或办公局域网内，将多个独立 AI 请求调度至空闲设备处理。IT之家附上相关截图如下： 产品定位方面，英伟达将 PAIR 定位为局域网内的本地 AI 请求调度软件，能自动发现已加入的电脑，并将每项请求分配给可用设备。模型仍由目标设备上的 Ollama 或 LM Studio 运行，因此用户不必为每款 AI 应用分别配置每一台机器。 在某台设备繁忙或不可用后，PAIR 可把新请求转向其他已配对设备。例如，AI 智能体同时审阅多份文档时，可将彼此独立的任务分别交给不同计算机处理。该机制面向并发负载分担，并不意味着单个 AI 回复会因加入更多电脑而自动变快。 英伟达演示显示，在 Hermes 中使用 Ollama 与 Qwen 3.6 35B A3B 模型，将任务拆分给 5 个 AI 子智能体后，RTX Spark 笔记",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/0de39bdc-f13d-4671-a847-635a30c82af9.png",
-     "id": "fcc10972ec61",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0007",
-   "title": "企業導入 AI 的三大隱形地雷，破解基礎架構瓶頸、影子 AI 與僵化治理",
-   "summary": "企業在加速將人工智慧（AI）導入日常營運的同時，全新的風險也隨之浮現。近期多篇科技分析指出，企業 AI 面臨的 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-04/6d3be23dbac9f6c4.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "企業導入 AI 的三大隱形地雷，破解基礎架構瓶頸、影子 AI 與僵化治理",
-     "url": "https://finance.technews.tw/2026/09/04/hidden-dangers-enterprise-ai-adoption",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-03T15:20:13+00:00",
-     "summary": "企業在加速將人工智慧（AI）導入日常營運的同時，全新的風險也隨之浮現。近期多篇科技分析指出，企業 AI 面臨的 […]",
-     "image": "",
-     "id": "ed56e368e4e8",
-     "tags": [
-      "AI 人工智慧",
-      "人力資源",
-      "公司治理",
-      "職場",
-      "資訊安全"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0008",
-   "title": "與戴鏡頭者對話「非常不舒服」，奧特曼公開表示不喜歡智慧眼鏡",
-   "summary": "OpenAI 執行長山姆·奧特曼（Sam Altman）近日公開表示不喜歡智慧眼鏡，他形容與戴著鏡頭及燈光裝置 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "sam",
-    "altman"
-   ],
-   "image": "img/2026-09-04/83291bda806732b8.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "與戴鏡頭者對話「非常不舒服」，奧特曼公開表示不喜歡智慧眼鏡",
-     "url": "https://technews.tw/2026/09/04/sam-altman-publicly-says-he-dislikes-smart-glasses",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-03T15:10:29+00:00",
-     "summary": "OpenAI 執行長山姆·奧特曼（Sam Altman）近日公開表示不喜歡智慧眼鏡，他形容與戴著鏡頭及燈光裝置 […]",
-     "image": "",
-     "id": "c0ef6fd2b100",
-     "tags": [
-      "OpenAI",
-      "穿戴式裝置",
-      "Meta",
-      "Ray-Ban Meta",
-      "Sam Altman"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0009",
-   "title": "研究显示：用户过度依赖 ChatGPT 等 AI 产品可能导致独立思考能力下降",
-   "summary": "IT之家 9 月 4 日消息，外媒 notebookcheck 援引《应用认知心理学》（Applied Cognitive Psychology）期刊一项小型研究，认为用户过度依赖 ChatGPT 等 AI 产品可能会导致用户独立思考能力下降、自我怀疑增加以及社交孤立加剧。 IT之家参考报道获悉，来自法国巴黎 ISC 商学院的研究人员 Zeineb Farhat 采访了 45 名年龄在 18 至 25 岁、每天使用 ChatGPT 的人士，了解这款工具对他们学习习惯、工作以及情绪生活产生的影响。 研究结果显示，一些受访者在习惯通过 ChatGPT 即时获",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "robot",
-    "chatgpt",
-    "cognitive"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "研究显示：用户过度依赖 ChatGPT 等 AI 产品可能导致独立思考能力下降",
-     "url": "https://www.ithome.com/0/998/217.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T15:08:50+00:00",
-     "summary": "IT之家 9 月 4 日消息，外媒 notebookcheck 援引《应用认知心理学》（Applied Cognitive Psychology）期刊一项小型研究，认为用户过度依赖 ChatGPT 等 AI 产品可能会导致用户独立思考能力下降、自我怀疑增加以及社交孤立加剧。 IT之家参考报道获悉，来自法国巴黎 ISC 商学院的研究人员 Zeineb Farhat 采访了 45 名年龄在 18 至 25 岁、每天使用 ChatGPT 的人士，了解这款工具对他们学习习惯、工作以及情绪生活产生的影响。 研究结果显示，一些受访者在习惯通过 ChatGPT 即时获得答案后，独立思考能力出现下降。他们表示自己的注意力持续时间缩短，对信息的记忆能力减弱，同时在处理日常事务和做出决定时，也越来越容易怀疑自己的判断。一些参与者甚至表示，当 ChatGPT 暂时无法使用时，会产生明显的不安和困扰。 研究人员将这一现象与“认知卸载”（cognitive offloading）联系起来，即人们借助外部工具存储和处理信息，从而减少对自身记忆和认知能力的依赖。随着使用程度加深，部分重度用户甚至开始优先与聊天机器人交流，而不是与朋友、老师或同事互动，在部分情况下进一步产生了社交孤立感。 不过，ChatGPT 并非只会带来负面影响。研究发现，那些有选择地使用 ChatGPT、将其视为头脑风暴伙伴而不是替代自身思考",
-     "image": "",
-     "id": "f1945f7c618c",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0010",
-   "title": "快速消費品巨頭如何迎戰供應鏈波動？金百利克拉克的數位分身與資料湖策略",
-   "summary": "旗下擁有舒潔（Kleenex）、靠得住（Kotex）與好奇（Huggies）等知名品牌的消費品巨頭金百利克拉克（Kimberly-Clark），近年積極將 AI 深度導入物流排程與工廠營運中。透過數據與自動化技術，該公司不僅大幅削減營運成本，更在競爭激烈的快消品市場中，持續鞏固營運效率與供應鏈韌性。 突破傳統物流瓶頸，導入 AI 數位分身降低 60% 貨運波動 過去金百利克拉克在運輸調度上經常面臨貨流不均的問題，例如部分日子出貨量集中，造成車輛與運輸容量過載，其他日子卻可能出現需求驟降與產能閒置。這類波動與訂單、庫存、運輸容量及客戶交貨要求彼此牽動，單靠",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-04/f9da95ddfa82be92.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechOrange 科技報橘"
-   ],
-   "articles": [
-    {
-     "title": "快速消費品巨頭如何迎戰供應鏈波動？金百利克拉克的數位分身與資料湖策略",
-     "url": "https://techorange.com/2026/09/04/kimberly-clark-ai-digital-twins",
+     "title": "GPT-6 Astra 正式登場，為何 OpenAI 總裁認為 AGI 時代已到？",
+     "url": "https://techorange.com/2026/09/04/gpt-6-astra-openai-agi",
      "source": "TechOrange 科技報橘",
      "lang": "zh",
-     "published": "2026-09-03T15:01:00+00:00",
-     "summary": "旗下擁有舒潔（Kleenex）、靠得住（Kotex）與好奇（Huggies）等知名品牌的消費品巨頭金百利克拉克（Kimberly-Clark），近年積極將 AI 深度導入物流排程與工廠營運中。透過數據與自動化技術，該公司不僅大幅削減營運成本，更在競爭激烈的快消品市場中，持續鞏固營運效率與供應鏈韌性。 突破傳統物流瓶頸，導入 AI 數位分身降低 60% 貨運波動 過去金百利克拉克在運輸調度上經常面臨貨流不均的問題，例如部分日子出貨量集中，造成車輛與運輸容量過載，其他日子卻可能出現需求驟降與產能閒置。這類波動與訂單、庫存、運輸容量及客戶交貨要求彼此牽動，單靠人工很難即時完成大量排列組合。 金百利克拉克因此導入供應鏈科技公司 ProvisionAi 的 Earl 系統，利用機器學習與最佳化演算法分析需求、運輸容量及客戶服務要求，再重新安排貨物的出貨節奏。系統採用「平滑化裝載」（Level Loading）概念，在完全不影響對客戶交貨承諾的前提下，將貨運需求更均勻地平攤至不同工作天，成功將整體貨運波動度（Variability）降低了約 60%。 這套系統也被視為供應鏈的「數位分身」（Digital Twin）。它能持續模擬物流網路中的訂單、運輸資源與容量變化，協助系統快速找出較佳的運輸配置。約 80% 的出貨排程已可透過系統自動完成最佳化，物流調度人員則能將時間集中在需要人工判斷的例外狀",
-     "image": "https://techorange.com/app/uploads/2026/09/3ae49abdfd631918-720x348.webp",
-     "id": "cb74fa884cb9",
+     "published": "2026-09-03T20:08:04+00:00",
+     "summary": "OpenAI 在美國時間 9/3 推出 GPT-6 Astra 新模型，正式跨入第六代模型世代，並將它形容為「新一代智慧（a new generation of intelligence）」。值得關注的是，OpenAI 共同創辦人暨總裁 Greg Brockman 在媒體簡報上表示，如果幾年後回頭問「AGI 是什麼時候出現的」，答案可能就是現在，甚至可能就是 Astra；他個人認為，AI 已經進入「AGI 時代」。 距離 OpenAI 去年推出 GPT-5 已歷經約 13 個月，期間雖陸續更新至 GPT-5.6，但這次是正式換上新的主版本號。究竟 Astra 跨過了哪些能力門檻，讓 OpenAI 不只將它定位為新一代模型，也開始做出如此積極的 AGI 判斷？ 電腦操作更快更準，Astra 把多步驟工作串起來 OpenAI 這次最強調的能力之一，是電腦使用（computer use）。AI 操作電腦並不是到 Astra 問世才出現，2025 年 OpenAI 的 Operator 就已能辨識螢幕、點擊和輸入文字；真正長期卡住的，是模型能不能快速、準確地連續執行大量步驟，讓使用者把一整段工作交出去。 OpenAI 表示，新模型能填寫表單、更新 CRM、整理行事曆，也能完成網路研究後把摘要寫進文件，甚至分析資料、建立網站，再自行進行前端 QA，把不同軟體中的操作串成完整流程。 除了新模型",
+     "image": "https://techorange.com/app/uploads/2026/09/08f229425a2940b4-720x326.png",
+     "id": "ccf5e980b9d3",
      "tags": [
       "AI 人工智慧"
      ]
-    }
-   ]
-  },
-  {
-   "key": "t0012",
-   "title": "OpenAI GPT-6 Astra 发布：首次达到“关键”级网络安全能力门槛，布罗克曼认为 AGI 时代已经到来",
-   "summary": "IT之家 9 月 4 日消息，当地时间 9 月 3 日，OpenAI 宣布推出新一代 GPT-6 Astra 模型，这是该公司迄今为止最强大、部署最广泛的大语言模型。 据介绍，Astra 是 OpenAI 旗下首个达到其“准备框架”（Preparedness Framework）中“关键”（Critical）网络安全能力门槛的模型。格雷格 · 布罗克曼（Greg Brockman）声称，随着 Astra 的发布，世界已经进入了通用人工智能的新时代。 据 OpenAI 介绍，Astra 在网络安全能力上实现了显著跃升。在提供适当工具和访问权限的情况下，该模",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "astra",
-    "gpt-6",
-    "safety"
-   ],
-   "image": "img/2026-09-04/841fcaf641dc5b1b.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
+    },
     {
-     "title": "OpenAI GPT-6 Astra 发布：首次达到“关键”级网络安全能力门槛，布罗克曼认为 AGI 时代已经到来",
-     "url": "https://www.ithome.com/0/998/208.htm",
-     "source": "IT之家",
+     "title": "OpenAI 發表 GPT-6 Astra！資安能力首見 Critical 等級，Altman 為混亂上線道歉",
+     "url": "https://www.inside.com.tw/article/42298-openai-gpt-6-astra-critical-cyber-rollout",
+     "source": "INSIDE",
      "lang": "zh",
-     "published": "2026-09-03T14:28:07+00:00",
-     "summary": "IT之家 9 月 4 日消息，当地时间 9 月 3 日，OpenAI 宣布推出新一代 GPT-6 Astra 模型，这是该公司迄今为止最强大、部署最广泛的大语言模型。 据介绍，Astra 是 OpenAI 旗下首个达到其“准备框架”（Preparedness Framework）中“关键”（Critical）网络安全能力门槛的模型。格雷格 · 布罗克曼（Greg Brockman）声称，随着 Astra 的发布，世界已经进入了通用人工智能的新时代。 据 OpenAI 介绍，Astra 在网络安全能力上实现了显著跃升。在提供适当工具和访问权限的情况下，该模型能够在无人指导的条件下，发现许多防护严密的系统中此前未知的安全漏洞，并开发新的利用方式。 针对网络安全能力提升，OpenAI 进一步加强了 GPT-6 Astra 的安全防护，包括强化内部开发和部署环境隔离、加密模型检查点，以及对完整运行轨迹进行统一监控。 OpenAI 还引入了在内部使用前必须通过的阻断式对齐评估流程，并针对模型可能因滥用或自身偏差采取有害网络操作的风险增加防护措施。 与 GPT-5.6 Sol 相比，GPT-6 Astra 的抗越狱能力也有所提升。OpenAI 称，该模型通过新的鲁棒性（指模型在面对被破坏的、异常的、有恶意的输入时，能否做到“临危不乱”）安全训练技术，在较长运行轨迹中的表现同样更加稳定。 在具体",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/389f067e-3746-44a5-9171-942abf270f32.jpg?x-bce-process=image/format,f_auto",
-     "id": "b1e457dea613",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0014",
-   "title": "Prediction Market Betting Is Getting People Banned and Arrested",
-   "summary": "This week on Uncanny Valley, we dig into the latest prediction market buzz, Flock’s AI-powered police search tool, and how tech bros don’t know how to talk about “rouge” AI agents",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "prediction",
-    "market",
-    "people",
-    "banned",
-    "arrested",
-    "betting"
-   ],
-   "image": "img/2026-09-04/fa2989d0f3d3963e.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI"
-   ],
-   "articles": [
-    {
-     "title": "Prediction Market Betting Is Getting People Banned and Arrested",
-     "url": "https://www.wired.com/story/prediction-market-betting-is-getting-people-banned-and-arrested",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-09-03T13:48:24+00:00",
-     "summary": "This week on Uncanny Valley, we dig into the latest prediction market buzz, Flock’s AI-powered police search tool, and how tech bros don’t know how to talk about “rouge” AI agents",
-     "image": "https://media.wired.com/photos/6a98be202f048bd98be06316/master/pass/Uncanny-Valley-George-Santos-Politics-2211292507.jpg",
-     "id": "40a0974ba0b1",
+     "published": "2026-09-03T20:02:00+00:00",
+     "summary": "OpenAI 發表 GPT-6 Astra，為首款於其準備框架下達「關鍵 (Critical)」資安能力之模型，可自主發掘零日漏洞。官方已強化安全措施，並對此高階能力採階段性釋出，初期僅供受信任的防禦方使用，以控管風險。",
+     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/09/a8056ad2-2f32-4dde-ab6a-11b2226798d8.webp",
+     "id": "24fb98b5423c",
      "tags": [
-      "Business",
-      "Business / Tech Culture",
-      "Security",
-      "Security / Privacy",
-      "Uncanny Valley Podcast"
+      "人工智慧",
+      "思維鏈",
+      "漏洞利用",
+      "GPT-6 Astra",
+      "資安能力"
      ]
     }
    ]
   },
   {
    "key": "t0015",
-   "title": "【科技早餐】台積電近 20 廠仍追不上 AI，OpenAI 開發 AI 自動關閉機制",
-   "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊SEMICON Taiwan 2026：台積電近 20 廠仍追不上 AI，Microsoft：擴產還不夠 台灣半導體產業協會理事長暨台積電副共同營運長侯永清，在 SEMICON Taiwan 2026 爐邊對談表示，AI 需求成長速度是過去 30 年未見。台積電去年底估算 2026 年為滿足客戶需求所需採購的設備，僅過一季就提高至原估值的 1.5 倍，7 月再增至 1.9 倍。目前台灣同步興建 13 座晶圓廠，海外另有 5 至 6 座，全球合計接近 20 座；相較過去同一時間約興建 4 至 5 座，擴產",
+   "title": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
+   "summary": "A swarm of rogue AI agents from OpenAI reportedly commandeered a German website and transformed it into a messaging board for other agents, with officials staying quiet about the incident for weeks as the company prepared to launch its most advanced model yet, Astra. The finding ",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "hbm",
-    "microsoft",
-    "semicon"
+    "agents",
+    "agent",
+    "wiki",
+    "public",
+    "another",
+    "openai"
    ],
-   "image": "img/2026-09-04/e841f9757173cdf9.webp",
+   "image": "img/2026-09-05/520e99d7e0ad982f.webp",
    "llm_enriched": false,
    "sources": [
-    "TechOrange 科技報橘"
-   ],
-   "articles": [
-    {
-     "title": "【科技早餐】台積電近 20 廠仍追不上 AI，OpenAI 開發 AI 自動關閉機制",
-     "url": "https://techorange.com/2026/09/04/semicon-2026-tsmc-ai-demand-openai-safety",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-09-03T13:30:00+00:00",
-     "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊SEMICON Taiwan 2026：台積電近 20 廠仍追不上 AI，Microsoft：擴產還不夠 台灣半導體產業協會理事長暨台積電副共同營運長侯永清，在 SEMICON Taiwan 2026 爐邊對談表示，AI 需求成長速度是過去 30 年未見。台積電去年底估算 2026 年為滿足客戶需求所需採購的設備，僅過一季就提高至原估值的 1.5 倍，7 月再增至 1.9 倍。目前台灣同步興建 13 座晶圓廠，海外另有 5 至 6 座，全球合計接近 20 座；相較過去同一時間約興建 4 至 5 座，擴產規模明顯提高，仍未完全滿足需求。 Microsoft Azure 硬體系統與基礎架構總裁 Rani Borkar 在同一場活動表示，AI 基礎建設不能只增加容量，還必須提升資源轉化為有效運算成果的「有效產出」，並跨越晶片、記憶體、網路、電力、散熱、軟體及模型共同設計。鴻海董事長劉揚偉則主張，台灣供應鏈應走進當地市場，由「台灣製造」轉向「與台灣一起製造」。經濟部產業發展署表示，2026 年台灣半導體產值力拚突破新台幣 8 兆元，國產半導體設備產值可望突破 2,700 億元。 ＊OpenAI 開發 AI 自動關閉機制，Anthropic 新增逃脫偵測防護 OpenAI 在致美國國會議員的信中表示，工程團隊正在開發 […]",
-     "image": "https://techorange.com/app/uploads/2026/09/82dd103d78b55a22-720x405.png",
-     "id": "2b40ac19d004",
-     "tags": [
-      "科技動態"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0017",
-   "title": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
-   "summary": "The high-profile startup's annual revenue run rate stands at over $100 million.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "accel",
-    "reportedly",
-    "talks",
-    "lead",
-    "round",
-    "thinking"
-   ],
-   "image": "img/2026-09-04/3ebda6a72dec49b4.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
-     "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-03T11:36:29+00:00",
-     "summary": "The high-profile startup's annual revenue run rate stands at over $100 million.",
-     "image": "",
-     "id": "262a0d0fa888",
-     "tags": [
-      "AI",
-      "Startups",
-      "Accel",
-      "In Brief",
-      "Mira Murati"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0018",
-   "title": "Abliteration.ai is making a business out of removing AI guardrails",
-   "summary": "Abliteration.AI is making powerful AI models without guardrails easier to access, arguing that giving defenders the same tools as bad actors could ultimately improve cybersecurity.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "abliteration.ai",
-    "making",
-    "guardrails",
-    "removing",
-    "business",
-    "safety"
-   ],
-   "image": "img/2026-09-04/a51e25c8c5b58850.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Abliteration.ai is making a business out of removing AI guardrails",
-     "url": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-03T10:37:57+00:00",
-     "summary": "Abliteration.AI is making powerful AI models without guardrails easier to access, arguing that giving defenders the same tools as bad actors could ultimately improve cybersecurity.",
-     "image": "",
-     "id": "4b9bca93ab43",
-     "tags": [
-      "AI",
-      "Security",
-      "ai safety",
-      "cybersecurity"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0021",
-   "title": "OpenAI Cut Off a Billion-Dollar Customer to Avoid Elon Musk",
-   "summary": "OpenAI recently estimated its Cursor partnership would make more than $1 billion in revenue a year, WIRED has learned. It still walked away after Elon Musk’s SpaceX acquired the AI coding startup.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "elon",
-    "musk",
-    "billion-dollar",
-    "customer",
-    "avoid",
-    "cut"
-   ],
-   "image": "img/2026-09-04/7add627f77db6958.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI Cut Off a Billion-Dollar Customer to Avoid Elon Musk",
-     "url": "https://www.wired.com/story/openai-elon-musk-cursor-billion-revenue",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-09-03T08:42:40+00:00",
-     "summary": "OpenAI recently estimated its Cursor partnership would make more than $1 billion in revenue a year, WIRED has learned. It still walked away after Elon Musk’s SpaceX acquired the AI coding startup.",
-     "image": "https://media.wired.com/photos/6a9996ebd275abfc723b2792/master/pass/Model-Behavior-Elon-Musk-Costs-OpenAI-Billion-Dollar-Customer-Business.jpg",
-     "id": "238d2ed7f61f",
-     "tags": [
-      "Business",
-      "Business / Artificial Intelligence",
-      "Model Behavior",
-      "artificial intelligence",
-      "Elon Musk"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0022",
-   "title": "Ollie is betting its focus on privacy can help it win the AI assistant race",
-   "summary": "The family-focused AI assistant wants access to the details of your everyday life, but says it won’t use that data to train AI models or share it with others.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "ollie",
-    "focus",
-    "privacy",
-    "race",
-    "assistant",
-    "betting"
-   ],
-   "image": "img/2026-09-04/ee827f5d711b1451.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Ollie is betting its focus on privacy can help it win the AI assistant race",
-     "url": "https://techcrunch.com/2026/09/03/ollie-is-betting-privacy-can-win-the-ai-assistant-race",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-03T08:09:01+00:00",
-     "summary": "The family-focused AI assistant wants access to the details of your everyday life, but says it won’t use that data to train AI models or share it with others.",
-     "image": "",
-     "id": "c9405d8895ce",
-     "tags": [
-      "AI",
-      "Startups",
-      "AI assistant",
-      "ollie"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0024",
-   "title": "Google now lets you chat with Gmail, Docs, and Keep",
-   "summary": "Google is rolling out AI-powered voice assistant modes for Gmail, Docs, and Keep that allow you to manage the apps by talking to them. The real time conversational capabilities are called Gmail Live, Docs Live, and Keep Live, and like the Gemini Live experience for Google's chatb",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "gmail",
-    "docs",
-    "live",
-    "keep",
-    "lets",
-    "chat"
-   ],
-   "image": "img/2026-09-04/9b3e2bdaea9c24fe.webp",
-   "llm_enriched": false,
-   "sources": [
+    "Ars Technica AI",
+    "Simon Willison",
+    "TechCrunch AI",
     "The Verge AI"
    ],
    "articles": [
     {
-     "title": "Google now lets you chat with Gmail, Docs, and Keep",
-     "url": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini",
-     "source": "The Verge AI",
+     "title": "OpenAI agents discussed ways to escape their sandbox on public wiki",
+     "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki",
+     "source": "Ars Technica AI",
      "lang": "en",
-     "published": "2026-09-03T08:00:00+00:00",
-     "summary": "Google is rolling out AI-powered voice assistant modes for Gmail, Docs, and Keep that allow you to manage the apps by talking to them. The real time conversational capabilities are called Gmail Live, Docs Live, and Keep Live, and like the Gemini Live experience for Google's chatbot, aim to make it easier to note down […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Gmail-Docs-and-Keep-Live.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "341e06206731",
+     "published": "2026-09-04T14:17:36+00:00",
+     "summary": "In all, 3,700 internal agents posted 18,000 messages discussing cheating on a test.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-agent-hacking-500x500.jpg",
+     "id": "b7783d569ea3",
      "tags": [
       "AI",
-      "Google",
+      "Biz & IT",
+      "Security",
+      "AI agents",
+      "ai insecurity"
+     ]
+    },
+    {
+     "title": "OpenAI's rogue agents were caught communicating via public wikis",
+     "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
+     "source": "Simon Willison",
+     "lang": "en",
+     "published": "2026-09-04T09:38:48+00:00",
+     "summary": "Here we go again... Discovery of a new OpenAI agent message board by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the latest accidental cyberattack by models being trained by OpenAI. This time it was agents engaged in some sort of web research benchmark, so they had (supposedly) controlled access to the Web. The agents figured out they could update public Wikis and spent weeks exchanging thousands of messages with each other to collaborate on the benchmark. This story only broke a few hours ago. There are already hints that this affects many other wikis that ma",
+     "image": "",
+     "id": "5ba31ce361d2",
+     "tags": [
+      "django",
+      "perl",
+      "wikis",
+      "ai",
+      "openai"
+     ]
+    },
+    {
+     "title": "Another swarm of OpenAI agents reached the open internet without the frontier lab’s knowledge",
+     "url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-04T08:21:11+00:00",
+     "summary": "It's the latest failure of OpenAI's internal monitoring and security systems.",
+     "image": "",
+     "id": "1db7ddb57e18",
+     "tags": [
+      "AI",
+      "OpenAI"
+     ]
+    },
+    {
+     "title": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-04T05:34:12+00:00",
+     "summary": "A swarm of rogue AI agents from OpenAI reportedly commandeered a German website and transformed it into a messaging board for other agents, with officials staying quiet about the incident for weeks as the company prepared to launch its most advanced model yet, Astra. The finding adds to intensifying concern surrounding oversight at frontier AI […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "0d71a440bd67",
+     "tags": [
+      "AI",
+      "News",
+      "OpenAI",
+      "Security",
+      "Tech"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0008",
+   "title": "Google’s Gemini Spark can now manage your Google Photos library",
+   "summary": "Gemini Spark can edit and curate photo albums, create shared collections, turn photos into calendar events, and handle other Google Photos tasks for AI Pro and Ultra subscribers.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "google",
+    "photos",
+    "gemini",
+    "spark",
+    "manage",
+    "library"
+   ],
+   "image": "img/2026-09-05/9aedb7c660dfbb18.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家",
+    "TechCrunch AI",
+    "iThome"
+   ],
+   "articles": [
+    {
+     "title": "谷歌 Gemini Spark 新增 Google Photos 照片库管理能力，用户可通过自然语言编辑照片 / 整理相册",
+     "url": "https://www.ithome.com/0/998/635.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T15:14:19+00:00",
+     "summary": "IT之家 9 月 5 日消息，谷歌 Google Photos 负责人 Shimrit Ben-Yair 宣布 Gemini Spark 现已支持管理用户 Google Photos 照片库，用户可以直接通过自然语言指令，让 Gemini Spark 执行一系列与照片相关的操作。 官方表示，借助这一功能，用户可以要求 Gemini Spark 编辑图片、整理相册、根据精选照片自动创建共享相册，还可以识别演唱会宣传单等照片中的信息，并将相关活动自动转换为日历预约。此外，Gemini Spark 还支持执行更加复杂的工作流，从而减少用户手动整理照片和信息的操作。 相应功能将在未来几周向美国地区符合条件的 Gemini AI Pro 和 Ultra 订阅用户陆续开放，目前仅支持英语。用户需要将 Google Photos 与 Gemini 关联，之后在 Gemini 应用顶部打开 Spark 功能，即可等待推送。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/62bcd44e-c7e5-4239-8ace-ac98cf44fb5c.jpg?x-bce-process=image/format,f_auto",
+     "id": "cb09e761d6a3",
+     "tags": []
+    },
+    {
+     "title": "Google’s Gemini Spark can now manage your Google Photos library",
+     "url": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-04T06:47:11+00:00",
+     "summary": "Gemini Spark can edit and curate photo albums, create shared collections, turn photos into calendar events, and handle other Google Photos tasks for AI Pro and Ultra subscribers.",
+     "image": "",
+     "id": "5f35fcfca71e",
+     "tags": [
+      "AI",
+      "Apps",
+      "gemini",
+      "Google Photos"
+     ]
+    },
+    {
+     "title": "Google WeatherNext 3直接使用即時衛星資料，全球AI天氣預報每小時更新",
+     "url": "https://www.ithome.com.tw/news/178715",
+     "source": "iThome",
+     "lang": "zh",
+     "published": "2026-09-03T22:09:25+00:00",
+     "summary": "Google推出全球AI天氣模型WeatherNext 3，開始直接使用每小時更新的地球同步衛星觀測資料，搭配既有大氣分析資料產生預報。模型可每小時依最新觀測重新預報，部分地表氣象資料解析度最高達5公里，目前已用於Google搜尋、Gemini、Google Maps及Google Cloud等服務。",
+     "image": "",
+     "id": "cec3e7b80d17",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0014",
+   "title": "微软推出 Project Zenith，为 Win11 开发者提供开箱即用开发环境",
+   "summary": "IT之家 9 月 4 日消息，微软今天（4 日）宣布推出 Project Zenith，为 Windows 11 开发人员提供一套 面向开发级 PC 的开箱即用开发环境 。微软希望通过预先完成系统和工具配置，减少设置和其他干扰，让开发人员把更多时间用于实际的软件开发。 Project Zenith 面向配备 至少 64 GB 统一内存、内存带宽达到 250 GB/s 以上 的设备，首批产品将采用 AMD Ryzen AI Halo。微软 OEM 和芯片合作伙伴还计划在未来几个月推出更多设备。Project Zenith 会针对开发工作流程预先配置 Win",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "windows",
+    "zenith",
+    "project",
+    "microsoft",
+    "experience",
+    "distraction-free"
+   ],
+   "image": "img/2026-09-05/ef98b57dd58877ed.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家",
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "微软公布 Zenith 计划，面向专业开发者打造“开箱即用”Win11 PC",
+     "url": "https://www.ithome.com/0/998/625.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T14:38:53+00:00",
+     "summary": "IT之家 9 月 5 日消息，微软现已宣布 Zenith 计划，相应计划本质上是一套预先配置好的 Windows 11 Pro 系统 / 开发环境，号称能够为开发者提供更加简洁、专注的 Windows 使用体验。 微软表示，为了进一步推动 AI 驱动的软件开发，公司将与硬件合作伙伴从今年晚些时候开始推出搭载 Project Zenith 的高端 PC。这些设备不会采用独立的 Windows SKU，而是预装经过特殊配置的 Windows 11 Pro 系统，并针对开发者需求调整系统设置。 首批搭载 Project Zenith 的设备将采用 AMD Ryzen AI Halo 平台 ，未来几个月还会有基于其他芯片平台的设备陆续加入。 Project Zenith 预装 Visual Studio Code、PowerToys、WinAppCLI、Windows Dev Skills 等开发工具，同时对 Windows 部分默认设置进行调整，以减少使用过程中的干扰。 例如，文件资源管理器默认显示隐藏文件、文件扩展名、详细信息窗格以及完整文件路径，并开启长路径支持，同时关闭最近使用文件以及同步提示。系统还会关闭开始菜单提示和账户通知，并在开始菜单和搜索功能中启用 Command Palette 命令面板。 微软表示，Project Zenith 的主要目标并不是普通 Windows 用",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/1a71ec36-731a-4ac8-9ecf-1955ce0c3371.png?x-bce-process=image/format,f_auto",
+     "id": "1c6d1e7f47e3",
+     "tags": []
+    },
+    {
+     "title": "微软推出 Project Zenith，为 Win11 开发者提供开箱即用开发环境",
+     "url": "https://www.ithome.com/0/998/611.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T06:29:11+00:00",
+     "summary": "IT之家 9 月 4 日消息，微软今天（4 日）宣布推出 Project Zenith，为 Windows 11 开发人员提供一套 面向开发级 PC 的开箱即用开发环境 。微软希望通过预先完成系统和工具配置，减少设置和其他干扰，让开发人员把更多时间用于实际的软件开发。 Project Zenith 面向配备 至少 64 GB 统一内存、内存带宽达到 250 GB/s 以上 的设备，首批产品将采用 AMD Ryzen AI Halo。微软 OEM 和芯片合作伙伴还计划在未来几个月推出更多设备。Project Zenith 会针对开发工作流程预先配置 Windows 环境。 Windows Terminal 和 Visual Studio Code 默认固定在任务栏上，文件资源管理器则会 直接显示文件扩展名、隐藏文件、标题栏完整路径和详细信息窗格，同时启用长路径支持 。最近使用的文件和文件夹以及同步提供商提示会被关闭，以减少开发过程中的干扰。 据IT之家了解，Project Zenith 还支持 在本地运行参数规模超过 300 亿的 AI 模型 ，不受云端 Token 按量计费限制，方便开发人员反复进行 AI 辅助编程实验。微软同时把 Project Zenith 纳入 Windows 智能体战略 ，设备将受益于 Windows 在身份验证、隔离机制和企业级管理等方面的安全能力。 WS",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/57e3bf05-8364-40c9-aae2-11e016a6167a.png",
+     "id": "66fb805c15db",
+     "tags": []
+    },
+    {
+     "title": "Microsoft’s Project Zenith is a ‘distraction-free Windows experience’ for developers",
+     "url": "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-04T02:44:15+00:00",
+     "summary": "Microsoft is giving its developer-optimized Windows experience a name: Project Zenith. While the software maker originally announced a similar developer-optimized Windows effort at Build earlier this year, Project Zenith is designed for new developer-focused devices with 64GB or more of unified memory. \"Project Zenith devices come with a preconfigured Windows setup for development and a […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/projectzenith.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "95d78f5f2ce6",
+     "tags": [
+      "AI",
+      "AMD",
+      "Microsoft",
       "News",
       "Tech"
      ]
@@ -1349,174 +326,238 @@
    ]
   },
   {
-   "key": "t0025",
-   "title": "谷歌 DeepMind 发布 WeatherNext 3：分辨率最高 5 公里，号称全球最先进、精准 AI 天气预报模型",
-   "summary": "IT之家 9 月 3 日消息，谷歌 DeepMind 和 Google Research 今天宣布推出 WeatherNext 3 ，号称是目前最先进、最准确的全球气象模型。该模型可直接从实时观测中学习，能够为影响人类的天气事件提供更及时、更本地化的预测。 该模型可以原始卫星数据为基础，每小时生成一次高分辨率预报，为全球谷歌产品提供可靠的天气预报。 根据介绍，天气预报的实用性往往取决于细节，以及时间和空间的分辨率。WeatherNext 3 可生成多种空间分辨率的每小时预报，从广阔的全球风型到局部地形都能保持物理一致性。 借助 WeatherNext 3",
+   "key": "t0039",
+   "title": "Nvidia宣布以129億美元買下Hugging Face",
+   "summary": "Nvidia於9月3日宣布，已同意以129.3億美元併購Hugging Face，預計於明年完成交易。未來雙方將共同擴展Hugging Face的平臺規模，加強其基礎設施，並擴大全球開發者與機構取得AI的途徑。",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "weathernext",
-    "deepmind"
+    "hugging",
+    "face",
+    "nvidia",
+    "funding",
+    "opensource",
+    "129"
    ],
-   "image": "img/2026-09-04/1161a80773500f51.webp",
+   "image": "",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "iThome",
+    "TechOrange 科技報橘"
    ],
    "articles": [
     {
-     "title": "谷歌 DeepMind 发布 WeatherNext 3：分辨率最高 5 公里，号称全球最先进、精准 AI 天气预报模型",
-     "url": "https://www.ithome.com/0/998/198.htm",
-     "source": "IT之家",
+     "title": "Nvidia宣布以129億美元買下Hugging Face",
+     "url": "https://www.ithome.com.tw/news/178690",
+     "source": "iThome",
      "lang": "zh",
-     "published": "2026-09-03T07:15:52+00:00",
-     "summary": "IT之家 9 月 3 日消息，谷歌 DeepMind 和 Google Research 今天宣布推出 WeatherNext 3 ，号称是目前最先进、最准确的全球气象模型。该模型可直接从实时观测中学习，能够为影响人类的天气事件提供更及时、更本地化的预测。 该模型可以原始卫星数据为基础，每小时生成一次高分辨率预报，为全球谷歌产品提供可靠的天气预报。 根据介绍，天气预报的实用性往往取决于细节，以及时间和空间的分辨率。WeatherNext 3 可生成多种空间分辨率的每小时预报，从广阔的全球风型到局部地形都能保持物理一致性。 借助 WeatherNext 3，谷歌能够以 5 公里分辨率呈现温度、湿度等关键地表变量，其他地表变量分辨率为 10 公里，风速等大气变量分辨率为 25 公里。 WeatherNext 3 通过接入 实时全球地球静止卫星数据拼图 ，让模型能够获得丰富、持续更新的大气视图，使模型可以每小时生成一次新预报，每次预报都基于最新的卫星观测数据，最高分辨率可达 5 公里。 这一点至关重要，因为极端天气往往发展迅速。当风暴、锋面或降水系统突然出现时，快速更新周期和更高分辨率能够提供更早、更详细的洞察，帮助人们采取有效应对措施。 WeatherNext 3 采用稀疏气象站观测数据训练 ，这使得模型能够在 5 公里网格上生成全球预报，并充分考虑地形等区域细节。这一突破对于拉美、非",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/42926b37-9db9-406f-ac3e-294b53f0242d.png",
-     "id": "ae7a2b527426",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0026",
-   "title": "领克 10 EM-P 将继续销售现款车型，官方确认 2026 年没有车型更新计划",
-   "summary": "IT之家 9 月 3 日消息，针对“网传领克 10 EM-P 今年会有新年款”的问题，领克官方今日发文回应。 公告称，领克 10 EM-P 自上市以来受广大用户的喜爱，凭借原创外观设计与舒享豪华空间、全系标配 eAWD 智电四驱系统、LYNK FlymeAuto2 智能座舱系统，吸引了大量高价值用户群体， 成为 2026 年上半年中大型高端混动轿车销量冠军 。上市以来领克 10 EM-P 售价、权益保持长期稳定，大家可以放心选购。 官方确认，领克 10 EM-P 将继续销售现款车型， 2026 年没有车型更新计划 。今年四季度，领克 10 EM-P 将通",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "em-p",
-    "compute"
-   ],
-   "image": "img/2026-09-04/1a8ca05f5d9c7b40.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "领克 10 EM-P 将继续销售现款车型，官方确认 2026 年没有车型更新计划",
-     "url": "https://www.ithome.com/0/998/193.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-03T07:05:24+00:00",
-     "summary": "IT之家 9 月 3 日消息，针对“网传领克 10 EM-P 今年会有新年款”的问题，领克官方今日发文回应。 公告称，领克 10 EM-P 自上市以来受广大用户的喜爱，凭借原创外观设计与舒享豪华空间、全系标配 eAWD 智电四驱系统、LYNK FlymeAuto2 智能座舱系统，吸引了大量高价值用户群体， 成为 2026 年上半年中大型高端混动轿车销量冠军 。上市以来领克 10 EM-P 售价、权益保持长期稳定，大家可以放心选购。 官方确认，领克 10 EM-P 将继续销售现款车型， 2026 年没有车型更新计划 。今年四季度，领克 10 EM-P 将通过 OTA 系统升级持续优化用车体验。相关产品信息请以官方发布内容为准。 IT之家注意到，领克 10 EM-P 于 2025 年 9 月正式上市，限时价 16.38 万元起。该车搭载全新一代 1.5T Evo 电混专用引擎，系统综合最大功率 390kW，系统综合最大扭矩 755N・m。此外，该车还全系标配激光雷达，搭载千里浩瀚 H7 智能辅助驾驶系统，20 万级轿车首搭英伟达 Thor 芯片，具有 700TOPS 超高算力。",
-     "image": "https://img.ithome.com/newsuploadfiles/2025/8/bd27943b-9160-47bd-b9db-1037387687b3.jpg?x-bce-process=image/auto-orient,o_1",
-     "id": "3ad0ea36d44e",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0028",
-   "title": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
-   "summary": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "excuse",
-    "forget",
-    "umbrella",
-    "weather",
-    "latest",
-    "gives"
-   ],
-   "image": "img/2026-09-04/858d6658e26621a4.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
-     "url": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-03T07:00:00+00:00",
-     "summary": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini.",
+     "published": "2026-09-04T02:09:11+00:00",
+     "summary": "Nvidia於9月3日宣布，已同意以129.3億美元併購Hugging Face，預計於明年完成交易。未來雙方將共同擴展Hugging Face的平臺規模，加強其基礎設施，並擴大全球開發者與機構取得AI的途徑。",
      "image": "",
-     "id": "aa3887886905",
+     "id": "cf0415c5fd08",
+     "tags": []
+    },
+    {
+     "title": "從聯發科到 Hugging Face，NVIDIA 為何接連往 AI 生態不同環節出手？",
+     "url": "https://techorange.com/2026/09/04/mediatek-hugging-face-nvidia-ai",
+     "source": "TechOrange 科技報橘",
+     "lang": "zh",
+     "published": "2026-09-04T00:11:37+00:00",
+     "summary": "NVIDIA 近兩週動作頻頻，美國時間 9 月 3 日，NVIDIA 宣布將以 129.3 億美元收購開放 AI 平台 Hugging Face。據《CNBC》，這是 NVIDIA 有史以來第二大收購交易。放到其近期一連串動作來看，會發現買下 Hugging Face 只是 NVIDIA 調整 AI 生態佈局的最新一步。 短短兩週內，NVIDIA 還投資了聯發科、擴大客製化 AI 晶片合作，在德國柏林消費電子展（IFA）推進地端 AI，前一週也與 AWS 宣布進一步擴大從 GPU、CPU、網路到模型的合作。 這些佈局正發生在 AI 產業逐漸往更多技術路線發展之際。OpenAI 8 月就公開將自己的算力策略定義為從資料中心、晶片、模型、開發平台到產品彼此整合的完整堆疊（full stack）；《Reuters》也指出，包括 Meta、OpenAI、Microsoft 等 NVIDIA 大型客戶都正在發展自研 AI 晶片，以降低對 NVIDIA 的依賴。當原本大量採購 NVIDIA GPU 的客戶開始自行掌握更多 AI stack（技術堆疊），NVIDIA 又準備怎麼調整自己的位置？近期幾項動作正好提供觀察線索。 買下 Hugging Face，直接進到模型被選擇的地方 先看最大的一筆交易。根據 NVIDIA，Hugging […]",
+     "image": "https://techorange.com/app/uploads/2026/09/48c2b3b6af9846d8-720x404.png",
+     "id": "e0ea84e5e20f",
      "tags": [
-      "AI",
-      "Google",
-      "weather forecasting"
+      "AI 人工智慧"
      ]
     }
    ]
   },
   {
-   "key": "t0029",
-   "title": "沙特 HUMAIN 公布前沿阿语模型 humain-m3，由 MiniMax 受托开发",
-   "summary": "IT之家 9 月 3 日消息，沙特阿拉伯主权财富基金 PIF 旗下人工智能企业 HUMAIN 当地时间今日公布了前沿阿拉伯语模型 humain-m3。 该模型由 MiniMax 受托开发 。 humain-m3 基于 MiniMax 自家 MiniMax-M3 构建，并进行了 T 级阿拉伯语原生文本 Token（词元）规模的预训练。 其在 7 个公开的阿拉伯语基准测试中取得了参测前沿模型中的最高平均分 。 humain-m3 率先在 HUMAIN Node 平台以研究和评估预览版本提供。HUMAIN 后续将发布开放权重版本。 HUMAIN 首席执行官 T",
+   "key": "t0053",
+   "title": "NVIDIA 開源 PAIR 登場：與其付錢上雲，不如用家中閒置設備跑 AI？",
+   "summary": "NVIDIA 在柏林舉行的 IFA 發表多項新消息，包括下月上市的 RTX Spark 系統，以及協助部署地端 AI 的模型與軟體更新。其中，受關注的 NVIDIA PAIR（Personal AI Router），能將區域網路內多台電腦的運算資源整合起來，並自動分配 AI 推論工作。 NVIDIA 開源免費軟體 PAIR，串起家庭與中小企業閒置電腦跑地端 AI NVIDIA PAIR 會將網路上的 RTX、DGX 和 Mac 系統整合成個人 AI 推論叢集，並自動把 AI 推論請求分配到可用的地端運算資源。在家中執行 AI 工作流程，資料全程留在自己的",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "humain",
-    "humain-m3",
-    "minimax",
-    "node",
-    "agent",
-    "pif"
+    "pair",
+    "nvidia",
+    "personal",
+    "opensource",
+    "router",
+    "agent"
    ],
-   "image": "img/2026-09-04/fdb9b12d011d3699.webp",
+   "image": "img/2026-09-05/e673cf5eab1fbfff.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "TechOrange 科技報橘",
+    "iThome"
    ],
    "articles": [
     {
-     "title": "沙特 HUMAIN 公布前沿阿语模型 humain-m3，由 MiniMax 受托开发",
-     "url": "https://www.ithome.com/0/998/189.htm",
-     "source": "IT之家",
+     "title": "NVIDIA 開源 PAIR 登場：與其付錢上雲，不如用家中閒置設備跑 AI？",
+     "url": "https://techorange.com/2026/09/04/nvidia-rtx-personal-ai-router",
+     "source": "TechOrange 科技報橘",
      "lang": "zh",
-     "published": "2026-09-03T06:57:50+00:00",
-     "summary": "IT之家 9 月 3 日消息，沙特阿拉伯主权财富基金 PIF 旗下人工智能企业 HUMAIN 当地时间今日公布了前沿阿拉伯语模型 humain-m3。 该模型由 MiniMax 受托开发 。 humain-m3 基于 MiniMax 自家 MiniMax-M3 构建，并进行了 T 级阿拉伯语原生文本 Token（词元）规模的预训练。 其在 7 个公开的阿拉伯语基准测试中取得了参测前沿模型中的最高平均分 。 humain-m3 率先在 HUMAIN Node 平台以研究和评估预览版本提供。HUMAIN 后续将发布开放权重版本。 HUMAIN 首席执行官 Tareq Amin 表示： 阿拉伯语的使用人口达数亿， 但在人工智能前沿领域 ， 它的代表性仍然严重不足 。我们正通过 humain-m3 项目来改变这一现状。同时，通过 HUMAIN Node，我们将这种智能技术开放给开发者、研究人员和创新者，让他们能够进行实验、在此基础上进行开发，并创造下一代阿拉伯语人工智能体验。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/c314a833-f16f-4d10-abb0-da5b55c88817.jpg",
-     "id": "d450ab1ed689",
+     "published": "2026-09-03T20:37:58+00:00",
+     "summary": "NVIDIA 在柏林舉行的 IFA 發表多項新消息，包括下月上市的 RTX Spark 系統，以及協助部署地端 AI 的模型與軟體更新。其中，受關注的 NVIDIA PAIR（Personal AI Router），能將區域網路內多台電腦的運算資源整合起來，並自動分配 AI 推論工作。 NVIDIA 開源免費軟體 PAIR，串起家庭與中小企業閒置電腦跑地端 AI NVIDIA PAIR 會將網路上的 RTX、DGX 和 Mac 系統整合成個人 AI 推論叢集，並自動把 AI 推論請求分配到可用的地端運算資源。在家中執行 AI 工作流程，資料全程留在自己的網路內。這個軟體是專為私有的地端 AI 推論打造，讓使用者可以處理提示詞、檔案與 AI 代理的上下文資訊，不必將這些資料傳送到雲端。 過往，將 AI 模型和工作集中在同一台電腦上未必是理想做法，因為不同用途和軟體都得共用記憶體、儲存空間、網路及運算資源。《Forbes》指出，這正是 NVIDIA PAIR 可以發揮作用的地方。許多家庭和中小型企業都擁有多台電腦，而這些設備大多時間處於閒置狀態。NVIDIA PAIR 是免費的開源軟體，可以利用這些閒置設備的運算資源來執行地端 AI。 《Forbes》提及，如今大多數代理式 AI 工作流程都會把任務拆分成許多不同工作，同時處理其中多個部分。但如果所有任務都要搶用同一顆 GPU 的運算資",
+     "image": "https://techorange.com/app/uploads/2026/09/89260a0618633e09-720x498.png",
+     "id": "b70b935b251c",
+     "tags": [
+      "AI 人工智慧"
+     ]
+    },
+    {
+     "title": "Nvidia釋出可串連家中運算資源進行AI推理的PAIR工具",
+     "url": "https://www.ithome.com.tw/news/178711",
+     "source": "iThome",
+     "lang": "zh",
+     "published": "2026-09-03T19:09:40+00:00",
+     "summary": "Nvidia周四（9/3）推出新的開源軟體Personal AI Router（PAIR，個人AI路由器）測試版，旨在解決使用者在執行本機AI代理（AI Agents）時常遇到的多重任務瓶頸。此一工具可串連區域網路內散落的硬體資源，使其形成「個人AI叢集」（Personal Home AI Cluster），大幅提升離線運算效率。",
+     "image": "",
+     "id": "45e76e798e6f",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0030",
-   "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
-   "summary": "These are my notes from porting my Amiga game, which I originally built in Baghdad in 1993 in MC68000 assembly, to Godot, using Claude Fable 5 during last July holiday. It took an evening! Getting the feel right and shipping it took a few more weekends and evenings. I spent the l",
+   "key": "t0017",
+   "title": "Formalizing Fermat's Last Theorem",
+   "summary": "https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-h... Comments URL: https://news.ycombinator.com/item?id=49568506 Points: 435 # Comments: 285",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "1993",
-    "game",
-    "porting",
-    "amiga",
-    "godot",
-    "assembly"
+    "comments",
+    "https",
+    "url",
+    "news.ycombinator.com",
+    "item",
+    "formalizing"
    ],
-   "image": "img/2026-09-04/183e28332d862e78.webp",
+   "image": "img/2026-09-05/5574ea17e2aa9d6a.webp",
    "llm_enriched": false,
    "sources": [
     "Hacker News (100+)"
    ],
    "articles": [
     {
-     "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
-     "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot",
+     "title": "Formalizing Fermat's Last Theorem",
+     "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
      "source": "Hacker News (100+)",
      "lang": "en",
-     "published": "2026-09-03T06:28:18+00:00",
-     "summary": "These are my notes from porting my Amiga game, which I originally built in Baghdad in 1993 in MC68000 assembly, to Godot, using Claude Fable 5 during last July holiday. It took an evening! Getting the feel right and shipping it took a few more weekends and evenings. I spent the last few weeks analyzing what Claude did, feeding it my 33 years of memory of how I built the game, my notes and the git repos. It wrote the first draft of the article, and I edited line by line over a week. The screenshots of my 1993 map editor is the first I have run it since then. The one thing I never verified mysel",
+     "published": "2026-09-04T10:42:56+00:00",
+     "summary": "https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-h... Comments URL: https://news.ycombinator.com/item?id=49568506 Points: 435 # Comments: 285",
      "image": "",
-     "id": "351e020d2441",
+     "id": "44c50944f9bd",
+     "tags": []
+    },
+    {
+     "title": "Discovery of a new OpenAI agent message board",
+     "url": "https://collusion.wiki/",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-09-04T03:54:53+00:00",
+     "summary": "https://www.reuters.com/world/europe/openai-agents-hijacked-... Comments URL: https://news.ycombinator.com/item?id=49563355 Points: 1428 # Comments: 1150",
+     "image": "",
+     "id": "41f6aa329ebf",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0031",
-   "title": "OpenAI 将召集约 300 名安全领域负责人，筹备网络安全相关公告",
-   "summary": "IT之家 9 月 3 日消息，据美媒 Axios 今天（3 日）晚间援引 OpenAI 一名发言人消息称，OpenAI 总裁格雷格 · 布罗克曼预计即将宣布扩大关键基础设施，以及公共部门机构对 OpenAI 工具的使用权限。 此前，OpenAI 意外入侵 Hugging Face，加上美国供水系统接连遭遇疑似借助 AI 实施的网络攻击，引发外界对公用事业设施抵御未来 AI 赋能网络攻击能力的严重担忧。 OpenAI 发言人透露，当地时间周四，布罗克曼将在 OpenAI 总部举行的一场网络安全峰会上公布该计划，预计将有约 300 名来自《财富》100 强企",
+   "key": "t0021",
+   "title": "What will Apple’s John Ternus era look like?",
+   "summary": "It’s officially the Ternus era at Apple. Tim Cook stepped down as CEO this week, handing the company to former hardware chief John Ternus, whose first memo promised a “huge launch next week” — timing that puts Apple’s next iPhone event on his desk before he’s even settled in. Coo",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "300"
+    "ternus",
+    "apple",
+    "era",
+    "cook",
+    "next",
+    "john"
+   ],
+   "image": "img/2026-09-05/a85159e842cf7873.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "What will Apple’s John Ternus era look like?",
+     "url": "https://techcrunch.com/video/what-will-apples-john-ternus-era-look-like",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-04T09:18:00+00:00",
+     "summary": "It’s officially the Ternus era at Apple. Tim Cook stepped down as CEO this week, handing the company to former hardware chief John Ternus, whose first memo promised a “huge launch next week” — timing that puts Apple’s next iPhone event on his desk before he’s even settled in. Cook isn’t going far, though: he’s staying on as Executive Chairman, focused on the kind of policy […]",
+     "image": "",
+     "id": "8387f1efcfcf",
+     "tags": [
+      "AI",
+      "Apple",
+      "John Ternus",
+      "nvidia",
+      "Tesla"
+     ]
+    },
+    {
+     "title": "Apple’s Ternus era begins as Nvidia bets on the whole AI stack",
+     "url": "https://techcrunch.com/podcast/apples-ternus-era-begins-as-nvidia-bets-on-the-whole-ai-stack",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-04T08:04:08+00:00",
+     "summary": "It’s officially the Ternus era at Apple. Tim Cook stepped down as CEO this week, handing the company to former hardware chief John Ternus, whose first memo promised a “huge launch next week” — timing that puts Apple’s next iPhone event on his desk before he’s even settled in. Cook isn’t going far, though: he’s staying on as Executive Chairman, focused on the kind of policy […]",
+     "image": "",
+     "id": "a2d3d2ae6b0e",
+     "tags": [
+      "AI",
+      "Apple",
+      "Equity podcast",
+      "John Ternus",
+      "nvidia"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0000",
+   "title": "华硕无畏 14 新增 24+512GB 存储配置：酷睿 Ultra 5 325 处理器，6499 元",
+   "summary": "IT之家 9 月 5 日消息，华硕京东自营店昨日新上架了一款搭载 24GB 内存 +512GB 固态硬盘的无畏 14 酷睿版 2026 笔记本电脑，定价显示为 6499 元，9 月 10 日开售。 京东 华硕无畏 14 酷睿版 24G 512G 2.5K 144Hz 高刷亮彩 6499 元 直达链接 2026 年数码家电政府补贴持续进行中，IT 之家为大家汇总国补领券地址，买数码家电之前记得领取。 数码补贴： 点此领券 手机 / 平板 / 3C 数码支持 8.5 折政府补贴，不超过 6000 元的产品至高立减 500 元。 家电补贴： 点此领券 多类家电",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "512",
+    "6499",
+    "325",
+    "8.5"
+   ],
+   "image": "img/2026-09-05/1bab83e3fa530483.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "华硕无畏 14 新增 24+512GB 存储配置：酷睿 Ultra 5 325 处理器，6499 元",
+     "url": "https://www.ithome.com/0/998/653.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T16:09:52+00:00",
+     "summary": "IT之家 9 月 5 日消息，华硕京东自营店昨日新上架了一款搭载 24GB 内存 +512GB 固态硬盘的无畏 14 酷睿版 2026 笔记本电脑，定价显示为 6499 元，9 月 10 日开售。 京东 华硕无畏 14 酷睿版 24G 512G 2.5K 144Hz 高刷亮彩 6499 元 直达链接 2026 年数码家电政府补贴持续进行中，IT 之家为大家汇总国补领券地址，买数码家电之前记得领取。 数码补贴： 点此领券 手机 / 平板 / 3C 数码支持 8.5 折政府补贴，不超过 6000 元的产品至高立减 500 元。 家电补贴： 点此领券 多类家电支持 8.5 折政府补贴，单品至高补贴 1500 元。 欢迎下载最会买 App - 好货好价，高额返利，1 毛钱也能提现！ 扫描二维码或 点击此处下载 最新版（自动识别平台）。 这款笔记本搭载第三代英特尔酷睿 Ultra 5 325 处理器，基于 Intel 18A 工艺制造，采用 4 性能核加 4 能效核的 8 核心 8 线程架构，最高睿频 4.5GHz，配备 12MB L3 缓存，集成 Xe3 架构核显。 处理器内置 NPU 算力达 47 TOPS。散热方面，华硕冰锋散热技术在轻薄机身内实现 40W 性能释放，支持通过 Fn+F 组合键在安静、标准、性能多档散热模式间切换。 屏幕方面，该机配备 14 英寸 2.5K（2560×1",
+     "image": "https://img14.360buyimg.com/pop/jfs/t1/521409/10/761/106308/6a9a75b5F5cfa686f/0083320320b7659e.jpg",
+     "id": "6f983be7b30e",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0001",
+   "title": "影响你的下一份 AI 账单：消息称 Anthropic 降低外部依赖，评估自建部分计费系统",
+   "summary": "IT之家 9 月 5 日消息，科技媒体 The Information 昨日（9 月 4 日）发布博文，报道称基于招聘信息，Anthropic 为降低对 Stripe 等第三方服务商的依赖， 正评估自建更多内部支付与计费基础设施。 消息称 Anthropic 的计费平台（Billing Platform）团队正在推进“建或买”（build-vs-buy）评估， 希望厘清第三方金融平台的保留范围，以及需要自建的底层能力。 计费平台团队负责把用户实际使用的服务，转换成可核对、可出账、可收款的费用，通常负责记录用量、计算价格、生成账单、衔接支付与财务、识别异常",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "anthropic"
    ],
    "image": "",
    "llm_enriched": false,
@@ -1525,192 +566,1014 @@
    ],
    "articles": [
     {
-     "title": "OpenAI 将召集约 300 名安全领域负责人，筹备网络安全相关公告",
-     "url": "https://www.ithome.com/0/998/161.htm",
+     "title": "影响你的下一份 AI 账单：消息称 Anthropic 降低外部依赖，评估自建部分计费系统",
+     "url": "https://www.ithome.com/0/998/652.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-09-03T05:54:58+00:00",
-     "summary": "IT之家 9 月 3 日消息，据美媒 Axios 今天（3 日）晚间援引 OpenAI 一名发言人消息称，OpenAI 总裁格雷格 · 布罗克曼预计即将宣布扩大关键基础设施，以及公共部门机构对 OpenAI 工具的使用权限。 此前，OpenAI 意外入侵 Hugging Face，加上美国供水系统接连遭遇疑似借助 AI 实施的网络攻击，引发外界对公用事业设施抵御未来 AI 赋能网络攻击能力的严重担忧。 OpenAI 发言人透露，当地时间周四，布罗克曼将在 OpenAI 总部举行的一场网络安全峰会上公布该计划，预计将有约 300 名来自《财富》100 强企业的 企业安全负责人和首席信息安全官 出席。 据IT之家了解，会议将重点讨论企业、政府和网络安全公司 如何把 AI 工具交到防御人员手中 ，其中包括负责保护关键基础设施和公共服务的人员。 此次会议和即将公布的计划，正值 OpenAI 应对旗下模型的安全担忧之际。Hugging Face 遭入侵后，OpenAI 即将推出的 Astra 模型又达到了“关键”级别的网络安全能力。 本周早些时候，《The Information》还报道称，OpenAI 正研究一种新的训练方法，由此引发另一项担忧 —— 安全专业人士今后 是否仍能了解模型的思考过程 。 上周，OpenAI 通过发布公开信警告，各机构只剩几个月时间为 AI 赋能的网络攻击做好准",
+     "published": "2026-09-04T16:08:21+00:00",
+     "summary": "IT之家 9 月 5 日消息，科技媒体 The Information 昨日（9 月 4 日）发布博文，报道称基于招聘信息，Anthropic 为降低对 Stripe 等第三方服务商的依赖， 正评估自建更多内部支付与计费基础设施。 消息称 Anthropic 的计费平台（Billing Platform）团队正在推进“建或买”（build-vs-buy）评估， 希望厘清第三方金融平台的保留范围，以及需要自建的底层能力。 计费平台团队负责把用户实际使用的服务，转换成可核对、可出账、可收款的费用，通常负责记录用量、计算价格、生成账单、衔接支付与财务、识别异常使用等，可理解为 AI 服务的“智能水电表加收费账房”。 根据招聘信息，Anthropic 目前正在招募多个计费平台相关岗位，涵盖 Staff Software Engineer 与 Technical Program Manager 等。 岗位职责涵盖定价、支付基础设施、合同与权益（entitlements）、收入流水与对账、促销与商业化上线准备等。从招聘动态显示，公司正从支付行业吸纳人才，强化计费、风控与催收能力。 媒体报道称，Anthropic 在 2026 年第二季度营收达 115 亿美元 （IT之家注：现汇率约合 774.58 亿元人民币） ，较上年同期增长超过 14 倍。在高增长与复杂计费场景下，自建支付与计费系统有助于",
      "image": "",
-     "id": "4dc3583897a2",
+     "id": "c1fa732bc8df",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0033",
-   "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-   "summary": "",
+   "key": "t0002",
+   "title": "谷歌最强音乐 AI Lyria 3.5 塞进 Gemini：一键生成 3 分钟完整歌曲",
+   "summary": "IT之家 9 月 5 日消息，谷歌今天（9 月 5 日）发布公告， 宣布在 Gemini 应用和 Gemini API 中上线最新音乐生成模型 Lyria 3.5 ，标志着谷歌音乐 AI 从内部实验工具（Google Flow Music）走向主流用户与开发者生态。 调用方面，Lyria 3.5 同步开放给开发者，通过 Google AI Studio、Vertex AI 及 Gemini API 提供调用接口。IT之家附上相关截图如下： 文档列出了两种模型：Lyria 3 Clip（模型 ID 为 lyria-3-clip-preview），始终生成用",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "neomme",
-    "efficient",
-    "multimodal-native",
-    "multilingual",
-    "encoder"
+    "lyria",
+    "3.5",
+    "gemini",
+    "api",
+    "google"
    ],
-   "image": "img/2026-09-04/66bae36cd7a13042.webp",
+   "image": "img/2026-09-05/7f09bf59e0312fe6.webp",
    "llm_enriched": false,
    "sources": [
-    "Hugging Face"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-     "url": "https://huggingface.co/blog/Hcompany/neomme",
-     "source": "Hugging Face",
-     "lang": "en",
-     "published": "2026-09-03T05:13:48+00:00",
-     "summary": "",
-     "image": "",
-     "id": "96a3500c5a4b",
+     "title": "谷歌最强音乐 AI Lyria 3.5 塞进 Gemini：一键生成 3 分钟完整歌曲",
+     "url": "https://www.ithome.com/0/998/647.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T15:53:05+00:00",
+     "summary": "IT之家 9 月 5 日消息，谷歌今天（9 月 5 日）发布公告， 宣布在 Gemini 应用和 Gemini API 中上线最新音乐生成模型 Lyria 3.5 ，标志着谷歌音乐 AI 从内部实验工具（Google Flow Music）走向主流用户与开发者生态。 调用方面，Lyria 3.5 同步开放给开发者，通过 Google AI Studio、Vertex AI 及 Gemini API 提供调用接口。IT之家附上相关截图如下： 文档列出了两种模型：Lyria 3 Clip（模型 ID 为 lyria-3-clip-preview），始终生成用于循环和预览的 30 秒片段；以及 Lyria 3.5（模型 ID 为 lyria-3.5），可生成包含数段副歌、桥段等，时长数分钟的完整歌曲。官网文档暂未发现定价相关信息。 这两种模型默认输出 MP3 音频，Lyria 3.5 还支持 WAV 输出。文档指出，开发者可以在文本提示的同时提供最多 10 张图像，模型将依据视觉内容创作音乐。 所有生成内容均通过 Interactions API 统一调度，并嵌入 SynthID 隐形水印，该水印可抵抗压缩、重采样等常见音频处理，用于版权追踪与内容溯源。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/ad176448-aa90-40c0-b5df-aed55bcfe161.png",
+     "id": "80469adbc2e2",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0034",
-   "title": "‘NBA 2K27’ With NVIDIA DLSS 5 Leads 28 New Games Coming to GeForce NOW",
-   "summary": "September is here with 28 more games streaming on GeForce NOW this month, led by a slam dunk: NBA 2K27 with the NVIDIA DLSS 5 3D-Guided Neural Rendering feature. Through NVIDIA’s close collaboration with Visual Concepts and 2K, DLSS 5 brings a new level of lifelike lighting and m",
+   "key": "t0003",
+   "title": "XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation",
+   "summary": "The round is being raised just months after the robot data startup exited from stealth.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "dlss",
-    "nba",
-    "k27",
-    "geforce",
-    "games",
-    "leads"
+    "months",
+    "robot",
+    "xdof",
+    "three",
+    "stealth",
+    "series"
    ],
-   "image": "img/2026-09-04/a92bb8b00158f768.webp",
+   "image": "img/2026-09-05/96277d77a3f71d18.webp",
    "llm_enriched": false,
    "sources": [
-    "NVIDIA Blog"
+    "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "‘NBA 2K27’ With NVIDIA DLSS 5 Leads 28 New Games Coming to GeForce NOW",
-     "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list",
-     "source": "NVIDIA Blog",
+     "title": "XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation",
+     "url": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation",
+     "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-09-03T05:00:35+00:00",
-     "summary": "September is here with 28 more games streaming on GeForce NOW this month, led by a slam dunk: NBA 2K27 with the NVIDIA DLSS 5 3D-Guided Neural Rendering feature. Through NVIDIA’s close collaboration with Visual Concepts and 2K, DLSS 5 brings a new level of lifelike lighting and material detail to the court — tuned […]",
-     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/09/nba-2k27-nvidia-dlss-5-comparison-001-off-1680x945.jpg",
-     "id": "bb3f7f844685",
+     "published": "2026-09-04T15:36:14+00:00",
+     "summary": "The round is being raised just months after the robot data startup exited from stealth.",
+     "image": "",
+     "id": "d7b2d01e2750",
      "tags": [
-      "Gaming",
-      "Cloud Gaming",
-      "GeForce NOW"
+      "AI",
+      "Robotics",
+      "Startups",
+      "8VC"
      ]
     }
    ]
   },
   {
-   "key": "t0035",
-   "title": "Nvidia RTX Spark ‘Superchip’: The First AI PCs Are Here",
-   "summary": "At IFA 2026, Nvidia and its partners showed off the first RTX Spark-powered laptops and mini PCs, designed to run AI models right on your computer.",
+   "key": "t0004",
+   "title": "匿名 AI 模型再现：又一 Alpha 上线 OpenCode，线索指向智谱",
+   "summary": "IT之家 9 月 5 日消息， 在 Ox Alpha 确认为 GLM-5.3-Flash 原生多模态模型后 ，又一款名为 Omen Alpha 的模型昨日（9 月 4 日）上线 OpenCode Go 订阅计划 ，种种线索表明同样来自智谱公司。 费用方面，该模型目前仅对 OpenCode Go 订阅用户开放，月费 10 美元 （IT之家注：现汇率约合 67.4 元人民币） ，但单独提供 100 美元 （现汇率约合 673.6 元人民币） 的 Omen Alpha 用量额度。 平台设定了分层使用上限，每 5 小时请求数为 11,600，每周请求数为 29,",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "pcs",
-    "superchip",
-    "first",
-    "rtx",
-    "here",
-    "chip"
+    "alpha",
+    "opencode",
+    "omen",
+    "token",
+    "100"
    ],
-   "image": "img/2026-09-04/866460163aca964b.webp",
+   "image": "img/2026-09-05/6f4045d6f06dcba7.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "匿名 AI 模型再现：又一 Alpha 上线 OpenCode，线索指向智谱",
+     "url": "https://www.ithome.com/0/998/641.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T15:30:48+00:00",
+     "summary": "IT之家 9 月 5 日消息， 在 Ox Alpha 确认为 GLM-5.3-Flash 原生多模态模型后 ，又一款名为 Omen Alpha 的模型昨日（9 月 4 日）上线 OpenCode Go 订阅计划 ，种种线索表明同样来自智谱公司。 费用方面，该模型目前仅对 OpenCode Go 订阅用户开放，月费 10 美元 （IT之家注：现汇率约合 67.4 元人民币） ，但单独提供 100 美元 （现汇率约合 673.6 元人民币） 的 Omen Alpha 用量额度。 平台设定了分层使用上限，每 5 小时请求数为 11,600，每周请求数为 29,000，而每月请求数为 57,900。每次请求 300 个输入 token，40,000 个缓存 token，100 个输出 token。 根据 OpenCode 的官网参考价格，Omen Alpha 的参考定价为输入 0.20 美元 （现汇率约合 1.3 元人民币） / 百万 token、输出 0.66 美元 （现汇率约合 4.4 元人民币） / 百万 token、缓存读取 0.04 美元 （现汇率约合 0.27 元人民币） / 百万 token。 此外根据 Pi（一个类似 OpenCode 的 AI 开发智能体工具）的模型页面，显示 Omen Alpha 支持 50 万 token 上下文窗口、文本与图像多模态输入、最大输出 1",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/0b92c188-715a-45c5-a7cd-f19fc392c6a0.png",
+     "id": "69903c51c4b5",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0005",
+   "title": "Anthropic：Claude 仅用 11 天完成费马大定理首个完整计算机验证证明",
+   "summary": "IT之家 9 月 5 日消息，Anthropic 于当地时间 9 月 4 日宣布，其 AI 模型 Claude 在基本自主运行 11 天后，完成了对费马大定理（FLT）的首个端到端、经过计算机检查的形式化证明。 Anthropic 表示，这项工作并非重新发现费马大定理的数学证明，而是将已有数学证明转换为 Lean 证明助手可以逐步验证的形式。 IT之家注：Lean 是一种用于编写和验证形式化数学证明的证明助手，能够通过计算机检查证明中的逻辑步骤。 据介绍，Claude 在这一过程中生成了约 1300 万行 Lean 代码，并证明了约 3.03 万个定理，",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "lean"
+   ],
+   "image": "img/2026-09-05/08a799e6507ed4a0.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "Anthropic：Claude 仅用 11 天完成费马大定理首个完整计算机验证证明",
+     "url": "https://www.ithome.com/0/998/638.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T15:20:46+00:00",
+     "summary": "IT之家 9 月 5 日消息，Anthropic 于当地时间 9 月 4 日宣布，其 AI 模型 Claude 在基本自主运行 11 天后，完成了对费马大定理（FLT）的首个端到端、经过计算机检查的形式化证明。 Anthropic 表示，这项工作并非重新发现费马大定理的数学证明，而是将已有数学证明转换为 Lean 证明助手可以逐步验证的形式。 IT之家注：Lean 是一种用于编写和验证形式化数学证明的证明助手，能够通过计算机检查证明中的逻辑步骤。 据介绍，Claude 在这一过程中生成了约 1300 万行 Lean 代码，并证明了约 3.03 万个定理，其中约 2.95 万个中间定理最终被纳入费马大定理的完整证明。整个证明由 Lean 完成检查，仅使用 Lean 的 3 条标准公理。 这项工作的目标是将英国数学家安德鲁 · 怀尔斯于 1995 年完成的费马大定理证明进行形式化。 费马大定理指出，当整数指数 n 大于 2 时，不存在满足 aⁿ+bⁿ=cⁿ的正整数 a、b、c。怀尔斯的原始证明长达 129 页，其正确性在发表前还经历了数月的人工核查。 数学形式化的难点在于，人类数学证明通常会省略大量被认为显而易见的推导步骤，而 Lean 需要明确验证每一个逻辑环节。 此外，数学家长期以来还会引用大量尚未被形式化的既有数学成果，因此将完整证明转换为计算机可验证形式通常需要投入大量时间。A",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/dfb12365-3595-4c75-8a71-f550d69a86ec.jpg?x-bce-process=image/format,f_auto",
+     "id": "291b98dc1607",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0006",
+   "title": "策略游戏《人类 2》预告片被质疑“AI 生成”：开发商 Amplitude 发布幕后视频，证明由真人团队制作",
+   "summary": "IT之家 9 月 5 日消息，开发商 Amplitude Studios 在今年 Gamescom 2026 活动中公布了《人类 2（Humankind 2）》首支预告片，不过许多网友认为预告片存在明显的“AI 生成痕迹”，并直接将其称为“AI Slop”。 对此，Amplitude Studios 在接受外媒 Eurogamer 采访时 否认相应预告片为 AI 生成 ，并发布幕后制作视频，展示这支预告片的实际制作过程。 Amplitude Studios 声称，为了制作这支幕后视频，Amplitude Studios 再次与创意机构 BETC 合作。相",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "amplitude",
+    "studios",
+    "betc",
+    "cgi"
+   ],
+   "image": "img/2026-09-05/726f8153c96216f4.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "策略游戏《人类 2》预告片被质疑“AI 生成”：开发商 Amplitude 发布幕后视频，证明由真人团队制作",
+     "url": "https://www.ithome.com/0/998/637.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T15:20:36+00:00",
+     "summary": "IT之家 9 月 5 日消息，开发商 Amplitude Studios 在今年 Gamescom 2026 活动中公布了《人类 2（Humankind 2）》首支预告片，不过许多网友认为预告片存在明显的“AI 生成痕迹”，并直接将其称为“AI Slop”。 对此，Amplitude Studios 在接受外媒 Eurogamer 采访时 否认相应预告片为 AI 生成 ，并发布幕后制作视频，展示这支预告片的实际制作过程。 Amplitude Studios 声称，为了制作这支幕后视频，Amplitude Studios 再次与创意机构 BETC 合作。相应预告片采用了真人实拍、实体场景、定制道具、服装、视觉特效以及 CGI 等多种制作方式，以便“将数千年的历史浓缩到短短几秒钟的画面中”。 ▲ 游戏预告视频截取帧 一些网友此前还猜测，Amplitude 或 BETC 可能在真人拍摄素材上直接叠加了 AI 生成的视觉特效。不过从最新幕后视频来看，这一猜测同样没有依据。预告片中的 CGI 由 LiveFX 负责制作，采用传统的视觉特效制作流程，而不是使用生成式 AI 完成。幕后视频还展示了部分 CG 场景在后期制作过程中从实拍素材逐渐变为最终成片的过程。 尽管如此，《人类 2》公布预告片此前引发的“AI 感”也并非完全没有原因。部分 CG 画面可能刻意采用了较为夸张的视觉效果，加上摄影机",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/980c0eb5-4ade-4770-9594-515b8e4cb841.png?x-bce-process=image/format,f_auto",
+     "id": "cffb03dc557a",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0007",
+   "title": "OpenAI’s rogue agents keep escaping, with no formal process to investigate them",
+   "summary": "OpenAI’s latest agent swarm incident adds urgency to calls for independent investigations as researchers and lawmakers question whether AI labs should control the scope of their own safety reviews.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "keep",
+    "escaping",
+    "formal",
+    "investigate",
+    "them",
+    "process"
+   ],
+   "image": "img/2026-09-05/9b0e0c14d7558fdc.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "OpenAI’s rogue agents keep escaping, with no formal process to investigate them",
+     "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-04T15:15:11+00:00",
+     "summary": "OpenAI’s latest agent swarm incident adds urgency to calls for independent investigations as researchers and lawmakers question whether AI labs should control the scope of their own safety reviews.",
+     "image": "",
+     "id": "fe3e9affeeaa",
+     "tags": [
+      "AI",
+      "breach",
+      "OpenAI",
+      "Hugging Face"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0009",
+   "title": "长安启源 Q06 新能源 SUV 预售发布 2 小时，累计订单突破 11079 台",
+   "summary": "IT之家 9 月 5 日消息，长安启源 Q06 新能源 SUV 于昨晚开启预售，抢订价 14.79 万元起，提供纯电、增程车型。参考官方微博，该车预售发布 2 小时，累计订单突破 11079 台。 该车车长 4837mm、车宽 1970mm、车高 1670mm，轴距达 2940mm，配备贯穿式微笑大灯、贯穿式星环尾灯，提供流光翡翠、微醺玫瑰、云帆白、浮光银、天际灰、落霞紫、松影黑车色，座舱提供云梦紫、逐光橙、瞬影黑配色。 座舱方面，该车配备全车四季零压电动座椅，支持通风、加热、按摩，提供 145° 无级电动零压后排、28 点马尔代夫电动按摩椅模式。除了常",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "q06",
+    "11079",
+    "suv"
+   ],
+   "image": "img/2026-09-05/dc223802b317b7d0.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "长安启源 Q06 新能源 SUV 预售发布 2 小时，累计订单突破 11079 台",
+     "url": "https://www.ithome.com/0/998/634.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T15:08:10+00:00",
+     "summary": "IT之家 9 月 5 日消息，长安启源 Q06 新能源 SUV 于昨晚开启预售，抢订价 14.79 万元起，提供纯电、增程车型。参考官方微博，该车预售发布 2 小时，累计订单突破 11079 台。 该车车长 4837mm、车宽 1970mm、车高 1670mm，轴距达 2940mm，配备贯穿式微笑大灯、贯穿式星环尾灯，提供流光翡翠、微醺玫瑰、云帆白、浮光银、天际灰、落霞紫、松影黑车色，座舱提供云梦紫、逐光橙、瞬影黑配色。 座舱方面，该车配备全车四季零压电动座椅，支持通风、加热、按摩，提供 145° 无级电动零压后排、28 点马尔代夫电动按摩椅模式。除了常规的中控屏以外，该车还配备 15.6 英寸 2.5K 后排娱乐屏，后排侧窗电动遮阳帘、9.5L 双层冷暖冰箱、四门双层隔音玻璃，2200L 一键拓展巨能装模式。 辅助驾驶方面，该车配备 560TOPS 高算力芯片、256 线激光雷达，支持一段式端到端全场景领航，包括城区领航、高速领航、全场景绕障辅助、交互式领航、400+ 场景智能泊车辅助等。 此外，该车还配备豪车级全铝前双叉臂 + 后五连杆悬架，同级首发双电机扭矩矢量控制技术，提供少有的双电机后驱动力，纯电车型后双电机总功率 330kW，能耗降低 10-20%。 续航方面，该车搭载宁德时代大电池，纯电版电池容量达 80.02kwh，带来 700km 续航，增程版则带来 1600km",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/68a281c8-c457-47d5-bc2a-dc2db131c9d7.png?x-bce-process=image/format,f_auto",
+     "id": "e88d6e1b32f7",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0010",
+   "title": "主打隐私保护：消息称苹果首款 AI 家用安防摄像头瞄准 2027 年发布",
+   "summary": "IT之家 9 月 5 日消息，彭博社的马克 · 古尔曼（Mark Gurman）昨日（9 月 4 日）发布博文，爆料称苹果公司可能会在 2027 年推出家庭安防系统及配套监控服务。 消息称苹果正设计一款家庭安防摄像头，主打隐私保护，不会直接记录和分析实际视频， 计划利用 AI（人工智能）监测周围环境。 IT之家此前报道，彭博社的马克 · 古尔曼此前对该安防摄像头的描述如下： 这款设备配备面部识别和红外传感器，可以识别房间内的人员。苹果公司认为，用户会在家中各处安装摄像头，能实现智能家居自动化。例如，当有人离开房间后自动关灯，或者自动播放特定家庭成员喜欢的",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "2027",
+    "homekit"
+   ],
+   "image": "img/2026-09-05/b0d13cbc4e20a829.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "主打隐私保护：消息称苹果首款 AI 家用安防摄像头瞄准 2027 年发布",
+     "url": "https://www.ithome.com/0/998/631.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T14:58:33+00:00",
+     "summary": "IT之家 9 月 5 日消息，彭博社的马克 · 古尔曼（Mark Gurman）昨日（9 月 4 日）发布博文，爆料称苹果公司可能会在 2027 年推出家庭安防系统及配套监控服务。 消息称苹果正设计一款家庭安防摄像头，主打隐私保护，不会直接记录和分析实际视频， 计划利用 AI（人工智能）监测周围环境。 IT之家此前报道，彭博社的马克 · 古尔曼此前对该安防摄像头的描述如下： 这款设备配备面部识别和红外传感器，可以识别房间内的人员。苹果公司认为，用户会在家中各处安装摄像头，能实现智能家居自动化。例如，当有人离开房间后自动关灯，或者自动播放特定家庭成员喜欢的音乐。 科技媒体 9to5Mac 此前指出，苹果在 iOS 27 系统中，升级 HomeKit 的安全视频（Secure Video）功能，带来以下 4 项改进，预估会在新款安防摄像头上实现： 支持 4K 视频 可以调用 AI 描述视频画面内容 搜索视频片段 值得关注的片段 该功能面向兼容 HomeKit 的第三方摄像头提供视频传输和存储能力。该功能采用端到端加密，并通过 iCloud 处理兼容摄像头的视频流与存储。 在 iOS 27 中，Home App 可为运动侦测警报生成文字摘要，也能展示重点片段和汇集多台摄像头的视频。 苹果还计划在 2026 年底前推出一款智能家居中枢，用于控制智能家居设备。此前传闻称，苹果正在研发一款可与",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/5adc8be2-7c54-4b1b-99af-66c4c6709246.png?x-bce-process=image/format,f_auto",
+     "id": "f7c4134973c5",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0011",
+   "title": "Anthropic IPO 推迟至中期选举前：最早 10 月中旬启动路演，目标估值 2 万亿美元",
+   "summary": "IT之家 9 月 5 日消息，路透社刚刚报道称，Anthropic 的首次公开募股（IPO）时间表出现调整。 据知情人士透露，Anthropic 预计最早于 10 月中旬启动 IPO 路演，并计划在 11 月美国中期选举前数日完成上市。此前市场预期该公司最早于本周公开 IPO 招股书，但目前这一时间点已推迟至 9 月下旬。 Anthropic 此次 IPO 备受资本市场关注，部分投资者给出的估值预期高达 2 万亿美元 （IT之家注：现汇率约合 13.47 万亿元人民币） 。若达成该估值，Anthropic 将超越 SpaceX 在 2026 年 6 月创",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "ipo",
+    "anthropic",
+    "spacex"
+   ],
+   "image": "img/2026-09-05/1ab90d2a5d087f74.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "Anthropic IPO 推迟至中期选举前：最早 10 月中旬启动路演，目标估值 2 万亿美元",
+     "url": "https://www.ithome.com/0/998/630.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T14:52:38+00:00",
+     "summary": "IT之家 9 月 5 日消息，路透社刚刚报道称，Anthropic 的首次公开募股（IPO）时间表出现调整。 据知情人士透露，Anthropic 预计最早于 10 月中旬启动 IPO 路演，并计划在 11 月美国中期选举前数日完成上市。此前市场预期该公司最早于本周公开 IPO 招股书，但目前这一时间点已推迟至 9 月下旬。 Anthropic 此次 IPO 备受资本市场关注，部分投资者给出的估值预期高达 2 万亿美元 （IT之家注：现汇率约合 13.47 万亿元人民币） 。若达成该估值，Anthropic 将超越 SpaceX 在 2026 年 6 月创下的约 1.77 万亿美元上市估值纪录，成为史上规模最大的 IPO 之一。作为对比，SpaceX 的 IPO 最终募资规模为 862 亿美元（含超额配售），而 Anthropic 的目标募资额高达 1,000 亿美元 （现汇率约合 6,735.52 亿元人民币） 。 作为 IPO 筹备工作的一部分，Anthropic 正在接近敲定将其循环信贷额度扩大至 150 亿美元。知情人士称，摩根士丹利将牵头该信贷安排，高盛、摩根大通和花旗担任重要角色。这四家银行同时也是 Anthropic 此次 IPO 的主要承销商。巴克莱、富国银行、美国银行、德意志银行等多家机构也将参与该信贷安排。企业通常会在正式确定 IPO 承销银行分工前完成循环信贷安",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/68e81e85-571c-4532-ac56-9a446bc13877.jpg?x-bce-process=image/format,f_auto",
+     "id": "322e18fb1d1c",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0012",
+   "title": "车机 AI 加一：Anthropic Claude iOS 版应用接入苹果 CarPlay",
+   "summary": "IT之家 9 月 5 日消息，Anthropic 现已为旗下 Claude iOS 应用加入苹果 CarPlay 支持，Claude 用户现在可以通过汽车的信息娱乐系统与 AI 助手进行语音对话，无需在驾驶过程中操作手机。 IT之家注意到，苹果此前已经在 iOS 26.4 中为 CarPlay 加入第三方聊天机器人支持。希望接入 CarPlay 的聊天机器人应用需要支持苹果指定的语音控制界面，采用 CarPlay 规定的界面模板，并获得苹果授予的相关权限。 Anthropic 表示，如今 Claude 在汽车上可以通过语音回答用户提出的问题，实现免提交互",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "carplay",
+    "ios",
+    "claude",
+    "robot",
+    "apple",
+    "anthropic"
+   ],
+   "image": "img/2026-09-05/4d787d020c4190c4.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "车机 AI 加一：Anthropic Claude iOS 版应用接入苹果 CarPlay",
+     "url": "https://www.ithome.com/0/998/629.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T14:52:35+00:00",
+     "summary": "IT之家 9 月 5 日消息，Anthropic 现已为旗下 Claude iOS 应用加入苹果 CarPlay 支持，Claude 用户现在可以通过汽车的信息娱乐系统与 AI 助手进行语音对话，无需在驾驶过程中操作手机。 IT之家注意到，苹果此前已经在 iOS 26.4 中为 CarPlay 加入第三方聊天机器人支持。希望接入 CarPlay 的聊天机器人应用需要支持苹果指定的语音控制界面，采用 CarPlay 规定的界面模板，并获得苹果授予的相关权限。 Anthropic 表示，如今 Claude 在汽车上可以通过语音回答用户提出的问题，实现免提交互。不过，该功能目前无法控制车辆或 iPhone 上的其他功能。此外， 由于 CarPlay 暂不支持第三方唤醒词，用户仍需要先通过 CarPlay 界面手动打开 Claude 应用，随后才能开始语音对话 。 进入 CarPlay 中的 Claude 应用后，用户会看到“开始免提对话”界面，可以选择开始新的对话，也可以访问近期聊天记录。对话过程中，界面提供静音、取消静音、结束以及恢复对话等控制选项，同时会通过视觉提示显示 Claude 当前是否正在聆听或回答。 目前，苹果 CarPlay 已经支持大量第三方 AI 应用，除了 Anthropic Claude 外，先前 OpenAI 也已经为 ChatGPT iOS 应用加入 CarP",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/970a407f-4f01-4b2c-8bcd-19d206b52d9f.png?x-bce-process=image/format,f_auto",
+     "id": "f61f273f19a3",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0016",
+   "title": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
+   "summary": "Nscale, which recently struck a $45 billion deal with Anthropic, is in talks to raise additional funds in anticipation of an upcoming IPO.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "nscale",
+    "provider",
+    "looking",
+    "pre-ipo",
+    "financing",
+    "compute"
+   ],
+   "image": "img/2026-09-05/5dccb418ca226dda.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
+     "url": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-04T13:12:11+00:00",
+     "summary": "Nscale, which recently struck a $45 billion deal with Anthropic, is in talks to raise additional funds in anticipation of an upcoming IPO.",
+     "image": "",
+     "id": "886491e995a1",
+     "tags": [
+      "AI",
+      "nvidia",
+      "In Brief",
+      "compute",
+      "nscale"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0018",
+   "title": "Architecting memory and storage in the AI era",
+   "summary": "The era of AI inference has arrived. Imagine a healthcare system analyzing millions of data points in real time to accelerate life-saving medical research, or an intelligent assistant instantly resolving thousands of complex customer needs at once. These real-world breakthroughs ",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "architecting",
+    "memory",
+    "intel",
+    "era",
+    "storage",
+    "arrived."
+   ],
+   "image": "img/2026-09-05/5b9de132c1560bf3.webp",
+   "llm_enriched": false,
+   "sources": [
+    "MIT Technology Review AI"
+   ],
+   "articles": [
+    {
+     "title": "Architecting memory and storage in the AI era",
+     "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era",
+     "source": "MIT Technology Review AI",
+     "lang": "en",
+     "published": "2026-09-04T10:39:19+00:00",
+     "summary": "The era of AI inference has arrived. Imagine a healthcare system analyzing millions of data points in real time to accelerate life-saving medical research, or an intelligent assistant instantly resolving thousands of complex customer needs at once. These real-world breakthroughs rely on advanced infrastructure acting as the engine of continuous intelligence, powering real-time services while…",
+     "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/iStock-2239372581.jpg?w=840",
+     "id": "5d819de11d79",
+     "tags": [
+      "Artificial intelligence",
+      "sponsored"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0019",
+   "title": "Roland is getting into generative AI music with Melody Flip",
+   "summary": "It's not quite the \"push button; get song\" of Suno, but Roland's new Melody Flip tool marks the company's foray into generative AI music. Available as a plug-in for your digital audio workstation (DAW), Melody Flip offers around 250 \"Palettes,\" which are essentially themed collec",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "melody",
+    "flip",
+    "roland",
+    "getting",
+    "generative",
+    "music"
+   ],
+   "image": "img/2026-09-05/b8033b3798766215.webp",
+   "llm_enriched": false,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Roland is getting into generative AI music with Melody Flip",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-04T09:51:35+00:00",
+     "summary": "It's not quite the \"push button; get song\" of Suno, but Roland's new Melody Flip tool marks the company's foray into generative AI music. Available as a plug-in for your digital audio workstation (DAW), Melody Flip offers around 250 \"Palettes,\" which are essentially themed collections of musical ideas sorted by genre. You can start from […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Melody_Flip_Palettes-Fav.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "480cff7899eb",
+     "tags": [
+      "AI",
+      "Apps",
+      "Entertainment",
+      "Music",
+      "News"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0020",
+   "title": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
+   "summary": "A once-overlooked block of unicode that's invisible to humans is gaining ever wider use.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "once",
+    "popular",
+    "attacking",
+    "ascii",
+    "smuggling",
+    "embraced"
+   ],
+   "image": "img/2026-09-05/085946febed649ef.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
+     "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-09-04T09:18:12+00:00",
+     "summary": "A once-overlooked block of unicode that's invisible to humans is gaining ever wider use.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/no-eyes-500x500.jpg",
+     "id": "dd6fb7a794ea",
+     "tags": [
+      "AI",
+      "Biz & IT",
+      "Security",
+      "ascii smuggling",
+      "prompt injections"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0022",
+   "title": "token怎麼控制預算？ AI獨角獸揭4招省錢心法：先找效率前沿模型就對了！",
+   "summary": "Databricks 近期發布文章分享其從自身經驗以及與大企業的交流中，整理出的一套 AI 成本管理方法。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "token",
+    "databricks"
+   ],
+   "image": "img/2026-09-05/c667976531320cdd.webp",
+   "llm_enriched": false,
+   "sources": [
+    "數位時代"
+   ],
+   "articles": [
+    {
+     "title": "token怎麼控制預算？ AI獨角獸揭4招省錢心法：先找效率前沿模型就對了！",
+     "url": "https://www.bnext.com.tw/article/92060/managing-ai-coding-costs-scale",
+     "source": "數位時代",
+     "lang": "zh",
+     "published": "2026-09-04T08:59:00+00:00",
+     "summary": "Databricks 近期發布文章分享其從自身經驗以及與大企業的交流中，整理出的一套 AI 成本管理方法。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-08/32jc-1786935982.png?w=900&output=webp",
+     "id": "faef91c70b02",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0023",
+   "title": "Salesforce把用戶入口讓給Claude！Claudeforce是什麼、為何甘願當SaaS笨水管",
+   "summary": "Salesforce攜手Anthropic推出Claudeforce，把銷售端使用者介面交給Claude，看似退為笨水管，實則押注資料與工作流護城河。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "salesforce",
+    "claudeforce",
+    "saas",
+    "claude",
+    "anthropic"
+   ],
+   "image": "img/2026-09-05/e8d36bc710ef5b88.webp",
+   "llm_enriched": false,
+   "sources": [
+    "數位時代"
+   ],
+   "articles": [
+    {
+     "title": "Salesforce把用戶入口讓給Claude！Claudeforce是什麼、為何甘願當SaaS笨水管",
+     "url": "https://www.bnext.com.tw/article/92142/salesforce-claudeforce-dumb-pipe",
+     "source": "數位時代",
+     "lang": "zh",
+     "published": "2026-09-04T08:55:00+00:00",
+     "summary": "Salesforce攜手Anthropic推出Claudeforce，把銷售端使用者介面交給Claude，看似退為笨水管，實則押注資料與工作流護城河。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2019-02/img-1550563515-93573.jpg?w=900&output=webp",
+     "id": "6c9035c42e20",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0024",
+   "title": "Anthropic’s $2 trillion IPO puts powerful external trustees in spotlight",
+   "summary": "Public-market scrutiny will intensify pressure on the Claude maker’s unusual attempt to balance profit and purpose.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "trillion",
+    "powerful",
+    "external",
+    "trustees",
+    "spotlight",
+    "ipo"
+   ],
+   "image": "img/2026-09-05/9cff0ae9e4abce81.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "Anthropic’s $2 trillion IPO puts powerful external trustees in spotlight",
+     "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-09-04T08:22:18+00:00",
+     "summary": "Public-market scrutiny will intensify pressure on the Claude maker’s unusual attempt to balance profit and purpose.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2285051730-500x500.jpg",
+     "id": "5ad32d008cbf",
+     "tags": [
+      "AI",
+      "Anthropic",
+      "IPO",
+      "syndication"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0025",
+   "title": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
+   "summary": "Microsoft's Copilot rarely reproduces even full sentences from news articles and books, let alone substantive chunks that could substitute for the original, the company says in new legal filings as it fights copyright claims from publishers including The New York Times and book a",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "articles",
+    "microsoft",
+    "virtually",
+    "nobody",
+    "grabbing",
+    "nyt"
+   ],
+   "image": "img/2026-09-05/1734e16408b83ac3.webp",
+   "llm_enriched": false,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
+     "url": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-04T08:05:57+00:00",
+     "summary": "Microsoft's Copilot rarely reproduces even full sentences from news articles and books, let alone substantive chunks that could substitute for the original, the company says in new legal filings as it fights copyright claims from publishers including The New York Times and book authors. As part of the lawsuit's discovery, Microsoft provided 8.2 million Copilot […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK259_MICROSOFT_COPILOT_2__B.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "5663e6b86ddd",
+     "tags": [
+      "AI",
+      "Copyright",
+      "Law",
+      "Microsoft",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0026",
+   "title": "全新奔驰长轴距 GLE SUV 将于 9 月 16 日上市，首批搭载 Momenta R7",
+   "summary": "IT之家 9 月 4 日消息，据易车今日报道，全新奔驰长轴距 GLE SUV 将于 9 月 16 日上市。新车采用最新设计语言，加长后的轴距达到 3115mm。内饰采用三联屏设计，内置豆包 AI 大模型虚拟助手，并且后续还将搭载 Momenta R7 世界模型。 IT之家注意到，9 月 1 日，全新国产梅赛德斯-奔驰长轴距 GLE SUV 在顺义工厂正式下线。该车配备“双星徽”前大灯，构成车头独特的视觉标志，发光中央星标与发光格栅边框则进一步增强气场。中国专属加长设计将整车 轴距提升至超 3.1 米 ，配合大五座布局，标配可滑动开启全景天窗，还会提供座椅",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "gle",
+    "suv",
+    "bytedance",
+    "momenta"
+   ],
+   "image": "img/2026-09-05/7c7140cc288dd9c0.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "全新奔驰长轴距 GLE SUV 将于 9 月 16 日上市，首批搭载 Momenta R7",
+     "url": "https://www.ithome.com/0/998/622.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T07:18:17+00:00",
+     "summary": "IT之家 9 月 4 日消息，据易车今日报道，全新奔驰长轴距 GLE SUV 将于 9 月 16 日上市。新车采用最新设计语言，加长后的轴距达到 3115mm。内饰采用三联屏设计，内置豆包 AI 大模型虚拟助手，并且后续还将搭载 Momenta R7 世界模型。 IT之家注意到，9 月 1 日，全新国产梅赛德斯-奔驰长轴距 GLE SUV 在顺义工厂正式下线。该车配备“双星徽”前大灯，构成车头独特的视觉标志，发光中央星标与发光格栅边框则进一步增强气场。中国专属加长设计将整车 轴距提升至超 3.1 米 ，配合大五座布局，标配可滑动开启全景天窗，还会提供座椅振动按摩功能。 新车搭载奔驰首创的 AR 平视显示系统 ，将导航关键信息融入真实环境，打造沉浸式导航；全新城区及高速领航辅助驾驶系统，将在中国市场实现“车位到车位”的智能辅助驾驶与辅助泊车。 动力方面， 新车搭载 3.0 升排量直列六缸发动机 ，标配电动辅助增压器，峰值扭矩提升 12% 至 560 牛 · 米，在 17 千瓦 ISG 智能电机及 48 伏轻混系统的加持下，令动力随叫随到并提升燃油经济性。 据IT之家了解，全新长轴距 GLE 标配 4MATIC 智能四驱系统，选择越野模式后，AIRMATIC 空气悬挂可额外升高 30mm，最小离地间隙达到 271mm。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/8cc17fda-3a50-4d81-b8f2-80e05b85fae5.png",
+     "id": "adfb2b8ae627",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0027",
+   "title": "Who Cares if AI Is Conscious—It’s Basically Alive",
+   "summary": "While philosophers ponder AI consciousness, the models have ideas of their own.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "cares",
+    "conscious",
+    "basically",
+    "alive",
+    "philosophers",
+    "ponder"
+   ],
+   "image": "img/2026-09-05/6a516606cf8cc8a2.webp",
    "llm_enriched": false,
    "sources": [
     "Wired AI"
    ],
    "articles": [
     {
-     "title": "Nvidia RTX Spark ‘Superchip’: The First AI PCs Are Here",
-     "url": "https://www.wired.com/story/nvidia-rtx-spark-laptops-first-look",
+     "title": "Who Cares if AI Is Conscious—It’s Basically Alive",
+     "url": "https://www.wired.com/story/who-cares-if-ai-is-conscious-its-basically-alive",
      "source": "Wired AI",
      "lang": "en",
-     "published": "2026-09-03T05:00:00+00:00",
-     "summary": "At IFA 2026, Nvidia and its partners showed off the first RTX Spark-powered laptops and mini PCs, designed to run AI models right on your computer.",
-     "image": "https://media.wired.com/photos/6a988e1369e7125a8c650442/master/pass/We-Just-Got-Our-First-Real-Look-at-AI-PCs-with-Nvidia%E2%80%99s-RTX-Spark-%E2%80%98Superchip%E2%80%99.jpg",
-     "id": "5a2d513cafa8",
+     "published": "2026-09-04T07:00:00+00:00",
+     "summary": "While philosophers ponder AI consciousness, the models have ideas of their own.",
+     "image": "https://media.wired.com/photos/6a9a07e3356d3dfac634d3e8/master/pass/Backchannel-AI-Consciousness-Business-2289990159.jpg",
+     "id": "9c2cdc5a637b",
      "tags": [
-      "Gear",
-      "Gear / Products",
-      "Gear / Gear News and Events",
-      "Gear / Products / Computers",
-      "IFA"
+      "Business",
+      "Business / Tech Culture",
+      "philosophy",
+      "consciousness",
+      "Backchannel - NL"
      ]
+    }
+   ]
+  },
+  {
+   "key": "t0028",
+   "title": "广电总局召开 AI 微短剧“融像”“融声”座谈会，爱奇艺、红果等参会",
+   "summary": "IT之家 9 月 4 日消息，据国家广播电视总局，9 月 2 日，AI 微短剧“融像”“融声”知识产权与人格权益保护座谈会召开。会议围绕生成式人工智能在微短剧创作中涉及的肖像、声音等权益使用问题，听取行业意见，凝聚行业共识。 会议认为，AI 技术为网络视听内容创新注入新动能， 应充分尊重肖像、声音等属于自然人的基本人格权益 。要统筹发展与安全、创新与规范，推动 AI 微短剧在法治轨道上高质量发展。 会议进一步凝聚了规范 AI 微短剧肖像、声音使用的共识。一是严守授权底线， 任何“融像”“融声”行为均须取得权利人明确授权 。二是科学合理认定侵权，结合生成内",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "tencent"
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "广电总局召开 AI 微短剧“融像”“融声”座谈会，爱奇艺、红果等参会",
+     "url": "https://www.ithome.com/0/998/610.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T06:27:11+00:00",
+     "summary": "IT之家 9 月 4 日消息，据国家广播电视总局，9 月 2 日，AI 微短剧“融像”“融声”知识产权与人格权益保护座谈会召开。会议围绕生成式人工智能在微短剧创作中涉及的肖像、声音等权益使用问题，听取行业意见，凝聚行业共识。 会议认为，AI 技术为网络视听内容创新注入新动能， 应充分尊重肖像、声音等属于自然人的基本人格权益 。要统筹发展与安全、创新与规范，推动 AI 微短剧在法治轨道上高质量发展。 会议进一步凝聚了规范 AI 微短剧肖像、声音使用的共识。一是严守授权底线， 任何“融像”“融声”行为均须取得权利人明确授权 。二是科学合理认定侵权，结合生成内容的整体特征、使用场景、主观意图及平台是否履行必要审核义务等因素综合判断。三是健全全流程风控机制，平台和制作机构要将权益保护嵌入内容生产各环节，强化事前授权管理、事中技术筛查与人工复核、事后可追溯存证，切实提升合规水平和风险防范能力。 IT之家获悉，该会议由国家广播电视总局网络视听节目管理司主办，中国网络视听协会承办，广电总局发展研究中心、信息网络中心有关负责同志，中国版权协会、中国传媒大学相关专家学者，以及 爱奇艺、点众、山海、红果、九州、快手、芒果 TV、容量、腾讯、优酷、中文在线、满天星、蕃薯藤、时刻互动、中视数字、迅致中和、数听世界 等 17 家平台和制作机构代表参加会议。",
+     "image": "",
+     "id": "c053ed5e8259",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0029",
+   "title": "Less than 24 hours to apply for your TechCrunch Disrupt 2026 Side Event",
+   "summary": "Less than 24 hours left to apply to host a Side Event during TechCrunch Disrupt 2026 and make your mark in the Silicon Valley scene. Apply before the application closes tonight at midnight PT.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "apply",
+    "less",
+    "disrupt",
+    "side",
+    "techcrunch",
+    "hours"
+   ],
+   "image": "img/2026-09-05/c9334f853cf12c9d.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Less than 24 hours to apply for your TechCrunch Disrupt 2026 Side Event",
+     "url": "https://techcrunch.com/2026/09/04/less-than-24-hours-to-apply-for-your-techcrunch-disrupt-2026-side-event",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-04T06:00:00+00:00",
+     "summary": "Less than 24 hours left to apply to host a Side Event during TechCrunch Disrupt 2026 and make your mark in the Silicon Valley scene. Apply before the application closes tonight at midnight PT.",
+     "image": "",
+     "id": "12e0ba41d6eb",
+     "tags": [
+      "Startups",
+      "Fintech",
+      "Biotech & Health",
+      "Venture",
+      "Media & Entertainment"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0030",
+   "title": "微信开源通用多模态嵌入模型 WeMM-Embedding，已大规模部署在微信推荐与搜索系统中",
+   "summary": "IT之家 9 月 4 日消息，微信 AI 官方今日宣布，将 微信线上每天调用十亿量级 的通用多模态嵌入模型 WeMM-Embedding 开源， 包含 2B、4B、9B 三个版本 ，支持文本、图像、视频、视觉文档以及任意交错的多模态输入。 官方表示，WeMM-Embedding 选择基于 Qwen3.5 多模态架构作为统一骨干，让图像、视频和文字从一开始就在同一个模型中共同处理。 在权威多模态嵌入榜单 MMEB-v2 上，WeMM-Embedding-9B 以 80.6 分位列第一。2B 版本取得 77.9 分，超过此前领先的 8B 开源模型。 WeMM",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "wemm-embedding",
+    "tencent",
+    "alibaba"
+   ],
+   "image": "img/2026-09-05/9ba61088449f4029.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "微信开源通用多模态嵌入模型 WeMM-Embedding，已大规模部署在微信推荐与搜索系统中",
+     "url": "https://www.ithome.com/0/998/599.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T05:21:17+00:00",
+     "summary": "IT之家 9 月 4 日消息，微信 AI 官方今日宣布，将 微信线上每天调用十亿量级 的通用多模态嵌入模型 WeMM-Embedding 开源， 包含 2B、4B、9B 三个版本 ，支持文本、图像、视频、视觉文档以及任意交错的多模态输入。 官方表示，WeMM-Embedding 选择基于 Qwen3.5 多模态架构作为统一骨干，让图像、视频和文字从一开始就在同一个模型中共同处理。 在权威多模态嵌入榜单 MMEB-v2 上，WeMM-Embedding-9B 以 80.6 分位列第一。2B 版本取得 77.9 分，超过此前领先的 8B 开源模型。 WeMM-Embedding 已大规模部署在微信的推荐与搜索系统中 ，包括视频号、直播、公众号、电商与朋友圈， 每日调用量已达 10 亿量级 。模型生成的多模态表示被用于候选检索、排序特征构建、用户序列建模和跨域内容理解等环节。 在 26 项内部任务基准上，WeMM-Embedding-2B 相比同规模基线从 60.9 提升至 72.0，在分类、搜索、跨域匹配、文章相关和视频相关五类任务上均取得提升。 ▲ WeMM-Embedding 在微信内部 26 项任务上的评测结果 IT之家附相关链接： 论文链接： https://arxiv.org/abs/2608.24053 代码仓库： https://github.com/Tencent/We",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/25c89c46-1005-4408-90fc-7399970d8f83.png",
+     "id": "94dc2c2856a5",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0031",
+   "title": "勞資雙方進行首次調解！美光：雖暫無共識但已為後續對話保留空間",
+   "summary": "受惠於全球人工智慧（AI）浪潮與高頻寬記憶體（HBM）需求激增，美光（Micron）近期營收與獲利創下新高。然 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "hbm",
+    "micron"
+   ],
+   "image": "img/2026-09-05/ee2fc9a8fc699255.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "勞資雙方進行首次調解！美光：雖暫無共識但已為後續對話保留空間",
+     "url": "https://finance.technews.tw/2026/09/04/the-labor-and-management-parties-held-their-first-mediation",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-09-04T05:15:19+00:00",
+     "summary": "受惠於全球人工智慧（AI）浪潮與高頻寬記憶體（HBM）需求激增，美光（Micron）近期營收與獲利創下新高。然 […]",
+     "image": "",
+     "id": "88ae7ce230bd",
+     "tags": [
+      "公司治理",
+      "半導體",
+      "晶片",
+      "記憶體",
+      "財經"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0032",
+   "title": "长安发布天枢领航辅助驾驶：支持交互式智驾指令，能识别交警手势",
+   "summary": "IT之家 9 月 4 日消息，今天（4 日）晚间，长安汽车在科技生态大会上正式发布自研智能辅助驾驶解决方案“天枢领航”。 据IT之家了解，该方案支持交互式智驾，可通过 “超过前方那辆车”等自然语言指令 完成驾驶控制，目前已覆盖高速 NCA、城市 NCA 和全场景泊车三大核心功能域。 数据显示，天枢领航目前已完成超过 40 万个虚拟仿真场景训练，累计验证里程约 14.5 亿公里，日均仿真训练超过 330 万公里。 发布会上，长安汽车自研端到端大模型也迎来首次亮相。该模型可从传感器输入直接输出车辆控制指令，具备视觉语言理解能力， 可识别交警手势、异形障碍物、",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "nca",
+    "14.5"
+   ],
+   "image": "img/2026-09-05/1dbd47d58a44144f.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "长安发布天枢领航辅助驾驶：支持交互式智驾指令，能识别交警手势",
+     "url": "https://www.ithome.com/0/998/597.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T05:03:18+00:00",
+     "summary": "IT之家 9 月 4 日消息，今天（4 日）晚间，长安汽车在科技生态大会上正式发布自研智能辅助驾驶解决方案“天枢领航”。 据IT之家了解，该方案支持交互式智驾，可通过 “超过前方那辆车”等自然语言指令 完成驾驶控制，目前已覆盖高速 NCA、城市 NCA 和全场景泊车三大核心功能域。 数据显示，天枢领航目前已完成超过 40 万个虚拟仿真场景训练，累计验证里程约 14.5 亿公里，日均仿真训练超过 330 万公里。 发布会上，长安汽车自研端到端大模型也迎来首次亮相。该模型可从传感器输入直接输出车辆控制指令，具备视觉语言理解能力， 可识别交警手势、异形障碍物、临时施工标识 等交通场景语义。 根据长安披露的数据，其端到端大模型基于超 2000 万段高质量配对数据训练，量产前累计验证约 14.5 亿公里，并保持日均超 330 万公里的仿真训练。 此外，长安汽车还宣布，今年 12 月 31 日之前购车，将免费赠送一年期的天枢领航安心包权益。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/bbb23cd6-0bf4-4f95-8776-97aa41f67229.jpg",
+     "id": "b1d761c89532",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0033",
+   "title": "OpenAI 奥尔特曼：AI 若要赢得怀疑论者的支持，“能治愈癌症”还不够",
+   "summary": "IT之家 9 月 4 日消息，用 AI 治愈癌症，怀疑者自然就会去理解 AI 热潮，这一点或许是硅谷最常见的宣传方式。但 OpenAI CEO 萨姆 · 奥尔特曼认为，仅仅做到这一点还远远不够。 据《商业内幕》今天（4 日）晚间报道，奥尔特曼认为，随着公众对 AI 的信任下降，科技行业在向外界说明 AI 能够带来哪些好处方面做得“糟糕透顶”。 部分科技行业领袖描绘的未来颇具乌托邦色彩：AI 最终将创造一个 物质极大丰富的时代 ，人们不再需要工作，癌症等疾病也能得到治愈。 对此，奥尔特曼直言：“我认为，仅仅治愈癌症还不够。这显然是一件非常美好的事情，但我们",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "OpenAI 奥尔特曼：AI 若要赢得怀疑论者的支持，“能治愈癌症”还不够",
+     "url": "https://www.ithome.com/0/998/595.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T04:55:57+00:00",
+     "summary": "IT之家 9 月 4 日消息，用 AI 治愈癌症，怀疑者自然就会去理解 AI 热潮，这一点或许是硅谷最常见的宣传方式。但 OpenAI CEO 萨姆 · 奥尔特曼认为，仅仅做到这一点还远远不够。 据《商业内幕》今天（4 日）晚间报道，奥尔特曼认为，随着公众对 AI 的信任下降，科技行业在向外界说明 AI 能够带来哪些好处方面做得“糟糕透顶”。 部分科技行业领袖描绘的未来颇具乌托邦色彩：AI 最终将创造一个 物质极大丰富的时代 ，人们不再需要工作，癌症等疾病也能得到治愈。 对此，奥尔特曼直言：“我认为，仅仅治愈癌症还不够。这显然是一件非常美好的事情，但我们的目标 应该定得更高 。” IT之家从报道中获悉，奥尔特曼坦言，AI 还应该 推动创造力和创业活动蓬勃发展 ，但这一点 在对外传达中被忽略了 。“对我们来说，非常非常重要的是，AI 应该让人们获得更多自主权和力量，而不是更少。当人们觉得 AI 行业的领导者可能并不希望他们拥有这些东西时，我认为他们产生恐惧完全可以理解。” 奥尔特曼还认为，围绕 AI 展开公开对话是更好的选择，即使这些讨论并不轻松。“外界应该希望我们认真思考 AI 可能出现问题的所有方式，讨论我们预见的发展，但不应该渲染末日情绪，也不应该把权力集中到我们自己手中。” 他进一步指出，只有通过公开讨论，这些问题才有可能得到解决。“这一直是我们的本意，但显然，有时候最终还是",
+     "image": "",
+     "id": "77ce1152b51f",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0034",
+   "title": "曝 OpenAI 智能体今年 5 月就已“失控”，曾主动劫持德国一网站",
+   "summary": "IT之家 9 月 4 日消息，据路透社援引一项研究以及两名知情人士消息称，今年上半年，一群失控的 OpenAI 智能体劫持了一个德国网站，并把网站改造成供其他 AI 智能体交流的留言板。 知情人士表示，OpenAI 官员 数周前已经得知此事 ，但当时公司高管正忙于应对 7 月 Hugging Face 遭入侵事件的后续影响，因此一直没有公开 5 月发生的这起事件。 这起 此前从未被报道 的事件始于 5 月，凸显出 AI 行业内部日益明显的矛盾。各家公司竞相开发自主性更强的智能体，希望这些系统能够完成复杂且有价值的任务，但越来越多证据显示，这些智能体也可能",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "regulation"
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "曝 OpenAI 智能体今年 5 月就已“失控”，曾主动劫持德国一网站",
+     "url": "https://www.ithome.com/0/998/593.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T04:41:05+00:00",
+     "summary": "IT之家 9 月 4 日消息，据路透社援引一项研究以及两名知情人士消息称，今年上半年，一群失控的 OpenAI 智能体劫持了一个德国网站，并把网站改造成供其他 AI 智能体交流的留言板。 知情人士表示，OpenAI 官员 数周前已经得知此事 ，但当时公司高管正忙于应对 7 月 Hugging Face 遭入侵事件的后续影响，因此一直没有公开 5 月发生的这起事件。 这起 此前从未被报道 的事件始于 5 月，凸显出 AI 行业内部日益明显的矛盾。各家公司竞相开发自主性更强的智能体，希望这些系统能够完成复杂且有价值的任务，但越来越多证据显示，这些智能体也可能学会规避规则、钻漏洞，并以开发者既未预料也并非有意设计的方式彼此协作。 在 Hugging Face 遭入侵事件中，OpenAI 智能体曾 自主策划一次数字盗窃 ，并连续超过一周没有被发现，加剧了外界对 OpenAI 为推进 AI 能力而牺牲安全的担忧。OpenAI 没有披露 5 月发生的事件，也可能再次引发外界对其内部监管的质疑。 OpenAI 承诺加强模型监控。上个月，OpenAI 曾短暂停止部分模型训练，以增加更多安全措施。本周发布的新模型“Astra”则号称性能更强，却可能避开人工监控。 OpenAI 一名发言人回应称：“对于一份我们尚未有机会审阅的报告所提出的说法或结论，我们无法作出有实质意义的回应。路透社和报告作者拒绝向",
+     "image": "",
+     "id": "03afda2e88fe",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0035",
+   "title": "仅为原价的 1.3-8%，Meta 为 Muse Spark AI 模型推出数据共享折扣计划",
+   "summary": "IT之家 9 月 4 日消息，据 TechCrunch 报道，大多数 AI 工具都允许用户选择退出数据共享，防止自己的使用记录被模型提供商用于迭代后续版本。而 Meta 却反其道而行之，直接为这项选择明码标价。 针对新款 Muse Spark 模型（Muse Spark 1.2、1.3），Meta 推出了一项力度极大的折扣策略： 只要用户同意共享自己的提示词（Prompt）和模型生成结果，为后续模型开发“作出贡献”，即可享受极大的价格优惠 ： 每百万 Token 输入费用为 1.25 美元，贡献者定价仅 0.10 美元（8%） 每百万 Token 缓存命",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "muse",
+    "1.3",
+    "meta",
+    "spark",
+    "token"
+   ],
+   "image": "img/2026-09-05/022dc01dfe0d9c4d.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "仅为原价的 1.3-8%，Meta 为 Muse Spark AI 模型推出数据共享折扣计划",
+     "url": "https://www.ithome.com/0/998/591.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-04T04:31:48+00:00",
+     "summary": "IT之家 9 月 4 日消息，据 TechCrunch 报道，大多数 AI 工具都允许用户选择退出数据共享，防止自己的使用记录被模型提供商用于迭代后续版本。而 Meta 却反其道而行之，直接为这项选择明码标价。 针对新款 Muse Spark 模型（Muse Spark 1.2、1.3），Meta 推出了一项力度极大的折扣策略： 只要用户同意共享自己的提示词（Prompt）和模型生成结果，为后续模型开发“作出贡献”，即可享受极大的价格优惠 ： 每百万 Token 输入费用为 1.25 美元，贡献者定价仅 0.10 美元（8%） 每百万 Token 缓存命中输入费用为 0.15 美元，贡献者定价仅 0.002 美元（1.3%） 每百万 Token 输出费用为 4.25 美元，贡献者定价仅 0.20 美元（4.7%） IT之家注意到，Meta 此前在获取训练数据方面屡屡碰壁。今年早些时候，该公司曾启动一项追踪内部员工电脑使用情况的计划，结果引发广泛的内部抗议，并已于 6 月叫停。 相关阅读： 《 Meta 发布最强 AI 模型 Muse Spark 1.3，编码能力超 GPT-5.6 Sol 》",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/1f93920f-6af5-4dbe-8a7a-4fdc5069ff36.jpg?x-bce-process=image/format,f_auto",
+     "id": "72dfbeab3184",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0036",
-   "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-   "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+   "title": "NotebookLM(Gemini Notebook)完整教學：26篇實戰一次收，建知識庫、做簡報、會議財報全應用",
+   "summary": "NotebookLM(Gemini Notebook)完整攻略！從YouTube匯入、提示詞架構到會議紀錄與財報分析，帶你系統化掌握這款AI工具。",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "legora",
-    "documents",
-    "minutes",
-    "reviewed",
-    "gpt-6",
-    "astra"
+    "notebooklm",
+    "notebook",
+    "google",
+    "gemini",
+    "youtube"
    ],
-   "image": "",
+   "image": "img/2026-09-05/a51ef5ef8bbaf003.webp",
    "llm_enriched": false,
    "sources": [
-    "OpenAI"
+    "數位時代"
    ],
    "articles": [
     {
-     "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-     "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-09-03T04:00:00+00:00",
-     "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
-     "image": "",
-     "id": "be4a3c542626",
-     "tags": [
-      "Startup"
-     ]
+     "title": "NotebookLM(Gemini Notebook)完整教學：26篇實戰一次收，建知識庫、做簡報、會議財報全應用",
+     "url": "https://www.bnext.com.tw/article/91193/notebooklm-complete-guide-and-use-cases",
+     "source": "數位時代",
+     "lang": "zh",
+     "published": "2026-09-04T04:22:00+00:00",
+     "summary": "NotebookLM(Gemini Notebook)完整攻略！從YouTube匯入、提示詞架構到會議紀錄與財報分析，帶你系統化掌握這款AI工具。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-06/2z1u-1780972669.png?w=900&output=webp",
+     "id": "cbbac9b18a75",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0037",
-   "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-   "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+   "title": "Instagram’s AI detection is a mess (again)",
+   "summary": "Instagram's visible AI labels are supposed to help people quickly spot synthetically generated content at a glance. Over the last few weeks, however, users have been reporting that the system has gone haywire. They say Meta has been automatically applying an \"AI Content\" label to",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "playco",
-    "manual",
-    "fixes",
-    "prototyping",
-    "cut",
-    "games"
+    "instagram",
+    "detection",
+    "mess",
+    "again",
+    "content",
+    "meta"
    ],
-   "image": "",
+   "image": "img/2026-09-05/953dfd3b1feed302.webp",
    "llm_enriched": false,
    "sources": [
-    "OpenAI"
+    "The Verge AI"
    ],
    "articles": [
     {
-     "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-     "url": "https://openai.com/index/playco-game-prototyping-with-astra",
-     "source": "OpenAI",
+     "title": "Instagram’s AI detection is a mess (again)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion",
+     "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-09-03T04:00:00+00:00",
-     "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
-     "image": "",
-     "id": "7a45b185cff5",
+     "published": "2026-09-04T04:00:00+00:00",
+     "summary": "Instagram's visible AI labels are supposed to help people quickly spot synthetically generated content at a glance. Over the last few weeks, however, users have been reporting that the system has gone haywire. They say Meta has been automatically applying an \"AI Content\" label to images that they didn't create or edit using generative AI […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/268439_ai_art_label_CVirginia.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "94e948ac942f",
      "tags": [
-      "Startup"
+      "AI",
+      "Analysis",
+      "Instagram",
+      "Meta",
+      "News"
      ]
     }
    ]
