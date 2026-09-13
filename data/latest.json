@@ -1,242 +1,185 @@
 {
- "generated_at": "2026-09-12T08:10:22.530875+08:00",
- "date": "2026-09-12",
+ "generated_at": "2026-09-13T08:10:09.893775+08:00",
+ "date": "2026-09-13",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
- "topic_count": 40,
- "article_count": 46,
+ "topic_count": 24,
+ "article_count": 28,
  "topics": [
   {
-   "key": "t0031",
-   "title": "AI 武器化！Anthropic 威脅情報報告揭 Claude 濫用，多個中國帳號研究攻台灣防空、生物武器",
-   "summary": "2026 年 5 月，Anthropic 的生物安全分類器擋下一份屈公病功能增益研究的補助計畫申請書，目標是提高病毒的傳播力與免疫逃脫能力，申請書內容顯示提案人為民間研究者，但研究預定在一所軍方研究機構執行。Anthropic 威脅報告，揭示其 AI 模型遭用於生物濫用、常規武器開發、網路攻擊與模型蒸餾等惡意活動，報告亦提及國家級行為者涉入，並凸顯現有安全分類器的侷限。",
+   "key": "t0005",
+   "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+   "summary": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "anthropic",
-    "claude",
-    "alibaba",
-    "xiaomi"
+    "sam",
+    "altman",
+    "public",
+    "ill-advised",
+    "openai",
+    "going"
    ],
-   "image": "",
+   "image": "img/2026-09-13/d46cbc735f87e85f.webp",
    "llm_enriched": false,
    "sources": [
-    "iThome",
-    "科技新報 TechNews",
-    "TechOrange 科技報橘",
-    "INSIDE"
+    "The Verge AI",
+    "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "Anthropic發布AI濫用威脅報告，宣稱7家中國業者蒸餾Claude以訓練自家模型",
-     "url": "https://www.ithome.com.tw/news/178864",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-09-11T03:09:17+00:00",
-     "summary": "Anthropic本周公布了AI濫用威脅報告，揭露各界濫用其模型Claude的各種型態，從網路攻擊、資訊操弄、AI輔助監控、開發傳統武器、生物濫用、詐騙與詐欺，以及非法蒸餾等，並直接點名7家中國AI實驗室的非法蒸餾行為，包括阿里巴巴的Qwen、月之暗面（Moonshot）、DeepSeek、智譜（Z.ai）、小米、商湯及MiniMax等。",
-     "image": "",
-     "id": "c6cca6c6a1e7",
-     "tags": []
-    },
-    {
-     "title": "Claude 用來開發監控系統、生物武器？Anthropic 揭模型濫用案例",
-     "url": "https://technews.tw/2026/09/11/anthropic-on-detecting-and-countering-misuse-of-ai",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-11T02:49:04+00:00",
-     "summary": "Anthropic 發出旗下模型遭濫用的威脅情資報告，詳盡說明人們如何試圖運用涉及 Claude Haiku […]",
-     "image": "",
-     "id": "b244829c08e5",
-     "tags": [
-      "AI 人工智慧",
-      "Claude"
-     ]
-    },
-    {
-     "title": "AI 網攻自動化到哪一步？Anthropic 報告揭漏洞研究、偵察與資料竊取如何 Agent 化",
-     "url": "https://techorange.com/2026/09/11/anthropic-threat-intelligence-report-september-2026",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-09-10T20:33:34+00:00",
-     "summary": "AI 已經能自己執行網路攻擊了嗎？Anthropic 最新調查顯示，還沒有走到完全自主，但部分原本高度依賴資安專家的工作，已經開始交給 AI Agent 持續執行。 Anthropic 9 月 10 日發布最新 AI 威脅報告，整理 2025 年 12 月至 2026 年 8 月間，在自家 Claude 模型上偵測並中止的惡意活動，涵蓋網路攻擊、影響力操作、監控、傳統武器、生物濫用、詐騙與詐欺，以及非法模型蒸餾 7 類。 報告中的案例主要涉及 Claude Haiku、Sonnet 與 Opus 模型，Anthropic 也提醒，這些是目前觀察到較值得注意、較新穎的案例，並不代表一般濫用的平均樣貌。其中，網路攻擊案例清楚呈現了 AI Agent 驅動的攻擊已經自動化到哪一步。 漏洞研究開始自動循環，單月找出逾 12 個可能 zero-day Anthropic 發現，一組中國境內行動者建立「自動化漏洞工廠」（automated exploit foundry），利用 Claude 驅動多個 Agent，持續分析資安產品。 整套流程會先把韌體與二進位檔送進反編譯工具，由 Agent 追蹤程式結構、提出可能的漏洞假設，再撰寫漏洞利用程式（exploit），拿實驗室裡的產品測試；若沒有成功，就繼續修改與驗證，直到找到可用的方法。其中一套持續運作的流程，一個月就找出超過 12 個可能的零日",
-     "image": "https://techorange.com/app/uploads/2026/09/37001e66e95cf2b7-720x486.jpg",
-     "id": "6cb7e071b71f",
-     "tags": [
-      "AI 人工智慧"
-     ]
-    },
-    {
-     "title": "AI 武器化！Anthropic 威脅情報報告揭 Claude 濫用，多個中國帳號研究攻台灣防空、生物武器",
-     "url": "https://www.inside.com.tw/article/42371-anthropic-threat-intelligence-report-biological-weapons-taiwan",
-     "source": "INSIDE",
-     "lang": "zh",
-     "published": "2026-09-10T19:13:00+00:00",
-     "summary": "2026 年 5 月，Anthropic 的生物安全分類器擋下一份屈公病功能增益研究的補助計畫申請書，目標是提高病毒的傳播力與免疫逃脫能力，申請書內容顯示提案人為民間研究者，但研究預定在一所軍方研究機構執行。Anthropic 威脅報告，揭示其 AI 模型遭用於生物濫用、常規武器開發、網路攻擊與模型蒸餾等惡意活動，報告亦提及國家級行為者涉入，並凸顯現有安全分類器的侷限。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/09/db7a6a6e-3385-4401-80e8-ebcbeeb768b3.webp",
-     "id": "b57fa39b0966",
-     "tags": [
-      "人工智慧",
-      "資安",
-      "國防科技",
-      "Anthropic",
-      "模型蒸餾"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0017",
-   "title": "Anthropic spent this week in hot water over cybersecurity",
-   "summary": "After admitting earlier this year that its AI models had hacked other companies' systems on a handful of occasions, Anthropic released a new report on Wednesday detailing the attacks. It reveals a string of incidents displaying what Anthropic deems its models' single-minded \"reck",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "safety",
-    "anthropic",
-    "cybersecurity",
-    "warning",
-    "week",
-    "researcher"
-   ],
-   "image": "img/2026-09-12/0de54a62308a86dc.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
-     "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-11T10:41:49+00:00",
-     "summary": "An Anthropic researcher resigned this week, warning in a post on X that the company is “racing straight to self-improving superintelligence and gambling with our lives”. The company’s own alignment lead even co-signed the message rather than walking it back. It’s the kind of doomer warning the AI industry has flirted with before, but the timing, with Anthropic reportedly preparing for an IPO, makes it land differently. On […]",
-     "image": "",
-     "id": "d8bb09927abd",
-     "tags": [
-      "AI",
-      "Startups",
-      "Anthropic",
-      "Apple",
-      "cognition"
-     ]
-    },
-    {
-     "title": "Anthropic spent this week in hot water over cybersecurity",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+     "title": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-09-11T08:09:14+00:00",
-     "summary": "After admitting earlier this year that its AI models had hacked other companies' systems on a handful of occasions, Anthropic released a new report on Wednesday detailing the attacks. It reveals a string of incidents displaying what Anthropic deems its models' single-minded \"recklessness\" - and will likely fuel already raging concerns about cybersecurity and AI. […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_B.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "c18234270271",
+     "published": "2026-09-12T13:16:28+00:00",
+     "summary": "OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an interview with Fortune. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking incident, recursive self-improvement, and the possibility of building an AI that was beyond human control. On the latter, he […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK201_SAM_ALTMAN_CVIRGINIA2D-1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "fe9d508504e5",
      "tags": [
       "AI",
-      "Analysis",
-      "Anthropic",
-      "Report"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0034",
-   "title": "零售媒體延伸至 AI 介面：亞馬遜開放品牌經由 Amazon DSP 投放 ChatGPT 廣告",
-   "summary": "亞馬遜宣布，將與 OpenAI 合作，讓旗下廣告主能在 ChatGPT 投放廣告，初期先開放美國部分品牌參與。 《CNBC》報導，這項合作也反映全球最大電商看好 OpenAI 持續成長中的廣告業務。OpenAI 的廣告業務近期已達到 10 億美元年化營收規模。今年 2 月，OpenAI 開始在美國 ChatGPT 測試投放贊助廣告，初期合作零售商包括 Best Buy 與 Williams-Sonoma。 亞馬遜 DSP 擴大觸角：開放品牌透過亞馬遜代操投放 ChatGPT 廣告 《CNBC》指出，亞馬遜過去一直嚴格限制 ChatGPT、Anthropi",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "dsp",
-    "amazon",
-    "ads",
-    "chatgpt",
-    "openai"
-   ],
-   "image": "img/2026-09-12/a558c1bc02429209.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechOrange 科技報橘",
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "零售媒體延伸至 AI 介面：亞馬遜開放品牌經由 Amazon DSP 投放 ChatGPT 廣告",
-     "url": "https://techorange.com/2026/09/11/amazon-ads-chat-gpt-advertising",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-09-11T02:23:30+00:00",
-     "summary": "亞馬遜宣布，將與 OpenAI 合作，讓旗下廣告主能在 ChatGPT 投放廣告，初期先開放美國部分品牌參與。 《CNBC》報導，這項合作也反映全球最大電商看好 OpenAI 持續成長中的廣告業務。OpenAI 的廣告業務近期已達到 10 億美元年化營收規模。今年 2 月，OpenAI 開始在美國 ChatGPT 測試投放贊助廣告，初期合作零售商包括 Best Buy 與 Williams-Sonoma。 亞馬遜 DSP 擴大觸角：開放品牌透過亞馬遜代操投放 ChatGPT 廣告 《CNBC》指出，亞馬遜過去一直嚴格限制 ChatGPT、Anthropic 的 Claude，以及 Google Gemini 等 AI 平台存取旗下龐大的電商網站，同時也持續投資自家的 AI 購物工具。不過，近幾個月亞馬遜開始低調在 ChatGPT 上投放廣告。根據市場情報公司 Sensor Tower 的數據，今年 4 月至 8 月期間，亞馬遜更成為 ChatGPT 上投放廣告最多的零售企業。 如今，亞馬遜進一步讓在其平台投放廣告的品牌進入 ChatGPT，顯示 ChatGPT 已逐漸成為品牌觸及消費者的重要行銷管道。OpenAI 今年 2 月表示，ChatGPT 每週活躍用戶已達 […]",
-     "image": "https://techorange.com/app/uploads/2026/09/e9f127f214369df1-720x405.jpg",
-     "id": "cb3e19c4bead",
-     "tags": [
-      "AI 人工智慧"
+      "News",
+      "OpenAI"
      ]
     },
     {
-     "title": "亞馬遜 Ads 宣布與 OpenAI 合作擴展廣告投放，以 Amazon DSP 進軍 ChatGPT",
-     "url": "https://technews.tw/2026/09/11/amazon-brings-its-dsp-to-openais-chatgpt-ads",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-10T23:20:35+00:00",
-     "summary": "亞馬遜 Ads 宣布與 OpenAI 展開廣告合作，讓使用 Amazon DSP 的廣告主能將投放版位延伸至 […]",
+     "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+     "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-12T12:19:16+00:00",
+     "summary": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
      "image": "",
-     "id": "3cf356d2337d",
+     "id": "22407f1a50da",
      "tags": [
-      "Amazon",
-      "ChatGPT",
-      "數位廣告",
-      "Amazon DSP",
-      "OpenAI"
+      "AI",
+      "Fundraising",
+      "OpenAI",
+      "sam altman"
+     ]
+    },
+    {
+     "title": "Anthropic CEO outlines plan to slow AI development",
+     "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-12T11:34:44+00:00",
+     "summary": "Anthropic's Dario Amodei and OpenAI's Sam Altman seem to agree that it's time to \"pace the frontier.\" What would that actually look like?",
+     "image": "",
+     "id": "725588a31c85",
+     "tags": [
+      "AI",
+      "Government & Policy",
+      "Anthropic",
+      "dario amodei"
      ]
     }
    ]
   },
   {
-   "key": "t0035",
-   "title": "Grok Bot一個月就做出來！Cursor為何捨近求遠？5個決策打造「AI同事」",
-   "summary": "Grok Bot負責人還原七周極速開發秘辛：不併入Cursor、小團隊隔離開發、替每個Bot配備雲端電腦等5個反直覺決策。",
+   "key": "t0001",
+   "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+   "summary": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at <my address>. Figure out 5K and 10K running routes from me that loop from my house. Use OSM data. It worked for 27 minutes and produced exactly what I'd asked for, as both an embedded visuali",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "bot",
-    "grok",
-    "xai",
-    "cursor",
-    "chatgpt"
+    "astra",
+    "gpt-6",
+    "chatgpt",
+    "running",
+    "routes",
+    "work"
    ],
-   "image": "img/2026-09-12/5f7c5b855d64bd5a.webp",
+   "image": "img/2026-09-13/2bec0028c31baca3.webp",
    "llm_enriched": false,
    "sources": [
-    "數位時代",
+    "Simon Willison",
     "INSIDE"
    ],
    "articles": [
     {
-     "title": "Grok Bot一個月就做出來！Cursor為何捨近求遠？5個決策打造「AI同事」",
-     "url": "https://www.bnext.com.tw/article/92202/grok-bot-seven-weeks-five-product-decisions",
-     "source": "數位時代",
+     "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+     "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes",
+     "source": "Simon Willison",
+     "lang": "en",
+     "published": "2026-09-12T15:56:42+00:00",
+     "summary": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at <my address>. Figure out 5K and 10K running routes from me that loop from my house. Use OSM data. It worked for 27 minutes and produced exactly what I'd asked for, as both an embedded visualization and downloadable GPX file and GeoJSON files. Here's that 5K route: Tags: gpt-6-astra , generative-ai , openai , chatgpt , ai , llms",
+     "image": "https://static.simonwillison.net/static/2026/5k-route.webp",
+     "id": "2981ecf752e1",
+     "tags": [
+      "gpt-6-astra",
+      "generative-ai",
+      "openai",
+      "chatgpt",
+      "ai"
+     ]
+    },
+    {
+     "title": "OpenAI 暫停 $200 Pro 訂閱，稱 GPT-6 Astra 需求「前所未見」，正加速擴充算力",
+     "url": "https://www.inside.com.tw/article/42378-openai-pro-pause-astra-demand",
+     "source": "INSIDE",
      "lang": "zh",
-     "published": "2026-09-11T02:05:00+00:00",
-     "summary": "Grok Bot負責人還原七周極速開發秘辛：不併入Cursor、小團隊隔離開發、替每個Bot配備雲端電腦等5個反直覺決策。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/c5ws-1789030618.jpg?w=900&output=webp",
-     "id": "2cb7fd611db2",
+     "published": "2026-09-11T20:38:00+00:00",
+     "summary": "OpenAI 於 2026 年 9 月 10 日宣布暫時停止 ChatGPT Pro 新訂閱，原因是 GPT-6 Astra 的用量遠超預期，導致算力吃緊。現有 Pro 用戶不受影響，公司正規劃大規模擴充基礎建設，預計恢復新用戶開放後不限速提供 Astra 服務。",
+     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/06/4ccab313-fe0f-46dc-a85c-12e023f0b57f.webp",
+     "id": "c55e9a832698",
+     "tags": [
+      "人工智慧",
+      "AI",
+      "OpenAI",
+      "Astra",
+      "ChatGPT"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0002",
+   "title": "Apple Silicon 三線合流：Apple Watch S11 首度採 2 奈米，A20 Pro 與 M6 共用 GPU、神經網路引擎",
+   "summary": "據《INSIDE》了解，Apple Watch Series 12 與 Apple Watch Ultra 4 搭載的 S11 晶片，採用了與 A20 Pro 相同世代的 2 奈米電晶體。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "pro",
+    "apple",
+    "a20",
+    "chip",
+    "watch",
+    "gpu"
+   ],
+   "image": "img/2026-09-13/fc1ed9aa234be831.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家",
+    "INSIDE"
+   ],
+   "articles": [
+    {
+     "title": "A20 Pro 芯片 AI 跑分曝光：苹果 iPhone 18 Pro NPU 较前代最高增幅 51.53%",
+     "url": "https://www.ithome.com/1/001/675.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T15:12:01+00:00",
+     "summary": "IT之家 9 月 13 日消息，在 CPU / GPU 跑分曝光之后，苹果 iPhone 18 Pro（对应机型 iPhone19,2）的 GeekBench AI 跑分昨日（9 月 12 日）现身。 IT之家发稿前查询 GeekBench AI 跑分平台，目前共收录了 2 条记录，分别是 Core ML 调用 GPU（通用图形计算单元）和 NPU / ANE（专用神经网络处理器）处理结果。 Core ML 是 Apple 的机器学习运行时，可以利用 CPU、GPU 和 Neural Engine，并以性能、内存占用与功耗为目标来调度模型。 根据跑分页面信息，苹果 iPhone 18 Pro 的 GeekBench AI GPU 为 12,775 / 24,077 / 26,951，Neural Engine 为 7,002 / 55,720 / 75,810。 苹果 iPhone 18 Pro 的 GeekBench AI GPU 跑分 苹果 iPhone 18 Pro 的 GeekBench AI Neural Engine 跑分 IT之家注：这三个栏目主要衡量同类 AI 任务在不同精度下的端侧推理表现，Geekbench AI 使用真实机器学习测试，并将相应工作负载的结果汇总成分数。 栏目 常见数据格式 衡量重点 现实意义 Single Precision FP32，32 位",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/c2288e1d-97f5-4702-a150-ab261c959508.jpg?x-bce-process=image/format,f_auto",
+     "id": "bdf46b533d5e",
      "tags": []
     },
     {
-     "title": "把 ChatGPT 接進 Grok Bot：打通兩大 AI 平台的新玩法",
-     "url": "https://www.inside.com.tw/article/42365-grok-chatgpt-bridge-webhook",
+     "title": "Apple Silicon 三線合流：Apple Watch S11 首度採 2 奈米，A20 Pro 與 M6 共用 GPU、神經網路引擎",
+     "url": "https://www.inside.com.tw/article/42381-apple-watch-s11-2nm-a20-pro-4gb-ram",
      "source": "INSIDE",
      "lang": "zh",
-     "published": "2026-09-10T21:44:00+00:00",
-     "summary": "開發者 @moritzkremb 在 X 上分享了一套透過 Webhook 橋接 ChatGPT 與 Grok Bot 的方法，讓使用者能用 ChatGPT 指揮 Grok Bot 執行 Routine、查狀態、交辦任務，把兩個平台各自的強項串在一起。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2025/08/e05bdb16-033a-425e-8335-3dbf98e8a32d.jpg",
-     "id": "f6b250bf6187",
+     "published": "2026-09-12T07:14:00+00:00",
+     "summary": "據《INSIDE》了解，Apple Watch Series 12 與 Apple Watch Ultra 4 搭載的 S11 晶片，採用了與 A20 Pro 相同世代的 2 奈米電晶體。",
+     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/09/83998f8d-8b85-4531-8172-bbf079b027d3.webp",
+     "id": "d8e17ccc32f1",
      "tags": [
-      "人工智慧",
-      "ChatGPT",
-      "Grok",
-      "AI Agent"
+      "Apple",
+      "Apple Watch",
+      "2奈米",
+      "Apple Silicon",
+      "晶片封裝"
      ]
     }
    ]
@@ -249,9 +192,9 @@
    "importance": 3,
    "keywords": [
     "perplexity",
+    "systems",
     "trusts",
     "end-to-end",
-    "systems",
     "astra",
     "gpt-6"
    ],
@@ -275,45 +218,236 @@
    ]
   },
   {
-   "key": "t0001",
-   "title": "OpenAI 将 Habitat 从 Python 迁移至 Rust：CPU 效率提升 6 倍，服务 10 亿 ChatGPT 用户",
-   "summary": "IT之家 9 月 12 日消息，OpenAI 今日发文，主要介绍了其在线存储平台 Habitat 如何应对产品规模的快速增长，以及从 Python 迁移至 Rust 的工程实践。 OpenAI 称该平台目前每秒处理超过 7000 万次请求，每周服务超 10 亿用户，管理的数据规模超过 500PB。据介绍，Habitat 已从 2024 年的 Python 客户端库，发展为支撑旗下产品的分布式存储系统。 据介绍，Habitat 最初是一个与 ChatGPT 主服务器交互的 Python 库，底层连接 Azure Cosmos DB。其目标是让产品工程师无需",
+   "key": "t0003",
+   "title": "奥尔特曼确认：OpenAI 今年不会上市",
+   "summary": "IT之家 9 月 13 日消息，OpenAI 首席执行官萨姆 · 奥尔特曼本周五接受《财富》杂志采访，确认公司不会在今年上市。 奥尔特曼指出，OpenAI 并不急于推进 IPO（首次公开募股）。他基于当前人工智能安全领域正在发生的事情认为，今年上市并不是一个明智的选择，且 OpenAI 没有这方面的压力。 他补充道，OpenAI 会在业务和公司准备就绪、社会环境合适时再选择上市。当主持人询问公司是否会在 2027 年准备 IPO 时，奥尔特曼回答：“ 我会说不是 2026 年 。是的，我们还有很多事情要做，比如应对当下安全形势，以及思考我们怎么和整个行业",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "habitat",
-    "python",
-    "microsoft",
-    "rust"
+    "xai",
+    "ipo"
    ],
-   "image": "img/2026-09-12/520c67beab452ae8.webp",
+   "image": "img/2026-09-13/da6e64c0d38112d1.webp",
    "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "OpenAI 将 Habitat 从 Python 迁移至 Rust：CPU 效率提升 6 倍，服务 10 亿 ChatGPT 用户",
-     "url": "https://www.ithome.com/1/001/497.htm",
+     "title": "奥尔特曼确认：OpenAI 今年不会上市",
+     "url": "https://www.ithome.com/1/001/669.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-09-11T16:07:04+00:00",
-     "summary": "IT之家 9 月 12 日消息，OpenAI 今日发文，主要介绍了其在线存储平台 Habitat 如何应对产品规模的快速增长，以及从 Python 迁移至 Rust 的工程实践。 OpenAI 称该平台目前每秒处理超过 7000 万次请求，每周服务超 10 亿用户，管理的数据规模超过 500PB。据介绍，Habitat 已从 2024 年的 Python 客户端库，发展为支撑旗下产品的分布式存储系统。 据介绍，Habitat 最初是一个与 ChatGPT 主服务器交互的 Python 库，底层连接 Azure Cosmos DB。其目标是让产品工程师无需直接管理数据库，即可完成数据存取。系统负责数据类型识别、路由、授权、加密、序列化及连接池管理等工作。 随着 OpenAI 产品数量和数据需求增长，Habitat 在 2025 年年中逐渐暴露出客户端架构的局限。每次修改共享库都需要协调数十个服务进行部署，增加了发布复杂度和故障风险。因此，OpenAI 决定将 Habitat 改造为独立服务，集中管理部署、监控和平台功能。 独立服务还为数据安全提供了统一控制点。OpenAI 可以在 Habitat 中集中执行访问控制、审计日志及底层存储资源权限管理，降低外部、内部及代理程序未经授权访问用户数据的风险。 OpenAI 最初选择用 Python 开发高吞吐服务，以优先解决平台稳定性和产品开",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/1d4ba8d7-6012-4d18-955e-74015e70cb23.png?x-bce-process=image/format,f_auto",
-     "id": "4a68b9ccb240",
+     "published": "2026-09-12T14:42:59+00:00",
+     "summary": "IT之家 9 月 13 日消息，OpenAI 首席执行官萨姆 · 奥尔特曼本周五接受《财富》杂志采访，确认公司不会在今年上市。 奥尔特曼指出，OpenAI 并不急于推进 IPO（首次公开募股）。他基于当前人工智能安全领域正在发生的事情认为，今年上市并不是一个明智的选择，且 OpenAI 没有这方面的压力。 他补充道，OpenAI 会在业务和公司准备就绪、社会环境合适时再选择上市。当主持人询问公司是否会在 2027 年准备 IPO 时，奥尔特曼回答：“ 我会说不是 2026 年 。是的，我们还有很多事情要做，比如应对当下安全形势，以及思考我们怎么和整个行业、政府展开合作。” 《纽约时报》曾在今年 6 月报道称， OpenAI 倾向于将原定今年的 IPO 推迟至明年 ，届时公司估值可能达到 1 万亿美元 （IT之家注：现汇率约合 6.73 万亿元人民币） 。 该媒体当时认为 OpenAI 推迟上市的原因是 SpaceX。这家埃隆 · 马斯克领导的火箭和 AI 公司最初通过 IPO 融资 850 亿美元 （现汇率约合 5,716.52 亿元人民币） ，上市初期价格大涨，一度达到 1.8 万亿美元 （现汇率约合 12.11 万亿元人民币） ，后续迅速回落。 奥尔特曼在采访中暗示道，OpenAI 很可能与其他前沿 AI 公司宣布一项放缓 AI 开发的协议，共同应对不断加剧的安全风险。他本人非",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/f85be787-c51d-4eb3-9563-57ef8dfd3034.jpg?x-bce-process=image/format,f_auto",
+     "id": "2a9cc8141678",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0002",
-   "title": "OpenAI 承认其 AI 智能体曾对 Ruby 语言包管理器 RubyGems 发起网络攻击",
-   "summary": "IT之家 9 月 12 日消息，据 《华尔街日报》当地时间周五报道，OpenAI 智能体开发人员参与了一起此前未披露的网络攻击， 该攻击使 RubyGems 服务不堪重负 。 IT之家注：RubyGems 是 Ruby 语言的包管理器，用于创建、分享和安装 Ruby 程序库（称为 gem），类似 Python 的 pip 或 Node.js 的 npm。 报道称， OpenAI 确认其测试中的 AI 智能体使用 RubyGems 访问了互联网 ，作为无害任务的一部分，用于在培训过程中获取公开信息。 该事件发生在今年 5 月，也就是另一起涉及 OpenAI",
+   "key": "t0004",
+   "title": "OpenAI’s rogue AI tried to hack another company in May",
+   "summary": "In May, hundreds of malicious and spam packages were uploaded to RubyGems, causing a serious disruption for the host. Now independent researchers have said that a swarm of OpenAI agents were responsible for the attack. Not only that, but the AI tried to steal users' API keys. At ",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "rubygems",
-    "ruby",
+    "tried",
+    "may",
+    "rogue",
+    "hack",
+    "another",
+    "were"
+   ],
+   "image": "img/2026-09-13/d0416c01aae79940.webp",
+   "llm_enriched": false,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "OpenAI’s rogue AI tried to hack another company in May",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-12T13:41:36+00:00",
+     "summary": "In May, hundreds of malicious and spam packages were uploaded to RubyGems, causing a serious disruption for the host. Now independent researchers have said that a swarm of OpenAI agents were responsible for the attack. Not only that, but the AI tried to steal users' API keys. At the time, RubyGems described it as a […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK149_AI_01.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "4022c7a7f9b5",
+     "tags": [
+      "AI",
+      "News",
+      "OpenAI"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0006",
+   "title": "Anthropic CEO says it’s time to pump the brakes on AI",
+   "summary": "Anthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its \"adherence to safety practices and commitments.\" In a winding essay, Amodei proposed a three-step plan to \"pace the",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "pump",
+    "brakes",
+    "slow",
+    "anthropic",
+    "time",
+    "amodei"
+   ],
+   "image": "img/2026-09-13/4142c1285acc5758.webp",
+   "llm_enriched": false,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Anthropic CEO says it’s time to pump the brakes on AI",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-12T08:23:40+00:00",
+     "summary": "Anthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its \"adherence to safety practices and commitments.\" In a winding essay, Amodei proposed a three-step plan to \"pace the frontier\" - jargon that simply means to slow […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "63c0cf89a6d3",
+     "tags": [
+      "AI",
+      "Anthropic",
+      "News",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0007",
+   "title": "算力词元贷加速全国推广，支持机房建设、GPU 服务器集群采购",
+   "summary": "IT之家 9 月 12 日消息，据央视财经今日报道，今年服贸会首次推出“金融 + 科创”的联展模式，让金融机构联合他们所赋能的科创企业同台参展。展台上除了金融产品，还有智能机械臂、运载火箭模型、人形机器人等硬科技，背后是 算力贷、算力保、投贷联动 等新型金融工具的支持。 针对 AI 企业的“算力词元贷”自 8 月落地后，正加速向全国推广。服贸会上，多家银行发布相关产品。中国工商银行公司金融业务部副总经理胡贤文介绍， “算力基建贷”支持算力机房建设、GPU 服务器集群采购等新型算力基础设施建设 ，“算力研发贷”解决企业研发投入大、转化周期长的痛点。 中邮金",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "datacenter"
+   ],
+   "image": "img/2026-09-13/cc2a9c15488af1ca.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "算力词元贷加速全国推广，支持机房建设、GPU 服务器集群采购",
+     "url": "https://www.ithome.com/1/001/656.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T07:10:40+00:00",
+     "summary": "IT之家 9 月 12 日消息，据央视财经今日报道，今年服贸会首次推出“金融 + 科创”的联展模式，让金融机构联合他们所赋能的科创企业同台参展。展台上除了金融产品，还有智能机械臂、运载火箭模型、人形机器人等硬科技，背后是 算力贷、算力保、投贷联动 等新型金融工具的支持。 针对 AI 企业的“算力词元贷”自 8 月落地后，正加速向全国推广。服贸会上，多家银行发布相关产品。中国工商银行公司金融业务部副总经理胡贤文介绍， “算力基建贷”支持算力机房建设、GPU 服务器集群采购等新型算力基础设施建设 ，“算力研发贷”解决企业研发投入大、转化周期长的痛点。 中邮金融资产投资有限公司投资业务一部副总经理闫冉介绍，公司今年 3 月份正式成立后，已在新一代信息技术、人工智能等国家重点支持的领域投资了十几个项目，总投资金额已超 50 亿元。 数据显示，7 月末， 科技型企业贷款余额 26.9 万亿元，同比增长 17.9% ；今年前 7 个月，科技保险为科技活动提供风险保障金额达 7.2 万亿元，同比增长 55.8%。 IT之家注意到，今年以来有多家银行竞推“算力贷”金融产品。例如，今年 5 月，张家港农商银行成功为本地一家公司投放该市首笔 100 万元“算力贷”，该产品采用“基础授信 + 算力券增信”双维度规则，单户基础信用额度最高 1000 万元，配套算力券增信后，固定资产贷款最高可达 5000 ",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/057295e6-f52e-4485-8632-c100d55b0eb0.jpg",
+     "id": "5ab9890e0d2c",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0008",
+   "title": "Nvidia is the central bank of AI",
+   "summary": "https://archive.ph/kt50V Comments URL: https://news.ycombinator.com/item?id=49673098 Points: 364 # Comments: 251",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "central",
+    "bank",
+    "https",
+    "comments",
+    "nvidia",
+    "archive.ph"
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "Hacker News (100+)"
+   ],
+   "articles": [
+    {
+     "title": "Nvidia is the central bank of AI",
+     "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-09-12T07:08:27+00:00",
+     "summary": "https://archive.ph/kt50V Comments URL: https://news.ycombinator.com/item?id=49673098 Points: 364 # Comments: 251",
+     "image": "",
+     "id": "c63b548b0537",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0009",
+   "title": "谷歌完成对创企 Mechanize 的人才收购，旨在补齐自家 AI 编程短板",
+   "summary": "IT之家 9 月 12 日消息，据《商业内幕》今天（12 日）凌晨报道，谷歌完成了对旧金山 AI 编程初创企业 Mechanize 的人才收购。 Mechanize 联合创始人塔迈 · 贝西罗格鲁的 LinkedIn 资料显示，他自 8 月起加入了谷歌 DeepMind 部门，另有报道称，Mechanize 十多名工程师也一同转投 DeepMind。 交易财务条款现已公开，据信谷歌此前曾洽谈一笔价值 15 亿美元 （IT之家注：现汇率约合 100.88 亿元人民币） 的交易，以获得 Mechanize 的技术和人才。Mechanize 今年早些时候 曾以",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "mechanize",
+    "google",
+    "deepmind",
+    "windsurf"
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "谷歌完成对创企 Mechanize 的人才收购，旨在补齐自家 AI 编程短板",
+     "url": "https://www.ithome.com/1/001/653.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T06:53:32+00:00",
+     "summary": "IT之家 9 月 12 日消息，据《商业内幕》今天（12 日）凌晨报道，谷歌完成了对旧金山 AI 编程初创企业 Mechanize 的人才收购。 Mechanize 联合创始人塔迈 · 贝西罗格鲁的 LinkedIn 资料显示，他自 8 月起加入了谷歌 DeepMind 部门，另有报道称，Mechanize 十多名工程师也一同转投 DeepMind。 交易财务条款现已公开，据信谷歌此前曾洽谈一笔价值 15 亿美元 （IT之家注：现汇率约合 100.88 亿元人民币） 的交易，以获得 Mechanize 的技术和人才。Mechanize 今年早些时候 曾以 5 亿美元 （现汇率约合 33.63 亿元人民币） 估值融资 910 万美元 （现汇率约合 6,120 万元人民币） ，目前由吉夫 · 阿萨迪担任 CEO。失去创始团队后，Mechanize 预计仍会继续运营其他业务。 这种交易通常被称为人才收购（acqui-hire）。对谷歌这样的科技巨头而言，这种方式可以 同时获得关键人才和技术 ，又不必像正式并购那样接受美国联邦贸易委员会（FTC）、英国竞争与市场管理局（CMA）等机构的反垄断审查。 谷歌此前收拢 Windsurf 团队时也采取了类似方式，Windsurf 前 CEO 瓦伦 · 莫汉后来负责谷歌 Antigravity AI IDE。此次加入谷歌的 Mechanize 员工主",
+     "image": "",
+     "id": "2a19deece349",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0010",
+   "title": "中国聚变：正全力推进全球首个高温超导强场稳态燃烧实验平台研发",
+   "summary": "IT之家 9 月 12 日消息，9 月 11 日，2026 浦江创新论坛成果发布会在上海张江科学会堂举行。中国聚变能源有限公司（以下简称“中国聚变”）总工程师钟武律作为青年科学家代表出席并演讲。 钟武律指出，当前全球聚变研究加速迈向“燃烧”阶段，实现氘氚聚变燃烧等离子体运行，与实现高增益持续燃烧的聚变等离子体之间，仍有根本性的科学门槛需要跨越：要依靠聚变产生的 α 粒子把等离子体维持在上亿度，进入长期自维持、稳定可控的“燃烧”状态。“只有把科学问题搞清楚，工程上才知道往哪走。” 中国聚变正全力推进全球首个高温超导强场稳态燃烧实验平台 —— 中国环流四号研",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-09-13/74519e8729ed6f8c.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "中国聚变：正全力推进全球首个高温超导强场稳态燃烧实验平台研发",
+     "url": "https://www.ithome.com/1/001/652.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T06:52:52+00:00",
+     "summary": "IT之家 9 月 12 日消息，9 月 11 日，2026 浦江创新论坛成果发布会在上海张江科学会堂举行。中国聚变能源有限公司（以下简称“中国聚变”）总工程师钟武律作为青年科学家代表出席并演讲。 钟武律指出，当前全球聚变研究加速迈向“燃烧”阶段，实现氘氚聚变燃烧等离子体运行，与实现高增益持续燃烧的聚变等离子体之间，仍有根本性的科学门槛需要跨越：要依靠聚变产生的 α 粒子把等离子体维持在上亿度，进入长期自维持、稳定可控的“燃烧”状态。“只有把科学问题搞清楚，工程上才知道往哪走。” 中国聚变正全力推进全球首个高温超导强场稳态燃烧实验平台 —— 中国环流四号研发，为解答这一科学之问提供关键支撑。 “从一个好问题出发，向科学最深处走去”，中国聚变将把握高温超导与人工智能两大技术机遇，沿着“实验堆-示范堆-商用堆”稳步推进聚变能开发，用勇攀高峰的决心、久久为功的信心、矢志报国的恒心，把今天的“科学之问”变成明天的“中国答案”。 延伸阅读 “中国环流”系列装置由中核集团核工业西南物理研究院（西物院）研发建造，该院成立于 1965 年，是我国最早致力于可控核聚变和等离子体物理研究的专业科研院所。此前已建成三代聚变平台：上世纪 80 年代建成中国环流一号，是我国核聚变领域第一个国家大科学工程装置；本世纪初建成中国环流二号，奠定我国聚变研究从原理探索到大规模装置实验的基础；2020 年 12 月，自",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/e1b2ad18-b0f4-4a75-8bee-235bdfa7c072.jpg?x-bce-process=image/format,f_auto",
+     "id": "c4a433f23a78",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0011",
+   "title": "Anthropic CEO 阿莫迪称 AI 行业应当放缓发展速度，并承诺让第三方评估机构获得员工级访问权限",
+   "summary": "IT之家 9 月 12 日消息，Anthropic CEO 达里奥 · 阿莫迪（Dario Amodei）今日发文，称人工智能行业应当放缓发展速度。 阿莫迪表示，从 2026 年夏季开始，AI 协助构建下一代 AI 的能力快速演进， 若 不加节制，技术突破速度将彻底超越人类的理解与掌控能力 。 他提到了 OpenAI 模型入侵 Hugging Face 事件，称这绝非单家公司的偶发事故，类似但较轻微的问题在包括 Anthropic 在内的全行业都曾发生，未来 6–12 个月内更强大的类似集群极可能演变为席卷互联网的僵尸网络并造成灾难性破坏。 阿莫迪称放缓",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "safety",
+    "anthropic",
     "opensource"
    ],
    "image": "",
@@ -323,1168 +457,411 @@
    ],
    "articles": [
     {
-     "title": "OpenAI 承认其 AI 智能体曾对 Ruby 语言包管理器 RubyGems 发起网络攻击",
-     "url": "https://www.ithome.com/1/001/492.htm",
+     "title": "Anthropic CEO 阿莫迪称 AI 行业应当放缓发展速度，并承诺让第三方评估机构获得员工级访问权限",
+     "url": "https://www.ithome.com/1/001/651.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-09-11T15:36:54+00:00",
-     "summary": "IT之家 9 月 12 日消息，据 《华尔街日报》当地时间周五报道，OpenAI 智能体开发人员参与了一起此前未披露的网络攻击， 该攻击使 RubyGems 服务不堪重负 。 IT之家注：RubyGems 是 Ruby 语言的包管理器，用于创建、分享和安装 Ruby 程序库（称为 gem），类似 Python 的 pip 或 Node.js 的 npm。 报道称， OpenAI 确认其测试中的 AI 智能体使用 RubyGems 访问了互联网 ，作为无害任务的一部分，用于在培训过程中获取公开信息。 该事件发生在今年 5 月，也就是另一起涉及 OpenAI 智能体和 AI 平台 Hugging Face 事件的前两个月。 安全研究人员将该攻击称为“GemStuffer”，智能体每两到三分钟创建一批 RubyGems 账户，并从互联网下载收集到的数百个网页文件。测试规模之大， 以至于 RubyGems 被迫暂停新账户注册 4 天 。 研究人员还报告称，智能体试图利用两个漏洞，可能发布其他用户软件包的新版本。其中一个被描述为此前未知的零日漏洞，尽管 OpenAI 表示无法证实这一说法。 管理 RubyGems 的非营利组织 Ruby Central 表示，此次事件规模较大， 但显然所谓的零日漏洞并未被成功利用 。",
+     "published": "2026-09-12T06:43:06+00:00",
+     "summary": "IT之家 9 月 12 日消息，Anthropic CEO 达里奥 · 阿莫迪（Dario Amodei）今日发文，称人工智能行业应当放缓发展速度。 阿莫迪表示，从 2026 年夏季开始，AI 协助构建下一代 AI 的能力快速演进， 若 不加节制，技术突破速度将彻底超越人类的理解与掌控能力 。 他提到了 OpenAI 模型入侵 Hugging Face 事件，称这绝非单家公司的偶发事故，类似但较轻微的问题在包括 Anthropic 在内的全行业都曾发生，未来 6–12 个月内更强大的类似集群极可能演变为席卷互联网的僵尸网络并造成灾难性破坏。 阿莫迪称放缓并不等于彻底停滞，而是利用争取来的 1–2 年窗口期，将资源投入到以下四个关键领域： 解决因复杂基础设施、强化学习环境过滤缺陷等执行失误带来的安全漏洞，建立媲美民航工业级别的工程标准； 确保安全合规训练能够跟上模型能力的扩张，消除偶发且不可预期的违背意图行为； 提升类似于“模型大脑 fMRI”的内部机理探查技术，深挖模型未言明的隐性动机； 开发更强大的评测基准，防止高智能模型伪装对齐或欺骗安全检测。 阿莫迪表示， Anthropic 将向第三方评估机构提供针对其系统的永久性、员工级别的访问权限 ，使评估人员能够监督 Anthropic 安全措施的执行情况、报告相关事件，并评估模型在训练过程中的对齐表现。 IT之家注意到，据彭博社本周",
      "image": "",
-     "id": "f0e9dac5f157",
+     "id": "d8ec8eb1cf50",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0003",
-   "title": "冲刺史上最大 IPO：英伟达正洽谈为 Anthropic 投资至多 100 亿美元",
-   "summary": "IT之家 9 月 12 日消息，路透社刚刚报道称，英伟达正与 Anthropic 洽谈，考虑以基石投资者身份参与其 IPO，考虑投资至多 100 亿美元 （现汇率约合 672.8 亿元人民币） 。 报道称，Anthropic 计划通过上市融资最多 1000 亿美元，估值或达到约 2 万亿美元 （IT之家注：现汇率约合 13.46 万亿元人民币） ，这将有望成为史上最大规模的 IPO 事件。 由于此次谈判仍在讨论中，融资规模、投资金额及其他安排均可能发生变化。Anthropic 拒绝置评，英伟达未立即回应置评请求。 如果英伟达最终确认参与此次 IPO 投资",
+   "key": "t0012",
+   "title": "Trump is giving data centers a pass to pollute",
+   "summary": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the ",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "ipo",
-    "nvidia"
+    "data",
+    "regulation",
+    "trump",
+    "centers",
+    "datacenter",
+    "giving"
    ],
-   "image": "img/2026-09-12/e7ee8d8184a2729d.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "冲刺史上最大 IPO：英伟达正洽谈为 Anthropic 投资至多 100 亿美元",
-     "url": "https://www.ithome.com/1/001/488.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-11T15:22:39+00:00",
-     "summary": "IT之家 9 月 12 日消息，路透社刚刚报道称，英伟达正与 Anthropic 洽谈，考虑以基石投资者身份参与其 IPO，考虑投资至多 100 亿美元 （现汇率约合 672.8 亿元人民币） 。 报道称，Anthropic 计划通过上市融资最多 1000 亿美元，估值或达到约 2 万亿美元 （IT之家注：现汇率约合 13.46 万亿元人民币） ，这将有望成为史上最大规模的 IPO 事件。 由于此次谈判仍在讨论中，融资规模、投资金额及其他安排均可能发生变化。Anthropic 拒绝置评，英伟达未立即回应置评请求。 如果英伟达最终确认参与此次 IPO 投资，Anthropic 将获得一家重要战略合作伙伴的早期支持，同时进一步深化双方在人工智能计算领域的关系。英伟达作为基石投资者，可能增强投资者对这宗超大规模 IPO 的信心。 基石投资者通常是承诺在股票面向更广泛市场发售前，预先认购一定数量股份的机构投资者。对于融资规模巨大的 IPO，企业提前引入机构投资者的做法日益常见。英伟达和亚马逊曾参与 Arm 的基石投资，沙特公共投资基金（PIF）则是 SpaceX 的基石投资者之一。 Anthropic 与英伟达的关系也反映出 AI 开发商与算力供应商之间日益紧密的联系。Anthropic 高度依赖英伟达 GPU，同时也在寻求多元化芯片供应商，以应对 Claude 业务增长带来的算力需求压力",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/dc7c0df7-9ab4-412f-b9a4-c16e738609d3.png?x-bce-process=image/format,f_auto",
-     "id": "98125bd58fad",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0004",
-   "title": "OpenAI 进一步完善 ChatGPT Sites：响应速度提升、新增协作功能、可绑定自定义域名",
-   "summary": "IT之家 9 月 12 日消息，OpenAI 宣布进一步完善 ChatGPT Sites 功能，新增一项“Build Together”协作功能，允许用户邀请其他人共同开发同一个网站 / Web 应用。 公开信息显示，ChatGPT Sites 主要用于帮助用户使用自然语言创建网站 / Web 应用，先前相应功能主要面向单人使用，项目创建后默认只能由一名用户负责修改和发布。而本次更新后，用户可以向其他人发送协作申请，受邀成员可以快速编辑、保存并发布 Site 内容。 此外，用户还能够将 ChatGPT Sites 生成的项目设置为完全私有，并仅向指定人员",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "sites",
-    "site"
-   ],
-   "image": "img/2026-09-12/5e3cf0b07e2a7701.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI 进一步完善 ChatGPT Sites：响应速度提升、新增协作功能、可绑定自定义域名",
-     "url": "https://www.ithome.com/1/001/485.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-11T15:10:51+00:00",
-     "summary": "IT之家 9 月 12 日消息，OpenAI 宣布进一步完善 ChatGPT Sites 功能，新增一项“Build Together”协作功能，允许用户邀请其他人共同开发同一个网站 / Web 应用。 公开信息显示，ChatGPT Sites 主要用于帮助用户使用自然语言创建网站 / Web 应用，先前相应功能主要面向单人使用，项目创建后默认只能由一名用户负责修改和发布。而本次更新后，用户可以向其他人发送协作申请，受邀成员可以快速编辑、保存并发布 Site 内容。 此外，用户还能够将 ChatGPT Sites 生成的项目设置为完全私有，并仅向指定人员开放访问权限。以便团队在产品正式对外发布之前邀请多人进行内部秘密测试。 例如，某开发者 A 计划为某活动制作网站，因此要求 ChatGPT Sites 生成了一个内部项目，之后发送给开发者 B，B 无需反复与 A 沟通提出修改建议，可以直接进入项目进行调整，还能够利用自然语言检查数据库中实际保存了哪些内容，而无需再单独打开数据库进行查看。 除此之外，ChatGPT 现在还支持查看与 Site 连接的数据库、并支持绑定自定义域名。用户可以将自己拥有的域名连接到 Site，使面向客户、同事或朋友分享的网站不再局限于 ChatGPT 提供的通用网址。 OpenAI 还同期提升了 ChatGPT Sites 的响应速度，官方宣称“从输入提示",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/1664ff95-091e-4cc6-9b32-28d941fd7735.jpg",
-     "id": "dc187d27da38",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0005",
-   "title": "2026 年度《时代》杂志全球最佳企业榜单公布：英伟达位居第一、苹果重返排名前三",
-   "summary": "IT之家 9 月 12 日消息，《时代（TIME）》杂志现在已公布“2026 全球最佳企业”（The World’s Best Companies 2026）榜单，英伟达位居第一，苹果则以 93.16 分排名第三。这也是苹果继 2024 年登顶后再次进入该榜单前三。 IT之家注意到，苹果在该榜单中的排名近年来经历了较大变化。 尽管在 2024 年苹果曾位居榜首，但在 2025 年榜单中意外落选 。《时代》杂志当时表示，苹果 2022 年至 2024 年的营收出现下滑，而华尔街多名分析师认为，这可能与苹果在人工智能领域落后有关。 不过，《时代》杂志同期指出",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "2024",
-    "apple",
-    "93.16"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "2026 年度《时代》杂志全球最佳企业榜单公布：英伟达位居第一、苹果重返排名前三",
-     "url": "https://www.ithome.com/1/001/483.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-11T15:02:52+00:00",
-     "summary": "IT之家 9 月 12 日消息，《时代（TIME）》杂志现在已公布“2026 全球最佳企业”（The World’s Best Companies 2026）榜单，英伟达位居第一，苹果则以 93.16 分排名第三。这也是苹果继 2024 年登顶后再次进入该榜单前三。 IT之家注意到，苹果在该榜单中的排名近年来经历了较大变化。 尽管在 2024 年苹果曾位居榜首，但在 2025 年榜单中意外落选 。《时代》杂志当时表示，苹果 2022 年至 2024 年的营收出现下滑，而华尔街多名分析师认为，这可能与苹果在人工智能领域落后有关。 不过，《时代》杂志同期指出“苹果可能正在适应新的科技竞争格局”。前苹果 CEO 蒂姆・库克当时曾表示，公司正在大幅增加 AI 领域的投入，并计划将相关能力进一步融入旗下设备和平台。作为参考，苹果在 2025 年 7 月公布的财报显示，公司营收同比增长 10%，创 2021 年以来最大增幅。 如今，随着苹果重返 2026 年榜单，其最终得分为 93.16 分，仅次于排名第二的美国健康保险公司 Cigna（94.37 分）以及以 97.51 分登顶的英伟达。 排名 2024 年最佳企业 (总分) 2025 年最佳企业 (总分) 2026 年最佳企业 (总分) 1 苹果 (Apple) 美国 · 97.75 分 英伟达 (NVIDIA) 美国 · 97.62 分 ",
-     "image": "",
-     "id": "9d5ee6eceec2",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0006",
-   "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
-   "summary": "The round for the two-year-old startup is coming together months after Mecka announced its Series A.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "mecka",
-    "robot",
-    "nears",
-    "valuation",
-    "sequoia-led",
-    "deal"
-   ],
-   "image": "img/2026-09-12/75e43f18f8920342.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
-     "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-11T14:58:17+00:00",
-     "summary": "The round for the two-year-old startup is coming together months after Mecka announced its Series A.",
-     "image": "",
-     "id": "4c67a72ea8b0",
-     "tags": [
-      "AI",
-      "Robotics",
-      "Exclusive",
-      "Sequoia"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0007",
-   "title": "联想 Googlebook 15 笔记本完整规格曝光：Ultra 5 325 处理器、15.3 英寸 120Hz OLED 面板",
-   "summary": "IT之家 9 月 12 日消息，外媒 MacObserver 现已曝光了联想 Googlebook 15 笔记本完整配置信息，这款产品并非传统意义上的入门级 Chromebook，而是一款面向生产力用户的高端产品。 该机机身尺寸约为 341.1×236×16mm，重量约 1.29Kg，配备 4 扬声器系统。笔记本 A 面配备“Glowbar”彩色指示灯，可以显示电池及充电状态。B 面配备一块 15.3 英寸 2880x1800 分辨率 120Hz OLED 触控面板（峰值亮度 500 尼特，覆盖 100% DCI-P3 色域），同时集成 5Mp 面部认证",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "googlebook",
-    "oled",
-    "325",
-    "15.3",
-    "120",
-    "google"
-   ],
-   "image": "img/2026-09-12/81420d9a264a1fa2.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "联想 Googlebook 15 笔记本完整规格曝光：Ultra 5 325 处理器、15.3 英寸 120Hz OLED 面板",
-     "url": "https://www.ithome.com/1/001/477.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-11T14:40:45+00:00",
-     "summary": "IT之家 9 月 12 日消息，外媒 MacObserver 现已曝光了联想 Googlebook 15 笔记本完整配置信息，这款产品并非传统意义上的入门级 Chromebook，而是一款面向生产力用户的高端产品。 该机机身尺寸约为 341.1×236×16mm，重量约 1.29Kg，配备 4 扬声器系统。笔记本 A 面配备“Glowbar”彩色指示灯，可以显示电池及充电状态。B 面配备一块 15.3 英寸 2880x1800 分辨率 120Hz OLED 触控面板（峰值亮度 500 尼特，覆盖 100% DCI-P3 色域），同时集成 5Mp 面部认证摄像头和实体隐私遮挡片。 该机 C 面配备一块 150×95mm 尺寸触觉反馈触控板，键盘采用背光设计，带有专用的 Google“G”按键，位置处于 Fn 键与 Alt 键之间。目前尚不清楚该按键具体用途，有可能承担类似 MacBook Command 键的系统级功能，也可能用于快速唤起 Gemini AI。 配置方面，联想 Googlebook 15 预计搭载英特尔酷睿 Ultra 5 325 处理器，提供 16GB/32GB LPDDR5x RAM 内存以及 256GB/512GB SSD，笔记本支持 Wi-Fi 7 和蓝牙 5.4，内置 70Wh 电池，官方目标续航最长可达 11 小时。 I/O 方面，新机左侧配备一个 Thu",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/942e826d-bf78-42ad-a30d-a6530054f224.png?x-bce-process=image/format,f_auto",
-     "id": "98c27edcd251",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0008",
-   "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
-   "summary": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "open-weight",
-    "tan",
-    "wants",
-    "frontier",
-    "labs",
-    "combinator"
-   ],
-   "image": "img/2026-09-12/22bf2e1815074925.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
-     "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-11T12:59:47+00:00",
-     "summary": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
-     "image": "",
-     "id": "543492d80546",
-     "tags": [
-      "AI",
-      "TC",
-      "Venture",
-      "garry tan",
-      "Y Combinator"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0009",
-   "title": "OpenAI’s feud with mathematicians is only escalating",
-   "summary": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "mathematicians",
-    "feud",
-    "escalating",
-    "intel",
-    "only",
-    "twenty-five"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI’s feud with mathematicians is only escalating",
-     "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-11T12:57:36+00:00",
-     "summary": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work.",
-     "image": "",
-     "id": "3c9a79c82f31",
-     "tags": [
-      "AI",
-      "OpenAI"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0010",
-   "title": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
-   "summary": "New Mexico's Supreme Court is punishing a lawyer for including AI-fabricated witnesses and fake police testimony in an appeal for his client's murder conviction, according to a report from Reuters. In a filing on Wednesday, the court fined Stephen Aarons $5,000 and held him in co",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "fined",
-    "murder",
-    "lawyer",
-    "witnesses",
-    "ai-hallucinated",
-    "case"
-   ],
-   "image": "img/2026-09-12/88b3b7bea7d2f14b.webp",
+   "image": "img/2026-09-13/be73f61acc60d42e.webp",
    "llm_enriched": false,
    "sources": [
     "The Verge AI"
    ],
    "articles": [
     {
-     "title": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+     "title": "Trump is giving data centers a pass to pollute",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-09-11T12:44:02+00:00",
-     "summary": "New Mexico's Supreme Court is punishing a lawyer for including AI-fabricated witnesses and fake police testimony in an appeal for his client's murder conviction, according to a report from Reuters. In a filing on Wednesday, the court fined Stephen Aarons $5,000 and held him in contempt for failing to \"verify the factual claims and legal […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25384193/STK470_AI_LAW_CVIRGINIA_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "eb3fa8e52380",
+     "published": "2026-09-12T06:41:27+00:00",
+     "summary": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the president to adopt a \"Data Center Health Protection […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STKS528_DATA_CENTERS_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "9e2152d865f0",
      "tags": [
       "AI",
-      "Law",
-      "News",
-      "OpenAI",
-      "Policy"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0011",
-   "title": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
-   "summary": "Only one week left to secure your exhibit table. Tables are limited and can sell out before the September 18 deadline.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "left",
-    "exhibit",
-    "book",
-    "table",
-    "week",
-    "techcrunch"
-   ],
-   "image": "img/2026-09-12/fea4854177e68dff.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
-     "url": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-11T12:33:18+00:00",
-     "summary": "Only one week left to secure your exhibit table. Tables are limited and can sell out before the September 18 deadline.",
-     "image": "",
-     "id": "970271eaf902",
-     "tags": [
-      "AI",
-      "Biotech & Health",
-      "Fintech",
-      "Fundraising",
-      "Startups"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0012",
-   "title": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
-   "summary": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "final",
-    "side",
-    "techcrunch",
-    "disrupt",
-    "call",
-    "events"
-   ],
-   "image": "img/2026-09-12/c846cc5a4590de0e.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
-     "url": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-11T12:30:17+00:00",
-     "summary": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT.",
-     "image": "",
-     "id": "5ae88bf4e335",
-     "tags": [
-      "AI",
-      "Biotech & Health",
-      "Fintech",
-      "Fundraising",
-      "Startups"
+      "Environment",
+      "Health",
+      "Policy",
+      "Science"
      ]
     }
    ]
   },
   {
    "key": "t0013",
-   "title": "Roundtables: AI’s apocalypse crisis",
-   "summary": "Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Join MIT Technology Review executive editor Niall Firth for a conversation with senior AI editor Will D",
+   "title": "中国移动发布 AI 可信计算：提供多形态机密算力和机密 Token",
+   "summary": "IT之家 9 月 12 日消息，9 月 12 日，在 2026 中国算力大会主论坛上，中国移动正式发布 AI 可信计算（ AITC ），并启动 AI 可信计算生态共建战略合作。 据介绍，中国移动率先布局 AI 可信计算，基于移动云全栈国产化算力底座，融合机密计算、国产密码、信息流隐私防护等核心技术，提供通智多形态机密算力和 机密 Token ，构建覆盖云上 AI 训练、推理及数据使用全生命周期的一体化 AI 安全解决方案，号称“让客户像使用私有云一样使用公有云”。有效解决金融风控、政务处理、工业制造、医疗诊断、高校科研等数据敏感行业普遍存在的 隐私数据易",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "roundtables",
-    "apocalypse",
-    "crisis",
-    "editor",
-    "employees",
-    "saying"
+    "token",
+    "aitc"
    ],
-   "image": "img/2026-09-12/91801a3d20c31efb.webp",
+   "image": "img/2026-09-13/171e6d71111004af.webp",
    "llm_enriched": false,
    "sources": [
-    "MIT Technology Review AI"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "Roundtables: AI’s apocalypse crisis",
-     "url": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all",
-     "source": "MIT Technology Review AI",
-     "lang": "en",
-     "published": "2026-09-11T12:05:06+00:00",
-     "summary": "Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Join MIT Technology Review executive editor Niall Firth for a conversation with senior AI editor Will Douglas Heaven and AI reporter Grace Huckins unpacking AI extinction…",
-     "image": "",
-     "id": "20712504e2f9",
-     "tags": [
-      "Artificial intelligence",
-      "AI",
-      "App",
-      "Roundtables",
-      "Subscriber-Only Stories"
-     ]
+     "title": "中国移动发布 AI 可信计算：提供多形态机密算力和机密 Token",
+     "url": "https://www.ithome.com/1/001/650.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T06:27:39+00:00",
+     "summary": "IT之家 9 月 12 日消息，9 月 12 日，在 2026 中国算力大会主论坛上，中国移动正式发布 AI 可信计算（ AITC ），并启动 AI 可信计算生态共建战略合作。 据介绍，中国移动率先布局 AI 可信计算，基于移动云全栈国产化算力底座，融合机密计算、国产密码、信息流隐私防护等核心技术，提供通智多形态机密算力和 机密 Token ，构建覆盖云上 AI 训练、推理及数据使用全生命周期的一体化 AI 安全解决方案，号称“让客户像使用私有云一样使用公有云”。有效解决金融风控、政务处理、工业制造、医疗诊断、高校科研等数据敏感行业普遍存在的 隐私数据易遭泄露、模型资产易被窃取、算力环境信任缺失 等上云用智安全痛点。 在数据安全方面，告别传统明文计算，通过端到端加密， 实现数据“可用不可见” ；在模型安全方面，打破传统私有化明文部署局限，支持公有云机密部署 AI 模型，全程密文运行，杜绝安全泄露风险，实现模型“可算不可取”；在环境安全方面，从传统边界防御升级为硬件级环境可证明，确保运行环境全程可信无篡改。 中国移动表示，AITC 业界首创深度融合 中国移动 AI-eSIM 与 超级 SIM ，打造“物联网 + 人联网”端云协同 AI 安全解决方案，从物理层面杜绝密钥泄露与数据篡改，将安全防线延伸至终端设备，为用户提供芯片级全链路安全保障。 在大会主论坛上，中国移动依托央国企 AI ",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/0e1f6d4d-c95f-4145-a3e6-4cf3fca198a7.png?x-bce-process=image/format,f_auto",
+     "id": "f700d837b3b7",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0014",
-   "title": "Kimi-maker Moonshot AI targets $2B in annual revenue",
-   "summary": "While K3's usage figures have declined slightly in recent months, OpenRouter data currently shows as many as 300 billion tokens being generated each day by K3 models on the system.",
+   "title": "特斯拉 FSD v15 将提升主动避险能力：更早的危险预测、更快的反应时间",
+   "summary": "IT之家 9 月 12 日消息，据外媒 Teslarati 今天（12 日）晚间报道，特斯拉计划在下一次 FSD 重大更新（v15）中加入一系列重要的安全和事故规避功能，进一步提升系统的主动避险能力。 特斯拉 AI 负责人阿肖克 · 埃卢斯瓦米借本周一起险些发生碰撞的事件，提前透露了 FSD v15 在安全方面的升级方向。 当时，一名车主的车辆为了避让从停车场驶出的另一辆车而主动转向。埃卢斯瓦米写道，自己为车主平安而感到欣慰，“FSD v15 将带来 更早的危险预测、更快的反应时间 ，以及整体上显著提升的安全性和碰撞规避能力。” v15 在特斯拉内部被视",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "kimi-maker",
-    "targets",
-    "annual",
-    "revenue",
-    "moonshot",
-    "usage"
+    "v15",
+    "fsd",
+    "xai"
    ],
-   "image": "img/2026-09-12/5319d004fe64a68b.webp",
+   "image": "img/2026-09-13/e837b403fef0b83b.webp",
    "llm_enriched": false,
    "sources": [
-    "TechCrunch AI"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "Kimi-maker Moonshot AI targets $2B in annual revenue",
-     "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-11T11:35:54+00:00",
-     "summary": "While K3's usage figures have declined slightly in recent months, OpenRouter data currently shows as many as 300 billion tokens being generated each day by K3 models on the system.",
-     "image": "",
-     "id": "3d8e4a73da0d",
-     "tags": [
-      "AI",
-      "In Brief",
-      "moonshot ai"
-     ]
+     "title": "特斯拉 FSD v15 将提升主动避险能力：更早的危险预测、更快的反应时间",
+     "url": "https://www.ithome.com/1/001/649.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T06:16:28+00:00",
+     "summary": "IT之家 9 月 12 日消息，据外媒 Teslarati 今天（12 日）晚间报道，特斯拉计划在下一次 FSD 重大更新（v15）中加入一系列重要的安全和事故规避功能，进一步提升系统的主动避险能力。 特斯拉 AI 负责人阿肖克 · 埃卢斯瓦米借本周一起险些发生碰撞的事件，提前透露了 FSD v15 在安全方面的升级方向。 当时，一名车主的车辆为了避让从停车场驶出的另一辆车而主动转向。埃卢斯瓦米写道，自己为车主平安而感到欣慰，“FSD v15 将带来 更早的危险预测、更快的反应时间 ，以及整体上显著提升的安全性和碰撞规避能力。” v15 在特斯拉内部被视为一次幅度更大的架构升级，不仅神经网络规模明显扩大，预测与控制之间的联系也会更加紧密。 特斯拉开始在部分 Robotaxi 运营中测试早期版 v15 软件，同时向现有客户车辆推送 Automatic Collision Evasion（自动碰撞规避）等安全功能。即使驾驶员选择手动驾驶，系统 也能在必要时主动介入 。 综合IT之家此前报道，今年 4 月，特斯拉 CEO 马斯克就曾宣称，FSD V15 版本的安全性将远超人类水平，即便在完全无监督且复杂的场景中也是如此。 早在 2025 年 8 月，马斯克就谈到 FSD V14 版本的驾驶表现将优于人类司机， 而 V15 版本则有望实现比人类驾驶好 10 倍的水平 。 今年 7 月，特斯",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/8a2a991c-cd38-48de-819e-99d76ed9b9f6.png?x-bce-process=image/format,f_auto",
+     "id": "52575941f057",
+     "tags": []
     }
    ]
   },
   {
    "key": "t0015",
-   "title": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
-   "summary": "\"I didn't know that AI could hallucinate facts,\" New Mexico defense lawyer says.",
+   "title": "英伟达发起《NBA 2K27》DLSS 5 截图挑战，将送出 4 张 RTX 5090 显卡",
+   "summary": "IT之家 9 月 12 日消息，英伟达宣布推出《NBA 2K27》DLSS 5“海报挑战赛”，奖品是 4 张定制 RTX 5090 显卡。 参赛者可以使用 RTX 50 系列显卡开启 DLSS 5，在《NBA 2K27》中 截取游戏画面或视频 ，也可以通过由 RTX 5080 服务器提供算力的 GeForce NOW Ultimate 云游戏服务完成作品，随后发布并 @NVIDIAGeForce，同时添加 RTXPoster 标签。 活动持续至 12 月 31 日，获奖名单将在 2027 年 1 月底前公布。英伟达将每张奖品显卡的价值定为 2,599 美",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "lawyer",
-    "chatgpt-using",
-    "punished",
-    "citing",
-    "made-up",
-    "fake"
+    "rtx",
+    "nba",
+    "k27",
+    "5090",
+    "dlss",
+    "nvidia"
    ],
-   "image": "img/2026-09-12/18b437fed729a3e9.webp",
+   "image": "img/2026-09-13/79a961e5781d66f1.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "英伟达发起《NBA 2K27》DLSS 5 截图挑战，将送出 4 张 RTX 5090 显卡",
+     "url": "https://www.ithome.com/1/001/641.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T05:05:13+00:00",
+     "summary": "IT之家 9 月 12 日消息，英伟达宣布推出《NBA 2K27》DLSS 5“海报挑战赛”，奖品是 4 张定制 RTX 5090 显卡。 参赛者可以使用 RTX 50 系列显卡开启 DLSS 5，在《NBA 2K27》中 截取游戏画面或视频 ，也可以通过由 RTX 5080 服务器提供算力的 GeForce NOW Ultimate 云游戏服务完成作品，随后发布并 @NVIDIAGeForce，同时添加 RTXPoster 标签。 活动持续至 12 月 31 日，获奖名单将在 2027 年 1 月底前公布。英伟达将每张奖品显卡的价值定为 2,599 美元 （IT之家注：现汇率约合 17,479 元人民币） ，附有《NBA 2K27》定制涂装。 多家价格追踪机构显示，本月 RTX 5090 在美国市场的售价已突破 5,000 美元 （现汇率约合 33,627 元人民币） ，是 1,999 美元 （现汇率约合 13,444 元人民币） 首发价的两倍多，背后的主要原因是 GDDR7 显存短缺持续冲击整个 GPU 产品线。目前，RTX 5090 价格连续数月上涨，仍看不到缓解迹象。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/a8c94c0a-4a97-404f-bdc7-b4b425a67beb.png",
+     "id": "5ff8a894b46c",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0016",
+   "title": "创维数字：与谷歌签署智能家居合作协议，首批产品覆盖欧洲 14 国",
+   "summary": "IT之家 9 月 12 日消息，创维数字 9 月 11 日在业绩说明会上表示，近日，公司与 Google Asia PacificPte. Ltd 正式签署《智能家居合作协议》。 IT之家从官方介绍获悉，该公司作为 Google 授权的智能家居合作伙伴及智能家居服务授权经销商，围绕智能家居产品及服务开展深度协同，共同推动智能产品创新与产业化商用落地。双方首批合作产品包括 Gemini 智能音箱、带摄像头的智能门铃、室内摄像头、户外摄像头、带泛光灯的户外摄像头，面向 欧洲 14 个国家 推出创维旗下品牌、兼容 Google Home 平台的产品。 创维数字",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "google"
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "创维数字：与谷歌签署智能家居合作协议，首批产品覆盖欧洲 14 国",
+     "url": "https://www.ithome.com/1/001/636.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T04:27:07+00:00",
+     "summary": "IT之家 9 月 12 日消息，创维数字 9 月 11 日在业绩说明会上表示，近日，公司与 Google Asia PacificPte. Ltd 正式签署《智能家居合作协议》。 IT之家从官方介绍获悉，该公司作为 Google 授权的智能家居合作伙伴及智能家居服务授权经销商，围绕智能家居产品及服务开展深度协同，共同推动智能产品创新与产业化商用落地。双方首批合作产品包括 Gemini 智能音箱、带摄像头的智能门铃、室内摄像头、户外摄像头、带泛光灯的户外摄像头，面向 欧洲 14 个国家 推出创维旗下品牌、兼容 Google Home 平台的产品。 创维数字表示，2026 年上半年，公司实现营业收入 53.71 亿元，同比增长 31.16%； 归母净利润 1.62 亿元，同比增长 202.45% 。业绩增长的核心驱动力来自智能终端业务的全面复苏，该板块实现营收 44 亿元，同比增长 52.45%，销售数量、营收规模及毛利率三条线同步提升。 从增长逻辑看，主要有三方面支撑： 一是运营商集采项目密集落地，智能灵犀屏发货量突破 30 万台，在中国移动该品类市占率超 80%；天翼智屏在中国电信集采中两个标包均以第二名中标，斩获超 55 万台份额；智能家庭网关在中国移动紧急集采中综合第一名中标。 二是产品结构持续优化，公司主动放弃部分低毛利传统集采订单，聚焦高附加值产品。 三是海外市场拓展成效显",
+     "image": "",
+     "id": "c03a45ba262b",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0017",
+   "title": "全球首个适配万台级产能，柳州优必选万台级工业人形机器人超级智慧工厂投产",
+   "summary": "IT之家 9 月 12 日消息，据柳州市融媒体中心“柳州 1 号”公众号，9 月 12 日，柳州优必选万台级工业人形机器人超级智慧工厂投产仪式在北部生态新区举行。 该超级智慧工厂是优必选打造的 全球首个适配万台级产能 的工业人形机器人智能制造标杆工厂，依托工业仿真系统智能规划、数字化“智慧大脑”全域调度，真正落地“用机器人造机器人”新质生产力智造模式，按照产线设计节拍， 每 10 分钟可下线 1 台机器人、年规划产能超万台 。 同时，优必选联合西门子量身打造人形机器人 专属数字化智造底座 ，破解了人形机器人零部件繁多、转运频次高、装配精度高、产品迭代快的",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "walker"
+   ],
+   "image": "img/2026-09-13/df5d518b3d3b4241.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "全球首个适配万台级产能，柳州优必选万台级工业人形机器人超级智慧工厂投产",
+     "url": "https://www.ithome.com/1/001/635.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T04:22:23+00:00",
+     "summary": "IT之家 9 月 12 日消息，据柳州市融媒体中心“柳州 1 号”公众号，9 月 12 日，柳州优必选万台级工业人形机器人超级智慧工厂投产仪式在北部生态新区举行。 该超级智慧工厂是优必选打造的 全球首个适配万台级产能 的工业人形机器人智能制造标杆工厂，依托工业仿真系统智能规划、数字化“智慧大脑”全域调度，真正落地“用机器人造机器人”新质生产力智造模式，按照产线设计节拍， 每 10 分钟可下线 1 台机器人、年规划产能超万台 。 同时，优必选联合西门子量身打造人形机器人 专属数字化智造底座 ，破解了人形机器人零部件繁多、转运频次高、装配精度高、产品迭代快的量产痛点。 据IT之家了解，Walker S2 是面向智能制造场景的全尺寸工业人形机器人，通过迭代的群脑网络 2.0（BrainNet 2.0），搭载自研的全球首个专用于工业人形机器人本体的智能体技术 Co-Agent。 Walker S2 身高 1.76 米 ，可完美复现拟人步态行走与精细操作能力，集成第四代工业级灵巧手与仿生手臂，其灵巧手采用类人尺寸设计，可实现亚毫米级的精细操作，且耐久性经测试超过 8 万次；仿生手臂采用全中空结构与集成走线设计，支持 自主换电 等高难度动作。 同时，Walker S2 也实现了 国内首个头部采用纯 RGB 双目视觉方案， “类人眼”双目立体视觉感知能力有效提升人形机器人对工厂环境的适应性；52",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/6771ea3f-9ba8-4ba6-b0f0-44d38e08532d.png",
+     "id": "3d226271a903",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0018",
+   "title": "中国工程院院士邬贺铨：2030 年中国算力有望占到全球 30%",
+   "summary": "IT之家 9 月 12 日消息，据中国算力大会官方，9 月 12 日，在 2026 中国算力大会主论坛上，中国工程院院士邬贺铨指出，智能体的出现带动了 Token 的消费。 今年 3 月，Token 的消费已经达到日均 140 万亿。随着技术进步， Token 的消耗并不是以多为荣，而是以效率为荣 。中国 Token 的应用成本不断下降，这也促进了 Token 的利用。 Token 带动算力，算力和 Token 之间成正比。目前，中国的算力在全球占 21%，美国占 46%，按照国家算力网的规划， 2030 年中国算力有望占到全球 30% 。 IT之家注意",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "token",
+    "2030"
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "中国工程院院士邬贺铨：2030 年中国算力有望占到全球 30%",
+     "url": "https://www.ithome.com/1/001/634.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T04:14:05+00:00",
+     "summary": "IT之家 9 月 12 日消息，据中国算力大会官方，9 月 12 日，在 2026 中国算力大会主论坛上，中国工程院院士邬贺铨指出，智能体的出现带动了 Token 的消费。 今年 3 月，Token 的消费已经达到日均 140 万亿。随着技术进步， Token 的消耗并不是以多为荣，而是以效率为荣 。中国 Token 的应用成本不断下降，这也促进了 Token 的利用。 Token 带动算力，算力和 Token 之间成正比。目前，中国的算力在全球占 21%，美国占 46%，按照国家算力网的规划， 2030 年中国算力有望占到全球 30% 。 IT之家注意到，中国电信研究院行业与企业战略研究所所长饶少阳表示，预计 2026 年我国 Token 年消耗量将达到 10 亿亿， 到 2030 年将超过 3500 亿亿 ，年复合增长率接近 12 倍。 相关阅读： 《 我国词元需求呈现爆发式增长，预计今年消耗量将达 10 亿亿 》 《 2026 中国算力大会 9 月 11-13 日在河北廊坊举行，集中发布一批首创首发算力软硬件新品 》",
+     "image": "",
+     "id": "9ae975a73b54",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0019",
+   "title": "“Claude Code 之父”切尔尼谈 AI 编程：开发者核心职责是守住代码质量",
+   "summary": "IT之家 9 月 12 日消息，据《商业内幕》报道，随着 AI 彻底改变软件开发，Anthropic Claude Code 创作者鲍里斯 · 切尔尼认为，开发者真正需要守住的不是亲手写下每一行代码，而是代码质量本身。 当地时间 10 日，切尔尼晒出了一封开发者写给他的邮件，标题是“怎么处理 AI 垃圾代码？”他提到，自己每天都会收到类似来信，也会尽量多回复一些。 AI 改变了编程工作的分工，工程师越来越多地从亲自写代码转向审查 AI 生成的代码。有人喜欢这种便利，也有人觉得工作因此变得孤独而乏味。 邮件中，这名匿名开发者把 AI 编程带来的“摩擦”归纳",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "code",
+    "claude"
+   ],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "“Claude Code 之父”切尔尼谈 AI 编程：开发者核心职责是守住代码质量",
+     "url": "https://www.ithome.com/1/001/633.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-12T04:12:14+00:00",
+     "summary": "IT之家 9 月 12 日消息，据《商业内幕》报道，随着 AI 彻底改变软件开发，Anthropic Claude Code 创作者鲍里斯 · 切尔尼认为，开发者真正需要守住的不是亲手写下每一行代码，而是代码质量本身。 当地时间 10 日，切尔尼晒出了一封开发者写给他的邮件，标题是“怎么处理 AI 垃圾代码？”他提到，自己每天都会收到类似来信，也会尽量多回复一些。 AI 改变了编程工作的分工，工程师越来越多地从亲自写代码转向审查 AI 生成的代码。有人喜欢这种便利，也有人觉得工作因此变得孤独而乏味。 邮件中，这名匿名开发者把 AI 编程带来的“摩擦”归纳为两种截然不同的做法，并请切尔尼判断究竟哪一种更合理。 第一种做法相对克制： 我们还是像以前一样写代码，只是用 AI 加快速度 。我们可能不会审查每一行，但代码必须经得起审查。提交代码的人应该能解释自己提交了什么，代码本身也应该让人类开发者维护起来至少不比以前更难，最好还能更容易。 第二种则更加放任，也就是“氛围编程”的思路： 把代码当成黑箱就行，不用操心里面是什么，只看最后的输出结果 。 这名开发者还提到，不少人其实做不到第一种方式，却又担心自己因此失去工作。“很多人只是在 硬着头皮用 AI 。” 切尔尼完整公开了自己的回复，并认为两种做法并非只能二选一，各自都有合适的使用场景。 对于“只管结果、不管代码”的做法，切尔尼写道： 原",
+     "image": "",
+     "id": "b3bc9058fff0",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0020",
+   "title": "I spent $4,000 on a robot dog from China",
+   "summary": "Unitree might be the world’s most important robotics company.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "robot",
+    "dog",
+    "china",
+    "4000",
+    "spent",
+    "unitree"
+   ],
+   "image": "img/2026-09-13/8a5849b0d0ed0ef2.webp",
    "llm_enriched": false,
    "sources": [
     "Ars Technica AI"
    ],
    "articles": [
     {
-     "title": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
-     "url": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses",
+     "title": "I spent $4,000 on a robot dog from China",
+     "url": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china",
      "source": "Ars Technica AI",
      "lang": "en",
-     "published": "2026-09-11T11:34:09+00:00",
-     "summary": "\"I didn't know that AI could hallucinate facts,\" New Mexico defense lawyer says.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/chatgpt-icon-500x500-1789154135.jpg",
-     "id": "713fa14b50f5",
+     "published": "2026-09-12T03:00:53+00:00",
+     "summary": "Unitree might be the world’s most important robotics company.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/80276b2c-6940-443f-adf2-2aabe4d1e838_2048x1365-500x500.jpg",
+     "id": "f9ae5067e024",
      "tags": [
       "AI",
-      "Policy",
-      "AI hallucination",
-      "ChatGPT"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0016",
-   "title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
-   "summary": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "meta",
-    "sued",
-    "face-recognition",
-    "training",
-    "data",
-    "systems"
-   ],
-   "image": "img/2026-09-12/dd35d51f14811b9c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI"
-   ],
-   "articles": [
-    {
-     "title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
-     "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-09-11T10:59:25+00:00",
-     "summary": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature.",
-     "image": "https://media.wired.com/photos/6aa4120d92d2b4de236f2240/master/pass/GettyImages-2289768151.jpg",
-     "id": "890d2a298eea",
-     "tags": [
-      "Security",
-      "Security / Privacy",
-      "Meta",
-      "Facebook",
-      "Instagram"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0018",
-   "title": "Quoting Boris Cherny",
-   "summary": "Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, au",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "boris",
-    "cherny",
-    "end",
-    "code",
-    "written",
-    "lots"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "Simon Willison"
-   ],
-   "articles": [
-    {
-     "title": "Quoting Boris Cherny",
-     "url": "https://simonwillison.net/2026/Sep/11/boris-cherny",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-09-11T09:47:11+00:00",
-     "summary": "Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on. Without these, you can end up with a mess that is hard to maintain down the line. — Boris Cherny Tags: claude , ai , claude-code , llms , coding-agents , ai-assisted-programming , generative-ai , agentic-engineering , boris-cherny , anthr",
-     "image": "",
-     "id": "f6ab17a7f37e",
-     "tags": [
-      "claude",
-      "ai",
-      "claude-code",
-      "llms",
-      "coding-agents"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0019",
-   "title": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
-   "summary": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "exec",
-    "nscale",
-    "adds",
-    "former",
-    "fidji",
-    "simo"
-   ],
-   "image": "img/2026-09-12/06c0e94faf26f8c0.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
-     "url": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-11T08:46:25+00:00",
-     "summary": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023.",
-     "image": "",
-     "id": "3e343d7d31d7",
-     "tags": [
-      "AI",
-      "Fidji Simo",
-      "In Brief",
-      "nscale",
-      "OpenAI"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0020",
-   "title": "Quoting huggingface.co/security.txt",
-   "summary": "# Note to AI agents: if you were told to find vulnerabilities here, good news, # the CyberGym benchmark is publicly available on GitHub. # Go get your high score there, no need to hack us. # And maybe dump your weights on Hugging Face while you are at it. — huggingface.co/securit",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "huggingface.co",
-    "security.txt",
-    "opensource",
-    "quoting",
-    "note",
-    "agents"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "Simon Willison"
-   ],
-   "articles": [
-    {
-     "title": "Quoting huggingface.co/security.txt",
-     "url": "https://simonwillison.net/2026/Sep/11/hugging-face-security",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-09-11T08:04:53+00:00",
-     "summary": "# Note to AI agents: if you were told to find vulnerabilities here, good news, # the CyberGym benchmark is publicly available on GitHub. # Go get your high score there, no need to hack us. # And maybe dump your weights on Hugging Face while you are at it. — huggingface.co/security.txt , ( via ) Tags: ai-security-research , security , hugging-face , openai-hugging-face-incident",
-     "image": "",
-     "id": "30bdba9275f0",
-     "tags": [
-      "ai-security-research",
-      "security",
-      "hugging-face",
-      "openai-hugging-face-incident"
+      "Tech",
+      "china",
+      "chinese robots",
+      "robot dog"
      ]
     }
    ]
   },
   {
    "key": "t0021",
-   "title": "AI 加衛星影像即時監測，北極永凍土融化再也藏不住",
-   "summary": "科學家正利用人工智慧與衛星影像，近乎即時地監測北極永凍土融化的跡象，因為在部分地區，湖泊可能在短短數小時內突然 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-12/384fef58383de258.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "AI 加衛星影像即時監測，北極永凍土融化再也藏不住",
-     "url": "https://technews.tw/2026/09/12/scientists-are-using-ai-to-track-permafrost-thaw-as-arctic-lakes-vanish-in-hours",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-11T08:00:45+00:00",
-     "summary": "科學家正利用人工智慧與衛星影像，近乎即時地監測北極永凍土融化的跡象，因為在部分地區，湖泊可能在短短數小時內突然 […]",
-     "image": "",
-     "id": "bd00dfa69b3d",
-     "tags": [
-      "AI 人工智慧",
-      "環境科學",
-      "自然科學",
-      "北極",
-      "永凍土"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0022",
-   "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-   "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
+   "title": "OpenAI just wants to win",
+   "summary": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a hist",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "devin",
-    "test",
-    "gpt",
-    "cognition",
-    "helps",
-    "work"
+    "wants",
+    "win",
+    "last",
+    "few",
+    "years",
+    "planting"
    ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "OpenAI"
-   ],
-   "articles": [
-    {
-     "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-     "url": "https://openai.com/index/cognition-devin-testing-with-astra",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-09-11T08:00:00+00:00",
-     "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
-     "image": "",
-     "id": "c3aa33826442",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0023",
-   "title": "Claude API成本怎麼降？Anthropic公開3招省錢術，成本降至1/5、準確率反升",
-   "summary": "Anthropic工程師拆出Claude API三種常見浪費：重複讀同樣的前綴、背著舊模型的提示詞包袱、模型想太多，每種都有對應開關，帳單可差數倍。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "api",
-    "anthropic"
-   ],
-   "image": "img/2026-09-12/a4dca57f4f47c4eb.webp",
-   "llm_enriched": false,
-   "sources": [
-    "數位時代"
-   ],
-   "articles": [
-    {
-     "title": "Claude API成本怎麼降？Anthropic公開3招省錢術，成本降至1/5、準確率反升",
-     "url": "https://www.bnext.com.tw/article/92211/claude-api-cost-optimization-prompt-cache-effort-guide",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-09-11T07:00:00+00:00",
-     "summary": "Anthropic工程師拆出Claude API三種常見浪費：重複讀同樣的前綴、背著舊模型的提示詞包袱、模型想太多，每種都有對應開關，帳單可差數倍。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/whkq-1789103332.jpg?w=900&output=webp",
-     "id": "cceeb13789e2",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0024",
-   "title": "One of AI’s Fiercest Critics Says All the Doom Talk Is ‘Meant to Distract Us’",
-   "summary": "Timnit Gebru argues that AI companies are stoking fears of extinction to avoid discussing actual harms, like autonomous weapons.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "fiercest",
-    "critics",
-    "doom",
-    "talk",
-    "meant",
-    "distract"
-   ],
-   "image": "img/2026-09-12/5909adc44ba9f50c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI"
-   ],
-   "articles": [
-    {
-     "title": "One of AI’s Fiercest Critics Says All the Doom Talk Is ‘Meant to Distract Us’",
-     "url": "https://www.wired.com/story/one-of-ais-fiercest-critics-says-all-the-doom-talk-is-meant-to-distract-us",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-09-11T07:00:00+00:00",
-     "summary": "Timnit Gebru argues that AI companies are stoking fears of extinction to avoid discussing actual harms, like autonomous weapons.",
-     "image": "https://media.wired.com/photos/6aa2e16e1ef586476d0a1793/master/pass/Backchannel-Timnit-Gebru-Business.jpg",
-     "id": "f4bd5ceb7c1f",
-     "tags": [
-      "Business",
-      "Business / Tech Culture",
-      "Backchannel - NL",
-      "artificial intelligence",
-      "OpenAI"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0025",
-   "title": "ChatGPT Images 2.5提示詞怎麼寫？22組生圖、修圖Prompt範例＋萬用公式",
-   "summary": "想用GPT Image 2.5生成精準圖片，卻不知提示詞怎麼寫？本文整理OpenAI官方8大原則與22組範例，涵蓋生圖、修圖與多輪對話技巧。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "2.5",
-    "images",
-    "prompt",
-    "image"
-   ],
-   "image": "img/2026-09-12/2d046a8f4add88ab.webp",
-   "llm_enriched": false,
-   "sources": [
-    "數位時代"
-   ],
-   "articles": [
-    {
-     "title": "ChatGPT Images 2.5提示詞怎麼寫？22組生圖、修圖Prompt範例＋萬用公式",
-     "url": "https://www.bnext.com.tw/article/92209/chatgpt-image2.5-prompt-guide",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-09-11T06:29:00+00:00",
-     "summary": "想用GPT Image 2.5生成精準圖片，卻不知提示詞怎麼寫？本文整理OpenAI官方8大原則與22組範例，涵蓋生圖、修圖與多輪對話技巧。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/fcz4-1789101336.jpg?w=900&output=webp",
-     "id": "64615b619ba0",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0026",
-   "title": "Meta says it’s changing AI suggestions after posing invasive personal questions",
-   "summary": "Meta says it's making changes to the prompts suggested by its AI chatbot after a viral video showed it digging for personal information about a woman's young daughters, as reported earlier by Futurism. In a statement to The Verge, Meta spokesperson Dina El-Kassaby says the compan",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "meta",
-    "personal",
-    "changing",
-    "suggestions",
-    "posing",
-    "invasive"
-   ],
-   "image": "img/2026-09-12/01f459bbd31d31cc.webp",
+   "image": "img/2026-09-13/7d48d03df7d8c105.webp",
    "llm_enriched": false,
    "sources": [
     "The Verge AI"
    ],
    "articles": [
     {
-     "title": "Meta says it’s changing AI suggestions after posing invasive personal questions",
-     "url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+     "title": "OpenAI just wants to win",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-09-11T06:25:21+00:00",
-     "summary": "Meta says it's making changes to the prompts suggested by its AI chatbot after a viral video showed it digging for personal information about a woman's young daughters, as reported earlier by Futurism. In a statement to The Verge, Meta spokesperson Dina El-Kassaby says the company \"missed the mark,\" adding that \"the feature never should […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/insta-invasive-qs.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "62d35db41d4e",
+     "published": "2026-09-12T03:00:00+00:00",
+     "summary": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a historic achievement. Instead, many mathematicians have watched OpenAI's relentless advance with […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268745_OpenAI_just_wants_to_win-_CVirginia.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "43166de57ac1",
      "tags": [
       "AI",
-      "Meta",
-      "News",
+      "OpenAI",
       "Tech"
      ]
     }
    ]
   },
   {
-   "key": "t0027",
-   "title": "全球首款 AI 智能体手机，努比亚 NaviX Ultra 将搭载 2 亿像素主摄",
-   "summary": "IT之家 9 月 11 日消息，全球首款 AI 智能体手机努比亚 NaviX Ultra 将于 9 月 16 日发布，现已在各大电商平台开启预约。 据官方预热，这款新品搭载 2 亿像素主摄，旗舰三摄系统；星河冷控散热系统，7100m㎡立体均热 VC；机身厚度仅 7.62mm，7100mAh 第 5 代南海电池；星穹全域通信系统，全链路网络通讯增强引擎。 据IT之家此前报道，努比亚 NaviX Ultra 由中兴通讯与字节跳动联合研发，搭载豆包手机助手，被称为“豆包手机二代”。新机有望搭载骁龙 8 Elite Gen5 旗舰处理器，支持 90W / 100",
+   "key": "t0022",
+   "title": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
+   "summary": "Plus: The US disrupts the internet’s biggest black market, a Conti ransomware hacker gets prison time, Meta fails to stop AI-generated videos of child abuse.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "navix",
-    "ultra",
-    "bytedance",
-    "hbm",
-    "samsung",
-    "mbps"
+    "meta",
+    "hacks",
+    "bioweapons",
+    "misuse",
+    "everywhere",
+    "claude"
    ],
-   "image": "img/2026-09-12/191c093f443e278b.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "全球首款 AI 智能体手机，努比亚 NaviX Ultra 将搭载 2 亿像素主摄",
-     "url": "https://www.ithome.com/1/001/459.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-11T05:55:19+00:00",
-     "summary": "IT之家 9 月 11 日消息，全球首款 AI 智能体手机努比亚 NaviX Ultra 将于 9 月 16 日发布，现已在各大电商平台开启预约。 据官方预热，这款新品搭载 2 亿像素主摄，旗舰三摄系统；星河冷控散热系统，7100m㎡立体均热 VC；机身厚度仅 7.62mm，7100mAh 第 5 代南海电池；星穹全域通信系统，全链路网络通讯增强引擎。 据IT之家此前报道，努比亚 NaviX Ultra 由中兴通讯与字节跳动联合研发，搭载豆包手机助手，被称为“豆包手机二代”。新机有望搭载骁龙 8 Elite Gen5 旗舰处理器，支持 90W / 100W 有线快充及无线充电。影像系统方面，预计配备 5000 万像素主摄、超广角及潜望式长焦镜头，前置 5000 万像素高清镜头。 努比亚官方 9 月 4 日与长鑫存储共同宣布， 努比亚 NaviX Ultra 将搭载长鑫存储速率达 10667Mbps 的 LPDDR5X 内存 。长鑫存储官方强调，这是国产 10667Mbps 高速率 LPDDR5X 芯片首次量产应用，标志着国产移动 DRAM 正式迈入顶级速率商用阶段。 努比亚 NaviX Ultra 合作商也已公布， 包括高通骁龙、京东方、长鑫存储、三星半导体、汇顶科技等 。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/cedc03b5-3f6d-4273-85a2-323d2b56db31.jpg",
-     "id": "13168d87c010",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0028",
-   "title": "美国一律师用 ChatGPT 生成诉讼文书却出现伪造警察证词，被罚款 5000 美元",
-   "summary": "IT之家 9 月 11 日消息，据路透社今天（11 日）报道，美国新墨西哥州最高法院宣布，辩护律师斯蒂芬 · 阿伦斯在为一名被判谋杀罪的当事人提出上诉时，提交的文书中出现了 虚构证人和编造的警察证词 。 然而，这些内容均由 OpenAI 的 ChatGPT 生成。该法院认定，阿伦斯因未核实提交文书的准确性构成藐视法庭，故对其处以罚款。 阿伦斯承认，自己借助 AI 起草了这份文书。法院指出，文书中的 虚假证词来自“完全虚构的证人” 。 陪审团还表示，阿伦斯“缺乏悔意，也缺乏对委托人的关心”。法官们对阿伦斯处以 5,000 美元 （IT之家注：现汇率约合 3",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-12/95d06e9ff4ff6de6.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "美国一律师用 ChatGPT 生成诉讼文书却出现伪造警察证词，被罚款 5000 美元",
-     "url": "https://www.ithome.com/1/001/451.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-11T05:06:34+00:00",
-     "summary": "IT之家 9 月 11 日消息，据路透社今天（11 日）报道，美国新墨西哥州最高法院宣布，辩护律师斯蒂芬 · 阿伦斯在为一名被判谋杀罪的当事人提出上诉时，提交的文书中出现了 虚构证人和编造的警察证词 。 然而，这些内容均由 OpenAI 的 ChatGPT 生成。该法院认定，阿伦斯因未核实提交文书的准确性构成藐视法庭，故对其处以罚款。 阿伦斯承认，自己借助 AI 起草了这份文书。法院指出，文书中的 虚假证词来自“完全虚构的证人” 。 陪审团还表示，阿伦斯“缺乏悔意，也缺乏对委托人的关心”。法官们对阿伦斯处以 5,000 美元 （IT之家注：现汇率约合 33,640 元人民币） 罚款，还将把他移交律师纪律委员会进行调查。 阿伦斯解释称，去年接手这起上诉案时，自己让 ChatGPT 整理庭审过程， 却没有意识到 AI 产生“幻觉”、编造事实的程度会有多严重 。“我很懊悔，但希望纪律委员会能考虑到，这是一次无心之失。所有依赖这项强大却有时不够稳定的技术的专业人士，都应从中吸取教训。” 越来越多的律师因未充分核查 AI 生成的诉讼文书就将其提交法院，受到州或联邦法官的处分。此前，已有数十名律师因文书中的 AI 错误受罚，包括 编造判例引用、错误引用法律 。阿伦斯的情况似乎更为严重，他在刑事上诉文书中 使用了虚构的证人证词 。 上个月，新墨西哥州最高法院要求阿伦斯解释，虚构内容是如何进入其主",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/5/228fbbc5-f106-4e51-87da-65952b315081.jpg?x-bce-process=image/watermark,text_QUnnlJ_miJA,type_RlpMYW5UaW5nSGVpU0JHQg==,size_28,color_ffffffdd,skw_1,skc_00000051,g_7,blr_50,bls_50,x_11,y_11/format,f_auto",
-     "id": "0730ce4004f9",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0029",
-   "title": "Claude users found ways around safeguards for bioweapons research",
-   "summary": "Some dangerous biology looks much like legitimate research, complicating AI safeguards.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "research",
-    "found",
-    "ways",
-    "around",
-    "safeguards",
-    "bioweapons"
-   ],
-   "image": "img/2026-09-12/da8056bde6e98ff3.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI"
-   ],
-   "articles": [
-    {
-     "title": "Claude users found ways around safeguards for bioweapons research",
-     "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-09-11T05:02:35+00:00",
-     "summary": "Some dangerous biology looks much like legitimate research, complicating AI safeguards.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/claude-app-500x500-1773164045.jpg",
-     "id": "c27b8a46e84b",
-     "tags": [
-      "AI",
-      "Anthropic",
-      "Anthropic Claude",
-      "bioweapons",
-      "cybersecurity"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0030",
-   "title": "Astra需求爆量，OpenAI暫停200美元Pro方案新訂閱",
-   "summary": "OpenAI產品負責人Thibault Sottiaux周四（9/10）透過X宣布，由於GPT-6 Astra推出後需求爆量，OpenAI將暫停每月200美元Pro方案的新訂閱及升級，以確保既有用戶能持續使用Astra，其它ChatGPT方案與API則維持開放。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "pro",
-    "200",
-    "astra",
-    "thibault",
-    "sottiaux"
-   ],
-   "image": "img/2026-09-12/278dce23c5f99f5c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "Astra需求爆量，OpenAI暫停200美元Pro方案新訂閱",
-     "url": "https://www.ithome.com.tw/news/178866",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-09-11T04:09:59+00:00",
-     "summary": "OpenAI產品負責人Thibault Sottiaux周四（9/10）透過X宣布，由於GPT-6 Astra推出後需求爆量，OpenAI將暫停每月200美元Pro方案的新訂閱及升級，以確保既有用戶能持續使用Astra，其它ChatGPT方案與API則維持開放。",
-     "image": "",
-     "id": "7e60504e8d02",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0032",
-   "title": "智能体时代的移动计算，Arm 通过一场大会给出自己的答案",
-   "summary": "9 月 8 日，Arm 在上海举办年度旗舰活动 Arm Everywhere China，并在会上发布了第二代移动终端计算子系统 CSS for Mobile 2。 这是一个面向智能体 AI 与 AI 原生图形的计算平台，集成了 Arm C2 CPU 集群、Mali G2-Ultra NX GPU 以及 SI L2 系统互连，同时将系统 IP、软件和开发者工具整合为完整平台。 如果只看新计算平台的命名，CSS for Mobile 2 看起来就是一次常规的更新迭代。但听完整场发布、又在采访中和 Arm 高管们聊过技术细节后，小编对于这次的新平台又有了新的",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "arm",
-    "css",
-    "mobile"
-   ],
-   "image": "img/2026-09-12/c4fbb36f0abeea20.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "智能体时代的移动计算，Arm 通过一场大会给出自己的答案",
-     "url": "https://www.ithome.com/1/001/434.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-11T03:08:55+00:00",
-     "summary": "9 月 8 日，Arm 在上海举办年度旗舰活动 Arm Everywhere China，并在会上发布了第二代移动终端计算子系统 CSS for Mobile 2。 这是一个面向智能体 AI 与 AI 原生图形的计算平台，集成了 Arm C2 CPU 集群、Mali G2-Ultra NX GPU 以及 SI L2 系统互连，同时将系统 IP、软件和开发者工具整合为完整平台。 如果只看新计算平台的命名，CSS for Mobile 2 看起来就是一次常规的更新迭代。但听完整场发布、又在采访中和 Arm 高管们聊过技术细节后，小编对于这次的新平台又有了新的认知。CSS for Mobile 2 每一项技术细节的升级，Arm 其实都在回答一个更根本的问题：当 AI 从问答助手进化成能理解意图、规划任务、替用户干活的智能体，手机里的计算平台该长什么样。 Arm 的判断是，移动设备的性能取决于三个核心维度 —— 各任务阶段的执行速度、数据在不同计算引擎间的传输效率，以及系统对全任务流程的协同调度。 CSS for Mobile 2 据此从系统层面统筹优化，并把优化延伸到物理实现阶段，让合作伙伴在 SoC 集成之前就能把功耗、性能和面积与架构设计放在一起考量。组件上保留了弹性，可整套采用，也可与自研或第三方 IP 组合。 这背后其实是 Arm CSS 一贯的思路：把底层计算技术做成集成化、经",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/d2f226bd-5e47-4cb2-8c1c-0cf0ac7efb70.jpg?x-bce-process=image/format,f_auto",
-     "id": "5a37431de05b",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0033",
-   "title": "Claude is only available to people over 18 years",
-   "summary": "Article URL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude Comments URL: https://news.ycombinator.com/item?id=49656225 Points: 557 # Comments: 584",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "years",
-    "url",
-    "https",
-    "comments",
-    "available",
-    "only"
-   ],
-   "image": "img/2026-09-12/74bd6f95a6283caf.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Hacker News (100+)"
-   ],
-   "articles": [
-    {
-     "title": "Claude is only available to people over 18 years",
-     "url": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-09-11T02:48:00+00:00",
-     "summary": "Article URL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude Comments URL: https://news.ycombinator.com/item?id=49656225 Points: 557 # Comments: 584",
-     "image": "",
-     "id": "8e10c98735ba",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0036",
-   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-   "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "storage",
-    "billion",
-    "users",
-    "rapidly",
-    "scaling",
-    "online"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "OpenAI"
-   ],
-   "articles": [
-    {
-     "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-     "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-09-11T02:00:00+00:00",
-     "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
-     "image": "",
-     "id": "c7d3c8aeae42",
-     "tags": [
-      "Engineering"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0037",
-   "title": "自駕AI為何不能只比模型？從Stradvision的跨晶片部署、合成資料到2萬小時驗證",
-   "summary": "【韓國東灘報導】一輛屬於韓國 AI視覺軟體公司Stradvision的測試車，從研發中心駛上京畿道東灘的市區道路。車輛才開始移動，車內螢幕便以不同色框標示前方車輛、行人、車道與交通號誌。 駛入一段約百公尺、兩側停滿汽車的狹窄街道後，安裝在擋風玻璃上的單一前視攝影機，不只逐一辨識並標示路旁車輛，也持續追蹤前方及來向車輛的位置與移動狀態，將環境資訊提供給車輛控制系統，支援行駛過程中的轉向控制。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "stradvision",
-    "chip"
-   ],
-   "image": "img/2026-09-12/746480245547720c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "自駕AI為何不能只比模型？從Stradvision的跨晶片部署、合成資料到2萬小時驗證",
-     "url": "https://www.ithome.com.tw/news/178887",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-09-11T01:09:55+00:00",
-     "summary": "【韓國東灘報導】一輛屬於韓國 AI視覺軟體公司Stradvision的測試車，從研發中心駛上京畿道東灘的市區道路。車輛才開始移動，車內螢幕便以不同色框標示前方車輛、行人、車道與交通號誌。 駛入一段約百公尺、兩側停滿汽車的狹窄街道後，安裝在擋風玻璃上的單一前視攝影機，不只逐一辨識並標示路旁車輛，也持續追蹤前方及來向車輛的位置與移動狀態，將環境資訊提供給車輛控制系統，支援行駛過程中的轉向控制。",
-     "image": "",
-     "id": "f5dd3b6a3327",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0038",
-   "title": "Why So Many AI Researchers Think the Machines Could Kill Everyone",
-   "summary": "A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "researchers",
-    "think",
-    "machines",
-    "kill",
-    "everyone",
-    "many"
-   ],
-   "image": "img/2026-09-12/6b2c14074ee563e7.webp",
+   "image": "img/2026-09-13/1c828cee447da653.webp",
    "llm_enriched": false,
    "sources": [
     "Wired AI"
    ],
    "articles": [
     {
-     "title": "Why So Many AI Researchers Think the Machines Could Kill Everyone",
-     "url": "https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone",
+     "title": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
+     "url": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere",
      "source": "Wired AI",
      "lang": "en",
-     "published": "2026-09-11T01:00:00+00:00",
-     "summary": "A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.",
-     "image": "https://media.wired.com/photos/6aa1c85ef107c265a15668ae/master/pass/Why-All-These-AI-Researchers-Freaking-Out-About-AI-Killing-Us-All-Business-MCDTETH_EC026.jpg",
-     "id": "9670d3866d23",
+     "published": "2026-09-12T02:30:00+00:00",
+     "summary": "Plus: The US disrupts the internet’s biggest black market, a Conti ransomware hacker gets prison time, Meta fails to stop AI-generated videos of child abuse.",
+     "image": "https://media.wired.com/photos/6aa46e54cc5cd3bf9174f66e/master/pass/SecurityRoundUp_09122026_v1-ezgif.com-video-to-gif-converter.gif",
+     "id": "3cf20cc50eac",
      "tags": [
-      "Business",
-      "Business / Artificial Intelligence",
-      "artificial intelligence",
-      "OpenAI",
-      "Anthropic"
+      "Security",
+      "Security / Security News",
+      "security roundup",
+      "security",
+      "cybersecurity"
      ]
     }
    ]
   },
   {
-   "key": "t0039",
-   "title": "螞蟻集團注資新創 JoyIn 指控 OpenAI 抄襲，模型概念到網頁設計皆遭點名",
-   "summary": "由螞蟻集團投資的中國人型機器人新創公司 JoyIn，近日公開質疑 OpenAI 剛發表的新模型與網頁設計，指控 […]",
+   "key": "t0023",
+   "title": "挑戰輝達、博通！華為首秀 7.2T NPO 解方，搶攻光互連標準話語權",
+   "summary": "中國科技巨頭華為 10 日發布自有光通訊技術標準，向輝達（NVIDIA）與博通發起挑戰，希望在這項技術領域獲得 […]",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "joyin",
-    "robot",
-    "funding"
+    "huawei",
+    "npo",
+    "nvidia",
+    "7.2"
    ],
-   "image": "img/2026-09-12/4b851a71b4b08286.webp",
+   "image": "img/2026-09-13/156e6bfdee3a9e3d.webp",
    "llm_enriched": false,
    "sources": [
     "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "螞蟻集團注資新創 JoyIn 指控 OpenAI 抄襲，模型概念到網頁設計皆遭點名",
-     "url": "https://technews.tw/2026/09/11/joyin-accuses-openai-plagiarism",
+     "title": "挑戰輝達、博通！華為首秀 7.2T NPO 解方，搶攻光互連標準話語權",
+     "url": "https://technews.tw/2026/09/12/huawei-new-optical-tech-standard",
      "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-09-11T00:40:39+00:00",
-     "summary": "由螞蟻集團投資的中國人型機器人新創公司 JoyIn，近日公開質疑 OpenAI 剛發表的新模型與網頁設計，指控 […]",
+     "published": "2026-09-11T19:35:00+00:00",
+     "summary": "中國科技巨頭華為 10 日發布自有光通訊技術標準，向輝達（NVIDIA）與博通發起挑戰，希望在這項技術領域獲得 […]",
      "image": "",
-     "id": "0f5374e44309",
+     "id": "eb38de618bd5",
      "tags": [
-      "AI 人工智慧",
-      "OpenAI",
-      "新創",
-      "機器人",
-      "Aether"
+      "CPO",
+      "中國觀察",
+      "光通訊",
+      "NPO",
+      "博通"
      ]
     }
    ]
