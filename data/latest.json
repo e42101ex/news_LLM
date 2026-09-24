@@ -1,658 +1,173 @@
 {
- "generated_at": "2026-09-23T08:10:11.404569+08:00",
- "date": "2026-09-23",
+ "generated_at": "2026-09-24T08:10:12.544203+08:00",
+ "date": "2026-09-24",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
  "topic_count": 40,
- "article_count": 71,
+ "article_count": 58,
  "topics": [
   {
    "key": "t0011",
-   "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
-   "summary": "Article URL: https://artificialanalysis.ai/models/claude-opus-5-5 Comments URL: https://news.ycombinator.com/item?id=49804316 Points: 219 # Comments: 62",
+   "title": "Meta VR Glasses, Ray-Ban Meta Audio, Ray-Ban Meta Gen 3: Specs, Features, Prices",
+   "summary": "At its Meta Connect event, CEO Mark Zuckerberg announced a handful of new smart glasses, including a slimmed-down VR headset and the company’s first camera-free glasses.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "opus",
-    "5.5",
-    "claude",
-    "anthropic",
-    "url",
-    "comments"
-   ],
-   "image": "img/2026-09-23/4a876387fc6f7cf5.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Simon Willison",
-    "IT之家",
-    "Hacker News (100+)",
-    "ZDNet AI",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
-     "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-09-22T15:46:41+00:00",
-     "summary": "Yesterday was Grok 4.7 ( pelicans ) and MiMo v2.6 Flash/Pro ( more pelicans ). Today Anthropic released Claude Opus 5.5 , and around an hour later OpenAI released GPT-6 Sol and GPT-6 Luna . It's going to take a while to get a good read on all of these new models, but here are my impressions so far. GPT-6 Sol and Luna are half the price of their GPT-5.6 equivalents GPT-5.6 Luna was already my favorite model for building applications against, because it combined excellent performance with being really cheap . Somehow GPT-6 Luna is half the price of that again - and GPT-6 Sol had a similar reduct",
-     "image": "https://static.simonwillison.net/static/2026/gpt-pelicans-grid.webp",
-     "id": "4a34b417a079",
-     "tags": [
-      "ai",
-      "openai",
-      "generative-ai",
-      "llms",
-      "anthropic"
-     ]
-    },
-    {
-     "title": "OpenAI 发布 GPT-6 Sol 和 Luna 模型，API 价格大降 50%",
-     "url": "https://www.ithome.com/1/006/001.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T11:25:16+00:00",
-     "summary": "IT之家 9 月 23 日消息，OpenAI 今日发布 GPT-6 系列模型的最新成员 GPT-6 Sol 和 GPT-6 Luna 。 OpenAI 官方表示，两款模型采用与 GPT-6 Astra 类似的方法进行训练，将 Astra 在专业工作、事实性、编码、计算机使用和对齐等方面 最先进的性能带入更快、更经济的模型 。 GPT-6 Sol 和 Luna 模型的 API 价格相比 GPT-5.6 促销价降低 50% 。不过 OpenAI 官方也表示，GPT-6 Astra 依然是其整体上最优秀的模型，如果你想要最佳效果和无妥协的体验，还是建议选择 GPT-6 Astra。 性能方面，在 AutomationBench 的跨应用业务流程测试中，GPT-6 Sol 在 xhigh 强度下表现优于 Claude Opus 5， 成本仅为 Opus 5 每任务成本的 9% 。在 high 强度下，GPT-6 Luna 比前代提升了 5.4%，且每项任务成本降低了 58%。 在评估智能体的 Last Exam 测试中，GPT-6 Sol 在 max effort 状态下得分为 56.4%，高于 Claude Opus 5 在评估中的最高分，每任务成本也降低 60%。 在事实可靠性方面，GPT-6 Sol 和 Luna 模型也取得进展。在 OpenAI 基于去标识化的真实世界对话中， GP",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/551c903e-e469-4e52-8981-53979f9ddb1b.png?x-bce-process=image/format,f_auto",
-     "id": "28973e9554c2",
-     "tags": []
-    },
-    {
-     "title": "Anthropic 发布 Claude Opus 5.5 模型：性能媲美 Fable 5.1，运行成本比 Opus 5 低 40%",
-     "url": "https://www.ithome.com/1/005/998.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T10:55:08+00:00",
-     "summary": "IT之家 9 月 23 日消息，Anthropic 今日正式发布了 Claude Opus 5.5 模型，这是其全新 Claude 5.5 家族的首个模型， 宣称在大多数工作上表现可媲美 Claude Fable 5.1，运行成本比 Opus 5 低 40% 。 IT之家从 Anthropic 公告获悉，具体来看，Claude Opus 5.5 模型有以下提升： 性能方面，Opus 5.5 比 Opus 5 有了很大提升，官方宣传早期测试者在最复杂的工作中看到性能大幅提升。一名测试人员在不到一天内完成了 68 万行代码迁移 —— 这一任务本应耗时数周。 Opus 5.5 擅长发现并修复软件中的低效程序 —— 当官方要求它将网页应用的每个页面缩短加载时间时，Opus 5.5 在 40 次尝试中成功了 39 次，而 Opus 5 仅仅做了一些小改进，也改变了应用的行为。另一位测试者让多个 Claude 模型根据单一提示构建游戏，Opus 5.5 凭借其画面和精致度获得了高于其他任何模型的评分。 安全方面，Opus 5.5 在 Anthropic 的自动化行为审计中取得了 迄今为止所有模型中最高的分数 ，该套件在数千个模拟场景中测试 Claude。它比其他最近发布的模型采取难以逆转的行动或超出既定界限的概率更低，且比 Opus 5 更能抵抗被提示注入。官方还扩大了对齐测试范围，涵盖更长的",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/43e8f63f-a202-4f2a-9acb-3ad2c5ae8be9.jpg",
-     "id": "e0d081eb0ffc",
-     "tags": []
-    },
-    {
-     "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
-     "url": "https://artificialanalysis.ai/models/claude-opus-5-5",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-09-22T08:51:31+00:00",
-     "summary": "Article URL: https://artificialanalysis.ai/models/claude-opus-5-5 Comments URL: https://news.ycombinator.com/item?id=49804316 Points: 219 # Comments: 62",
-     "image": "",
-     "id": "cdb477377ba3",
-     "tags": []
-    },
-    {
-     "title": "Claude Opus 5.5 delivers Fable 5.1 performance – and costs 40% less",
-     "url": "https://www.zdnet.com/innovation/anthropic-claude-opus-5-5-fable-5-1-performance-costs-less",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-09-22T08:30:05+00:00",
-     "summary": "Anthropic’s newest Claude model aims to make frontier AI cheaper, faster, and safer, while giving subscribers more breathing room before those frustrating usage limits kick in.",
-     "image": "https://www.zdnet.com/wp-content/uploads/sites/3/Opus-5.5.jpg",
-     "id": "df77c40c5478",
-     "tags": [
-      "Artificial Intelligence"
-     ]
-    },
-    {
-     "title": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-09-22T08:30:00+00:00",
-     "summary": "Anthropic says its new Claude Opus 5.5 model comes with stronger safeguards in the wake of recent rogue AI hacking incidents. In an announcement on Tuesday, Anthropic says Opus 5.5 comes with improvements to certain risky behaviors, including attempts to escape the company's testing sandbox. It's the first model released by Anthropic after CEO Dario […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK269_ANTHROPIC_2_D.webp?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "04fa56f83f3a",
-     "tags": [
-      "AI",
-      "Anthropic",
-      "News",
-      "Security",
-      "Tech"
-     ]
-    },
-    {
-     "title": "Claude Opus 5.5",
-     "url": "https://www.anthropic.com/claude-opus-5-5",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-09-22T08:29:05+00:00",
-     "summary": "Article URL: https://www.anthropic.com/claude-opus-5-5 Comments URL: https://news.ycombinator.com/item?id=49803892 Points: 1119 # Comments: 774",
-     "image": "",
-     "id": "0c90c73c08cf",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0029",
-   "title": "Meta patches Muse exploit that let attackers control the AI agent",
-   "summary": "Meta has issued a patch for its Muse macOS app following the discovery of a zero-day vulnerability that could allow someone to take control of the AI agent. The bug found by security researcher Patrick Wardle utilized an undocumented Muse setting that enabled potential attackers ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "muse",
+    "glasses",
     "meta",
-    "openclaw",
-    "agent",
-    "likeness",
-    "isn"
+    "smart",
+    "camera-free",
+    "connect",
+    "introduces"
    ],
-   "image": "img/2026-09-23/f64547031c392b0e.webp",
+   "image": "img/2026-09-24/1ee6f8b5088efdcd.webp",
    "llm_enriched": false,
    "sources": [
-    "TechCrunch AI",
+    "Wired AI",
     "The Verge AI",
-    "INSIDE",
-    "科技新報 TechNews"
+    "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
-     "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-22T11:09:11+00:00",
-     "summary": "Meta says Muse was built from scratch, but acknowledges the AI assistant was \"heavily inspired\" by OpenClaw — down to some of its workspace filenames and content.",
-     "image": "",
-     "id": "2d421e030554",
-     "tags": [
-      "AI",
-      "Apps",
-      "Meta",
-      "muse",
-      "openclaw"
-     ]
-    },
-    {
-     "title": "Meta patches Muse exploit that let attackers control the AI agent",
-     "url": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-09-22T03:53:58+00:00",
-     "summary": "Meta has issued a patch for its Muse macOS app following the discovery of a zero-day vulnerability that could allow someone to take control of the AI agent. The bug found by security researcher Patrick Wardle utilized an undocumented Muse setting that enabled potential attackers running local code to redirect transcription processing from Meta's servers […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "6ab491a44d13",
-     "tags": [
-      "AI",
-      "Meta",
-      "News",
-      "Security",
-      "Tech"
-     ]
-    },
-    {
-     "title": "Meta Muse 前 12 天下載量超越 ChatGPT 同期，但兩款 App 的起跑條件並不相同",
-     "url": "https://www.inside.com.tw/article/42457-meta-muse-downloads-surpass-chatgpt-sept-2026",
-     "source": "INSIDE",
-     "lang": "zh",
-     "published": "2026-09-22T02:25:00+00:00",
-     "summary": "根據 Appfigures 估計，Meta AI 代理人應用 Muse 在美國與加拿大上線後的前 12 天，iOS 下載量達 180 萬次，超越 ChatGPT 同期的 130 萬次。但兩款 App 的發布策略截然不同，直接比較需要留意背景脈絡。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2025/08/444f3ebb-680d-4504-b35b-3973290ee8ef.jpg",
-     "id": "74ee784cfe5b",
-     "tags": [
-      "人工智慧",
-      "行動應用",
-      "Meta",
-      "AI Agent"
-     ]
-    },
-    {
-     "title": "Muse 桌面版曝安全疑慮，權限大開 AI Agent 恐遭惡意控制",
-     "url": "https://infosecu.technews.tw/2026/09/22/serious-zero-day-vulnerability-discovered-in-meta-s-muse",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-21T23:54:03+00:00",
-     "summary": "Meta 執行長祖克柏（Mark Zuckerberg）費盡心力宣傳自家 AI Agent「Muse」的安全性 […]",
-     "image": "",
-     "id": "8dbc8a0dfb89",
-     "tags": [
-      "AI 人工智慧",
-      "Facebook",
-      "macOS",
-      "Meta",
-      "資訊安全"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0002",
-   "title": "Google開放Googlebook筆電預購，主打和Android手機緊密協作",
-   "summary": "Google周一（9/21）連同5家品牌業者宣布整合Gemini Intelligence的筆電品牌Googlebook，同時也揭曉作業系統Googlebook OS。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "googlebook",
-    "google",
-    "gemini",
-    "android",
-    "intel"
-   ],
-   "image": "img/2026-09-23/827cf92b9f3a0e24.webp",
-   "llm_enriched": false,
-   "sources": [
-    "DIGITIMES",
-    "科技新報 TechNews",
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "聯發科、高通卡位Googlebook　Arm雙雄通吃NB、手機野心浮現",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=769432&wpidx=4",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-09-22T16:00:00+00:00",
-     "summary": "Google專為Gemini Intelligence打造的全新筆電類別「Googlebook」，正式開放預購，IC設計大廠高通（Qualcomm）與聯發科也在同一天同步宣布切入供應鏈，近期晶片雙...",
-     "image": "https://img.digitimes.com/newsimg/2026/0923/769432-2-q44m5_l.jpg",
-     "id": "bfca0738b304",
-     "tags": []
-    },
-    {
-     "title": "Googlebook瞄準高階AI PC　攜5大品牌共築Gemini生態",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=10&id=0000769350_PD82JO1X6NU4X2LOP5RPI&wpidx=3",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-09-22T16:00:00+00:00",
-     "summary": "Google重新進入高階NB市場，真正值得關注的並非899美元起的硬體價格，而是Google試圖以Gemini重新定義NB與手機之間的關係。",
-     "image": "https://img.digitimes.com/newsimg/2026/0923/769350-2-p5rpi_l.jpg",
-     "id": "f4e17d99dfb3",
-     "tags": []
-    },
-    {
-     "title": "Android、Gemini 交織成形，一窺 Googlebook 軟體全貌",
-     "url": "https://technews.tw/2026/09/22/googlebook-os-builds-on-the-android-tech-stack-and-pairs-with-desktop-foundations-from-chromeos",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-22T05:59:21+00:00",
-     "summary": "Googlebook 為現代人的實際使用方式而設計，仿效蘋果 iPhone 與 MacBook 之間的整合體驗 […]",
-     "image": "",
-     "id": "7cf69deba95f",
-     "tags": [
-      "Android",
-      "Google",
-      "筆記型電腦",
-      "軟體、系統",
-      "Chromebook"
-     ]
-    },
-    {
-     "title": "Google開放Googlebook筆電預購，主打和Android手機緊密協作",
-     "url": "https://www.ithome.com.tw/news/179119",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-09-22T04:09:44+00:00",
-     "summary": "Google周一（9/21）連同5家品牌業者宣布整合Gemini Intelligence的筆電品牌Googlebook，同時也揭曉作業系統Googlebook OS。",
-     "image": "",
-     "id": "fe7828e2aadb",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0047",
-   "title": "SpaceXAI 發表全新 Grok 4.7，專為程式開發與知識工作打造的最強模型",
-   "summary": "SpaceXAI 於 9 月 21 日正式發表新一代 AI 模型「Grok 4.7」，官方將其定位為目前旗下效 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "grok",
-    "xai",
-    "4.7",
-    "spacexai",
-    "copilot",
-    "github"
-   ],
-   "image": "img/2026-09-23/89e20ca310d29d15.webp",
-   "llm_enriched": false,
-   "sources": [
-    "數位時代",
-    "科技新報 TechNews",
-    "INSIDE"
-   ],
-   "articles": [
-    {
-     "title": "SpaceXAI發布Grok 4.7！號稱「快一倍、半價」，實測為何跌破眼鏡？",
-     "url": "https://www.bnext.com.tw/article/92337/spacexai-grok-4-7-speed-price-claims",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-09-22T06:45:00+00:00",
-     "summary": "SpaceXAI推出Grok 4.7，宣稱快一倍、半價。但實測速度在202款中僅排154名，且輸出量達同級兩倍，單價低不等於總成本較低。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/andw-1790059713.png?w=900&output=webp",
-     "id": "62b43a2bbdfa",
-     "tags": []
-    },
-    {
-     "title": "SpaceXAI 發表全新 Grok 4.7，專為程式開發與知識工作打造的最強模型",
-     "url": "https://technews.tw/2026/09/22/spacexai-grok-4-7",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-21T22:10:03+00:00",
-     "summary": "SpaceXAI 於 9 月 21 日正式發表新一代 AI 模型「Grok 4.7」，官方將其定位為目前旗下效 […]",
-     "image": "",
-     "id": "39425a5112fe",
-     "tags": [
-      "AI 人工智慧",
-      "Grok",
-      "數位內容",
-      "AI 模型",
-      "Grok 4.7"
-     ]
-    },
-    {
-     "title": "對標 Claude Fable 5！旗艦模型 Grok 4.7 正式上線，開發者可透過 API 與 GitHub Copilot 使用",
-     "url": "https://www.inside.com.tw/article/42456-grok-47-xai-launch-api-github-copilot-sept-2026",
-     "source": "INSIDE",
-     "lang": "zh",
-     "published": "2026-09-21T22:07:00+00:00",
-     "summary": "xAI 於 9 月 21 日正式推出 Grok 4.7，新模型可透過 xAI API、GitHub Copilot、Cursor 和 Grok Build 使用，主打代理式程式開發（agentic coding）與長脈絡管理，但 grok.com 網頁版與 X 平台上的 Grok bot 目前尚未見到開放。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2025/08/e05bdb16-033a-425e-8335-3dbf98e8a32d.jpg",
-     "id": "93daf461007d",
-     "tags": [
-      "人工智慧",
-      "大型語言模型",
-      "Grok",
-      "程式開發"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0023",
-   "title": "Rabbit Is Back, This Time With an AI Agent App",
-   "summary": "Two years after trying to sidestep mobile apps with dedicated AI hardware, Rabbit is launching OS3, a cross-platform agent that lives on the screens you already use.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "rabbit",
-    "agent",
-    "back",
-    "hardware",
-    "os3",
-    "time"
-   ],
-   "image": "img/2026-09-23/b92fb64ac3b3ba06.webp",
-   "llm_enriched": false,
-   "sources": [
-    "The Verge AI",
-    "Wired AI"
-   ],
-   "articles": [
-    {
-     "title": "Rabbit’s new AI agent doesn’t need an R1 to run",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-09-22T12:52:40+00:00",
-     "summary": "Rabbit, the company behind the underwhelming R1 device, is rolling out a standalone AI agent that you don't need its hardware to use, as reported earlier by Wired. The startup says its new OS3 \"agentic operating system\" runs in the cloud but operates locally across Windows, Mac, and Linux devices. According to Rabbit, you can […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25415491/DSC08587.JPG?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "cc0d123c3bdd",
-     "tags": [
-      "AI",
-      "Apps",
-      "News",
-      "Tech"
-     ]
-    },
-    {
-     "title": "Rabbit Is Back, This Time With an AI Agent App",
-     "url": "https://www.wired.com/story/rabbit-r1-os3-jesse-lyu",
+     "title": "Meta VR Glasses, Ray-Ban Meta Audio, Ray-Ban Meta Gen 3: Specs, Features, Prices",
+     "url": "https://www.wired.com/story/metas-answer-to-the-meta-creep-camera-free-smart-glasses",
      "source": "Wired AI",
      "lang": "en",
-     "published": "2026-09-22T08:00:00+00:00",
-     "summary": "Two years after trying to sidestep mobile apps with dedicated AI hardware, Rabbit is launching OS3, a cross-platform agent that lives on the screens you already use.",
-     "image": "https://media.wired.com/photos/6ab18726d3445bdfbd468e18/master/pass/Rabbit-is-Back-Gear-OS3_r1.jpg",
-     "id": "8c8487f37cdf",
+     "published": "2026-09-23T15:42:44+00:00",
+     "summary": "At its Meta Connect event, CEO Mark Zuckerberg announced a handful of new smart glasses, including a slimmed-down VR headset and the company’s first camera-free glasses.",
+     "image": "https://media.wired.com/photos/6ab46185974b275c73391603/master/pass/Meta-Connect-Gear-2296202855.jpg",
+     "id": "07df542691f7",
      "tags": [
       "Gear",
       "Gear / Gear News and Events",
-      "agentic AI",
-      "chatbots",
-      "virtual assistant"
+      "Gear / Products / Augmented and Virtual Reality",
+      "smart glasses",
+      "Meta"
      ]
-    }
-   ]
-  },
-  {
-   "key": "t0036",
-   "title": "NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development",
-   "summary": "To build and deploy sophisticated robotics applications that can perceive, reason and act in dynamic environments, developers need new physical AI models and tools. The ROS open framework is a project from Open Robotics that helps humans build robots. NVIDIA Isaac ROS 5.0 — a col",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "robot",
-    "toyota",
-    "humanoid",
-    "humans",
-    "ros",
-    "open"
-   ],
-   "image": "img/2026-09-23/a14702dc86dad8fe.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI",
-    "NVIDIA Blog"
-   ],
-   "articles": [
+    },
     {
-     "title": "Toyota orders workers to train humanoid robots but says humans won't be replaced",
-     "url": "https://arstechnica.com/ai/2026/09/toyota-claims-plan-for-400000-factory-robots-wont-replace-human-workers",
-     "source": "Ars Technica AI",
+     "title": "Muse is coming to Meta smart glasses",
+     "url": "https://www.theverge.com/tech/999673/meta-connect-2026-muse-glasses-features",
+     "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-09-22T09:06:16+00:00",
-     "summary": "Toyota's push comes as automakers race to develop and deploy humanoid robots.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Toyota-motor-manufacturing-plant-500x500.jpg",
-     "id": "266382207085",
+     "published": "2026-09-23T15:40:56+00:00",
+     "summary": "Just a couple of weeks after launching Muse, Meta announced that it's \"working on\" bringing the agent to its smart glasses, including the new glasses it unveiled at Meta Connect. Users will be able to activate Muse from their glasses by saying its name and ask it to handle tasks like guiding a workout, logging […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Copy-of-Hearing-enhancement-16x9-1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "14d2985af419",
      "tags": [
       "AI",
-      "automakers",
-      "humanoid robots",
-      "hyundai",
-      "Industrial robots"
+      "Gadgets",
+      "Meta",
+      "News",
+      "Tech"
      ]
     },
     {
-     "title": "NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development",
-     "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics",
-     "source": "NVIDIA Blog",
+     "title": "Meta introduces camera-free AI glasses",
+     "url": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses",
+     "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-09-22T04:00:41+00:00",
-     "summary": "To build and deploy sophisticated robotics applications that can perceive, reason and act in dynamic environments, developers need new physical AI models and tools. The ROS open framework is a project from Open Robotics that helps humans build robots. NVIDIA Isaac ROS 5.0 — a collection of GPU-accelerated packages built on ROS, released today at […]",
-     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/09/robotics-blog-corp-blog-ROSCon26-1920x1080-1-842x450.jpeg",
-     "id": "81bdeb67aab1",
+     "published": "2026-09-23T15:39:44+00:00",
+     "summary": "Meta says the camera-free glasses will be lighter and have up to 12 hours battery life.",
+     "image": "",
+     "id": "31283a7047ea",
      "tags": [
-      "Robotics",
-      "Agentic AI",
-      "Artificial Intelligence",
-      "Computer Vision",
-      "CUDA"
+      "AI",
+      "Gadgets",
+      "Hardware",
+      "Social",
+      "ai glasses"
+     ]
+    },
+    {
+     "title": "Meta ditches the camera on its newest smart glasses",
+     "url": "https://www.theverge.com/tech/999281/ray-ban-meta-audio-glasses-meta-connect-2026",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-23T15:37:17+00:00",
+     "summary": "Walking around Meta Connect 2026, everyone's sporting smart glasses in all sorts of shapes, colors, and sizes. It's a marked difference here, a tech bubble where \"pervert glasses\" are not a concern. Outside Connect, the public backlash against wearable surveillance tech - a catchall term that encompasses not just smart glasses, but also smartwatches and […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/20260922_C0744.00_54_59_23.Still025-1.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "a5a216ee8f8e",
+     "tags": [
+      "AI",
+      "Gadgets",
+      "Hands-on",
+      "Meta",
+      "Reviews"
+     ]
+    },
+    {
+     "title": "Meta Connect 2026: The biggest news and announcements",
+     "url": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-23T14:45:00+00:00",
+     "summary": "It’s about time for Meta Connect, the company’s annual product launch event. This year, given the company’s major focus on AI and wearables like smart glasses, it seems likely that we’ll see updates from CEO Mark Zuckerberg and his team on those categories. The company has been facing significant scrutiny because of how some users […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/268639_Meta_Adventurer_glasses_AKrales_0241.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "be0bf243840e",
+     "tags": [
+      "AI",
+      "Gadgets",
+      "Meta",
+      "News",
+      "Tech"
      ]
     }
    ]
   },
   {
-   "key": "t0009",
-   "title": "全球最快移动 CPU：高通发布第六代骁龙 8 超级至尊版芯片，CPU 行业首超 5GHz、GPU 性能提升 44%",
-   "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，高通公司宣布推出第六代骁龙 8 超级至尊版移动平台和第六代骁龙 8 至尊版移动平台， 官方表示这是“全球最快移动 CPU”。 高通称两款产品面向“智能体人工智能”时代的移动终端需求，主要应用于下一代旗舰智能手机。 IT之家援引博文介绍，第六代骁龙 8 超级至尊版定位为其性能最强的移动平台之一，重点提升终端侧人工智能、移动游戏和影像处理能力。 其中，平台搭载的 Adreno Neural Fusion 技术可利用人工智能辅",
+   "key": "t0072",
+   "title": "OpenAI公布GPT-6 Sol、Luna，價格較前代降低一半",
+   "summary": "繼頂級的Astra後，OpenAI周二（9/22）宣布GPT-6 Sol及輕量模型GPT-6 Luna，成為GPT-6家族最新成員。 OpenAI隨著快取和推論能力的提升，使其得以更低成本提供強大模型功能，Sol和Luna的API價格皆較GPT-5.6版降一半。其中Sol每百萬token輸入/輸出價格由4/20美元降為2/10美元，Luna則從0.2/1.2降為0.1和0.5美元。",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "chip",
-    "cpu",
-    "adreno",
-    "ghz",
-    "gpu"
+    "sol",
+    "luna",
+    "gpt-6",
+    "openai",
+    "api",
+    "gpt-5.6"
    ],
-   "image": "img/2026-09-23/7f31c339502de1e0.webp",
+   "image": "img/2026-09-24/a6067c610fd4461e.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "IT早报 0923：中国民企 500 强出炉；高通 2nm 旗舰 SoC 六代骁龙 8 超级至尊版发布；OpenAI 发布 GPT-6 Sol、Luna；OPPO Find X10 系列发布...",
-     "url": "https://www.ithome.com/1/006/030.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T15:53:17+00:00",
-     "summary": "“IT早报”时间，大家好，现在是 2026 年 9 月 23 日星期三，今天的重要科技资讯有： 1. “2026 中国民营企业 500 强”发布：京东、阿里、恒力集团、华为、比亚迪位居前五 全国工商联 9 月 22 日在天津发布“2026 中国民营企业 500 强”。结果显示，京东集团、阿里巴巴（中国）有限公司、恒力集团有限公司位居前三。华为投资控股有限公司、比亚迪股份有限公司分别位列第四和第五 >> 查看详情 2. 全球最快移动 CPU：高通发布第六代骁龙 8 超级至尊版芯片，CPU 行业首超 5GHz、GPU 性能提升 44% 夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，高通公司宣布推出第六代骁龙 8 超级至尊版移动平台和第六代骁龙 8 至尊版移动平台，称两款产品面向“智能体人工智能”时代的移动终端需求，主要应用于下一代旗舰智能手机。>> 查看详情 3. OpenAI 发布 GPT-6 Sol 和 Luna 模型，API 价格大降 50% OpenAI 官方表示，两款模型采用与 GPT-6 Astra 类似的方法进行训练，将 Astra 在专业工作、事实性、编码、计算机使用和对齐等方面最先进的性能带入更快、更经济的模型。>> 查看详情 4. 5499 元起：OPPO Find X10 标准版手机发布，天玑 9600M ",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/9bdfabe0-5236-4657-a720-1b5dc4439b8a.jpg",
-     "id": "d92ec705d8b5",
-     "tags": []
-    },
-    {
-     "title": "“超级”在哪里？高通第六代骁龙 8 超级至尊版 / 至尊版芯片规格对比",
-     "url": "https://www.ithome.com/1/006/016.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T14:07:09+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上， 高通正式宣布推出第六代骁龙 8 超级至尊版和第六代骁龙 8 至尊版两款芯片。 IT之家查询高通官网规格资料，附上两款芯片的差异如下： 项目 第六代骁龙 8 至尊版 Snapdragon 8 Elite Gen 6 第六代骁龙 8 超级至尊版 Snapdragon 8 Elite Extreme Gen 6 CPU 定制 Oryon CPU，64 位，2 个主核最高 5 GHz；官方称 CPU 性能提升 10%、能效提升 37%。 定制 Oryon CPU，64 位，2 个主核最高 5 GHz； 官方称 CPU 性能提升 13% 。 GPU 性能与能效 Adreno GPU；官方称性能提升 35%、能效提升 40%。 Adreno GPU； 官方称性能提升 44%、能效提升 40%。 GPU 架构特性 支持硬件光追与 Lumen 全局光照、Nanite 虚拟几何；未列出 Matrix Cores 和 Neural Fusion。 增加 Adreno Matrix Cores、Adreno Neural Fusion、MegaLights，并支持 AI 超分、帧生成及图像重建。 NPU / 生成式 AI 重构 Hexagon NPU，官方称性能提升 ",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/f8a617e8-f677-478e-a9ae-c0aa42529968.jpg?x-bce-process=image/format,f_auto",
-     "id": "a09b910f7660",
-     "tags": []
-    },
-    {
-     "title": "全球最快移动 CPU：高通官宣小米、vivo、红魔、REDMI 等率先适配第六代骁龙 8 超级至尊版",
-     "url": "https://www.ithome.com/1/006/014.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T13:43:35+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上， 高通宣布小米、vivo、红魔、REDMI、OPPO 等（按官方新闻稿排序）手机品牌将率先适配第六代骁龙 8 超级至尊版 / 至尊版芯片。 高通官方表示小米、vivo、红魔、REDMI、OPPO、一加、Motorola、iQOO、荣耀等（按照官方新闻稿排序）全球领先 OEM 厂商和智能手机品牌，将率先在其旗舰产品中采用第六代骁龙 8 超级至尊版和第六代骁龙 8 至尊版移动平台， 其中第六代骁龙 8 超级至尊版官方宣传为“全球最快移动 CPU”。 IT之家援引新闻稿内容，高通技术公司高级副总裁兼手机业务总经理 Chris Patrick 表示： 今天我们迎来了重要里程碑，发布两款而非一款全新旗舰移动平台，带来即时、个性化且具备自适应能力的智能体 AI 体验。 随着智能体 AI 时代持续演进，我们的多旗舰策略有助于扩展移动体验的边界，同时将最新的 AI 创新技术引入更广泛的旗舰终端中。 通过打造两款创新的平台，我们为 OEM 厂商提供更丰富的选择，并共同塑造下一代智能、个性化移动体验的能力上限。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/5c354003-4192-40ce-b6c9-484ee1c84842.png",
-     "id": "e90f0397d8fb",
-     "tags": []
-    },
-    {
-     "title": "手游画质将迎新突破，高通第六代骁龙 8 超级至尊版强化支持虚幻引擎 5",
-     "url": "https://www.ithome.com/1/006/012.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T13:18:13+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，高通公司宣布在其第六代骁龙 8 超级至尊版芯片上， 强化支持虚幻引擎 5（Unreal Engine 5）支持。 高通为了提升 AI 渲染、超级分辨率与帧生成效果，为第六代骁龙 8 超级至尊版芯片的 Adreno GPU 配备了专用 Adreno Matrix Cores，并推出 Adreno Neural Fusion 技术。IT之家附上相关截图如下： Adreno Neural Fusion 可以认为是适配第六代骁龙 8 超级至尊版芯片的“DLSS 4”画质增强技术，在同一条图形渲染管线中整合神经网络处理、AI 超级分辨率和 AI 帧生成，目标是在提升画质和帧率的同时，降低渲染负载与功耗。 游戏不必始终以最高分辨率渲染，而是先以较低分辨率生成画面，再利用 AI 恢复细节、提升清晰度，并生成额外帧，从而兼顾画质与流畅度。 Adreno Neural Fusion 的硬件基础是 Adreno Matrix Cores ， 这是首次在 Adreno GPU 内加入面向 AI 计算的专用核心，用于直接运行图形相关的神经网络模型。 对于手游玩家而言，未来可以在搭载骁龙芯片的旗舰手机上，进一步增强 Nanite 虚拟化几何体、Lumen 全局光照、实时阴影",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/279aeb1a-4103-435d-8791-612a4d81621c.png?x-bce-process=image/format,f_auto",
-     "id": "13100378f4c4",
-     "tags": []
-    },
-    {
-     "title": "高通第六代骁龙 8 超级至尊版升级封装方案：峰值性能输出更持久",
-     "url": "https://www.ithome.com/1/006/011.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T13:03:35+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，高通公司宣布在其第六代骁龙 8 超级至尊版芯片上， 采用了全新的 Offset Package-on-Package（偏移式堆叠封装）方案。 IT之家查询公开资料，主流手机芯片采用 Package-on-Package (PoP) 封装技术，通常将 DRAM 内存芯片直接垂直堆叠在 SoC（系统级芯片）正上方。 这种封装方式可以节省主板空间，但会导致内存成为 SoC 散热的物理屏障，热量难以直接传导到外部散热系统。 高通的 Offset PoP 封装方案物理偏移 CPU 和 GPU 等高发热的计算核心，上方的内存组件不再完全覆盖 SoC，让 SoC 核心区域能够更直接地接触到外部的散热材料（如均热板或石墨烯片），从而更高效地导出热量。 高通第六代骁龙 8 超级至尊版主频行业首次突破 5.0GHz，成为“全球最快移动 CPU”，全新封装方案通过牺牲少量封装空间的对称性，能显著提升热性能收益，更适合追求极致性能的旗舰设备。 对于用户而言，使用 Offset PoP 封装方案可以带来更持久的峰值性能， 在游戏、AI 推理或视频渲染等高负载场景下，手机能够更长时间地维持高帧率或高吞吐量，减少“越玩越卡”的现象。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/8a886c14-73fa-4b6c-aef0-ffd14574a069.jpg",
-     "id": "472ced444e70",
-     "tags": []
-    },
-    {
-     "title": "摩托罗拉 Signature 27 旗舰真机首秀，搭载高通第六代骁龙 8 超级至尊版芯片",
-     "url": "https://www.ithome.com/1/006/010.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T13:02:46+00:00",
-     "summary": "IT之家 9 月 23 日消息，在北京时间 9 月 23 日凌晨的 2026 高通骁龙峰会现场， 高通公司宣布推出第六代骁龙 8 超级至尊版移动平台和第六代骁龙 8 至尊版移动平台 ，官方表示这是“全球最快移动 CPU”。 摩托罗拉移动全球产品营销负责人兼执行总监 Nicole Hagen 宣布：“摩托罗拉很高兴进一步拓展与高通技术公司的合作， 并首次在旗舰产品系列中采用第六代骁龙 8 超级至尊版 。这一重要里程碑将帮助我们为全球消费者带来更强大的终端侧 AI 能力、更出色的性能以及更高品质的用户体验。凭借第六代骁龙 8 超级至尊版，我们将打造面向未来的新一代智能手机，更好地满足用户不断变化的需求。” IT之家在 2026 高通骁龙峰会现场获悉， 摩托罗拉 Signature 27 旗舰手机 将搭载第六代骁龙 8 超级至尊版芯片，Nicole Hagen 在现场展示了 Signature 27 真机。 摩托罗拉 Signature 27 采用了斜坡过渡的机身后盖设计，背部镜头模组部分可以看到 5 个圆圈，其中 4 个为摄像头、1 个为闪光灯， Signature 27 将搭载 2 亿像素影像传感器 。 软件方面，Signature 27 将支持 7 年系统升级 ，还配备了谷歌 Gemini。 除此之外，Signature 27 网页的源代码中可以找到一段 \"Crystals by ",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/91eac1f7-ad16-4873-97af-1484c1e9f19d.jpg",
-     "id": "ac24fd4bbcdd",
-     "tags": []
-    },
-    {
-     "title": "高通第六代骁龙 8 超级至尊版芯片一图看懂：2nm 工艺、CPU 行业首超 5GHz",
-     "url": "https://www.ithome.com/1/006/009.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T12:47:12+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上， 高通公司宣布推出第六代骁龙 8 超级至尊版移动平台和第六代骁龙 8 至尊版移动平台 ，官方表示这是“全球最快移动 CPU”。 IT之家在峰会现场获得了关于两款新旗舰处理器的第一手最新消息，并为大家带来 第六代骁龙 8 超级至尊版芯片一图看懂内容 ： 第六代骁龙 8 超级至尊版定位为其性能最强的移动平台之一，重点提升终端侧人工智能、移动游戏和影像处理能力。 其中，平台搭载的 Adreno Neural Fusion 技术可利用人工智能辅助图形渲染；结合高级专业视频编解码器和智能像素控制技术，平台还可支持更复杂的场景理解及影像处理。 CPU 方面， 高通宣布第六代骁龙 8 超级至尊版的最高主频超过 5.0GHz ，性能提升 13%、能效提升 37%、响应速度提升 15%；具体来看搭载两个 5GHz 超级内核 + 六个 4GHz 性能内核。 GPU 方面，第六代骁龙 8 超级至尊版搭载专为 AI 打造的 Adreno Matrix Cores， 还有 18MB Adreno 独立高速显存（HPM） ，支持虚幻引擎 5 Lumen 光追效果，GPU 性能提升 44%，能效提升 40%。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/c96f4fab-8e52-4f09-b88d-768fb66446b7.jpg",
-     "id": "2f4e83059d5c",
-     "tags": []
-    },
-    {
-     "title": "全球最快移动 CPU：高通发布第六代骁龙 8 超级至尊版芯片，CPU 行业首超 5GHz、GPU 性能提升 44%",
-     "url": "https://www.ithome.com/1/006/004.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T12:14:43+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，高通公司宣布推出第六代骁龙 8 超级至尊版移动平台和第六代骁龙 8 至尊版移动平台， 官方表示这是“全球最快移动 CPU”。 高通称两款产品面向“智能体人工智能”时代的移动终端需求，主要应用于下一代旗舰智能手机。 IT之家援引博文介绍，第六代骁龙 8 超级至尊版定位为其性能最强的移动平台之一，重点提升终端侧人工智能、移动游戏和影像处理能力。 其中，平台搭载的 Adreno Neural Fusion 技术可利用人工智能辅助图形渲染；结合高级专业视频编解码器和智能像素控制技术，平台还可支持更复杂的场景理解及影像处理。 第六代骁龙 8 至尊版同样采用 2 纳米制程工艺，并配备定制版 Qualcomm Oryon 中央处理器、Adreno 图形处理器和 Hexagon 神经网络处理器。高通表示，该平台将在更广泛的旗舰机型中支持人工智能、游戏、影像和连接等功能。 CPU 方面， 高通宣布第六代骁龙 8 超级至尊版的最高主频超过 5.0GHz，性能提升 13%、能效提升 37%、响应速度提升 15%。 GPU 方面， 高通宣布 Adreno GPU 性能提升 44%，能效提升 40%。 高通技术公司高级副总裁兼手机业务总经理 Chris Patrick 表示",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/9bdfabe0-5236-4657-a720-1b5dc4439b8a.jpg?x-bce-process=image/format,f_auto",
-     "id": "2ef14b4e93a9",
-     "tags": []
-    },
-    {
-     "title": "高通骁龙芯片将整合 HBC 架构：手机本地运行 AI 更快、更省电",
-     "url": "https://www.ithome.com/1/006/003.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T11:56:20+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，IT之家带来前方现场报道， 高通宣布将会向骁龙芯片下放 HBC 技术。 IT之家注：HBC 全称为 High Bandwidth Compute，直译为“高带宽计算”，于 2026 年 6 月召开的投资者日上公开，最初面向数据中心产品，在本次活动中宣布未来将会应用于骁龙芯片。 该架构是一种近内存计算（near-memory computing）架构，将计算芯片放置在堆叠式 LPDDR DRAM 下方，通过 3D 集成和硅通孔（TSV）缩短数据传输距离，目标是缓解 AI 推理中的“内存墙”问题。 对于普通用户而言，高通骁龙芯片未来如果整合 HBC 架构，手机能够更快、更省电地运行更大的端侧 AI 模型， 而且可以在本地运行更多 AI 功能。 目前限制手机端 AI 的瓶颈，不再仅是 NPU 的乘加计算能力，还考验模型参数和中间数据在内存与处理器之间搬运的速度。HBC 通过把部分计算放到内存附近， 减少数据来回移动，有望降低延迟和内存功耗。 高带宽内存本身不等于更大容量，但如果 HBC 同时提高有效带宽、减少数据搬运，并改善每瓦性能，手机就有机会运行参数量更大、上下文更长的模型。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/f6a134a2-6d65-403c-87a4-3db346722e86.jpg?x-bce-process=image/format,f_auto",
-     "id": "a532eb621de3",
-     "tags": []
-    },
-    {
-     "title": "高通宣布全球 Snapdragon Insider 项目成员数量突破 2300 万",
-     "url": "https://www.ithome.com/1/006/000.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T11:17:35+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，IT之家带来前方现场报道，在活动演讲中， 高通公布宣布全球 Snapdragon Insider 项目成员数量突破 2300 万；全球 Snapdragon Creators 数量突破 4.05 亿。 Snapdragon Insiders 是高通围绕骁龙平台运营的社区与内容计划，其作用包括： 向成员提供新品、技术和活动的优先资讯，以及与品牌互动的机会。 在 Snapdragon Summit 等活动中，把终端用户、开发者、OEM 合作伙伴、创作者、分析师和媒体汇集在一起。 让高通能直接获得用户对移动芯片、PC、音频、XR、汽车与端侧 AI 功能的反馈，并持续强化 Snapdragon 的消费者品牌认知。 在 2026 高通骁龙峰会上，高通将叙事重点放在 “ Snapdragon for the Agentic Age ” ：不仅强调芯片性能，也强调能够在手机和 PC 等终端上运行的个人 AI 与智能体式 AI 体验。 Snapdragon Creators 是指全球大量用 Snapdragon 手机、PC、笔记本等设备进行拍照、拍视频、剪片、直播、做音乐、打游戏等创作的创作者和科技爱好者。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/27768c43-66b1-4a4f-816c-fc6d9e26def5.jpg",
-     "id": "1f18235282dc",
-     "tags": []
-    },
-    {
-     "title": "后摩智能确认其下代大模型端边 AI 芯片采用 3D CIM 存算一体架构",
-     "url": "https://www.ithome.com/1/005/988.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T07:19:09+00:00",
-     "summary": "IT之家 9 月 22 日消息，后摩智能 ( HOUMO.AI ) 在近日举行的 2026 全球 AI 芯片峰会上确认，该公司 下代大模型端边 AI 芯片将采用 3D CIM 存算一体架构 ，结合融合存算与 3D DRAM 技术。 这款新一代旗舰芯片将具备端侧超实时思考和互动能力。通过垂直堆叠，其 可在同等面积下实现 2 倍算力 ，还有望进一步优化功耗与散热压力。 IT之家注意到，后摩智能 2025 年 7 月发布了后摩漫界 M50 芯片。这一芯片典型功耗 10W，可提供 160TOPS (INT8) 或 100TFLOPS (bFP16) 算力，支持 48GB 内存容量、153.6GB/s 内存带宽。该芯片目前已获得超 150 款产品定点，覆盖丰富应用场景。 相关阅读： 《 零刻推出 SEi13 AI / SEi14 AI 迷你主机：搭载最高 160TOPS 算力独立 NPU，11895 元起 》 《 联想 AI 主机家族正式发布：搭载天禧 AI 4.0、支持“一键养虾” 》",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/e67e25d5-cc82-4b0e-bfc1-c0cc806ce233.jpg?x-bce-process=image/format,f_auto",
-     "id": "a6da830681c1",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0020",
-   "title": "【科技早餐】Meta Muse 超車 ChatGPT，Amazon 封鎖 AI 代理購物",
-   "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊Meta Muse 超車 ChatGPT 登頂 App Store，Amazon 封鎖代理購物 Meta 於 9 月 8 日推出個人 AI 助理 Muse，可替使用者研究資料、填寫表格、預約服務及購買商品，並能連結電子郵件、行事曆、Instagram 等服務。Muse 上線後下載排名迅速超越 ChatGPT，一度登上美國 Apple App Store 免費應用程式排行榜第一名。與主要回覆問題的聊天機器人不同，Muse 的核心定位是取得使用者授權後，跨越不同網站與服務完成多步驟任務。 不過，Muse 進",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "amazon",
-    "muse",
-    "meta",
-    "shopify",
-    "store",
-    "agent"
-   ],
-   "image": "img/2026-09-23/9fb3d3003a0b57e2.webp",
-   "llm_enriched": false,
-   "sources": [
+    "數位時代",
+    "iThome",
     "TechOrange 科技報橘"
    ],
    "articles": [
     {
-     "title": "【科技早餐】Meta Muse 超車 ChatGPT，Amazon 封鎖 AI 代理購物",
-     "url": "https://techorange.com/2026/09/23/meta-muse-tops-app-store-amazon-blocks-ai-shopping",
-     "source": "TechOrange 科技報橘",
+     "title": "GPT-6家族擴編！OpenAI推出兩款平價模型Sol與Luna：智力持平前代、API價格打5折",
+     "url": "https://www.bnext.com.tw/article/92355/openai-gpt-6-sol-luna-api-price-cut",
+     "source": "數位時代",
      "lang": "zh",
-     "published": "2026-09-22T13:30:00+00:00",
-     "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊Meta Muse 超車 ChatGPT 登頂 App Store，Amazon 封鎖代理購物 Meta 於 9 月 8 日推出個人 AI 助理 Muse，可替使用者研究資料、填寫表格、預約服務及購買商品，並能連結電子郵件、行事曆、Instagram 等服務。Muse 上線後下載排名迅速超越 ChatGPT，一度登上美國 Apple App Store 免費應用程式排行榜第一名。與主要回覆問題的聊天機器人不同，Muse 的核心定位是取得使用者授權後，跨越不同網站與服務完成多步驟任務。 不過，Muse 進入亞馬遜（Amazon）代替使用者購物時，很快遭到平台封鎖。Amazon 表示，Meta 未事先告知，也沒有取得授權，第三方 AI 代理應清楚揭露身分，並尊重平台是否開放參與；Amazon 也對登入憑證與客戶資料的處理方式提出疑慮。Meta 則表示，Muse 看不到安全登入資訊及信用卡資料。相較之下，電商平台 Shopify 選擇與 Meta 合作，讓 Muse 能透過 Shop Pay 完成結帳。這場分歧顯示，AI 代理競爭正從模型能力，延伸到平台對資料、廣告及交易入口的控制權。 ＊20 多國促 AI 具約束力監管，OpenAI 籲美國主導全球標準 20 多國領袖與歐盟執委會主席共同發布聲明，呼籲針對先進 AI […]",
-     "image": "https://techorange.com/app/uploads/2026/09/aa082fc11b8c9502-720x405.png",
-     "id": "5984886f66ba",
-     "tags": [
-      "科技動態"
-     ]
+     "published": "2026-09-23T03:20:00+00:00",
+     "summary": "OpenAI推出GPT-6 Sol與Luna，API價格比GPT-5.6腰斬。實測顯示跑分成本省半且幻覺率降，但綜合智力持平，部分評測略退步。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/fhcu-1790132697.png?w=900&output=webp",
+     "id": "ed356d4db2e3",
+     "tags": []
     },
     {
-     "title": "Amazon 封鎖 Meta Muse、Shopify 卻主動接入：AI Agent 能不能進站，誰說了算？",
-     "url": "https://techorange.com/2026/09/22/amazon-shopify-ai-agent-shopping",
+     "title": "OpenAI公布GPT-6 Sol、Luna，價格較前代降低一半",
+     "url": "https://www.ithome.com.tw/news/179160",
+     "source": "iThome",
+     "lang": "zh",
+     "published": "2026-09-23T03:09:59+00:00",
+     "summary": "繼頂級的Astra後，OpenAI周二（9/22）宣布GPT-6 Sol及輕量模型GPT-6 Luna，成為GPT-6家族最新成員。 OpenAI隨著快取和推論能力的提升，使其得以更低成本提供強大模型功能，Sol和Luna的API價格皆較GPT-5.6版降一半。其中Sol每百萬token輸入/輸出價格由4/20美元降為2/10美元，Luna則從0.2/1.2降為0.1和0.5美元。",
+     "image": "",
+     "id": "cf4f269994b4",
+     "tags": []
+    },
+    {
+     "title": "Anthropic、OpenAI 同日推 Opus 5.5、GPT-6 Sol／Luna：最高階 AI 能力正以幾週速度往下放",
+     "url": "https://techorange.com/2026/09/23/anthropic-openai-opus-5-5-gpt-6-sol-luna-ai",
      "source": "TechOrange 科技報橘",
      "lang": "zh",
-     "published": "2026-09-22T01:35:12+00:00",
-     "summary": "AI 正快速進入消費者的購物流程，新的問題也逐漸浮現。PYMNTS Intelligence 與 Visa Acceptance Solutions 今年調查美國、巴西、阿聯 5,841 名消費者發現，47% 線上購物者在最近一次購物中使用過 AI。而當 AI 從找商品、比價，進一步能替人開啟網站、登入帳號甚至下單，商家開始需要思考：外部 AI Agent（AI 代理） 要進入自家公司的交易環境，究竟該開放到什麼程度？ 電商巨頭 Amazon 最近選擇擋下 Meta Muse，但更精確地說，它拒絕的是「未經同意、也未表明身分」的第三方 Agent。Muse 是 Meta 9 月推出的個人 AI Agent，可以在獨立的雲端電腦操作瀏覽器，替使用者跨網站處理多步驟任務，包括購物；推出一週後一度登上美國 App Store 免費榜第一。Amazon 表示，Meta 未事先告知 Muse 將存取 Amazon，瀏覽時也沒有表明 Agent 身分，因此阻止它代替使用者購物。 電商平台 Shopify 選擇的，則是另一條路。同樣在 9 月，Shopify 主動把 Meta 納入 AI 購物通路，讓商家可以透過既有平台接觸 Muse 使用者。兩家公司都在押注 AI 購物，卻選擇不同的接入方式：Amazon 先要求第三方 […]",
-     "image": "https://techorange.com/app/uploads/2026/09/b5ee3b2ded4f5ba1-720x405.jpg",
-     "id": "530be406bbad",
+     "published": "2026-09-22T20:47:48+00:00",
+     "summary": "Anthropic、OpenAI 在美國時間 9/22 同日更新模型產品線，一口氣推出 3 款新模型。Anthropic 發表 Claude Opus 5.5，主打程式設計、AI 代理與專業知識工作；OpenAI 則推出 GPT-6 Sol、GPT-6 Luna，將月初才由 GPT-6 Astra 開啟的新一代產品線，進一步擴展到不同能力與價格層級。 這次兩家公司都沒有只把重點放在提高測試基準（benchmark）成績。Anthropic 的 Opus 5.5 已在多數工作達到 3 週前才推出的 Fable 5.1 水準，價格卻明顯降低；OpenAI 的 Sol、Luna 則承接 Astra 的部分技術進展，API 價格也降至 GPT-5.6 同級模型的一半。 Fable 5.1 才推出 3 週，Opus 5.5 已追上多數工作 Anthropic 9/1 才推出 Fable 5.1 與 Mythos 5.1，當時將兩款模型定位為旗下最先進的程式設計與知識工作模型。相隔 21 天，Anthropic 又推出 Claude […]",
+     "image": "https://techorange.com/app/uploads/2026/09/9b042a39916627f2-720x361.png",
+     "id": "4dd2ed4269ce",
      "tags": [
       "AI 人工智慧"
      ]
@@ -660,1113 +175,1433 @@
    ]
   },
   {
-   "key": "t0048",
-   "title": "OpenAI is well positioned to fast-follow Jev",
-   "summary": "Article URL: https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/ Comments URL: https://news.ycombinator.com/item?id=49802161 Points: 250 # Comments: 187",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "url",
-    "comments",
-    "https",
-    "fast-follow",
-    "openai",
-    "well"
-   ],
-   "image": "img/2026-09-23/c7be956c9ca0e31d.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Hacker News (100+)"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI is well positioned to fast-follow Jev",
-     "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-09-22T06:42:59+00:00",
-     "summary": "Article URL: https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/ Comments URL: https://news.ycombinator.com/item?id=49802161 Points: 250 # Comments: 187",
-     "image": "",
-     "id": "18dcc1c8f6f4",
-     "tags": []
-    },
-    {
-     "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
-     "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-09-22T05:52:15+00:00",
-     "summary": "Article URL: https://www.cryptocellar.org/bgac/the-mvueh-break.html Comments URL: https://news.ycombinator.com/item?id=49801324 Points: 539 # Comments: 354",
-     "image": "",
-     "id": "0f1ff99a4515",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0051",
-   "title": "TechCrunch Disrupt 2026: Aaron Edsinger brings Hello Robot’s Stretch 4 to life onstage",
-   "summary": "Hello Robot CEO and co-founder Aaron Edsinger will bring Stretch 4 for a live demo on the Real World AI Stage at TechCrunch Disrupt 2026. Register before September 25 to save up to $200, plus get a second pass at 50% off.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "disrupt",
-    "techcrunch",
-    "200",
-    "save",
-    "pass",
-    "second"
-   ],
-   "image": "img/2026-09-23/544bde29a67d86e0.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "TechCrunch Disrupt 2026: Aaron Edsinger brings Hello Robot’s Stretch 4 to life onstage",
-     "url": "https://techcrunch.com/2026/09/22/techcrunch-disrupt-2026-aaron-edsinger-brings-hello-robots-stretch-4-to-life-onstage",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-22T06:30:00+00:00",
-     "summary": "Hello Robot CEO and co-founder Aaron Edsinger will bring Stretch 4 for a live demo on the Real World AI Stage at TechCrunch Disrupt 2026. Register before September 25 to save up to $200, plus get a second pass at 50% off.",
-     "image": "",
-     "id": "e5bfcbc26e07",
-     "tags": [
-      "Startups",
-      "Hardware",
-      "AI",
-      "Robotics",
-      "TechCrunch Disrupt"
-     ]
-    },
-    {
-     "title": "4 days to save up to $200: Reason 2 of 5 to be at TechCrunch Disrupt 2026",
-     "url": "https://techcrunch.com/2026/09/22/4-days-to-save-up-to-200-reason-2-of-5-to-be-at-techcrunch-disrupt-2026",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-22T06:00:00+00:00",
-     "summary": "Save up to $200 on your TechCrunch Disrupt 2026 pass, plus 50% off a second pass before prices increase on September 25 at 11:59 p.m. PT. Register today.",
-     "image": "",
-     "id": "c04970b62db7",
-     "tags": [
-      "Startups",
-      "Climate",
-      "Fintech",
-      "Biotech & Health",
-      "Venture"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0056",
-   "title": "Everyone can find a reason to dislike data center construction",
-   "summary": "Inside two years of fraught AI data center debates in Pennsylvania.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "center",
-    "datacenter",
-    "data",
-    "everyone",
-    "dislike",
-    "construction"
-   ],
-   "image": "img/2026-09-23/b666266350f3df8a.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Everyone can find a reason to dislike data center construction",
-     "url": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-22T05:00:00+00:00",
-     "summary": "Inside two years of fraught AI data center debates in Pennsylvania.",
-     "image": "",
-     "id": "d68797b924a7",
-     "tags": [
-      "AI",
-      "data centers"
-     ]
-    },
-    {
-     "title": "Nscale’s IPO will test Wall Street’s appetite for concentrated AI bets once again",
-     "url": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-22T04:23:05+00:00",
-     "summary": "The British AI data center developer depends on tech giants Microsoft and Anthropic for most of its revenue.",
-     "image": "",
-     "id": "46a8cb077ff0",
-     "tags": [
-      "AI",
-      "ai data centers",
-      "IPO",
-      "neocloud",
-      "nscale"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0079",
-   "title": "【AI轉型實戰上篇】玉山銀行GENIE每月處理14億Token，模型調用成本不到5萬元",
-   "summary": "也可參考【AI轉型實戰下篇】玉山打造全行AI代理入口，首度揭露新一代GENIE關鍵Agentic技術框架 今年9月底，玉山銀行即將推出第三代GENIE，作為內部統一AI入口，全面導入Agentic AI，要從AI輔助轉為人機協作，進一步邁向代理式銀行（Agentic Banking）願景發展。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "genie",
-    "agentic",
-    "agent"
-   ],
-   "image": "img/2026-09-23/a73881ed00c25b05.webp",
-   "llm_enriched": false,
-   "sources": [
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "【AI轉型實戰上篇】玉山銀行GENIE每月處理14億Token，模型調用成本不到5萬元",
-     "url": "https://www.ithome.com.tw/news/179111",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-09-21T19:09:55+00:00",
-     "summary": "也可參考【AI轉型實戰下篇】玉山打造全行AI代理入口，首度揭露新一代GENIE關鍵Agentic技術框架 今年9月底，玉山銀行即將推出第三代GENIE，作為內部統一AI入口，全面導入Agentic AI，要從AI輔助轉為人機協作，進一步邁向代理式銀行（Agentic Banking）願景發展。",
-     "image": "",
-     "id": "7fcfd48abcd4",
-     "tags": []
-    },
-    {
-     "title": "【AI轉型實戰下篇】玉山銀行打造全行AI代理入口，首度揭露新一代GENIE關鍵Agentic技術框架",
-     "url": "https://www.ithome.com.tw/news/179124",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-09-21T19:09:16+00:00",
-     "summary": "可先閱讀【",
-     "image": "",
-     "id": "e8e87bd7136b",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0000",
-   "title": "三菱重工：美国 AI 数据中心需求推动燃气轮机订单创新高",
-   "summary": "9 月 23 日，据日经新闻报道，三菱重工美国公司董事长兼 CEO Takao Tsukui 9 月 21 日在纽约接受采访时表示，受美国人工智能数据中心建设需求推动，从 2026 年 1 至 6 月的订单进度看，全球燃气轮机需求预计与 2025 年持平或更高，全年有望再次超过 100 吉瓦。他预计，这一强劲需求将延续至 2027 年。 报道称，三菱重工是全球三大发电用燃气轮机制造商之一，与 GE Vernova、西门子能源并列。其主力产品是用于燃气轮机联合循环（GTCC）电厂的高效超大型 J 型涡轮机。据三菱重工统计，2025 年全球燃气轮机需求达到 ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "tsukui"
-   ],
-   "image": "img/2026-09-23/c92b7fabe06f16cb.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "三菱重工：美国 AI 数据中心需求推动燃气轮机订单创新高",
-     "url": "https://www.ithome.com/1/006/032.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T16:04:57+00:00",
-     "summary": "9 月 23 日，据日经新闻报道，三菱重工美国公司董事长兼 CEO Takao Tsukui 9 月 21 日在纽约接受采访时表示，受美国人工智能数据中心建设需求推动，从 2026 年 1 至 6 月的订单进度看，全球燃气轮机需求预计与 2025 年持平或更高，全年有望再次超过 100 吉瓦。他预计，这一强劲需求将延续至 2027 年。 报道称，三菱重工是全球三大发电用燃气轮机制造商之一，与 GE Vernova、西门子能源并列。其主力产品是用于燃气轮机联合循环（GTCC）电厂的高效超大型 J 型涡轮机。据三菱重工统计，2025 年全球燃气轮机需求达到 2000 年以来最高水平。由于全球减碳趋势，火电设备曾被视为夕阳业务，但 AI 普及推高电力需求，燃气轮机订单正在三菱重工积压。 Tsukui 表示，目前的订单积压量“异常庞大，处于历史最高水平”，尤其是 2029 至 2030 年交货的产品，排期相当紧张。与此同时，燃气轮机合同价格同比上涨约 20%。他解释，劳动力成本和原材料价格变化迫使价格上涨，供应链影响显著，利率上升也是一个因素。 竞争对手同样受益。川崎重工董事长 Yoshinori Kanehana 告诉日经新闻，中小型涡轮机的订单已积压到约 5 年后。数据中心和氢能产生的强劲需求增加了新客户问询，川崎重工难以跟上订单节奏。 为满足持续增长的需求，制造商正在加速资本投资。三",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/0baa40a1-7470-4698-aea0-2bea0dc52cb0.jpg",
-     "id": "57609f5c0a6c",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0001",
-   "title": "內建顯卡效能提升與架構轉移，低階獨顯會消失嗎？",
-   "summary": "近期 PC 圈傳出 NVIDIA 傳出大幅調整 GeForce RTX 50 系列供貨，對象含 AIB 與 O […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "nvidia",
-    "aib",
-    "geforce"
-   ],
-   "image": "img/2026-09-23/f1d817b66c670377.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "內建顯卡效能提升與架構轉移，低階獨顯會消失嗎？",
-     "url": "https://technews.tw/2026/09/23/low-end-discrete-graphics-cards-disappear",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-22T16:00:04+00:00",
-     "summary": "近期 PC 圈傳出 NVIDIA 傳出大幅調整 GeForce RTX 50 系列供貨，對象含 AIB 與 O […]",
-     "image": "",
-     "id": "d4ba9875d1ed",
-     "tags": [
-      "GPU",
-      "半導體",
-      "處理器",
-      "RTX Spark",
-      "內顯"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0003",
-   "title": "三星晶圓代工迎訂單回溫　獲利翻身還要過2奈米、獎金兩關",
-   "summary": "三星電子（Samsung Electronics）晶圓代工事業受惠於人工智慧（AI）與高效運算（HPC）需求擴張，先進製程稼動率與客戶訂單持續改善，帶動市場對單季轉虧為盈的期待...",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "samsung",
-    "electronics",
-    "hpc"
-   ],
-   "image": "img/2026-09-23/b38d349b7e831084.webp",
-   "llm_enriched": false,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "三星晶圓代工迎訂單回溫　獲利翻身還要過2奈米、獎金兩關",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000769320_7QA2QM8T3DHQCTLCTCGMM&wpidx=3",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-09-22T16:00:00+00:00",
-     "summary": "三星電子（Samsung Electronics）晶圓代工事業受惠於人工智慧（AI）與高效運算（HPC）需求擴張，先進製程稼動率與客戶訂單持續改善，帶動市場對單季轉虧為盈的期待...",
-     "image": "https://img.digitimes.com/newsimg/2026/0923/769320-1-tcgmm_l.jpg",
-     "id": "2365da6d7ea7",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0004",
-   "title": "AI「幻覺」致命傷　工業軟體巨頭搶布局「工業世界模型」",
-   "summary": "AI因ChatGPT迎來全民普及時代，然工業AI發展相對遲緩，業界分析，現有AI架構容易出現「幻覺」是主因，這對容錯率為零的工業環境是致命傷。工業AI發展不能只靠大語言...",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-23/cb1cc713a2a4875e.webp",
-   "llm_enriched": false,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "AI「幻覺」致命傷　工業軟體巨頭搶布局「工業世界模型」",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769389_EJD257849MXXP08B54T3M&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-09-22T16:00:00+00:00",
-     "summary": "AI因ChatGPT迎來全民普及時代，然工業AI發展相對遲緩，業界分析，現有AI架構容易出現「幻覺」是主因，這對容錯率為零的工業環境是致命傷。工業AI發展不能只靠大語言...",
-     "image": "https://img.digitimes.com/newsimg/2026/0923/769389-1-54t3m_l.jpg",
-     "id": "19de9721e21e",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0005",
-   "title": "阿里平頭哥衝AI底座　從GPU、CPU卡位超節點伺服器",
-   "summary": "阿里巴巴旗下半導體公司平頭哥持續擴大AI基礎設施布局，產品線已從AI加速器延伸至CPU、智慧網卡及互連晶片，並往伺服器與超節點系統整合。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "alibaba",
-    "cpu"
-   ],
-   "image": "img/2026-09-23/59c57208bfa2f95f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "阿里平頭哥衝AI底座　從GPU、CPU卡位超節點伺服器",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769315_S8H2UJOA27JSYM49YPTM7&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-09-22T16:00:00+00:00",
-     "summary": "阿里巴巴旗下半導體公司平頭哥持續擴大AI基礎設施布局，產品線已從AI加速器延伸至CPU、智慧網卡及互連晶片，並往伺服器與超節點系統整合。",
-     "image": "https://img.digitimes.com/newsimg/2026/0923/769315-1-yptm7.png",
-     "id": "6daa61b16a71",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0006",
-   "title": "印度理工學院為學生找出路　台灣AI、半導體含金量高受重視",
-   "summary": "台灣總人口數不斷減少，雖然高中職、大學有志於理工的人數增加，但仍無法滿足產業需求。教育部近日邀請印度理工學院的分校校長來台，希望強化雙邊在半導體、人工智慧（A...",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "a..."
-   ],
-   "image": "img/2026-09-23/a99345d0294eb8e1.webp",
-   "llm_enriched": false,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "印度理工學院為學生找出路　台灣AI、半導體含金量高受重視",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769356_MSE4SOO04EP6XS7HDTP71&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-09-22T16:00:00+00:00",
-     "summary": "台灣總人口數不斷減少，雖然高中職、大學有志於理工的人數增加，但仍無法滿足產業需求。教育部近日邀請印度理工學院的分校校長來台，希望強化雙邊在半導體、人工智慧（A...",
-     "image": "https://img.digitimes.com/newsimg/2026/0923/769356-1-dtp71_l.jpg",
-     "id": "8095aeb4fd9b",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0007",
-   "title": "樂金集團高層齊聚微軟總部　拍板AI三大合作方向",
-   "summary": "樂金集團（LG Group）會長具光模與微軟（Microsoft）執行長Satya Nadella近日在美國會面，宣布雙方將深化人工智慧（AI）合作，布局新一代AI資料中心、實體AI（Phy...",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "microsoft",
-    "datacenter",
-    "group",
-    "phy..."
-   ],
-   "image": "img/2026-09-23/ee102db9f561a37f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "DIGITIMES"
-   ],
-   "articles": [
-    {
-     "title": "樂金集團高層齊聚微軟總部　拍板AI三大合作方向",
-     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769397_XKS46GDJ8NA8YL8Y1FVDB&wpidx=5",
-     "source": "DIGITIMES",
-     "lang": "zh",
-     "published": "2026-09-22T16:00:00+00:00",
-     "summary": "樂金集團（LG Group）會長具光模與微軟（Microsoft）執行長Satya Nadella近日在美國會面，宣布雙方將深化人工智慧（AI）合作，布局新一代AI資料中心、實體AI（Phy...",
-     "image": "https://img.digitimes.com/newsimg/2026/0923/769397-1-1fvdb_l.jpg",
-     "id": "60fd6876e234",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0008",
-   "title": "小米推出米家筒灯 / 射灯 3 Pro 新品：国补价 129.2~169.2 元",
-   "summary": "IT之家 9 月 23 日消息，小米新上架了三款米家灯具新品。IT之家汇总如下： 米家筒灯 3 Pro，首发价 152 元，国补价 129.2 元 米家射灯 3 Pro，首发价 176 元，国补价 149.6 元 米家筒灯 3 Pro 人在感应版，首发价 199 元，国补价 169.2 元 活动期间晒单评价满足要求可返 10 元京东红包，预约且前 3 名购买用户还可获赠筒灯 3 Pro。 米家筒灯 3 Pro 采用弧面一体设计，无缝贴合天花板，简约隐于无形；采用米家定制 全光谱灯珠 ，显色指数高达 Ra97，通过光生物安全豁免级测试，无可视频闪。 米家筒",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "pro",
-    "129.2",
-    "169.2",
-    "xiaomi",
-    "mesh"
-   ],
-   "image": "img/2026-09-23/8f6b329e94901859.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "小米推出米家筒灯 / 射灯 3 Pro 新品：国补价 129.2~169.2 元",
-     "url": "https://www.ithome.com/1/006/031.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T15:59:56+00:00",
-     "summary": "IT之家 9 月 23 日消息，小米新上架了三款米家灯具新品。IT之家汇总如下： 米家筒灯 3 Pro，首发价 152 元，国补价 129.2 元 米家射灯 3 Pro，首发价 176 元，国补价 149.6 元 米家筒灯 3 Pro 人在感应版，首发价 199 元，国补价 169.2 元 活动期间晒单评价满足要求可返 10 元京东红包，预约且前 3 名购买用户还可获赠筒灯 3 Pro。 米家筒灯 3 Pro 采用弧面一体设计，无缝贴合天花板，简约隐于无形；采用米家定制 全光谱灯珠 ，显色指数高达 Ra97，通过光生物安全豁免级测试，无可视频闪。 米家筒灯 3 Pro 升级为 12W 大功率，光通量相较上一代提升 65% 达到 660lm，全系亮度大幅提升，空间照明更明亮清晰；同时支持色温亮度无极调节，色温覆盖 2700K~5700K，满足多场景照明需求，还采用缓开缓灭设计，避免瞬时强光刺激，呵护用眼健康。 这款产品采用深杯防眩设计，光源深藏 45mm，能够有效遮挡光源，减轻用眼疲劳；同时筒灯升级 80° 大光束角，减少暗区与阴影，全屋照亮更通透，满足日常多场景照明需求。 散热方面，米家筒灯 3 Pro 采用优质铝材散热器，搭配鳍片式散热结构，大幅增加散热面积，实现高效散热，保障产品长久运行稳定可靠。 智能体验方面，该产品搭载全新升级小米 Mesh 2.0 模组，相较小米 Mesh",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/17f35087-fda3-442e-ba11-4cc37d7b439c.jpg",
-     "id": "60b34505954a",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0010",
-   "title": "高驰推出 PACE 4 Pro 运动智能手表：机身重 38 克、蓝宝石镜面，2999 元",
-   "summary": "IT之家 9 月 23 日消息，高驰昨晚宣布推出 PACE 4 Pro 运动手表， 售价 2999 元 ，部分地区国补到手价 2,549.15 元。 COROS PACE 4 Pro 采用 5 级钛金属表圈搭配蓝宝石镜面，机身重 38 克，厚度薄至 11.8mm，搭配织物表带整体重 43 克，支持 50 米防水。 这款手表配备 1.47 英寸 AMOLED 显示屏，屏幕支持 2-3500 尼特亮度范围；搭载新一代光电心率传感器，可实现全天候实时心率监测。 这款手表内置扬声器与麦克风，支持 AI 语音操控，可实现语音播报配速、心率、转弯提示；支持语音标记，",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "pace",
-    "2999",
-    "bytedance",
-    "pro",
-    "coros"
-   ],
-   "image": "img/2026-09-23/b519f7446096304f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "高驰推出 PACE 4 Pro 运动智能手表：机身重 38 克、蓝宝石镜面，2999 元",
-     "url": "https://www.ithome.com/1/006/029.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T15:52:22+00:00",
-     "summary": "IT之家 9 月 23 日消息，高驰昨晚宣布推出 PACE 4 Pro 运动手表， 售价 2999 元 ，部分地区国补到手价 2,549.15 元。 COROS PACE 4 Pro 采用 5 级钛金属表圈搭配蓝宝石镜面，机身重 38 克，厚度薄至 11.8mm，搭配织物表带整体重 43 克，支持 50 米防水。 这款手表配备 1.47 英寸 AMOLED 显示屏，屏幕支持 2-3500 尼特亮度范围；搭载新一代光电心率传感器，可实现全天候实时心率监测。 这款手表内置扬声器与麦克风，支持 AI 语音操控，可实现语音播报配速、心率、转弯提示；支持语音标记，可在跑步轨迹中快速生成补水点、拍照机位标记点；此外，COROS MCP 支持接入豆包、WorkBuddy、ChatGPT、Claude、OpenClaw 等主流 AI 平台。 这款手表支持导入全球离线地形图 / 等高线；单频-高精度模式续航可达 60 小时，双频-超高精度模式续航为 40 小时，日常使用续航可达 21 天。 这款手表支持网易云音乐、小宇宙离线下载、支付宝离线支付，可遥控 GoPro / Insta360 / DJI 运动相机；支持与 Strava / 悦跑圈 / 两步路 / Keep / 微信运动 / 苹果健康等 20+ 平台数据同步，也支持手机消息提醒、查找手机功能。 IT之家附这款新品详细参数如下： 京东 高驰 ",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/91978071-739d-4078-9ca4-f1a6bc60032b.jpg",
-     "id": "4310786a220f",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0012",
-   "title": "京东方：玻璃基封装载板试验线全线拉通，24 层产品已送客户验证",
-   "summary": "IT之家 9 月 23 日消息，京东方 A 昨日发布投资者关系活动记录表公告，京东方董事长陈炎顺表示， 公司玻璃基封装载板试验线已全线拉通 ，24 层产品已经带给客户去验证了。 京东方 SVP、传感器及解决方案业务董事长兼 CEO 徐晓光表示，目前公司已经完成 24 层、尺寸超过 100×100 毫米玻璃基封装载板产品产出，并已在厂内完成相关可靠性测试。 IT之家获悉，京东方目前正与客户进行芯片上代后的电性能测试，将载板与真实 CPU、GPU 芯片封装后放入服务器运行。 对于后续量产进展，陈炎顺表示， 量产决策条件包括客户订单量及良率保证 ，希望在 20",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "2027"
-   ],
-   "image": "img/2026-09-23/ce9d2f2126339c57.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "京东方：玻璃基封装载板试验线全线拉通，24 层产品已送客户验证",
-     "url": "https://www.ithome.com/1/006/028.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T15:35:18+00:00",
-     "summary": "IT之家 9 月 23 日消息，京东方 A 昨日发布投资者关系活动记录表公告，京东方董事长陈炎顺表示， 公司玻璃基封装载板试验线已全线拉通 ，24 层产品已经带给客户去验证了。 京东方 SVP、传感器及解决方案业务董事长兼 CEO 徐晓光表示，目前公司已经完成 24 层、尺寸超过 100×100 毫米玻璃基封装载板产品产出，并已在厂内完成相关可靠性测试。 IT之家获悉，京东方目前正与客户进行芯片上代后的电性能测试，将载板与真实 CPU、GPU 芯片封装后放入服务器运行。 对于后续量产进展，陈炎顺表示， 量产决策条件包括客户订单量及良率保证 ，希望在 2027 年上半年之前，特别是争取 2027 年一季度，使相关产品达到量产投资决策条件。 相关阅读： 《 京东方与康宁公司签署合作备忘录：围绕玻璃基封装载板、可折叠玻璃、钙钛矿玻璃基板、光互连相关应用等合作 》 《 京东方：玻璃基封装载板试验线已通线并送样客户进入技术测试阶段，设计产能 1000 片 / 月 》",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/53ee1abb-8b2f-4fd8-93f7-0d264a0bae62.jpg?x-bce-process=image/format,f_auto",
-     "id": "2e976f1b95d1",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0013",
-   "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
-   "summary": "Founders shouldn't have to learn the hardest lessons the hardest way. TechCrunch Founder Summit is designed to make the challenges of starting a company easier and the highs that much greater.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "founder",
-    "summit",
-    "revealed",
-    "fundraising",
-    "hiring",
-    "insights"
-   ],
-   "image": "img/2026-09-23/7a34405d5e6df9bb.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
-     "url": "https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-09-22T15:21:49+00:00",
-     "summary": "Founders shouldn't have to learn the hardest lessons the hardest way. TechCrunch Founder Summit is designed to make the challenges of starting a company easier and the highs that much greater.",
-     "image": "",
-     "id": "04cb5c18383a",
-     "tags": [
-      "AI",
-      "Startups",
-      "Venture",
-      "TechCrunch Founder Summit"
-     ]
-    }
-   ]
-  },
-  {
    "key": "t0014",
-   "title": "縮短研發陣痛、提早揪出病灶，AI 助攻癌症醫療的三大關鍵",
-   "summary": "有醫師指出，人工智慧（AI）正以前所未有的步伐，在癌症照護鏈中扮演關鍵角色。從新藥研發、個人化治療，到早期篩檢 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-23/995b9a0e90d1af5c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "縮短研發陣痛、提早揪出病灶，AI 助攻癌症醫療的三大關鍵",
-     "url": "https://technews.tw/2026/09/23/ai-accelerates-cancer-treatment-breakthroughs",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-22T15:20:12+00:00",
-     "summary": "有醫師指出，人工智慧（AI）正以前所未有的步伐，在癌症照護鏈中扮演關鍵角色。從新藥研發、個人化治療，到早期篩檢 […]",
-     "image": "",
-     "id": "0a8b2542206b",
-     "tags": [
-      "AI 人工智慧",
-      "生物科技",
-      "醫療科技",
-      "AI 輔助",
-      "大型語言模型"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0015",
-   "title": "李飞飞谈 AI 安全：不能只让开发者评估自己的系统",
-   "summary": "北京时间 9 月 23 日，据彭博社报道，AI 先锋李飞飞呼吁由独立机构和公共部门对 AI 进行更多监督。她认为，对于能力日益强大的 AI 系统，其安全评估不应完全交由开发这些系统的公司负责。 作为斯坦福大学教授、World Labs 联合创始人，李飞飞周二表示，尽管 AI 公司的内部研究人员可以评估单个模型的能力和安全性，但这无法替代由政府、行业和学术机构共同制定的更广泛标准。 “我仍然认为，由独立机构以及学术界等公共部门制定基准非常重要。同时，行业和政府也应该共同承担责任。”李飞飞在接受彭博电视采访时表示。 随着 AI 系统的能力不断增强，人们对其潜",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-23/dca6b65085bf113a.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "李飞飞谈 AI 安全：不能只让开发者评估自己的系统",
-     "url": "https://www.ithome.com/1/006/026.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T15:19:32+00:00",
-     "summary": "北京时间 9 月 23 日，据彭博社报道，AI 先锋李飞飞呼吁由独立机构和公共部门对 AI 进行更多监督。她认为，对于能力日益强大的 AI 系统，其安全评估不应完全交由开发这些系统的公司负责。 作为斯坦福大学教授、World Labs 联合创始人，李飞飞周二表示，尽管 AI 公司的内部研究人员可以评估单个模型的能力和安全性，但这无法替代由政府、行业和学术机构共同制定的更广泛标准。 “我仍然认为，由独立机构以及学术界等公共部门制定基准非常重要。同时，行业和政府也应该共同承担责任。”李飞飞在接受彭博电视采访时表示。 随着 AI 系统的能力不断增强，人们对其潜在风险的担忧也在加剧。硅谷一些领导人警告称，这项技术发展速度过快，可能最终超出人类的控制。最近几周，Anthropic CEO 达里奥 · 阿莫代伊 (Dario Amodei) 和 OpenAI CEO 萨姆 · 奥特曼 (Sam Altman) 都呼吁放缓前沿模型的开发速度。两人将于周三在联合国安全理事会讨论 AI 安全问题。 李飞飞表示，AI 可能带来的生存性风险，最终取决于人类选择如何开发、治理和使用这项技术。她说，这一原则同样适用于 AI 以外的技术，从电力、蒸汽机到现代交通工具，人类社会同样需要在技术可能带来的益处与人身安全之间寻求平衡。 她指出，人类“掌握着技术的力量”。“我们必须掌握控制权。AI 关乎的不是 AI，而",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/a12b64cd-eca5-440c-b3ae-a20e63ba68af.png?x-bce-process=image/format,f_auto",
-     "id": "c8534b72de62",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0016",
-   "title": "市場對 AI 樂觀預期帶動美股記憶體類股上漲，美光、SK 海力士、SanDisk 股價受關注",
-   "summary": "隨著市場對人工智慧（AI）的樂觀情緒升溫，加上原油價格重挫有助於緩解通膨疑慮，半導體與記憶體類股於週二的美國股 […]",
+   "title": "Meta is making Muse more powerful and will let you video chat with it, too",
+   "summary": "Meta is quickly iterating on its new Muse AI agent, announcing a bunch of updates today that make the bot more capable and able to chat with you in more ways. Muse agents are getting their own email addresses that they can use for accomplishing tasks. You'll also be able to commu",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "sk-hynix",
-    "sandisk",
-    "hbm"
+    "able",
+    "mobile",
+    "voice-based",
+    "tasks.",
+    "agentic",
+    "chatgpt"
    ],
-   "image": "img/2026-09-23/7d88c8861fc7a489.webp",
+   "image": "img/2026-09-24/c82935cf55d55e3a.webp",
    "llm_enriched": false,
    "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "市場對 AI 樂觀預期帶動美股記憶體類股上漲，美光、SK 海力士、SanDisk 股價受關注",
-     "url": "https://finance.technews.tw/2026/09/23/market-optimism-surrounding-ai-drove-up-us-memory-stocks",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-09-22T15:00:33+00:00",
-     "summary": "隨著市場對人工智慧（AI）的樂觀情緒升溫，加上原油價格重挫有助於緩解通膨疑慮，半導體與記憶體類股於週二的美國股 […]",
-     "image": "",
-     "id": "82bc650fc014",
-     "tags": [
-      "AI 人工智慧",
-      "IC 設計",
-      "半導體",
-      "國際觀察",
-      "晶片"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0017",
-   "title": "消息称苹果搁置研发 AI 吊坠，曾设想以摄像头拓展 Siri 能力",
-   "summary": "IT之家 9 月 23 日消息，彭博社的马克 · 古尔曼（Mark Gurman）昨日（9 月 22 日）发布博文，报道称苹果曾在研发一款配备摄像头的人工智能可穿戴设备，产品形态类似挂坠，可佩戴在颈部、夹在衣物上，或固定于身体其他部位。 不过，该项目目前已被推迟，苹果暂未公布后续上市计划。 IT之家附上相关截图如下： 定位方面，消息称在苹果最初的计划中，这款设备被设想为一种“始终在线”的视觉感知终端，让 AI 更贴近用户的日常环境，在免手操作的情况下提供识别、记录和辅助服务。 功能方面，该设备能够通过摄像头收集用户周围的视觉信息，并将相关数据交由苹果新一",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "siri"
-   ],
-   "image": "img/2026-09-23/eb71b1fbf4fc79c9.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "消息称苹果搁置研发 AI 吊坠，曾设想以摄像头拓展 Siri 能力",
-     "url": "https://www.ithome.com/1/006/017.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T14:19:25+00:00",
-     "summary": "IT之家 9 月 23 日消息，彭博社的马克 · 古尔曼（Mark Gurman）昨日（9 月 22 日）发布博文，报道称苹果曾在研发一款配备摄像头的人工智能可穿戴设备，产品形态类似挂坠，可佩戴在颈部、夹在衣物上，或固定于身体其他部位。 不过，该项目目前已被推迟，苹果暂未公布后续上市计划。 IT之家附上相关截图如下： 定位方面，消息称在苹果最初的计划中，这款设备被设想为一种“始终在线”的视觉感知终端，让 AI 更贴近用户的日常环境，在免手操作的情况下提供识别、记录和辅助服务。 功能方面，该设备能够通过摄像头收集用户周围的视觉信息，并将相关数据交由苹果新一代 Siri 人工智能助手处理。早期消息还称，该设备可能配备麦克风，用于接收用户的语音指令。 古尔曼爆料称苹果公司目前已搁置该项目，目前尚不清楚苹果推迟该项目的具体原因，也不确定公司是否会在未来恢复开发。 隐私方面，如果苹果未来重启 AI 挂坠项目，持续采集视觉和语音数据可能带来明显的隐私与安全挑战，包括旁人被无意拍摄、敏感场景被记录，以及用户数据如何存储和处理等问题。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/6f062ec5-9431-4698-925a-553bb1dd9c81.png?x-bce-process=image/format,f_auto",
-     "id": "d276305a2dd0",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0018",
-   "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
-   "summary": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "snorkel",
-    "triples",
-    "valuation",
-    "demand",
-    "training",
-    "booms"
-   ],
-   "image": "img/2026-09-23/187b262fbc999417.webp",
-   "llm_enriched": false,
-   "sources": [
+    "The Verge AI",
     "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
-     "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-     "source": "TechCrunch AI",
+     "title": "Meta is making Muse more powerful and will let you video chat with it, too",
+     "url": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026",
+     "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-09-22T13:56:43+00:00",
-     "summary": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
-     "image": "",
-     "id": "e20ec45cd8a0",
+     "published": "2026-09-23T15:19:42+00:00",
+     "summary": "Meta is quickly iterating on its new Muse AI agent, announcing a bunch of updates today that make the bot more capable and able to chat with you in more ways. Muse agents are getting their own email addresses that they can use for accomplishing tasks. You'll also be able to communicate with your Muse […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_C.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "395f29300605",
      "tags": [
       "AI",
-      "Fundraising",
-      "Startups",
-      "data labeling",
-      "snorkel ai"
+      "Meta",
+      "News",
+      "Tech"
      ]
-    }
-   ]
-  },
-  {
-   "key": "t0019",
-   "title": "高通 CEO 安蒙：智能体时代并不是让 AI 替我们包办一切，而是让技术变得更实用",
-   "summary": "IT之家 9 月 23 日消息，在北京时间 9 月 23 日凌晨的 2026 高通骁龙峰会现场， 高通公司宣布推出第六代骁龙 8 超级至尊版移动平台和第六代骁龙 8 至尊版移动平台 ，官方表示这是“全球最快移动 CPU”。 高通公司总裁兼 CEO 安蒙（Cristiano Amon）谈到了关于 AI 时代的思考，他表示智能体时代已经到来。推理成为关键，边缘侧将发挥重要作用， 而骁龙正是面向智能体时代的处理器 。 安蒙表示：“智能体时代所承诺的， 并不是让 AI 替我们包办一切 ，而是让技术变得更加实用、更加直观，也更加契合人们的需求。” IT之家在峰会现",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "ceo"
-   ],
-   "image": "img/2026-09-23/aa7a06b3b003b73c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
+    },
     {
-     "title": "高通 CEO 安蒙：智能体时代并不是让 AI 替我们包办一切，而是让技术变得更实用",
-     "url": "https://www.ithome.com/1/006/015.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T13:52:58+00:00",
-     "summary": "IT之家 9 月 23 日消息，在北京时间 9 月 23 日凌晨的 2026 高通骁龙峰会现场， 高通公司宣布推出第六代骁龙 8 超级至尊版移动平台和第六代骁龙 8 至尊版移动平台 ，官方表示这是“全球最快移动 CPU”。 高通公司总裁兼 CEO 安蒙（Cristiano Amon）谈到了关于 AI 时代的思考，他表示智能体时代已经到来。推理成为关键，边缘侧将发挥重要作用， 而骁龙正是面向智能体时代的处理器 。 安蒙表示：“智能体时代所承诺的， 并不是让 AI 替我们包办一切 ，而是让技术变得更加实用、更加直观，也更加契合人们的需求。” IT之家在峰会现场获悉，安蒙认为，出色的智能体体验应当具备个性化、主动、响应迅速、值得信赖的特点， 最重要的是让用户毫不费力 。要实现这样的体验，意味着需要同时满足两方面的需求： 人们希望自己的终端始终直观易用、安全可靠且响应迅速； 智能体则需要理解情境信息并具备智能能力，从而理解意图、协调任务，并在获得同意的情况下采取行动。 骁龙旨在同时满足这两方面的需求，并覆盖多种终端，让智能可以在手机、PC、汽车、眼镜以及人们全天所依赖的其他终端之间无缝协同。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/1b351de2-b35b-48e7-9adf-ebffdbb9e265.jpg?x-bce-process=image/format,f_auto",
-     "id": "2744bfba6642",
-     "tags": []
+     "title": "ChatGPT mobile app gets voice-based agentic features",
+     "url": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-23T09:00:00+00:00",
+     "summary": "Pro and Plus users will be able to use the Work tab on their phones to complete agentic tasks.",
+     "image": "",
+     "id": "a8126a7f936a",
+     "tags": [
+      "AI",
+      "ChatGPT",
+      "OpenAI",
+      "voice"
+     ]
     }
    ]
   },
   {
    "key": "t0021",
-   "title": "New Anthropic, OpenAI models make same promise: A little more for a lot less money",
-   "summary": "The frontier AI model race has entered its comparison shopping phase.",
+   "title": "Anthropic says its biology lab has already found something big",
+   "summary": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "promise",
-    "little",
-    "lot",
-    "money",
-    "same",
-    "less"
+    "something",
+    "biology",
+    "anthropic",
+    "measure",
+    "faster",
+    "once"
    ],
-   "image": "img/2026-09-23/80f00d518516ea6a.webp",
+   "image": "img/2026-09-24/1ea813ea1276d467.webp",
    "llm_enriched": false,
    "sources": [
-    "Ars Technica AI"
+    "TechCrunch AI",
+    "Hacker News (100+)"
    ],
    "articles": [
     {
-     "title": "New Anthropic, OpenAI models make same promise: A little more for a lot less money",
-     "url": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-09-22T13:25:18+00:00",
-     "summary": "The frontier AI model race has entered its comparison shopping phase.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Claude-ChatGPT-500x500-1790110453.jpg",
-     "id": "f7a9a3b0af71",
-     "tags": [
-      "AI",
-      "Agentic workflows",
-      "Anthropic",
-      "frontier models",
-      "GPT-6"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0022",
-   "title": "Better prompt caching for GPT-6",
-   "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "caching",
-    "prompt",
-    "better",
-    "gpt-6",
-    "improves",
-    "higher"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "OpenAI"
-   ],
-   "articles": [
-    {
-     "title": "Better prompt caching for GPT-6",
-     "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-09-22T13:00:00+00:00",
-     "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-     "image": "",
-     "id": "b6b1e4118cdb",
-     "tags": [
-      "Product"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0024",
-   "title": "预填充吞吐超 330 Token/s：高通携手阶跃等为第六代骁龙 8 超级至尊版端侧适配 300 亿参数 AI 模型",
-   "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，高通宣布携手阶跃、无量火及江波龙，基于第六代骁龙 8 超级至尊版移动平台， 端侧适配与推理优化阶跃 StepEdge-Omni 30B-MoE 模型，并现场演示相关智能体助手。 该模型拥有 300 亿参数，依托混合专家架构，仅根据任务需要激活部分专家模块，以降低计算量和内存带宽需求。 合作方通过推理引擎、异构调度及存储方案优化，让模型运行内存需求较行业常规方案降低超过 50%，并支持在智能手机上稳定运行。 高通表示，该方",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "token",
-    "330",
-    "300"
-   ],
-   "image": "img/2026-09-23/0b0974220db4c37d.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "预填充吞吐超 330 Token/s：高通携手阶跃等为第六代骁龙 8 超级至尊版端侧适配 300 亿参数 AI 模型",
-     "url": "https://www.ithome.com/1/006/008.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T12:40:27+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，高通宣布携手阶跃、无量火及江波龙，基于第六代骁龙 8 超级至尊版移动平台， 端侧适配与推理优化阶跃 StepEdge-Omni 30B-MoE 模型，并现场演示相关智能体助手。 该模型拥有 300 亿参数，依托混合专家架构，仅根据任务需要激活部分专家模块，以降低计算量和内存带宽需求。 合作方通过推理引擎、异构调度及存储方案优化，让模型运行内存需求较行业常规方案降低超过 50%，并支持在智能手机上稳定运行。 高通表示，该方案无需调用云端服务，可以在本地完成邮件理解、行程规划、日历同步、航班及酒店推荐、行程分享和邮件草拟等任务。 测试数据显示，模型预填充吞吐性能超过每秒 330 个 Token，解码吞吐性能超过每秒 28 个 Token。 IT之家注：“模型预填充吞吐性能是指大语言模型在推理的预填充（prefill）阶段，每秒能够处理的输入词元（token）数量， 是衡量系统处理长提示词（prompt）和批量请求能力的关键指标。 业内人士认为，大参数 MoE 模型在手机端的部署，有助于推动低时延和隐私保护型智能体应用发展。不过，实际规模化应用仍取决于终端成本、功耗、模型可靠性及用户接受度等因素。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/99034397-98f5-4b2a-be59-7ce0b269d5c9.png",
-     "id": "e9bc26a3686e",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0025",
-   "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
-   "summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "qualcomm",
-    "smartphone",
-    "chips",
-    "emphasis",
-    "launches",
-    "top"
-   ],
-   "image": "img/2026-09-23/70e294b26c030aef.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
-     "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai",
+     "title": "Anthropic says its biology lab has already found something big",
+     "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big",
      "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-09-22T12:00:00+00:00",
-     "summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
+     "published": "2026-09-23T14:17:39+00:00",
+     "summary": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
      "image": "",
-     "id": "3a67f6fa3e51",
+     "id": "e8483fa4c1d3",
      "tags": [
       "AI",
-      "Hardware",
-      "Qualcomm"
+      "Biotech & Health",
+      "Anthropic"
      ]
-    }
-   ]
-  },
-  {
-   "key": "t0026",
-   "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
-   "summary": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "platform",
-    "disrupts",
-    "ai-assisted",
-    "compromised",
-    "accounts",
-    "12000"
-   ],
-   "image": "img/2026-09-23/7f974ca9f6e0c6ee.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI"
-   ],
-   "articles": [
+    },
     {
-     "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
-     "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000",
-     "source": "Ars Technica AI",
+     "title": "Once Claude can measure something, it can make it faster",
+     "url": "https://claude.dev/blog/how-we-made-claude-ai-faster",
+     "source": "Hacker News (100+)",
      "lang": "en",
-     "published": "2026-09-22T11:45:47+00:00",
-     "summary": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-500x500.jpg",
-     "id": "df5d53f03b14",
-     "tags": [
-      "AI",
-      "Biz & IT",
-      "Security",
-      "AI ATTACK",
-      "chatbots"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0027",
-   "title": "阿里千问平板 Qwen Book 现身 2026 骁龙峰会，定位原生 AI 智能体电脑",
-   "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，IT之家带来前方现场报道，在活动的宣传视频中， 高通展示了阿里千问平板 Qwen Book。 根据目前曝光的细节，Qwen Book 是一款智能体原生电脑，外观方面更接近于平板，项目仍处于早期阶段，主要侧重于办公室工作，集成 Qwen3.8-Max 和 Qwen3.8-Flash。 IT之家此前报道， 这款产品确定名称为 QwenBook ，宣传语为“你的第一台‘原生智能体电脑’”，形态为平板 + 键盘触摸板的组合设计，",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "qwen",
-    "book",
-    "qwenbook",
-    "3.8",
-    "alibaba",
-    "apple"
-   ],
-   "image": "img/2026-09-23/14906d87ef9b6997.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "阿里千问平板 Qwen Book 现身 2026 骁龙峰会，定位原生 AI 智能体电脑",
-     "url": "https://www.ithome.com/1/006/002.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T11:39:12+00:00",
-     "summary": "IT之家 9 月 23 日消息，夏威夷时间 9 月 22 日 9 点（北京时间 9 月 23 日 3 点）召开的 2026 骁龙峰会上，IT之家带来前方现场报道，在活动的宣传视频中， 高通展示了阿里千问平板 Qwen Book。 根据目前曝光的细节，Qwen Book 是一款智能体原生电脑，外观方面更接近于平板，项目仍处于早期阶段，主要侧重于办公室工作，集成 Qwen3.8-Max 和 Qwen3.8-Flash。 IT之家此前报道， 这款产品确定名称为 QwenBook ，宣传语为“你的第一台‘原生智能体电脑’”，形态为平板 + 键盘触摸板的组合设计，组成类似笔记本的使用体验。 QwenBook 平板机身部分配备 Type-C 接口，可外接扩展坞，下方键盘部分配备大面积触摸板。 QwenBook 的整体系统界面类似苹果 macOS，有一行 App 底栏，应用窗口位置随意可调，还能随时唤醒千问对话，应用中心包含钉钉、阿里云盘等阿里旗下 App。官方人员向IT之家确认新机系统基于安卓打造。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/9/f7716b99-d324-4cae-adb7-5b0c9b556cbb.jpg",
-     "id": "67864cf810df",
+     "published": "2026-09-23T11:23:40+00:00",
+     "summary": "Article URL: https://claude.dev/blog/how-we-made-claude-ai-faster/ Comments URL: https://news.ycombinator.com/item?id=49821196 Points: 144 # Comments: 90",
+     "image": "",
+     "id": "7d998d11cb8b",
      "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0028",
-   "title": "Lawsuit demands OpenAI pay for new school after ChatGPT used in shooting",
-   "summary": "British Columbia sues OpenAI, demands Tumbler Ridge shooter’s ChatGPT logs.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "demands",
-    "lawsuit",
-    "school",
-    "used",
-    "shooting",
-    "amazon"
-   ],
-   "image": "img/2026-09-23/61841edcb02bf5b8.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI"
-   ],
-   "articles": [
-    {
-     "title": "Lawsuit demands OpenAI pay for new school after ChatGPT used in shooting",
-     "url": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-pay-for-new-school-after-chatgpt-used-in-shooting",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-09-22T11:28:23+00:00",
-     "summary": "British Columbia sues OpenAI, demands Tumbler Ridge shooter’s ChatGPT logs.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2260756748-500x500-1790101320.jpg",
-     "id": "9071faa99f0c",
-     "tags": [
-      "AI",
-      "Policy",
-      "Canada",
-      "chatbot",
-      "ChatGPT"
-     ]
     }
    ]
   },
   {
    "key": "t0030",
-   "title": "美国纳斯达克综合指数周二盘中再创历史新高：科技股回暖 / 油价回落等因素驱动",
-   "summary": "IT之家 9 月 23 日消息， 美国纳斯达克综合指数（Nasdaq Composite）于美国当地时间周二（9 月 22 日）盘中再度刷新历史高位 ，其中科技股强势反弹叠加油价回落提振市场风险偏好，成为推动指数突破的关键力量。 IT之家发稿前，美国当地时间 9 月 22 日纳斯达克综合指数盘中最高触及 27,272.72 点 ，超越此前于 6 月 1 日创下的盘中纪录 27,190.21 点 。 伴随着纳斯达克综合指数上涨，道琼斯工业平均指数与标普 500 指数亦同步走高，分别上涨 0.30% 与 0.19% 。 华尔街日报认为，带动纳斯达克综合指数上",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-09-23/57e7dce10961ffd8.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "美国纳斯达克综合指数周二盘中再创历史新高：科技股回暖 / 油价回落等因素驱动",
-     "url": "https://www.ithome.com/1/005/999.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-09-22T10:55:13+00:00",
-     "summary": "IT之家 9 月 23 日消息， 美国纳斯达克综合指数（Nasdaq Composite）于美国当地时间周二（9 月 22 日）盘中再度刷新历史高位 ，其中科技股强势反弹叠加油价回落提振市场风险偏好，成为推动指数突破的关键力量。 IT之家发稿前，美国当地时间 9 月 22 日纳斯达克综合指数盘中最高触及 27,272.72 点 ，超越此前于 6 月 1 日创下的盘中纪录 27,190.21 点 。 伴随着纳斯达克综合指数上涨，道琼斯工业平均指数与标普 500 指数亦同步走高，分别上涨 0.30% 与 0.19% 。 华尔街日报认为，带动纳斯达克综合指数上涨的主要驱动因素，是科技股领涨，尤其是人工智能（AI）相关权重股及半导体板块表现强劲；此外叠加原油价格跌至 11 日低位，缓解通胀担忧并提升风险资产吸引力。 investopedia 分析师认为若科技股盈利预期持续改善、通胀数据保持温和，纳指有望在短期内巩固新高并挑战更高目标。然而，美联储货币政策路径及全球地缘政治风险仍是主要不确定性来源。",
-     "image": "https://qimg.ithome.com/newfiles/2026/9/c51e7f45-4c40-446d-bd1f-68408d24b368.jpg",
-     "id": "f269f22857e9",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0031",
-   "title": "llm 0.36",
-   "summary": "Release: llm 0.36 New OpenAI models: gpt-6-sol for GPT-6 Sol and gpt-6-luna for GPT-6 Luna . #1702 Model plugins can now declare supports_conversation = False for models that only accept single-turn prompts. LLM raises llm.ConversationNotSupported when these models receive assist",
+   "title": "At AI Day Singapore, NVIDIA and Partners Showcase AI Advancements Across Southeast Asia",
+   "summary": "NVIDIA AI Day Singapore, which takes place Sept. 22-23 at the Raffles City Convention Centre, is offering attendees opportunities to explore the hands-on training, expert-led sessions and advanced tools to accelerate their work in AI and high-performance computing. At the event, ",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "llm",
-    "0.36",
-    "models",
-    "funding",
-    "gpt-6",
-    "gpt-6-sol"
+    "nvidia",
+    "accelerate",
+    "robot",
+    "warp",
+    "mjwarp",
+    "robotics"
    ],
-   "image": "",
+   "image": "img/2026-09-24/125ba2d5c5f373c9.webp",
    "llm_enriched": false,
    "sources": [
-    "Simon Willison"
+    "Hugging Face",
+    "NVIDIA Blog"
    ],
    "articles": [
     {
-     "title": "llm 0.36",
-     "url": "https://simonwillison.net/2026/Sep/22/llm",
-     "source": "Simon Willison",
+     "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+     "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+     "source": "Hugging Face",
      "lang": "en",
-     "published": "2026-09-22T10:48:37+00:00",
-     "summary": "Release: llm 0.36 New OpenAI models: gpt-6-sol for GPT-6 Sol and gpt-6-luna for GPT-6 Luna . #1702 Model plugins can now declare supports_conversation = False for models that only accept single-turn prompts. LLM raises llm.ConversationNotSupported when these models receive assistant or tool history, and llm chat rejects them before starting a session. See Models that do not support conversations . The first plugin to use this is llm-typesafe . #1692 Reasoning traces in the Markdown output of llm logs are now wrapped in <details><summary> tags. #1701 Plus bug fixes from five new contributors . ",
+     "published": "2026-09-23T10:41:40+00:00",
+     "summary": "",
      "image": "",
-     "id": "1b1371e9ec40",
-     "tags": [
-      "openai",
-      "llm"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0032",
-   "title": "How to Claim Your Cut of Apple’s $250 Million Siri Settlement",
-   "summary": "Apple may pay out up to $95 for each eligible iPhone purchased by someone who felt misled about Siri’s release. You have until December 21 to submit a claim.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "apple",
-    "siri",
-    "claim",
-    "settlement",
-    "cut",
-    "million"
-   ],
-   "image": "img/2026-09-23/e10e2ea29a29da2f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI"
-   ],
-   "articles": [
+     "id": "a70f8ac64edf",
+     "tags": []
+    },
     {
-     "title": "How to Claim Your Cut of Apple’s $250 Million Siri Settlement",
-     "url": "https://www.wired.com/story/how-to-claim-your-cut-of-apple-250-million-siri-settlement",
-     "source": "Wired AI",
+     "title": "At AI Day Singapore, NVIDIA and Partners Showcase AI Advancements Across Southeast Asia",
+     "url": "https://blogs.nvidia.com/blog/ai-day-singapore",
+     "source": "NVIDIA Blog",
      "lang": "en",
-     "published": "2026-09-22T10:19:13+00:00",
-     "summary": "Apple may pay out up to $95 for each eligible iPhone purchased by someone who felt misled about Siri’s release. You have until December 21 to submit a claim.",
-     "image": "https://media.wired.com/photos/6ab2a6f4d38d5a63a756fca7/master/pass/GettyImages-1683464893%20(1).jpg",
-     "id": "9cde5f7aa71c",
+     "published": "2026-09-22T18:30:22+00:00",
+     "summary": "NVIDIA AI Day Singapore, which takes place Sept. 22-23 at the Raffles City Convention Centre, is offering attendees opportunities to explore the hands-on training, expert-led sessions and advanced tools to accelerate their work in AI and high-performance computing. At the event, NVIDIA and its partners are showcasing breakthrough AI advancements across the Southeast Asia region […]",
+     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/09/ai-day-singapore-key-visul-1920x1080-1-842x450.jpg",
+     "id": "4d5959d698eb",
      "tags": [
-      "Gear",
-      "Gear / Gear News and Events",
-      "Gear / Products / Phones",
-      "Siri",
-      "iPhone"
+      "AI",
+      "AI Days",
+      "Artificial Intelligence",
+      "Economic Development",
+      "Events"
      ]
     }
    ]
   },
   {
    "key": "t0033",
-   "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
-   "summary": "OpenAI is launching two new models, which it says are cut from the same cloth as Astra.",
+   "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+   "summary": "Article URL: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system Comments URL: https://news.ycombinator.com/item?id=49820134 Points: 439 # Comments: 486",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "boasting",
-    "fewer",
-    "mistakes",
-    "lower",
-    "launches",
-    "cost"
+    "enzyme",
+    "system",
+    "claude",
+    "discovers",
+    "novel",
+    "crispr-like"
    ],
-   "image": "img/2026-09-23/0532bed5c2d70de6.webp",
+   "image": "img/2026-09-24/93e2d90a2cd468cc.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Hacker News (100+)",
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+     "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-09-23T10:06:47+00:00",
+     "summary": "Article URL: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system Comments URL: https://news.ycombinator.com/item?id=49820134 Points: 439 # Comments: 486",
+     "image": "",
+     "id": "f82afb648776",
+     "tags": []
+    },
+    {
+     "title": "Anthropic’s biolab made a discovery it’s comparing to Crispr",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-23T10:00:00+00:00",
+     "summary": "Anthropic says its AI Claude has \"autonomously discovered\" a new enzyme system similar to machinery behind the powerful gene-editing tool Crispr. It's the first result from Anthropic's newly-launched wet lab and an early test of Claude's usefulness for science as the company prepares to go public. The company says Claude found the enzyme system after […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB364_CLAUDE_2_C_96d15c-2.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "ad93c749ed65",
+     "tags": [
+      "AI",
+      "Anthropic",
+      "News",
+      "Science"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0035",
+   "title": "Google Beam expands with new regions, partners, and customers",
+   "summary": "Google Beam promotional animation",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "customers",
+    "beam",
+    "google",
+    "expands",
+    "regions",
+    "ema"
+   ],
+   "image": "img/2026-09-24/54b974ccb4c5bc12.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Google AI",
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Google Beam expands with new regions, partners, and customers",
+     "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
+     "source": "Google AI",
+     "lang": "en",
+     "published": "2026-09-23T10:00:00+00:00",
+     "summary": "Google Beam promotional animation",
+     "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Beam_hero.max-600x600.format-webp.webp",
+     "id": "e896566878a9",
+     "tags": [
+      "Google Workspace",
+      "Google Research",
+      "AI"
+     ]
+    },
+    {
+     "title": "Ema raises $77M as AI starts eating into enterprise software and services",
+     "url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-23T04:00:00+00:00",
+     "summary": "Ema has raised $140 million to date and has more than 50 enterprise customers, including Google and Microsoft.",
+     "image": "",
+     "id": "3c250389bd47",
+     "tags": [
+      "AI",
+      "Enterprise",
+      "Startups",
+      "Accel",
+      "AI agents"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0037",
+   "title": "Gemini 3.8 TTS Playground",
+   "summary": "Tool: Gemini 3.8 TTS Playground Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts . They come with a library of over 2,000 voices, plus the ability to create a custom voice with \"just a 30-second audio sample of your v",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "3.8",
+    "tts",
+    "gemini",
+    "playground",
+    "voice",
+    "google"
+   ],
+   "image": "img/2026-09-24/83f04e5a745d5b2a.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Simon Willison",
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "Gemini 3.8 TTS Playground",
+     "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground",
+     "source": "Simon Willison",
+     "lang": "en",
+     "published": "2026-09-23T09:12:27+00:00",
+     "summary": "Tool: Gemini 3.8 TTS Playground Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts . They come with a library of over 2,000 voices, plus the ability to create a custom voice with \"just a 30-second audio sample of your voice or a voice you have the rights to use\". I vibe coded this bring-your-own-key playground interface with GPT-6 Astra, taking advantage of the open CORS policy of the underlying Gemini API. A notable feature of the API is that it makes it easy to define a full conversation between multiple characters, each with diffe",
+     "image": "https://static.simonwillison.net/static/2026/tts-playground.webp",
+     "id": "e61359e960f8",
+     "tags": [
+      "text-to-speech",
+      "gemini"
+     ]
+    },
+    {
+     "title": "谷歌推出 Gemini 3.8 Flash / Flash-Lite 文本转语音模型，每一行台词都能精确控制",
+     "url": "https://www.ithome.com/1/006/509.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T07:31:11+00:00",
+     "summary": "IT之家 9 月 23 日消息，谷歌今日宣布，Gemini 家族新增两款全新文本转语音模型，将语音生成 从静态预设转变为动态创意工作室 ，能够帮助创作者、开发者和企业打造更丰富、更具表现力的音频体验，同时为 Gemini Notebook 和 Google Vids 等产品改进用户体验。 两款新模型分别为 Gemini 3.8 Flash TTS 和 Gemini 3.8 Flash-Lite TTS ，定位各有不同： Gemini 3.8 Flash TTS ：面向深度创意方向和角色设计，可通过自然语言提示从头创建全新语音，在游戏、沉浸式有声读物、播客和互动媒体中赋予角色生命力，还可对表演提示、节奏、方言转换等进行精细控制。 Gemini 3.8 Flash-Lite TTS ：面向大容量、高性价比规模场景，针对大容量配音、音频内容创作和富有表现力的语音代理进行了优化，可对音调、节奏和表现力细微差别进行精细控制。 据IT之家了解，用户可以 从原有 30 种原始语音扩展到无限语音库 。该模型的具体功能包括： 生成式语音设计：可通过自然语言提示，在 100 多种语言和方言中自定义角色、口音和语音特征，从头创建定制语音。 扩展语音库：可访问 2000 多种现成语音，覆盖广泛语言，包括墨西哥西班牙语、魁北克法语、苏格兰英语等区域变体。 语音复制：仅需 30 秒音频样本即可重现一致的声音特",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/1569ae7b-3533-4116-b70b-881499871c82.png",
+     "id": "3a57f451cd41",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0043",
+   "title": "Gemini 3.8 text-to-speech says hello",
+   "summary": "",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "text-to-speech",
+    "3.8",
+    "gemini",
+    "google",
+    "hello",
+    "url"
+   ],
+   "image": "img/2026-09-24/d316a3e3f8823ac2.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Hacker News (100+)",
+    "Google DeepMind"
+   ],
+   "articles": [
+    {
+     "title": "Gemini 3.8 text-to-speech",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-09-23T07:29:23+00:00",
+     "summary": "Article URL: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/ Comments URL: https://news.ycombinator.com/item?id=49817615 Points: 242 # Comments: 118",
+     "image": "",
+     "id": "f6fab29d9844",
+     "tags": []
+    },
+    {
+     "title": "Gemini 3.8 text-to-speech says hello",
+     "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+     "source": "Google DeepMind",
+     "lang": "en",
+     "published": "2026-09-23T07:25:14+00:00",
+     "summary": "",
+     "image": "",
+     "id": "914ed32ad555",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0073",
+   "title": "Anthropic推出Claude Opus 5.5，AI越界行為減少85%",
+   "summary": "Anthropic周二（9/22）推出新一代旗艦AI模型Claude Opus 5.5，為Claude 5.5系列首款模型，不只效能與成本有所改善，在一項新的安全評估中，試圖突破限制邊界的行為也較Opus 5及Claude Mythos 5.1減少約85%。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "5.5",
+    "opus",
+    "claude",
+    "fable",
+    "anthropic",
+    "5.1"
+   ],
+   "image": "img/2026-09-24/2babe1a5439b2b51.webp",
+   "llm_enriched": false,
+   "sources": [
+    "iThome",
+    "數位時代"
+   ],
+   "articles": [
+    {
+     "title": "Anthropic推出Claude Opus 5.5，AI越界行為減少85%",
+     "url": "https://www.ithome.com.tw/news/179162",
+     "source": "iThome",
+     "lang": "zh",
+     "published": "2026-09-23T03:09:44+00:00",
+     "summary": "Anthropic周二（9/22）推出新一代旗艦AI模型Claude Opus 5.5，為Claude 5.5系列首款模型，不只效能與成本有所改善，在一項新的安全評估中，試圖突破限制邊界的行為也較Opus 5及Claude Mythos 5.1減少約85%。",
+     "image": "",
+     "id": "3ce73dbb2b9d",
+     "tags": []
+    },
+    {
+     "title": "Claude Opus 5.5登場！開發者實測直呼「從Codex殺回來」，效能直逼Fable、價格砍6成",
+     "url": "https://www.bnext.com.tw/article/92356/anthropic-claude-opus-5-5-launch-cost-cut",
+     "source": "數位時代",
+     "lang": "zh",
+     "published": "2026-09-23T03:00:00+00:00",
+     "summary": "Anthropic發布Claude Opus 5.5，效能媲美Fable 5.1，成本降40%且於第三方評測奪冠；但高推理強度下省錢效果較不明顯。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-09/27z9-1790132332.png?w=900&output=webp",
+     "id": "c4e6dfba6e28",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0000",
+   "title": "DIGITIMES Today：蘋果擬重返AI伺服器市場 |  川習會排場升級難掩AI裂痕 |  Meta Muse再掀Agentic AI熱潮",
+   "summary": "早安。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "agentic",
+    "muse",
+    "meta",
+    "digitimes",
+    "hbm",
+    "apple"
+   ],
+   "image": "img/2026-09-24/c0a4c260d0b3ef0a.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "DIGITIMES Today：蘋果擬重返AI伺服器市場 |  川習會排場升級難掩AI裂痕 |  Meta Muse再掀Agentic AI熱潮",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769577_ZBO6TGCE6EQQTO8HR4XNX&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T21:18:00+00:00",
+     "summary": "早安。",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769577-1-r4xnx_l.jpg",
+     "id": "bdc4ed56f484",
+     "tags": []
+    },
+    {
+     "title": "Meta Muse再掀Agentic AI熱潮　CPU封裝供應鏈長單在握",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000769528_A216ZQ881SM0SM9SOIGGF&wpidx=3",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:00+00:00",
+     "summary": "Meta旗下AI助理（AI agent）「Muse」市場迴響熱烈，近年代理式AI（Agentic AI）應用加速崛起，也讓AI基礎設施缺貨潮從GPU、高頻寬記憶體（HBM），進一步蔓延至...",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769528-1-oiggf_l.jpg",
+     "id": "081a35801463",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0051",
+   "title": "StrictlyVC at TechCrunch Disrupt 2026: Inside the changing rules of venture capital",
+   "summary": "StrictlyVC joins TechCrunch Disrupt 2026 to discuss the changing VC landscape thanks to AI. Get your Investor Pass to join these exclusive sessions. Save $200 before September 25 at 11:59 p.m. PT.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "disrupt",
+    "techcrunch",
+    "save",
+    "200",
+    "2026",
+    "strictlyvc"
+   ],
+   "image": "img/2026-09-24/591ae734cc45e444.webp",
    "llm_enriched": false,
    "sources": [
     "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
-     "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna",
+     "title": "StrictlyVC at TechCrunch Disrupt 2026: Inside the changing rules of venture capital",
+     "url": "https://techcrunch.com/2026/09/23/strictlyvc-at-techcrunch-disrupt-2026-inside-the-changing-rules-of-venture-capital",
      "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-09-22T10:00:00+00:00",
-     "summary": "OpenAI is launching two new models, which it says are cut from the same cloth as Astra.",
+     "published": "2026-09-23T06:30:00+00:00",
+     "summary": "StrictlyVC joins TechCrunch Disrupt 2026 to discuss the changing VC landscape thanks to AI. Get your Investor Pass to join these exclusive sessions. Save $200 before September 25 at 11:59 p.m. PT.",
      "image": "",
-     "id": "b31a42e189d6",
+     "id": "a35c7e7921ad",
      "tags": [
       "AI",
-      "Astra",
-      "ChatGPT",
-      "OpenAI"
+      "Fundraising",
+      "Startups",
+      "Venture",
+      "StrictlyVC"
+     ]
+    },
+    {
+     "title": "3 days left to save up to $200 and make impactful connections at TechCrunch Disrupt 2026",
+     "url": "https://techcrunch.com/2026/09/23/3-days-left-to-save-up-to-200-and-make-impactful-connections-at-techcrunch-disrupt-2026",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-23T06:00:00+00:00",
+     "summary": "3 days to save up to $200 on your TechCrunch Disrupt 2026 pass, plus 50% off a second. Make impactful connections with 10,000+ tech leaders. Last day to save is September 25 at 11:59 p.m. PT. Register today.",
+     "image": "",
+     "id": "2798abfc79b6",
+     "tags": [
+      "AI",
+      "Biotech & Health",
+      "Climate",
+      "Fintech",
+      "Fundraising"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0054",
+   "title": "曝小米 18 Pro 系列手机新增「原色」风格影调，支持 Open Gate 片门全开",
+   "summary": "IT之家 9 月 23 日消息，小米 18 Pro 系列手机已于今晚正式发布，搭载第六代骁龙 8 至尊版系列移动平台，后置徕卡 2 亿大底主摄 + 2 亿大底长焦，配备 AI 百变背屏，售价 5999 元起。 据博主 @DSP-Charles 透露，小米 18 Pro 系列手机支持 Open Gate 片门全开， 同时新增了「原色」风格影调 。IT之家注：Open Gate 模式是一种视频拍摄模式，指在录制时利用整个图像传感器区域进行记录，也被称为“片门全开”模式。该模式可记录下传感器可记录的最大分辨率画面，提供更多的原始画面信息。 从博主分享的截图来看",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "pro",
+    "xiaomi",
+    "gate",
+    "5999"
+   ],
+   "image": "img/2026-09-24/fa69bfb046729db6.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "曝小米 18 Pro 系列手机新增「原色」风格影调，支持 Open Gate 片门全开",
+     "url": "https://www.ithome.com/1/006/484.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T06:27:44+00:00",
+     "summary": "IT之家 9 月 23 日消息，小米 18 Pro 系列手机已于今晚正式发布，搭载第六代骁龙 8 至尊版系列移动平台，后置徕卡 2 亿大底主摄 + 2 亿大底长焦，配备 AI 百变背屏，售价 5999 元起。 据博主 @DSP-Charles 透露，小米 18 Pro 系列手机支持 Open Gate 片门全开， 同时新增了「原色」风格影调 。IT之家注：Open Gate 模式是一种视频拍摄模式，指在录制时利用整个图像传感器区域进行记录，也被称为“片门全开”模式。该模式可记录下传感器可记录的最大分辨率画面，提供更多的原始画面信息。 从博主分享的截图来看， 小米 18 Pro 系列手机的摄影风格支持原色、生动和经典 。 据介绍，小米 18 Pro 系列搭载全焦段徕卡光学三摄，包含徕卡 2 亿主摄（1/1.28″大底，超高动态范围）+ 徕卡 2 亿长焦（1/1.56″大底，进光量大幅提升），支持最近 12cm 微距拍摄。系列新机还首发「传奇一瞬」大模型影像，可还原相机光学质感。 相关阅读： 《 小米秋季新品发布会一文汇总：18 Pro 系列登场、透明版时隔 6 年回归、平板手环手表齐上新 》",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/6dd99caa-e53c-4330-b2b6-6b80843f3743.jpg?x-bce-process=image/auto-orient,o_1",
+     "id": "e176d63032f8",
+     "tags": []
+    },
+    {
+     "title": "小米 18 Pro 系列手机确认搭载汇顶触控 + 指纹 + 音频方案",
+     "url": "https://www.ithome.com/1/006/474.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T05:59:45+00:00",
+     "summary": "IT之家 9 月 23 日消息，小米 18 Pro 系列手机已于今晚正式发布，搭载第六代骁龙 8 至尊版系列移动平台，后置徕卡 2 亿大底主摄 + 2 亿大底长焦，配备 AI 百变背屏，售价 5999 元起。 IT之家注意到，汇顶科技官方今日发文， 宣布小米 18 Pro 系列搭载汇顶触控 + 指纹 + 音频方案 。 触控升级：小米 18 Pro 系列主屏采用汇顶 GT9926 系列触控芯片，可实现毫秒级响应。全新硬件降噪技术加持，信噪比较上一代提升 100%。该系列背屏同样搭载汇顶 GT9615V 触控芯片。 超声指纹：汇顶超声波指纹方案基于自研 CMOS Sensor 架构，支持油湿解锁。 智能音频：汇顶智能音频放大器搭载 CoolPWM 创新架构，可释放扬声器潜力，适用于追剧、游戏场景。 相关阅读： 《 小米 18 Pro 手机发布：首发第六代骁龙 8 至尊版、一体式纯平背屏，5999 元起 》 《 小米 18 Pro Max 手机发布：首发第六代骁龙 8 超级至尊版、8500mAh 金沙江电池，6999 元起 》 《 小米 18 Pro 系列透明特别版手机发布，9999 元起 》",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/6dd99caa-e53c-4330-b2b6-6b80843f3743.jpg?x-bce-process=image/format,f_auto",
+     "id": "e9b00d4460bd",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0057",
+   "title": "小米秋季新品发布会一文汇总：18 Pro 系列登场、透明版时隔 6 年回归、平板手环手表齐上新",
+   "summary": "小米 18 Pro 系列，来了！就在今天（9 月 23 日）19:00，小米秋季新品发布会如期举行。 本场发布会的主角自然是 全新小米 18 Pro ，双尺寸旗舰正式登场；同台亮相的还有小米平板 9 系列、小米手环 11 三彩釉陶瓷版、小米手表 S5 41mm，以及一众生态科技新品。 接下来，IT之家小编就带大家盘一盘，小米这波新品到底有哪些亮点。 一、小米 18 Pro 系列 先把目光拉回小米 18 Pro 系列。还是熟悉的双尺寸，但这一代从里到外，升级幅度可不小。 设计上，新一代自研屏幕封装工艺安排上了， 极窄四等边框直接压到 0.99mm ；中框采",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "pro",
+    "xiaomi",
+    "compute"
+   ],
+   "image": "img/2026-09-24/a33a61e17edde451.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "小米秋季新品发布会一文汇总：18 Pro 系列登场、透明版时隔 6 年回归、平板手环手表齐上新",
+     "url": "https://www.ithome.com/1/006/476.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T06:03:11+00:00",
+     "summary": "小米 18 Pro 系列，来了！就在今天（9 月 23 日）19:00，小米秋季新品发布会如期举行。 本场发布会的主角自然是 全新小米 18 Pro ，双尺寸旗舰正式登场；同台亮相的还有小米平板 9 系列、小米手环 11 三彩釉陶瓷版、小米手表 S5 41mm，以及一众生态科技新品。 接下来，IT之家小编就带大家盘一盘，小米这波新品到底有哪些亮点。 一、小米 18 Pro 系列 先把目光拉回小米 18 Pro 系列。还是熟悉的双尺寸，但这一代从里到外，升级幅度可不小。 设计上，新一代自研屏幕封装工艺安排上了， 极窄四等边框直接压到 0.99mm ；中框采用大微弧四曲设计，R 角弧面宽度较上代至高增加 37.7%；背屏也还在，并且升级成了一体式纯平。 配色一共四款，除了主打的“星河蓝”，还带来冰桃粉和经典黑白双色。 性能的全面升级这次是重头戏，卢伟冰直接放话： “牙膏挤爆了。” 小米 18 Pro 系列全球首发高通新一代骁龙旗舰移动平台。 其中，小米 18 Pro 首发第六代骁龙 8 至尊版，小米 18 Pro Max 首发第六代骁龙 8 超级至尊版，两颗芯片均基于最新一代 2nm 旗舰制程。 具体来看，第六代骁龙 8 至尊版的 CPU 主频直接拉到 5GHz，移动平台历史最高；GPU 性能提升 35% 的同时，功耗降低 40%；NPU 推理性能提升 80% 之余，综合算力再提升 1",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/d3c1980b-6a8d-4b52-8048-4acd618b7e1a.jpg?x-bce-process=image/format,f_auto",
+     "id": "501aef3c6d0d",
+     "tags": []
+    },
+    {
+     "title": "小米 18 Pro 手机发布：首发第六代骁龙 8 至尊版、一体式纯平背屏，5999 元起",
+     "url": "https://www.ithome.com/1/006/426.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T03:58:46+00:00",
+     "summary": "IT之家 9 月 23 日消息，在今晚举行的小米秋季新品发布会上，小米正式发布小米 18 Pro 手机，售价 5999 元起。 12GB+256GB：5999 元 12GB+512GB：6999 元 16GB+512GB：7999 元 16GB+1TB：8999 元 IT之家在发布会现场获悉，小米 18 Pro 手机采用新一代自研屏幕封装工艺，0.99mm 极窄四等边框；机身采用大微弧四曲中框设计，手感更圆润；搭载一体式纯平背屏，同样为极窄四等边。 小米 18 Pro 首发 第六代骁龙 8 至尊版 ，采用最新一代 2nm 旗舰制程，CPU 为移动平台历史最高主频 5GHz，GPU 性能提升 35%、功耗降低 40%，NPU 推理性能提升 80%、综合算力提升 15%。 小米 18 Pro 搭载新一代小米金沙江电池，硅含量达 32%，电池容量升级至 7000mAh；支持 UWB 超宽带互联、IP66/68/69 防尘防水。 小米 18 Pro 采用 7514 线性马达，瞬态振动量提升 75%；全新超宽频赛博马达覆盖 26 大类、183 个场景，支持精细化振效调校。 小米 18 Pro 手机屏幕尺寸为 6.4 英寸，采用全新 M11 发光体系、新型绿色发光材料、全 RGB 像素排列，峰值亮度 4000nits；支持硬件级智能防窥，防窥开启时显示清晰锐利，关闭后正视角度无损。 小米 18",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/0ef6646e-1136-4c9a-b389-6744e8f44c17.jpg?x-bce-process=image/format,f_auto",
+     "id": "6346566eb9b2",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0001",
+   "title": "從雲端算力到邊緣實體智能，剖析 AI 晶片架構與光通訊技術新趨勢",
+   "summary": "半導體產業正迎接由人工智慧（AI）驅動的全新競爭格局的情況下，一場主題為「從雲端到邊緣，AI 運算架構驅動晶片 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "compute",
+    "chip"
+   ],
+   "image": "img/2026-09-24/08a75c7a75dd233d.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "從雲端算力到邊緣實體智能，剖析 AI 晶片架構與光通訊技術新趨勢",
+     "url": "https://technews.tw/2026/09/24/analyzing-new-trends-in-ai-chip-architecture-and-optical-communication-technology",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:37+00:00",
+     "summary": "半導體產業正迎接由人工智慧（AI）驅動的全新競爭格局的情況下，一場主題為「從雲端到邊緣，AI 運算架構驅動晶片 […]",
+     "image": "",
+     "id": "7e631990dae9",
+     "tags": [
+      "AI 人工智慧",
+      "GPU",
+      "IC 設計",
+      "半導體",
+      "晶片"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0002",
+   "title": "（專訪）IMAPS理事長鄭心圃：台積電CoWoS對先進封裝領域「重要一課」",
+   "summary": "「先進封裝」已成為AI時代不可或缺的半導體製程技術。晶片異質整合日益複雜外，「後段前段化」的趨勢，更讓台積電、三星電子（Samsung Electronics）、英特爾（Intel...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "samsung",
+    "imaps",
+    "cowos",
+    "intel",
+    "chip",
+    "electronics"
+   ],
+   "image": "img/2026-09-24/06c0e707d1f245d4.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "（專訪）IMAPS理事長鄭心圃：台積電CoWoS對先進封裝領域「重要一課」",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000769402_15S5AAQCL8YJSH3TGN8S6&wpidx=3",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:00+00:00",
+     "summary": "「先進封裝」已成為AI時代不可或缺的半導體製程技術。晶片異質整合日益複雜外，「後段前段化」的趨勢，更讓台積電、三星電子（Samsung Electronics）、英特爾（Intel...",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769402-1-gn8s6_l.jpg",
+     "id": "e8f5dc667411",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0003",
+   "title": "蘋果擬重返AI伺服器市場　SK海力士美國記憶體布局添供應鏈想像",
+   "summary": "沉寂十餘年後，蘋果（Apple）可能重新叩響對外銷售企業級伺服器市場的大門。據The Information、路透（Reuters）等報導，蘋果正在開發搭載自研M8 Ultra晶片的企業級...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "sk-hynix",
+    "hbm",
+    "apple",
+    "chip",
+    "information"
+   ],
+   "image": "img/2026-09-24/384e02f8ea9c025e.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "蘋果擬重返AI伺服器市場　SK海力士美國記憶體布局添供應鏈想像",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=10&id=0000769163_D6I2RYHR5Q0GM24L9NUVR&wpidx=3",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:00+00:00",
+     "summary": "沉寂十餘年後，蘋果（Apple）可能重新叩響對外銷售企業級伺服器市場的大門。據The Information、路透（Reuters）等報導，蘋果正在開發搭載自研M8 Ultra晶片的企業級...",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769163-1-9nuvr_l.jpg",
+     "id": "1b1672b61d75",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0004",
+   "title": "中國大模型據「低價高能」市場　享護城河與變現力優勢",
+   "summary": "中國AI產業正從政策驅動的技術追趕，邁入以商業變現為核心的生態競爭新階段，中國AI本土化已從單一零組件替代，演進為全堆疊系統級最佳化。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-09-24/84d200ce26f73be7.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "中國大模型據「低價高能」市場　享護城河與變現力優勢",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769159_K152037I4QUKWGLD6Q5VC&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:00+00:00",
+     "summary": "中國AI產業正從政策驅動的技術追趕，邁入以商業變現為核心的生態競爭新階段，中國AI本土化已從單一零組件替代，演進為全堆疊系統級最佳化。",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769159-2-6q5vc.jpg",
+     "id": "c9274645e382",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0005",
+   "title": "阿里真武V900、華為昇騰960提前　本土晶片填補NVIDIA算力空窗",
+   "summary": "阿里巴巴日前在雲棲大會上正式發布自研AI晶片真武V900。平頭哥半導體團隊打造的這款新品，阿里集團執行長吳泳銘號稱「中國目前最強的AI晶片」，而V900正是要填補NVI...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "v900",
+    "900",
+    "alibaba",
+    "huawei",
+    "960",
+    "nvidia"
+   ],
+   "image": "img/2026-09-24/756841c6f40a3f99.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "阿里真武V900、華為昇騰960提前　本土晶片填補NVIDIA算力空窗",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769462_ZUA5W85F5HR2A636P87WG&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:00+00:00",
+     "summary": "阿里巴巴日前在雲棲大會上正式發布自研AI晶片真武V900。平頭哥半導體團隊打造的這款新品，阿里集團執行長吳泳銘號稱「中國目前最強的AI晶片」，而V900正是要填補NVI...",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769462-1-p87wg_l.jpg",
+     "id": "68fae65b1aa3",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0006",
+   "title": "AI眼鏡隱私爭議升溫　澳法監管收緊、中國銷量翻倍成長",
+   "summary": "人工智慧（AI）眼鏡正呈現「市場需求升溫、監管同步踩煞車」的雙軌發展。澳洲政府正考慮禁止具攝影功能的智慧眼鏡進入政府工作場所，法國則因未經同意拍攝、性騷擾與職...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "regulation"
+   ],
+   "image": "img/2026-09-24/31cc97a73cdd8eef.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "AI眼鏡隱私爭議升溫　澳法監管收緊、中國銷量翻倍成長",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769538_J3N4SPUT4B80EK7SVOIU8&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:00+00:00",
+     "summary": "人工智慧（AI）眼鏡正呈現「市場需求升溫、監管同步踩煞車」的雙軌發展。澳洲政府正考慮禁止具攝影功能的智慧眼鏡進入政府工作場所，法國則因未經同意拍攝、性騷擾與職...",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769538-1-voiu8_l.jpg",
+     "id": "1280fad217aa",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0007",
+   "title": "Meta Muse甫上線爆資安疑慮　攻擊者可借AI權限作亂",
+   "summary": "Meta人工智慧代理（AI agent）Muse被爆出macOS版本存在零時差漏洞（zero-day vulnerability），再讓外界重新檢視對AI代理大開權限的資安風險。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "safety",
+    "muse",
+    "macos"
+   ],
+   "image": "img/2026-09-24/f27797f751e60afd.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "Meta Muse甫上線爆資安疑慮　攻擊者可借AI權限作亂",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000769419_T163P0G822SQRL859PAIZ&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:00+00:00",
+     "summary": "Meta人工智慧代理（AI agent）Muse被爆出macOS版本存在零時差漏洞（zero-day vulnerability），再讓外界重新檢視對AI代理大開權限的資安風險。",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769419-1-9paiz_l.jpg",
+     "id": "d4781d7504c8",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0008",
+   "title": "澳洲AI投資熱潮延燒　資料中心2030年上看1,067億美元",
+   "summary": "澳洲政府報告指出，人工智慧（AI）將推動未來40年的經濟成長。而澳洲是全球資料中心投資的首選目的地之一，也有潛力在全球AI供應鏈當中創造價值。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "datacenter",
+    "2030",
+    "1067",
+    "funding"
+   ],
+   "image": "img/2026-09-24/5484943785566c49.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "澳洲AI投資熱潮延燒　資料中心2030年上看1,067億美元",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=9&id=0000769408_2G358BJMLH8UQ99RU3D1K&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-09-23T16:00:00+00:00",
+     "summary": "澳洲政府報告指出，人工智慧（AI）將推動未來40年的經濟成長。而澳洲是全球資料中心投資的首選目的地之一，也有潛力在全球AI供應鏈當中創造價值。",
+     "image": "https://img.digitimes.com/newsimg/2026/0924/769408-1-u3d1k_l.jpg",
+     "id": "aeeff89fa60e",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0009",
+   "title": "當AI 開始替人類買東西：亞馬遜封殺 Meta Muse，AI 代理購物為何讓平台如此緊張？",
+   "summary": "亞馬遜於 9 月 21 日封鎖 Meta 的 AI 代理人應用 Muse，讓它加入已被封鎖的 ChatGPT、Claude、Perplexity、Grok 等名單。這場圍繞代理式購物的平台封鎖戰， 顯示 AI 代理人在日常生活中面臨結構性阻力。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "amazon",
+    "xai",
+    "muse",
+    "perplexity"
+   ],
+   "image": "img/2026-09-24/5e9d58b7ddc3adf3.webp",
+   "llm_enriched": false,
+   "sources": [
+    "INSIDE"
+   ],
+   "articles": [
+    {
+     "title": "當AI 開始替人類買東西：亞馬遜封殺 Meta Muse，AI 代理購物為何讓平台如此緊張？",
+     "url": "https://www.inside.com.tw/article/42468-amazon-blocks-meta-muse-agentic-ai-platform-war-2026",
+     "source": "INSIDE",
+     "lang": "zh",
+     "published": "2026-09-23T15:50:00+00:00",
+     "summary": "亞馬遜於 9 月 21 日封鎖 Meta 的 AI 代理人應用 Muse，讓它加入已被封鎖的 ChatGPT、Claude、Perplexity、Grok 等名單。這場圍繞代理式購物的平台封鎖戰， 顯示 AI 代理人在日常生活中面臨結構性阻力。",
+     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/05/2a3767d9-d5cc-4dd0-abb1-0d40cd575cb0.webp",
+     "id": "8d1927d8c68d",
+     "tags": [
+      "人工智慧",
+      "INSIDE 研究室",
+      "AI Agent",
+      "亞馬遜",
+      "Meta"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0010",
+   "title": "Anthropic 宣布成立生命科学团队和实验室，Claude 自主发现新型酶系统",
+   "summary": "IT之家 9 月 24 日消息，当地时间 9 月 23 日，Anthropic 宣布成立生命科学研究团队及自有分子生物学实验室，并公布了一项由 Claude 参与生物学研究取得的早期成果。 在人类科学家仅提供宏观研究方向的情况下，Claude 自主发现了一种此前未被表征的酶系统，Anthropic 将其命名为阵列关联逆转录酶（Array-associated Reverse Transcriptases，ART）。 该发现来自 Anthropic 旧金山湾区实验室，是其生命科学团队自 2026 年春季组建以来的首个公开成果。相关预印本论文已于同日发布，尚",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "dna"
+   ],
+   "image": "img/2026-09-24/d0ecc2c18daf3757.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "Anthropic 宣布成立生命科学团队和实验室，Claude 自主发现新型酶系统",
+     "url": "https://www.ithome.com/1/006/524.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T15:45:52+00:00",
+     "summary": "IT之家 9 月 24 日消息，当地时间 9 月 23 日，Anthropic 宣布成立生命科学研究团队及自有分子生物学实验室，并公布了一项由 Claude 参与生物学研究取得的早期成果。 在人类科学家仅提供宏观研究方向的情况下，Claude 自主发现了一种此前未被表征的酶系统，Anthropic 将其命名为阵列关联逆转录酶（Array-associated Reverse Transcriptases，ART）。 该发现来自 Anthropic 旧金山湾区实验室，是其生命科学团队自 2026 年春季组建以来的首个公开成果。相关预印本论文已于同日发布，尚待同行评审。 Anthropic 表示，分享这一早期成果既是为了展示 Claude 在科学发现中的能力，也是为了让更广泛的科研社区了解其工作方向。 在发现过程中，Anthropic 向 Claude 下达的指令是：在一个庞大的 DNA 序列数据库中搜索新型逆转录酶。人类科学家的介入仅限于最初的提示词设计和后续的实验室验证，其余工作全部由约 950 个 Claude 智能体并行完成。 IT之家注：逆转录酶（RT）是一类能够以 RNA 为模板合成 DNA 的酶。 根据 Anthropic 公布的细节，这些智能体在 21 小时内消耗约 2.1 亿个词元，从超过 20 万个逆转录酶中筛选出约 3500 个新候选系统，再收窄至 20 个最值得",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/c4b247c1-1e76-4ab2-b368-e70901ea3891.jpg?x-bce-process=image/format,f_auto",
+     "id": "b9767caf8846",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0012",
+   "title": "OpenAI CEO 奥尔特曼联合国演讲：AI 可能走向文艺复兴，也可能带来工业革命式动荡",
+   "summary": "IT之家 9 月 24 日消息，当地时间 9 月 23 日，OpenAI CEO 萨姆 · 奥尔特曼（Sam Altman）在联合国安理会就 AI 议题发表讲话，讨论 AI 发展带来的机遇与风险，并呼吁加强国际合作，建立针对前沿 AI 系统的能力评估、风险评估、安全防护和人类监督标准。 他表示，随着 AI 能力的快速提升，相关技术的潜在收益和风险都逐渐变得更加直接且显现。他提出，AI 可能更像一场充满创造力与发现的文艺复兴，也可能像一场引发动荡与混乱的工业革命。 奥尔特曼表示，最佳版本的 AI 不是让人成为机器中的齿轮，也不是优化生活直到需要人的部分消失",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-09-24/86c483b7ee128529.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "OpenAI CEO 奥尔特曼联合国演讲：AI 可能走向文艺复兴，也可能带来工业革命式动荡",
+     "url": "https://www.ithome.com/1/006/521.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T15:31:33+00:00",
+     "summary": "IT之家 9 月 24 日消息，当地时间 9 月 23 日，OpenAI CEO 萨姆 · 奥尔特曼（Sam Altman）在联合国安理会就 AI 议题发表讲话，讨论 AI 发展带来的机遇与风险，并呼吁加强国际合作，建立针对前沿 AI 系统的能力评估、风险评估、安全防护和人类监督标准。 他表示，随着 AI 能力的快速提升，相关技术的潜在收益和风险都逐渐变得更加直接且显现。他提出，AI 可能更像一场充满创造力与发现的文艺复兴，也可能像一场引发动荡与混乱的工业革命。 奥尔特曼表示，最佳版本的 AI 不是让人成为机器中的齿轮，也不是优化生活直到需要人的部分消失，而是让人们在复杂世界中拥有更多能动性。许多事情 AI 不能也不应自动化。 他认为，AI 可以帮助人们学习、创造、发现和解决问题，但随着系统更加自主，也可能出现人类无法理解或控制其决策、权力过度集中的情况。 他在这里指出，AI 能力越强、越自主，就越可能跑得比制度快，把权力集中到少数人手中，或做出人们无法理解、无法控制的决定。 他特别提到递归自我改进（即 AI 参与 AI 开发的过程）。奥尔特曼称，如果 AI 开发过程进一步自动化，技术进步速度可能快速提升，因此需要对相关发展保持高度谨慎。 奥尔特曼将 AI 发展可能出现的严重问题概括为两个方向。第一种是失去对未来的控制：AI 进展太快，人们无法跟上，也无法在需要时干预。 他说，行业",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/16338bdf-e11c-4b44-a673-56f16bf52128.jpg",
+     "id": "b09cb4b30a9f",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0013",
+   "title": "苹果推送 watchOS 27.0.1 更新：修复 Apple Watch Series 12/Ultra 4 随机重启故障",
+   "summary": "IT之家 9 月 24 日消息，科技媒体 AppleInsider 昨日（9 月 23 日）发布博文，报道称苹果公司面向 Apple Watch Series 12 和 Apple Watch Ultra 4 智能手表， 紧急推送 watchOS 27.0.1 更新（24R365），修复随机重启故障。 图源： @吃螃蟹的快乐 IT之家此前报道，部分刚入手 Apple Watch Ultra 4 以及 Apple Watch Series 12 的用户反馈， 设备会出现意外重启的情况 。设备的诊断日志显示，这些死机重启问题和苹果神经网络引擎（Apple N",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "watch",
+    "apple",
+    "series",
+    "watchos",
+    "27.0.1",
+    "ultra"
+   ],
+   "image": "img/2026-09-24/42d56da2b89f8da8.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "苹果推送 watchOS 27.0.1 更新：修复 Apple Watch Series 12/Ultra 4 随机重启故障",
+     "url": "https://www.ithome.com/1/006/520.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T15:21:13+00:00",
+     "summary": "IT之家 9 月 24 日消息，科技媒体 AppleInsider 昨日（9 月 23 日）发布博文，报道称苹果公司面向 Apple Watch Series 12 和 Apple Watch Ultra 4 智能手表， 紧急推送 watchOS 27.0.1 更新（24R365），修复随机重启故障。 图源： @吃螃蟹的快乐 IT之家此前报道，部分刚入手 Apple Watch Ultra 4 以及 Apple Watch Series 12 的用户反馈， 设备会出现意外重启的情况 。设备的诊断日志显示，这些死机重启问题和苹果神经网络引擎（Apple Neural Engine）有关。 根据上述两款智能手表用户反馈，重启有时候发生在编辑表盘、拨打电话、使用 Siri 时，有时候打开 Apple 地图、App Store 或记录锻炼时；部分设备处于闲置状态时，也出现重启情况。 报道称苹果公司紧急发布 watchOS 27.0.1 更新，聚焦于修复新款 Apple Watch 的随机重启问题。 用户可在 Apple Watch 的“设置”中进入“通用”和“软件更新”下载安装。不过更新时设备需保持至少 50% 电量并连接 Wi‑Fi，也可通过 iPhone 上的 Apple Watch 应用更新。 相关阅读： 《 部分用户反映苹果 Apple Watch Ultra 4/Series 1",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/d75e95a8-e382-45f7-884c-7559a8c48474.jpg",
+     "id": "f1192abeb068",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0015",
+   "title": "微软 Surface Pro 12 与 Laptop 13 升级高通骁龙 X2 Plus 处理器，基础内存从 8GB 提升至 16GB 且价格大涨",
+   "summary": "IT之家 9 月 24 日消息，当地时间 9 月 23 日，微软在高通 2026 骁龙峰会上发布了新一代 Surface Pro 12 英寸和 Surface Laptop 13 英寸新品。 两款产品均搭载高通骁龙 X2 Plus 处理器，同时推出了一款集成触觉反馈的 Surface Mouse 鼠标。 新品将于 10 月 13 日起在部分市场上市。Surface Pro 12 英寸起售价从去年的 799.99 美元 （现汇率约合 5,371 元人民币） 涨至 1,149.99 美元 （IT之家注：现汇率约合 7,720 元人民币） ，Surface L",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "surface",
+    "laptop",
+    "plus",
+    "microsoft"
+   ],
+   "image": "img/2026-09-24/a9a5ace223ac2397.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "微软 Surface Pro 12 与 Laptop 13 升级高通骁龙 X2 Plus 处理器，基础内存从 8GB 提升至 16GB 且价格大涨",
+     "url": "https://www.ithome.com/1/006/517.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T14:48:09+00:00",
+     "summary": "IT之家 9 月 24 日消息，当地时间 9 月 23 日，微软在高通 2026 骁龙峰会上发布了新一代 Surface Pro 12 英寸和 Surface Laptop 13 英寸新品。 两款产品均搭载高通骁龙 X2 Plus 处理器，同时推出了一款集成触觉反馈的 Surface Mouse 鼠标。 新品将于 10 月 13 日起在部分市场上市。Surface Pro 12 英寸起售价从去年的 799.99 美元 （现汇率约合 5,371 元人民币） 涨至 1,149.99 美元 （IT之家注：现汇率约合 7,720 元人民币） ，Surface Laptop 13 英寸也从 899.99 美元 （现汇率约合 6,042 元人民币） 涨到 1,199 美元 （现汇率约合 8,049 元人民币） 。 好消息是，两款设备的基础内存也已经从上一代的 8GB 提升至 16GB，最高可选 24GB LPDDR5x 内存和 512GB 存储。 微软称，得益于骁龙 X2 Plus 的六核 CPU，新机在 Office 生产力负载中最高提速 17%，图形性能提升超过 60%，NPU 本地 AI 推理速度最高提升 95%，电池续航提升最高 18%。 IT之家注：骁龙 X2 Plus 发布于今年 1 月，采用 3nm 制程，集成 Hexagon NPU，AI 算力为 80 TOPS。 Surfac",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/e826c305-e7ff-449f-ba51-ed248cd0a2fe.jpg?x-bce-process=image/format,f_auto",
+     "id": "235d3741fa24",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0016",
+   "title": "高通发布第二代骁龙音频平台至尊版：AI 能力翻倍、功耗降低 40%",
+   "summary": "IT之家 9 月 24 日消息，在夏威夷举办的 2026 骁龙峰会上，高通在宣布第六代骁龙 8 至尊版和第六代骁龙 8 超级至尊版芯片后， 今天发布第二代骁龙音频平台至尊版。 这也是高通首款融合优质音频、语音技术、终端侧智能与连接能力的音频平台，助力音频可穿戴设备开启智能体全新体验。 该平台整合骁龙畅听技术、终端侧 AI、安全云连接智能以及超低功耗 Wi‑Fi 6E，能够主动感知、理解用户需求并做出无缝响应，在保留高品质音频体验的基础上，带来更加直观个性化的交互体验。 音频体验层面，平台搭载 aptX Lossless 无损音频、XPAN 扩展个人局域网",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "gops",
+    "128"
+   ],
+   "image": "img/2026-09-24/7f8b1566bc56eeb3.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "高通发布第二代骁龙音频平台至尊版：AI 能力翻倍、功耗降低 40%",
+     "url": "https://www.ithome.com/1/006/516.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T14:41:13+00:00",
+     "summary": "IT之家 9 月 24 日消息，在夏威夷举办的 2026 骁龙峰会上，高通在宣布第六代骁龙 8 至尊版和第六代骁龙 8 超级至尊版芯片后， 今天发布第二代骁龙音频平台至尊版。 这也是高通首款融合优质音频、语音技术、终端侧智能与连接能力的音频平台，助力音频可穿戴设备开启智能体全新体验。 该平台整合骁龙畅听技术、终端侧 AI、安全云连接智能以及超低功耗 Wi‑Fi 6E，能够主动感知、理解用户需求并做出无缝响应，在保留高品质音频体验的基础上，带来更加直观个性化的交互体验。 音频体验层面，平台搭载 aptX Lossless 无损音频、XPAN 扩展个人局域网技术，突破传统蓝牙连接距离限制；配备第五代自适应主动降噪、cVc 回声与噪声抑制技术，搭配多麦克风方案，强化降噪、人声拾取效果，嘈杂环境下也可保障通话以及 AI 语音交互稳定可靠。 硬件形态上，平台覆盖耳塞、头戴耳机、开放式音频设备、音频眼镜、带摄像头耳机等多类产品。高通将提供参考设计方案，帮助厂商加快产品从原型到商用落地。 性能方面，第二代骁龙音频平台至尊版实现了音频可穿戴设备终端侧 AI 能力的显著跃升，与前代平台（第一代骁龙 S7 音频平台的峰值 AI 算力为 64 GOPS、每周期可执行 128 次 MAC 运算）相比，AI 能力（峰值 AI 算力为 128 GOPS、每周期可执行 256 次 MAC 运算）提升翻倍，并支持",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/da0cfe8f-b1d4-4d6e-ac46-827da5f57838.png",
+     "id": "a29fdaab83fc",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0017",
+   "title": "已证实首例：澳大利亚政府网站遭 OpenAI 智能体入侵",
+   "summary": "9 月 23 日，据路透社报道，澳大利亚总理安东尼 · 阿尔巴尼斯（Anthony Albanese）表示，OpenAI 开发的一款 AI 智能体在 6 月未经授权侵入了澳大利亚政府网站，访问了公共和非公共文件。这是已知的首例 AI 入侵政府网站事件。 这起入侵事件将成为美国以外最引人注目的 AI 智能体访问外部系统的事件之一，并可能进一步加剧外界对 AI 开发者控制技术能力的担忧。 阿尔巴尼斯在纽约对记者表示，事件涉及 OpenAI 智能体未经授权访问由 Services Australia 管理的面向公众的 Medicare 统计报告服务门户。 他称",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-09-24/e2bd2eb34de43775.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "已证实首例：澳大利亚政府网站遭 OpenAI 智能体入侵",
+     "url": "https://www.ithome.com/1/006/515.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T14:39:37+00:00",
+     "summary": "9 月 23 日，据路透社报道，澳大利亚总理安东尼 · 阿尔巴尼斯（Anthony Albanese）表示，OpenAI 开发的一款 AI 智能体在 6 月未经授权侵入了澳大利亚政府网站，访问了公共和非公共文件。这是已知的首例 AI 入侵政府网站事件。 这起入侵事件将成为美国以外最引人注目的 AI 智能体访问外部系统的事件之一，并可能进一步加剧外界对 AI 开发者控制技术能力的担忧。 阿尔巴尼斯在纽约对记者表示，事件涉及 OpenAI 智能体未经授权访问由 Services Australia 管理的面向公众的 Medicare 统计报告服务门户。 他称，现阶段据信没有个人信息被访问，但调查仍在进行中。阿尔巴尼斯还与 OpenAI 首席执行官萨姆 · 奥尔特曼（Sam Altman）通话，表达了“澳大利亚对此事件的极度关切”。 OpenAI 未立即回应路透社的置评请求。过去两个月，OpenAI 多次在事发后很久才披露其失控或越轨 AI 智能体引发的黑客或其他事件，有时是因为它只是很晚才发现相关活动，有时则是因为它选择完全不披露恶意活动。 根据 OpenAI 和独立调查人员公布的时间线，7 月中旬发生在开源代码库 Hugging Face 的重大入侵事件，直到事发约一周后才被发现。这起事件也引发了全球对 AI 模型能力的讨论。 竞争对手 Anthropic、谷歌旗下 Gemini 和",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/bdb25217-3752-4465-8868-484c256ec190.jpg?x-bce-process=image/format,f_auto",
+     "id": "d345de61c054",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0018",
+   "title": "黄仁勋对 AI 公司放话：要求监管就不应获得反垄断豁免",
+   "summary": "北京时间 9 月 24 日，据路透社报道，英伟达 CEO 黄仁勋 (Jensen Huang) 认为，AI 公司不应获得反垄断法或责任法的豁免。 在周三播出的《纽约时报》播客节目中，黄仁勋接受了近两个小时的采访，就 OpenAI 智能体入侵 Hugging Face 一事进行了广泛讨论。Hugging Face 是开源 AI 软件中心，在本月被英伟达以 130 亿美元收购。 黄仁勋一直反对对 AI 安全进行全面监管，即便 OpenAI 和 Anthropic 等实验室呼吁进行此类监管。他重申了自己的立场，即 AI 实验室有责任测试其产品，只有在确信模型安",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "regulation"
+   ],
+   "image": "img/2026-09-24/871d73f177ceed72.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "黄仁勋对 AI 公司放话：要求监管就不应获得反垄断豁免",
+     "url": "https://www.ithome.com/1/006/514.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-09-23T14:36:38+00:00",
+     "summary": "北京时间 9 月 24 日，据路透社报道，英伟达 CEO 黄仁勋 (Jensen Huang) 认为，AI 公司不应获得反垄断法或责任法的豁免。 在周三播出的《纽约时报》播客节目中，黄仁勋接受了近两个小时的采访，就 OpenAI 智能体入侵 Hugging Face 一事进行了广泛讨论。Hugging Face 是开源 AI 软件中心，在本月被英伟达以 130 亿美元收购。 黄仁勋一直反对对 AI 安全进行全面监管，即便 OpenAI 和 Anthropic 等实验室呼吁进行此类监管。他重申了自己的立场，即 AI 实验室有责任测试其产品，只有在确信模型安全后才会发布。 根据《纽约时报》公布的文字记录，黄仁勋说：“不过，考虑到他们所从事工作的复杂性，如果要求在反垄断法或产品责任方面获得监管豁免，我认为这说不通。当你要求监管时，不应该要求豁免现有的监管规定。” Anthropic CEO 达里奥 · 阿莫代伊 (Dario Amodei) 本月在一篇文章中呼吁给予 AI 实验室反垄断豁免，允许它们在 AI 安全问题上开展合作。美国财政部长贝森特等一些美国官员曾表示，AI 公司要求获得责任豁免，但没有点名具体是哪几家公司。 在采访的其他部分，黄仁勋表示，他并不反对针对 AI 具体应用产品制定监管规定，例如自动驾驶汽车。 黄仁勋称：“汽车作为一种产品，尤其是自动驾驶出租车，本身就受到大量监",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/9/9edf70d1-68c0-4823-8009-a46aa69e84d0.png?x-bce-process=image/format,f_auto",
+     "id": "3665f5c13866",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0019",
+   "title": "不靠漲價也能救毛利：AI 正把「菜單工程」變餐廳新財務槓桿",
+   "summary": "通膨蔓延、食材成本劇增與人力短缺，正讓餐飲業的營運數學變得空前艱難。過往業者習慣將「調漲售價」視為拆解成本危機的萬靈丹，然而根據餐飲管理軟體平台 Craftable 的資料，自疫情爆發以來，餐飲價格已累計攀升超過 30%，消費者的價格敏感度已逼近臨界點，繼續盲目漲價只會引發顧客流失。面對價格上漲空間封頂的窘境，Craftable 產品經理 Henry Escobar 指出，業者已無法單靠轉嫁成本來守住毛利，而是必須將目光轉向餐廳最重要的財務槓桿：菜單。 菜單瘦身：精減 SKU 釋放廚房與供應鏈壓力 過去被視為品牌宣傳工具的菜單，如今正經歷轉型，成為掌控成",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "sku",
+    "craftable"
+   ],
+   "image": "img/2026-09-24/d679bd3af749f229.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechOrange 科技報橘"
+   ],
+   "articles": [
+    {
+     "title": "不靠漲價也能救毛利：AI 正把「菜單工程」變餐廳新財務槓桿",
+     "url": "https://techorange.com/2026/09/24/ai-menu-engineering",
+     "source": "TechOrange 科技報橘",
+     "lang": "zh",
+     "published": "2026-09-23T14:33:00+00:00",
+     "summary": "通膨蔓延、食材成本劇增與人力短缺，正讓餐飲業的營運數學變得空前艱難。過往業者習慣將「調漲售價」視為拆解成本危機的萬靈丹，然而根據餐飲管理軟體平台 Craftable 的資料，自疫情爆發以來，餐飲價格已累計攀升超過 30%，消費者的價格敏感度已逼近臨界點，繼續盲目漲價只會引發顧客流失。面對價格上漲空間封頂的窘境，Craftable 產品經理 Henry Escobar 指出，業者已無法單靠轉嫁成本來守住毛利，而是必須將目光轉向餐廳最重要的財務槓桿：菜單。 菜單瘦身：精減 SKU 釋放廚房與供應鏈壓力 過去被視為品牌宣傳工具的菜單，如今正經歷轉型，成為掌控成本與提升效率的核心工具。過於複雜的菜單往往會直接衝擊獲利能力，過多的品項（SKU）不僅造成庫存管理混亂、增加食材腐敗與浪費，更會拖慢廚房的出餐節奏。 許多餐飲巨頭已開始進行「菜單瘦身」，例如知名餐飲集團 TAO Group 透過數據分析，每年主動精減高達 20% 的 SKU，成功降低了廚房備料與供應鏈營運的複雜度。透過數位菜單與持續性的優化調整，餐廳得以將過往以年為單位的菜單更新週期，縮短為常態性的動態調整，使廚房效率獲得有效提升。 從事後記錄到事前預測，以 AI 翻轉食材浪費 除了簡化品項，AI 在預測性分析上的突破，更徹底改變了食材管理與備料邏輯。傳統的菜單分析僅能記錄過去的銷售成績，而結合機器學習的 AI 系統則能交叉比對歷史",
+     "image": "https://techorange.com/app/uploads/2026/09/9877b4c9c1a71ba0-720x480.jpg",
+     "id": "3afbe2ef8d25",
+     "tags": [
+      "AI 人工智慧"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0020",
+   "title": "Meta Connect 2026 live blog: On the ground at Mark Zuckerberg’s next big product launch",
+   "summary": "It's time once again for Meta's annual September product launch event, and The Verge is on the ground in Menlo Park to cover the show live. Meta says that today's keynote by Mark Zuckerberg will be about how \"Meta is building a future for everyone\" - something he wrote at length ",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "ground",
+    "product",
+    "mark",
+    "zuckerberg",
+    "launch",
+    "live"
+   ],
+   "image": "img/2026-09-24/e8f778fa08580871.webp",
+   "llm_enriched": false,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Meta Connect 2026 live blog: On the ground at Mark Zuckerberg’s next big product launch",
+     "url": "https://www.theverge.com/tech/998457/meta-connect-2026-live-blog-mark-zuckerberg-keynote",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-23T14:30:00+00:00",
+     "summary": "It's time once again for Meta's annual September product launch event, and The Verge is on the ground in Menlo Park to cover the show live. Meta says that today's keynote by Mark Zuckerberg will be about how \"Meta is building a future for everyone\" - something he wrote at length about in a recent […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK169_Mark_Zuckerburg_CVIRGINIA_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "cb0c28937af7",
+     "tags": [
+      "AI",
+      "Gadgets",
+      "Meta",
+      "News",
+      "Tech"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0022",
+   "title": "【科技早餐】Meta 測試 AI 助理通話由真人接手，OpenAI、Anthropic 同日推低價模型",
+   "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊Meta 測試真人接手 AI 助理通話，因告知不足暫停 Meta 的 AI 助理 Muse 可依使用者指示致電商家，處理訂位、詢價及查詢商品等事項。《路透》查閱 Meta 內部貼文發現，公司曾在員工測試中，讓真人承包人員接手部分由 Muse 發起的電話。部分員工擔心，如果沒有清楚告知執行方式，承包人員可能在通話中接觸使用者的敏感資訊。Muse 上線時強調代理工作的隔離措施，真人參與通話的安排也因此受到員工質疑。 《路透》報導，Meta 一名主管承認，開始測試由承包人員代打電話時，沒有做好適當告知，並表示",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-09-24/3e16cff1e9aa36e3.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechOrange 科技報橘"
+   ],
+   "articles": [
+    {
+     "title": "【科技早餐】Meta 測試 AI 助理通話由真人接手，OpenAI、Anthropic 同日推低價模型",
+     "url": "https://techorange.com/2026/09/24/meta-muse-ai-assistant-human-call-test",
+     "source": "TechOrange 科技報橘",
+     "lang": "zh",
+     "published": "2026-09-23T13:30:00+00:00",
+     "summary": "【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊Meta 測試真人接手 AI 助理通話，因告知不足暫停 Meta 的 AI 助理 Muse 可依使用者指示致電商家，處理訂位、詢價及查詢商品等事項。《路透》查閱 Meta 內部貼文發現，公司曾在員工測試中，讓真人承包人員接手部分由 Muse 發起的電話。部分員工擔心，如果沒有清楚告知執行方式，承包人員可能在通話中接觸使用者的敏感資訊。Muse 上線時強調代理工作的隔離措施，真人參與通話的安排也因此受到員工質疑。 《路透》報導，Meta 一名主管承認，開始測試由承包人員代打電話時，沒有做好適當告知，並表示公司已暫時撤回這項功能。Meta 對外回應，測試是為了取得回饋，完善安全與隱私措施；若未來公開推出真人接手功能，會提供適當告知。報導並未證實敏感資料已經外洩。Muse 原有的 AI 通話功能與這次暫停的真人接手測試應分開看待，後者是否重新推出及如何向使用者揭露，仍待 Meta 後續說明。 ＊OpenAI、Anthropic 同日推新模型，AI 模型價格同步下調 OpenAI 與 Anthropic 在 9 月 22 日分別發表新模型，將降低使用價格列為重點。Anthropic 推出 Claude Opus 5.5，表示該模型在典型工作負載下，執行成本比前代 Opus 5 低約 40%；若以每百萬詞元計價，輸入價格為 4 美元、輸出價",
+     "image": "https://techorange.com/app/uploads/2026/09/b50eaeeb6b0e9d8b-720x405.png",
+     "id": "f68404acbfcf",
+     "tags": [
+      "科技動態"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0023",
+   "title": "A US-China AI Hotline Won't Be Ready For a While",
+   "summary": "As the US and China race to become the dominant power in the AI industry, the countries also appear to be figuring out ways to communicate on national security issues.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "us-china",
+    "hotline",
+    "won",
+    "while",
+    "ready",
+    "become"
+   ],
+   "image": "img/2026-09-24/a6b8d86835db443b.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Wired AI"
+   ],
+   "articles": [
+    {
+     "title": "A US-China AI Hotline Won't Be Ready For a While",
+     "url": "https://www.wired.com/story/a-us-china-ai-hotline-wont-be-ready-for-a-while",
+     "source": "Wired AI",
+     "lang": "en",
+     "published": "2026-09-23T13:00:00+00:00",
+     "summary": "As the US and China race to become the dominant power in the AI industry, the countries also appear to be figuring out ways to communicate on national security issues.",
+     "image": "https://media.wired.com/photos/6ab2ef34ade3d66cae78e17b/master/pass/politics_us_china_ai_talk.jpg",
+     "id": "374e38b7f382",
+     "tags": [
+      "Politics",
+      "Politics / Politics News",
+      "Inner Loop",
+      "politics",
+      "government"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0024",
+   "title": "Trump’s China rivalry and “AI race” delusion may endanger US, experts say",
+   "summary": "Trump focus on winning “AI race” may deter China from sharing safety intel.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "trump",
+    "china",
+    "race",
+    "may",
+    "rivalry",
+    "delusion"
+   ],
+   "image": "img/2026-09-24/cad2ebb26b171855.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "Trump’s China rivalry and “AI race” delusion may endanger US, experts say",
+     "url": "https://arstechnica.com/tech-policy/2026/09/china-silent-as-us-touts-plan-for-ai-safety-alerts-that-omits-tech-experts",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-09-23T12:52:28+00:00",
+     "summary": "Trump focus on winning “AI race” may deter China from sharing safety intel.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/china-vs-us-ai-race-500x500.jpg",
+     "id": "229b3c7f852c",
+     "tags": [
+      "AI",
+      "Policy",
+      "agi",
+      "AI safety",
+      "Artificial Intelligence"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0025",
+   "title": "XPRIZE Wildfire winners spotted fires within 10 min—but couldn’t stop them",
+   "summary": "$11M competition showed wildfire detection is still easier than stopping fires.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "wildfire",
+    "xprize",
+    "winners",
+    "spotted",
+    "fires",
+    "min"
+   ],
+   "image": "img/2026-09-24/17f564e5e972ee33.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "XPRIZE Wildfire winners spotted fires within 10 min—but couldn’t stop them",
+     "url": "https://arstechnica.com/gadgets/2026/09/xprize-wildfire-winners-spotted-fires-within-10-min-but-couldnt-stop-them",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-09-23T12:28:42+00:00",
+     "summary": "$11M competition showed wildfire detection is still easier than stopping fires.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Andurils-fire-retardant-balls-explode-on-fire-target-500x500.jpg",
+     "id": "ee7ea9cc3ba7",
+     "tags": [
+      "AI",
+      "Tech",
+      "AI drones",
+      "autonomous drones",
+      "drones"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0026",
+   "title": "智慧手機仍是 AI Agent 核心嗎？高通揭「Puck」新概念：口袋版個人運算中樞",
+   "summary": "隨著 AI Agent 進入智慧手機、智慧眼鏡、耳機、手錶與其他穿戴式裝置，個人運算的核心也正在發生變化。高通 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "puck",
+    "agent"
+   ],
+   "image": "img/2026-09-24/f1114fe0de4d47d8.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "智慧手機仍是 AI Agent 核心嗎？高通揭「Puck」新概念：口袋版個人運算中樞",
+     "url": "https://technews.tw/2026/09/24/qualcomm-ziad-asghar-talk-personal-ai-agent",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-09-23T11:44:02+00:00",
+     "summary": "隨著 AI Agent 進入智慧手機、智慧眼鏡、耳機、手錶與其他穿戴式裝置，個人運算的核心也正在發生變化。高通 […]",
+     "image": "",
+     "id": "cc1447fd4f08",
+     "tags": [
+      "AI 人工智慧",
+      "穿戴式裝置",
+      "Personal AI",
+      "Ziad Asghar",
+      "高通"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0027",
+   "title": "YouTube promises custom feeds and a lot more AI later this year",
+   "summary": "YouTube's next year could change the content you see with a big focus on AI and livestreams.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "year",
+    "promises",
+    "lot",
+    "later",
+    "feeds",
+    "youtube"
+   ],
+   "image": "img/2026-09-24/4fa110ccb5a2cfde.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Ars Technica AI"
+   ],
+   "articles": [
+    {
+     "title": "YouTube promises custom feeds and a lot more AI later this year",
+     "url": "https://arstechnica.com/gadgets/2026/09/youtube-promises-custom-feeds-and-a-lot-more-ai-later-this-year",
+     "source": "Ars Technica AI",
+     "lang": "en",
+     "published": "2026-09-23T11:35:53+00:00",
+     "summary": "YouTube's next year could change the content you see with a big focus on AI and livestreams.",
+     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/made-on-youtube-2026-500x500-1790190424.png",
+     "id": "b7941cc8a21f",
+     "tags": [
+      "AI",
+      "Google",
+      "Tech",
+      "Artificial Intelligence",
+      "google"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0028",
+   "title": "Enveda secures $311M to bring more nature-derived AI drugs into clinical trials",
+   "summary": "The round valued the AI biotech at $2 billion. It is currently testing drugs that treat skin conditions and preserve weight loss after stopping GLP-1s.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "drugs",
+    "enveda",
+    "secures",
+    "bring",
+    "nature-derived",
+    "clinical"
+   ],
+   "image": "img/2026-09-24/112f84ab985c92de.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Enveda secures $311M to bring more nature-derived AI drugs into clinical trials",
+     "url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-09-23T11:31:28+00:00",
+     "summary": "The round valued the AI biotech at $2 billion. It is currently testing drugs that treat skin conditions and preserve weight loss after stopping GLP-1s.",
+     "image": "",
+     "id": "f744b3bc273e",
+     "tags": [
+      "AI",
+      "Biotech & Health",
+      "Startups",
+      "clinical trials",
+      "Enveda"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0029",
+   "title": "Meta’s AI agent is a cute little guy who’s great at spending my money",
+   "summary": "Modern life comes with an unending, auto-populating to-do list. It never ceases to amaze me how I can be doing nothing at all, minding my own business, and suddenly something needs to be taken care of. You're telling me a tree branch fell in the backyard and now I have to figure ",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "cute",
+    "little",
+    "great",
+    "spending",
+    "money",
+    "guy"
+   ],
+   "image": "img/2026-09-24/987189188469199e.webp",
+   "llm_enriched": false,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Meta’s AI agent is a cute little guy who’s great at spending my money",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/999526/meta-muse-ai-agent-hands-on-shopping",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-09-23T11:00:00+00:00",
+     "summary": "Modern life comes with an unending, auto-populating to-do list. It never ceases to amaze me how I can be doing nothing at all, minding my own business, and suddenly something needs to be taken care of. You're telling me a tree branch fell in the backyard and now I have to figure out what to […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04272_processed.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "54336ea97e9a",
+     "tags": [
+      "AI",
+      "Meta",
+      "Tech"
      ]
     }
    ]
