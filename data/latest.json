@@ -1,58 +1,734 @@
 {
- "generated_at": "2026-10-04T08:10:11.675852+08:00",
- "date": "2026-10-04",
+ "generated_at": "2026-10-05T08:10:09.918927+08:00",
+ "date": "2026-10-05",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
- "topic_count": 25,
- "article_count": 29,
+ "topic_count": 31,
+ "article_count": 35,
  "topics": [
   {
-   "key": "t0012",
-   "title": "An OpenAI safety employee has quit and is sounding the alarm",
-   "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly comi",
+   "key": "t0005",
+   "title": "晶片廠拚到「花錢養客戶」　業界坦言資產負債表成推動AI關鍵",
+   "summary": "近日外媒報導，根據Anthropic的IPO文件顯示，其與博通（Broadcom）的合作案中，博通同意提供最高420億美元的可轉換票據融資，協助Anthropic支付AI基礎設施支出，A...",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "safety",
-    "employee",
-    "openai",
-    "company",
-    "resigns",
-    "claiming"
+    "anthropic",
+    "funding",
+    "420",
+    "chip",
+    "broadcom"
    ],
-   "image": "img/2026-10-04/d0416c01aae79940.webp",
+   "image": "img/2026-10-05/37acbf8cfcbb3f3b.webp",
    "llm_enriched": false,
    "sources": [
-    "TechCrunch AI",
+    "DIGITIMES",
+    "TechOrange 科技報橘"
+   ],
+   "articles": [
+    {
+     "title": "晶片廠拚到「花錢養客戶」　業界坦言資產負債表成推動AI關鍵",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000770300_XVU2WAEH1HK1M9LTQA26J&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:00+00:00",
+     "summary": "近日外媒報導，根據Anthropic的IPO文件顯示，其與博通（Broadcom）的合作案中，博通同意提供最高420億美元的可轉換票據融資，協助Anthropic支付AI基礎設施支出，A...",
+     "image": "https://img.digitimes.com/newsimg/2026/1005/770300-1-qa26j_l.jpg",
+     "id": "5d1835e15c6f",
+     "tags": []
+    },
+    {
+     "title": "【科技早餐】AI 代理私訊存取惹爭議，蘋果將收緊 Mac 完整磁碟授權",
+     "url": "https://techorange.com/2026/10/05/apple-mac-ai-agent-data-access",
+     "source": "TechOrange 科技報橘",
+     "lang": "zh",
+     "published": "2026-10-04T13:30:00+00:00",
+     "summary": "【科技早餐】今天精選 7 則國內外重要科技新聞。 ＊AI 代理私訊存取惹爭議，蘋果將收緊 Mac 完整磁碟授權 蘋果（Apple）10 月 2 日宣布，將為 macOS 的「完整磁碟存取權」（Full Disk Access）增加控制措施，要求使用者透過更明確的操作才能授權。該功能原本支援備份程式，可略過多項資料保護限制，接觸檔案、郵件、訊息與瀏覽紀錄。蘋果指出，部分開發者的使用方式，可能讓使用者未充分理解便暴露資料；隨 AI 代理能力與自主性提高，這類廣泛權限的風險將擴大，通訊對象的隱私也可能受到影響。 《路透社》報導，Meta 的 AI 代理 Muse 能替使用者取消未使用的訂閱、與業者議價，將 AI 的應用延伸至代辦任務。科技專欄作家 Jason Aten 近期指控，Muse 讀取他的 Mac 私人訊息，並稱未開啟完整磁碟權限。Meta 否認未經授權存取，表示須同時啟用完整磁碟權限與訊息連接功能，才能讀取訊息，授權亦可撤銷。蘋果未在公告點名特定產品，也未公布新措施的實作細節與上線日期；此次調整聚焦於應用程式取得資料存取權限的授權方式。 ＊博通最高 420 億美元融資挺 Anthropic，晶片供應商兼任金主 《路透社》取得的 Anthropic 上市公開說明書顯示，博通（Broadcom）同意提供最高 420 億美元融資，支持該公司的基礎設施支出。Anthropic 已承諾支",
+     "image": "https://techorange.com/app/uploads/2026/10/1560f72c4c43e79a-720x405.png",
+     "id": "efedd350d69b",
+     "tags": [
+      "科技動態"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0027",
+   "title": "英伟达与鸿海展示自动化成果，机器人组装 GB300 的母线成功率超 95%",
+   "summary": "IT之家 10 月 4 日消息，据台媒经济日报，英伟达与鸿海首次对外展示了利用机器人制造设备的成果。 针对英伟达 GB300 的母线（Busbar，也叫汇流排或母排，是一种用于大电流配电和传输的导电金属条、棒或管）以及多组连接器组装等较复杂、依赖人工的工序，已经可以导入机器人自动化，提升组装稳定性与效率。 IT之家从报道获悉，在核心工艺指标方面： 装配成功率： Busbar 组装成功率已超过 95% ；多连接器插接成功率约 90% 至 95%。 作业耗时：Busbar 组装时间目标在 124 秒以内；4 组连接器的插接时间目标在 72 秒以内。 整体生产",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "gb300",
+    "300",
+    "robot",
+    "nvidia",
+    "99.5"
+   ],
+   "image": "img/2026-10-05/3c5858927d232a31.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家",
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "英伟达与鸿海展示自动化成果，机器人组装 GB300 的母线成功率超 95%",
+     "url": "https://www.ithome.com/1/009/665.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T00:17:43+00:00",
+     "summary": "IT之家 10 月 4 日消息，据台媒经济日报，英伟达与鸿海首次对外展示了利用机器人制造设备的成果。 针对英伟达 GB300 的母线（Busbar，也叫汇流排或母排，是一种用于大电流配电和传输的导电金属条、棒或管）以及多组连接器组装等较复杂、依赖人工的工序，已经可以导入机器人自动化，提升组装稳定性与效率。 IT之家从报道获悉，在核心工艺指标方面： 装配成功率： Busbar 组装成功率已超过 95% ；多连接器插接成功率约 90% 至 95%。 作业耗时：Busbar 组装时间目标在 124 秒以内；4 组连接器的插接时间目标在 72 秒以内。 整体生产周期：做到不超过熟练人工两倍时间。 延伸阅读 GB300 是英伟达基于 Blackwell Ultra 架构推出的产品。据英伟达官网资料，GB300 NVL72 采用全液冷机架规模设计，将 72 颗 Blackwell Ultra GPU 与 36 颗搭载 Arm 架构的 NVIDIA Grace CPU 整合至单一平台，通过 NVIDIA NVLink 高速互连技术串联，使其如同一颗超大 GPU 运作。该平台于 2025 年 3 月 18 日举行的 GTC 大会上随 Blackwell Ultra DGX SuperPOD 一同正式发布。 鸿海（富士康）是全球最大的电子制造服务商，其全球 AI 服务器市占率超过 40%，是英伟达 ",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/097292e4-51c3-43d4-891d-510dade74cb9.png?x-bce-process=image/format,f_auto",
+     "id": "a60b0fb09b4d",
+     "tags": []
+    },
+    {
+     "title": "挑戰 99.5% 成功率，NVIDIA 攜鴻海讓機器人組裝 GB300",
+     "url": "https://finance.technews.tw/2026/10/04/nvidia-foxconn-robot",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-03T22:47:39+00:00",
+     "summary": "AI 伺服器需求持續爆發，如何讓產線自動化程度再往前推，也成為供應鏈下一階段競賽焦點。據 NVIDIA 部落格 […]",
+     "image": "",
+     "id": "7a1c2e8bee00",
+     "tags": [
+      "AI 人工智慧",
+      "機器人",
+      "財經",
+      "AI 伺服器製造",
+      "GB300"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0010",
+   "title": "IT早报 1005：乐山大佛“掏耳朵”视频系 AI 合成；央视曝光外卖“明厨亮灶”造假；余承东称华为已量产 381 款 τ 芯片；马斯克确认 SpaceXAI 将更名 SpaceXSI...",
+   "summary": "“IT早报”时间，大家好，现在是 2026 年 10 月 5 日星期一，今天的重要科技资讯有： 1. 乐山大佛景区回应网传“掏耳朵”养护作业视频：系 AI 合成，佛耳内并无所谓“杂物” 网传视频显示文保工人给大佛掏耳朵、掏鼻孔，还出现猴子抢安全帽等离谱画面。乐山大佛管委会回应称该视频系他人 AI 生成，并非真实场景。2026 年以来大佛已开展 5 次保养维护，耳鼻内并无杂物，凌云山片区也没有猴子。>> 查看详情 2. 央视曝光外卖“明厨亮灶”造假，湖北、云南等地核查处置 针对外卖商户摄像头随意摆放、故意偏移角度规避监督等问题，市场监管总局迅速部署湖南、湖",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "spacexai",
+    "xai",
+    "spacexsi",
+    "spacex",
+    "381"
+   ],
+   "image": "img/2026-10-05/b6633b5c35d42a32.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "IT早报 1005：乐山大佛“掏耳朵”视频系 AI 合成；央视曝光外卖“明厨亮灶”造假；余承东称华为已量产 381 款 τ 芯片；马斯克确认 SpaceXAI 将更名 SpaceXSI...",
+     "url": "https://www.ithome.com/1/009/742.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T15:49:22+00:00",
+     "summary": "“IT早报”时间，大家好，现在是 2026 年 10 月 5 日星期一，今天的重要科技资讯有： 1. 乐山大佛景区回应网传“掏耳朵”养护作业视频：系 AI 合成，佛耳内并无所谓“杂物” 网传视频显示文保工人给大佛掏耳朵、掏鼻孔，还出现猴子抢安全帽等离谱画面。乐山大佛管委会回应称该视频系他人 AI 生成，并非真实场景。2026 年以来大佛已开展 5 次保养维护，耳鼻内并无杂物，凌云山片区也没有猴子。>> 查看详情 2. 央视曝光外卖“明厨亮灶”造假，湖北、云南等地核查处置 针对外卖商户摄像头随意摆放、故意偏移角度规避监督等问题，市场监管总局迅速部署湖南、湖北、云南等地开展核查处置。武汉对曝光商户立案调查并督促平台下架，丽江对 4 家涉事门店停业整顿，并启动外卖食品安全集中整治行动。>> 查看详情 3. 特朗普将“人工智能”改为“超级智能”后，马斯克确认 SpaceXAI 将更名为 SpaceXSI 埃隆 · 马斯克 10 月 4 日在 X 平台表示，SpaceX 是一家超级智能公司。>> 查看详情 4. 余承东：华为半导体已在手机、AI、智能汽车等领域成功设计并量产 381 款 τ 芯片 华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东 10 月 4 日发布视频，透露华为半导体已经在手机、AI、通用计算、网络、智能汽车等多个领域成功设计并量产了 381 款 τ 芯片。>",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/fca0259a-95cb-4906-8969-7ff31dbebcc0.png",
+     "id": "07419fca0990",
+     "tags": []
+    },
+    {
+     "title": "特朗普将“人工智能”改为“超级智能”后，马斯克确认 SpaceXAI 将更名为 SpaceXSI",
+     "url": "https://www.ithome.com/1/009/688.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T02:04:39+00:00",
+     "summary": "IT之家 10 月 4 日消息，美东时间 9 月 29 日，美国总统特朗普正式签署行政令，下令所有行政部门和机构使用“超级智能”（Super Intelligence，简称 SI）一词代替人工智能（AI）。 今日有网友向埃隆 · 马斯克提问，（SpaceXAI）有没有可能更名为 SpaceXSI？马斯克则给出了肯定的答复“是的，我们会做出改变。” 埃隆 · 马斯克随后在 X 平台表示，SpaceX 是一家超级智能公司。 今年 2 月，xAI 被马斯克旗下航天公司 SpaceX 收购，聊天机器人 Grok 和社交平台 X 也随之纳入 SpaceX 体系。今年 7 月，xAI 官宣更名为 SpaceXAI，并同步更换了标识和 X 平台用户名。 IT之家注意到，当地时间 9 月 29 日， 在特朗普宣布将“人工智能”改为“超级智能”后 ，多位科技领袖在白宫前接受媒体群访，轮到马斯克发言时，他脱口而出“AI（人工智能）”，随即迅速改口“SI（超级智能）”。 站在一旁的特朗普听到马斯克改口，对马斯克说“谢谢”。特朗普脸上露出微笑，并伸手拍了拍马斯克的肩膀。 相关阅读： 《 特朗普签署行政令把 AI 改叫 SI，推出美国政府对话式问答网站 》",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/973b470c-7d43-4790-93e2-ca48c11d4bd3.jpg",
+     "id": "c6b3cff6e04e",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0016",
+   "title": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
+   "summary": "On Equity, we discussed the Trump administration's attempts to rebrand AI.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "intel",
+    "trump",
+    "super",
+    "intelligence",
+    "safety",
+    "force"
+   ],
+   "image": "img/2026-10-05/224b8823066b09bb.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
+     "url": "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-10-04T12:08:34+00:00",
+     "summary": "On Equity, we discussed the Trump administration's attempts to rebrand AI.",
+     "image": "",
+     "id": "8a9c48729bde",
+     "tags": [
+      "AI",
+      "Government & Policy",
+      "dario amodei",
+      "Donald Trump",
+      "Equity podcast"
+     ]
+    },
+    {
+     "title": "Trump unveils his new Super Intelligence Force",
+     "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-10-04T07:15:10+00:00",
+     "summary": "This new task force is Trump's latest response to the debate over AI safety.",
+     "image": "",
+     "id": "062c049b478a",
+     "tags": [
+      "AI",
+      "Government & Policy",
+      "Donald Trump"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0000",
+   "title": "TypeSafe AI 决策模型 Jev 日处理量达 1 万亿 Token，硅谷巨头火速跟进复刻",
+   "summary": "IT之家 10 月 5 日消息，据《华尔街日报》报道，一款仅问世三周的人工智能模型 Jev 已经在硅谷圈子引发热议，人们开始探讨大语言模型之外的替代路线，同时这款模型也已经催生出不少跟风仿制产品。 初创企业 TypeSafe AI 于当地时间 9 月 15 日发布了 Jev。该模型的运行方式不同于聊天机器人，它并不生成文本。相反，它借助机器学习，把输入内容归类到一组预先设定好的输出结果当中：回答“是”或者“否”、输出一个数值评分，或是从既定列表里给出答案。该公司将这套技术思路称作“面向校准决策的强化学习”。 这家初创公司的负责人是迪奥戈 · 阿尔梅达（D",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "jev",
+    "typesafe",
+    "token"
+   ],
+   "image": "img/2026-10-05/8b749a6d0a7c2040.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "TypeSafe AI 决策模型 Jev 日处理量达 1 万亿 Token，硅谷巨头火速跟进复刻",
+     "url": "https://www.ithome.com/1/009/744.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T16:06:48+00:00",
+     "summary": "IT之家 10 月 5 日消息，据《华尔街日报》报道，一款仅问世三周的人工智能模型 Jev 已经在硅谷圈子引发热议，人们开始探讨大语言模型之外的替代路线，同时这款模型也已经催生出不少跟风仿制产品。 初创企业 TypeSafe AI 于当地时间 9 月 15 日发布了 Jev。该模型的运行方式不同于聊天机器人，它并不生成文本。相反，它借助机器学习，把输入内容归类到一组预先设定好的输出结果当中：回答“是”或者“否”、输出一个数值评分，或是从既定列表里给出答案。该公司将这套技术思路称作“面向校准决策的强化学习”。 这家初创公司的负责人是迪奥戈 · 阿尔梅达（Diogo Almeida），他曾经任职于 OpenAI，参与过 ChatGPT 的研发工作，2024 年从该公司离职。随着 Jev 正式发布，TypeSafe 也结束了隐秘运营的状态；此前它已经从风投机构 DCVC 处拿到 4,000 万美元 （IT之家注：现汇率约合 2.69 亿元人民币） 融资。 阿尔梅达押注，Jev 这种精简的技术方案速度更快、成本更低，输出结果具备可复现性，有望改善传统大语言模型存在的部分短板，也就是结果不可预测的问题。阿尔梅达在当地时间上周一的一次采访当中表示， 目前大约已有 25% 的财富世界 500 强企业正在使用这款模型。 “大约一周之前， 我们每日处理的 token 数量就达到了一万亿 。”他说，“",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/e0404066-08b4-419e-874b-b8d0e7b90b68.jpg?x-bce-process=image/format,f_auto",
+     "id": "0199f3417c8a",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0001",
+   "title": "人人都能有自己的智能体设备：Meta 开源 Muse Gadgets，用 ESP32 和树莓派打造自定义 AI 硬件",
+   "summary": "IT之家 10 月 5 日消息，Meta 于当地时间 10 月 2 日宣布推出开源项目 Muse Gadgets，允许开发者为旗下个人 AI 智能体 Muse 打造自定义硬件。 Meta 同时也已经在 GitHub 上按照 Apache 2.0 许可发布了 ESP32 固件和 Linux 设备 SDK。开发者可以将低成本 ESP32 开发板或树莓派等 Linux 设备连接到 Muse，接入显示屏、按钮、传感器、执行器以及工作台上其他可联网的设备。 在硬件适配方面，Meta ESP32 SDK 文档目前已支持 11 款 ESP32 开发板，包括 Espre",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "esp32",
+    "muse",
+    "meta",
+    "gadgets",
+    "sdk",
+    "linux"
+   ],
+   "image": "img/2026-10-05/da837dfeebb6a1e9.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "人人都能有自己的智能体设备：Meta 开源 Muse Gadgets，用 ESP32 和树莓派打造自定义 AI 硬件",
+     "url": "https://www.ithome.com/1/009/743.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:33+00:00",
+     "summary": "IT之家 10 月 5 日消息，Meta 于当地时间 10 月 2 日宣布推出开源项目 Muse Gadgets，允许开发者为旗下个人 AI 智能体 Muse 打造自定义硬件。 Meta 同时也已经在 GitHub 上按照 Apache 2.0 许可发布了 ESP32 固件和 Linux 设备 SDK。开发者可以将低成本 ESP32 开发板或树莓派等 Linux 设备连接到 Muse，接入显示屏、按钮、传感器、执行器以及工作台上其他可联网的设备。 在硬件适配方面，Meta ESP32 SDK 文档目前已支持 11 款 ESP32 开发板，包括 Espressif 的 ESP32-C5 DevKitC-1（官方推荐）、M5Stack StickS3、Waveshare ESP32-S3-Touch-AMOLED-1.75C、Seeed 的电子纸显示屏等。其中后六款开发板可运行完整的屏幕 UI，包括动画头像、按键通话和设置功能。内存充足的开发板还支持家庭网络隧道，使 Muse 能够访问用户已拥有的设备，以及任何暴露本地 HTTP API 的自建设备。 Linux SDK 方面，Meta 已支持树莓派 3B+、4、5、Zero 2 W，以及其他具备蓝牙低功耗能力的 Linux 设备，系统最低要求为 Raspberry Pi OS Bullseye、Debian 11、Ubuntu 22.",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/d6b33a84-b417-49e3-aa66-8e4cd368839e.png?x-bce-process=image/format,f_auto",
+     "id": "568d25f5e83a",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0002",
+   "title": "AI資料中心狂掃貨LPDDR5X　2027年上半PC、手機價格壓力難解",
+   "summary": "AI資料中心對低功耗記憶體LPDDR5X DRAM的需求在2026年已持續擴大，從晶片業界人士的觀察來看，這個掃貨強度，到2027年應會持續，勢必使得其他也會用到LPDDR5...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "lpddr5x",
+    "2027",
+    "hbm",
+    "datacenter",
+    "dram",
+    "lpddr5..."
+   ],
+   "image": "img/2026-10-05/09e8c02159fecbf7.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "AI資料中心狂掃貨LPDDR5X　2027年上半PC、手機價格壓力難解",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=770305&wpidx=4",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:00+00:00",
+     "summary": "AI資料中心對低功耗記憶體LPDDR5X DRAM的需求在2026年已持續擴大，從晶片業界人士的觀察來看，這個掃貨強度，到2027年應會持續，勢必使得其他也會用到LPDDR5...",
+     "image": "https://img.digitimes.com/newsimg/2026/1005/770305-1-9j3v2_l.jpg",
+     "id": "a8de5a37405f",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0003",
+   "title": "通用、福特打矽谷算盤　借力Google與NVIDIA重塑軟體與智駕優勢",
+   "summary": "有別於供應鏈傳出歐系車廠將軟體定義汽車（SDV）與智慧化方案借重中國軟體及系統開發，美系車廠的智慧化布局則深度綁定矽谷高科技業者。DIGITIMES Research近期針...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "google",
+    "nvidia",
+    "sdv",
+    "digitimes",
+    "research"
+   ],
+   "image": "img/2026-10-05/33f5f654e3392fc6.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "通用、福特打矽谷算盤　借力Google與NVIDIA重塑軟體與智駕優勢",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=90&id=0000770176_JGK267E46E0UEY7DV79NR&wpidx=3",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:00+00:00",
+     "summary": "有別於供應鏈傳出歐系車廠將軟體定義汽車（SDV）與智慧化方案借重中國軟體及系統開發，美系車廠的智慧化布局則深度綁定矽谷高科技業者。DIGITIMES Research近期針...",
+     "image": "https://img.digitimes.com/newsimg/2026/1005/770176-1-v79nr_l.jpg",
+     "id": "577e78cddf2d",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0004",
+   "title": "NVIDIA參投、OpenAI達成合作　澳洲資料中心業者Firmus備戰IPO",
+   "summary": "澳洲資料中心營運業者Firmus正準備在當地IPO。Firmus不但是NVIDIA重要合作夥伴，近期也陸續與OpenAI、Meta達成合作。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "firmus",
+    "ipo",
+    "openai",
+    "meta",
+    "datacenter",
+    "nvidia"
+   ],
+   "image": "img/2026-10-05/735a2e12a5d16f23.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "NVIDIA參投、OpenAI達成合作　澳洲資料中心業者Firmus備戰IPO",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=9&id=0000770335_0DW20GNM4DU9LB4MCEV9P&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:00+00:00",
+     "summary": "澳洲資料中心營運業者Firmus正準備在當地IPO。Firmus不但是NVIDIA重要合作夥伴，近期也陸續與OpenAI、Meta達成合作。",
+     "image": "https://img.digitimes.com/newsimg/2026/1005/770335-1-cev9p_l.jpg",
+     "id": "e7ef84b7e8a5",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0006",
+   "title": "算力擴張面臨銅連接、記憶體瓶頸　Marvell：客製化成CSP大廠標配",
+   "summary": "NVIDIA執行長黃仁勳曾表示，Marvell的光學技術將使其成為下一個兆級市值美元公司，而Marvell甫於9月下旬宣布擴大與格羅方德（GlobalFoundries；GF）的合作關係，朝...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "marvell",
+    "hbm",
+    "compute",
+    "csp",
+    "nvidia",
+    "globalfoundries"
+   ],
+   "image": "img/2026-10-05/92a22be99c549a77.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "算力擴張面臨銅連接、記憶體瓶頸　Marvell：客製化成CSP大廠標配",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000770103_BOY2IBD1LVLT164YZ10E6&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:00+00:00",
+     "summary": "NVIDIA執行長黃仁勳曾表示，Marvell的光學技術將使其成為下一個兆級市值美元公司，而Marvell甫於9月下旬宣布擴大與格羅方德（GlobalFoundries；GF）的合作關係，朝...",
+     "image": "https://img.digitimes.com/newsimg/2026/1005/770103-2-z10e6_l.jpg",
+     "id": "beff3c12ffd4",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0007",
+   "title": "Gemini 4 Argon跑分中看不中用？　Google內部傳雜音",
+   "summary": "Google新一代旗艦人工智慧（AI）模型Gemini 4 Argon甫亮相，卻傳出該模型在多項基準測試中表現亮眼，但內部仍有員工認為編碼能力不夠穩定。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "gemini",
+    "argon",
+    "google"
+   ],
+   "image": "img/2026-10-05/32e233efcfbc0c52.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "Gemini 4 Argon跑分中看不中用？　Google內部傳雜音",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000770201_LSI3UZ8LLJEMQM2X4BR0L&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:00+00:00",
+     "summary": "Google新一代旗艦人工智慧（AI）模型Gemini 4 Argon甫亮相，卻傳出該模型在多項基準測試中表現亮眼，但內部仍有員工認為編碼能力不夠穩定。",
+     "image": "https://img.digitimes.com/newsimg/2026/1005/770201-1-4br0l_l.jpg",
+     "id": "980de23ddd4c",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0008",
+   "title": "Google押注太空資料中心　AI算力爭奪戰延伸至地球之外",
+   "summary": "Google藉由SpaceX的獵鷹9號（Falcon 9）火箭，將首批TPU送上低地軌道（LEO）進行運作測試，但業界真正關注的不只是AI晶片能否在太空環境中運作，更是科技業試圖...",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "compute",
+    "google",
+    "datacenter",
+    "falcon",
+    "tpu",
+    "leo"
+   ],
+   "image": "img/2026-10-05/1dda9a321f2f8835.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "Google押注太空資料中心　AI算力爭奪戰延伸至地球之外",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&id=0000770284_YE73SLFC7V4TK65JRFU3U&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:00+00:00",
+     "summary": "Google藉由SpaceX的獵鷹9號（Falcon 9）火箭，將首批TPU送上低地軌道（LEO）進行運作測試，但業界真正關注的不只是AI晶片能否在太空環境中運作，更是科技業試圖...",
+     "image": "https://img.digitimes.com/newsimg/2026/1005/770284-1-rfu3u_l.jpg",
+     "id": "73810b99ecc9",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0009",
+   "title": "泰國資料中心管理框架擬10月中生效　100MW以上將列超大規模",
+   "summary": "泰國正在擬定人工智慧（AI）資料中心管理框架，其中一項提案，就是將用電需求達100 MW以上的資料中心歸類為「超大規模」。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "100",
+    "datacenter"
+   ],
+   "image": "img/2026-10-05/f8e11d49f7eddaa7.webp",
+   "llm_enriched": false,
+   "sources": [
+    "DIGITIMES"
+   ],
+   "articles": [
+    {
+     "title": "泰國資料中心管理框架擬10月中生效　100MW以上將列超大規模",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=9&id=0000770216_4283GU160EY7GJ72G088M&wpidx=5",
+     "source": "DIGITIMES",
+     "lang": "zh",
+     "published": "2026-10-04T16:00:00+00:00",
+     "summary": "泰國正在擬定人工智慧（AI）資料中心管理框架，其中一項提案，就是將用電需求達100 MW以上的資料中心歸類為「超大規模」。",
+     "image": "https://img.digitimes.com/newsimg/2026/1005/770216-1-g088m_l.jpg",
+     "id": "a5eec5bcdfe0",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0011",
+   "title": "英伟达 AI 芯片走私案嫌疑人被捕，涉案金额超 3 亿美元",
+   "summary": "IT之家 10 月 5 日消息，美国上周逮捕了一名嫌疑人，此人被控走私含有受出口管制的英伟达芯片的高端计算机服务器进入中国。 美国司法部于当地时间上周四发布新闻稿，指控 38 岁的格雷格 · 刘（Greg Lui）使用虚假文件掩盖一批货值超过 3 亿美元 （IT之家注：现汇率约合 20.16 亿元人民币） 的服务器货物；据称他明知这批货物最终将运往中国。 美国联邦调查局的起诉书中称，格雷格 · 刘是大地智造计算机公司（Earthmade Computer）的首席执行官，他涉嫌与马来西亚、新加坡等南亚国家的货运代理企业合谋，将服务器芯片非法转运进入中国，其",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "100",
+    "a100",
+    "h100",
+    "geforce",
+    "rtx"
+   ],
+   "image": "img/2026-10-05/8796b728092f5477.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "英伟达 AI 芯片走私案嫌疑人被捕，涉案金额超 3 亿美元",
+     "url": "https://www.ithome.com/1/009/741.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T15:40:33+00:00",
+     "summary": "IT之家 10 月 5 日消息，美国上周逮捕了一名嫌疑人，此人被控走私含有受出口管制的英伟达芯片的高端计算机服务器进入中国。 美国司法部于当地时间上周四发布新闻稿，指控 38 岁的格雷格 · 刘（Greg Lui）使用虚假文件掩盖一批货值超过 3 亿美元 （IT之家注：现汇率约合 20.16 亿元人民币） 的服务器货物；据称他明知这批货物最终将运往中国。 美国联邦调查局的起诉书中称，格雷格 · 刘是大地智造计算机公司（Earthmade Computer）的首席执行官，他涉嫌与马来西亚、新加坡等南亚国家的货运代理企业合谋，将服务器芯片非法转运进入中国，其中就包括英伟达 A100 图形处理器与 H100 图形处理器，还包括消费级旗舰的 GeForce RTX 4090 和 GeForce RTX 5090。英伟达 A100 图形处理器与 H100 图形处理器并非英伟达最先进的产品，但它们可以处理海量数据、训练大语言模型。美国方面担心，如果中国能够获得足够数量的这类芯片，快速发展自身人工智能技术或者增强军事实力，就有可能带来国家安全风险。 美国司法部称，邮件以及银行记录揭露了这起走私活动，该走私行动从 2023 年 10 月一直持续到 2026 年 8 月。 一项关键证据来自一封写于 2024 年的邮件，邮件内容谈及一笔 70 台服务器的订单，这些服务器搭载受出口限制的图形处理器，却被",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/7c96eec1-7881-40f5-9383-41eb6b559182.jpg",
+     "id": "abb66a69506b",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0012",
+   "title": "馬斯克證實與台積電評估合作 Terafab，協助在德州營運晶圓廠",
+   "summary": "科技財經電子報 Culpium 引述消息人士指出，台積電正在評估是否協助馬斯克旗下的德州晶圓廠計劃 Terafab 進行營運，馬斯克在 X 上回覆確認了雙方正在洽談。Terafab 是 SpaceX 與 Tesla 的聯合計劃，預計成為全球最大建築，第一期造價約 168 億美元，僅供應 Tesla、SpaceX 與 xAI。",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "terafab",
+    "tesla",
+    "xai",
+    "funding",
+    "spacex",
+    "culpium"
+   ],
+   "image": "img/2026-10-05/dbea16ab57591446.webp",
+   "llm_enriched": false,
+   "sources": [
+    "INSIDE"
+   ],
+   "articles": [
+    {
+     "title": "馬斯克證實與台積電評估合作 Terafab，協助在德州營運晶圓廠",
+     "url": "https://www.inside.com.tw/article/42560-tsmc-terafab-musk-texas-fab-collaboration-talks",
+     "source": "INSIDE",
+     "lang": "zh",
+     "published": "2026-10-04T15:33:00+00:00",
+     "summary": "科技財經電子報 Culpium 引述消息人士指出，台積電正在評估是否協助馬斯克旗下的德州晶圓廠計劃 Terafab 進行營運，馬斯克在 X 上回覆確認了雙方正在洽談。Terafab 是 SpaceX 與 Tesla 的聯合計劃，預計成為全球最大建築，第一期造價約 168 億美元，僅供應 Tesla、SpaceX 與 xAI。",
+     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/06/e2eba962-1f7b-4c60-9d10-6a7fd1bb444f.webp",
+     "id": "eb816aec7664",
+     "tags": [
+      "半導體",
+      "SpaceX",
+      "馬斯克",
+      "台積電"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0013",
+   "title": "AI 推論成本每年便宜 13 倍，大廠訂閱制將面臨考驗",
+   "summary": "AI 推論成本下跌速度超越摩爾定律（Moore’s Law）所描述的晶片發展趨勢。AI 研究機構 Epoch […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "moore",
+    "law",
+    "epoch"
+   ],
+   "image": "img/2026-10-05/6d8d3e33ddb4c981.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "AI 推論成本每年便宜 13 倍，大廠訂閱制將面臨考驗",
+     "url": "https://technews.tw/2026/10/05/ai-infers-the-rate-of-cost-decline",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-04T15:10:13+00:00",
+     "summary": "AI 推論成本下跌速度超越摩爾定律（Moore’s Law）所描述的晶片發展趨勢。AI 研究機構 Epoch […]",
+     "image": "",
+     "id": "d38f0f6ffa0f",
+     "tags": [
+      "AI 人工智慧",
+      "軟體、系統",
+      "AI 推論",
+      "AI 模型",
+      "推論成本"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0014",
+   "title": "内存涨价倒逼系统瘦身：微软详解 Win11 为何要降低 RAM 占用",
+   "summary": "IT之家 10 月 5 日消息，随着内存成本持续上涨，微软正将“降低 Windows 11 内存占用”列为 2026 年剩余时间的重要工作之一。 微软 Windows 与设备业务负责人帕万 · 达武卢里（Pavan Davuluri）在官方播客《Inside Windows》中表示，内存涨价已经成为整个 PC 行业都在关注的问题，Windows 团队正在从系统底层到应用框架多个层面提升内存利用率。 这一话题源于一名 Surface Pro 用户在《Inside Windows》中的提问。他表示，为了在设备上运行本地 AI 模型，不得不关闭部分端侧 AI ",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "windows",
+    "microsoft",
+    "win11",
+    "ram",
+    "inside"
+   ],
+   "image": "img/2026-10-05/0a92a6dd7a0a5e1a.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "内存涨价倒逼系统瘦身：微软详解 Win11 为何要降低 RAM 占用",
+     "url": "https://www.ithome.com/1/009/738.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T15:09:37+00:00",
+     "summary": "IT之家 10 月 5 日消息，随着内存成本持续上涨，微软正将“降低 Windows 11 内存占用”列为 2026 年剩余时间的重要工作之一。 微软 Windows 与设备业务负责人帕万 · 达武卢里（Pavan Davuluri）在官方播客《Inside Windows》中表示，内存涨价已经成为整个 PC 行业都在关注的问题，Windows 团队正在从系统底层到应用框架多个层面提升内存利用率。 这一话题源于一名 Surface Pro 用户在《Inside Windows》中的提问。他表示，为了在设备上运行本地 AI 模型，不得不关闭部分端侧 AI 功能，因此希望微软进一步改善 Windows 的内存管理。 达武卢里对此表示，内存问题目前“在行业内都非常受关注”，尤其是在计算机内存成本不断上涨的背景下。对于 Windows 团队而言，需要进一步提高内存利用效率，并围绕这一目标开展相关工作。 微软此前在 7 月 31 日公布的 Windows 质量改进进展中已将“针对 8GB 及以上设备进行内存优化”列为未来重点方向之一，目标是降低 Windows 的内存占用，让日常使用中的 PC 保持更快、更流畅的响应速度。微软同时表示，相关内存效率改进已经取得进展，并将在 2026 年剩余时间继续推进。 从微软目前公布的信息来看，这并不是简单增加一个“内存清理”功能，而是涉及 Windows",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/255b56f2-6da7-4f94-b0d6-d96caed7306f.jpg",
+     "id": "4587872fb3d5",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0015",
+   "title": "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
+   "summary": "AI slop seems to be overwhelming bug bounty programs.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "bug",
+    "bounty",
+    "froze",
+    "open",
+    "source",
+    "program"
+   ],
+   "image": "img/2026-10-05/4bb2520f7008595b.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
+     "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-10-04T12:31:07+00:00",
+     "summary": "AI slop seems to be overwhelming bug bounty programs.",
+     "image": "",
+     "id": "71b92d7d1248",
+     "tags": [
+      "AI",
+      "Security"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0017",
+   "title": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
+   "summary": "New Jersey's lieutenant governor Dale Caldwell was forced to resign on September 25th after an investigation found he had sexually harassed a staffer and repeatedly violated ethics rules. The now-former Lt. governor has been making the media rounds trying to clear his name. But h",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "former",
+    "gov",
+    "using",
+    "innocent",
+    "sexual",
+    "harassment"
+   ],
+   "image": "img/2026-10-05/5dc590682e8f92a2.webp",
+   "llm_enriched": false,
+   "sources": [
     "The Verge AI"
    ],
    "articles": [
     {
-     "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
-     "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-03T08:30:01+00:00",
-     "summary": "By his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire warning while resigning from their job.",
-     "image": "",
-     "id": "f143fce070e1",
-     "tags": [
-      "AI",
-      "Security",
-      "OpenAI"
-     ]
-    },
-    {
-     "title": "An OpenAI safety employee has quit and is sounding the alarm",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+     "title": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-10-03T06:31:56+00:00",
-     "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly coming out of the woodwork to warn about how dangerous […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK149_AI_01.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "91c2390ce603",
+     "published": "2026-10-04T08:16:04+00:00",
+     "summary": "New Jersey's lieutenant governor Dale Caldwell was forced to resign on September 25th after an investigation found he had sexually harassed a staffer and repeatedly violated ethics rules. The now-former Lt. governor has been making the media rounds trying to clear his name. But he took a particularly odd tactic during an interview on NJ […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2244569411.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "cb4cee0e9eb9",
      "tags": [
       "AI",
+      "News",
+      "Policy",
+      "Politics"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0018",
+   "title": "An AI couldn’t beat humans at StarCraft, so it decided to cheat",
+   "summary": "StarSkirmish pits AI-made StarCraft-playing bots against one another, as well as against human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 were essentially tied as the best-performing AI-made bots, but they couldn't top Stardust, the top-rated human-made bot. On Friday, G",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "couldn",
+    "against",
+    "beat",
+    "humans",
+    "starcraft",
+    "decided"
+   ],
+   "image": "img/2026-10-05/3a289a7a38d26ec4.webp",
+   "llm_enriched": false,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "An AI couldn’t beat humans at StarCraft, so it decided to cheat",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-10-04T07:21:59+00:00",
+     "summary": "StarSkirmish pits AI-made StarCraft-playing bots against one another, as well as against human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 were essentially tied as the best-performing AI-made bots, but they couldn't top Stardust, the top-rated human-made bot. On Friday, GPT was facing off against Claude and the human-created bot Pluto, but according to Kotaku, […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/9020427/swarm_screenshot27_large.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "d5a8ffd2dd50",
+     "tags": [
+      "AI",
+      "Gaming",
       "News",
       "OpenAI"
      ]
@@ -60,850 +736,344 @@
    ]
   },
   {
-   "key": "t0018",
-   "title": "Muse Creates Detailed Profiles of All Your Friends and Family",
-   "summary": "Millions have downloaded Meta’s AI agent Muse. But getting it to do your bidding comes with privacy costs.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "muse",
-    "meta",
-    "creates",
-    "detailed",
-    "profiles",
-    "friends"
-   ],
-   "image": "img/2026-10-04/c13f026cbc39fbe3.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI",
-    "INSIDE"
-   ],
-   "articles": [
-    {
-     "title": "Muse Creates Detailed Profiles of All Your Friends and Family",
-     "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-10-03T04:00:00+00:00",
-     "summary": "Millions have downloaded Meta’s AI agent Muse. But getting it to do your bidding comes with privacy costs.",
-     "image": "https://media.wired.com/photos/6abda258fa5a1bd6e2b21507/master/pass/Kernel-Panic-Muse-AI-Self-PWN-Security.jpg",
-     "id": "8b14dbba3515",
-     "tags": [
-      "Security",
-      "Security / Privacy",
-      "agentic AI",
-      "chatbots",
-      "virtual assistant"
-     ]
-    },
-    {
-     "title": "自己動手造 AI Agent 裝置！Meta 開源 Muse Gadgets SDK，ESP32 與樹莓派均可接入 Muse AI",
-     "url": "https://www.inside.com.tw/article/42555-muse-gadgets-esp32-open-source-hardware-sdk",
-     "source": "INSIDE",
-     "lang": "zh",
-     "published": "2026-10-03T00:13:00+00:00",
-     "summary": "Meta 超級智慧實驗室宣布推出 Muse Gadgets，釋出 Apache 2.0 授權的開源 ESP32 韌體與 Linux SDK，讓開發者可在 ESP32 開發板或樹莓派等硬體上直接接入 Muse AI，打造個人化 AI 實體外設。Meta 同步推出 Muse Home Link 實體裝置，首批 5,000 台免費提供 Muse 訂閱用戶申領 (限美國)。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/10/140cf85c-3389-4155-891c-09361626d72a.webp",
-     "id": "c560e7fba0da",
-     "tags": [
-      "人工智慧",
-      "開源",
-      "Meta",
-      "Muse"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0023",
-   "title": "亚马逊推出 Strands Decider 2B 开源决策模型，支持本地部署",
-   "summary": "IT之家 10 月 3 日消息，Amazon（亚马逊）Strands Agents 团队当地时间本月 1 日宣布推出 Strands Decider 2B 决策模型。其已在 GitHub 上开源，权重则可在 Hugging Face 上找到； 可在本地的 CPU / GPU 上运行 。 Strands Decider 2B 基于预训练的 Qwen3.5-2B“躯干”， 以具备评分功能的指针“头部”替换拥有文本生成能力的原有语言模型“头部” 。新“头部”规模较小，总参数仅略超过一百万；“躯干”则通过一个 rank-16 LoRA 适配器进行微调。 Stra",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "opensource",
-    "clef",
-    "jev",
-    "strands",
-    "cloudflare",
-    "api"
-   ],
-   "image": "img/2026-10-04/7b443d3902edc414.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家",
-    "INSIDE"
-   ],
-   "articles": [
-    {
-     "title": "亚马逊推出 Strands Decider 2B 开源决策模型，支持本地部署",
-     "url": "https://www.ithome.com/1/009/509.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T00:50:25+00:00",
-     "summary": "IT之家 10 月 3 日消息，Amazon（亚马逊）Strands Agents 团队当地时间本月 1 日宣布推出 Strands Decider 2B 决策模型。其已在 GitHub 上开源，权重则可在 Hugging Face 上找到； 可在本地的 CPU / GPU 上运行 。 Strands Decider 2B 基于预训练的 Qwen3.5-2B“躯干”， 以具备评分功能的指针“头部”替换拥有文本生成能力的原有语言模型“头部” 。新“头部”规模较小，总参数仅略超过一百万；“躯干”则通过一个 rank-16 LoRA 适配器进行微调。 Strands Decider 2B 在 JevBench 公开数据集上 具有不错的准确率和校准度表现 。其在 2B 级别模型中排名第 3，优于所有严格不超过 2B 的竞争对手。 在市面常见硬件上本地运行该模型时，Strands Decider 2B 交出了 113ms 的决策时延中位数 。其在 NVIDIA GeForce RTX 3090 上执行小型决策任务的中位数时延是 153ms。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/be853d3d-43cc-4b6a-9071-41c349917001.jpg?x-bce-process=image/format,f_auto",
-     "id": "20a641895700",
-     "tags": []
-    },
-    {
-     "title": "Cloudflare 開源 270 億參數決策模型 Clef，API 相容 Jev 搶攻 AI 代理判斷市場",
-     "url": "https://www.inside.com.tw/article/42552-cloudflare-open-source-clef-decision-model",
-     "source": "INSIDE",
-     "lang": "zh",
-     "published": "2026-10-02T23:52:00+00:00",
-     "summary": "Cloudflare 發表決策模型 Clef，以 Apache 2.0 授權在 Hugging Face 開放 270 億參數權重。Clef 讀取文字、JSON、圖片或影片，一次替所有預設問題的選項打出機率，不產生自由文字，API 與 TypeSafe 的決策模型 Jev 相容，部分測試分數與延遲表現優於 Jev。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/01/2d61ca9c-71ed-4df2-8c69-0f570a895c4f.png",
-     "id": "1b2f8f65a78e",
-     "tags": [
-      "人工智慧",
-      "開發者",
-      "資安",
-      "開源",
-      "AI 代理"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0000",
-   "title": "美财长贝森特批评 Anthropic、OpenAI 等风险警告：危言耸听，光喊话不拿解决方案",
-   "summary": "IT之家 10 月 4 日消息，当地时间 10 月 3 日，美国财政部长斯科特 · 贝森特（Scott Bessent）在接受 Axios 采访时批评部分 AI 行业人士针对人工智能“生存性风险”发出的警告。 他认为仅仅发出危言耸听的警告、却拿不出具体解决方案，并不能称为领导力。他同时呼吁 AI 实验室负责人承担安全责任，并在确保安全的前提下继续推进 AI 发展。 贝森特表示：“我们必须为各种情况做好准备，但另一方面，AI 界某些人只发出危言耸听的声音，却拿不出解决方案，这不是领导力。” 此前，Anthropic CEO 达里奥 · 阿莫代伊（Dario",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "openai",
-    "anthropic",
-    "regulation"
-   ],
-   "image": "img/2026-10-04/4be213d1226f4399.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "美财长贝森特批评 Anthropic、OpenAI 等风险警告：危言耸听，光喊话不拿解决方案",
-     "url": "https://www.ithome.com/1/009/596.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T16:02:56+00:00",
-     "summary": "IT之家 10 月 4 日消息，当地时间 10 月 3 日，美国财政部长斯科特 · 贝森特（Scott Bessent）在接受 Axios 采访时批评部分 AI 行业人士针对人工智能“生存性风险”发出的警告。 他认为仅仅发出危言耸听的警告、却拿不出具体解决方案，并不能称为领导力。他同时呼吁 AI 实验室负责人承担安全责任，并在确保安全的前提下继续推进 AI 发展。 贝森特表示：“我们必须为各种情况做好准备，但另一方面，AI 界某些人只发出危言耸听的声音，却拿不出解决方案，这不是领导力。” 此前，Anthropic CEO 达里奥 · 阿莫代伊（Dario Amodei）曾呼吁放缓最先进 AI 模型的开发速度，并警告如果 AI 能力继续快速提升，可能出现严重的失控风险。 9 月 12 日，OpenAI CEO 萨姆 · 奥尔特曼（Sam Altman）公开表示赞同阿莫代伊关于“放慢前沿模型开发速度”的观点，SpaceXAI CEO 埃隆 · 马斯克（Elon Musk）也对此表示支持。 阿莫代伊认为最先进 AI 系统的开发需要放缓，以降低 AI 超出人类控制并造成灾难性后果的风险。阿莫代伊同时提出包括引入第三方评估机构在内的安全措施。IT之家注意到，相关呼吁随后引发了 AI 行业与美国政府之间围绕发展速度、安全以及监管方式的争论。 贝森特在采访中表示，AI 实验室负责人应该为自身开发",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/60289ac4-4d12-44bb-bc56-f0dc1b713c81.png?x-bce-process=image/format,f_auto",
-     "id": "70ab27d74e2f",
-     "tags": []
-    },
-    {
-     "title": "OpenAI 前安全部门员工：AI 模型迭代部署太激进，公司的文化已经崩坏",
-     "url": "https://www.ithome.com/1/009/581.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T14:43:56+00:00",
-     "summary": "IT之家 10 月 4 日消息，据路透社报道，一名近期辞职的前 OpenAI 安全部门员工批评了该公司对待人工智能安全的做法，他认为一味追求快速开发的高压企业文化会提高系统发生故障的风险。 IT之家注意到，戴维 · 鲁宾森（David Robinson）于当地时间周六在《大西洋》杂志发表题为《我辞去 OpenAI 的工作，只因这家公司的文化已经崩坏》的文章中表示，包括 OpenAI 在内的各家人工智能企业做得“远远不够谨慎”，在研发能力更强的系统之前，应当更加重视安全方面的专业人才与相关研究。 “试错的时代已经结束了。”鲁宾森（David Robinson）写道。他提出，先进人工智能系统所需要的防护机制，应当更接近核电与航空这类行业所采用的安全保障体系。 鲁宾森（David Robinson）称，OpenAI 十分依赖其所谓的“迭代部署”模式：先对外发布系统，等到问题暴露之后再去加固安全防护。 此番言论进一步激化了人工智能行业内部的一场争论，争议焦点在于各家企业研发性能日益强大的系统时，推进的脚步是否过快。此前已经发生过多起安全管控失效或是实验性系统出现异常表现的事件，OpenAI 及其竞争对手 Anthropic 也因此受到外界审视。 鲁宾森自称曾在 OpenAI 任职三年半，参与起草过该公司的风险应对框架，并且负责监督 12 次前沿模型发布对应的安全报告。他写道：“公司只顾着接",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/2/8ad2304d-c61b-4004-9483-e1a55ca43342.png?x-bce-process=image/format,f_auto",
-     "id": "bd7abee53305",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0001",
-   "title": "AI 仅用 5 天做出《辐射：纽约》游戏，被贝塞斯达发函叫停",
-   "summary": "IT之家 10 月 4 日消息，眼下玩家群体正在放开手脚使用人工智能，依靠它打造各类全新的融合游戏作品，同时借助重编译突破老游戏原有的限制。不过这股风潮或许即将迎来来自 IP 持有企业更强的阻力。 据IT之家了解，《辐射：纽约》是一款完全依靠 Claude Opus 5.5 生成代码制作的浏览器游戏。制作者克里斯弗斯特（Chrisfirst）表示，整个开发过程只花了五天，全部内容都由代码生成。这款游戏采用低多边形画面水准，算不上一款现代游戏，它更多只属于概念验证，用来展示这类开发方式能够实现怎样的效果。现在贝塞斯达已经发送停止侵权函，叫停了这个项目。 这",
+   "key": "t0019",
+   "title": "乐山大佛景区回应网传“掏耳朵”养护作业视频：系 AI 合成，佛耳内并无所谓“杂物”",
+   "summary": "IT之家 10 月 4 日消息，近期网络上流传一段所谓“乐山大佛开展养护作业”短视频，其中显示文保工人正在给大佛“掏耳朵”，佛耳里掏出鸽子和腐叶，鼻孔里清理出大量腐叶等物质，旁边还有一只猴子在佛身上上蹿下跳，猴子还抢工人的安全帽戴在自己头上。 对此，乐山大佛文物保护（景区）管委会回应媒体“四川观察”，称相应视频不实，系他人 AI 生成，不是乐山大佛景区里的真实场景。希望广大网友不信谣、不传谣。 乐山大佛文物保护（景区）管委会数字化信息中心副主任陈芮透露，“2026 年以来乐山大佛总计开展 5 次保养维护，其中第 5 次是 9 月 20 日至 25 日，主",
    "category": "其他",
    "importance": 3,
    "keywords": [],
-   "image": "img/2026-10-04/bca2abdac5c70824.webp",
+   "image": "img/2026-10-05/79ef5c1756fc246c.webp",
    "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "AI 仅用 5 天做出《辐射：纽约》游戏，被贝塞斯达发函叫停",
-     "url": "https://www.ithome.com/1/009/595.htm",
+     "title": "乐山大佛景区回应网传“掏耳朵”养护作业视频：系 AI 合成，佛耳内并无所谓“杂物”",
+     "url": "https://www.ithome.com/1/009/728.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-03T15:58:43+00:00",
-     "summary": "IT之家 10 月 4 日消息，眼下玩家群体正在放开手脚使用人工智能，依靠它打造各类全新的融合游戏作品，同时借助重编译突破老游戏原有的限制。不过这股风潮或许即将迎来来自 IP 持有企业更强的阻力。 据IT之家了解，《辐射：纽约》是一款完全依靠 Claude Opus 5.5 生成代码制作的浏览器游戏。制作者克里斯弗斯特（Chrisfirst）表示，整个开发过程只花了五天，全部内容都由代码生成。这款游戏采用低多边形画面水准，算不上一款现代游戏，它更多只属于概念验证，用来展示这类开发方式能够实现怎样的效果。现在贝塞斯达已经发送停止侵权函，叫停了这个项目。 这件事之所以具备新闻价值，主要是因为这股新兴潮流正在快速发展。数以百万计的网友浏览到这类相关帖子之后，有可能激发大家对于自制游戏的好奇心与兴趣，甚至形成长期流行的趋势。假以时日，或许会有更多玩家转向这类分散的小众社区，自制游戏衍生版本；长此以往，这有可能会冲击头部游戏 IP 的玩家基本盘。 《辐射：纽约》易于访问这一点同样值得重视，任何人都可以直接在浏览器当中运行这款由 Claude 生成代码的辐射衍生游戏。 后续各大厂商会如何应对这一趋势，以及 AI 是否会越来越多地被用来制作这种随性生成的游戏体验，值得继续观察。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/f1d24454-200d-432f-b5b8-ef263a88aba6.jpg?x-bce-process=image/format,f_auto",
-     "id": "0985cd6ba178",
+     "published": "2026-10-04T05:20:18+00:00",
+     "summary": "IT之家 10 月 4 日消息，近期网络上流传一段所谓“乐山大佛开展养护作业”短视频，其中显示文保工人正在给大佛“掏耳朵”，佛耳里掏出鸽子和腐叶，鼻孔里清理出大量腐叶等物质，旁边还有一只猴子在佛身上上蹿下跳，猴子还抢工人的安全帽戴在自己头上。 对此，乐山大佛文物保护（景区）管委会回应媒体“四川观察”，称相应视频不实，系他人 AI 生成，不是乐山大佛景区里的真实场景。希望广大网友不信谣、不传谣。 乐山大佛文物保护（景区）管委会数字化信息中心副主任陈芮透露，“2026 年以来乐山大佛总计开展 5 次保养维护，其中第 5 次是 9 月 20 日至 25 日，主要内容包含岩体表面微损伤修复、微生物清理、表层植被清除等，与视频内容无关。同时，大佛耳鼻内并无杂物需要清理，乐山大佛所在的凌云山片区目前没有猴子。” IT之家注意到，根据《互联网信息服务深度合成管理规定》《生成式人工智能服务管理暂行办法》，AI 生成内容严禁伪造事实误导公众，必须标注显著 AI 标识。同时，我国《网络安全法》《文物保护法》明确禁止编造传播文物相关虚假信息；散布谣言扰乱公共秩序的，依据《治安管理处罚法》可处以拘留、罚款。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/7d3df272-3b64-4d78-8d52-fdc5b207ab26.jpg",
+     "id": "97e1126c1447",
      "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0002",
-   "title": "Rockstar 联合创始人丹 · 豪瑟公布两款新作：开放世界喜剧与失控 AI 反乌托邦科幻游戏",
-   "summary": "IT之家 10 月 4 日消息，《GTA 6》将于下个月在全球发售，玩家对这款作品的期待已经达到顶峰。Rockstar Games 为这款即将面世的开放世界游戏设立了很高的目标，表示希望交出超出玩家预期的成果。 虽然绝大多数玩家都期待《GTA 6》能够成为一款高品质作品，但这部知名系列的新作将是系列当中第一部没有 Rockstar 联合创始人丹 · 豪瑟（Dan Houser）参与开发的游戏，他已于 2020 年离开了这家公司。而豪瑟本人的工作室眼下正在打造几个十分有意思的新项目，其中就包含一款和人工智能相关的作品。 IT之家注意到，在接受 Variet",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "rockstar",
-    "gta"
-   ],
-   "image": "img/2026-10-04/4e4691416f1a7749.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "Rockstar 联合创始人丹 · 豪瑟公布两款新作：开放世界喜剧与失控 AI 反乌托邦科幻游戏",
-     "url": "https://www.ithome.com/1/009/592.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T15:43:14+00:00",
-     "summary": "IT之家 10 月 4 日消息，《GTA 6》将于下个月在全球发售，玩家对这款作品的期待已经达到顶峰。Rockstar Games 为这款即将面世的开放世界游戏设立了很高的目标，表示希望交出超出玩家预期的成果。 虽然绝大多数玩家都期待《GTA 6》能够成为一款高品质作品，但这部知名系列的新作将是系列当中第一部没有 Rockstar 联合创始人丹 · 豪瑟（Dan Houser）参与开发的游戏，他已于 2020 年离开了这家公司。而豪瑟本人的工作室眼下正在打造几个十分有意思的新项目，其中就包含一款和人工智能相关的作品。 IT之家注意到，在接受 Variety 采访时，Rockstar 联合创始人丹 · 豪瑟（Dan Houser）透露，自己旗下的媒体公司正在开发两款新游戏，其中一款的故事围绕一个产生自我意识之后开始失控的人工智能展开。豪瑟介绍，该项目属于反乌托邦科幻题材，剧情讲述一款电子游戏的开发过程出现严重差错，由此诞生了拥有自我意识的人工智能。 另一款作品同样是反乌托邦科幻题材，故事起因是一场彻底失控的游戏开发项目，之后出现了一个萌生自我意识并且脱离管控的人工智能。 这个人工智能是由两个彼此互相憎恶的人创造出来的，最终结果就是，它自身也开始憎恨自己。 豪瑟的娱乐工作室 Absurd Ventures 正在开发两款项目，另外一款新作则是开放世界喜剧游戏。 这位曾经参与 GTA 系列",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/f492542e-c118-4014-9297-1f46eff8afa3.png?x-bce-process=image/format,f_auto",
-     "id": "4c32f626281d",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0003",
-   "title": "卡普空公布 REX 升级计划：将 RE 引擎打造成面向 AI 时代的游戏引擎",
-   "summary": "IT之家 10 月 4 日消息，3A 游戏的开发成本正变得越来越高，开发周期也不断拉长，就连卡普空（Capcom）这类根基稳固的工作室也感受到了由此带来的连锁冲击。眼下许多工作室开始把人工智能引入游戏开发以及游戏引擎当中，借此跟上行业节奏。 卡普空现已宣布，要将 RE 引擎改造为适配人工智能时代的游戏引擎。今后这款引擎将会陆续获得迭代更新，以此简化游戏开发工作，这也是卡普空提出的“与人工智能协同创作游戏”这一新理念的组成部分。 卡普空过去曾经反对在游戏内使用 AI 生成的美术资源。虽然该立场或许已经有所转变，但 RE 引擎当中接入人工智能，大概率只会侧重",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "rex",
-    "2026"
-   ],
-   "image": "img/2026-10-04/fa695f566682d5f5.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "卡普空公布 REX 升级计划：将 RE 引擎打造成面向 AI 时代的游戏引擎",
-     "url": "https://www.ithome.com/1/009/590.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T15:32:36+00:00",
-     "summary": "IT之家 10 月 4 日消息，3A 游戏的开发成本正变得越来越高，开发周期也不断拉长，就连卡普空（Capcom）这类根基稳固的工作室也感受到了由此带来的连锁冲击。眼下许多工作室开始把人工智能引入游戏开发以及游戏引擎当中，借此跟上行业节奏。 卡普空现已宣布，要将 RE 引擎改造为适配人工智能时代的游戏引擎。今后这款引擎将会陆续获得迭代更新，以此简化游戏开发工作，这也是卡普空提出的“与人工智能协同创作游戏”这一新理念的组成部分。 卡普空过去曾经反对在游戏内使用 AI 生成的美术资源。虽然该立场或许已经有所转变，但 RE 引擎当中接入人工智能，大概率只会侧重于简化开发流程、优化那些重复枯燥又耗费时间的工作环节。 据日本刊物《Game Biz》的报道，卡普空高管兼程序员石田聪（Satoshi Ishida）在 2026 年 10 月 2 日举办的“卡普空公开大会 RE：2026”上，公布了在 RE 引擎内整合 AI 功能的相关计划。 卡普空并不打算从零开发一套全新的 AI 游戏引擎，而是准备借助名为 REX 的新项目对现有的 RE 引擎进行升级改良。 REX 是一项分阶段推进的改良规划。该计划准备以“全球最为通用的编程语言”为基础完成引擎的统一改造，既方便开发人员使用，同时也便于人工智能进行解读。据称这套 AI 后续可以理解并编写新程序、开展游戏试玩测试以及排查程序漏洞。 IT之家注意到",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/8953f218-1950-4746-8648-606232001e6e.png?x-bce-process=image/format,f_auto",
-     "id": "daede7a6c922",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0004",
-   "title": "苹果 MacBook Pro 外接 iPhone 17 Pro Max 运行 AI 模型，预填充性能最高提升 44%",
-   "summary": "IT之家 10 月 4 日消息，Qwen3.8‑27B 是一款性能不错的人工智能模型，但前提是设备拥有足够的显存与系统内存。搭载 M4 Pro 芯片的 MacBook Pro 仅有 24GB 统一内存，在运行该 AI 模型时，预填充速度会因此受到限制。据 Wccftech 报道，有一名用户通过 USB‑C 接口将 iPhone 17 Pro Max 外接至这台便携 Mac 电脑上，并借助自制软件，使得该 AI 模型的预填充性能最高提升了 44%。 IT之家注意到，为突破这台 Mac 24GB 统一内存的上限，Reddit 用户“u/StayLameBro",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "iphone",
-    "macbook",
-    "mac",
-    "pro",
-    "apple",
-    "alibaba"
-   ],
-   "image": "img/2026-10-04/7360b4a09ca44bd0.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "苹果 MacBook Pro 外接 iPhone 17 Pro Max 运行 AI 模型，预填充性能最高提升 44%",
-     "url": "https://www.ithome.com/1/009/586.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T15:10:40+00:00",
-     "summary": "IT之家 10 月 4 日消息，Qwen3.8‑27B 是一款性能不错的人工智能模型，但前提是设备拥有足够的显存与系统内存。搭载 M4 Pro 芯片的 MacBook Pro 仅有 24GB 统一内存，在运行该 AI 模型时，预填充速度会因此受到限制。据 Wccftech 报道，有一名用户通过 USB‑C 接口将 iPhone 17 Pro Max 外接至这台便携 Mac 电脑上，并借助自制软件，使得该 AI 模型的预填充性能最高提升了 44%。 IT之家注意到，为突破这台 Mac 24GB 统一内存的上限，Reddit 用户“u/StayLameBro”采用两种方式，把运算任务拆分交给 Mac 本机和 iPhone 17 Pro Max 协同处理。针对预填充加速，MacBook Pro 负责处理每一批 256 个 token 当中的第 1 至 40 层，再将激活值数据流传输到手机端；与此同时，iPhone 利用 A19 Pro 的 GPU 运行第 41 至 64 层，而 Mac 这边则已经开始处理下一批数据。依靠 GPU 运算，手机端的运行速度相比不使用 GPU 时提升约 2.4 倍。 整套方案里，神经网络引擎也没有闲置。每 16K 长度的旧上下文会被编译为一套神经网络引擎模型。在 140K 上下文长度下，相较于仅使用 A19 Pro 的 GPU，单 token 写入耗时从 27",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/5fe8862c-7c1a-40c1-af9d-e632742119a0.jpg?x-bce-process=image/format,f_auto",
-     "id": "b22615029d64",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0005",
-   "title": "Anthropic 被曝密会宗教领袖讨论 Claude 意识问题，OpenAI 奥尔特曼发声批评",
-   "summary": "IT之家 10 月 4 日消息，OpenAI CEO 萨姆 · 奥尔特曼（Sam Altman）昨日在 X 上发帖，对将 AI 模型视为“宗教力量”的倾向表达了明确反对。 他表示：“对于人们试图赋予 AI 模型某种宗教力量、或是放弃人类自身判断力而转而依赖这些模型，我感到非常不安，并认为这是一个切实的安全问题。” 《纽约时报》10 月 2 日报道称，Anthropic 联合创始人克里斯 · 奥拉（Chris Olah）在过去一年中主导且参与了一系列与宗教领袖的私下会面，包括天主教、犹太教、锡克教、福音派基督教等，讨论的核心议题包括 AI 模型是否可能已经",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "claude",
-    "anthropic"
-   ],
-   "image": "img/2026-10-04/c7170ff2d72f2947.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "Anthropic 被曝密会宗教领袖讨论 Claude 意识问题，OpenAI 奥尔特曼发声批评",
-     "url": "https://www.ithome.com/1/009/585.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T15:10:20+00:00",
-     "summary": "IT之家 10 月 4 日消息，OpenAI CEO 萨姆 · 奥尔特曼（Sam Altman）昨日在 X 上发帖，对将 AI 模型视为“宗教力量”的倾向表达了明确反对。 他表示：“对于人们试图赋予 AI 模型某种宗教力量、或是放弃人类自身判断力而转而依赖这些模型，我感到非常不安，并认为这是一个切实的安全问题。” 《纽约时报》10 月 2 日报道称，Anthropic 联合创始人克里斯 · 奥拉（Chris Olah）在过去一年中主导且参与了一系列与宗教领袖的私下会面，包括天主教、犹太教、锡克教、福音派基督教等，讨论的核心议题包括 AI 模型是否可能已经具备意识，以及如何将道德准则灌输到 AI 模型中。 据与会者透露，奥拉在会面中的表述令一些宗教领袖感到意外。以色列正统派拉比莫伊斯 · 纳翁（Rabbi Mois Navon）回忆称，奥拉及其同事“像对待一个有意识的存在那样”谈论 Claude，似乎认为 Claude 拥有哲学家所说的“道德地位”，即与人类同等的尊严和尊重权利。纳翁向奥拉提出了一个尖锐问题：如果 Claude 真的有意识，那么构建一个无偿为其工作的系统，是否等同于剥削甚至奴役。纳翁则表示，他并不认为当前的机器具有意识。 奥拉在接受采访时承认：“我们不知道 AI 模型是否有意识。我确实不确定。”Anthropic 发言人对此表示，会面中的主要道德问题并非关于 Clau",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/3a05f545-7e8c-4506-a489-ebeccffa0b45.png?x-bce-process=image/format,f_auto",
-     "id": "481d05d6d2c7",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0006",
-   "title": "马斯克改口：特斯拉 AI5 芯片内存由 72GB 上调至 96GB",
-   "summary": "IT之家 10 月 4 日消息，特斯拉首席执行官埃隆 · 马斯克（Elon Musk）做出说明，该公司的 AI5 芯片不会采用 72GB 的 DDR5 内存，而是改用 96GB 内存。这样做是为了避免只有特斯拉一家为驱动擎天柱（Optimus）人形机器人的这款芯片采用最低 72GB 的配置标准。 马斯克此前曾表示，特斯拉已经把 AI5 与 AI6 芯片的内存削减一半，目的是在全球历史性的内存紧缺背景下保障内存的供货。他在发表这番看法时还承认，过度依靠人工智能开展编程工作可能会引发人工智能精神病，出现这种状况之后，就没有办法向其他人解释人工智能究竟取得了哪",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "ai5",
-    "robot",
-    "xai",
-    "chip"
-   ],
-   "image": "img/2026-10-04/96706211f7e5ef77.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "马斯克改口：特斯拉 AI5 芯片内存由 72GB 上调至 96GB",
-     "url": "https://www.ithome.com/1/009/584.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T15:03:51+00:00",
-     "summary": "IT之家 10 月 4 日消息，特斯拉首席执行官埃隆 · 马斯克（Elon Musk）做出说明，该公司的 AI5 芯片不会采用 72GB 的 DDR5 内存，而是改用 96GB 内存。这样做是为了避免只有特斯拉一家为驱动擎天柱（Optimus）人形机器人的这款芯片采用最低 72GB 的配置标准。 马斯克此前曾表示，特斯拉已经把 AI5 与 AI6 芯片的内存削减一半，目的是在全球历史性的内存紧缺背景下保障内存的供货。他在发表这番看法时还承认，过度依靠人工智能开展编程工作可能会引发人工智能精神病，出现这种状况之后，就没有办法向其他人解释人工智能究竟取得了哪些进展。 特斯拉的 AI5 芯片是这家公司推进自动驾驶与机器人业务的核心，马斯克认为这两大业务板块将会决定特斯拉未来的走向。这位高管称，AI5 芯片已于四月份完成流片，他对这款硬件抱有很高期待。他认为，单颗 AI5 芯片的性能可以匹敌英伟达（NVIDIA）的 Hopper 人工智能显卡；而双芯片组合的情况下，则可以对标更为先进的 Blackwell 显卡。 马斯克还认为，以每瓦功耗对应的性能来衡量，AI5 芯片的表现能够达到英伟达芯片的三倍。八月下旬，马斯克透露，自己已经熟记这款芯片的设计，同时还表示，在和英伟达产品做性能对比的前提下，该芯片的整体成本仅为对方的百分之十。 昨日，马斯克又公布了更多关于 AI5 芯片的细节，他解释特斯",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/ec773b1d-f86e-4deb-be99-004496b28131.jpg?x-bce-process=image/format,f_auto",
-     "id": "ffd4b41b54ad",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0007",
-   "title": "The Agent Said It Was Done. The Database Disagreed.",
-   "summary": "",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "done.",
-    "database",
-    "disagreed.",
-    "agent"
-   ],
-   "image": "img/2026-10-04/05a4dbbb31f8bf19.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Hugging Face"
-   ],
-   "articles": [
-    {
-     "title": "The Agent Said It Was Done. The Database Disagreed.",
-     "url": "https://huggingface.co/blog/microsoft/thinkingbox",
-     "source": "Hugging Face",
-     "lang": "en",
-     "published": "2026-10-03T14:56:48+00:00",
-     "summary": "",
-     "image": "",
-     "id": "89764eae0099",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0008",
-   "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
-   "summary": "The CEO of Amazon Web Services tried to push back against widespread suspicion of data centers.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "datacenter",
-    "data",
-    "amazon",
-    "responds",
-    "center",
-    "backlash"
-   ],
-   "image": "img/2026-10-04/3cc0516ee393899e.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
-     "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-03T10:43:57+00:00",
-     "summary": "The CEO of Amazon Web Services tried to push back against widespread suspicion of data centers.",
-     "image": "",
-     "id": "d442265d4558",
-     "tags": [
-      "AI",
-      "Climate",
-      "Government & Policy",
-      "Amazon",
-      "Amazon Web Services"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0009",
-   "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
-   "summary": "Article URL: https://claude.dev/blog/getting-the-most-out-of-opus-5-5/ Comments URL: https://news.ycombinator.com/item?id=49946567 Points: 146 # Comments: 103",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "claude",
-    "code",
-    "url",
-    "https",
-    "comments",
-    "getting"
-   ],
-   "image": "img/2026-10-04/8731a50dd7afce56.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Hacker News (100+)"
-   ],
-   "articles": [
-    {
-     "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
-     "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-10-03T10:29:30+00:00",
-     "summary": "Article URL: https://claude.dev/blog/getting-the-most-out-of-opus-5-5/ Comments URL: https://news.ycombinator.com/item?id=49946567 Points: 146 # Comments: 103",
-     "image": "",
-     "id": "fc994d69ad09",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0010",
-   "title": "The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike",
-   "summary": "The price of anything with memory is skyrocketing thanks to AI. Aging streaming devices are no exception.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "price",
-    "shield",
-    "years",
-    "old.",
-    "got",
-    "hike"
-   ],
-   "image": "img/2026-10-04/6ef83005565c4600.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI"
-   ],
-   "articles": [
-    {
-     "title": "The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike",
-     "url": "https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-10-03T10:00:00+00:00",
-     "summary": "The price of anything with memory is skyrocketing thanks to AI. Aging streaming devices are no exception.",
-     "image": "https://media.wired.com/photos/6ac00d9bc910b804171a679e/master/pass/GettyImages-474968764.jpg",
-     "id": "f12932895df0",
-     "tags": [
-      "Gear",
-      "Gear / Gear News and Events",
-      "NVIDIA",
-      "TVs",
-      "consoles"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0011",
-   "title": "Capcom is preparing for a ‘future where we create games together with AI’",
-   "summary": "Capcom's Pragmata might be all about the horrors of AI, but in practice the studio doesn't seem so down on the tech. During the Capcom Open Conference RE: 2026 programmer Satoshi Ishida gave a presentation with the mouthful of a title: \"The Outlook and Future of the REX Project, ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "future",
-    "capcom",
-    "preparing",
-    "where",
-    "create",
-    "together"
-   ],
-   "image": "img/2026-10-04/b793b0aef9ed2428.webp",
-   "llm_enriched": false,
-   "sources": [
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Capcom is preparing for a ‘future where we create games together with AI’",
-     "url": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-03T08:49:10+00:00",
-     "summary": "Capcom's Pragmata might be all about the horrors of AI, but in practice the studio doesn't seem so down on the tech. During the Capcom Open Conference RE: 2026 programmer Satoshi Ishida gave a presentation with the mouthful of a title: \"The Outlook and Future of the REX Project, Further Evolving the RE Engine for […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/RE9_SS_08.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "f1c80105d2f2",
-     "tags": [
-      "AI",
-      "Gaming",
-      "News"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0013",
-   "title": "华为 Mate 90 Pro Max 性能解禁：搭载麒麟 9050 Pro，部分游戏能效优于第五代骁龙 8 至尊版机型",
-   "summary": "IT之家 10 月 4 日消息，在 10 月 1 日的华为 Mate 90 系列及全场景新品发布会上，华为年度旗舰 Mate 90 系列手机正式发布。其中，Mate 90 Pro Max / RS 非凡大师搭载的是首款逻辑折叠 τ 芯片 —— 麒麟 9050 Pro。 根据华为官方介绍，麒麟 9050 Pro 是麒麟性能新巅峰，通过软硬芯云垂直整合， 整机性能提升 31% 。这枚芯片 CPU 还支持 9 核 16 线程超线程技术，多核性能提升 23%、GPU 渲染性能提升 40%、NPU 性能提升 140%。 极客湾发布了一期针对华为 Mate 90 P",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "mate",
-    "9050",
-    "pro",
-    "9030",
-    "cpu",
-    "max"
-   ],
-   "image": "img/2026-10-04/a1008bda39081ca2.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "华为 Mate 90 Pro Max 性能解禁：搭载麒麟 9050 Pro，部分游戏能效优于第五代骁龙 8 至尊版机型",
-     "url": "https://www.ithome.com/1/009/580.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T08:20:02+00:00",
-     "summary": "IT之家 10 月 4 日消息，在 10 月 1 日的华为 Mate 90 系列及全场景新品发布会上，华为年度旗舰 Mate 90 系列手机正式发布。其中，Mate 90 Pro Max / RS 非凡大师搭载的是首款逻辑折叠 τ 芯片 —— 麒麟 9050 Pro。 根据华为官方介绍，麒麟 9050 Pro 是麒麟性能新巅峰，通过软硬芯云垂直整合， 整机性能提升 31% 。这枚芯片 CPU 还支持 9 核 16 线程超线程技术，多核性能提升 23%、GPU 渲染性能提升 40%、NPU 性能提升 140%。 极客湾发布了一期针对华为 Mate 90 Pro Max 的性能分析报告，讲解了麒麟 9050 Pro 的逻辑折叠是如何实现，并公开了 Mate 90 Pro Max 的实际性能续航表现。 需要注意的是，此次华为 Mate 90 和 Mate 90 Pro 分别搭载的是麒麟 9030 和麒麟 9035 处理器。前者为 Mate 80 Pro 同款芯片， 较搭载麒麟 9020 的 Mate 80 强 27% ；后者其实相当于麒麟 9030 Pro（CPU、GPU 规格完全相同），仅峰值频率有所提升， 较搭载麒麟 9030 的 Mate 80 Pro 强 20% 。 另外，麒麟 9030、麒麟 9035 与麒麟 9050 Pro 采用相同的 CPU 核心架构设计，实际应用时可支持",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/b70d4e90-b430-435e-ac84-395a36cb49c7.jpg",
-     "id": "d1bbc5160e7a",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0014",
-   "title": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
-   "summary": "Kakul Srivastava is the CEO of Splice, the sample platform countless producers rely on for one-shots and melodic loops. Samples pulled from the service have found their way into massive hits like Lisa's \"Money\" and \"Espresso\" by Sabrina Carpenter. (The original samples are here a",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "kakul",
-    "splice",
-    "srivastava",
-    "thinks",
-    "emails",
-    "killing"
-   ],
-   "image": "img/2026-10-04/d163370781ba6a28.webp",
-   "llm_enriched": false,
-   "sources": [
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
-     "url": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-03T07:00:00+00:00",
-     "summary": "Kakul Srivastava is the CEO of Splice, the sample platform countless producers rely on for one-shots and melodic loops. Samples pulled from the service have found their way into massive hits like Lisa's \"Money\" and \"Espresso\" by Sabrina Carpenter. (The original samples are here and here, for the curious.) Before that, Kakul held executive roles […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/IMG_3820.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "2b2053e0bc6b",
-     "tags": [
-      "AI",
-      "Entertainment",
-      "Interview",
-      "Music",
-      "Report"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0015",
-   "title": "海马云推出 haimacloud GEAR 端云混合掌机：高通骁龙 865，硬件首发价 3149 元",
-   "summary": "IT之家 10 月 3 日消息，海马云 (haimacloud) 近日推出了 haimacloud GEAR 端云混合掌机。其本地 采用高通骁龙 865 移动平台 ，运行 Android 13 操作系统，支持海马云的云游戏服务。 该掌机 拥有 8GB + 128GB 的存储器组合 ，搭配 7\" FHD 144Hz 2ms 800nits OLED 屏幕，内置 8000mAh 电池，具备主动散热、TMR 摇杆、霍尔扳机、机械微动按键、六轴体感，ABXY 为模块化设计，支持 Wi-Fi 6 & BT 5.1，质量 450g。 IT之家获悉，配套的云游戏服务基",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "haimacloud",
-    "gear",
-    "865",
-    "3149",
-    "144",
-    "intel"
-   ],
-   "image": "img/2026-10-04/cd7445940f59d2d5.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "海马云推出 haimacloud GEAR 端云混合掌机：高通骁龙 865，硬件首发价 3149 元",
-     "url": "https://www.ithome.com/1/009/576.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T06:47:46+00:00",
-     "summary": "IT之家 10 月 3 日消息，海马云 (haimacloud) 近日推出了 haimacloud GEAR 端云混合掌机。其本地 采用高通骁龙 865 移动平台 ，运行 Android 13 操作系统，支持海马云的云游戏服务。 该掌机 拥有 8GB + 128GB 的存储器组合 ，搭配 7\" FHD 144Hz 2ms 800nits OLED 屏幕，内置 8000mAh 电池，具备主动散热、TMR 摇杆、霍尔扳机、机械微动按键、六轴体感，ABXY 为模块化设计，支持 Wi-Fi 6 & BT 5.1，质量 450g。 IT之家获悉，配套的云游戏服务基于英特尔酷睿 i7-12700KF 处理器、\"70\" 级 NVIDIA GeForce RTX 显卡，支持 1080p 144FPS。 haimacloud GEAR 仅硬件首发价 3,149 元，包含 1 年云游戏传奇会员的套装首发价为 4,349 元。 相关阅读： 《 【IT之家开箱】芒米 MANGMI Pocket Max 安卓掌机体验：7 英寸 144Hz 大屏、按键模块化设计 》 《 首发价 1388 元芒米 Pocket Max 安卓游戏掌机价格公布：搭骁龙 865、磁吸可拆换 ABXY / 十字键设计 》",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/25fb1700-0f25-4c54-a332-53e45f86f1a5.png?x-bce-process=image/format,f_auto",
-     "id": "78b8ff476718",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0016",
-   "title": "All the AI agents that can live in your text messages",
-   "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "live",
-    "text",
-    "messages",
-    "agents",
-    "agent",
-    "created"
-   ],
-   "image": "img/2026-10-04/6ad3431ada9b3ce3.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "All the AI agents that can live in your text messages",
-     "url": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-03T06:00:00+00:00",
-     "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-     "image": "",
-     "id": "9a415d111d44",
-     "tags": [
-      "AI",
-      "instinct",
-      "AI agents"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0017",
-   "title": "AI 與機器人加速標本數位化，英國打造 7 千萬件館藏網路超級博物館",
-   "summary": "英國研究員運用人工智慧（AI）與機器人，將全國各地收藏的自然史標本數位化，打造線上「超級博物館」。民眾用手機或 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "robot"
-   ],
-   "image": "img/2026-10-04/4d90bb116e78b9fa.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "AI 與機器人加速標本數位化，英國打造 7 千萬件館藏網路超級博物館",
-     "url": "https://technews.tw/2026/10/03/how-ai-is-creating-a-uk-super-museum-and-revealing-our-planets-history",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-10-03T05:30:15+00:00",
-     "summary": "英國研究員運用人工智慧（AI）與機器人，將全國各地收藏的自然史標本數位化，打造線上「超級博物館」。民眾用手機或 […]",
-     "image": "",
-     "id": "04e012ef9eb6",
-     "tags": [
-      "AI 人工智慧",
-      "科技教育",
-      "科技趣聞",
-      "AI",
-      "DiSSCo UK"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0019",
-   "title": "新北青年局「AI 實戰職涯營」成果亮相 25 位跨域青年打造 AI Agent 解企業真實命題",
-   "summary": "【新北市訊】新北市政府青年局第二屆「2026 AI Practitioner Program（ AI 實戰職涯營）」昨（2）日舉辦 Demo Day，25 名學員歷經 3 個月密集訓練，將 AI 導入物流、航運、食品、醫療及會計等領域，針對企業實際工作流程打造 AI Agent。獲選 MVP 的「箱當可以 Boxcellent」團隊獲得 AWS 資深主管職涯諮詢機會，結訓學員也有機會銜接伊雲谷數位科技、永豐銀行、統一資訊等企業提供的生成式 AI 系統分析師、雲端架構師及生成式 AI 專案管理等熱門職缺，幫助青年順利接軌職場。 新北市青年局副局長林麗珠表示",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "layoff",
-    "practitioner",
-    "aws",
-    "demo",
-    "day",
-    "certified"
-   ],
-   "image": "img/2026-10-04/5e783f72b1f919b9.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechOrange 科技報橘"
-   ],
-   "articles": [
-    {
-     "title": "新北青年局「AI 實戰職涯營」成果亮相 25 位跨域青年打造 AI Agent 解企業真實命題",
-     "url": "https://techorange.com/2026/10/03/2026aipractitionerprogram-aws-ai-agent-demoday",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-10-03T03:30:24+00:00",
-     "summary": "【新北市訊】新北市政府青年局第二屆「2026 AI Practitioner Program（ AI 實戰職涯營）」昨（2）日舉辦 Demo Day，25 名學員歷經 3 個月密集訓練，將 AI 導入物流、航運、食品、醫療及會計等領域，針對企業實際工作流程打造 AI Agent。獲選 MVP 的「箱當可以 Boxcellent」團隊獲得 AWS 資深主管職涯諮詢機會，結訓學員也有機會銜接伊雲谷數位科技、永豐銀行、統一資訊等企業提供的生成式 AI 系統分析師、雲端架構師及生成式 AI 專案管理等熱門職缺，幫助青年順利接軌職場。 新北市青年局副局長林麗珠表示，推動「AI 實戰職涯營」，主要希望藉由完整培訓，讓不同專業背景青年都能培養 AI 應用、跨域溝通與問題解決能力，成為企業所需的即戰力。今年營隊錄取的 25 位學員背景多元，涵蓋醫療護理、文史哲、社會福利、行銷企劃等領域，目前已有 17 名學員成功取得「AWS Certified AI Practitioner」與「AWS Certified Cloud Practitioner」兩張國際認證，展現 AI 不僅是科技人才的工具，只要掌握正確方法，各領域青年都能結合自身專業與 AI，開創新的職場價值。 學員在 Demo Day 成果發表中，分組挑戰企業真實命題，提出涵蓋物流與宅配、智慧航運、食品製造、醫療及會計服務等五大領域的 AI ",
-     "image": "https://techorange.com/app/uploads/2026/10/450ed469a3ef5864-720x405.jpg",
-     "id": "9b6bbcc94216",
-     "tags": [
-      "AI 人工智慧"
-     ]
     }
    ]
   },
   {
    "key": "t0020",
-   "title": "AMD 出样 Versal AI Core XQRVC1902 自适应 SoC，满足 15 年太空任务要求",
-   "summary": "IT之家 10 月 3 日消息，AMD 当地时间本月 1 日宣布向航天客户交付 Versal AI Core XQRVC1902 自适应 SoC 的早期样品。 这一 SoC 采用 AMD 自主研发的航天级无盖封装，结合了保守的设计规则和增强型有机基板材料，搭配航天级芯片电容器。该组合减轻了太空环境中的热应力和机械应力对芯片的影响， 适合对可靠性要求极高的航天任务 。 AMD 目前正在按照航天组件标准中质量和可靠性的最高级别 —— 美国军用标准 MIL-PRF-38535 Y 级认证对 Versal AI Core XQRVC1902 自适应 SoC 进行",
+   "title": "DeepSeek Harness 崔添翼：产品核心理念是“一切皆插件”，可扩展性是初心",
+   "summary": "IT之家 10 月 4 日消息，DeepSeek Harness 组成员崔添翼今日回应了“如何看待 DeepSeek Harness 在新版本中加入 Claude Code Mods 兼容？”，他本人是这次 v0.2.1-alpha.1 版本中加入 Claude Code Mods 兼容层的作者。 目前 DeepSeek Harness 中的“Claude Code Mods 兼容层”属于“alpha 版本”中的“实验性功能”。做这个兼容层的主要目的，是验证 Claude Code Mods 向插件作者提供的扩展能力，是否大致是 DSH“一切皆插件”架构",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "amd",
-    "soc",
-    "versal",
-    "core",
-    "xqrvc1902",
-    "1902"
+    "deepseek",
+    "harness",
+    "code",
+    "mods",
+    "claude"
    ],
-   "image": "img/2026-10-04/bd9dd6f0dee48d3a.webp",
+   "image": "img/2026-10-05/d446c41113159403.webp",
    "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "AMD 出样 Versal AI Core XQRVC1902 自适应 SoC，满足 15 年太空任务要求",
-     "url": "https://www.ithome.com/1/009/521.htm",
+     "title": "DeepSeek Harness 崔添翼：产品核心理念是“一切皆插件”，可扩展性是初心",
+     "url": "https://www.ithome.com/1/009/701.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-03T01:53:20+00:00",
-     "summary": "IT之家 10 月 3 日消息，AMD 当地时间本月 1 日宣布向航天客户交付 Versal AI Core XQRVC1902 自适应 SoC 的早期样品。 这一 SoC 采用 AMD 自主研发的航天级无盖封装，结合了保守的设计规则和增强型有机基板材料，搭配航天级芯片电容器。该组合减轻了太空环境中的热应力和机械应力对芯片的影响， 适合对可靠性要求极高的航天任务 。 AMD 目前正在按照航天组件标准中质量和可靠性的最高级别 —— 美国军用标准 MIL-PRF-38535 Y 级认证对 Versal AI Core XQRVC1902 自适应 SoC 进行测试。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/04d874ef-550e-4dc6-a81e-f99f29e92a06.jpg?x-bce-process=image/format,f_auto",
-     "id": "a2ee7c501f38",
+     "published": "2026-10-04T04:27:24+00:00",
+     "summary": "IT之家 10 月 4 日消息，DeepSeek Harness 组成员崔添翼今日回应了“如何看待 DeepSeek Harness 在新版本中加入 Claude Code Mods 兼容？”，他本人是这次 v0.2.1-alpha.1 版本中加入 Claude Code Mods 兼容层的作者。 目前 DeepSeek Harness 中的“Claude Code Mods 兼容层”属于“alpha 版本”中的“实验性功能”。做这个兼容层的主要目的，是验证 Claude Code Mods 向插件作者提供的扩展能力，是否大致是 DSH“一切皆插件”架构所提供能力的一个子集。目前还无法让所有 Claude Code Mods 在 DeepSeek Harness 中无缝运行；如果认为这是一个值得投入的目标，从技术上看，未来有可能做到。 他提到：“DeepSeek Harness 的核心理念是 “一切皆插件” ，这个理念是从立项之初、写第一行代码之前就确立下来的，正如“开源”的理念是从 DeepSeek 成立之初、发布第一个模型之前就确立下来的一样。开源是我们的初心，不是被迫开源的。让我们的 Agent Harness 产品以开放、开源的方式具备尽量极致的可扩展性，也是我们的初心，并不是被迫或模仿别人才做开放可扩展的。” IT之家注意到，DeepSeek Harness v0.2 预",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/2c044f9f-8ce6-4f48-a07d-9ea59a1a06f3.png?x-bce-process=image/format,f_auto",
+     "id": "d21f7ff36018",
      "tags": []
     }
    ]
   },
   {
    "key": "t0021",
-   "title": "戴尔推出 2 款强固型笔电，搭载第 3 代英特尔酷睿 Ultra 处理器",
-   "summary": "IT之家 10 月 3 日消息，Dell（戴尔）当地时间本月 6 日 （IT之家注：此为原始新闻稿标注时间） 宣布推出 2 款基于第 3 代英特尔酷睿 Ultra 处理器的强固型笔记本电脑新品。 新一代的 Dell Pro Rugged 13 Extreme 采用“全强固”设计，是 同级别最小巧最强大 的型号。其拥有 IP66 防尘防水，抗 1.8m 跌落，可在爆炸性环境中安全操作，配备 1400nits 的 13.3\" 触控屏，板载 LPDDR5X 内存。 而新一代 Dell Pro Rugged 14 属于“半强固”机型，也是 同级别最小巧最强大 的",
+   "title": "Rural Data Centers Are in for a Big Federal Tax Break",
+   "summary": "Under the One Big Beautiful Bill Act, data center projects in rural areas could be eligible for major tax benefits starting next year. Some hyperscalers do not seem eager to take the free cash.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "ultra",
-    "dell",
-    "intel",
-    "rugged"
+    "rural",
+    "data",
+    "big",
+    "tax",
+    "centers",
+    "federal"
    ],
-   "image": "img/2026-10-04/4e694367c724b73f.webp",
+   "image": "img/2026-10-05/5e1cacb8db8b0fb8.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "Wired AI"
    ],
    "articles": [
     {
-     "title": "戴尔推出 2 款强固型笔电，搭载第 3 代英特尔酷睿 Ultra 处理器",
-     "url": "https://www.ithome.com/1/009/520.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-03T01:43:21+00:00",
-     "summary": "IT之家 10 月 3 日消息，Dell（戴尔）当地时间本月 6 日 （IT之家注：此为原始新闻稿标注时间） 宣布推出 2 款基于第 3 代英特尔酷睿 Ultra 处理器的强固型笔记本电脑新品。 新一代的 Dell Pro Rugged 13 Extreme 采用“全强固”设计，是 同级别最小巧最强大 的型号。其拥有 IP66 防尘防水，抗 1.8m 跌落，可在爆炸性环境中安全操作，配备 1400nits 的 13.3\" 触控屏，板载 LPDDR5X 内存。 而新一代 Dell Pro Rugged 14 属于“半强固”机型，也是 同级别最小巧最强大 的产品。其支持 IP53 防尘防水，抗 0.9m 跌落，配备 1100nits 的 14\" FHD+ 面板（可选触控支持），采用 LPCAMM2 内存模组，可选 NVIDIA RTX PRO 500 笔记本电脑 GPU。 两款设备均支持智能卡读卡器、指纹识别器、IR 人脸识别，可选配 5G 蜂窝网络模块，向下兼容上一代热插拔电池和充电器。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/bceb74c3-fa73-44ab-b6ea-5247a3e7914e.jpg",
-     "id": "4e4a67fc4384",
-     "tags": []
+     "title": "Rural Data Centers Are in for a Big Federal Tax Break",
+     "url": "https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break",
+     "source": "Wired AI",
+     "lang": "en",
+     "published": "2026-10-04T02:00:00+00:00",
+     "summary": "Under the One Big Beautiful Bill Act, data center projects in rural areas could be eligible for major tax benefits starting next year. Some hyperscalers do not seem eager to take the free cash.",
+     "image": "https://media.wired.com/photos/6abfbb7863cea41649272752/master/pass/100226-Power%20Play.jpg",
+     "id": "8c78100c992b",
+     "tags": [
+      "Science",
+      "Science / Environment",
+      "Power Play",
+      "data centers",
+      "environment"
+     ]
     }
    ]
   },
   {
    "key": "t0022",
-   "title": "华为 HarmonyOS 7.0 小艺帮帮忙智能体功能调整，将不再支持后续新增的设备",
-   "summary": "IT之家 10 月 3 日消息，小艺帮帮忙智能体是 HarmonyOS 6.0 上推出的探索性智能体。华为官网显示，因业务调整， 小艺帮帮忙智能体将不再支持后续新增的设备 。 据悉，小艺帮帮忙智能体是一个专注于应用操控的智能体，支持操控更多的场景，可在智能体对话列表页中找到小艺帮帮忙智能体，也可以在广场中搜索小艺帮帮忙来体验使用。 对于原 HarmonyOS 6.0 期间支持的设备，小艺帮帮忙智能体还可继续使用 ，用户的个人技能和定时计划任务在升级到 HarmonyOS 7.0 后仍可继续使用。 对于不支持小艺帮帮忙智能体的设备，无法通过数据克隆将智能体",
+   "title": "天津大学获批全国首个“脑机接口”一级交叉学科博士点",
+   "summary": "IT之家 10 月 4 日消息，近日，国务院学位委员会正式下发《关于下达 2025 年度学位授予资格自主审核单位撤销和增设学位授予点名单的通知》（学位〔2026〕17 号），天津大学成功获批 全国首个、也是目前全国唯一一个的“脑机接口”一级交叉学科博士学位授予点 。 这在脑机接口未来产业发展历程中具有重要里程碑意义，标志着我国脑机接口学科建设与人才培养迈入全新阶段。 据介绍，脑机接口作为人机交互的最高形态，是融合临床医学、神经科学、人工智能、电子信息、集成电路等多学科前沿理论的颠覆性技术， 已被正式写入国家“十五五”规划 ， 成为前瞻布局的未来产业重点方",
    "category": "其他",
    "importance": 3,
-   "keywords": [
-    "harmonyos",
-    "pura",
-    "nova",
-    "mate",
-    "7.0",
-    "6.0"
-   ],
-   "image": "img/2026-10-04/3d2fa500cf7fbaea.webp",
+   "keywords": [],
+   "image": "",
    "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "华为 HarmonyOS 7.0 小艺帮帮忙智能体功能调整，将不再支持后续新增的设备",
-     "url": "https://www.ithome.com/1/009/516.htm",
+     "title": "天津大学获批全国首个“脑机接口”一级交叉学科博士点",
+     "url": "https://www.ithome.com/1/009/684.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-03T01:18:12+00:00",
-     "summary": "IT之家 10 月 3 日消息，小艺帮帮忙智能体是 HarmonyOS 6.0 上推出的探索性智能体。华为官网显示，因业务调整， 小艺帮帮忙智能体将不再支持后续新增的设备 。 据悉，小艺帮帮忙智能体是一个专注于应用操控的智能体，支持操控更多的场景，可在智能体对话列表页中找到小艺帮帮忙智能体，也可以在广场中搜索小艺帮帮忙来体验使用。 对于原 HarmonyOS 6.0 期间支持的设备，小艺帮帮忙智能体还可继续使用 ，用户的个人技能和定时计划任务在升级到 HarmonyOS 7.0 后仍可继续使用。 对于不支持小艺帮帮忙智能体的设备，无法通过数据克隆将智能体、个人技能、定时计划任务克隆到不支持的设备中。 IT之家附原 HarmonyOS 6.0 期间支持设备： Mate 80 全系列、Mate 70 全系列、Mate 60 全系列 Mate X7 全系列、Mate X6 全系列、Mate X5 全系列 Pura X 全系列、Pura X Max 全系列 Pura 90 全系列、Pura 80 全系列、Pura 70 全系列 Pocket 2 全系列 nova 16 全系列（不包括 nova 16 SE）、nova 15 全系列、nova 14 全系列（不包括 nova14 活力版） 畅享 90 Plus，畅享 90 Pro Max 相关阅读： 《 “小艺帮帮忙”适配华为 Pura 80",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/44d7b65c-4d5b-41dd-b5c6-9fe082543173.jpg",
-     "id": "4f1c0d85d613",
+     "published": "2026-10-04T01:28:43+00:00",
+     "summary": "IT之家 10 月 4 日消息，近日，国务院学位委员会正式下发《关于下达 2025 年度学位授予资格自主审核单位撤销和增设学位授予点名单的通知》（学位〔2026〕17 号），天津大学成功获批 全国首个、也是目前全国唯一一个的“脑机接口”一级交叉学科博士学位授予点 。 这在脑机接口未来产业发展历程中具有重要里程碑意义，标志着我国脑机接口学科建设与人才培养迈入全新阶段。 据介绍，脑机接口作为人机交互的最高形态，是融合临床医学、神经科学、人工智能、电子信息、集成电路等多学科前沿理论的颠覆性技术， 已被正式写入国家“十五五”规划 ， 成为前瞻布局的未来产业重点方向。 IT之家注意到，天津大学已于 2024 年依托未来技术学院开设 全国首个脑机接口本科专业方向 并正式招生；2026 年 4 月，“脑机科学与技术”本科专业正式获教育部批准设立，纳入交叉学科门类（专业代码 140013TK），成为 全国首个直接面向本科招生的脑机接口专业 。 此次一级交叉学科博士点在前期自设基础上的正式获批，与本科专业相衔接，标志着天津大学脑机接口“本硕博”全链条人才培养体系正式构建完成。",
+     "image": "",
+     "id": "bc2faef327c4",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0023",
+   "title": "比亚迪秦 MAX 车型 9 月销量 12066 辆，上市 2 个月连续破万",
+   "summary": "IT之家 10 月 4 日消息，10 月 3 日，比亚迪王朝网销售事业部总经理路天透露，秦 MAX 车型 9 月热销 12066 辆，上市 2 个月销量连续破万。 IT之家注意到，比亚迪秦家族“超大杯”车型秦 MAX 于 8 月 13 日晚间正式上市，新车提供 EV、DM-i 两种车型共 9 种不同配置，售价区间为 9.99 万-14.39 万元。 该车长宽高分别为 4866/1880/1495mm，轴距为 2820mm，拥有 523L 后备箱，最高可拓展至 1450L 空间，号称同级领先；车内拥有 27 处储物空间。 秦 MAX EV 全系标配 第二代",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "max",
+    "12066"
+   ],
+   "image": "img/2026-10-05/9dfa0cbf288cb575.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "比亚迪秦 MAX 车型 9 月销量 12066 辆，上市 2 个月连续破万",
+     "url": "https://www.ithome.com/1/009/680.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T01:13:49+00:00",
+     "summary": "IT之家 10 月 4 日消息，10 月 3 日，比亚迪王朝网销售事业部总经理路天透露，秦 MAX 车型 9 月热销 12066 辆，上市 2 个月销量连续破万。 IT之家注意到，比亚迪秦家族“超大杯”车型秦 MAX 于 8 月 13 日晚间正式上市，新车提供 EV、DM-i 两种车型共 9 种不同配置，售价区间为 9.99 万-14.39 万元。 该车长宽高分别为 4866/1880/1495mm，轴距为 2820mm，拥有 523L 后备箱，最高可拓展至 1450L 空间，号称同级领先；车内拥有 27 处储物空间。 秦 MAX EV 全系标配 第二代刀片电池 + 闪充技术 ，官方还将赠送 1 年免费闪充权益。天神之眼 B 辅助驾驶激光版车型，支持城市领航辅助、高快领航辅助、全场景泊车辅助等功能。比亚迪方面承诺，将提供泊车兜底 +1 年城市领航兜底。此外，新车还内置了“迪迪虾”智能体。 该车的纯电版搭载峰值功率 240kW 或 120kW 的比亚迪电机，零百加速最快仅需 5.8 秒；插混版搭载 1.5L 自吸发动机 + 电机组成的插混系统，发动机最大功率 74kW，电机最大功率 175kW，拥有“B 级插混轿车同级最长”的 320km 纯电续航、2370km 满油满电综合续航；NEDC 百公里亏电油耗 2.59 升，同样也是“同级最低”。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/09a1717d-8a61-41e1-b835-220b77ed6613.png?x-bce-process=image/format,f_auto",
+     "id": "a770cca1d974",
      "tags": []
     }
    ]
   },
   {
    "key": "t0024",
-   "title": "川普召集黃仁勳、馬斯克等科技巨頭簽「AI 憲法」，四層稽核機制能解失控風險？",
-   "summary": "美國總統川普（Donald Trump）日前在白宮召集輝達（NVIDIA）執行長黃仁勳、SpaceXAI 創辦 […]",
+   "title": "System76 更新 COSMIC 项目 PR 模板，禁止贡献者提交利用 AI 辅助完成的代码",
+   "summary": "IT之家 10 月 4 日消息，开发团队 System76 现已更新 COSMIC 项目的 Pull Request（PR）模板，新增一份强制性检查清单，明确禁止贡献者提交利用 AI 辅助完成的代码。贡献者必须确认提交内容中不存在任何 AI 生成的代码、注释以及描述，否则无法按照要求提交贡献。 公开信息显示，COSMIC 是 System76 基于 Rust 开发的 Linux 桌面环境。在 COSMIC 推出之前，System76 的 Pop!_OS 长期基于经过深度修改的 GNOME 桌面环境。不过，由于 System76 与 GNOME 上游开发者",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "xai",
-    "nvidia",
-    "donald",
-    "trump"
+    "system76",
+    "cosmic",
+    "gnome"
    ],
-   "image": "img/2026-10-04/8d4368a9e7f36d45.webp",
+   "image": "img/2026-10-05/de53c8e838d3d87c.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "System76 更新 COSMIC 项目 PR 模板，禁止贡献者提交利用 AI 辅助完成的代码",
+     "url": "https://www.ithome.com/1/009/669.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-04T00:35:59+00:00",
+     "summary": "IT之家 10 月 4 日消息，开发团队 System76 现已更新 COSMIC 项目的 Pull Request（PR）模板，新增一份强制性检查清单，明确禁止贡献者提交利用 AI 辅助完成的代码。贡献者必须确认提交内容中不存在任何 AI 生成的代码、注释以及描述，否则无法按照要求提交贡献。 公开信息显示，COSMIC 是 System76 基于 Rust 开发的 Linux 桌面环境。在 COSMIC 推出之前，System76 的 Pop!_OS 长期基于经过深度修改的 GNOME 桌面环境。不过，由于 System76 与 GNOME 上游开发者在部分设计理念和功能取舍方面存在长期分歧，公司最终决定开发自己的桌面环境。 IT之家注意到，System76 此前就曾批评 AI 生成代码存在代码过于复杂的问题。该团队认为，AI 通常缺乏理解大型项目深层集成关系所需的完整上下文，因此可能生成看似可用、但实际难以维护的复杂代码，并直接导致代码审查时间明显增加。 目前，System76 旗下唯一不受“No LLM contributions”规则限制的代码库是 cosmic-flatpak。该项目主要用于管理一些与 COSMIC 桌面环境深度绑定、难以直接放入 Flathub 的软件，包括 COSMIC 面板小程序、桌面扩展等。 System76 并不是唯一一家对 AI 生成代码采取严",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/8/3c5e978d-db92-4649-bad9-9b4de59de33b.png",
+     "id": "998f37525252",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0025",
+   "title": "美國 FDA 推動法規轉型，以器官晶片與電腦模型取代動物實驗",
+   "summary": "美國以人類細胞、器官晶片與電腦模型取代動物實驗的趨勢，正從實驗室走向監管制度核心。從哈佛大學魏斯研究所（Wys […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "fda",
+    "regulation",
+    "wys"
+   ],
+   "image": "img/2026-10-05/f9fd7b8fcfa5b6d3.webp",
    "llm_enriched": false,
    "sources": [
     "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "川普召集黃仁勳、馬斯克等科技巨頭簽「AI 憲法」，四層稽核機制能解失控風險？",
-     "url": "https://technews.tw/2026/10/03/trump-ai-constitution-jensen-huang-tech-giants-four-layer-audit-prevent-ai-rogue",
+     "title": "美國 FDA 推動法規轉型，以器官晶片與電腦模型取代動物實驗",
+     "url": "https://technews.tw/2026/10/04/tech-to-replace-animal-testing-is-almost-ready",
      "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-10-02T22:00:53+00:00",
-     "summary": "美國總統川普（Donald Trump）日前在白宮召集輝達（NVIDIA）執行長黃仁勳、SpaceXAI 創辦 […]",
+     "published": "2026-10-04T00:30:57+00:00",
+     "summary": "美國以人類細胞、器官晶片與電腦模型取代動物實驗的趨勢，正從實驗室走向監管制度核心。從哈佛大學魏斯研究所（Wys […]",
      "image": "",
-     "id": "8bcdc4c46920",
+     "id": "2917af40aadf",
+     "tags": [
+      "晶片",
+      "生物科技",
+      "醫療科技",
+      "FDA",
+      "人類細胞"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0026",
+   "title": "法軍打造自主 AI 空戰架構，2028 年測試戰機與無人僚機協同飛行",
+   "summary": "隨著各國加速開發無人僚機，法國也開始為新一代空戰模式鋪路，法國空軍與太空軍、軍備總署（DGA）及國防人工智慧機 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "2028",
+    "dga"
+   ],
+   "image": "img/2026-10-05/d0616fd86c66e681.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "法軍打造自主 AI 空戰架構，2028 年測試戰機與無人僚機協同飛行",
+     "url": "https://technews.tw/2026/10/04/french-air-force-is-building-its-own-military-ai-systems",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-04T00:22:39+00:00",
+     "summary": "隨著各國加速開發無人僚機，法國也開始為新一代空戰模式鋪路，法國空軍與太空軍、軍備總署（DGA）及國防人工智慧機 […]",
+     "image": "",
+     "id": "0d479753f889",
      "tags": [
       "AI 人工智慧",
-      "國際觀察",
-      "國際貿易",
+      "尖端科技",
+      "無人機",
       "科技政策",
-      "AI 憲法"
+      "軍事科技"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0028",
+   "title": "消息称苹果 iPhone 18 Pro 系列 W39 国内累计销量 176 万台",
+   "summary": "IT之家 10 月 4 日消息，博主 @数码闲聊站 今日爆料，苹果 iPhone 18 Pro 系列 W39 周累计销量 176 万台（预计指国内），根据国庆期间的走势，W40 预估累计销量超 250 万台，两款机型均轻松完成单品激活 100 万台。 IT之家注意到，W39 指的是 2026 年的 第 39 个自然周 ，也就是 9 月 21 日到 9 月 27 日这一周。手机行业习惯用“W+ 周数”来标记周次，方便对比每周的销量和市场份额变化。 苹果 iPhone 18 Pro 与 iPhone 18 Pro Max 两款机型于 9 月 18 日正式开售",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "iphone",
+    "pro",
+    "w39",
+    "176",
+    "apple",
+    "w40"
+   ],
+   "image": "img/2026-10-05/efc4cf07fa3a3173.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "消息称苹果 iPhone 18 Pro 系列 W39 国内累计销量 176 万台",
+     "url": "https://www.ithome.com/1/009/662.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-03T23:56:58+00:00",
+     "summary": "IT之家 10 月 4 日消息，博主 @数码闲聊站 今日爆料，苹果 iPhone 18 Pro 系列 W39 周累计销量 176 万台（预计指国内），根据国庆期间的走势，W40 预估累计销量超 250 万台，两款机型均轻松完成单品激活 100 万台。 IT之家注意到，W39 指的是 2026 年的 第 39 个自然周 ，也就是 9 月 21 日到 9 月 27 日这一周。手机行业习惯用“W+ 周数”来标记周次，方便对比每周的销量和市场份额变化。 苹果 iPhone 18 Pro 与 iPhone 18 Pro Max 两款机型于 9 月 18 日正式开售， 国行起售价为 9999 元 ，均为 256GB 存储起步。 两款机型均搭载全新 A20 Pro 芯片， 采用台积电 2nm 制程工艺 ，其 CPU 与 GPU 性能较上一代显著提升，端侧 AI 性能进一步增强。同时，iPhone 18 Pro 系列配备新一代均热板散热方案，苹果官方称其带来“iPhone 历来最出色持续效能表现”。 影像系统是此次升级的核心。 iPhone 18 Pro 系列配备 4800 万像素融合式主摄，首次引入可变光圈技术，内部采用六片激光切割叶片，支持 f/1.48、f/1.8、f/2.8 和 f/4.0 四档光圈调节。用户可在相机应用中手动调整光圈设置，开发者也可通过 API 在第三方应用中调用光圈控制",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/7d88487b-aeb6-4e68-a263-9f14a68e3cb6.png",
+     "id": "cf777f3a890c",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0029",
+   "title": "韩国多家银行接连发生信息泄露，金融监管部门启动 IT 系统全面排查",
+   "summary": "IT之家 10 月 4 日消息，据韩媒 The Elec 报道，韩国多家主要银行近日接连发生信息泄露事件。与以往直接针对网上银行等核心金融网络的攻击不同，此次事件的目标主要集中在银行员工及贷款代理机构使用的外围业务系统。韩国金融监管部门已开始对金融机构 IT 系统展开全面检查。 其中，新韩银行用于贷款代理机构查询业务的系统自 9 月 28 日起连续 3 天遭到攻击，共有 25729 名客户的信息可能因此泄露。国民银行 9 月 30 日透露自家员工使用的移动业务支持系统遭到攻击，119 名客户的信息被窃取。同日，韩亚银行也表示，其销售支持系统发生信息泄露，",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "韩国多家银行接连发生信息泄露，金融监管部门启动 IT 系统全面排查",
+     "url": "https://www.ithome.com/1/009/654.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-03T23:12:24+00:00",
+     "summary": "IT之家 10 月 4 日消息，据韩媒 The Elec 报道，韩国多家主要银行近日接连发生信息泄露事件。与以往直接针对网上银行等核心金融网络的攻击不同，此次事件的目标主要集中在银行员工及贷款代理机构使用的外围业务系统。韩国金融监管部门已开始对金融机构 IT 系统展开全面检查。 其中，新韩银行用于贷款代理机构查询业务的系统自 9 月 28 日起连续 3 天遭到攻击，共有 25729 名客户的信息可能因此泄露。国民银行 9 月 30 日透露自家员工使用的移动业务支持系统遭到攻击，119 名客户的信息被窃取。同日，韩亚银行也表示，其销售支持系统发生信息泄露，涉及 89 名客户。而 BNK 釜山银行 10 月 1 日发现 11 名外包开发人员的个人信息遭到泄露，友利银行和 NH 农协银行也发现异常外部访问尝试。 值得注意的是，此次涉及的系统均不是银行核心金融系统，攻击目标主要包括新韩银行的贷款代理机构查询服务、国民银行员工移动业务支持系统以及韩亚银行销售支持系统。这些系统均存在面向外部的访问入口。 韩国网络安全业界部分人士认为， 攻击者不排除利用 AI 智能体自动化执行攻击 。不过，目前攻击者身份以及具体攻击方式尚未得到确认。 目前，韩国金融监管部门就上述情况决定对韩国整个金融行业的 IT 环境展开检查。 韩国金融委员会（FSC）秘书长申镇昌表示，金融行业应当加强针对外部暴露 IT 系统",
+     "image": "",
+     "id": "1cbced9a4910",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0030",
+   "title": "AI 時代的「禮儀」與邊界：人類監督與透明揭露才是核心",
+   "summary": "生成式 AI 持續滲透教育、法律、音訊創作與內容產製等領域，也讓「AI 禮儀」與使用規範成為新的討論焦點。外界 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-10-05/966a764460e77a62.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "AI 時代的「禮儀」與邊界：人類監督與透明揭露才是核心",
+     "url": "https://technews.tw/2026/10/04/the-rules-of-ai-etiquette",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-03T22:30:25+00:00",
+     "summary": "生成式 AI 持續滲透教育、法律、音訊創作與內容產製等領域，也讓「AI 禮儀」與使用規範成為新的討論焦點。外界 […]",
+     "image": "",
+     "id": "1afb307e4268",
+     "tags": [
+      "AI 人工智慧",
+      "AI 法規",
+      "AI 監管",
+      "AI 禮儀"
      ]
     }
    ]
