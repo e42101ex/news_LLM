@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 每日新聞彙整 · 2026-10-12</title>
+<meta name="description" content="2026-10-12 AI 新聞彙整：30 個主題、31 篇報導，同主題不同來源已整合。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html" class="on">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+  <a href="../hamster.html">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../index.html">AI 每日新聞彙整</a></h1>
+  <div class="meta">
+    <span>2026-10-12</span>
+    <span>30 個主題 · 31 篇報導</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 10/12 08:10</span>
+    <a href="../archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+
+<nav class="tabs" aria-label="主題分類">
+  <a href="#cat0">其他<b>30</b></a>
+</nav>
+
+<section class="briefs">
+  <article class="brief">
+    <a class="brief-hero" href="#t0000">
+      <img src="../img/2026-10-12/9d8fa21ebf1e4214.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">其他</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0000">小鹏智驾出海欧洲：两周微调适配一个国家，计划 2027 年落地 NGP</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0001">AI機櫃MW級功耗挑戰　SiC、GaN和矽基元件材料「各司其職」</a></li>
+        <li><a href="#t0002">蘇姿丰密會南韓高層推異質運算　超微亞洲首座AICoE落腳南韓</a></li>
+        <li><a href="#t0003">AI PC面板戰開打　NVIDIA新平台7款OLED NB清一色韓廠供應</a></li>
+      </ul>
+      <a class="brief-more" href="#cat0">看這個分類的 30 則 →</a>
+    </div>
+  </article>
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+
+<h2 class="cat" id="cat0">其他</h2>
+<article id="t0000">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">safety</span><span class="badge">ngp</span><span class="badge">robot</span>      </div>
+      <h3>小鹏智驾出海欧洲：两周微调适配一个国家，计划 2027 年落地 NGP</h3>
+<p class="summary">IT之家 10 月 12 日消息，据彭博社报道，在巴黎车展前夕，小鹏汽车通用智能中心负责人刘先明接受采访时透露，该公司成功在约两周时间内，将智驾系统从一个欧洲国家微调适配到另一个欧洲国家。 刘先明指出，这一适配过程所需的数据量，仅为训练底层人工智能基础模型所需数据的万分之一。 我们只需利用非常少量的本地数据，就能完成模型在当地的对齐（即适配当地的道路环境）。 据刘先明介绍，小鹏目前正与欧洲监管机构紧密沟通，并维持在 2027 年于欧洲正式落地智能导航辅助驾驶系统（NGP）的原定规划。 刘先明强调， 小鹏汽车致力于将全功能版智驾系统带入欧洲 ，而非妥协推出</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/9d8fa21ebf1e4214.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/732.htm" target="_blank" rel="noopener noreferrer">小鹏智驾出海欧洲：两周微调适配一个国家，计划 2027 年落地 NGP</a>
+      <time datetime="2026-10-11T16:06:28+00:00">10/12 00:06</time>
+    </li>
+  </ul>
+</article>
+<article id="t0001">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">sic</span><span class="badge">gan</span>      </div>
+      <h3>AI機櫃MW級功耗挑戰　SiC、GaN和矽基元件材料「各司其職」</h3>
+<p class="summary">AI推升高功率、大電壓需求，功率元件朝高效率、高功率密度與高度整合發展。業界表示，前端和機櫃電源轉換將增加碳化矽（SiC）、氮化鎵（GaN）功率元件，靠近AI晶片核...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/5a6188f673dc2fe8.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=40&amp;id=0000770964_PU181XKV7RG4YE3U7AZMH&amp;wpidx=3" target="_blank" rel="noopener noreferrer">AI機櫃MW級功耗挑戰　SiC、GaN和矽基元件材料「各司其職」</a>
+      <time datetime="2026-10-11T16:00:00+00:00">10/12 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0002">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">aicoe</span><span class="badge">amd</span><span class="badge">coe</span>      </div>
+      <h3>蘇姿丰密會南韓高層推異質運算　超微亞洲首座AICoE落腳南韓</h3>
+<p class="summary">超微（AMD）執行長蘇姿丰10月7日訪問南韓，與政府高層及人工智慧（AI）生態系業者密集交流，重申2026年內於南韓設立亞洲首座AI卓越中心（AI CoE），並推進結合超...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/33f4879174b77a6f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000770943_F738VCW45Q4NRA2CL91JZ&amp;wpidx=5" target="_blank" rel="noopener noreferrer">蘇姿丰密會南韓高層推異質運算　超微亞洲首座AICoE落腳南韓</a>
+      <time datetime="2026-10-11T16:00:00+00:00">10/12 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0003">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">oled</span><span class="badge">nvidia</span><span class="badge">funding</span>      </div>
+      <h3>AI PC面板戰開打　NVIDIA新平台7款OLED NB清一色韓廠供應</h3>
+<p class="summary">NVIDIA 2026年發表新一代PC平台RTX Spark，搭載OLED的7款AI NB，全數採用南韓面板，儘管京東方、TCL華星等中國業者接連投資8.6代IT用OLED產線，南韓業者...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/bdf5e6162b4326ac.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000770541_TJC6WHJR3RRBTQ2YTALO1&amp;wpidx=5" target="_blank" rel="noopener noreferrer">AI PC面板戰開打　NVIDIA新平台7款OLED NB清一色韓廠供應</a>
+      <time datetime="2026-10-11T16:00:00+00:00">10/12 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0004">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">csp</span><span class="badge">vera</span><span class="badge">rubin</span>      </div>
+      <h3>AI產業具未來成長性　無風險利率盈餘報酬受壓抑</h3>
+<p class="summary">2027年美國四大CSP資本支出可望持續擴增，法國、沙烏地阿拉伯等國家積極建置主權AI，使AI硬體需求成長趨勢不變。而搭載效能更強大的Vera Rubin晶片的新一代AI伺服...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/96dda47e994c8fbb.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000770777_KBO6B01S8FJ21R6E2MMA7&amp;wpidx=5" target="_blank" rel="noopener noreferrer">AI產業具未來成長性　無風險利率盈餘報酬受壓抑</a>
+      <time datetime="2026-10-11T16:00:00+00:00">10/12 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0005">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">mistral</span><span class="badge">ml4</span><span class="badge">large</span>      </div>
+      <h3>Mistral發表ML4開放權重模型　宣稱部分能力超越中國對手</h3>
+<p class="summary">開放權重AI模型的效能競爭升溫，法國AI新創Mistral推出Mistral Large 4（ML4），預計2026年10月底公開。Mistral方面強調，ML4效能足以與部分中國開放權重模型匹敵。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/c1483fca0c7090b9.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000770924_M3ELVY9U1YP33854GM0QS&amp;wpidx=5" target="_blank" rel="noopener noreferrer">Mistral發表ML4開放權重模型　宣稱部分能力超越中國對手</a>
+      <time datetime="2026-10-11T16:00:00+00:00">10/12 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0006">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">br20x</span><span class="badge">gpu</span>      </div>
+      <h3>壁仞BR20X進入投片驗證階段　美國管制下新一代GPU續推進布局</h3>
+<p class="summary">中國本土AI晶片業者壁仞科技新一代GPU產品BR20X已進入投片驗證階段，並同步展開客戶部署與量產準備。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/477eeea7c37b0bec.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000770919_CLEL5LIT0LDBDCL3F94QW&amp;wpidx=5" target="_blank" rel="noopener noreferrer">壁仞BR20X進入投片驗證階段　美國管制下新一代GPU續推進布局</a>
+      <time datetime="2026-10-11T16:00:00+00:00">10/12 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2027</span><span class="badge">funding</span><span class="badge">rohit</span>      </div>
+      <h3>淡馬錫示警2027年AI風險　擬提高公開市場投資比重</h3>
+<p class="summary">新加坡淡馬錫國際投資長Rohit Sipahimalani認為，2027年人工智慧（AI）及通膨，將是市場面臨的最大風險。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/0cb878855d768404.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=9&amp;id=0000771011_K6LLHJMA2FX9H00W77G2L&amp;wpidx=5" target="_blank" rel="noopener noreferrer">淡馬錫示警2027年AI風險　擬提高公開市場投資比重</a>
+      <time datetime="2026-10-11T16:00:00+00:00">10/12 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0008">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">recurrent</span><span class="badge">10.5</span><span class="badge">ipo</span>      </div>
+      <h3>月之暗面拟在 IPO 前和解股东纠纷，Recurrent 指控杨植麟、张宇韬虚假陈述并寻求 10.5% 原始股份赔偿</h3>
+<p class="summary">IT之家 10 月 12 日消息，据路透社今日报道，月之暗面高管正在与股东谈判，希望在 IPO 前解决一起法律纠纷。该股东指控这些高管存在不当行为，并要求获得赔偿。 根据路透社看到的一封 Recurrent.ai 律师于 3 月 11 日致月之暗面投资者的信函，AI 软件开发商 Recurrent.ai 及其部分投资者指控月之暗面 CEO 杨植麟、首席技术官张宇韬向 Recurrent 投资者作出虚假陈述，以牺牲 Recurrent 利益为代价中饱私囊。 信函中称，包含关键大语言模型数据的服务器在未经授权的情况下从 Recurrent 转移至月之暗面的一</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/731.htm" target="_blank" rel="noopener noreferrer">月之暗面拟在 IPO 前和解股东纠纷，Recurrent 指控杨植麟、张宇韬虚假陈述并寻求 10.5% 原始股份赔偿</a>
+      <time datetime="2026-10-11T15:54:22+00:00">10/11 23:54</time>
+    </li>
+  </ul>
+</article>
+<article id="t0009">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">homeview</span><span class="badge">a18</span><span class="badge">app</span>      </div>
+      <h3>古尔曼：苹果首款智能家庭中枢定名 HomeView，搭载 A18 芯片、四种配色可选</h3>
+<p class="summary">IT之家 10 月 11 日消息，彭博社记者马克 · 古尔曼今日在新一期《Power On》通讯中透露，苹果首款智能家庭中枢名为“HomeView”，预计将在 10 月 13 日的“欢迎回家”活动正式发布，11 月出货。 据介绍，这款产品的外观设计类似 iMac G4“台灯电脑”，采用悬浮式屏幕，下方配有扬声器底座。 该设备将搭载 A18 芯片 ，官方还将推出壁挂安装版本。 IT之家从原报道获悉， 这款新产品将提供深空灰、银色、星光色和粉色四种配色 ，壁挂版仅有深空灰、银色两种配色。 古尔曼表示，这款产品主要使用语音交互， 以 AI Siri 为核心 。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/9d463fc0156d7465.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/730.htm" target="_blank" rel="noopener noreferrer">IT早报 1012：国家安全部提醒接陌生来电先沉默三秒；曝苹果首款智能家庭中枢定名 HomeView；星闪通信国标获批；国家互联网应急中心通报荐片播放器后门...</a>
+      <time datetime="2026-10-11T15:50:08+00:00">10/11 23:50</time>
+    </li>
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/709.htm" target="_blank" rel="noopener noreferrer">古尔曼：苹果首款智能家庭中枢定名 HomeView，搭载 A18 芯片、四种配色可选</a>
+      <time datetime="2026-10-11T06:36:10+00:00">10/11 14:36</time>
+    </li>
+  </ul>
+</article>
+<article id="t0010">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">googlebook</span><span class="badge">mac</span><span class="badge">android</span>      </div>
+      <h3>第三方开发者让 Googlebook OS 登陆苹果芯片 Mac：支持 GPU 加速和 Chrome 浏览器</h3>
+<p class="summary">IT之家 10 月 12 日消息，开发者 Skylar Taylor-Barrick 开源了一套名为 gbos-vm 的项目，可在搭载 Apple Silicon 芯片的苹果 Mac 上，通过虚拟机运行谷歌 Googlebook OS。 该项目已在 GitHub 上公开，使用 QEMU 加载谷歌为戴尔 Googlebook 提供的官方恢复镜像，并对系统进行修改，使其适配虚拟硬件。开发者强调，该项目并非通用 Android 镜像，也不是将 Googlebook OS 原生安装到 Mac 上，且与谷歌、戴尔均无官方关联。 Googlebook 是谷歌新推出的</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/a913e12276834958.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/728.htm" target="_blank" rel="noopener noreferrer">第三方开发者让 Googlebook OS 登陆苹果芯片 Mac：支持 GPU 加速和 Chrome 浏览器</a>
+      <time datetime="2026-10-11T15:40:50+00:00">10/11 23:40</time>
+    </li>
+  </ul>
+</article>
+<article id="t0011">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">funding</span>      </div>
+      <h3>「AI 美元」時代來臨，科技巨頭獲利能力將成霸權新考驗</h3>
+<p class="summary">市場對美元長期地位的討論，正因人工智慧投資熱潮而出現新變化。分析指出，過去美元霸權主要建立在石油貿易與美國金融 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/d511c609af75523c.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/10/12/how-ai-could-scupper-the-dollar" target="_blank" rel="noopener noreferrer">「AI 美元」時代來臨，科技巨頭獲利能力將成霸權新考驗</a>
+      <time datetime="2026-10-11T15:40:42+00:00">10/11 23:40</time>
+    </li>
+  </ul>
+</article>
+<article id="t0012">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">regulation</span><span class="badge">aisi</span><span class="badge">2025</span>      </div>
+      <h3>英国将加强网络防御，AI 国务大臣呼吁人工智能企业加大安全保障力度</h3>
+<p class="summary">IT之家 10 月 12 日消息，据《卫报》报道，英国将加强其网络防御，同时呼吁顶尖人工智能研发企业在系统安全治理上采取更积极的举措。 英国 AI 国务大臣卡尼什卡 · 纳拉扬（Kanishka Narayan）预计将在西伦敦发表的专题演讲中正式宣布上述政策主张。 纳拉扬将呼吁前沿人工智能研发企业采取更多切实举措保障系统安全。IT之家获悉，纳拉扬表示， 英国绝不能完全依赖科技巨头对其模型进行“自我监管” ，并强调英国本土必须构建更多自主可控的 AI 基础设施。 延伸阅读 据英国政府官网资料，卡尼什卡 · 纳拉扬于 2026 年 7 月 20 日被任命为人</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/727.htm" target="_blank" rel="noopener noreferrer">英国将加强网络防御，AI 国务大臣呼吁人工智能企业加大安全保障力度</a>
+      <time datetime="2026-10-11T15:39:12+00:00">10/11 23:39</time>
+    </li>
+  </ul>
+</article>
+<article id="t0013">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">layoff</span>      </div>
+      <h3>AI 搶工作不再是重點，麥肯錫估美國每年 77 萬人得完全轉換跑道</h3>
+<p class="summary">麥肯錫全球研究院最新報告指出，人工智慧與自動化雖然可能在未來十年為美國帶來更多新職缺，但真正的難題不在於工作消 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/80e89b9efbc3924a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/12/mckinsey-ai-will-create-more-jobs-than-it-kills-after-destroying-11-million" target="_blank" rel="noopener noreferrer">AI 搶工作不再是重點，麥肯錫估美國每年 77 萬人得完全轉換跑道</a>
+      <time datetime="2026-10-11T15:20:26+00:00">10/11 23:20</time>
+    </li>
+  </ul>
+</article>
+<article id="t0014">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">decart</span><span class="badge">amazon</span><span class="badge">compute</span>      </div>
+      <h3>Anthropic 放弃后，消息称亚马逊洽谈收购初创公司 Decart、看中 AI 芯片切换软件</h3>
+<p class="summary">IT之家 10 月 12 日消息，据华尔街日报消息，据知情人士透露，亚马逊正就收购人工智能初创公司 Decart 展开谈判， 该笔交易的潜在估值约为 70 亿美元 （IT之家注：现汇率约合 469.48 亿元人民币） 。 总部位于旧金山的 Decart 专注于研发跨芯片适配软件，能够帮助开发者在不同 AI 芯片之间无缝切换。随着各大科技巨头纷纷竞逐算力资源，这一底层软件能力正变得愈发关键。 知情人士指出，若谈判进展顺利且未出现新的竞购方，该交易或将很快达成。 研究机构 PitchBook 的数据显示，Decart 此前已从红杉资本、Benchmark 以</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/720.htm" target="_blank" rel="noopener noreferrer">Anthropic 放弃后，消息称亚马逊洽谈收购初创公司 Decart、看中 AI 芯片切换软件</a>
+      <time datetime="2026-10-11T15:01:49+00:00">10/11 23:01</time>
+    </li>
+  </ul>
+</article>
+<article id="t0015">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hbm</span><span class="badge">samsung</span><span class="badge">amd</span>      </div>
+      <h3>三星要用記憶體換晶圓代工，AMD 認為仍存在風險不放手</h3>
+<p class="summary">晶片大廠超微（AMD）執行長蘇姿丰（Lisa Su）造訪韓國，目的在為其 AI 加速器確保高頻寬記憶體（HBM […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/208074ec40e2c496.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/12/samsung-to-trade-memory-chips-for-chip-manufacturing-services" target="_blank" rel="noopener noreferrer">三星要用記憶體換晶圓代工，AMD 認為仍存在風險不放手</a>
+      <time datetime="2026-10-11T15:00:58+00:00">10/11 23:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0016">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">robot</span><span class="badge">domos</span>      </div>
+      <h3>餐飲 AI 不只會點餐，達美樂、麥當勞如何把 AI 深入門市營運系統？</h3>
+<p class="summary">當餐飲業開始導入 AI，最早受到關注的往往是消費者看得見的功能，例如語音點餐、聊天機器人或行銷工具。但近期達美樂（Domino’s）與麥當勞的動作，顯示餐飲科技正在往更深的營運層移動：AI 不再只是附加功能，而是逐步嵌入點餐、備餐、庫存、設備與外送等流程，成為串聯餐廳日常運作的核心系統。 達美樂以自研 DomOS 升級追蹤器，用精準預測解除顧客「等待焦慮」 達美樂近期大幅升級了自 2008 年問世的經典服務 Pizza Tracker。這項功能最初讓顧客透過簡單的視覺化介面，即時掌握披薩從下單、製作到送達的狀態，至今已累計追蹤超過 25 億筆訂單。而最新</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/642a2cc2adc8b9a9.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/10/12/dominos-mcdonalds-ai" target="_blank" rel="noopener noreferrer">餐飲 AI 不只會點餐，達美樂、麥當勞如何把 AI 深入門市營運系統？</a>
+      <time datetime="2026-10-11T14:02:00+00:00">10/11 22:02</time>
+    </li>
+  </ul>
+</article>
+<article id="t0017">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">openai</span><span class="badge">tsmc</span><span class="badge">amazon</span>      </div>
+      <h3>【科技早餐】OpenAI 年化營收為何差約 200 億美元？關鍵在計算口徑</h3>
+<p class="summary">【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊OpenAI 年化營收近 500 億美元，與先前數字差距涉及計算口徑 《路透社》引述知情人士報導，OpenAI 向投資人表示，9 月年化營收接近 500 億美元，低於先前在另一場投資人活動透露的接近 700 億美元。消息人士指出，差距主要涉及嘗試將 OpenAI 的數字與 Anthropic 直接比較時，採用了不同計算口徑。報導指出，Anthropic 納入透過亞馬遜（Amazon）AWS、Google Cloud 等雲端合作夥伴取得的銷售收入，OpenAI 則未採用相同方式。OpenAI 未回應《路透</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/67065ffeef380038.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/10/12/openai-annualized-revenue-gap" target="_blank" rel="noopener noreferrer">【科技早餐】OpenAI 年化營收為何差約 200 億美元？關鍵在計算口徑</a>
+      <time datetime="2026-10-11T13:30:00+00:00">10/11 21:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0018">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">smart</span><span class="badge">home</span><span class="badge">apple</span>      </div>
+      <h3>Will the HomeView be Apple’s first smart home success?</h3>
+<p class="summary">Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a launch date.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/cfff9f0d20329558.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success" target="_blank" rel="noopener noreferrer">Will the HomeView be Apple’s first smart home success?</a>
+      <time datetime="2026-10-11T13:14:40+00:00">10/11 21:14</time>
+    </li>
+  </ul>
+</article>
+<article id="t0019">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">gap</span><span class="badge">shared</span><span class="badge">understanding</span>      </div>
+      <h3>The gap in shared understanding of LLM capability is widening</h3>
+<p class="summary">Article URL: https://twitter.com/karpathy/status/2109361546505966046 Comments URL: https://news.ycombinator.com/item?id=50047422 Points: 181 # Comments: 268</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/f2cb6ec4c3a2a76e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://twitter.com/karpathy/status/2109361546505966046" target="_blank" rel="noopener noreferrer">The gap in shared understanding of LLM capability is widening</a>
+      <time datetime="2026-10-11T12:20:52+00:00">10/11 20:20</time>
+    </li>
+  </ul>
+</article>
+<article id="t0020">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hours</span><span class="badge">techcrunch</span><span class="badge">disrupt</span>      </div>
+      <h3>48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next</h3>
+<p class="summary">Less than 48 hours, TechCrunch Disrupt 2026 starts in San Francisco’s Moscone West. Save up to $100 on your pass before prices increase at the door, plus get 50% on a second pass. Or score other deals.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/f287d0cd13f2760a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next" target="_blank" rel="noopener noreferrer">48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next</a>
+      <time datetime="2026-10-11T11:00:00+00:00">10/11 19:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0021">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">trump</span><span class="badge">intel</span><span class="badge">valley</span>      </div>
+      <h3>Silicon Valley is falling in line with Trump’s attempt to rename AI</h3>
+<p class="summary">When President Donald Trump announced his plans to rebrand artificial intelligence as &#34;super intelligence,&#34; you&#39;d be forgiven for being skeptical that it would catch on. While most of the broader population is sticking with AI, some of Silicon Valley&#39;s most powerful are falling i</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/76155b76923571bc.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai" target="_blank" rel="noopener noreferrer">Silicon Valley is falling in line with Trump’s attempt to rename AI</a>
+      <time datetime="2026-10-11T10:33:56+00:00">10/11 18:33</time>
+    </li>
+  </ul>
+</article>
+<article id="t0022">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">datacenter</span><span class="badge">industry</span><span class="badge">center</span>      </div>
+      <h3>Can the AI industry persuade data center opponents by getting rid of NDAs?</h3>
+<p class="summary">On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/884b5b6fa56b3de3.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas" target="_blank" rel="noopener noreferrer">Can the AI industry persuade data center opponents by getting rid of NDAs?</a>
+      <time datetime="2026-10-11T08:52:33+00:00">10/11 16:52</time>
+    </li>
+  </ul>
+</article>
+<article id="t0023">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">voice</span><span class="badge">these</span><span class="badge">execs</span>      </div>
+      <h3>These execs think voice AI hasn’t reached its ChatGPT moment yet</h3>
+<p class="summary">Voice AI&#39;s often misses important points for its context layer, and causes the whole pipeline to break</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/11167913660535f7.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet" target="_blank" rel="noopener noreferrer">These execs think voice AI hasn’t reached its ChatGPT moment yet</a>
+      <time datetime="2026-10-11T06:00:00+00:00">10/11 14:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0024">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">1.5</span><span class="badge">8255</span><span class="badge">2.0</span>      </div>
+      <h3>奇瑞捷途全新旅行者 7 预告搭载骁龙 8255 座舱芯片，10 月 14 日上市</h3>
+<p class="summary">IT之家 10 月 11 日消息，奇瑞捷途全新旅行者 7 将于 10 月 14 日上市，官方预告智能科技再升级。 新车搭载 TOUROS 3.3 AI 智能座舱、骁龙 8255 高阶座舱芯片，搭配 24GB 运存 +256GB 超大存储，内置讯飞星火智能 AI 大模型，配备 15.6 英寸 2.5K 中控巨幕。 IT之家注意到，该车已于 9 月 23 日开启预售，共提供 7 款车型，预售价 14.99-17.99 万元。动力方面，该车提供 1.5T 汽油、2.0T 汽油以及 1.5T 插混三种动力。新车的长宽高分别为 4827mm、2006mm 和 18</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/ee8aceff2f09d7b7.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/691.htm" target="_blank" rel="noopener noreferrer">奇瑞捷途全新旅行者 7 预告搭载骁龙 8255 座舱芯片，10 月 14 日上市</a>
+      <time datetime="2026-10-11T04:28:49+00:00">10/11 12:28</time>
+    </li>
+  </ul>
+</article>
+<article id="t0025">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">made</span><span class="badge">terrible</span><span class="badge">games</span>      </div>
+      <h3>I Made Terrible Games With Google’s AI Playground</h3>
+<p class="summary">A long day’s haul in the video game slop mines.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/0d947803be3d69e1.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground" target="_blank" rel="noopener noreferrer">I Made Terrible Games With Google’s AI Playground</a>
+      <time datetime="2026-10-11T03:30:00+00:00">10/11 11:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0026">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">learning</span><span class="badge">use</span><span class="badge">local</span>      </div>
+      <h3>Learning to use local AI is exciting, overwhelming, and frustrating</h3>
+<p class="summary">I&#39;m embarking on a journey I&#39;ve so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it&#39;s increasingly possible to run powerful models locally to see what they&#39;re capable of. Is this t</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/bbb9e2c9104b09dd.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress" target="_blank" rel="noopener noreferrer">Learning to use local AI is exciting, overwhelming, and frustrating</a>
+      <time datetime="2026-10-11T03:00:00+00:00">10/11 11:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0027">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">cuda</span><span class="badge">surface</span><span class="badge">laptop</span>      </div>
+      <h3>CUDA 生态优势推动 RTX Spark 笔记本热销，微软 128GB 内存版 Surface Laptop Ultra 开始在美国缺货</h3>
+<p class="summary">IT之家 10 月 11 日消息，微软美国官网显示，Surface Laptop Ultra 笔记本 128GB 统一内存、1TB SSD 配置已经缺货，该产品定价 5,899.99 美元 （IT之家注：现汇率约合 39,570 元人民币） ，其他较低配置机型仍可购买。 结合科技媒体 Wccftech 报道，这款笔记本迅速售罄的原因可能与早期供应有限有关，但由于微软没有公布详细数据，我们无法验证这种说法的真实性。另一方面， 这款笔记本能够支持 CUDA 生态 ，因此只要仔细考虑这类笔记本面向的客户群体，就不难理解其快速售罄的缘由。 对 AI 开发者和创作</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/f9a8a37142c9fcfc.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/011/677.htm" target="_blank" rel="noopener noreferrer">CUDA 生态优势推动 RTX Spark 笔记本热销，微软 128GB 内存版 Surface Laptop Ultra 开始在美国缺货</a>
+      <time datetime="2026-10-11T02:38:04+00:00">10/11 10:38</time>
+    </li>
+  </ul>
+</article>
+<article id="t0028">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">agent</span><span class="badge">meta</span><span class="badge">openai</span>      </div>
+      <h3>AI 代理的下道關卡，網站願不願意放行</h3>
+<p class="summary">Meta 的 Muse、Instinct、ChatGPT 的 Dots 等個人 AI 代理人（AI Agent […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/d18e99b408846c1d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://infosecu.technews.tw/2026/10/11/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in" target="_blank" rel="noopener noreferrer">AI 代理的下道關卡，網站願不願意放行</a>
+      <time datetime="2026-10-10T23:30:36+00:00">10/11 07:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0029">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">layoff</span>      </div>
+      <h3>AI 沒搶走飯碗！科技業職缺回升突破 28 萬，裁員潮大幅放緩</h3>
+<p class="summary">外界原本擔心人工智慧（AI）將大幅壓縮科技業就業機會，但最新徵才數據顯示，情況並未如預期惡化。根據追蹤逾 9, […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-12/4e6622167cd7ddcd.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/11/ai-was-supposed-to-kill-tech-jobs-the-data-on-job-openings-says-otherwise" target="_blank" rel="noopener noreferrer">AI 沒搶走飯碗！科技業職缺回升突破 28 萬，裁員潮大幅放緩</a>
+      <time datetime="2026-10-10T21:30:46+00:00">10/11 05:30</time>
+    </li>
+  </ul>
+</article>
+</div>
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
+  <div class="srcs">來源：DIGITIMES · Hacker News (100+) · IT之家 · TechCrunch AI · TechOrange 科技報橘 · The Verge AI · Wired AI · 科技新報 TechNews</div>
+</footer>
+</div>
+</body>
+</html>
