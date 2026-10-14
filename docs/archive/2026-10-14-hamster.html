@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鼠鼠天地 · 2026-10-14</title>
+<meta name="description" content="2026-10-14 鼠鼠天地：Bluesky 鼠鼠貼文 20 則、YouTube 影片 8 部、PTT 文章 5 篇、Reddit 討論 0 則。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style></head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+  <a href="../hamster.html" class="on">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../hamster.html">鼠鼠天地 🐹</a></h1>
+  <div class="meta">
+    <span>2026-10-14</span>
+    <span>20 貼文 · 8 影片 · 5 PTT · 0 Reddit</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 10/14 08:10</span>
+  </div>
+</header>
+
+
+<h2 class="cat" id="bsky">🐦 Bluesky 鼠鼠貼文</h2>
+<ul class="posts">
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        Secretary of Defense Rock
+ · ♥ 200 likes · 💬 8      </div>
+      <p class="post-text">Ah, so this was just a hamster effort to lower oil/gas prices lol</p>
+      <div class="post-stats">
+<time>2026-10-12</time>        <a href="https://bsky.app/profile/sodrock.bsky.social/post/3mxpm2embmc2q" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">ハムスター</span>      <div class="post-who">
+        望
+ · ♥ 131 likes · 💬 3      </div>
+      <p class="post-text">おはよう🐹
+🐹ほたて🐹
+#ハムスター</p>
+      <div class="post-stats">
+<time>2026-10-12</time>        <a href="https://bsky.app/profile/nozomi-s131415.bsky.social/post/3mxpjknfvus22" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/3b32076d601df360.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">ハムスター</span>      <div class="post-who">
+        望
+ · ♥ 76 likes · 💬 3      </div>
+      <p class="post-text">おはよう🐹
+🐹ほたて🐹
+#ハムスター</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/nozomi-s131415.bsky.social/post/3mxryedjjec22" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/11076579aaafb94f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">ハムスター</span>      <div class="post-who">
+        伊藤結湖
+ · ♥ 37 likes · 💬 1      </div>
+      <p class="post-text">🐹アップルCEO、管理費削減に成功！
+
+貯蓄庫を木のおうちに移してから、毎日のお礼💩がなくなった🤣
+
+👩「社長、ママへの管理費は？」
+
+🐹「自社管理に切り替えたでち。経費削減でち✨」
+
+👩「お礼💩、楽しみにしてたのに〜😭」
+
+小さなCEO、経営には厳しい😂❤️
+
+これはけいこの妄想です。
+
+#けいこの妄想 #ハムスター #アップルCEO</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/cecil87.bsky.social/post/3mxqib6ku2s25" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/34cc8dc854c5d39f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        PURE/HONEY 💚
+ · ♥ 24 likes · 💬 4      </div>
+      <p class="post-text">In this economy, just swallow</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/letrice718.bsky.social/post/3mxrrvinqns2u" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/4f150dcc00f0b198.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        Shiro💛💜
+ · ♥ 20 likes · 💬 6      </div>
+      <p class="post-text">Good Morning :3</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/shiroandnago.bsky.social/post/3mxr35ip7222s" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/d11d126ac6181401.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        limon
+ · ♥ 24 likes · 💬 1      </div>
+      <p class="post-text">when people post the art they commissioned from me elsewhere :DD</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/lemonposting.bsky.social/post/3mxrhw26o4c24" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/73d21d9e6aa52b16.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        Roger O&#39;Rama 🇺🇦 🐸
+ · ♥ 24 likes · 💬 1      </div>
+      <p class="post-text">There are thousands upon thousands 2nd grade kids who performed better doing a presentation on their pet hamster. She&#39;s phenomenally inept.</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/rogieres.bsky.social/post/3mxribuhkkk26" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">ハムスター</span>      <div class="post-who">
+        たかちゃん
+ · ♥ 18 likes · 💬 3      </div>
+      <p class="post-text">おはようございます☀️火曜日です
+
+｢サツマイモの日｣
+
+サツマイモと言えば焼きいもですね～
+ホクホクの焼きいもが美味しい季節になってきました😋
+
+今日もよろしくです～☺️
+
+#AIイラスト
+#ハムスターちゃん</p>
+      <div class="post-stats">
+<time>2026-10-12</time>        <a href="https://bsky.app/profile/taka-chan02.bsky.social/post/3mxpk76bgus24" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/c9beac27403977c2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">ハムスター</span>      <div class="post-who">
+        本多よむ＠Vtuber準備中
+ · ♥ 18 likes · 💬 1      </div>
+      <p class="post-text">また野球の話題！
+明日から再び試合が始まりますが、セパ両リーグともに
+
+チームカラー、黄色と青の戦い
+
+我が家は両リーグともに青を応援しております⚾️
+もしも日本シリーズが青同士になったら、ハムスターが本命🐹</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/hondayomu.bsky.social/post/3mxqtm45kmc2o" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">ハムスター</span>      <div class="post-who">
+        ハムハム🐹はむごろう
+ · ♥ 18 likes      </div>
+      <p class="post-text">🐹キリッ✨
+
+ #ハムスター　#hamster</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/hamgoro39.bsky.social/post/3mxqizbd3wc2m" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/87762d32beab4f4e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        CoffeeKindred ☕
+ · ♥ 17 likes · 💬 1      </div>
+      <p class="post-text">- Oatmeal&#39;s Costume - 👻
+#art #oc #hamster #digitalart #comic</p>
+      <div class="post-stats">
+<time>2026-10-12</time>        <a href="https://bsky.app/profile/coffeekindred.bsky.social/post/3mxpo2tfglc2s" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        BonkaDonka! | VGen Services Join Waitlist
+ · ♥ 15 likes · 💬 3      </div>
+      <p class="post-text">I MISS MY WIFE, CHAT!
+
+I MISS HIM A LOT, HE IS MY UNIVERSE AND MORE!!!</p>
+      <div class="post-stats">
+<time>2026-10-12</time>        <a href="https://bsky.app/profile/bonkadonka.bsky.social/post/3mxpkwabgs22l" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        Meeka Mouse Art
+ · ♥ 18 likes      </div>
+      <p class="post-text">Inktober 2026 Day 13: “Flimsy”
+
+This lil’ hamster may not be the most intimidating knight with this foam sword and nerf helmet, but he’s got the biggest of hearts!
+
+#inktober #inktober2026 #inktoberflimsy #inktober2026flimsy @inktober #hamster</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/meekamouseart.bsky.social/post/3mxqtqkfcuc2n" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/0662c8982ebd3b74.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">pet rat</span>      <div class="post-who">
+        Luthien Nightwolf
+ · ♥ 16 likes      </div>
+      <p class="post-text">Rumple: *being the most relaxed sleepy rat ever and letting me pet him*
+
+Bug: ME. ME. LOOK AT ME MOM. 
+*steps on his brother’s face*
+
+I love them. lol</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/luthiennightwolf.bsky.social/post/3mxrcz2veis2i" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">pet rat</span>      <div class="post-who">
+        Zannah☀️
+ · ♥ 15 likes      </div>
+      <p class="post-text">Hi #portfolioday !!
+
+I&#39;m an artist who loves drawing fantasy characters!
+
+I do have some slots open on VGen, but I would honestly just love if you followed me to join my journey building up OCs for a world called Whimsy Grove.
+
+In my future, I dream of creating a graphic novel✨
+vgen.co/zannahg</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/zannahg.com/post/3mxqzh5erpc2g" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">ハムスター</span>      <div class="post-who">
+        さいあく
+ · ♥ 12 likes · 💬 1      </div>
+      <p class="post-text">#ハムスターはハムスターホルダーへ
+帰り〼！</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/saiakuayaka.bsky.social/post/3mxqwvoowk22c" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/d6214d71ba8f629e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">ハムスター</span>      <div class="post-who">
+        本多よむ＠Vtuber準備中さぶ
+ · ♥ 12 likes · 💬 1      </div>
+      <p class="post-text">また野球の話題！
+明日から再び試合が始まりますが、セパ両リーグともに
+
+チームカラー、黄色と青の戦い
+
+我が家は両リーグともに青を応援しております⚾️
+もしも日本シリーズが青同士になったら、ハムスターが本命🐹</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/honyomuyomu.bsky.social/post/3mxqtkg3kb22x" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        Dark Pact, the Desert F̴̫̘͂̃̀̽r̵̭͓̜̺̀̕ô̴͔͝ş̸̨͙̫̀̄͝ṭ̸̨̰̍̈?̵̺̼̙̼̋̎̐̌ ̷̹́̇F̶̧̜͖̏̓a̵̖͊n̶͕͓̠͖̆ģ̶͔̄̃̌̒?̴̣̗̜̭̑̊͘
+ · ♥ 13 likes      </div>
+      <p class="post-text">My exact thoughts about you 🫶🏽</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/darkpactcosplay.bsky.social/post/3mxrqrw5dqk2y" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/afbe7ebb19fca9db.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+<span class="badge pri">hamster</span>      <div class="post-who">
+        Sir Meo
+ · ♥ 13 likes      </div>
+      <p class="post-text">hilda is probably the loudest drinker on this planet, like how can a hamster make a sound like that
+
+#hamster</p>
+      <div class="post-stats">
+<time>2026-10-13</time>        <a href="https://bsky.app/profile/sirmeo.bsky.social/post/3mxrs3gfenk2r" target="_blank" rel="noopener noreferrer">查看貼文 →</a>
+      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../img/2026-10-14/e8e9c85c1c149a05.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+</ul>
+
+<h2 class="cat" id="yt">▶️ YouTube 鼠鼠影片</h2>
+<section class="briefs compact">
+  <article class="brief">
+    <a class="brief-hero" href="https://www.youtube.com/watch?v=E9UDyB6Vc0c" target="_blank" rel="noopener noreferrer">
+      <img src="../img/2026-10-14/38d4016e3cc0cf88.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://www.youtube.com/watch?v=E9UDyB6Vc0c" target="_blank" rel="noopener noreferrer">5元在花鸟市场救下的小可怜, 如今住进花园别墅啦！鼠鼠：以前过得都是啥日子啊，终于享福了！🐹【一只笨鼠】</a>
+      </h3>
+      <div class="trend-meta">
+一只笨鼠 · 5 個月前      </div>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.youtube.com/watch?v=pVtWBXhoZgk" target="_blank" rel="noopener noreferrer">
+      <img src="../img/2026-10-14/69a9007d633535e6.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://www.youtube.com/watch?v=pVtWBXhoZgk" target="_blank" rel="noopener noreferrer">【倉鼠歷險記】EP1 星球迷宮</a>
+      </h3>
+      <div class="trend-meta">
+chan keroro · 6 年前      </div>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.youtube.com/watch?v=5g7wDufumBk" target="_blank" rel="noopener noreferrer">
+      <img src="../img/2026-10-14/545ca1dfe349bb5f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://www.youtube.com/watch?v=5g7wDufumBk" target="_blank" rel="noopener noreferrer">终于！小通通终于上手啦！好感动～#仓鼠 #扫地机器人 @yeedi一点扫地机器人</a>
+      </h3>
+      <div class="trend-meta">
+一只笨鼠 · 9 個月前      </div>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.youtube.com/watch?v=PJT9qpxR5vw" target="_blank" rel="noopener noreferrer">
+      <img src="../img/2026-10-14/0381737eae272476.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://www.youtube.com/watch?v=PJT9qpxR5vw" target="_blank" rel="noopener noreferrer">倉鼠在地下8天沒上來了，趕緊挖開看看【寵物爭霸】</a>
+      </h3>
+      <div class="trend-meta">
+寵物爭霸-官方頻道 · 3 年前      </div>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.youtube.com/watch?v=3xcOeMdX-e0" target="_blank" rel="noopener noreferrer">
+      <img src="../img/2026-10-14/b882a1cd7d6758df.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://www.youtube.com/watch?v=3xcOeMdX-e0" target="_blank" rel="noopener noreferrer">第一次養倉鼠寵物！Jo家來了新成員~真的好可愛喔！邊吃邊玩~ Our First Pets Hamster！By Jo Channel~</a>
+      </h3>
+      <div class="trend-meta">
+JO Channel · 8 年前      </div>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.youtube.com/watch?v=h4Jskiv9ZFE" target="_blank" rel="noopener noreferrer">
+      <img src="../img/2026-10-14/0fc1f39a03e7fca1.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://www.youtube.com/watch?v=h4Jskiv9ZFE" target="_blank" rel="noopener noreferrer">花花当妈了！一窝生了5只，大餐赶紧安排上！🐹【一只笨鼠】</a>
+      </h3>
+      <div class="trend-meta">
+一只笨鼠 · 3 個月前      </div>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.youtube.com/watch?v=D4YPe8Ghufs" target="_blank" rel="noopener noreferrer">
+      <img src="../img/2026-10-14/a98725226d02edbb.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://www.youtube.com/watch?v=D4YPe8Ghufs" target="_blank" rel="noopener noreferrer">【樂樂探險去｜動物】認識倉鼠:為什麼倉鼠都愛跑滾輪?｜兒童頻道｜樂樂TV</a>
+      </h3>
+      <div class="trend-meta">
+樂樂TV和台灣愛鼠協會 Rodentscare · 3 個月前      </div>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.youtube.com/watch?v=1syd0yywc9k" target="_blank" rel="noopener noreferrer">
+      <img src="../img/2026-10-14/4cdb602d016f697c.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://www.youtube.com/watch?v=1syd0yywc9k" target="_blank" rel="noopener noreferrer">飼養倉鼠必須知道的8種倉鼠開心行為！Happy Hamster&#39;s Behaviours</a>
+      </h3>
+      <div class="trend-meta">
+巨神貓家族動物園 Super Cat Family Zoo · 3 年前      </div>
+    </div>
+  </article>
+</section>
+
+<h2 class="cat" id="ptt">📋 PTT Hamster 版文章</h2>
+<ul class="links" style="list-style:none;margin:0;padding:0;border-top:1px dashed var(--line);padding-top:12px">
+  <li>
+    <span class="src">Hamster 版</span>
+    <a href="https://www.ptt.cc/bbs/Hamster/M.1791547669.A.41B.html" target="_blank" rel="noopener noreferrer">［贈送］倉鼠紙棉</a>
+    <span style="margin-left:auto;color:var(--muted);font-size:.75rem">lovesweety · 10/09</span>
+  </li>
+  <li>
+    <span class="src">Hamster 版</span>
+    <a href="https://www.ptt.cc/bbs/Hamster/M.1318625046.A.4E7.html" target="_blank" rel="noopener noreferrer">[心情] 為何不能『多鼠一籠』呢？《簡易圖示》</a>
+    <span style="margin-left:auto;color:var(--muted);font-size:.75rem">stocksfor · 10/15</span>
+  </li>
+  <li>
+    <span class="src">Hamster 版</span>
+    <a href="https://www.ptt.cc/bbs/Hamster/M.1273849766.A.F3E.html" target="_blank" rel="noopener noreferrer">[公告] 板規2.2 ~ 請先閱讀 以免觸犯#.#</a>
+    <span style="margin-left:auto;color:var(--muted);font-size:.75rem">maiya · 5/14</span>
+  </li>
+  <li>
+    <span class="src">Hamster 版</span>
+    <a href="https://www.ptt.cc/bbs/Hamster/M.1211298496.A.CF3.html" target="_blank" rel="noopener noreferrer">[公告] 倉鼠基本飼養要點 {置底1.0板}</a>
+    <span style="margin-left:auto;color:var(--muted);font-size:.75rem">maiya · 5/20</span>
+  </li>
+  <li>
+    <span class="src">Hamster 版</span>
+    <a href="https://www.ptt.cc/bbs/Hamster/M.1479569868.A.E56.html" target="_blank" rel="noopener noreferrer">[資訊] 2016【全台看鼠醫院總整理】</a>
+    <span style="margin-left:auto;color:var(--muted);font-size:.75rem">ksongr · 11/19</span>
+  </li>
+</ul>
+
+<h2 class="cat" id="reddit">🔴 Reddit 鼠鼠討論</h2>
+<div class="empty">Reddit 目前抓不到鼠鼠討論（Reddit 對自動化請求常回 challenge 頁）。</div>
+
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 鼠鼠天地的資料來自 Bluesky、YouTube、PTT、Reddit，每 30 小時更新一次。</div>
+  <div class="srcs">Dcard 因 Cloudflare 403 阻擋無法納入；Reddit 目前對自動化請求常回 challenge 頁，抓不到時會顯示空區塊。</div>
+</footer>
+</div>
+</body>
+</html>
