@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 每日新聞彙整 · 2026-10-18</title>
+<meta name="description" content="2026-10-18 AI 新聞彙整：29 個主題、30 篇報導，同主題不同來源已整合。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html" class="on">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+  <a href="../hamster.html">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../index.html">AI 每日新聞彙整</a></h1>
+  <div class="meta">
+    <span>2026-10-18</span>
+    <span>29 個主題 · 30 篇報導</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 10/18 08:10</span>
+    <a href="../archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+
+<nav class="tabs" aria-label="主題分類">
+  <a href="#cat0">其他<b>29</b></a>
+</nav>
+
+<section class="briefs">
+  <article class="brief">
+    <a class="brief-hero" href="#t0003">
+      <img src="../img/2026-10-18/241c371e41f657d0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">其他</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0003">Meta removes language that raised scraping and AI training concerns</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0000">Meta 修改商业服务条款引发“用于训练 AI”争议，现已删除相关表述</a></li>
+        <li><a href="#t0001">韩国半导体工程师指控特斯拉：施压三星压低 AI 芯片报价、索要敏感信息并挖角其人才</a></li>
+        <li><a href="#t0002">布局物理 AI：美光研发边缘推理内存 EIM，降低数据处理延迟并提高带宽</a></li>
+      </ul>
+      <a class="brief-more" href="#cat0">看這個分類的 29 則 →</a>
+    </div>
+  </article>
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+
+<h2 class="cat" id="cat0">其他</h2>
+<article id="t0003">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">language</span><span class="badge">meta</span><span class="badge">removes</span>      </div>
+      <h3>Meta removes language that raised scraping and AI training concerns</h3>
+<p class="summary">A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/241c371e41f657d0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns" target="_blank" rel="noopener noreferrer">Meta removes language that raised scraping and AI training concerns</a>
+      <time datetime="2026-10-17T13:31:32+00:00">10/17 21:31</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites" target="_blank" rel="noopener noreferrer">Meta removes language that may have allowed it to scrape news sites</a>
+      <time datetime="2026-10-17T07:04:36+00:00">10/17 15:04</time>
+    </li>
+  </ul>
+</article>
+<article id="t0000">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">meta</span><span class="badge">robot</span>      </div>
+      <h3>Meta 修改商业服务条款引发“用于训练 AI”争议，现已删除相关表述</h3>
+<p class="summary">IT之家 10 月 18 日消息，Meta 最近更新了其商业服务条款，声明其有权“使用来自 [企业账户] 域名、网页或 URL 的任何内容，以提供、开发、改进、研究、 训练 并维护”Meta 产品及服务的完整性。 IT之家注意到，接受 Nieman Lab 采访的法律专家指出，这是一项“引人注目的条款”，它可能赋予 Meta 抓取任何拥有 Meta 企业账户的内容发布商网站、 并利用相关内容训练其人工智能模型的权限 。 不过，Meta 发言人坚称，更新后的条款并不意味着 Meta 抓取网络的方式发生了改变。据 The Verge 报道， 目前该条款已被正</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/429.htm" target="_blank" rel="noopener noreferrer">Meta 修改商业服务条款引发“用于训练 AI”争议，现已删除相关表述</a>
+      <time datetime="2026-10-17T16:00:43+00:00">10/18 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0001">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">xai</span><span class="badge">samsung</span><span class="badge">terafab</span>      </div>
+      <h3>韩国半导体工程师指控特斯拉：施压三星压低 AI 芯片报价、索要敏感信息并挖角其人才</h3>
+<p class="summary">IT之家 10 月 18 日消息，据 Tweaktown 报道，一名韩国半导体工程师指控，特斯拉在与三星签订芯片代工协议时，试图争取极为优厚的条款：既要获取敏感的制造工艺信息、审计权限，同时还要求压低报价。这位在 X 平台账号 @TTHUEONE 发文的工程师还称，特斯拉的 Terafab 项目从三星位于得州泰勒的工厂挖走了大量员工。 这些指控出现前，埃隆 · 马斯克（Elon Musk）刚度过事务繁忙的一周。他公开称赞美光科技，称其“对未来存储芯片定价态度理性，其他厂商则存在漫天要价的行为”，这番话普遍被解读为暗指三星。他还暗示台积电有可能参与 Ter</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/f45da433e35c7220.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/422.htm" target="_blank" rel="noopener noreferrer">韩国半导体工程师指控特斯拉：施压三星压低 AI 芯片报价、索要敏感信息并挖角其人才</a>
+      <time datetime="2026-10-17T15:38:12+00:00">10/17 23:38</time>
+    </li>
+  </ul>
+</article>
+<article id="t0002">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">eim</span><span class="badge">robot</span><span class="badge">pim</span>      </div>
+      <h3>布局物理 AI：美光研发边缘推理内存 EIM，降低数据处理延迟并提高带宽</h3>
+<p class="summary">IT之家 10 月 18 日消息，据韩媒 The Elec 报道，美光正在推进面向物理 AI 的专用存储芯片 —— 边缘推理内存（Edge Inference Memory，EIM）的研发。 10 月 16 日，在首尔江南 COEX 举行的韩国半导体展（SEDEX 2026）专题论坛“驱动人形机器人的半导体”上，美光高管（常务）李哲（音译）表示：“自动驾驶、人形机器人、增强现实（AR）及虚拟现实（VR）等物理 AI 市场正在迅速崛起。我们正与核心客户紧密沟通，共同推进适配这一新兴市场的产品研发。” 据悉， EIM 能够高速处理 AI 推理所需的数据 ，其</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/419.htm" target="_blank" rel="noopener noreferrer">布局物理 AI：美光研发边缘推理内存 EIM，降低数据处理延迟并提高带宽</a>
+      <time datetime="2026-10-17T15:26:38+00:00">10/17 23:26</time>
+    </li>
+  </ul>
+</article>
+<article id="t0004">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">microsoft</span><span class="badge">windows</span><span class="badge">rtx</span>      </div>
+      <h3>RTX Spark Ignites Global Celebration as New Windows PCs Arrive</h3>
+<p class="summary">NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, cont</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/957d4951751479fd.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">NVIDIA Blog</span>
+      <a href="https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration" target="_blank" rel="noopener noreferrer">RTX Spark Ignites Global Celebration as New Windows PCs Arrive</a>
+      <time datetime="2026-10-17T13:00:13+00:00">10/17 21:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0005">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">workforce</span><span class="badge">anthropic</span><span class="badge">become</span>      </div>
+      <h3>Anthropic says its workforce has become less junior and is spending more time in meetings</h3>
+<p class="summary">The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/763af1c8ae6810ab.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings" target="_blank" rel="noopener noreferrer">Anthropic says its workforce has become less junior and is spending more time in meetings</a>
+      <time datetime="2026-10-17T12:21:19+00:00">10/17 20:21</time>
+    </li>
+  </ul>
+</article>
+<article id="t0006">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">default</span><span class="badge">anthropic</span><span class="badge">replit</span>      </div>
+      <h3>Replit makes OpenAI its default over Anthropic, CEO says</h3>
+<p class="summary">Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/1c0592a1597b058e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says" target="_blank" rel="noopener noreferrer">Replit makes OpenAI its default over Anthropic, CEO says</a>
+      <time datetime="2026-10-17T10:48:08+00:00">10/17 18:48</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">rtx</span><span class="badge">5090</span><span class="badge">geforce</span>      </div>
+      <h3>英伟达否认 RTX 5090 停产传闻，承认供应链产能受限</h3>
+<p class="summary">IT之家 10 月 17 日消息，英伟达个人计算业务高级副总裁 Jeff Fisher 昨日在台北出席 RTX Spark 相关活动时回应了 RTX 5090 停产相关传闻，明确表示相关消息不属实。 他强调，这款显卡仍是英伟达非常重要的核心产品，后续将继续供货。但他也同时承认，当前供应链产能确实受到限制，英伟达正努力推动产品进入市场。 此前，消息人士 MEGAsizeGPU (@Zed__Wang) 10 月 10 日爆料称，英伟达将不再向 GeForce RTX 50 系列游戏显卡分配 GB202，并将原本用于该卡的 GB202 芯片转向 RTX PR</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/407.htm" target="_blank" rel="noopener noreferrer">英伟达否认 RTX 5090 停产传闻，承认供应链产能受限</a>
+      <time datetime="2026-10-17T06:33:46+00:00">10/17 14:33</time>
+    </li>
+  </ul>
+</article>
+<article id="t0008">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">driveone</span><span class="badge">12.88</span><span class="badge">ray7</span>      </div>
+      <h3>广汽埃安 Ray7 开启预售：华为 DriveONE 多合一电驱，12.88 万元起</h3>
+<p class="summary">IT之家 10 月 17 日消息，广汽埃安 Ray7 纯电轿车今日开启预售，共 5 款车型，预售价 12.88 万元起。 IT之家附价格信息如下： 530 后驱驾趣版 12.88 万元 530 后驱激光版 13.88 万元 702 后驱驾趣宁德版 13.88 万元 702 后驱激光宁德版 14.88 万元 702 后驱 EMB 激光宁德版 15.88 万元 该车提供 仲夏紫、闪电黄、月辉银、风暴红、熔岩灰、云舒白、热带蓝 车色，定位“大 5 米超级纯电轿车”，配备 3.6m 量子星环贯穿前后 LED 灯。 该车提供炽光竞驰、云纱暖米、极速赛道内饰，一体式</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/a1eca2d31193794a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/398.htm" target="_blank" rel="noopener noreferrer">广汽埃安 Ray7 开启预售：华为 DriveONE 多合一电驱，12.88 万元起</a>
+      <time datetime="2026-10-17T05:06:00+00:00">10/17 13:06</time>
+    </li>
+  </ul>
+</article>
+<article id="t0009">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">agents</span><span class="badge">google</span><span class="badge">websites</span>      </div>
+      <h3>Websites are closing their doors to AI agents</h3>
+<p class="summary">Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest o</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/2a19e7ceaa8f95df.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web" target="_blank" rel="noopener noreferrer">Websites are closing their doors to AI agents</a>
+      <time datetime="2026-10-17T05:00:00+00:00">10/17 13:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0010">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">solar</span><span class="badge">legal</span><span class="badge">plug-in</span>      </div>
+      <h3>Plug-in solar is legal in these 10 states now – how it could save you money</h3>
+<p class="summary">So-called balcony solar setups are becoming legal across the US. Here’s the latest.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/810c2aefb12596b8.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/uncategorized/plug-in-solar-balcony-solar-legalization-2026" target="_blank" rel="noopener noreferrer">Plug-in solar is legal in these 10 states now – how it could save you money</a>
+      <time datetime="2026-10-17T05:00:00+00:00">10/17 13:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0011">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">arc</span><span class="badge">b70</span><span class="badge">pro</span>      </div>
+      <h3>华硕推出旗下首款英特尔 Arc Pro B70 显卡：32GB ECC 显存，AI 算力达 367 TOPS</h3>
+<p class="summary">IT之家 10 月 17 日消息，据 Wccftech 今日报道，华硕推出了旗下首款英特尔 Arc Pro B70 显卡，面向 AI 推理及工作站市场。华硕此前缺席了英特尔 Arc 独立显卡的多个世代，此次推出新品意味着其再次加入英特尔独立显卡产品阵营。 华硕这款产品名为 UGen Intel Arc Pro B70 32GB GDDR6，采用英特尔 X e 2 架构的 Big Battlemage GPU，配备 32GB GDDR6 ECC 显存、32 个 X e 核心和 256 个 XMX AI 引擎，INT8 AI 算力最高可达 367 TOPS，</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/bd48a3df81e7820e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/390.htm" target="_blank" rel="noopener noreferrer">华硕推出旗下首款英特尔 Arc Pro B70 显卡：32GB ECC 显存，AI 算力达 367 TOPS</a>
+      <time datetime="2026-10-17T03:56:31+00:00">10/17 11:56</time>
+    </li>
+  </ul>
+</article>
+<article id="t0012">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">10000</span><span class="badge">huawei</span><span class="badge">2026</span>      </div>
+      <h3>边建设边运营：“鹏城云脑 Ⅲ”10000P 国产算力上线试运行</h3>
+<p class="summary">IT之家 10 月 17 日消息，10 月 15 日至 16 日，2026 世界算力网大会（WCNC 2026）在深圳举行。开幕式上，大科学装置“鹏城云脑 Ⅲ”的 10000P 国产算力正式上线试运行。 公开报道显示，鹏城云脑 Ⅲ 采用的是华为昇腾最前沿的 384 超节点架构，首期设备已于今年 3 月通电点亮，完全建成后算力规模将达到 16000P（IT之家注：合 16 EFLOPS）。 此次 10000P 算力先行投入运营，意味着这座规划中的国内单体规模最大智算设施进入“边建设、边运营”新阶段，在全部建成之前已开始向国产大模型训练与科学智能研究输出算力</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/fbb16ef858dfba91.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/387.htm" target="_blank" rel="noopener noreferrer">边建设边运营：“鹏城云脑 Ⅲ”10000P 国产算力上线试运行</a>
+      <time datetime="2026-10-17T03:48:30+00:00">10/17 11:48</time>
+    </li>
+  </ul>
+</article>
+<article id="t0013">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">744</span><span class="badge">11.11</span><span class="badge">26888</span>      </div>
+      <h3>科大讯飞 AI 词典笔 X9 上架：内置 85 本词典、支持小初高 9 科知识查询，744 元</h3>
+<p class="summary">IT之家 10 月 17 日消息，科大讯飞现已在京东上架讯飞 AI 词典笔 X9，定价为 744 元，部分地区国补后低至 674.1 元。 该词典笔配备 3.48 英寸莱茵低蓝光护眼屏，配备 1100mAh 电池，内置 85 本正版词典及“五千万词库”。扫描响应时间低至 0.3 秒，并支持无网离线查词。其机器翻译能力通过了全国翻译专业资格考试评估，能够进行长难句的语法与结构剖析。 官方强调，该设备提供 11000 篇分级听力内容，覆盖幼儿至高中阶段。口语训练采用中高考同源技术进行音素级纠音，支持 AI 图文对话与蓝牙耳机连接。系统内置艾宾浩斯遗忘曲线以自</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/b2e0d9f58e70e928.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/382.htm" target="_blank" rel="noopener noreferrer">科大讯飞 AI 词典笔 X9 上架：内置 85 本词典、支持小初高 9 科知识查询，744 元</a>
+      <time datetime="2026-10-17T03:29:34+00:00">10/17 11:29</time>
+    </li>
+  </ul>
+</article>
+<article id="t0014">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">ps5</span><span class="badge">qwen3.8-27b</span><span class="badge">3.8</span>      </div>
+      <h3>开发者将破解后的索尼 PS5 当作本地 AI 服务器：利用 GPU 加速运行 27B 参数 Qwen3.8-27B 模型，速度达 20.9 token/s</h3>
+<p class="summary">IT之家 10 月 17 日消息，据外媒 Wccftech 报道，开发者 abhi245y 基于资深 AI 工程师 Mert Cobanov 的 PS5LM（ llama.cpp 移植项目），开发了原生 GPU 应用 PS5LM Plus，让经过破解的 PS5 主机能够在本地运行 Qwen3.8-27B 等大型语言模型。 IT之家获悉，PS5LM 的早期版本主要依靠 CPU 运行模型，执行 27B 参数模型时，平均每分钟只能生成约 1 个 token。为提升性能，开发者 abhi245y 移植了 Mesa 开源项目中的 AMD RADV 驱动，并通过 V</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/de733e9d602092ac.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/372.htm" target="_blank" rel="noopener noreferrer">开发者将破解后的索尼 PS5 当作本地 AI 服务器：利用 GPU 加速运行 27B 参数 Qwen3.8-27B 模型，速度达 20.9 token/s</a>
+      <time datetime="2026-10-17T02:45:59+00:00">10/17 10:45</time>
+    </li>
+  </ul>
+</article>
+<article id="t0015">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>中国科学院院士鄂维南：未来民科是科研的主力，AI 时代每个有想法有能力的团队和个人都可以参与到科技创新中去</h3>
+<p class="summary">10 月 17 日，在光华思想力论坛上，中国科学院院士、北京大学讲席教授鄂维南表示，人工智能本质上是“数学 + 计算机工程”，将大幅降低科研门槛，推动“科研平权化”。“未来民科是科研的主力”，他预测，通过开放实验室和云服务，“每一个有想法有能力的团队和个人都可以参与到科技创新当中去”。 鄂维南指出，企业真正做生产时缺乏原始创新，只能在管理、价格等方面竞争，“内卷的根本原因是创新能力不够”。他认为，高端工业软件、高端机床数控系统目前受制于人，但“现在不但是可以比较短的时间内实现自主可控，甚至可以‘换道超车’”，可构建 AI 原生工业软件体系，“原则上几乎可</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/371.htm" target="_blank" rel="noopener noreferrer">中国科学院院士鄂维南：未来民科是科研的主力，AI 时代每个有想法有能力的团队和个人都可以参与到科技创新中去</a>
+      <time datetime="2026-10-17T02:39:55+00:00">10/17 10:39</time>
+    </li>
+  </ul>
+</article>
+<article id="t0016">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">openai</span>      </div>
+      <h3>OpenAI 纳维-斯托克斯方程证明方法被指与官方叙事不符：学界验证尚需数年，智能体贡献同样成谜</h3>
+<p class="summary">IT之家 10 月 17 日消息，OpenAI 今年 9 月公布了一份长达 166 页的纳维-斯托克斯方程（Navier–Stokes equations）相关证明，称其内部 AI 系统在约 88 小时内完成了对这一千禧年难题的求解。 不过，随着数学界进一步审查相关工作，研究人员开始对证明采用的方法、与已有研究的关系，以及大规模 AI 智能体究竟发挥了多大作用提出质疑。 数学家贡萨洛 · 曹-拉博拉（Gonzalo Cao-Labora）指出， OpenAI 可能自己都没看懂就急着发论文了 。 他表示，OpenAI 的证明细节与西班牙数学家迭戈 · 科尔</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/014/370.htm" target="_blank" rel="noopener noreferrer">OpenAI 纳维-斯托克斯方程证明方法被指与官方叙事不符：学界验证尚需数年，智能体贡献同样成谜</a>
+      <time datetime="2026-10-17T02:31:25+00:00">10/17 10:31</time>
+    </li>
+  </ul>
+</article>
+<article id="t0017">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">isn</span><span class="badge">ready</span><span class="badge">tackle</span>      </div>
+      <h3>Why AI Isn’t Ready to Tackle Our Convoluted Genomes</h3>
+<p class="summary">The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don&#39;t yet have the data to properly decode it.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/e713e52c7cea62e6.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes" target="_blank" rel="noopener noreferrer">Why AI Isn’t Ready to Tackle Our Convoluted Genomes</a>
+      <time datetime="2026-10-17T01:00:00+00:00">10/17 09:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0018">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">bytedance</span><span class="badge">youtube</span><span class="badge">tiktok</span>      </div>
+      <h3>不禁 AI 但拒絕 AI 垃圾內容，YouTube、TikTok 等社群平台齊改規則</h3>
+<p class="summary">隨著生成式 AI 快速滲透創作流程，主流社群平台正加速調整規則，試圖在鼓勵創新與防堵低品質大量生成內容之間取得 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/86857cd9e46c1461.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/17/from-substack-to-youtube-here-are-the-social-platforms-cracking-down-on-ai-slop" target="_blank" rel="noopener noreferrer">不禁 AI 但拒絕 AI 垃圾內容，YouTube、TikTok 等社群平台齊改規則</a>
+      <time datetime="2026-10-17T00:30:15+00:00">10/17 08:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0019">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">nvidia</span><span class="badge">funding</span><span class="badge">400</span>      </div>
+      <h3>最賺錢的時候押注下一步，黃仁勳帶領輝達再一次歷史性轉型</h3>
+<p class="summary">幾個月狂砸 400 億美元，輝達（NVIDIA）就這樣大剌剌在所有人注視下，又一次完成重要轉型。 過去幾個月， […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/c03aed87c9550fbf.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/17/nvidia-completes-another-historic-transformation" target="_blank" rel="noopener noreferrer">最賺錢的時候押注下一步，黃仁勳帶領輝達再一次歷史性轉型</a>
+      <time datetime="2026-10-17T00:00:01+00:00">10/17 08:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0020">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">agentic</span><span class="badge">hpe</span><span class="badge">agent</span>      </div>
+      <h3>Agentic AI 浪潮襲來！HPE 剖析企業 AI 轉型痛點與企業級 AI 工廠策略</h3>
+<p class="summary">隨著生成式 AI 迅速演進，企業 AI 應用正從傳統問答模式跨入目標導向的 Agentic AI（代理人 AI […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/1be6a95b3ccb07d4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/10/17/hpe-analyzes-the-pain-points-of-enterprise-ai-transformation-and-enterprise-level-ai-factory-strategies" target="_blank" rel="noopener noreferrer">Agentic AI 浪潮襲來！HPE 剖析企業 AI 轉型痛點與企業級 AI 工廠策略</a>
+      <time datetime="2026-10-16T23:00:20+00:00">10/17 07:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0021">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>即使行為與人類無異，科學證實人們仍認為 AI 缺乏「真正意識」</h3>
+<p class="summary">隨著現代 AI 模型在對話、推理與情感模仿上越發精進，大眾開始擔憂：人類是否會被演算法迷惑，誤以為它們擁有真實 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/6cef052b03b0b201.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/17/cognitive-boundaries-ai-human-consciousness" target="_blank" rel="noopener noreferrer">即使行為與人類無異，科學證實人們仍認為 AI 缺乏「真正意識」</a>
+      <time datetime="2026-10-16T23:00:13+00:00">10/17 07:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0022">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>AI 泡沫疑慮升溫，彭双浪：成長將放緩、趨勢不會改變</h3>
+<p class="summary">友達光電今日舉辦成立 30 週年集團運動會，董事長彭双浪受訪時表示，人工智慧（AI）已成為不可逆的產業趨勢，儘 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/ae2c3ff698d356d7.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/10/17/ai-bubble-auo" target="_blank" rel="noopener noreferrer">AI 泡沫疑慮升溫，彭双浪：成長將放緩、趨勢不會改變</a>
+      <time datetime="2026-10-16T22:43:17+00:00">10/17 06:43</time>
+    </li>
+  </ul>
+</article>
+<article id="t0023">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>AI 助攻效率與創意但「貧富不均」，高學歷與管理職還是最大贏家</h3>
+<p class="summary">美國最新研究指出，人工智慧（AI）開始明顯助益部分勞工，包括加速工作、激發創意與提升產出品質，但這些好處並未平 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/f34750a7c3090ac0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/17/ai-benefits-at-work-are-uneven-across-the-us-workforce-study-finds" target="_blank" rel="noopener noreferrer">AI 助攻效率與創意但「貧富不均」，高學歷與管理職還是最大贏家</a>
+      <time datetime="2026-10-16T22:30:30+00:00">10/17 06:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0024">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>台積電亮眼財報背後，市場關注隱憂關鍵浮現</h3>
+<p class="summary">晶圓代工龍頭台積電公佈最新第三季財報，數據顯示由人工智慧（AI）浪潮推升的強勁需求遠超預期。第三季單季營收達4 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/7e738d35bd30e02e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/10/17/behind-tsmcs-impressive-financial-report-key-concerns-have-emerged-that-have-drawn-market-attention" target="_blank" rel="noopener noreferrer">台積電亮眼財報背後，市場關注隱憂關鍵浮現</a>
+      <time datetime="2026-10-16T22:00:57+00:00">10/17 06:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0025">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">compute</span><span class="badge">andrew</span><span class="badge">huberman</span>      </div>
+      <h3>超越模型算力，神經科學專家：AI 終極戰場在「非侵入式讀寫大腦」</h3>
+<p class="summary">史丹佛大學神經科學家安德魯·胡貝爾曼（Andrew Huberman）近日在 Podcast 節目中表示，人工 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/2b7cab0ac961515f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/17/ai-arms-race-brain-control" target="_blank" rel="noopener noreferrer">超越模型算力，神經科學專家：AI 終極戰場在「非侵入式讀寫大腦」</a>
+      <time datetime="2026-10-16T21:30:44+00:00">10/17 05:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0026">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">token</span><span class="badge">openai</span><span class="badge">chatgpt</span>      </div>
+      <h3>魏哲家籲多用 AI，Token 消耗越多、台積電越受惠</h3>
+<p class="summary">台積電董事長魏哲家 16 日出席台積電前技術長胡正明新書發表會，他分享自己使用 ChatGPT 準備致詞稿的經 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/f44514462144fce5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/10/17/tsmc-ceo-cc-wei-urges-ai-adoption-more-token-consumption-benefits-tsmc" target="_blank" rel="noopener noreferrer">魏哲家籲多用 AI，Token 消耗越多、台積電越受惠</a>
+      <time datetime="2026-10-16T21:00:18+00:00">10/17 05:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0027">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">show</span><span class="badge">llmspeed</span><span class="badge">feel</span>      </div>
+      <h3>Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware</h3>
+<p class="summary">Article URL: https://llmspeed.dev/ Comments URL: https://news.ycombinator.com/item?id=50127979 Points: 238 # Comments: 76</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/d1acfbd5efbd8477.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://llmspeed.dev/" target="_blank" rel="noopener noreferrer">Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware</a>
+      <time datetime="2026-10-16T20:36:53+00:00">10/17 04:36</time>
+    </li>
+  </ul>
+</article>
+<article id="t0028">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hbm</span><span class="badge">ssd</span><span class="badge">funding</span>      </div>
+      <h3>大摩記憶體與 AI 供應鏈展望，HBM 與 SSD 合約價飆升推動算力與網路列投資首選</h3>
+<p class="summary">外資摩根士丹利（Morgan Stanley；大摩）最新研究報告指出，受惠於AI需求推動與產能排擠效應，記憶體 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-10-18/6a40781d8cf4cb2b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/10/17/morgan-stanley-memory-and-ai-supply-chain-outlook" target="_blank" rel="noopener noreferrer">大摩記憶體與 AI 供應鏈展望，HBM 與 SSD 合約價飆升推動算力與網路列投資首選</a>
+      <time datetime="2026-10-16T19:00:16+00:00">10/17 03:00</time>
+    </li>
+  </ul>
+</article>
+</div>
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
+  <div class="srcs">來源：Hacker News (100+) · IT之家 · NVIDIA Blog · TechCrunch AI · The Verge AI · Wired AI · ZDNet AI · 科技新報 TechNews</div>
+</footer>
+</div>
+</body>
+</html>

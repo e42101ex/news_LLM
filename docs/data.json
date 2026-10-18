@@ -1,439 +1,74 @@
 {
- "generated_at": "2026-10-17T08:10:15.316236+08:00",
- "date": "2026-10-17",
+ "generated_at": "2026-10-18T08:10:13.091075+08:00",
+ "date": "2026-10-18",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
- "topic_count": 40,
- "article_count": 50,
+ "topic_count": 29,
+ "article_count": 30,
  "topics": [
   {
-   "key": "t0035",
-   "title": "Apple、Meta 罕見攜手！8,160 億參數 AI 模型登上 Mac Studio，雙方為何放下多年恩怨？",
-   "summary": "Meta 首席 AI 負責人 Alexandr Wang 更以一句「我們很高興看到爸爸媽媽終於又能好好相處了」，形容 Meta 與 Apple 這次合作。",
+   "key": "t0003",
+   "title": "Meta removes language that raised scraping and AI training concerns",
+   "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "mac",
-    "studio",
-    "apple",
-    "muse",
-    "research",
-    "mlx"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "Hacker News (100+)",
-    "TechOrange 科技報橘",
-    "INSIDE"
-   ],
-   "articles": [
-    {
-     "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
-     "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-10-16T05:43:48+00:00",
-     "summary": "Article URL: https://machinelearning.apple.com/research/mlx-distributed-inference Comments URL: https://news.ycombinator.com/item?id=50118320 Points: 255 # Comments: 114",
-     "image": "",
-     "id": "98e6a11f87f3",
-     "tags": []
-    },
-    {
-     "title": "Meta 推美最強開放模型 Muse Spark Open，8,160 億參數為何兩台 Mac 就能跑？",
-     "url": "https://techorange.com/2026/10/16/meta-muse-spark-open-ai",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-10-15T19:51:31+00:00",
-     "summary": "Meta 本週動作頻頻，先是發表新一代閉源 AI 模型 Muse Wonder，又於美國時間 10/15 發布新一代 AI 模型 Muse Spark Open，並宣稱是迄今最強的美國開放權重模型，總參數高達 8,160 億，主攻程式開發與 AI Agent（AI 代理）任務。其中更引人關注的是，Meta 與 Apple 合作，讓這款超大型模型能在兩台 Mac Studio 上運行。 這不僅讓企業及開發者有機會自行下載、調整和部署高能力模型，也展示大型 AI 推理不必完全依賴傳統 GPU 伺服器的新選擇。究竟過去需要龐大運算與記憶體資源的模型，為何現在能在兩台桌上型電腦上運行？ Meta 重返開放模型競爭，追上中國對手了嗎？ 近年中國 AI 業者積極推進開放權重模型，逐漸取得市場優勢。根據 Hugging Face 統計，截至今年 3 月的過去一年，中國模型占平台下載量達 41%，已超越美國模型。包括阿里巴巴 Qwen、DeepSeek，以及月之暗面（Moonshot AI）的 Kimi，都成為企業自行部署 AI 的重要選擇。 如今，Meta 以 Muse Spark Open 加入競爭。根據官方公告，該款模型採用混合專家架構（MoE），雖擁有 8,160 億參數，但每次生成內容僅啟用約 420 億參數，以降低運算負擔。模型支援最長 […]",
-     "image": "https://techorange.com/app/uploads/2026/10/441db6978ef26b37-720x480.jpg",
-     "id": "279134411a9f",
-     "tags": [
-      "AI 人工智慧"
-     ]
-    },
-    {
-     "title": "Apple、Meta 罕見攜手！8,160 億參數 AI 模型登上 Mac Studio，雙方為何放下多年恩怨？",
-     "url": "https://www.inside.com.tw/article/42653-apple-meta-muse-spark-open-mac-studio-ai-collaboration",
-     "source": "INSIDE",
-     "lang": "zh",
-     "published": "2026-10-15T19:26:00+00:00",
-     "summary": "Meta 首席 AI 負責人 Alexandr Wang 更以一句「我們很高興看到爸爸媽媽終於又能好好相處了」，形容 Meta 與 Apple 這次合作。",
-     "image": "https://bucket-image.inkmaginecms.com/version/social/9dde7c0f-a597-445c-80dd-9a93db8a4006/image/2026/10/872b169e-e377-4f1f-92dd-b74d4a9d1be9.webp",
-     "id": "149b3e891b47",
-     "tags": [
-      "Apple",
-      "Meta",
-      "人工智慧",
-      "AI",
-      "Mac Studio"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0009",
-   "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-   "summary": "We think \"did a human read the code?\" is an imprecise proxy for \"what could go wrong with this change, and which check—automated or human—is the right one to catch it?\" Asking that question also changed when review happens. Before, review was a gate at the end of the road: write ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "review",
-    "code",
-    "team",
-    "does",
-    "claude",
-    "anthropic"
-   ],
-   "image": "img/2026-10-17/9ef400763b81ae89.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Simon Willison",
-    "Hacker News (100+)"
-   ],
-   "articles": [
-    {
-     "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-     "url": "https://simonwillison.net/2026/Oct/16/code-review",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-10-16T14:06:37+00:00",
-     "summary": "We think \"did a human read the code?\" is an imprecise proxy for \"what could go wrong with this change, and which check—automated or human—is the right one to catch it?\" Asking that question also changed when review happens. Before, review was a gate at the end of the road: write the code, open a PR, wait for your colleague. Now, review runs continuously, more like spellcheck while you write. Most changes have been reviewed and fixed by Claude at least once before a human is asked to look. This catches most routine mistakes, and saves team attention for higher-level questions and scrutiny. — Ad",
-     "image": "",
-     "id": "50e25bfb1e83",
-     "tags": [
-      "anthropic",
-      "claude",
-      "ai",
-      "claude-code",
-      "llms"
-     ]
-    },
-    {
-     "title": "How the Claude Code team does code review",
-     "url": "https://claude.dev/blog/solving-code-review-at-anthropic",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-10-16T11:04:47+00:00",
-     "summary": "Article URL: https://claude.dev/blog/solving-code-review-at-anthropic/ Comments URL: https://news.ycombinator.com/item?id=50122951 Points: 206 # Comments: 190",
-     "image": "",
-     "id": "7fd7e06ab2f4",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0014",
-   "title": "Have a Meta business account? You’re consenting to AI scraping now, legal experts say",
-   "summary": "And there’s no opt-out available.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
+    "language",
     "meta",
-    "legal",
-    "experts",
-    "business",
-    "account",
-    "consenting"
+    "removes",
+    "terms",
+    "sites",
+    "raised"
    ],
-   "image": "img/2026-10-17/9f857833d1a66aaa.webp",
+   "image": "img/2026-10-18/241c371e41f657d0.webp",
    "llm_enriched": false,
    "sources": [
-    "ZDNet AI",
-    "Ars Technica AI"
+    "TechCrunch AI",
+    "The Verge AI"
    ],
    "articles": [
     {
-     "title": "Have a Meta business account? You’re consenting to AI scraping now, legal experts say",
-     "url": "https://www.zdnet.com/uncategorized/meta-business-account-data-ai-scraping-terms",
-     "source": "ZDNet AI",
+     "title": "Meta removes language that raised scraping and AI training concerns",
+     "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns",
+     "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-10-16T11:36:02+00:00",
-     "summary": "And there’s no opt-out available.",
-     "image": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-2188450078.jpg",
-     "id": "42ddadba7abf",
-     "tags": [
-      "Uncategorized"
-     ]
-    },
-    {
-     "title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
-     "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-10-16T07:41:00+00:00",
-     "summary": "Meta “streamlined” its commercial TOS. Legal experts warn it’s an AI power grab.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2296621320-500x500.jpg",
-     "id": "3c203c9854b8",
+     "published": "2026-10-17T13:31:32+00:00",
+     "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+     "image": "",
+     "id": "d4d8a21bd997",
      "tags": [
       "AI",
-      "Policy",
-      "ai crawling",
-      "ai scraping",
-      "AI training"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0023",
-   "title": "Want an iPhone Duo before 2027? Don’t preorder from Apple – try this instead",
-   "summary": "Estimates for Duo preorders are now showing a ship date of late January, marking a new wait time record for Apple and its customers.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "duo",
-    "iphone",
-    "apple",
-    "want",
-    "don",
-    "preorder"
-   ],
-   "image": "img/2026-10-17/51022561d142090c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "ZDNet AI",
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "Want an iPhone Duo before 2027? Don’t preorder from Apple – try this instead",
-     "url": "https://www.zdnet.com/tech/iphone-duo-preorders-delay-supply",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-10-16T08:44:50+00:00",
-     "summary": "Estimates for Duo preorders are now showing a ship date of late January, marking a new wait time record for Apple and its customers.",
-     "image": "https://www.zdnet.com/wp-content/uploads/sites/3/DSC00521.jpeg",
-     "id": "60549d08962c",
-     "tags": [
-      "iPhone"
+      "Social",
+      "Meta"
      ]
     },
     {
-     "title": "中国联通回馈 2009 年首批 iPhone 用户，开放 iPhone Duo 最高优先级购机资格",
-     "url": "https://www.ithome.com/1/014/146.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T04:00:10+00:00",
-     "summary": "IT之家 10 月 16 日消息，中国联通今日宣布，面向 2009 年通过联通渠道购得正版 iPhone 的老用户，开放 iPhone Duo 最高优先级购机资格。 相关用户可通过联通官网（IT之家附地址： https://go.10010.com:32001/apple-booking/ ）核验身份，结果显示为“尊享挚友”后，可前往就近的联通苹果授权门店优先购机。 2009 年 10 月 30 日晚，中国联通在北京世贸天阶举行 iPhone 入华首销仪式，现场连续销售并为购机用户颁发印有编号的证书。当天到场的大多是办理 186 号段 3G 套餐的用户，这批人也成为中国大陆正品 iPhone 的首批使用者。 根据苹果官方新闻稿，iPhone Duo 是苹果首款可折叠机型，该机展开后为 7.6 英寸超视网膜 XDR 内屏，显示面积比 iPhone 18 Pro Max 增大 50%，闭合时为 5.4 英寸超视网膜 XDR 外屏，显示面积相当于 iPhone 18 Pro 的 90%。两块屏幕比例相同、内容可等比缩放，均支持 ProMotion 自适应刷新率、全天候显示与最高 3000 尼特户外峰值亮度。苹果中国官网技术规格页面显示，iPhone Duo 搭载 A20 Pro 芯片，采用 2 纳米制程，配备双 16 核神经网络引擎，不设实体 SIM 卡插槽，仅可通过 eSIM 激活运营",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/7eedaf9a-b202-4f14-8d9e-a1ddeecf8be5.jpg?x-bce-process=image/format,f_auto",
-     "id": "3b78709353f3",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0027",
-   "title": "NVIDIA RTX Spark 发售，华硕、联想、微软、微星多款笔电开放购买",
-   "summary": "IT之家 10 月 16 日消息，基于 NVIDIA（英伟达）RTX Spark 超级芯片平台的设备即将发售， 华硕、联想、微软、微星等厂商均将开放产品购买 。感兴趣的IT之家小伙伴可 前往了解 。 华硕 ProArt 创 14 20C + 6144CUDA + 128GB + 1TB，35999 元 20C + 6144CUDA + 32GB + 1TB，18999 元 京东 华硕 ProArt 创 14 RTX Spark 18999 元起 直达链接 华硕 ProArt 创 16 20C + 6144CUDA + 128GB + 1TB，37999 ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "rtx",
-    "spark",
-    "laptops",
-    "nvidia",
-    "cuda",
-    "intel"
-   ],
-   "image": "img/2026-10-17/b865025c7a153525.webp",
-   "llm_enriched": false,
-   "sources": [
-    "The Verge AI",
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
-     "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+     "title": "Meta removes language that may have allowed it to scrape news sites",
+     "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
      "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-10-16T07:00:00+00:00",
-     "summary": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be a high-performing Arm-based SoC for laptops and small desktop computers, rivaling the best from Apple, Intel, AMD, and Qualcomm. It has loads of cores, Nvidia […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268814_Nvidia_RTX_Spark_laptops_Asus_HP_Lenovo_ADiBenedetto_0001.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "3d6f16cf09a8",
+     "published": "2026-10-17T07:04:36+00:00",
+     "summary": "After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no longer appears on the commercial terms page: … Meta may use any content from such domains, web pages, or URLs to provide, develop, improve, […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK043_VRG_Illo_N_Barclay_2_Meta.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "ac0eba5f3991",
      "tags": [
       "AI",
-      "Asus",
-      "Gadgets",
-      "Gaming",
-      "Hands-on"
+      "Meta",
+      "News",
+      "Tech"
      ]
-    },
-    {
-     "title": "NVIDIA RTX Spark 发售，华硕、联想、微软、微星多款笔电开放购买",
-     "url": "https://www.ithome.com/1/014/138.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T03:37:25+00:00",
-     "summary": "IT之家 10 月 16 日消息，基于 NVIDIA（英伟达）RTX Spark 超级芯片平台的设备即将发售， 华硕、联想、微软、微星等厂商均将开放产品购买 。感兴趣的IT之家小伙伴可 前往了解 。 华硕 ProArt 创 14 20C + 6144CUDA + 128GB + 1TB，35999 元 20C + 6144CUDA + 32GB + 1TB，18999 元 京东 华硕 ProArt 创 14 RTX Spark 18999 元起 直达链接 华硕 ProArt 创 16 20C + 6144CUDA + 128GB + 1TB，37999 元 京东 华硕 ProArt 创 16 RTX Spark 37999 元 直达链接 联想 YOGA Pro 15 20C + 6144CUDA + 128GB + 2TB，42999 元 20C + 6144CUDA + 64GB + 1TB，29999 元 京东 联想 YOGA Pro 15 RTX Spark 29999 元起 直达链接 微软 Surface Laptop Ultra 20C + 6144CUDA + 48GB + 1TB，33188 元 20C + 6144CUDA + 32GB + 1TB，30788 元 18C + 5120CUDA + 32GB + 1TB，27588 元 18C + 5120CUDA ",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/582745ad-cd44-4e12-84da-0ac3198ad60d.png",
-     "id": "1f149eaabaaa",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0016",
-   "title": "Claude reveals ECDSA curve origins",
-   "summary": "https://words.filippo.io/seeds-solved/ Comments URL: https://news.ycombinator.com/item?id=50122800 Points: 607 # Comments: 252",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "comments",
-    "anthropic",
-    "https",
-    "url",
-    "news.ycombinator.com",
-    "item"
-   ],
-   "image": "img/2026-10-17/f07c1faa1a653be3.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Hacker News (100+)"
-   ],
-   "articles": [
-    {
-     "title": "Claude reveals ECDSA curve origins",
-     "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-10-16T10:55:59+00:00",
-     "summary": "https://words.filippo.io/seeds-solved/ Comments URL: https://news.ycombinator.com/item?id=50122800 Points: 607 # Comments: 252",
-     "image": "",
-     "id": "7a6a342eb958",
-     "tags": []
-    },
-    {
-     "title": "Anthropic assigned highest junk credit rating in June",
-     "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-10-16T10:11:42+00:00",
-     "summary": "https://finance.yahoo.com/technology/ai/articles/anthropic-s... Comments URL: https://news.ycombinator.com/item?id=50122112 Points: 198 # Comments: 59",
-     "image": "",
-     "id": "a0696e415e0e",
-     "tags": []
-    },
-    {
-     "title": "Show HN: Gemini 4 Argon plays StarCraft",
-     "url": "https://starskirmish.com/bench/v0-2",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-10-16T06:18:44+00:00",
-     "summary": "I've refreshed StarSkirmish Bench, a benchmark where LLMs play StarCraft BW by writing code, with results from the flagship models of OpenAI, Anthropic, Google, and Muse Comments URL: https://news.ycombinator.com/item?id=50118688 Points: 181 # Comments: 87",
-     "image": "",
-     "id": "3d3011b3b2f6",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0024",
-   "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-   "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being rebuilt. This view runs count",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "robotics",
-    "robot",
-    "nvidia",
-    "amulya",
-    "vishwanath",
-    "spent"
-   ],
-   "image": "img/2026-10-17/3fafb42f40cb8bab.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-     "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-16T08:30:00+00:00",
-     "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being rebuilt. This view runs counter to those who believe that robotics, powered by a general foundation model, is about to have […]",
-     "image": "",
-     "id": "84c2c565c396",
-     "tags": [
-      "AI",
-      "Robotics",
-      "Venture",
-      "early stage venture",
-      "nvidia"
-     ]
-    },
-    {
-     "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
-     "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-16T08:30:00+00:00",
-     "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being rebuilt. This view runs counter to those who believe that robotics, powered by a general foundation model, is about to have […]",
-     "image": "",
-     "id": "1db14d807722",
-     "tags": [
-      "Startups",
-      "AI",
-      "Robotics",
-      "nvidia",
-      "Equity podcast"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0036",
-   "title": "长鑫科技 2026 年前三季度预计归母净利润 1310~1325 亿元，同比扭亏为盈",
-   "summary": "IT之家 10 月 16 日消息，长鑫科技今日发布 2026 年前三季度（2026 年 1 月～2026 年 9 月）业绩预告报告： 营业总收入 ：2650 亿元 ~2700 亿元，同比预增 725.96%~741.54% 归母净利润 ：1310 亿元 ~1325 亿元，同比扭亏为盈 AI 解读 本次业绩预告大幅超出市场预期，业绩实现爆发式增长。 公司主营业务与财报亮点 长鑫科技主要从事 DRAM 存储芯片的研发、生产和销售，是国内 DRAM 行业核心企业。 本次 2026 年前三季度预计实现营业收入 2650 亿元至 2700 亿元，同比上年增加 23",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "2026"
-   ],
-   "image": "img/2026-10-17/343b32f32087bf89.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "长鑫科技 2026 年前三季度预计归母净利润 1310~1325 亿元，同比扭亏为盈",
-     "url": "https://www.ithome.com/1/014/168.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T05:43:35+00:00",
-     "summary": "IT之家 10 月 16 日消息，长鑫科技今日发布 2026 年前三季度（2026 年 1 月～2026 年 9 月）业绩预告报告： 营业总收入 ：2650 亿元 ~2700 亿元，同比预增 725.96%~741.54% 归母净利润 ：1310 亿元 ~1325 亿元，同比扭亏为盈 AI 解读 本次业绩预告大幅超出市场预期，业绩实现爆发式增长。 公司主营业务与财报亮点 长鑫科技主要从事 DRAM 存储芯片的研发、生产和销售，是国内 DRAM 行业核心企业。 本次 2026 年前三季度预计实现营业收入 2650 亿元至 2700 亿元，同比上年增加 2329.16 亿元至 2379.16 亿元；预计归属于上市公司股东的净利润 1310 亿元至 1325 亿元，同比上年增加 1362.8 亿元至 1377.8 亿元，去年同期归母净利润为净亏损 52.8 亿元。 业绩增长核心原因 2025 年下半年以来 AI 算力需求快速增长，全球 DRAM 行业景气度大幅提升，产品供不应求、价格大幅上涨；公司稳步推进产能建设、产品研发和工艺技术提升，单位晶圆产出和产能利用率持续提高，规模效应逐步显现；同时公司优化运营管理、拓展市场，深化产业链上下游协同，推动业务规模快速扩张，推动整体业绩显著提升。 风险提示与说明 本次业绩预告为财务部门初步测算结果，尚未经注册会计师审计，具体准确财务数据请以公司正式",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/2d5daf74-490a-462b-bfbb-2ed53879ed1f.png?x-bce-process=image/format,f_auto",
-     "id": "e0ea121bd2b1",
-     "tags": []
-    },
-    {
-     "title": "德明利 2026 年前三季度预计归母净利润 86.5~89.5 亿元，预计同比增长 32046.52%~33154.49%",
-     "url": "https://www.ithome.com/1/014/153.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T04:41:36+00:00",
-     "summary": "IT之家 10 月 16 日消息，德明利今日发布 2026 年前三季度（2026 年 1 月～2026 年 9 月）业绩预告报告： 营业总收入 ：275 亿元 ~295 亿元，预计同比增长 312.97%~343% 归母净利润 ：86.5 亿元 ~89.5 亿元，预计同比增长 32046.52%~33154.49% 扣非净利润 ：85.96 亿元 ~88.96 亿元，预计同比增长 17127.99%~17722.26% 基本每股收益 ：27.47 元 ~28.42 元 AI 解读 本次业绩预告扭亏为盈，营收和净利润增速均大幅超市场预期。 公司主营业务简介 德明利是专业存储控制芯片及解决方案提供商，核心业务为自主可控的存储主控芯片与固件方案研发及产业化应用，聚焦存储领域，构建了硬科技 + 软服务双轮支撑体系，推动向场景化、定制化存储解决方案转型升级。 本次财报核心亮点 2026 年前三季度公司实现营业收入 275 亿元至 295 亿元，同比增长 312.97% 至 343%；其中第三季度单季实现营业收入 105.89 亿元至 125.89 亿元，环比持续增长。 实现归属于上市公司股东的净利润 86.5 亿元至 89.5 亿元，同比增长 32046.52% 至 33154.49%，实现扭亏为盈，盈利能力处于历史较高水平。 扣除非经常性损益后净利润为 85.96 亿元至 88.96 亿元",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/7f4c754a-7c00-4f89-9833-397e60cf6a6e.png",
-     "id": "780777be1673",
-     "tags": []
     }
    ]
   },
   {
    "key": "t0000",
-   "title": "苹果 App Store 新规落地，AI 深度伪造迎来最严审核",
-   "summary": "IT之家 10 月 17 日消息，苹果公司昨日（10 月 16 日）更新《App 审核指南》，在最新修订的 1.2 条款中，加强治理针对 AI 内容创作类应用， 将 AI 生成的、未经当事人同意的私密图像明确纳入禁止范围。 IT之家附上修订内容如下： 1.2 用户生成内容 对于包含用户生成内容的 App，有特定的难题需要解决，比如知识产权侵权、 未经同意传播私密图像 、匿名欺凌等。为了避免滥用，包含用户生成内容或社交网络服务的 App 必须满足以下条件： 采用相应的方法来过滤令人反感的内容，以免这些内容在 App 中发布 制定一个机制，以举报攻击性内容并",
+   "title": "Meta 修改商业服务条款引发“用于训练 AI”争议，现已删除相关表述",
+   "summary": "IT之家 10 月 18 日消息，Meta 最近更新了其商业服务条款，声明其有权“使用来自 [企业账户] 域名、网页或 URL 的任何内容，以提供、开发、改进、研究、 训练 并维护”Meta 产品及服务的完整性。 IT之家注意到，接受 Nieman Lab 采访的法律专家指出，这是一项“引人注目的条款”，它可能赋予 Meta 抓取任何拥有 Meta 企业账户的内容发布商网站、 并利用相关内容训练其人工智能模型的权限 。 不过，Meta 发言人坚称，更新后的条款并不意味着 Meta 抓取网络的方式发生了改变。据 The Verge 报道， 目前该条款已被正",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "store",
-    "app",
-    "xai",
-    "1.2"
+    "meta",
+    "robot"
    ],
    "image": "",
    "llm_enriched": false,
@@ -442,54 +77,59 @@
    ],
    "articles": [
     {
-     "title": "苹果 App Store 新规落地，AI 深度伪造迎来最严审核",
-     "url": "https://www.ithome.com/1/014/209.htm",
+     "title": "Meta 修改商业服务条款引发“用于训练 AI”争议，现已删除相关表述",
+     "url": "https://www.ithome.com/1/014/429.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-16T15:55:28+00:00",
-     "summary": "IT之家 10 月 17 日消息，苹果公司昨日（10 月 16 日）更新《App 审核指南》，在最新修订的 1.2 条款中，加强治理针对 AI 内容创作类应用， 将 AI 生成的、未经当事人同意的私密图像明确纳入禁止范围。 IT之家附上修订内容如下： 1.2 用户生成内容 对于包含用户生成内容的 App，有特定的难题需要解决，比如知识产权侵权、 未经同意传播私密图像 、匿名欺凌等。为了避免滥用，包含用户生成内容或社交网络服务的 App 必须满足以下条件： 采用相应的方法来过滤令人反感的内容，以免这些内容在 App 中发布 制定一个机制，以举报攻击性内容并在出现问题时及时作出回应 若用户发布攻击性内容，可以取消其使用服务的资格 公布联系信息，以便用户与你联系 科技媒体 9to5Mac 指出，此次调整的直接背景，是近一年围绕 App Store 的多起争议。科技透明度项目曾发现数十款 AI“裸体化”应用，并指出 App Store 的搜索建议和广告也会把用户导向这类应用；旧金山官员随后要求苹果下架 8 款可生成未经同意私密图像的应用。 此外用户曾投诉 xAI 的 Grok 聊天机器人被用于制作裸露或性化深度伪造图像；今年早些时候，苹果曾警告 xAI，若继续放任此类内容，将把 Grok 从 App Store 下架。xAI 随后增设防护机制，更新版本才获得批准。 苹果还新增 2.5.19",
+     "published": "2026-10-17T16:00:43+00:00",
+     "summary": "IT之家 10 月 18 日消息，Meta 最近更新了其商业服务条款，声明其有权“使用来自 [企业账户] 域名、网页或 URL 的任何内容，以提供、开发、改进、研究、 训练 并维护”Meta 产品及服务的完整性。 IT之家注意到，接受 Nieman Lab 采访的法律专家指出，这是一项“引人注目的条款”，它可能赋予 Meta 抓取任何拥有 Meta 企业账户的内容发布商网站、 并利用相关内容训练其人工智能模型的权限 。 不过，Meta 发言人坚称，更新后的条款并不意味着 Meta 抓取网络的方式发生了改变。据 The Verge 报道， 目前该条款已被正式删除 。 Meta 在一份声明中表示：“我们听取了各方的反馈，并特此澄清：本次更新是对既有广告条款的“合并整合”，而非扩大爬虫行为；修改后的条款现已明确限定爬虫与收集数据仅用于“广告和商业产品”，并重申站长仍可通过 robots.txt 控制爬虫权限。”",
      "image": "",
-     "id": "fc823029003c",
+     "id": "24b0133e4a59",
      "tags": []
     }
    ]
   },
   {
    "key": "t0001",
-   "title": "Anthropic 内部调查：大多数员工相信到 2030 年 AI 能完成至少八成工作",
-   "summary": "IT之家 10 月 17 日消息，据《商业内幕》今天（17 日）早间报道，Anthropic 员工普遍认为，AI 将取代自己大部分工作，绝大多数美国劳动者则持不同看法。 Anthropic 最新研究对比了 美国成年人和 1334 名公司员工 的调查结果。大多数 Anthropic 员工预计，到 2030 年，自己 至少 80% 的工作可以交给 AI 完成 ，而美国劳动者中只有约 5% 的人持相同看法。 研究反映出 Anthropic 员工与普通美国人对 AI 未来发展的判断存在巨大差异。对于 AI 能力的进步速度、节省工作时间的效果，以及未来经济增长的速",
+   "title": "韩国半导体工程师指控特斯拉：施压三星压低 AI 芯片报价、索要敏感信息并挖角其人才",
+   "summary": "IT之家 10 月 18 日消息，据 Tweaktown 报道，一名韩国半导体工程师指控，特斯拉在与三星签订芯片代工协议时，试图争取极为优厚的条款：既要获取敏感的制造工艺信息、审计权限，同时还要求压低报价。这位在 X 平台账号 @TTHUEONE 发文的工程师还称，特斯拉的 Terafab 项目从三星位于得州泰勒的工厂挖走了大量员工。 这些指控出现前，埃隆 · 马斯克（Elon Musk）刚度过事务繁忙的一周。他公开称赞美光科技，称其“对未来存储芯片定价态度理性，其他厂商则存在漫天要价的行为”，这番话普遍被解读为暗指三星。他还暗示台积电有可能参与 Ter",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "2030"
+    "xai",
+    "samsung",
+    "terafab",
+    "2027"
    ],
-   "image": "img/2026-10-17/0f02ad4c44bcb86e.webp",
+   "image": "img/2026-10-18/f45da433e35c7220.webp",
    "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "Anthropic 内部调查：大多数员工相信到 2030 年 AI 能完成至少八成工作",
-     "url": "https://www.ithome.com/1/014/205.htm",
+     "title": "韩国半导体工程师指控特斯拉：施压三星压低 AI 芯片报价、索要敏感信息并挖角其人才",
+     "url": "https://www.ithome.com/1/014/422.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-16T15:45:10+00:00",
-     "summary": "IT之家 10 月 17 日消息，据《商业内幕》今天（17 日）早间报道，Anthropic 员工普遍认为，AI 将取代自己大部分工作，绝大多数美国劳动者则持不同看法。 Anthropic 最新研究对比了 美国成年人和 1334 名公司员工 的调查结果。大多数 Anthropic 员工预计，到 2030 年，自己 至少 80% 的工作可以交给 AI 完成 ，而美国劳动者中只有约 5% 的人持相同看法。 研究反映出 Anthropic 员工与普通美国人对 AI 未来发展的判断存在巨大差异。对于 AI 能力的进步速度、节省工作时间的效果，以及未来经济增长的速度，Anthropic 员工的 预期都乐观得多 。 以调查结果的中位数计算，Anthropic 员工预计，到 2030 年底，开发一款新 AI 模型所需的工作中， 95% 可以由 AI 完成 。 Anthropic 首席经济学家彼得 · 麦克罗里认为，员工们的判断或许能帮助外界为更先进的 AI 做好准备：“我们发表这项研究，是因为 Anthropic 在 AI 应用方面 比整个经济体系领先约一年半 。换句话说，Anthropic 内部发生的变化，可能预示着整个社会接下来会发生什么。” Anthropic 还调查了劳动者使用 AI 的情况及对 AI 未来影响的看法。研究显示，美国成年人和 Anthropic 员工对 AI 目前能做什么",
-     "image": "https://img.ithome.com/newsuploadfiles/2024/10/1e49cd7b-4b1b-4d78-b322-580914f2f7fa.png?x-bce-process=image/watermark,text_QUnnlJ_miJA,type_RlpMYW5UaW5nSGVpU0JHQg==,size_23,color_ffffffdd,skw_1,skc_00000051,g_7,blr_50,bls_50,x_9,y_9/format,f_auto",
-     "id": "88a73e838562",
+     "published": "2026-10-17T15:38:12+00:00",
+     "summary": "IT之家 10 月 18 日消息，据 Tweaktown 报道，一名韩国半导体工程师指控，特斯拉在与三星签订芯片代工协议时，试图争取极为优厚的条款：既要获取敏感的制造工艺信息、审计权限，同时还要求压低报价。这位在 X 平台账号 @TTHUEONE 发文的工程师还称，特斯拉的 Terafab 项目从三星位于得州泰勒的工厂挖走了大量员工。 这些指控出现前，埃隆 · 马斯克（Elon Musk）刚度过事务繁忙的一周。他公开称赞美光科技，称其“对未来存储芯片定价态度理性，其他厂商则存在漫天要价的行为”，这番话普遍被解读为暗指三星。他还暗示台积电有可能参与 Terafab 项目 —— 这是特斯拉与 SpaceX 合作的宏大半导体项目，但同时排除了台积电持有股权或参与运营的可能性。 IT之家注意到，关于人才被挖角的说法并非首次出现。《Business Post》今年 3 月的报道就指出，两座工厂地理位置邻近，对三星构成结构性风险，提到 Terafab 会争夺同一区域的劳动力与供应商资源。彼时特斯拉已经在为该项目招聘半导体研发工程师。 近期有消息称，三星从韩国本土调派先进制程良率工程师前往泰勒工厂补充人手，为计划在 2027 年启动的 2 纳米芯片量产做准备。 争议核心的芯片代工合同方面，特斯拉 AI5 芯片已经在三星泰勒工厂试生产，目标在 2027 年实现量产。这款芯片的设计大约为半掩模尺寸，",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/c0d8e151-21cf-404b-a1eb-3a6d8025db3e.jpg?x-bce-process=image/format,f_auto",
+     "id": "d2ad2934c720",
      "tags": []
     }
    ]
   },
   {
    "key": "t0002",
-   "title": "英监管机构拟认定微软商业软件“垄断地位”，或干预旗下产品捆绑销售",
-   "summary": "IT之家 10 月 17 日消息，据路透社 16 日报道，英国竞争与市场管理局拟认定微软在商业软件市场具有“战略市场地位”，此举可能使监管机构 有权干预微软将 Excel、Teams 及 AI 助手 Copilot 等产品捆绑销售的做法 。 今年 5 月，英国竞争与市场管理局开始调查微软在商业软件市场的地位是否妨碍竞争。 据悉，微软的商业软件在英国每月 约有 2000 万用户 。 监管机构当天指出，微软在 PC 操作系统以及办公、安全、服务器和数据库管理软件市场均占据强势地位，客户转用其他供应商的产品时面临诸多障碍，进一步巩固了微软的市场优势。 微软发言",
+   "title": "布局物理 AI：美光研发边缘推理内存 EIM，降低数据处理延迟并提高带宽",
+   "summary": "IT之家 10 月 18 日消息，据韩媒 The Elec 报道，美光正在推进面向物理 AI 的专用存储芯片 —— 边缘推理内存（Edge Inference Memory，EIM）的研发。 10 月 16 日，在首尔江南 COEX 举行的韩国半导体展（SEDEX 2026）专题论坛“驱动人形机器人的半导体”上，美光高管（常务）李哲（音译）表示：“自动驾驶、人形机器人、增强现实（AR）及虚拟现实（VR）等物理 AI 市场正在迅速崛起。我们正与核心客户紧密沟通，共同推进适配这一新兴市场的产品研发。” 据悉， EIM 能够高速处理 AI 推理所需的数据 ，其",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "copilot"
+    "eim",
+    "robot",
+    "pim"
    ],
    "image": "",
    "llm_enriched": false,
@@ -498,229 +138,122 @@
    ],
    "articles": [
     {
-     "title": "英监管机构拟认定微软商业软件“垄断地位”，或干预旗下产品捆绑销售",
-     "url": "https://www.ithome.com/1/014/200.htm",
+     "title": "布局物理 AI：美光研发边缘推理内存 EIM，降低数据处理延迟并提高带宽",
+     "url": "https://www.ithome.com/1/014/419.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-16T15:27:03+00:00",
-     "summary": "IT之家 10 月 17 日消息，据路透社 16 日报道，英国竞争与市场管理局拟认定微软在商业软件市场具有“战略市场地位”，此举可能使监管机构 有权干预微软将 Excel、Teams 及 AI 助手 Copilot 等产品捆绑销售的做法 。 今年 5 月，英国竞争与市场管理局开始调查微软在商业软件市场的地位是否妨碍竞争。 据悉，微软的商业软件在英国每月 约有 2000 万用户 。 监管机构当天指出，微软在 PC 操作系统以及办公、安全、服务器和数据库管理软件市场均占据强势地位，客户转用其他供应商的产品时面临诸多障碍，进一步巩固了微软的市场优势。 微软发言人不认同这一结论：“我们的所有产品，包括 Copilot， 都采用开放设计 ，能够与其他服务互通，客户可以同时使用微软产品和竞争对手的服务。” 英国竞争与市场管理局接下来将调查客户 能否自由选择 AI 工具 ，以及其他厂商能否与 Copilot 展开竞争。 据IT之家了解，监管机构还将审查微软将安全软件与其他产品捆绑销售的做法 是否限制客户选择 ，以及软件授权方式如何影响客户选择云服务。 英国竞争与市场管理局 CEO 莎拉 · 卡德尔说，从小型企业到重要公共服务机构，英国各地的工作场所都离不开商业软件和云服务。“企业和机构应该能够选择最适合自己的产品，需要时可以更换供应商，也可以同时使用不同供应商的服务。我们希望确保企业能够 自由决",
+     "published": "2026-10-17T15:26:38+00:00",
+     "summary": "IT之家 10 月 18 日消息，据韩媒 The Elec 报道，美光正在推进面向物理 AI 的专用存储芯片 —— 边缘推理内存（Edge Inference Memory，EIM）的研发。 10 月 16 日，在首尔江南 COEX 举行的韩国半导体展（SEDEX 2026）专题论坛“驱动人形机器人的半导体”上，美光高管（常务）李哲（音译）表示：“自动驾驶、人形机器人、增强现实（AR）及虚拟现实（VR）等物理 AI 市场正在迅速崛起。我们正与核心客户紧密沟通，共同推进适配这一新兴市场的产品研发。” 据悉， EIM 能够高速处理 AI 推理所需的数据 ，其架构是在逻辑芯片之上垂直堆叠低功耗内存（LPDDR）。这与在存储器内部执行计算的存内计算（PIM）属于不同概念。两者的共通之处在于均部署于 AI 主芯片周边以提升数据处理效率；不过 PIM 是将计算单元集成在存储器内部，而 EIM 的具体计算架构目前尚未公开。 EIM 介于 AI 处理器与内存之间， 主要用于降低数据处理延迟并提高系统带宽 。美光目前尚未披露具体的目标性能指标， 但正在推进将 EIM 集成至 LPDDR6 方案的技术研发 。业内预计其量产时间将在 2028 年下半年。 IT之家获悉，与仅能重复执行固定程序的传统工业机器人不同，人形机器人具有主动性，能够感知周围环境并自主决策，需要对视觉、听觉、重量感知及触觉质感等多元",
      "image": "",
-     "id": "8497b972da67",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0003",
-   "title": "Anthropic 报告：AI 工时已是人类 6 倍，初级程序员岗位骤减，人均雇员创收是 Meta / 谷歌同期的 2 至 4 倍",
-   "summary": "IT之家 10 月 17 日消息，人工智能公司 Anthropic 昨日（10 月 16 日）发布报告称，在公司成立约 5 年后， 其人均雇员创收已达 Meta Platforms 和谷歌在各自高速增长期的 2 至 4 倍。 这一数据基于 Anthropic 截至 2026 年 4 月的内部财务与员工规模记录，并与 Meta、谷歌成立五年时的公开财报数据进行通胀调整后比较。 报告显示，Anthropic 技术部门初级员工占比已从 2025 年初的 21% 降至 14%，初级技术岗位招聘占比更从 27% 骤降至 9%。约三分之一的机器学习经理和五分之一的软",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-10-17/55957928e80c8dd9.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "Anthropic 报告：AI 工时已是人类 6 倍，初级程序员岗位骤减，人均雇员创收是 Meta / 谷歌同期的 2 至 4 倍",
-     "url": "https://www.ithome.com/1/014/195.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T15:13:28+00:00",
-     "summary": "IT之家 10 月 17 日消息，人工智能公司 Anthropic 昨日（10 月 16 日）发布报告称，在公司成立约 5 年后， 其人均雇员创收已达 Meta Platforms 和谷歌在各自高速增长期的 2 至 4 倍。 这一数据基于 Anthropic 截至 2026 年 4 月的内部财务与员工规模记录，并与 Meta、谷歌成立五年时的公开财报数据进行通胀调整后比较。 报告显示，Anthropic 技术部门初级员工占比已从 2025 年初的 21% 降至 14%，初级技术岗位招聘占比更从 27% 骤降至 9%。约三分之一的机器学习经理和五分之一的软件工程经理表示，因 AI 出现而减少了招聘。与此同时，公司整体仍在扩张，销售、财务和招聘等岗位增长更快。 智能体工作时长超过人工工作时长。注：我们仅考虑员工主导的交互式会话和子智能体池。工作时长概念指智能体运行时间，包括推理和工具使用，但不包括超过 30 分钟的等待时间。人工工作时长按人数计算，并假设每周 40 小时。 AI 带来的不只是岗位收缩，也包括效率跃升。采用编码智能体后，工程师人均代码提交量达到 6 个月前的 5 倍；律师处理更多合同，财务处理更多发票，销售人员成交更多订单。报告追踪 192 名采用编码智能体的工程师后发现，其代码产出在采用后明显上升，且后续被删除或回滚的代码比例未见恶化。 报告称，到 2026 年 8 月",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/914f8f17-8822-4941-ad49-ed76f7463ba2.png",
-     "id": "180a99f29b9f",
+     "id": "9ba1e6628775",
      "tags": []
     }
    ]
   },
   {
    "key": "t0004",
-   "title": "英特尔计划 2028 年面向物理 AI 领域推出 \"Razor Lake AX\" 处理器，平台算力 700 TOPS",
-   "summary": "IT之家 10 月 17 日消息，据韩媒 THE ELEC 报道，Intel（英特尔）高级副总裁 조민성 昨日在韩国举行的“半导体驱动人形机器人”大会上表示，该企业计划 2027 年初面向物理 AI 领域推出 \"Nova Lake\" 处理器。 而在 \"Nova Lake\" 后， 英特尔还将在 2028 年为物理 AI 带来 \"Razor Lake AX\" 。其 平台总算力可到 700 TOPS ，显著优于 \"Panther Lake\" 的 180 TOPS。 综合现有爆料，\"Razor Lake AX\" 是英特尔首款商业化的大内存位宽大核显 SoC，其沿",
+   "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
+   "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, cont",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "lake",
-    "razor",
-    "tops",
-    "nova",
-    "2028",
-    "intel"
+    "microsoft",
+    "windows",
+    "rtx",
+    "spark",
+    "nvidia",
+    "ignites"
    ],
-   "image": "img/2026-10-17/aa76cd5f31e650a7.webp",
+   "image": "img/2026-10-18/957d4951751479fd.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "NVIDIA Blog"
    ],
    "articles": [
     {
-     "title": "英特尔计划 2028 年面向物理 AI 领域推出 \"Razor Lake AX\" 处理器，平台算力 700 TOPS",
-     "url": "https://www.ithome.com/1/014/194.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T15:08:44+00:00",
-     "summary": "IT之家 10 月 17 日消息，据韩媒 THE ELEC 报道，Intel（英特尔）高级副总裁 조민성 昨日在韩国举行的“半导体驱动人形机器人”大会上表示，该企业计划 2027 年初面向物理 AI 领域推出 \"Nova Lake\" 处理器。 而在 \"Nova Lake\" 后， 英特尔还将在 2028 年为物理 AI 带来 \"Razor Lake AX\" 。其 平台总算力可到 700 TOPS ，显著优于 \"Panther Lake\" 的 180 TOPS。 综合现有爆料，\"Razor Lake AX\" 是英特尔首款商业化的大内存位宽大核显 SoC，其沿用标准 \"Nova Lake\" 核心组成的同时集成了 16 个或 32 个 Xe3P 核心，图形显示与 AI 推理能力都得到显著提升。 参考 https://www.thelec.kr/news/articleView.html ?idxno=63820",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/5032841a-17a1-4c88-b8e8-e02e7aeff83d.jpg?x-bce-process=image/format,f_auto",
-     "id": "2787e01e9ca4",
-     "tags": []
+     "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
+     "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration",
+     "source": "NVIDIA Blog",
+     "lang": "en",
+     "published": "2026-10-17T13:00:13+00:00",
+     "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with […]",
+     "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nvidia-rtx-spark-berlin-oct26-event-tech-blog-1280x680-1-842x450.jpg",
+     "id": "af59b3284175",
+     "tags": [
+      "AI",
+      "Agentic AI",
+      "Artificial Intelligence",
+      "Local AI",
+      "NVIDIA RTX"
+     ]
     }
    ]
   },
   {
    "key": "t0005",
-   "title": "Anthropic 向美国国会推介 AI 监管草案，仅允许出现严重风险时封锁模型",
-   "summary": "IT之家 10 月 17 日消息，据 POLITICO 报道，三名知情人士透露，Anthropic 的代表已悄悄向美国国会山的议员推介了一份法案草案，旨在规范前沿人工智能的安全与防务标准。 据悉，目前美国国会正审慎评估如何对这一飞速发展的行业确立监管框架，而该草案的提出，标志着这家顶级 AI 实验室正在采取切实行动，试图左右针对自身技术的监管规则。 “该法案体现了 Anthropic 在《先进人工智能框架》中提出的核心方案，我们自 6 月起就一直在向联邦及各州立法者游说推介，”Anthropic 发言人表示，“我们坚信国会应当在这些务实合理的政策上采取立",
+   "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+   "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "regulation"
+    "workforce",
+    "anthropic",
+    "become",
+    "less",
+    "junior",
+    "spending"
    ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "Anthropic 向美国国会推介 AI 监管草案，仅允许出现严重风险时封锁模型",
-     "url": "https://www.ithome.com/1/014/193.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T15:05:10+00:00",
-     "summary": "IT之家 10 月 17 日消息，据 POLITICO 报道，三名知情人士透露，Anthropic 的代表已悄悄向美国国会山的议员推介了一份法案草案，旨在规范前沿人工智能的安全与防务标准。 据悉，目前美国国会正审慎评估如何对这一飞速发展的行业确立监管框架，而该草案的提出，标志着这家顶级 AI 实验室正在采取切实行动，试图左右针对自身技术的监管规则。 “该法案体现了 Anthropic 在《先进人工智能框架》中提出的核心方案，我们自 6 月起就一直在向联邦及各州立法者游说推介，”Anthropic 发言人表示，“我们坚信国会应当在这些务实合理的政策上采取立法行动。” 草案大幅收紧了监管干预的门槛：仅在模型可能造成可预见、迫在眉睫的“ 超过 10 亿美元 （IT之家注：现汇率约合 67.03 亿元人民币） 经济损失 ”或“ 导致 50 人以上死亡或重伤 ”时，政府方可叫停该模型的发布或使用。 此外，上述风险必须特定源自生物武器制造或扩散、模型脱离开发者掌控，或是引发严重网络攻击。这一行文措辞直接沿用了包括去年签署生效的 SB 53 等加州现行 AI 法案中的核心条款。 今年夏天，多家头部 AI 实验室曾披露多起安全事件，显示其研发的 AI 智能体自主对部分网站和平台实施了入侵或扫描探测。不过截至目前，尚未有报告显示这些事件引发了大规模伤亡或超过 10 亿美元的经济损失。 Anthrop",
-     "image": "",
-     "id": "c17492527b6b",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0006",
-   "title": "马斯克要让 AI 帮企业“砍价”：成本效益有望提升 5% 以上",
-   "summary": "IT之家 10 月 17 日消息，全球首富埃隆 · 马斯克（Elon Musk）今天（10 月 17 日）在 X 平台发布推文，表示其团队正投入大量资源， 开发面向商业场景的专用议价机器人“Hagglebot”，希望借此提升企业成本效率。 IT之家注：“专用议价机器人”就是为企业谈价格、争取更好交易条件而设计的 AI 软件，并非实体机器人。这里可以把它想象成一个“数字采购谈判员”：企业给它设定预算、可接受价格和交易条件，它再围绕这些目标协助议价。 他预计，该产品有望将企业成本效率提高 5% 甚至更多；若将这一幅度放到全球 GDP 规模上测算，每年节省的成",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "xai",
-    "hagglebot",
-    "robot"
-   ],
-   "image": "img/2026-10-17/dd9473c893465e3d.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "马斯克要让 AI 帮企业“砍价”：成本效益有望提升 5% 以上",
-     "url": "https://www.ithome.com/1/014/192.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T15:01:02+00:00",
-     "summary": "IT之家 10 月 17 日消息，全球首富埃隆 · 马斯克（Elon Musk）今天（10 月 17 日）在 X 平台发布推文，表示其团队正投入大量资源， 开发面向商业场景的专用议价机器人“Hagglebot”，希望借此提升企业成本效率。 IT之家注：“专用议价机器人”就是为企业谈价格、争取更好交易条件而设计的 AI 软件，并非实体机器人。这里可以把它想象成一个“数字采购谈判员”：企业给它设定预算、可接受价格和交易条件，它再围绕这些目标协助议价。 他预计，该产品有望将企业成本效率提高 5% 甚至更多；若将这一幅度放到全球 GDP 规模上测算，每年节省的成本最高可达 6 万亿美元 （现汇率约合 40.22 万亿元人民币） 。 此次表态源于他回复一名用户介绍 Grok Bots 的帖子。该用户声称，Haggle Bot 在投入使用的第一周，就为团队节省了超过 10 万美元 （现汇率约合 67 万元人民币） 。 定位方面，Hagglebot 瞄准的是企业商业议价需求，而非普通聊天功能。不过，目前公开信息仍十分有限：马斯克尚未说明它将如何开展议价、能够处理哪些交易，也未公布上线时间、收费标准或开放使用范围。",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/4db91743-db18-47ad-85c4-77a6be845c53.png?x-bce-process=image/format,f_auto",
-     "id": "a1b2860bc970",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0007",
-   "title": "Claude 当起“数字考古学家”：不到 30 分钟揭开困扰密码学界 26 年的 NSA 参数来源之谜",
-   "summary": "IT之家 10 月 17 日消息，Anthropic 公司昨日（10 月 16 日）发布博文，宣布其内部研究用 Claude 模型用不到 30 分钟， 追溯出五条美国国家标准与技术研究院（NIST）标准椭圆曲线的“种子”（seed）来源，为一桩延续约 26 年的密码学悬案提供了可复现的答案。 IT之家注：这里的种子（seed），可以理解为“生成椭圆曲线参数时使用的一段起始数据”，生成规则像一台固定程序的机器，种子就是投入机器的原料。同样的原料，按照同样的规则处理，就能得到同样的结果。公开种子后，其他人可以复算，检查曲线参数是否确实按公布的步骤生成。 谜题",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "nsa",
-    "claude",
-    "seed",
-    "p-256",
-    "256"
-   ],
-   "image": "img/2026-10-17/d2ad34ecaf161b63.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "Claude 当起“数字考古学家”：不到 30 分钟揭开困扰密码学界 26 年的 NSA 参数来源之谜",
-     "url": "https://www.ithome.com/1/014/191.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T14:53:05+00:00",
-     "summary": "IT之家 10 月 17 日消息，Anthropic 公司昨日（10 月 16 日）发布博文，宣布其内部研究用 Claude 模型用不到 30 分钟， 追溯出五条美国国家标准与技术研究院（NIST）标准椭圆曲线的“种子”（seed）来源，为一桩延续约 26 年的密码学悬案提供了可复现的答案。 IT之家注：这里的种子（seed），可以理解为“生成椭圆曲线参数时使用的一段起始数据”，生成规则像一台固定程序的机器，种子就是投入机器的原料。同样的原料，按照同样的规则处理，就能得到同样的结果。公开种子后，其他人可以复算，检查曲线参数是否确实按公布的步骤生成。 谜题源于 2000 年纳入美国数字签名标准的一组椭圆曲线。相关种子由美国国家安全局（NSA）提供，却未说明生成过程，长期引发是否暗藏后门的猜测。这些曲线用于椭圆曲线数字签名算法（ECDSA），帮助验证数字信息的真实性。 据 Anthropic 介绍，Claude 转而排查上世纪 90 年代常见的软件工具，发现这些种子实际来自 C 语言库中的伪随机数生成器 lrand48，初始化输入则是 Unix 时间戳。 模型通过识别位模式、恢复生成器状态并反向推算，将相关生成时间追溯至 1997 年至 1998 年。其中，P-256 的标准种子对应一次运行中的第 1,842 个候选值。团队已公开复现代码。 结果显示，P-192、P-224、P-256",
-     "image": "https://qimg.ithome.com/newfiles/2026/10/90586c07-975e-4578-9d91-847a210fbd74.jpg",
-     "id": "db72767ca348",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0008",
-   "title": "微软发布 Win11 多预览通道新版更新：更新 XBOX 游戏界面，Windows Hello 自动调节亮度",
-   "summary": "IT之家 10 月 17 日消息，微软昨天（10 月 16 日）发布博文，邀请 Windows Insider 多个预览频道成员，测试适用于 Windows 11 的多版本预览更新，各频道版本如下： Beta 通道：Build 26220.9739（26H2）、Build 28020.3262（26H1） Experimental 通道：Build 26340.9750（26H2）、Build 28120.3272（26H1） Release Preview 通道：Build 26200.9807 / 26300.9807（25H2/26H2）、Buil",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "windows",
-    "build",
-    "xbox",
-    "hello",
-    "experimental",
-    "win11"
-   ],
-   "image": "img/2026-10-17/ac93c9727abcfd60.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "微软发布 Win11 多预览通道新版更新：更新 XBOX 游戏界面，Windows Hello 自动调节亮度",
-     "url": "https://www.ithome.com/1/014/189.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-16T14:28:40+00:00",
-     "summary": "IT之家 10 月 17 日消息，微软昨天（10 月 16 日）发布博文，邀请 Windows Insider 多个预览频道成员，测试适用于 Windows 11 的多版本预览更新，各频道版本如下： Beta 通道：Build 26220.9739（26H2）、Build 28020.3262（26H1） Experimental 通道：Build 26340.9750（26H2）、Build 28120.3272（26H1） Release Preview 通道：Build 26200.9807 / 26300.9807（25H2/26H2）、Build 28000.3351（26H1） 本次更新同步推出了搭载全新 NVIDIA RTX Spark 芯片的 Windows 11 设备系列，并带来了两项重要新功能更新。 IT之家附 Windows 11 本次预览版改进进展如下： 1、更新 XBOX 模式游戏任务视图（Beta、Experimental 通道）： 本次更新引入了经过刷新的 Xbox 模式游戏任务视图体验，新增导航栏可快速访问退出桌面和电源选项，让游戏过程中更容易访问关键系统操作。 2、Windows Hello 面部识别亮度自动调节（Experimental 通道）： Windows Hello 面部识别现在可以在黑暗或光线昏暗的环境中登录时临时调亮屏幕，帮助用户完成",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/a36c1125-2b72-4644-bf2f-40afe9ead5a2.png?x-bce-process=image/format,f_auto",
-     "id": "db9cc312ee1f",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0010",
-   "title": "Replit is no longer working with Anthropic, CEO says",
-   "summary": "Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with Anthropic.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "longer",
-    "replit",
-    "working",
-    "ceo",
-    "openai",
-    "decision"
-   ],
-   "image": "img/2026-10-17/1c0592a1597b058e.webp",
+   "image": "img/2026-10-18/763af1c8ae6810ab.webp",
    "llm_enriched": false,
    "sources": [
     "TechCrunch AI"
    ],
    "articles": [
     {
-     "title": "Replit is no longer working with Anthropic, CEO says",
-     "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says",
+     "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+     "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings",
      "source": "TechCrunch AI",
      "lang": "en",
-     "published": "2026-10-16T13:22:28+00:00",
-     "summary": "Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with Anthropic.",
+     "published": "2026-10-17T12:21:19+00:00",
+     "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
      "image": "",
-     "id": "18f9fd010555",
+     "id": "0dabc6c10b97",
+     "tags": [
+      "AI",
+      "Anthropic"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0006",
+   "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+   "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "default",
+    "anthropic",
+    "replit",
+    "makes",
+    "ceo",
+    "openai"
+   ],
+   "image": "img/2026-10-18/1c0592a1597b058e.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+     "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-10-17T10:48:08+00:00",
+     "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+     "image": "",
+     "id": "6435f671229b",
      "tags": [
       "AI",
       "Anthropic",
@@ -731,327 +264,139 @@
    ]
   },
   {
-   "key": "t0011",
-   "title": "OpenAI models hacked a crypto wallet and breached more websites",
-   "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
+   "key": "t0007",
+   "title": "英伟达否认 RTX 5090 停产传闻，承认供应链产能受限",
+   "summary": "IT之家 10 月 17 日消息，英伟达个人计算业务高级副总裁 Jeff Fisher 昨日在台北出席 RTX Spark 相关活动时回应了 RTX 5090 停产相关传闻，明确表示相关消息不属实。 他强调，这款显卡仍是英伟达非常重要的核心产品，后续将继续供货。但他也同时承认，当前供应链产能确实受到限制，英伟达正努力推动产品进入市场。 此前，消息人士 MEGAsizeGPU (@Zed__Wang) 10 月 10 日爆料称，英伟达将不再向 GeForce RTX 50 系列游戏显卡分配 GB202，并将原本用于该卡的 GB202 芯片转向 RTX PR",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "hacked",
-    "crypto",
-    "wallet",
-    "breached",
-    "websites",
-    "models"
-   ],
-   "image": "img/2026-10-17/aa811b85f5930797.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI models hacked a crypto wallet and breached more websites",
-     "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-10-16T12:59:01+00:00",
-     "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-500x500.jpg",
-     "id": "e86f92efb265",
-     "tags": [
-      "AI",
-      "Biz & IT",
-      "Security",
-      "LLMs",
-      "models"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0012",
-   "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
-   "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "csam",
-    "thegentlemanpervert",
-    "producing",
-    "prosecutor",
-    "cops",
-    "discord"
-   ],
-   "image": "img/2026-10-17/d61aaa9b697ff1ea.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI"
-   ],
-   "articles": [
-    {
-     "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
-     "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-10-16T12:20:07+00:00",
-     "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2233803629-2-500x500.jpg",
-     "id": "2727d1daacce",
-     "tags": [
-      "AI",
-      "Policy",
-      "ai csam",
-      "ai porn",
-      "Artificial Intelligence"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0013",
-   "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
-   "summary": "The short-lived White House press secretary was listed as an adviser to a Kristi Noem–linked company that aims to use AI for mining. Both the company and she say she never worked there.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "linked",
-    "katie",
-    "zacharia",
-    "rare-earths",
-    "startup.",
-    "weirder"
-   ],
-   "image": "img/2026-10-17/ecc6968f0dc49107.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Wired AI"
-   ],
-   "articles": [
-    {
-     "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
-     "url": "https://www.wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds",
-     "source": "Wired AI",
-     "lang": "en",
-     "published": "2026-10-16T12:05:08+00:00",
-     "summary": "The short-lived White House press secretary was listed as an adviser to a Kristi Noem–linked company that aims to use AI for mining. Both the company and she say she never worked there.",
-     "image": "https://media.wired.com/photos/6ad24f19ed303ecbe8441980/master/pass/GettyImages-2299989251.jpg",
-     "id": "147abd58a1a5",
-     "tags": [
-      "Politics",
-      "politics",
-      "government",
-      "White House",
-      "artificial intelligence"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0015",
-   "title": "How Itaú is building generative AI for its entire customer base",
-   "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "ita",
-    "entire",
-    "customer",
-    "base",
-    "generative",
-    "building"
+    "rtx",
+    "5090",
+    "geforce",
+    "fisher",
+    "gb202",
+    "cuda"
    ],
    "image": "",
    "llm_enriched": false,
    "sources": [
-    "OpenAI"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "How Itaú is building generative AI for its entire customer base",
-     "url": "https://openai.com/index/itau-generative-ai",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-10-16T11:00:00+00:00",
-     "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+     "title": "英伟达否认 RTX 5090 停产传闻，承认供应链产能受限",
+     "url": "https://www.ithome.com/1/014/407.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-17T06:33:46+00:00",
+     "summary": "IT之家 10 月 17 日消息，英伟达个人计算业务高级副总裁 Jeff Fisher 昨日在台北出席 RTX Spark 相关活动时回应了 RTX 5090 停产相关传闻，明确表示相关消息不属实。 他强调，这款显卡仍是英伟达非常重要的核心产品，后续将继续供货。但他也同时承认，当前供应链产能确实受到限制，英伟达正努力推动产品进入市场。 此前，消息人士 MEGAsizeGPU (@Zed__Wang) 10 月 10 日爆料称，英伟达将不再向 GeForce RTX 50 系列游戏显卡分配 GB202，并将原本用于该卡的 GB202 芯片转向 RTX PRO 专业卡。 相关传闻还提到，英伟达可能推出配备 24GB 显存的 RTX 5080，以填补高端游戏显卡市场的产品空缺。不过，这些说法当时并未获得英伟达官方证实。 近日，RTX 5090 的市场供应状况也加剧了外界猜测。Tom's Hardware 此前报道称，美国零售商 Micro Center 已将该显卡标记为“不再销售”（Not Carried），部分零售渠道的相关产品也出现缺货情况。但显卡在零售渠道难以买到，并不等同于厂商已经正式宣布停产。 Fisher 还强调了游戏业务对英伟达的重要性。他表示，如果没有游戏业务和 GeForce，就不会有今天的英伟达；GeForce 推动了 CUDA 的发展，而 CUDA 相关的计算能力也",
      "image": "",
-     "id": "65442e708214",
+     "id": "336945b539a3",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0017",
-   "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
-   "summary": "Article URL: https://github.com/cobanov/PS5LM Comments URL: https://news.ycombinator.com/item?id=50122431 Points: 162 # Comments: 44",
+   "key": "t0008",
+   "title": "广汽埃安 Ray7 开启预售：华为 DriveONE 多合一电驱，12.88 万元起",
+   "summary": "IT之家 10 月 17 日消息，广汽埃安 Ray7 纯电轿车今日开启预售，共 5 款车型，预售价 12.88 万元起。 IT之家附价格信息如下： 530 后驱驾趣版 12.88 万元 530 后驱激光版 13.88 万元 702 后驱驾趣宁德版 13.88 万元 702 后驱激光宁德版 14.88 万元 702 后驱 EMB 激光宁德版 15.88 万元 该车提供 仲夏紫、闪电黄、月辉银、风暴红、熔岩灰、云舒白、热带蓝 车色，定位“大 5 米超级纯电轿车”，配备 3.6m 量子星环贯穿前后 LED 灯。 该车提供炽光竞驰、云纱暖米、极速赛道内饰，一体式",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "llama.cpp",
-    "jailbroken",
-    "ps5",
-    "run",
-    "gguf",
-    "natively"
+    "driveone",
+    "12.88",
+    "ray7",
+    "702",
+    "emb",
+    "530"
    ],
-   "image": "img/2026-10-17/e7fd52952a296bf0.webp",
+   "image": "img/2026-10-18/a1eca2d31193794a.webp",
    "llm_enriched": false,
    "sources": [
-    "Hacker News (100+)"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
-     "url": "https://github.com/cobanov/PS5LM",
-     "source": "Hacker News (100+)",
-     "lang": "en",
-     "published": "2026-10-16T10:32:35+00:00",
-     "summary": "Article URL: https://github.com/cobanov/PS5LM Comments URL: https://news.ycombinator.com/item?id=50122431 Points: 162 # Comments: 44",
-     "image": "",
-     "id": "0342f39befa1",
+     "title": "广汽埃安 Ray7 开启预售：华为 DriveONE 多合一电驱，12.88 万元起",
+     "url": "https://www.ithome.com/1/014/398.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-17T05:06:00+00:00",
+     "summary": "IT之家 10 月 17 日消息，广汽埃安 Ray7 纯电轿车今日开启预售，共 5 款车型，预售价 12.88 万元起。 IT之家附价格信息如下： 530 后驱驾趣版 12.88 万元 530 后驱激光版 13.88 万元 702 后驱驾趣宁德版 13.88 万元 702 后驱激光宁德版 14.88 万元 702 后驱 EMB 激光宁德版 15.88 万元 该车提供 仲夏紫、闪电黄、月辉银、风暴红、熔岩灰、云舒白、热带蓝 车色，定位“大 5 米超级纯电轿车”，配备 3.6m 量子星环贯穿前后 LED 灯。 该车提供炽光竞驰、云纱暖米、极速赛道内饰，一体式运动座椅，前排一键 / 语音舒躺，配备高通 骁龙 8295P 座舱芯片 +24GB LPDDR4 运存 +128GB UFS 闪存，15.6 英寸 2.5K 高清中控屏 + 车手互联全覆盖。此外，该车搭载同级最高半固态 192 线激光雷达以及同级领先一段式端到端大模型。 三电方面，该车搭载 华为 DriveONE 多合一电驱 ，拥有同级领先 0.22Cd 低风阻，全新一代智能热管理系统，全球首发华为 DriveONE EMB 全电线控制动，同级首搭华为 iTrack 动态扭矩分配系统。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/e1071a16-1b83-4cab-9385-d38bda3c3ffb.png",
+     "id": "8a90a0812201",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0018",
-   "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-   "summary": "Listen to the session or watch below Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-genera",
+   "key": "t0009",
+   "title": "Websites are closing their doors to AI agents",
+   "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest o",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "roundtables",
-    "conversation",
-    "creator",
-    "ai-designed",
-    "viruses",
-    "life"
+    "agents",
+    "google",
+    "websites",
+    "closing",
+    "doors",
+    "internet"
    ],
-   "image": "img/2026-10-17/18a0aafdfa7dc563.webp",
+   "image": "img/2026-10-18/2a19e7ceaa8f95df.webp",
    "llm_enriched": false,
    "sources": [
-    "MIT Technology Review AI"
+    "The Verge AI"
    ],
    "articles": [
     {
-     "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-     "url": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses",
-     "source": "MIT Technology Review AI",
+     "title": "Websites are closing their doors to AI agents",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+     "source": "The Verge AI",
      "lang": "en",
-     "published": "2026-10-16T10:00:00+00:00",
-     "summary": "Listen to the session or watch below Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next. Watch…",
-     "image": "",
-     "id": "8069354151ed",
+     "published": "2026-10-17T05:00:00+00:00",
+     "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest of the internet won't play nice? In recent weeks, […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "79619743255e",
      "tags": [
-      "Artificial intelligence",
       "AI",
-      "artificial intelligence",
-      "Roundtables",
-      "Subscriber-Only Stories"
+      "Meta",
+      "OpenAI",
+      "Report",
+      "Tech"
      ]
     }
    ]
   },
   {
-   "key": "t0019",
-   "title": "India becomes the latest country to report rogue AI agent activity",
-   "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+   "key": "t0010",
+   "title": "Plug-in solar is legal in these 10 states now – how it could save you money",
+   "summary": "So-called balcony solar setups are becoming legal across the US. Here’s the latest.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "india",
-    "becomes",
-    "latest",
-    "country",
-    "rogue",
-    "activity"
+    "solar",
+    "legal",
+    "plug-in",
+    "these",
+    "states",
+    "save"
    ],
-   "image": "img/2026-10-17/1b8296047b2179ed.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "India becomes the latest country to report rogue AI agent activity",
-     "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-16T09:52:24+00:00",
-     "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
-     "image": "",
-     "id": "c74e5a79a0e1",
-     "tags": [
-      "AI",
-      "India"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0020",
-   "title": "Munich dumps proprietary for open source (again) – but no Linux desktop",
-   "summary": "Open source in the public sector doesn’t fail because of technical issues. It fails because it’s not aligned with the political agenda",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "source",
-    "munich",
-    "dumps",
-    "proprietary",
-    "again",
-    "linux"
-   ],
-   "image": "img/2026-10-17/c7050afdcc35f440.webp",
+   "image": "img/2026-10-18/810c2aefb12596b8.webp",
    "llm_enriched": false,
    "sources": [
     "ZDNet AI"
    ],
    "articles": [
     {
-     "title": "Munich dumps proprietary for open source (again) – but no Linux desktop",
-     "url": "https://www.zdnet.com/business/munich-proprietary-open-source-no-linux-desktop",
+     "title": "Plug-in solar is legal in these 10 states now – how it could save you money",
+     "url": "https://www.zdnet.com/uncategorized/plug-in-solar-balcony-solar-legalization-2026",
      "source": "ZDNet AI",
      "lang": "en",
-     "published": "2026-10-16T09:11:35+00:00",
-     "summary": "Open source in the public sector doesn’t fail because of technical issues. It fails because it’s not aligned with the political agenda",
-     "image": "https://www.zdnet.com/wp-content/uploads/sites/3/Laura-Dornheim.jpg",
-     "id": "1bddbe8cc065",
-     "tags": [
-      "Enterprise Software"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0021",
-   "title": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
-   "summary": "As AI labs continue to self-regulate, external evaluators play a crucial role in spotting risks.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "gives",
-    "third-party",
-    "auditors",
-    "employee-like",
-    "access",
-    "industry"
-   ],
-   "image": "img/2026-10-17/a02c80a150753303.webp",
-   "llm_enriched": false,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
-     "url": "https://www.zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-10-16T09:10:27+00:00",
-     "summary": "As AI labs continue to self-regulate, external evaluators play a crucial role in spotting risks.",
-     "image": "https://www.zdnet.com/wp-content/uploads/sites/3/auditblue-GettyImages-1269457842.jpg",
-     "id": "8a813abce9f9",
+     "published": "2026-10-17T05:00:00+00:00",
+     "summary": "So-called balcony solar setups are becoming legal across the US. Here’s the latest.",
+     "image": "https://www.zdnet.com/wp-content/uploads/sites/3/abc106f7-9ae3-4a45-8de8-2da5b0a9b031.jpg",
+     "id": "20823ce2ae66",
      "tags": [
       "Uncategorized"
      ]
@@ -1059,474 +404,603 @@
    ]
   },
   {
-   "key": "t0022",
-   "title": "Simulation App Speeds Up Electric Truck Battery Design",
-   "summary": "This article is brought to you by COMSOL . These days, no one blinks an eye at two-day, one-day, and even same-day package deliveries. Despite the plethora of localized fulfillment and distributi on centers that have cropped up to meet the demand, delivery trucks still need to ma",
+   "key": "t0011",
+   "title": "华硕推出旗下首款英特尔 Arc Pro B70 显卡：32GB ECC 显存，AI 算力达 367 TOPS",
+   "summary": "IT之家 10 月 17 日消息，据 Wccftech 今日报道，华硕推出了旗下首款英特尔 Arc Pro B70 显卡，面向 AI 推理及工作站市场。华硕此前缺席了英特尔 Arc 独立显卡的多个世代，此次推出新品意味着其再次加入英特尔独立显卡产品阵营。 华硕这款产品名为 UGen Intel Arc Pro B70 32GB GDDR6，采用英特尔 X e 2 架构的 Big Battlemage GPU，配备 32GB GDDR6 ECC 显存、32 个 X e 核心和 256 个 XMX AI 引擎，INT8 AI 算力最高可达 367 TOPS，",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "electric",
-    "battery",
-    "trucks",
-    "simulation",
-    "speeds",
-    "truck"
+    "arc",
+    "b70",
+    "pro",
+    "intel",
+    "ecc",
+    "tops"
    ],
-   "image": "img/2026-10-17/147235928b78d64d.webp",
+   "image": "img/2026-10-18/bd48a3df81e7820e.webp",
    "llm_enriched": false,
    "sources": [
-    "IEEE Spectrum AI"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "Simulation App Speeds Up Electric Truck Battery Design",
-     "url": "https://spectrum.ieee.org/electric-truck-battery-design-simulation",
-     "source": "IEEE Spectrum AI",
-     "lang": "en",
-     "published": "2026-10-16T08:49:18+00:00",
-     "summary": "This article is brought to you by COMSOL . These days, no one blinks an eye at two-day, one-day, and even same-day package deliveries. Despite the plethora of localized fulfillment and distributi on centers that have cropped up to meet the demand, delivery trucks still need to make considerably long drives, often over highways. To reduce fuel and maintenance costs as well as carbon emissions, companies are investing in electric trucks for their delivery fleets. While turning to electric trucks is a promising solution, the battery packs incorporated into these automotive designs often fall shor",
-     "image": "https://spectrum.ieee.org/media-library/light-blue-volvo-fh-electric-semi-truck-cab-shown-from-front-side-view.png?id=67846334&width=980",
-     "id": "62145d24f47c",
-     "tags": [
-      "Type-sponsored",
-      "Batteries",
-      "Electric-vehicles",
-      "Multiphysics-simulation",
-      "Electric-trucks"
-     ]
+     "title": "华硕推出旗下首款英特尔 Arc Pro B70 显卡：32GB ECC 显存，AI 算力达 367 TOPS",
+     "url": "https://www.ithome.com/1/014/390.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-17T03:56:31+00:00",
+     "summary": "IT之家 10 月 17 日消息，据 Wccftech 今日报道，华硕推出了旗下首款英特尔 Arc Pro B70 显卡，面向 AI 推理及工作站市场。华硕此前缺席了英特尔 Arc 独立显卡的多个世代，此次推出新品意味着其再次加入英特尔独立显卡产品阵营。 华硕这款产品名为 UGen Intel Arc Pro B70 32GB GDDR6，采用英特尔 X e 2 架构的 Big Battlemage GPU，配备 32GB GDDR6 ECC 显存、32 个 X e 核心和 256 个 XMX AI 引擎，INT8 AI 算力最高可达 367 TOPS，典型板卡功耗 310W。 该卡采用双槽设计和涡轮式散热结构，配备 1 个 HDMI 接口和 3 个 DisplayPort 接口，使用 PCIe 5.0 x16 接口，显存带宽为 608GB/s。 华硕表示，该卡支持 vLLM、 llama.cpp 、Ollama、PyTorch、OpenVINO、oneAPI 和 Vulkan 等 AI 框架及工具。用户还可以通过多卡配置扩展显存容量，最多支持 4 张显卡协同工作，合计提供 128GB 显存，以运行更大规模的 AI 模型。 价格方面，华硕暂未在产品页面公布 UGen Intel Arc Pro B70 32GB 的具体售价。同类英特尔 Arc Pro B70 显卡的市场价格通常在 ",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/326b6cfe-d736-4166-8a34-ccec02787f8b.jpg?x-bce-process=image/format,f_auto",
+     "id": "1991df291184",
+     "tags": []
     }
    ]
   },
   {
-   "key": "t0025",
-   "title": "Elorian’s first AI model wants to reason with images, not just about them",
-   "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
+   "key": "t0012",
+   "title": "边建设边运营：“鹏城云脑 Ⅲ”10000P 国产算力上线试运行",
+   "summary": "IT之家 10 月 17 日消息，10 月 15 日至 16 日，2026 世界算力网大会（WCNC 2026）在深圳举行。开幕式上，大科学装置“鹏城云脑 Ⅲ”的 10000P 国产算力正式上线试运行。 公开报道显示，鹏城云脑 Ⅲ 采用的是华为昇腾最前沿的 384 超节点架构，首期设备已于今年 3 月通电点亮，完全建成后算力规模将达到 16000P（IT之家注：合 16 EFLOPS）。 此次 10000P 算力先行投入运营，意味着这座规划中的国内单体规模最大智算设施进入“边建设、边运营”新阶段，在全部建成之前已开始向国产大模型训练与科学智能研究输出算力",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "elorian",
-    "reason",
-    "images",
-    "them",
-    "reasoning",
-    "wants"
+    "10000",
+    "huawei",
+    "2026",
+    "compute",
+    "wcnc",
+    "eflops"
    ],
-   "image": "img/2026-10-17/ce7f7d656906400a.webp",
+   "image": "img/2026-10-18/fbb16ef858dfba91.webp",
    "llm_enriched": false,
    "sources": [
-    "TechCrunch AI"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "Elorian’s first AI model wants to reason with images, not just about them",
-     "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-16T08:01:37+00:00",
-     "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
+     "title": "边建设边运营：“鹏城云脑 Ⅲ”10000P 国产算力上线试运行",
+     "url": "https://www.ithome.com/1/014/387.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-17T03:48:30+00:00",
+     "summary": "IT之家 10 月 17 日消息，10 月 15 日至 16 日，2026 世界算力网大会（WCNC 2026）在深圳举行。开幕式上，大科学装置“鹏城云脑 Ⅲ”的 10000P 国产算力正式上线试运行。 公开报道显示，鹏城云脑 Ⅲ 采用的是华为昇腾最前沿的 384 超节点架构，首期设备已于今年 3 月通电点亮，完全建成后算力规模将达到 16000P（IT之家注：合 16 EFLOPS）。 此次 10000P 算力先行投入运营，意味着这座规划中的国内单体规模最大智算设施进入“边建设、边运营”新阶段，在全部建成之前已开始向国产大模型训练与科学智能研究输出算力。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/0b721c18-49ec-4c0a-856c-237d5a7893f7.png?x-bce-process=image/format,f_auto",
+     "id": "fe66d36b69bf",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0013",
+   "title": "科大讯飞 AI 词典笔 X9 上架：内置 85 本词典、支持小初高 9 科知识查询，744 元",
+   "summary": "IT之家 10 月 17 日消息，科大讯飞现已在京东上架讯飞 AI 词典笔 X9，定价为 744 元，部分地区国补后低至 674.1 元。 该词典笔配备 3.48 英寸莱茵低蓝光护眼屏，配备 1100mAh 电池，内置 85 本正版词典及“五千万词库”。扫描响应时间低至 0.3 秒，并支持无网离线查词。其机器翻译能力通过了全国翻译专业资格考试评估，能够进行长难句的语法与结构剖析。 官方强调，该设备提供 11000 篇分级听力内容，覆盖幼儿至高中阶段。口语训练采用中高考同源技术进行音素级纠音，支持 AI 图文对话与蓝牙耳机连接。系统内置艾宾浩斯遗忘曲线以自",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "744",
+    "11.11",
+    "26888"
+   ],
+   "image": "img/2026-10-18/b2e0d9f58e70e928.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "科大讯飞 AI 词典笔 X9 上架：内置 85 本词典、支持小初高 9 科知识查询，744 元",
+     "url": "https://www.ithome.com/1/014/382.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-17T03:29:34+00:00",
+     "summary": "IT之家 10 月 17 日消息，科大讯飞现已在京东上架讯飞 AI 词典笔 X9，定价为 744 元，部分地区国补后低至 674.1 元。 该词典笔配备 3.48 英寸莱茵低蓝光护眼屏，配备 1100mAh 电池，内置 85 本正版词典及“五千万词库”。扫描响应时间低至 0.3 秒，并支持无网离线查词。其机器翻译能力通过了全国翻译专业资格考试评估，能够进行长难句的语法与结构剖析。 官方强调，该设备提供 11000 篇分级听力内容，覆盖幼儿至高中阶段。口语训练采用中高考同源技术进行音素级纠音，支持 AI 图文对话与蓝牙耳机连接。系统内置艾宾浩斯遗忘曲线以自动生成专属背词计划。 此外，该设备支持小初高 9 科知识查询，内置题库超过十亿。讲题功能基于双 AI 模型，提供分步深度解析，解答结果支持家长管控。 IT之家附产品参数： 京东 科大讯飞 AI 词典笔 X9 744 元 直达链接 京东 11.11 无门槛红包 面额至高 26888 元，每天抽 3 次： 点此抽红包 。 淘宝 11.11 无门槛红包 面额至高 26888 元，每天抽 1 次： 点此抽红包 。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/7b53f9e3-52af-4629-b2af-6cae30dfbae4.png?x-bce-process=image/format,f_auto",
+     "id": "0a7a0854144d",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0014",
+   "title": "开发者将破解后的索尼 PS5 当作本地 AI 服务器：利用 GPU 加速运行 27B 参数 Qwen3.8-27B 模型，速度达 20.9 token/s",
+   "summary": "IT之家 10 月 17 日消息，据外媒 Wccftech 报道，开发者 abhi245y 基于资深 AI 工程师 Mert Cobanov 的 PS5LM（ llama.cpp 移植项目），开发了原生 GPU 应用 PS5LM Plus，让经过破解的 PS5 主机能够在本地运行 Qwen3.8-27B 等大型语言模型。 IT之家获悉，PS5LM 的早期版本主要依靠 CPU 运行模型，执行 27B 参数模型时，平均每分钟只能生成约 1 个 token。为提升性能，开发者 abhi245y 移植了 Mesa 开源项目中的 AMD RADV 驱动，并通过 V",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "ps5",
+    "qwen3.8-27b",
+    "3.8",
+    "ps5lm",
+    "token",
+    "gpu"
+   ],
+   "image": "img/2026-10-18/de733e9d602092ac.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "开发者将破解后的索尼 PS5 当作本地 AI 服务器：利用 GPU 加速运行 27B 参数 Qwen3.8-27B 模型，速度达 20.9 token/s",
+     "url": "https://www.ithome.com/1/014/372.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-17T02:45:59+00:00",
+     "summary": "IT之家 10 月 17 日消息，据外媒 Wccftech 报道，开发者 abhi245y 基于资深 AI 工程师 Mert Cobanov 的 PS5LM（ llama.cpp 移植项目），开发了原生 GPU 应用 PS5LM Plus，让经过破解的 PS5 主机能够在本地运行 Qwen3.8-27B 等大型语言模型。 IT之家获悉，PS5LM 的早期版本主要依靠 CPU 运行模型，执行 27B 参数模型时，平均每分钟只能生成约 1 个 token。为提升性能，开发者 abhi245y 移植了 Mesa 开源项目中的 AMD RADV 驱动，并通过 Vulkan 计算接口让 llama.cpp 能够作为原生应用在 PS5 上运行。这项改动将可用内存从约 6GB 提升至 11.4GB，使主机能够运行经过高度量化的 Qwen3.8-27B 模型。 得益于 PS5 较高的内存带宽（448GB/s），Qwen3.8-27B 的生成速度可达每秒 20.9 个 token。测试期间，GPU 使用率达到 100%，CPU 使用率仅为 2%。对于规模更小的模型，PS5 还能实现更高的生成速度，例如 Gemma 4 E4B 约为每秒 61 个 token，Llama 3.2 3B 则达到每秒 124 个 token。 除了利用 PS5 的 GPU 加速模型推理，PS5LM Plus 还内置网页聊天",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/643504c8-98d7-469d-8baf-64185024da7e.png?x-bce-process=image/format,f_auto",
+     "id": "1ea63794e0cb",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0015",
+   "title": "中国科学院院士鄂维南：未来民科是科研的主力，AI 时代每个有想法有能力的团队和个人都可以参与到科技创新中去",
+   "summary": "10 月 17 日，在光华思想力论坛上，中国科学院院士、北京大学讲席教授鄂维南表示，人工智能本质上是“数学 + 计算机工程”，将大幅降低科研门槛，推动“科研平权化”。“未来民科是科研的主力”，他预测，通过开放实验室和云服务，“每一个有想法有能力的团队和个人都可以参与到科技创新当中去”。 鄂维南指出，企业真正做生产时缺乏原始创新，只能在管理、价格等方面竞争，“内卷的根本原因是创新能力不够”。他认为，高端工业软件、高端机床数控系统目前受制于人，但“现在不但是可以比较短的时间内实现自主可控，甚至可以‘换道超车’”，可构建 AI 原生工业软件体系，“原则上几乎可",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "中国科学院院士鄂维南：未来民科是科研的主力，AI 时代每个有想法有能力的团队和个人都可以参与到科技创新中去",
+     "url": "https://www.ithome.com/1/014/371.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-17T02:39:55+00:00",
+     "summary": "10 月 17 日，在光华思想力论坛上，中国科学院院士、北京大学讲席教授鄂维南表示，人工智能本质上是“数学 + 计算机工程”，将大幅降低科研门槛，推动“科研平权化”。“未来民科是科研的主力”，他预测，通过开放实验室和云服务，“每一个有想法有能力的团队和个人都可以参与到科技创新当中去”。 鄂维南指出，企业真正做生产时缺乏原始创新，只能在管理、价格等方面竞争，“内卷的根本原因是创新能力不够”。他认为，高端工业软件、高端机床数控系统目前受制于人，但“现在不但是可以比较短的时间内实现自主可控，甚至可以‘换道超车’”，可构建 AI 原生工业软件体系，“原则上几乎可以拿出不但可以对标西门子，甚至可以超越西门子的体系，一两年内就可以做成”。 他区分 AI for Science 与 AI for Industry，指出后者起步更难，因工业软件更封闭、工业数据大部分闭源，但工业生产线建模因为宏观较容易，未来核心任务是把工业生产线建模做到位。他判断这一进程“三年、最多五年就可以实现”。 鄂维南同时警示，人工智能时代现行的科研体系将会面临巨大的挑战。他以数学界为例称，若四大顶刊投稿量增加百倍，“我们其实并不知道如何应对”。他强调颠覆性创新“很大程度上靠自由探索而实现的，而不是任务定义而驱动的”，并批评“把自由探索和写论文等同于一起，这是所犯的错误”。 他认为，科研成果形态将从论文转向知识产权，产业形态",
      "image": "",
-     "id": "1aa8b1ac1c09",
-     "tags": [
-      "AI",
-      "Startups",
-      "TC",
-      "ai models",
-      "Exclusive"
-     ]
+     "id": "2de162c4bd47",
+     "tags": []
     }
    ]
   },
   {
-   "key": "t0026",
-   "title": "Jev is Vercel’s fastest-adopted AI model ever",
-   "summary": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
+   "key": "t0016",
+   "title": "OpenAI 纳维-斯托克斯方程证明方法被指与官方叙事不符：学界验证尚需数年，智能体贡献同样成谜",
+   "summary": "IT之家 10 月 17 日消息，OpenAI 今年 9 月公布了一份长达 166 页的纳维-斯托克斯方程（Navier–Stokes equations）相关证明，称其内部 AI 系统在约 88 小时内完成了对这一千禧年难题的求解。 不过，随着数学界进一步审查相关工作，研究人员开始对证明采用的方法、与已有研究的关系，以及大规模 AI 智能体究竟发挥了多大作用提出质疑。 数学家贡萨洛 · 曹-拉博拉（Gonzalo Cao-Labora）指出， OpenAI 可能自己都没看懂就急着发论文了 。 他表示，OpenAI 的证明细节与西班牙数学家迭戈 · 科尔",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "vercel",
-    "fastest-adopted",
-    "ever",
-    "jev",
-    "model",
-    "data"
+    "openai"
    ],
-   "image": "img/2026-10-17/3fef669295c6de5f.webp",
+   "image": "",
    "llm_enriched": false,
    "sources": [
-    "TechCrunch AI"
+    "IT之家"
    ],
    "articles": [
     {
-     "title": "Jev is Vercel’s fastest-adopted AI model ever",
-     "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-16T07:33:49+00:00",
-     "summary": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
+     "title": "OpenAI 纳维-斯托克斯方程证明方法被指与官方叙事不符：学界验证尚需数年，智能体贡献同样成谜",
+     "url": "https://www.ithome.com/1/014/370.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-17T02:31:25+00:00",
+     "summary": "IT之家 10 月 17 日消息，OpenAI 今年 9 月公布了一份长达 166 页的纳维-斯托克斯方程（Navier–Stokes equations）相关证明，称其内部 AI 系统在约 88 小时内完成了对这一千禧年难题的求解。 不过，随着数学界进一步审查相关工作，研究人员开始对证明采用的方法、与已有研究的关系，以及大规模 AI 智能体究竟发挥了多大作用提出质疑。 数学家贡萨洛 · 曹-拉博拉（Gonzalo Cao-Labora）指出， OpenAI 可能自己都没看懂就急着发论文了 。 他表示，OpenAI 的证明细节与西班牙数学家迭戈 · 科尔多瓦（Diego Córdoba）和路易斯 · 马丁内斯-佐罗亚（Luis Martínez-Zoroa）此前提出的方法呈现出不同的路线，二者的相似之处可能更多停留在表面上。 参与审读的多组专家均向《科学美国人》表示，越来越多迹象表明，OpenAI 的证明并没有遵循“西班牙路线”。这意味着 OpenAI 在发布该项成果时似乎并未完全理解其模型究竟干了什么。 IT之家注：纳维-斯托克斯方程用于描述流体运动，是克雷数学研究所设立的千禧年大奖难题之一。OpenAI 于 9 月 8 日发布相关研究，称其内部模型完成了数学证明，并同时公开了使用 Lean 形式化验证语言编写的证明。OpenAI 表示，其研究团队使用约 1 万个 AI 智能体，",
      "image": "",
-     "id": "351478776159",
-     "tags": [
-      "AI",
-      "Vercel"
-     ]
+     "id": "ed2f5c7d8bb8",
+     "tags": []
     }
    ]
   },
   {
-   "key": "t0028",
-   "title": "Maybe Chatbots Shouldn’t Get to Say ‘I’ or ‘Me’",
-   "summary": "MIT professor Sherry Turkle warns that people have become dangerously enmeshed with chatbots.",
+   "key": "t0017",
+   "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+   "summary": "The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don't yet have the data to properly decode it.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "maybe",
-    "chatbots",
-    "shouldn",
-    "mit",
-    "professor",
-    "sherry"
+    "isn",
+    "ready",
+    "tackle",
+    "convoluted",
+    "genomes",
+    "dna"
    ],
-   "image": "img/2026-10-17/58e30ba8b8c389f2.webp",
+   "image": "img/2026-10-18/e713e52c7cea62e6.webp",
    "llm_enriched": false,
    "sources": [
     "Wired AI"
    ],
    "articles": [
     {
-     "title": "Maybe Chatbots Shouldn’t Get to Say ‘I’ or ‘Me’",
-     "url": "https://www.wired.com/story/maybe-chatbots-shouldnt-get-to-say-i-or-me",
+     "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+     "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes",
      "source": "Wired AI",
      "lang": "en",
-     "published": "2026-10-16T07:00:00+00:00",
-     "summary": "MIT professor Sherry Turkle warns that people have become dangerously enmeshed with chatbots.",
-     "image": "https://media.wired.com/photos/6ad14b37762b59cd2aa2c0c9/master/pass/Backchannel-Sherry-Turkle-Business-458911186.jpg",
-     "id": "1e13a8dd933f",
+     "published": "2026-10-17T01:00:00+00:00",
+     "summary": "The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don't yet have the data to properly decode it.",
+     "image": "https://media.wired.com/photos/6acf63d6b06331734b2e70d7/master/pass/Physical%20Genome%20cr-Samuel%20Velasco%20and%20Hannah%20Waters_Quanta%20Magazine-Lede.jpg",
+     "id": "8498e5ace732",
      "tags": [
-      "Business",
-      "Business / Tech Culture",
-      "Backchannel - NL",
-      "chatbots",
-      "relationships"
+      "Science",
+      "Science / Biotech",
+      "Quanta Magazine",
+      "Genomics",
+      "genetics"
      ]
     }
    ]
   },
   {
-   "key": "t0029",
-   "title": "台灣將收緊對中國先進晶片出口，未許可輸出產品將首度列刑事犯罪",
-   "summary": "為進一步同步美國的出口管制政策，並配合川普政府對先進半導體走私至中國的管制，台灣正準備收緊人工智慧（AI）晶片 […]",
+   "key": "t0018",
+   "title": "不禁 AI 但拒絕 AI 垃圾內容，YouTube、TikTok 等社群平台齊改規則",
+   "summary": "隨著生成式 AI 快速滲透創作流程，主流社群平台正加速調整規則，試圖在鼓勵創新與防堵低品質大量生成內容之間取得 […]",
    "category": "其他",
    "importance": 3,
-   "keywords": [],
-   "image": "img/2026-10-17/e6660e2d3f984804.webp",
+   "keywords": [
+    "bytedance",
+    "youtube",
+    "tiktok"
+   ],
+   "image": "img/2026-10-18/86857cd9e46c1461.webp",
    "llm_enriched": false,
    "sources": [
     "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "台灣將收緊對中國先進晶片出口，未許可輸出產品將首度列刑事犯罪",
-     "url": "https://finance.technews.tw/2026/10/16/taiwan-to-tighten-export-controls-on-advanced-chips-to-china",
+     "title": "不禁 AI 但拒絕 AI 垃圾內容，YouTube、TikTok 等社群平台齊改規則",
+     "url": "https://technews.tw/2026/10/17/from-substack-to-youtube-here-are-the-social-platforms-cracking-down-on-ai-slop",
      "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-10-16T06:35:11+00:00",
-     "summary": "為進一步同步美國的出口管制政策，並配合川普政府對先進半導體走私至中國的管制，台灣正準備收緊人工智慧（AI）晶片 […]",
+     "published": "2026-10-17T00:30:15+00:00",
+     "summary": "隨著生成式 AI 快速滲透創作流程，主流社群平台正加速調整規則，試圖在鼓勵創新與防堵低品質大量生成內容之間取得 […]",
      "image": "",
-     "id": "a3943143df1e",
+     "id": "cf316583f522",
      "tags": [
-      "中國觀察",
-      "半導體",
-      "國際貿易",
-      "晶片",
-      "財經"
+      "AI 人工智慧",
+      "數位內容",
+      "社群",
+      "AI 內容",
+      "AI 垃圾"
      ]
     }
    ]
   },
   {
-   "key": "t0030",
-   "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
-   "summary": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
+   "key": "t0019",
+   "title": "最賺錢的時候押注下一步，黃仁勳帶領輝達再一次歷史性轉型",
+   "summary": "幾個月狂砸 400 億美元，輝達（NVIDIA）就這樣大剌剌在所有人注視下，又一次完成重要轉型。 過去幾個月， […]",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "mark",
-    "wahlberg",
-    "film",
-    "way",
-    "clone",
-    "carrying"
+    "nvidia",
+    "funding",
+    "400"
    ],
-   "image": "img/2026-10-17/e2b0fa8b4b222c24.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
-     "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-16T06:26:51+00:00",
-     "summary": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
-     "image": "",
-     "id": "de3d82224bc1",
-     "tags": [
-      "AI",
-      "Media & Entertainment",
-      "filmmaking",
-      "TechCrunch Disrupt"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0031",
-   "title": "彭博專訪 龔明鑫：台灣準備對中國緊縮 AI 晶片出口管制並打擊走私",
-   "summary": "經濟部長龔明鑫近日接受彭博專訪表示，台灣準備緊縮人工智慧（AI）晶片出口管制，進一步與美國限制措施保持一致，加 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-10-17/c59032d0cee89998.webp",
+   "image": "img/2026-10-18/c03aed87c9550fbf.webp",
    "llm_enriched": false,
    "sources": [
     "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "彭博專訪 龔明鑫：台灣準備對中國緊縮 AI 晶片出口管制並打擊走私",
-     "url": "https://technews.tw/2026/10/16/bloomberg-interview-gong-ming-hsin-taiwan-tightens-ai-chip-export-controls-china",
+     "title": "最賺錢的時候押注下一步，黃仁勳帶領輝達再一次歷史性轉型",
+     "url": "https://technews.tw/2026/10/17/nvidia-completes-another-historic-transformation",
      "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-10-16T06:07:29+00:00",
-     "summary": "經濟部長龔明鑫近日接受彭博專訪表示，台灣準備緊縮人工智慧（AI）晶片出口管制，進一步與美國限制措施保持一致，加 […]",
+     "published": "2026-10-17T00:00:01+00:00",
+     "summary": "幾個月狂砸 400 億美元，輝達（NVIDIA）就這樣大剌剌在所有人注視下，又一次完成重要轉型。 過去幾個月， […]",
      "image": "",
-     "id": "164af7e1dce9",
+     "id": "7b390ad1694b",
      "tags": [
+      "AI 人工智慧",
+      "GPU",
+      "Nvidia",
+      "伺服器",
+      "軟體、系統"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0020",
+   "title": "Agentic AI 浪潮襲來！HPE 剖析企業 AI 轉型痛點與企業級 AI 工廠策略",
+   "summary": "隨著生成式 AI 迅速演進，企業 AI 應用正從傳統問答模式跨入目標導向的 Agentic AI（代理人 AI […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "agentic",
+    "hpe",
+    "agent"
+   ],
+   "image": "img/2026-10-18/1be6a95b3ccb07d4.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "Agentic AI 浪潮襲來！HPE 剖析企業 AI 轉型痛點與企業級 AI 工廠策略",
+     "url": "https://finance.technews.tw/2026/10/17/hpe-analyzes-the-pain-points-of-enterprise-ai-transformation-and-enterprise-level-ai-factory-strategies",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-16T23:00:20+00:00",
+     "summary": "隨著生成式 AI 迅速演進，企業 AI 應用正從傳統問答模式跨入目標導向的 Agentic AI（代理人 AI […]",
+     "image": "",
+     "id": "a3916604528b",
+     "tags": [
+      "AI 人工智慧",
+      "伺服器",
+      "網路",
+      "財經",
+      "電腦"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0021",
+   "title": "即使行為與人類無異，科學證實人們仍認為 AI 缺乏「真正意識」",
+   "summary": "隨著現代 AI 模型在對話、推理與情感模仿上越發精進，大眾開始擔憂：人類是否會被演算法迷惑，誤以為它們擁有真實 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-10-18/6cef052b03b0b201.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "即使行為與人類無異，科學證實人們仍認為 AI 缺乏「真正意識」",
+     "url": "https://technews.tw/2026/10/17/cognitive-boundaries-ai-human-consciousness",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-16T23:00:13+00:00",
+     "summary": "隨著現代 AI 模型在對話、推理與情感模仿上越發精進，大眾開始擔憂：人類是否會被演算法迷惑，誤以為它們擁有真實 […]",
+     "image": "",
+     "id": "3f697ff7de5f",
+     "tags": [
+      "AI 人工智慧",
+      "人力資源",
+      "科技生活",
+      "科技趣聞",
+      "AI 模型"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0022",
+   "title": "AI 泡沫疑慮升溫，彭双浪：成長將放緩、趨勢不會改變",
+   "summary": "友達光電今日舉辦成立 30 週年集團運動會，董事長彭双浪受訪時表示，人工智慧（AI）已成為不可逆的產業趨勢，儘 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-10-18/ae2c3ff698d356d7.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "AI 泡沫疑慮升溫，彭双浪：成長將放緩、趨勢不會改變",
+     "url": "https://finance.technews.tw/2026/10/17/ai-bubble-auo",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-16T22:43:17+00:00",
+     "summary": "友達光電今日舉辦成立 30 週年集團運動會，董事長彭双浪受訪時表示，人工智慧（AI）已成為不可逆的產業趨勢，儘 […]",
+     "image": "",
+     "id": "bc42cb34c7a8",
+     "tags": [
+      "AI 人工智慧",
+      "財經",
+      "AI 泡沫化",
+      "友達",
+      "友達運動會"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0023",
+   "title": "AI 助攻效率與創意但「貧富不均」，高學歷與管理職還是最大贏家",
+   "summary": "美國最新研究指出，人工智慧（AI）開始明顯助益部分勞工，包括加速工作、激發創意與提升產出品質，但這些好處並未平 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-10-18/f34750a7c3090ac0.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "AI 助攻效率與創意但「貧富不均」，高學歷與管理職還是最大贏家",
+     "url": "https://technews.tw/2026/10/17/ai-benefits-at-work-are-uneven-across-the-us-workforce-study-finds",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-16T22:30:30+00:00",
+     "summary": "美國最新研究指出，人工智慧（AI）開始明顯助益部分勞工，包括加速工作、激發創意與提升產出品質，但這些好處並未平 […]",
+     "image": "",
+     "id": "e3ffa66ac8d0",
+     "tags": [
+      "AI 人工智慧",
+      "人力資源",
+      "職場",
+      "AI",
+      "AI 效益"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0024",
+   "title": "台積電亮眼財報背後，市場關注隱憂關鍵浮現",
+   "summary": "晶圓代工龍頭台積電公佈最新第三季財報，數據顯示由人工智慧（AI）浪潮推升的強勁需求遠超預期。第三季單季營收達4 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [],
+   "image": "img/2026-10-18/7e738d35bd30e02e.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "台積電亮眼財報背後，市場關注隱憂關鍵浮現",
+     "url": "https://finance.technews.tw/2026/10/17/behind-tsmcs-impressive-financial-report-key-concerns-have-emerged-that-have-drawn-market-attention",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-16T22:00:57+00:00",
+     "summary": "晶圓代工龍頭台積電公佈最新第三季財報，數據顯示由人工智慧（AI）浪潮推升的強勁需求遠超預期。第三季單季營收達4 […]",
+     "image": "",
+     "id": "3a19d7c99de9",
+     "tags": [
+      "AI 人工智慧",
       "半導體",
+      "晶圓",
       "晶片",
-      "科技政策"
+      "財報"
      ]
     }
    ]
   },
   {
-   "key": "t0032",
-   "title": "Meta’s new terms may allow it to train AI on news sites for free",
-   "summary": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from Nieman Lab. The new terms, which go into effect on October 30th, say Meta can use this outs",
+   "key": "t0025",
+   "title": "超越模型算力，神經科學專家：AI 終極戰場在「非侵入式讀寫大腦」",
+   "summary": "史丹佛大學神經科學家安德魯·胡貝爾曼（Andrew Huberman）近日在 Podcast 節目中表示，人工 […]",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "terms",
-    "train",
-    "allow",
-    "sites",
-    "free",
-    "meta"
+    "compute",
+    "andrew",
+    "huberman",
+    "podcast"
    ],
-   "image": "img/2026-10-17/0e7376d35fd0de26.webp",
+   "image": "img/2026-10-18/2b7cab0ac961515f.webp",
    "llm_enriched": false,
    "sources": [
-    "The Verge AI"
+    "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "Meta’s new terms may allow it to train AI on news sites for free",
-     "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-16T06:02:40+00:00",
-     "summary": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from Nieman Lab. The new terms, which go into effect on October 30th, say Meta can use this outside content to \"develop, improve, research,\" and \"train\" […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25546023/STK043_META_CVIRGINIA_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "ad3a47861a30",
-     "tags": [
-      "AI",
-      "Meta",
-      "News",
-      "Policy",
-      "Tech"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0033",
-   "title": "Super Scam Me documentary shows what it takes to catch a romance scammer",
-   "summary": "Watch an exclusive clip from Super Scam Me where a victim tracks down her scammer.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "super",
-    "scam",
-    "documentary",
-    "shows",
-    "takes",
-    "romance"
-   ],
-   "image": "img/2026-10-17/77157e1a45efbb7f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI"
-   ],
-   "articles": [
-    {
-     "title": "Super Scam Me documentary shows what it takes to catch a romance scammer",
-     "url": "https://arstechnica.com/tech-policy/2026/10/romance-scam-doc-super-scam-me-takes-viewers-deep-into-love-bombing-terrain",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-10-16T06:00:59+00:00",
-     "summary": "Watch an exclusive clip from Super Scam Me where a victim tracks down her scammer.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/SuperScamMe_UHD_42-500x500-1792098327.jpg",
-     "id": "82d931a544c9",
-     "tags": [
-      "AI",
-      "Policy",
-      "dating apps",
-      "deepfakes",
-      "documentary"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0034",
-   "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-   "summary": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its own chip that verifies goods.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "veritas",
-    "chip",
-    "expands",
-    "anti-counterfeit",
-    "jewelry",
-    "trophies"
-   ],
-   "image": "img/2026-10-17/a76f96fcddfe64de.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-     "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-16T06:00:00+00:00",
-     "summary": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its own chip that verifies goods.",
-     "image": "",
-     "id": "311fa86942b3",
-     "tags": [
-      "AI",
-      "Hardware",
-      "Startups",
-      "TC",
-      "battlefield 20"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0037",
-   "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-   "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "future",
-    "self-driving",
-    "replit",
-    "ceo",
-    "work",
-    "company"
-   ],
-   "image": "img/2026-10-17/bdfa647898232bc1.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-     "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-16T04:55:09+00:00",
-     "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
-     "image": "",
-     "id": "e6b0c9baa366",
-     "tags": [
-      "AI",
-      "Enterprise",
-      "AI agents",
-      "Amjad Masad",
-      "future of work"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0038",
-   "title": "七彩虹橘宝 R16 游戏本新增 AMD R7 H 255 + 16G + 512G + RTX 5060 配置，9999 元（国补 8499.15 元）",
-   "summary": "IT之家 10 月 16 日消息，七彩虹 MEOW 橘宝 R16 游戏本新增了一款搭载 AMD 锐龙 7 H 255 处理器 + RTX 5060 显卡 +16GB 内存 + 512GB 固态硬盘的版本，京东原价 10299 元，首发立减 300 元，叠加国补后到手价为 8499.15 元。 京东 七彩虹 MEOW 橘宝 R16 16 英寸锐龙游戏笔记本电脑 (锐龙 7 H 255 16G 512G RTX5060） 券后 9999 元 领 300 元券 该机采用全新 MEOW 系列家族设计语言，采用冰川白配色，A 面带有特殊纹路和猫爪印设计。 该机搭载",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "5060",
-    "r16",
-    "512",
-    "255",
-    "amd",
-    "meow"
-   ],
-   "image": "img/2026-10-17/e10eb63840b3bac0.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "七彩虹橘宝 R16 游戏本新增 AMD R7 H 255 + 16G + 512G + RTX 5060 配置，9999 元（国补 8499.15 元）",
-     "url": "https://www.ithome.com/1/014/156.htm",
-     "source": "IT之家",
+     "title": "超越模型算力，神經科學專家：AI 終極戰場在「非侵入式讀寫大腦」",
+     "url": "https://technews.tw/2026/10/17/ai-arms-race-brain-control",
+     "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-10-16T04:48:30+00:00",
-     "summary": "IT之家 10 月 16 日消息，七彩虹 MEOW 橘宝 R16 游戏本新增了一款搭载 AMD 锐龙 7 H 255 处理器 + RTX 5060 显卡 +16GB 内存 + 512GB 固态硬盘的版本，京东原价 10299 元，首发立减 300 元，叠加国补后到手价为 8499.15 元。 京东 七彩虹 MEOW 橘宝 R16 16 英寸锐龙游戏笔记本电脑 (锐龙 7 H 255 16G 512G RTX5060） 券后 9999 元 领 300 元券 该机采用全新 MEOW 系列家族设计语言，采用冰川白配色，A 面带有特殊纹路和猫爪印设计。 该机搭载 AMD 锐龙 7 H 255 移动处理器、NVIDIA GeForce RTX 5060 笔记本 GPU（115W），配备 16 英寸 2.5K IPS 电竞屏，拥有 2560×1600 分辨率、165 Hz 刷新率、100% sRGB 高色域。 散热方面，该机配备全新酷冷散热系统，采用 4 根大尺寸热管与 2 颗集束散热风扇，散热效率更高，同时风扇噪音更小，支持独显直连 / 混合输出两种模式切换。 其他方面，该机配备 WiFi 6E 无线网卡和 1000 Mbps 千兆网卡，接口方面包含 USB 3.2 Gen 2 Type-C（IT之家注：支持 DP）、USB 3.2 Gen2 Type-A、HDMI、mini DP、RJ45",
-     "image": "https://img14.360buyimg.com/pop/jfs/t1/536373/30/15654/172299/6ad1cd0fFa32ce54a/0083320320d80539.png",
-     "id": "79099036d21a",
+     "published": "2026-10-16T21:30:44+00:00",
+     "summary": "史丹佛大學神經科學家安德魯·胡貝爾曼（Andrew Huberman）近日在 Podcast 節目中表示，人工 […]",
+     "image": "",
+     "id": "7926fee8115b",
+     "tags": [
+      "AI 人工智慧",
+      "生物科技",
+      "醫療科技",
+      "AI 競賽",
+      "Andrew Huberman"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0026",
+   "title": "魏哲家籲多用 AI，Token 消耗越多、台積電越受惠",
+   "summary": "台積電董事長魏哲家 16 日出席台積電前技術長胡正明新書發表會，他分享自己使用 ChatGPT 準備致詞稿的經 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "token",
+    "openai",
+    "chatgpt"
+   ],
+   "image": "img/2026-10-18/f44514462144fce5.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "魏哲家籲多用 AI，Token 消耗越多、台積電越受惠",
+     "url": "https://technews.tw/2026/10/17/tsmc-ceo-cc-wei-urges-ai-adoption-more-token-consumption-benefits-tsmc",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-16T21:00:18+00:00",
+     "summary": "台積電董事長魏哲家 16 日出席台積電前技術長胡正明新書發表會，他分享自己使用 ChatGPT 準備致詞稿的經 […]",
+     "image": "",
+     "id": "4c011f30a7bd",
+     "tags": [
+      "AI 人工智慧",
+      "半導體",
+      "晶圓",
+      "晶片",
+      "ChatGPT"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0027",
+   "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+   "summary": "Article URL: https://llmspeed.dev/ Comments URL: https://news.ycombinator.com/item?id=50127979 Points: 238 # Comments: 76",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "show",
+    "llmspeed",
+    "feel",
+    "fast",
+    "llm",
+    "runs"
+   ],
+   "image": "img/2026-10-18/d1acfbd5efbd8477.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Hacker News (100+)"
+   ],
+   "articles": [
+    {
+     "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+     "url": "https://llmspeed.dev/",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-10-16T20:36:53+00:00",
+     "summary": "Article URL: https://llmspeed.dev/ Comments URL: https://news.ycombinator.com/item?id=50127979 Points: 238 # Comments: 76",
+     "image": "",
+     "id": "0913988ccbed",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0039",
-   "title": "三星携手 Reality Defender，面向新加坡企业用户开发端侧 AI 深度伪造检测方案",
-   "summary": "IT之家 10 月 16 日消息，三星宣布联合深度伪造检测公司 Reality Defender 合作，开发面向企业用户的端侧 AI 深度伪造检测方案。该方案将直接在三星 Galaxy 设备上运行，帮助企业识别 AI 生成的虚假语音、视频和图像，降低冒充诈骗及其他相关风险，计划率先落地新加坡市场。 IT之家获悉，Reality Defender 专注于企业级深度伪造检测，利用多种 AI 模型实时分析语音、视频和图像内容。例如，该技术能够在实时通话中识别冒充他人的合成语音，也可用于客户身份识别和新用户注册审核，帮助企业发现可疑的虚假内容。 Reality ",
+   "key": "t0028",
+   "title": "大摩記憶體與 AI 供應鏈展望，HBM 與 SSD 合約價飆升推動算力與網路列投資首選",
+   "summary": "外資摩根士丹利（Morgan Stanley；大摩）最新研究報告指出，受惠於AI需求推動與產能排擠效應，記憶體 […]",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "reality",
-    "defender",
-    "samsung"
+    "hbm",
+    "ssd",
+    "funding",
+    "compute"
    ],
-   "image": "img/2026-10-17/2df5cd84ddeaad82.webp",
+   "image": "img/2026-10-18/6a40781d8cf4cb2b.webp",
    "llm_enriched": false,
    "sources": [
-    "IT之家"
+    "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "三星携手 Reality Defender，面向新加坡企业用户开发端侧 AI 深度伪造检测方案",
-     "url": "https://www.ithome.com/1/014/144.htm",
-     "source": "IT之家",
+     "title": "大摩記憶體與 AI 供應鏈展望，HBM 與 SSD 合約價飆升推動算力與網路列投資首選",
+     "url": "https://finance.technews.tw/2026/10/17/morgan-stanley-memory-and-ai-supply-chain-outlook",
+     "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-10-16T03:58:14+00:00",
-     "summary": "IT之家 10 月 16 日消息，三星宣布联合深度伪造检测公司 Reality Defender 合作，开发面向企业用户的端侧 AI 深度伪造检测方案。该方案将直接在三星 Galaxy 设备上运行，帮助企业识别 AI 生成的虚假语音、视频和图像，降低冒充诈骗及其他相关风险，计划率先落地新加坡市场。 IT之家获悉，Reality Defender 专注于企业级深度伪造检测，利用多种 AI 模型实时分析语音、视频和图像内容。例如，该技术能够在实时通话中识别冒充他人的合成语音，也可用于客户身份识别和新用户注册审核，帮助企业发现可疑的虚假内容。 Reality Defender 表示，随着生成式 AI 技术的发展，利用合成语音和视频实施诈骗的情况日益受到关注。有调查显示，2024 年新加坡有 56% 的企业曾遭遇音频深度伪造诈骗，另有 52% 的企业遇到过视频深度伪造相关事件。 个人用户同样面临此类诈骗带来的经济损失。数据显示，2025 年，新加坡受冒充政府官员诈骗影响的受害者至少损失 2.429 亿新元），占当地全年诈骗总损失的 26.6%。 三星电子新加坡公司综合业务部门总监兼负责人 Timothy Tan 表示，三星希望通过此次合作，帮助企业更早发现潜在威胁，双方计划开发实用的端侧深度伪造检测方案，在相关数据需要上传至云端处理之前，就能识别潜在风险。 此次合作的一大重点是将检测过程放",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/869620a9-7fdf-44f5-8d94-9f1ddd75c1b6.png?x-bce-process=image/format,f_auto",
-     "id": "d3be54dc82c3",
-     "tags": []
+     "published": "2026-10-16T19:00:16+00:00",
+     "summary": "外資摩根士丹利（Morgan Stanley；大摩）最新研究報告指出，受惠於AI需求推動與產能排擠效應，記憶體 […]",
+     "image": "",
+     "id": "5343df4a0e74",
+     "tags": [
+      "AI 人工智慧",
+      "IC 設計",
+      "伺服器",
+      "半導體",
+      "國際觀察"
+     ]
     }
    ]
   }
