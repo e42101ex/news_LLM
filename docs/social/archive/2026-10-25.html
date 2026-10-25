@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社群熱門 · 2026-10-25</title>
+<meta name="description" content="2026-10-25 社群熱門：台灣即時熱搜 10 則、網路溫度計 8 篇、台灣社群排行 10 平台、Bluesky 話題 12 個、AI 貼文 18 篇。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style></head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../../index.html">AI 相關新聞</a>
+  <a href="../../social/index.html" class="on">社群熱門</a>
+  <a href="../../hamster.html">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../../social/index.html">社群熱門</a></h1>
+  <div class="meta">
+    <span>2026-10-25</span>
+    <span>10 熱搜 · 8 溫度計 · 10 平台排行 · 3 KOL 榜 · 12 話題 · 18 貼文</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 10/25 08:10</span>
+    <a href="../../social/archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="區塊">
+  <a href="#tw">台灣即時熱搜<b>10</b></a>
+<a href="#dv">網路溫度計<b>8</b></a><a href="#boards">台灣社群排行<b>10</b></a><a href="#kol">意見領袖 TOP 3<b>3</b></a>  <a href="#bsky">Bluesky 熱門話題<b>12</b></a>
+  <a href="#posts">AI 熱門貼文<b>18</b></a>
+</nav>
+
+
+<h2 class="cat" id="tw">台灣即時熱搜</h2>
+<section class="briefs compact">
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/e88cfaa4273830ff.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">1</span>
+<span class="trend-rank">500+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">獨行俠對馬刺</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://tw.sports.yahoo.com/news/nba-flagg%E9%81%ADnesmith%E6%83%A1%E7%8A%AF%E5%B7%A6%E8%82%A9%E7%97%A0%E7%97%9B%E5%B0%87%E9%80%B2-%E6%AD%A5%E6%AA%A2%E6%9F%A5-marshall%E5%8F%AB%E5%9B%82%E5%8A%9B%E6%8C%BA-%E4%BF%9D%E8%AD%B7%E6%88%91%E9%9A%8A%E5%8F%8B-085426325.html" target="_blank" rel="noopener noreferrer">NBA》Flagg遭Nesmith惡犯左肩痠痛將進一步檢查 Marshall叫囂力挺：保護我隊友</a>
+<div class="post-who">Yahoo運動</div>        </li>
+        <li>
+          <a href="https://sports.ettoday.net/news/3260250" target="_blank" rel="noopener noreferrer">佛拉格快攻竟遭惡意犯規摔傷！厄文率獨行俠大勝溜馬為學弟復仇</a>
+<div class="post-who">ETtoday運動雲</div>        </li>
+        <li>
+          <a href="https://today.line.me/tw/v3/article/2D9W59P" target="_blank" rel="noopener noreferrer">大場面來了！1級惡性犯規爆衝突 單親媽教練奮勇帶離肇事者 | 太報</a>
+<div class="post-who">LINE TODAY</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/6e265caa01f7222a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">2</span>
+<span class="trend-rank">100+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">梅西</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://bbs.hupu.com/643249165.html" target="_blank" rel="noopener noreferrer">[流言板]纽约红牛vs迈阿密国际首发：苏牙胖虎德保罗出战，梅西替补</a>
+<div class="post-who">虎扑</div>        </li>
+        <li>
+          <a href="https://m.sohu.com/a/1092340194_121894857?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334" target="_blank" rel="noopener noreferrer">梅西替补席上的沉思：迈阿密国际在纽约红牛面前的逆境</a>
+<div class="post-who">搜狐网</div>        </li>
+        <li>
+          <a href="https://www.nowscore.com/news/1246576.htm?fromPage=0" target="_blank" rel="noopener noreferrer">每日一场！【王牌大铁锤】贺：美职业近6中6！</a>
+<div class="post-who">捷报比分网</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/3d99b68361a4856d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">3</span>
+<span class="trend-rank">100+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">好市多黑色星期五</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.businesstoday.com.tw/article/category/183030/post/202610220003/" target="_blank" rel="noopener noreferrer">好市多黑五時間11/23-12/6連14天！黑鑽會員入場時間、刷卡優惠…Costco黑色購物節iPhone 18會有？</a>
+<div class="post-who">今周刊</div>        </li>
+        <li>
+          <a href="https://www.storm.mg/lifestyle/11174721" target="_blank" rel="noopener noreferrer">好市多黑鑽卡年費3000元，一年買多少才划算？2026會員費、2% 回饋門檻一張圖看懂</a>
+<div class="post-who">風傳媒</div>        </li>
+        <li>
+          <a href="https://tw.stock.yahoo.com/news/%E5%A5%BD%E5%B8%82%E5%A4%9A%E9%BB%91%E4%BA%94%E4%B8%8D%E5%8F%AA7%E5%A4%A9%E4%BA%86%EF%BC%81%E9%A6%96%E5%BA%A6%E5%BB%B6%E9%95%B7%E8%87%B314%E5%A4%A9-%E9%BB%91%E9%91%BD%E6%9C%83%E5%93%A17%E9%BB%9E%E5%8D%8A%E5%85%88%E9%80%9B-112938676.html" target="_blank" rel="noopener noreferrer">好市多黑五不只7天了！首度延長至14天 黑鑽會員7點半先逛</a>
+<div class="post-who">Yahoo股市</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/7dbbcfb6cdefb95e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">4</span>
+<span class="trend-rank">100+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">克萊·湯普森</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://sports.sina.cn/nba/other/2026-10-24/detail-iniwhxpw2150116.d.html?vt=4" target="_blank" rel="noopener noreferrer">斯波谈克莱：今日他在自己的投篮热区获得了大量绝佳机会</a>
+<div class="post-who">手机新浪网</div>        </li>
+        <li>
+          <a href="https://bbs.hupu.com/643212952.html" target="_blank" rel="noopener noreferrer">[流言板]克莱全场三分11投仅2中，得到6分2篮板2助攻、正负值-19</a>
+<div class="post-who">虎扑体育网</div>        </li>
+        <li>
+          <a href="https://m.sohu.com/a/1088905127_343291/?pvid=000115_3w_a" target="_blank" rel="noopener noreferrer">季前赛三分20中3！全美热议克莱：成热火大麻烦 生涯恐怕已走到头</a>
+<div class="post-who">搜狐网</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/09a074d124f7e8e5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">5</span>
+<span class="trend-rank">100+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">長江存儲</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://tw.stock.yahoo.com/news/%E7%BE%8E%E5%85%89%E4%B8%8B-%E4%BB%A3ai%E8%A8%98%E6%86%B6%E9%AB%94%E7%AA%81%E7%A0%B4%E9%9D%A2%E8%87%A8%E6%95%A3%E7%86%B1%E9%9B%A3%E9%A1%8C-vhbm%E7%9E%84%E6%BA%962028%E5%B9%B4%E9%87%8F%E7%94%A2-%E9%A0%BB%E5%AF%AC%E5%8D%87%E7%B4%9A%E6%88%90%E9%97%9C%E9%8D%B5-054005629.html" target="_blank" rel="noopener noreferrer">美光下一代AI記憶體突破面臨散熱難題！vHBM瞄準2028年量產、頻寬升級成關鍵</a>
+<div class="post-who">Yahoo股市</div>        </li>
+        <li>
+          <a href="https://money.udn.com/money/story/5612/9834200" target="_blank" rel="noopener noreferrer">長鑫最快2027年躍全球DRAM三哥 南亞科現在不用怕？真正交鋒時間曝光</a>
+<div class="post-who">經濟日報</div>        </li>
+        <li>
+          <a href="https://news.cnyes.com/news/id/6637088" target="_blank" rel="noopener noreferrer">長江存儲重大突破！傳開發9600MT/s LPDDR5X 導入4F²架構挑戰三星、美光</a>
+<div class="post-who">鉅亨網</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/c7996c6c8708d519.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">6</span>
+<span class="trend-rank">500+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">76人對公鹿</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://bbs.hupu.com/643245292.html" target="_blank" rel="noopener noreferrer">[流言板]勒布朗-詹姆斯因坐骨神经痛管理不会出战主场对阵雄鹿的比赛</a>
+<div class="post-who">虎扑体育网</div>        </li>
+        <li>
+          <a href="https://sports.sina.cn/nba/other/2026-10-25/detail-iniwkrxi3612905.d.html?vt=4" target="_blank" rel="noopener noreferrer">纳斯：不确定詹姆斯&amp;恩比德明天对阵活塞的出战状态</a>
+<div class="post-who">手机新浪网</div>        </li>
+        <li>
+          <a href="https://m.zhibo8.com/news/web/nba/2026-10-23/6ada8c33c5c7fnative.htm" target="_blank" rel="noopener noreferrer">纳斯谈背靠背：医疗组与管理层正在商议球员出战安排</a>
+<div class="post-who">直播吧</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/930dd73775244d89.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">7</span>
+<span class="trend-rank">200+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">達維恩·米契爾</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.cbssports.com/fantasy/basketball/news/heats-davion-mitchell-scores-18-points-in-defeat/" target="_blank" rel="noopener noreferrer">Heat&#39;s Davion Mitchell: Scores 18 points in defeat</a>
+<div class="post-who">CBS Sports</div>        </li>
+        <li>
+          <a href="https://www.fantasypros.com/nba/news/615620/davion-mitchell-posts-near-double-double-friday-against-pistons.php" target="_blank" rel="noopener noreferrer">Davion Mitchell posts near double-double Friday against Pistons</a>
+<div class="post-who">FantasyPros</div>        </li>
+        <li>
+          <a href="https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-21/davion-mitchell-dishes-out-10-assists-vs-min" target="_blank" rel="noopener noreferrer">Davion Mitchell dishes out 10 assists vs MIN</a>
+<div class="post-who">NBC Sports</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/921f67087fe93350.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">8</span>
+<span class="trend-rank">100+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">布蘭登·米勒</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.nba.com/news/brandon-miller-hornets-optimism" target="_blank" rel="noopener noreferrer">New contract in hand, Brandon Miller looks to end Hornets&#39; 10-year playoff drought</a>
+<div class="post-who">NBA.com</div>        </li>
+        <li>
+          <a href="https://sports.yahoo.com/nba/breaking-news/article/hornets-brandon-miller-reportedly-agree-to-209m-contract-extension-ahead-of-mondays-deadline-210214163.html" target="_blank" rel="noopener noreferrer">Hornets, Brandon Miller reportedly agree to $209M contract extension ahead of Monday&#39;s deadline</a>
+<div class="post-who">Yahoo Sports</div>        </li>
+        <li>
+          <a href="https://www.espn.com/nba/story/_/id/50221373/hornets-brandon-miller-agree-5-year-209m-rookie-extension" target="_blank" rel="noopener noreferrer">Hornets, Brandon Miller agree to 5-year, $209M rookie extension</a>
+<div class="post-who">ESPN</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/d02419bc6901b786.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">9</span>
+<span class="trend-rank">200+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">艾德萊斯·阿德巴約</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://heatnation.com/team-news/bam-adebayo-remains-confident-in-giannis-pairing-after-heats-rough-start/" target="_blank" rel="noopener noreferrer">Bam Adebayo remains confident in Giannis pairing after Heat’s rough start</a>
+<div class="post-who">Heat Nation</div>        </li>
+        <li>
+          <a href="https://roundtable.io/sports/nba/heat/news/nba-legend-criticizes-miami-heats-bam-adebayos-performance" target="_blank" rel="noopener noreferrer">NBA Legend Criticizes Miami Heat&#39;s Bam Adebayo&#39;s Performance</a>
+<div class="post-who">roundtable.io</div>        </li>
+        <li>
+          <a href="https://www.couriernews.com/sports/heat-basketball/image_71073286-7ae5-5d61-beb8-0beea2049378.html" target="_blank" rel="noopener noreferrer">Heat Basketball</a>
+<div class="post-who">couriernews.com</div>        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/dee32db343438190.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">10</span>
+<span class="trend-rank">100+ 次搜尋</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://trends.google.com/trending/rss?geo=TW" target="_blank" rel="noopener noreferrer">南投縣</a>
+      </h3>
+      <ul class="brief-list">
+        <li>
+          <a href="https://tw.yahoo.com/tv/%E9%A2%A8%E9%9B%A8%E4%B8%AD%E7%9A%84%E8%BF%BD%E5%85%89%E8%80%85-%E5%8F%B0%E9%9B%BB1-5%E8%90%AC%E4%BA%BA%E6%AC%A1%E6%90%B6%E4%BF%AE-110647287.html" target="_blank" rel="noopener noreferrer">風雨中的追光者！台電1.5萬人次搶修</a>
+<div class="post-who">Yahoo</div>        </li>
+        <li>
+          <a href="https://www.rti.org.tw/news?uid=3&amp;pid=239626" target="_blank" rel="noopener noreferrer">薔琵颱風發威 釀災逾9千件 1死616傷</a>
+<div class="post-who">Rti 中央廣播電臺</div>        </li>
+        <li>
+          <a href="https://news.pts.org.tw/video/22750" target="_blank" rel="noopener noreferrer">薔琵強風橫掃中部 台中西屯、太平電箱爆炸｜20261024 公視午間新聞</a>
+<div class="post-who">你的公共電視</div>        </li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<h2 class="cat" id="dv">網路溫度計 熱門話題</h2>
+<section class="briefs compact">
+  <article class="brief">
+    <a class="brief-hero" href="https://dailyview.tw/popular/detail/33867" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/975f080760802b6a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+<span class="brief-tag">時事</span><span class="trend-rank">2026.10.24</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://dailyview.tw/popular/detail/33867" target="_blank" rel="noopener noreferrer">2026日本退稅新制11/1上路！購物先付稅再退　機場流程、5大注意事項一次看</a>
+      </h3>
+<p class="trend-meta">懶人包｜日本購物免稅方式大改！出境前須完成海關確認，消耗品取消密封包裝與50萬日圓上限，行李太早託運、零食先吃掉，都可能影響退稅。</p>    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://dailyview.tw/popular/detail/33866" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/8e51329e72d8f917.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+<span class="brief-tag">生活</span><span class="trend-rank">2026.10.24</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://dailyview.tw/popular/detail/33866" target="_blank" rel="noopener noreferrer">速食新品懶人包！拉亞聯名《真・三國無雙》　麥當勞松露黑堡登場</a>
+      </h3>
+<p class="trend-meta">拉亞漢堡推出《真・三國無雙》聯名餐點、武將收藏卡與寵物周邊，麥當勞則有松露黑堡、黑森林冰炫風及巧克力三角派回歸，售價與活動優惠一次看。</p>    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://dailyview.tw/popular/detail/33865" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/c1a7edec01ecbcc9.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+<span class="brief-tag">時事</span><span class="trend-rank">2026.10.23</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://dailyview.tw/popular/detail/33865" target="_blank" rel="noopener noreferrer">10/24颱風假交通、垃圾車異動！公車、YouBike停駛　紅黃線停車規定一次看</a>
+      </h3>
+<p class="trend-meta">薔琵颱風10/24生活異動總整理！新北中午後加班收垃圾、新竹公車與共享機車停駛，還有停車、景點關閉與災損減稅資訊。</p>    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://dailyview.tw/popular/detail/33863" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/32ebc6ab2da0f2e8.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+<span class="brief-tag">時事</span><span class="trend-rank">2026.10.23</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://dailyview.tw/popular/detail/33863" target="_blank" rel="noopener noreferrer">颱風假要幹嘛？吃什麼、做什麼？誰要上班⋯KEYPO揭4大社群熱門話題</a>
+      </h3>
+<p class="trend-meta">外送暫停、百貨休館掀討論！颱風假有人追劇休息、有人照常上班，還有爸媽忙著顧小孩，4大熱門話題一次看。</p>    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://dailyview.tw/popular/detail/33861" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/40ece5f002c961c5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+<span class="brief-tag">生活</span><span class="trend-rank">2026.10.23</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://dailyview.tw/popular/detail/33861" target="_blank" rel="noopener noreferrer">颱風麵是什麼？颱風天在家吃什麼？菇菇炊飯作法看一次就會</a>
+      </h3>
+<p class="trend-meta">颱風餐必看！不用複雜備料，也不必具備高超廚藝，只要利用簡單食材就能輕鬆端出熱騰騰的防颱料理，本文一次整理食材清單與烹調步驟。</p>    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://dailyview.tw/popular/detail/33859" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/e979233be38b208a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+<span class="brief-tag">生活</span><span class="trend-rank">2026.10.23</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://dailyview.tw/popular/detail/33859" target="_blank" rel="noopener noreferrer">2026新泡麵推薦！辛拉麵粉紅醬、香菜爆量、千千79元牛肉麵　4款必試</a>
+      </h3>
+<p class="trend-meta">2026新泡麵推薦，4款特色泡麵各有亮點，究竟口味有什麼特別、價格多少、去哪裡買？一次整理超商、量販店販售通路，想嚐鮮的泡麵控快收藏！</p>    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://dailyview.tw/popular/detail/33857" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/2520d27738531108.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+<span class="brief-tag">時事</span><span class="trend-rank">2026.10.23</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://dailyview.tw/popular/detail/33857" target="_blank" rel="noopener noreferrer">社群炸鍋TOP 3｜薔琵颱風航班取消改票難　吳敦義健康近況　台南車站鋼琴走紅</a>
+      </h3>
+<p class="trend-meta">往下滑！快速看懂過去24小時網路聲量熱議三件事與各方立場</p>    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://dailyview.tw/popular/detail/33858" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/f1b741f4d6f2eb13.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+<span class="brief-tag">時事</span><span class="trend-rank">2026.10.23</span>    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead">
+        <a href="https://dailyview.tw/popular/detail/33858" target="_blank" rel="noopener noreferrer">薔琵颱風10/23災情、交通與活動異動！北捷文湖線、圓山站至淡水站、新北投站、小碧潭站18時停駛</a>
+      </h3>
+<p class="trend-meta">淡海、安坑輕軌及三鶯線15時起預防性停駛、中捷15分鐘一班；彙整臺北、新北、新竹與台中異動。</p>    </div>
+  </article>
+</section>
+
+<h2 class="cat" id="boards">台灣社群排行</h2>
+<p class="note">Social Lab（OpView 社群口碑資料庫）每週彙整各平台熱門事件。榜上的數據以圖表呈現，
+  這裡列出每週彙整的標題與觀測期間，點進去看完整排行。</p>
+<section class="briefs compact">
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/leaderboard/%e5%be%b7%e7%91%aa%e8%a5%bf%e4%ba%9e%e7%9b%83%e5%9c%8b%e9%9a%9b%e9%82%80%e8%ab%8b%e8%b3%bd%e5%bc%95lol%e7%89%88%e7%86%b1%e8%ad%b0-%e4%b8%ad%e5%9c%8b%e5%ad%b8%e7%94%9f%e9%81%ad%e9%a9%85%e9%80%90/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/32b8c280f0a0bea8.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">PTT</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e5%be%b7%e7%91%aa%e8%a5%bf%e4%ba%9e%e7%9b%83%e5%9c%8b%e9%9a%9b%e9%82%80%e8%ab%8b%e8%b3%bd%e5%bc%95lol%e7%89%88%e7%86%b1%e8%ad%b0-%e4%b8%ad%e5%9c%8b%e5%ad%b8%e7%94%9f%e9%81%ad%e9%a9%85%e9%80%90/" target="_blank" rel="noopener noreferrer">德瑪西亞盃國際邀請賽引LOL版熱議 中國學生遭驅逐網友質疑是獨裁？｜PTT熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e5%be%90%e4%bd%b3%e9%9d%92%e5%ae%a3%e5%b8%83%e8%ab%8b%e8%be%ad%e5%83%91%e5%a7%94%e6%9c%83%ef%bc%81-%e6%b2%88%e4%bc%af%e6%b4%8b%e8%a2%ab%e8%94%a3%e8%90%ac%e5%ae%89%e9%80%bc%e8%a1%a8%e6%85%8b%ef%bc%9a/" target="_blank" rel="noopener noreferrer">徐佳青宣布請辭僑委會！ 沈伯洋被蔣萬安逼表態：我支持死刑｜PTT熱門事件</a>
+<div class="post-who">10/05–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e4%ba%9e%e9%81%8b%e9%9b%bb%e7%ab%b6%e5%86%a0%e8%bb%8d%e8%b3%bd%e5%bc%95%e9%97%9c%e6%b3%a8-%e4%b8%ad%e8%8f%af%e9%9a%8a%e4%b8%8d%e6%95%b5%e9%9f%93%e5%9c%8b%e6%94%b6%e4%b8%8b%e9%8a%80%e7%89%8c%ef%bd%9cp/" target="_blank" rel="noopener noreferrer">亞運電競冠軍賽引關注 中華隊不敵韓國收下銀牌｜PTT熱門事件</a>
+<div class="post-who">09/28–10/04</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/ptt_charts/" target="_blank" rel="noopener noreferrer">PTT排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/leaderboard/%e8%b3%b4%e6%83%a0%e5%93%a1%e6%8f%90%e9%86%92%e8%b3%88%e6%b0%b8%e5%a9%95%e6%b3%a8%e6%84%8f%e7%a9%bf%e8%91%97%e6%83%b9%e8%ad%b0-%e7%99%bc%e6%96%87%e8%87%b4%e6%ad%89%e7%95%99%e8%a8%80%e5%8d%80%ef%bc%9a/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/ef0a91d2329f1a01.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">Facebook</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e8%b3%b4%e6%83%a0%e5%93%a1%e6%8f%90%e9%86%92%e8%b3%88%e6%b0%b8%e5%a9%95%e6%b3%a8%e6%84%8f%e7%a9%bf%e8%91%97%e6%83%b9%e8%ad%b0-%e7%99%bc%e6%96%87%e8%87%b4%e6%ad%89%e7%95%99%e8%a8%80%e5%8d%80%ef%bc%9a/" target="_blank" rel="noopener noreferrer">賴惠員提醒賈永婕注意穿著惹議 發文致歉留言區：勿限制穿衣自由｜Facebook熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e9%9f%93%e5%9c%8b%e7%91%9c%e5%9c%8b%e6%85%b6%e8%87%b4%e8%a9%9e%e9%bb%9e%e5%90%8d%e8%b3%b4%e6%b8%85%e5%be%b7-%e6%ae%ba3%e4%ba%ba%e6%89%8d%e8%83%bd%e5%88%a4%e6%ad%bb%e6%a8%99%e6%ba%96%e5%bc%95%e5%90%84/" target="_blank" rel="noopener noreferrer">韓國瑜國慶致詞點名賴清德 殺3人才能判死標準引各界不滿｜Facebook熱門事件</a>
+<div class="post-who">10/05–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e8%94%a3%e8%90%ac%e5%ae%89%e7%99%bc%e6%96%87%e6%89%b9%e6%b2%88%e6%9f%8f%e6%b4%8b%e5%8f%8d%e6%af%92%e7%ad%96%e7%95%a5-%e7%b6%b2%e5%8f%8b%e4%b8%8d%e6%8c%ba%e7%81%8c%e7%88%86%e7%95%99%e8%a8%80%e5%8d%80/" target="_blank" rel="noopener noreferrer">蔣萬安發文批沈柏洋反毒策略 網友不挺灌爆留言區｜Facebook熱門事件</a>
+<div class="post-who">09/28–10/04</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/facebook-charts/" target="_blank" rel="noopener noreferrer">Facebook排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/leaderboard/%e7%94%b7%e5%8f%8b%e5%a4%a7%e6%96%b9%e5%a4%9a%e9%87%91%e4%bd%86%e4%bb%8d%e7%8c%b6%e8%b1%ab%e6%98%af%e5%90%a6%e7%b5%90%e5%a9%9a%ef%bc%9f-%e5%8d%a1%e5%8f%8b%ef%bc%9a%e9%80%99%e4%ba%9b%e4%ba%8b%e9%83%bd/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/856de2ba2bcd0005.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">Dcard</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e7%94%b7%e5%8f%8b%e5%a4%a7%e6%96%b9%e5%a4%9a%e9%87%91%e4%bd%86%e4%bb%8d%e7%8c%b6%e8%b1%ab%e6%98%af%e5%90%a6%e7%b5%90%e5%a9%9a%ef%bc%9f-%e5%8d%a1%e5%8f%8b%ef%bc%9a%e9%80%99%e4%ba%9b%e4%ba%8b%e9%83%bd/" target="_blank" rel="noopener noreferrer">男友大方多金但仍猶豫是否結婚？ 卡友：這些事都是雷點｜Dcard熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e5%81%9c%e8%bb%8a%e4%bd%8d%e8%a6%81%e4%b8%8d%e8%a6%81%e6%94%b6%e5%a5%b3%e5%8f%8b%e9%8c%a2%ef%bc%9f-%e7%b6%b2%e5%8f%8b%e8%a9%95%ef%bc%9a%e4%bd%a0%e5%80%91%e6%84%9f%e6%83%85%e8%a7%80%e5%bf%b5%e4%b8%8d/" target="_blank" rel="noopener noreferrer">停車位要不要收女友錢？ 網友評：你們感情觀念不適合｜Dcard熱門事件</a>
+<div class="post-who">10/05–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e5%8d%a1%e5%8f%8b%e7%8c%b6%e8%b1%ab%e6%98%af%e5%90%a6%e8%a9%b2%e9%9a%86%e4%b9%b3-%e7%95%99%e8%a8%80%e5%8d%80%ef%bc%9a%e5%8e%9f%e7%94%9f%e8%83%b8%e5%b7%b2%e7%b6%93%e5%be%88%e6%bc%82%e4%ba%ae%ef%bc%81/" target="_blank" rel="noopener noreferrer">卡友猶豫是否該隆乳 留言區：原生胸已經很漂亮！｜Dcard熱門事件</a>
+<div class="post-who">09/28–10/04</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/dcard_charts/" target="_blank" rel="noopener noreferrer">Dcard排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/leaderboard/%e5%89%b5%e4%bd%9c%e8%80%85%e5%88%86%e4%ba%ab%e7%89%b9%e6%96%af%e6%8b%89%e6%8e%a8%e5%87%ba%e6%96%b0%e9%a3%9b%e5%a4%a9%e8%bb%8a-joeman%e4%b9%9f%e7%ac%ac%e4%b8%80%e6%99%82%e9%96%93%e9%a0%90%e8%a8%82/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/6529a71436add6ad.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">Instagram</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e5%89%b5%e4%bd%9c%e8%80%85%e5%88%86%e4%ba%ab%e7%89%b9%e6%96%af%e6%8b%89%e6%8e%a8%e5%87%ba%e6%96%b0%e9%a3%9b%e5%a4%a9%e8%bb%8a-joeman%e4%b9%9f%e7%ac%ac%e4%b8%80%e6%99%82%e9%96%93%e9%a0%90%e8%a8%82/" target="_blank" rel="noopener noreferrer">創作者分享特斯拉推出新飛天車 Joeman也第一時間預訂？｜Instagram熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e5%ae%b9%e7%a5%96%e5%85%92%e5%ae%98%e5%ae%a3%e3%80%8aaura%e3%80%8b%e5%95%9f%e5%be%b7%e4%b8%bb%e5%a0%b4%e9%a4%a8%e6%bc%94%e5%94%b1%e6%9c%83%ef%bc%81-%e5%91%a8%e6%9d%b0%e5%80%ab%e6%84%9b%e6%83%85/" target="_blank" rel="noopener noreferrer">容祖兒官宣《AURA》啟德主場館演唱會！ 周杰倫愛情海要加入固定歌單了？｜Instagram熱門事件</a>
+<div class="post-who">10/05–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e5%89%b5%e4%bd%9c%e8%80%85%e5%88%86%e4%ba%ab%e9%80%8f%e6%98%8e%e7%9b%b8%e6%a9%9f%e8%ae%9a%e8%b6%85%e5%8f%af%e6%84%9b-%e5%b7%b4%e9%bb%8e%e6%99%82%e8%a3%9d%e9%80%b1%e7%9c%be%e6%98%9f%e9%9b%b2%e9%9b%86/" target="_blank" rel="noopener noreferrer">創作者分享透明相機讚超可愛 巴黎時裝週眾星雲集｜Instagram熱門事件</a>
+<div class="post-who">09/28–10/04</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/instagram%e6%8e%92%e8%a1%8c%e6%a6%9c/" target="_blank" rel="noopener noreferrer">Instagram排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/leaderboard/%e7%b6%b2%e5%8f%8b%e8%b3%aa%e7%96%91%e8%8f%af%e7%a2%a9%e9%80%81%e4%bf%ae%e6%b5%81%e7%a8%8b%e6%9c%89%e5%95%8f%e9%a1%8c-msi-%e6%8e%a8%e6%9c%80%e6%96%b0%e8%bc%95%e8%96%84-ai-%e7%ad%86%e9%9b%bb%ef%bd%9cmo/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/3fffd9e2c75d1b42.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">Mobile01</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e7%b6%b2%e5%8f%8b%e8%b3%aa%e7%96%91%e8%8f%af%e7%a2%a9%e9%80%81%e4%bf%ae%e6%b5%81%e7%a8%8b%e6%9c%89%e5%95%8f%e9%a1%8c-msi-%e6%8e%a8%e6%9c%80%e6%96%b0%e8%bc%95%e8%96%84-ai-%e7%ad%86%e9%9b%bb%ef%bd%9cmo/" target="_blank" rel="noopener noreferrer">網友質疑華碩送修流程有問題 MSI 推最新輕薄 AI 筆電｜Mobile01熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e9%a8%8e%e5%a3%ab%e8%a2%ab%e8%bc%be%e7%95%ab%e9%9d%a2%e6%9b%9d%e5%85%89%e5%85%a8%e7%b6%b2%e4%b8%8d%e5%bf%8d%e7%9c%8b-%e5%85%a8%e7%90%83%e6%b2%b9%e8%bb%8a%e4%bd%94%e6%af%94%e8%b7%8c%e7%a0%b450/" target="_blank" rel="noopener noreferrer">騎士被輾畫面曝光全網不忍看 全球油車佔比跌破50%被取代是時間問題？｜Mobile01熱門事件</a>
+<div class="post-who">10/05–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e5%ae%9a%e9%80%9f120%e5%b7%a1%e8%88%aa%e5%9c%8b%e9%81%93%e5%85%a7%e7%b7%9a%e7%ae%97%e9%be%9c%e8%bb%8a%e5%97%8e%ef%bc%9f-%e7%b6%b2%e5%8f%8b%e6%b3%95%e8%a6%8f%e5%9b%9e%e6%87%89%ef%bc%9a%e9%87%8d/" target="_blank" rel="noopener noreferrer">定速120巡航國道內線算龜車嗎？ 網友法規回應：重點在是否堵塞行車｜Mobile01熱門事件</a>
+<div class="post-who">09/28–10/04</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/mobile01-charts/" target="_blank" rel="noopener noreferrer">Mobile01排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/youtube/%e3%80%90%e4%b8%ad%e5%bb%a3%e6%b5%81%e8%a1%8c%e7%b6%b2i-like-radio%e3%80%91%e8%b6%99%e5%b0%91%e5%ba%b7%e5%86%8d%e8%a8%aa%e6%b2%88%e4%bc%af%e6%b4%8b-%e7%95%99%e8%a8%80%e5%a4%a7%e8%ae%9a%ef%bc%9a/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/8eec6caf2f3322a2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/youtube/%e3%80%90%e4%b8%ad%e5%bb%a3%e6%b5%81%e8%a1%8c%e7%b6%b2i-like-radio%e3%80%91%e8%b6%99%e5%b0%91%e5%ba%b7%e5%86%8d%e8%a8%aa%e6%b2%88%e4%bc%af%e6%b4%8b-%e7%95%99%e8%a8%80%e5%a4%a7%e8%ae%9a%ef%bc%9a/" target="_blank" rel="noopener noreferrer">【中廣流行網i like radio】趙少康再訪沈伯洋 留言大讚：兩個聰明人對話｜YouTube熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/youtube/%e3%80%90%e5%8f%89%e9%9b%9e%e3%80%91%e6%8f%ad%e9%9c%b2%e5%a4%96%e7%b1%8d%e4%bf%9d%e9%a4%8a%e5%93%81%e6%a5%ad%e8%80%85%e5%bc%b7%e8%bf%ab%e6%8e%a8%e9%8a%b7%e4%ba%82%e8%b1%a1-%e7%95%99%e8%b2%a0%e8%a9%95/" target="_blank" rel="noopener noreferrer">【叉雞】揭露外籍保養品業者強迫推銷亂象 留負評竟被告？｜YouTube熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/youtube/%e3%80%90%e9%bb%83%e5%9c%8b%e6%98%8c%e3%80%91%e9%bb%83%e5%9c%8b%e6%98%8c%e5%b0%88%e8%a8%aa%e8%94%a3%e8%90%ac%e5%ae%89-%e7%b6%b2%e5%8f%8b%e8%ae%9a%e6%89%93%e5%9c%b0%e9%bc%a0%e9%81%8a%e6%88%b2%e5%a4%aa/" target="_blank" rel="noopener noreferrer">【黃國昌】黃國昌專訪蔣萬安 網友讚打地鼠遊戲太有趣？｜YouTube熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/hot-youtube/" target="_blank" rel="noopener noreferrer">YouTube排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/leaderboard/%e4%b8%ad%e5%9c%8b%e4%ba%a4%e6%8f%9b%e7%94%9f%e5%a8%81%e8%84%85%e7%b8%bd%e7%b5%b1%e9%81%ad%e9%a9%85%e9%80%90%e5%87%ba%e5%a2%83%ef%bc%9f-%e8%b3%b4%e6%83%a0%e5%93%a1%e5%86%8d%e5%90%91%e8%b3%88%e6%b0%b8/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/3106eedba35098f5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">新聞</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e4%b8%ad%e5%9c%8b%e4%ba%a4%e6%8f%9b%e7%94%9f%e5%a8%81%e8%84%85%e7%b8%bd%e7%b5%b1%e9%81%ad%e9%a9%85%e9%80%90%e5%87%ba%e5%a2%83%ef%bc%9f-%e8%b3%b4%e6%83%a0%e5%93%a1%e5%86%8d%e5%90%91%e8%b3%88%e6%b0%b8/" target="_blank" rel="noopener noreferrer">中國交換生威脅總統遭驅逐出境？ 賴惠員再向賈永婕致歉｜新聞熱門事件</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e4%b8%ad%e5%9c%8b%e7%9b%af%e6%a2%a2%e8%b3%b4%e6%b8%85%e5%be%b7%e9%95%b7%e5%ad%90%e8%8f%af%e8%a3%94%e5%a5%b3%e6%88%bf%e4%bb%b2%e6%96%bc%e6%b4%9b%e6%9d%89%e7%a3%af%e8%90%bd%e7%b6%b2%ef%bc%81-%e8%94%a3/" target="_blank" rel="noopener noreferrer">中國盯梢賴清德長子華裔女房仲於洛杉磯落網！ 蔣萬安貼文洗版50萬則費用超500萬？｜新聞熱門事件</a>
+<div class="post-who">10/05–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/leaderboard/%e6%99%ae%e7%99%bc%e7%8f%be%e9%87%91%e5%b0%87%e5%8a%a0%e7%a2%bc%e8%87%b32%e8%90%ac%ef%bc%9f-%e5%8d%93%e6%a6%ae%e6%b3%b0%e5%8f%8d%e5%b0%8d%ef%bc%9a%e6%87%89%e7%94%a8%e6%96%bc%e7%a0%94%e7%99%bc%e5%8f%8a/" target="_blank" rel="noopener noreferrer">普發現金將加碼至2萬？ 卓榮泰反對：應用於研發及投資｜新聞熱門事件</a>
+<div class="post-who">09/28–10/04</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/news_charts/" target="_blank" rel="noopener noreferrer">新聞排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/opinion-leadership/facebook-kol/%e8%b3%88%e6%b0%b8%e5%a9%95%e5%92%8c%e5%b0%8f%e6%b2%88%e4%bc%af%e6%b4%8b%e5%90%88%e7%85%a7%ef%bc%9f%e6%b2%88%e6%98%a5%e8%8f%af%e5%88%86%e4%ba%ab%e4%b8%88%e5%a4%ab%e7%97%85%e5%80%92%e5%be%8c%e5%bf%83/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/bdd2dac02771bd8d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">Facebook 意見領袖</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/opinion-leadership/facebook-kol/%e8%b3%88%e6%b0%b8%e5%a9%95%e5%92%8c%e5%b0%8f%e6%b2%88%e4%bc%af%e6%b4%8b%e5%90%88%e7%85%a7%ef%bc%9f%e6%b2%88%e6%98%a5%e8%8f%af%e5%88%86%e4%ba%ab%e4%b8%88%e5%a4%ab%e7%97%85%e5%80%92%e5%be%8c%e5%bf%83/" target="_blank" rel="noopener noreferrer">賈永婕和小沈伯洋合照？沈春華分享丈夫病倒後心路歷程</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/opinion-leadership/facebook-kol/%e6%b8%b8%e9%8c%ab%e5%a0%83%e8%a9%95%e5%8f%b0%e5%8c%97%e5%b8%82%e9%95%b7%e9%81%b8%e6%88%b0%e5%bc%95%e7%95%99%e8%a8%80%e5%8d%80%e7%88%86%e7%ac%91-%e7%91%9e%e8%8e%8e%e6%84%9f%e6%80%a7%e7%a5%9d%e5%8f%b0/" target="_blank" rel="noopener noreferrer">游錫堃評台北市長選戰引留言區爆笑 瑞莎感性祝台灣生日快樂</a>
+<div class="post-who">10/05–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/opinion-leadership/facebook-kol/%e7%94%b0%e8%95%8a%e5%a6%ae%e3%80%81%e6%9d%9c%e6%b1%b6%e6%be%a4%e6%9d%b1%e4%ba%ac%e6%85%b6%e7%94%9f%e7%94%9c%e8%9c%9c%e5%90%88%e7%85%a7-%e8%ae%9a%e6%9d%9c%e6%98%af%e3%80%8c%e6%9c%80%e5%a5%bd%e4%b8%88/" target="_blank" rel="noopener noreferrer">田蕊妮、杜汶澤東京慶生甜蜜合照 讚杜是「最好丈夫」！</a>
+<div class="post-who">09/28–10/04</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/facebook%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/" target="_blank" rel="noopener noreferrer">Facebook 意見領袖排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/opinion-leadership/instagram-kol/%e9%9c%b8%e8%bb%92%e9%bc%93%e5%8b%b5%e7%b2%89%e7%b5%b2%e6%88%90%e7%82%ba%e6%9b%b4%e5%a5%bd%e7%9a%84%e8%87%aa%e5%b7%b1-%e8%a9%95%e8%ab%96%e5%8d%80%e6%84%9f%e5%8b%95%ef%bc%9a%e5%a0%85%e6%8c%81%e6%9c%80/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/127c24473f7b6c6f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">Instagram 意見領袖</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/opinion-leadership/instagram-kol/%e9%9c%b8%e8%bb%92%e9%bc%93%e5%8b%b5%e7%b2%89%e7%b5%b2%e6%88%90%e7%82%ba%e6%9b%b4%e5%a5%bd%e7%9a%84%e8%87%aa%e5%b7%b1-%e8%a9%95%e8%ab%96%e5%8d%80%e6%84%9f%e5%8b%95%ef%bc%9a%e5%a0%85%e6%8c%81%e6%9c%80/" target="_blank" rel="noopener noreferrer">霸軒鼓勵粉絲成為更好的自己 評論區感動：堅持最重要！</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/opinion-leadership/instagram-kol/%e5%b0%8f%e6%9e%97%e9%86%ac%e6%9b%acbigbang%e6%bc%94%e5%94%b1%e6%9c%83%e7%9b%b4%e6%8b%8d%e7%8d%b2%e6%9c%ac%e4%ba%ba%e6%8c%89%e8%ae%9a%ef%bc%81-%e7%8e%8b%e4%b8%80%e5%8d%9a%e5%81%b4%e6%8b%8d%e5%88%86/" target="_blank" rel="noopener noreferrer">小林醬曬BIGBANG演唱會直拍獲本人按讚！ 王一博側拍分享香奈兒秀場氛圍</a>
+<div class="post-who">10/05–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/opinion-leadership/instagram-kol/%e7%8e%8b%e4%b8%80%e5%8d%9a%e8%b3%bd%e8%bb%8a%e5%a5%aa%e5%86%a0%e7%b2%89%e7%b5%b2%e7%a5%9d%e8%b3%80-%e8%98%ad%e5%b6%bc%e9%80%97%e8%b6%a3%e8%88%b9%e5%90%8d%e7%b6%b2%e5%8f%8b%e7%ac%91%e7%bf%bb/" target="_blank" rel="noopener noreferrer">王一博賽車奪冠粉絲祝賀 蘭嶼逗趣船名網友笑翻</a>
+<div class="post-who">09/28–10/04</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/instagram%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/" target="_blank" rel="noopener noreferrer">Instagram 意見領袖排行榜 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <a class="brief-hero" href="https://www.social-lab.cc/2026/10/opinion-leadership/youtube-kol/joeman%e6%9c%80%e8%8f%9c%e5%93%a1%e5%b7%a5%e8%98%8b%e6%9e%9c%e5%87%ba%e5%b7%ae%e5%85%a8%e7%a8%8b%e7%8b%82%e5%90%83-%e5%a4%a0%e7%b6%ad%e6%a0%b9%e6%9d%bf%e8%b1%86%e8%85%90%e8%ae%8a%e8%84%86%e7%a7%98/" target="_blank" rel="noopener noreferrer">
+      <img src="../../img/2026-10-25/b6843bdcad2bb5f1.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">YouTube 意見領袖</span>
+    </a>
+    <div class="brief-body">
+      <ul class="brief-list">
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/opinion-leadership/youtube-kol/joeman%e6%9c%80%e8%8f%9c%e5%93%a1%e5%b7%a5%e8%98%8b%e6%9e%9c%e5%87%ba%e5%b7%ae%e5%85%a8%e7%a8%8b%e7%8b%82%e5%90%83-%e5%a4%a0%e7%b6%ad%e6%a0%b9%e6%9d%bf%e8%b1%86%e8%85%90%e8%ae%8a%e8%84%86%e7%a7%98/" target="_blank" rel="noopener noreferrer">Joeman最菜員工蘋果出差全程狂吃 夠維根板豆腐變脆秘訣大公開</a>
+<div class="post-who">10/5–10/11</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/10/opinion-leadership/youtube-kol/%e5%8f%aa%e8%83%bd%e5%96%9d%e9%85%92%e7%9a%84%e5%9c%96%e6%9b%b8%e9%a4%a8%e8%a8%aa%e6%b2%88%e4%bc%af%e6%b4%8b-%e5%be%9e%e6%94%bf%e6%b2%bb%e5%b7%a5%e4%bd%9c%e8%81%8a%e5%88%b0%e5%80%8b%e4%ba%ba%e7%94%9f/" target="_blank" rel="noopener noreferrer">只能喝酒的圖書館訪沈伯洋 從政治工作聊到個人生活？</a>
+<div class="post-who">10/12–10/18</div>        </li>
+        <li>
+          <a href="https://www.social-lab.cc/2026/09/opinion-leadership/youtube-kol/joeman%e8%a6%aa%e8%a9%95-iphone-18-pro-%e6%8f%9b%e4%b8%8d%e6%8f%9b-%e9%a4%93%e5%88%b0%e6%89%81%e7%9a%84%e6%97%a5%e6%9c%ac%e7%9b%b8%e6%92%b2%e5%8a%9b%e5%a3%ab%e7%8b%82%e5%97%91%e5%8f%b0%e7%81%a3/" target="_blank" rel="noopener noreferrer">Joeman親評 iPhone 18 Pro 換不換 餓到扁的日本相撲力士狂嗑台灣牛排？</a>
+<div class="post-who">09/7–09/13</div>        </li>
+      </ul>
+      <a class="brief-more" href="https://www.social-lab.cc/youtube%e4%ba%ba%e6%b0%a3%e6%84%8f%e8%a6%8b%e9%a0%98%e8%a2%96%e6%8e%92%e8%a1%8c%e6%a6%9c/" target="_blank" rel="noopener noreferrer">YouTube 意見領袖排行榜 →</a>
+    </div>
+  </article>
+</section>
+
+<h2 class="cat" id="kol">人氣意見領袖 TOP 3</h2>
+<p class="note">Social Lab 依社群聲量統計的各平台人氣意見領袖前三名。</p>
+<section class="briefs compact">
+  <article class="brief">
+    <div class="brief-body">
+      <span class="brief-tag plain">Facebook</span>
+      <ol class="kol-list">
+<li>賈永婕的跑跳人生</li><li>沈春華 Live Show</li><li>蔡英文 Tsai Ing-wen</li>      </ol>
+      <a class="brief-more" href="https://www.social-lab.cc/kol_ranking/" target="_blank" rel="noopener noreferrer">完整榜單 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <div class="brief-body">
+      <span class="brief-tag plain">Instagram</span>
+      <ol class="kol-list">
+<li>霸軒BAXUAN (@baxuan_ig)</li><li>Jay Chou 周杰倫 (@jaychou)</li><li>翊 婷 (@yiting5199)</li>      </ol>
+      <a class="brief-more" href="https://www.social-lab.cc/kol_ranking/" target="_blank" rel="noopener noreferrer">完整榜單 →</a>
+    </div>
+  </article>
+  <article class="brief">
+    <div class="brief-body">
+      <span class="brief-tag plain">YouTube</span>
+      <ol class="kol-list">
+<li>只能喝酒的圖書館</li><li>健人蓋伊</li><li>阿慈車庫-Dream garage</li>      </ol>
+      <a class="brief-more" href="https://www.social-lab.cc/kol_ranking/" target="_blank" rel="noopener noreferrer">完整榜單 →</a>
+    </div>
+  </article>
+</section>
+
+<h2 class="cat" id="bsky">Bluesky 熱門話題</h2>
+<p class="note">Bluesky 的全站熱門話題，以英語圈的娛樂、體育、政治為主，僅供參考。</p>
+<div class="pills">
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/a478bd2b6a1b"
+     target="_blank" rel="noopener noreferrer">
+    <b>Push to vote early in US election</b>
+    <span>43,240 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/5417c6b9b399"
+     target="_blank" rel="noopener noreferrer">
+    <b>Spooky month stream schedules</b>
+    <span>20,094 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/930c3797b762"
+     target="_blank" rel="noopener noreferrer">
+    <b>First five role-playing games played</b>
+    <span>7,882 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/ba5c7b6fa6e5"
+     target="_blank" rel="noopener noreferrer">
+    <b>NFL Week 7 picks and previews</b>
+    <span>6,819 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/d42821a0c937"
+     target="_blank" rel="noopener noreferrer">
+    <b>Storm Boelo hits the UK</b>
+    <span>2,763 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/1f093ef18136"
+     target="_blank" rel="noopener noreferrer">
+    <b>Trump praises RFK Jr.&#39;s physique</b>
+    <span>2,490 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/419227c4b2ac"
+     target="_blank" rel="noopener noreferrer">
+    <b>Sonic the Hedgehog fan creations</b>
+    <span>2,321 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/f88ed544be51"
+     target="_blank" rel="noopener noreferrer">
+    <b>Letterboxd Friday recent watches</b>
+    <span>1,706 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/88ba45fd7f99"
+     target="_blank" rel="noopener noreferrer">
+    <b>Obama rallies in Cleveland</b>
+    <span>854 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/7f655298a665"
+     target="_blank" rel="noopener noreferrer">
+    <b>Fire hits Hitler&#39;s Eagle&#39;s Nest</b>
+    <span>766 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/63b6e01e6880"
+     target="_blank" rel="noopener noreferrer">
+    <b>West Coast sunrise and sunset times</b>
+    <span>129 篇</span>
+  </a>
+  <a class="pill" href="https://bsky.app/profile/did:plc:qrz3lhbyuxbeilrc6nekdqme/feed/71b4e8b96d21"
+     target="_blank" rel="noopener noreferrer">
+    <b>Trump&#39;s &#34;shit house countries&#34; remark</b>
+    <span>120 篇</span>
+  </a>
+</div>
+
+<h2 class="cat" id="posts">AI 熱門貼文（Bluesky）</h2>
+<p class="note">以 30 小時內、依讚數與轉發數排序，已過濾掉 AI 繪圖標籤與明顯洗版內容。</p>
+<ul class="posts">
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/altstream.online" target="_blank" rel="noopener noreferrer">AltStream.Online</a>
+        <span>@altstream.online</span>
+· 10/24 15:24· 命中「LLM」      </div>
+      <p class="post-text">Twitch continues to do our marketing for us I see. 
+
+&#34;we don&#39;t want to make our own tools, bet we can get someone else to pay for the LLM slop too&#34; - twitch probably. 
+
+Meanwhile, our site is made by a single human dev with assistance from community members who actually know what they&#39;re doing.</p>
+      <div class="post-stats">
+        <span>♥ 646</span>
+        <span>↻ 265</span>
+        <span>💬 19</span>
+<a href="https://bsky.app/profile/altstream.online/post/3mym5xmtrfs26" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/animalonline.bsky.social" target="_blank" rel="noopener noreferrer">animal from the international network</a>
+        <span>@animalonline.bsky.social</span>
+· 10/24 05:02· 命中「NVIDIA AI」      </div>
+      <p class="post-text">three sources coming to the same conclusion :) :) :)</p>
+      <div class="post-stats">
+        <span>♥ 641</span>
+        <span>↻ 242</span>
+        <span>💬 13</span>
+<span>🔗 respawnfirst.com</span><a href="https://bsky.app/profile/animalonline.bsky.social/post/3myl3amsids27" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/emilymbender.bsky.social" target="_blank" rel="noopener noreferrer">Emily M. Bender</a>
+        <span>@emilymbender.bsky.social</span>
+· 10/24 22:13· 命中「LLM」      </div>
+      <p class="post-text">&#34;I understand that there have been some experiments showing that LLM review may have similar outcomes to human peer review, but who cares? Either scholarship, research and publishing are human enterprises or they aren’t.&#34;
+
+www.insidehighered.com/opinion/colu...
+
+&gt;&gt;</p>
+      <div class="post-stats">
+        <span>♥ 644</span>
+        <span>↻ 147</span>
+        <span>💬 16</span>
+<span>🔗 insidehighered.com</span><a href="https://bsky.app/profile/emilymbender.bsky.social/post/3mymutb22bk2r" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/robertscotthorton.bsky.social" target="_blank" rel="noopener noreferrer">Scott Horton</a>
+        <span>@robertscotthorton.bsky.social</span>
+· 10/24 10:22· 命中「NVIDIA AI」      </div>
+      <p class="post-text">SpaceX, the biggest Ponzi scheme in Wall Street history
+• SpaceX&#39;s efforts to finalize $40bn off-balance-sheet debt structure for its artificial intelligence buildout have been complicated by recent market turmoil.
+• The transaction is designed to fund the purchase of Nvidia Corp&#39;s chips through a</p>
+      <div class="post-stats">
+        <span>♥ 414</span>
+        <span>↻ 215</span>
+        <span>💬 28</span>
+<span>🔗 bloomberg.com</span><a href="https://bsky.app/profile/robertscotthorton.bsky.social/post/3myln3p3foc23" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/robertscotthorton.bsky.social" target="_blank" rel="noopener noreferrer">Scott Horton</a>
+        <span>@robertscotthorton.bsky.social</span>
+· 10/24 08:37· 命中「OpenAI」      </div>
+      <p class="post-text">Plutocracy in action. Elon Musk instructs Ken Paxton, attorney general of Texas, whose campaign is being funded almost entirely by Elon Musk, to go after his principal business rival, Sam Altman and OpenAI, and Paxton does exactly as instructed. www.politico.com/news/2026/10...</p>
+      <div class="post-stats">
+        <span>♥ 269</span>
+        <span>↻ 146</span>
+        <span>💬 10</span>
+<span>🔗 politico.com</span><a href="https://bsky.app/profile/robertscotthorton.bsky.social/post/3mylhb2sq7c2t" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/statuscoupnews.bsky.social" target="_blank" rel="noopener noreferrer">Status Coup News</a>
+        <span>@statuscoupnews.bsky.social</span>
+· 10/25 00:31· 命中「OpenAI」      </div>
+      <p class="post-text">On the ground at the AI Walkout outside OpenAI headquarters, Status Coup reporter Jon Farina interviewed David Krueger of Evitable. Krueger challenged the notion that AI is unpreventable, predicting that humanity will soon look back and question why the technology was created at all.</p>
+      <div class="post-stats">
+        <span>♥ 304</span>
+        <span>↻ 121</span>
+        <span>💬 18</span>
+<a href="https://bsky.app/profile/statuscoupnews.bsky.social/post/3myn4lghykc26" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/courtneymilan.com" target="_blank" rel="noopener noreferrer">Courtney Milan</a>
+        <span>@courtneymilan.com</span>
+· 10/24 08:22· 命中「Anthropic」      </div>
+      <p class="post-text">Hello claimants in the Anthropic copyright suit!
+
+The parties filed a stipulated agreement asking for an update to the website.
+
+In this stipulation, there are two important things (although there are more that might matter for individuals).</p>
+      <div class="post-stats">
+        <span>♥ 232</span>
+        <span>↻ 106</span>
+        <span>💬 6</span>
+<a href="https://bsky.app/profile/courtneymilan.com/post/3mylgg3c6yk26" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/kevinmkruse.bsky.social" target="_blank" rel="noopener noreferrer">Kevin M. Kruse</a>
+        <span>@kevinmkruse.bsky.social</span>
+· 10/25 00:36· 命中「Gemini」      </div>
+      <p class="post-text">Really persuaded by this Gemini ad that shows it can help Mr. Beast determine his many gallons of slime he needs to fill a swimming pool. 
+
+That is absolutely something I need in my life.</p>
+      <div class="post-stats">
+        <span>♥ 301</span>
+        <span>↻ 12</span>
+        <span>💬 25</span>
+<a href="https://bsky.app/profile/kevinmkruse.bsky.social/post/3myn4snkeo22e" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/404media.co" target="_blank" rel="noopener noreferrer">404 Media</a>
+        <span>@404media.co</span>
+· 10/25 05:30· 命中「Claude AI」      </div>
+      <p class="post-text">companies to employees a few months ago: you better use AI
+
+companies now: wait, wait, just $29 a month on claude pls
+www.404media.co/accenture-te...</p>
+      <div class="post-stats">
+        <span>♥ 205</span>
+        <span>↻ 52</span>
+        <span>💬 11</span>
+<span>🔗 404media.co</span><a href="https://bsky.app/profile/404media.co/post/3mynnajwlvy2n" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/cypheroftyr.bsky.social" target="_blank" rel="noopener noreferrer">Tanya D. || Writer || Narrative Designer</a>
+        <span>@cypheroftyr.bsky.social</span>
+· 10/25 01:21· 命中「OpenAI」      </div>
+      <p class="post-text">Twitch and OpenAI are unfortunately teaming up to see what users can build for Twitch with AI. To vote against this happening, vote on this UserVoice post: 
+
+twitch.uservoice.com/forums/92338...</p>
+      <div class="post-stats">
+        <span>♥ 83</span>
+        <span>↻ 81</span>
+        <span>💬 0</span>
+<span>🔗 twitch.uservoice.com</span><a href="https://bsky.app/profile/cypheroftyr.bsky.social/post/3myn7dlygzc2s" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/cortanav.bsky.social" target="_blank" rel="noopener noreferrer">cortana.SQL</a>
+        <span>@cortanav.bsky.social</span>
+· 10/25 04:51· 命中「LLM」      </div>
+      <p class="post-text">The nuanced discussion on LLM can’t happen for a long time because the education around it has been deliberately muddied in order to permit massive methods of harm.
+
+There is no accessible source of truth for the general public regarding how LLM works, &amp;&amp; how it different from ML and AI.</p>
+      <div class="post-stats">
+        <span>♥ 153</span>
+        <span>↻ 41</span>
+        <span>💬 4</span>
+<a href="https://bsky.app/profile/cortanav.bsky.social/post/3mynl2x7szc2e" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/zachbussey.tos.gg" target="_blank" rel="noopener noreferrer">Zach Bussey 🍁</a>
+        <span>@zachbussey.tos.gg</span>
+· 10/24 05:23· 命中「OpenAI」      </div>
+      <p class="post-text">OpenAI and Twitch are teaming up to see what developers can build for the Twitch community with AI.
+
+The top five will be featured at Twitchcon.</p>
+      <div class="post-stats">
+        <span>♥ 88</span>
+        <span>↻ 50</span>
+        <span>💬 65</span>
+<a href="https://bsky.app/profile/zachbussey.tos.gg/post/3myl4fxbe6k2g" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+    <div class="post-thumb">
+      <img src="../../img/2026-10-25/b381dfccc26a7426.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/kaseygifford.bsky.social" target="_blank" rel="noopener noreferrer">Kasey Gifford</a>
+        <span>@kaseygifford.bsky.social</span>
+· 10/25 05:12· 命中「Anthropic」      </div>
+      <p class="post-text">Dinosaurs must kill exactly fifty (50) children before being shut down, Jurassic Park suggests
+
+novaramedia.com/2026/10/21/r...</p>
+      <div class="post-stats">
+        <span>♥ 113</span>
+        <span>↻ 35</span>
+        <span>💬 7</span>
+<span>🔗 novaramedia.com</span><a href="https://bsky.app/profile/kaseygifford.bsky.social/post/3mynmbbqb7k2o" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/texastribune.org" target="_blank" rel="noopener noreferrer">Texas Tribune</a>
+        <span>@texastribune.org</span>
+· 10/24 03:52· 命中「OpenAI」      </div>
+      <p class="post-text">New: Attorney General Ken Paxton is suing OpenAI, the maker of ChatGPT, for allegedly deceiving and harming Texans.
+
+CEO Sam Altman and ChatGPT are top competitors to Elon Musk, the tech billionaire fueling Paxton’s U.S. Senate campaign.</p>
+      <div class="post-stats">
+        <span>♥ 75</span>
+        <span>↻ 51</span>
+        <span>💬 18</span>
+<span>🔗 texastribune.org</span><a href="https://bsky.app/profile/texastribune.org/post/3mykxdfdc2c2b" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/amirtalai.bsky.social" target="_blank" rel="noopener noreferrer">Amir Talai</a>
+        <span>@amirtalai.bsky.social</span>
+· 10/24 02:15· 命中「AI agent」      </div>
+      <p class="post-text">LMAO imagine giving an ai agent your BANK PASSWORD!!
+People have lost their everloving minds</p>
+      <div class="post-stats">
+        <span>♥ 128</span>
+        <span>↻ 20</span>
+        <span>💬 15</span>
+<a href="https://bsky.app/profile/amirtalai.bsky.social/post/3mykrvrxeus2n" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/biggercabunga.bsky.social" target="_blank" rel="noopener noreferrer">🟡⚪𝑩𝑶𝑾𝑨𝑪𝑼𝑵𝑮𝑨🟣⚫</a>
+        <span>@biggercabunga.bsky.social</span>
+· 10/24 16:01· 命中「Claude AI」      </div>
+      <p class="post-text">Fuck AI
+Fuck chatGPT
+Fuck Claude
+Fuck vibecoding
+Fuck your fake ass recomps you spent 6 hours making
+Fuck Sam Altman
+Fuck Tim Sweeney
+Fuck anybody and everybody still keeping this shit alive
+
+We need this shit to crumble ASAP</p>
+      <div class="post-stats">
+        <span>♥ 93</span>
+        <span>↻ 31</span>
+        <span>💬 0</span>
+<a href="https://bsky.app/profile/biggercabunga.bsky.social/post/3myma2qgbjk2c" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/ouij.bsky.social" target="_blank" rel="noopener noreferrer">Luigi de Guzman</a>
+        <span>@ouij.bsky.social</span>
+· 10/24 02:10· 命中「LLM」      </div>
+      <p class="post-text">no LLM could hallucinate anything as surreal as literally everything I read about college football</p>
+      <div class="post-stats">
+        <span>♥ 113</span>
+        <span>↻ 12</span>
+        <span>💬 5</span>
+<a href="https://bsky.app/profile/ouij.bsky.social/post/3mykrnjynxc2k" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+  <li class="post">
+    <div class="post-body">
+      <div class="post-who">
+        <a href="https://bsky.app/profile/peark.es" target="_blank" rel="noopener noreferrer">George Pearkes</a>
+        <span>@peark.es</span>
+· 10/24 02:25· 命中「OpenAI」      </div>
+      <p class="post-text">*TEXAS AG SUES OPENAI AND CEO SAM ALTMAN
+*TEXAS AG SUES OPENAI FOR &#39;NEGATIVE SIDE EFFECTS ON CONSUMERS&#39;</p>
+      <div class="post-stats">
+        <span>♥ 112</span>
+        <span>↻ 9</span>
+        <span>💬 14</span>
+<a href="https://bsky.app/profile/peark.es/post/3myksgnqutf25" target="_blank" rel="noopener noreferrer">看原文 →</a>      </div>
+    </div>
+  </li>
+</ul>
+
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 熱搜來自 Google Trends（TW）、
+    熱門話題來自網路溫度計 DailyView、平台排行來自 Social Lab（OpView）、
+    話題與貼文來自 Bluesky 公開 API。</div>
+  <div class="srcs">Threads 未納入：官方 API 沒有 trending 端點，且熱度數據（讚／回覆）只能讀自己的貼文，無法排序熱門。</div>
+</footer>
+</div>
+</body>
+</html>

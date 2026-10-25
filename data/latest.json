@@ -1,1368 +1,126 @@
 {
- "generated_at": "2026-10-24T08:10:16.895598+08:00",
- "date": "2026-10-24",
+ "generated_at": "2026-10-25T08:10:10.196864+08:00",
+ "date": "2026-10-25",
  "window_hours": 30,
  "timezone": "Asia/Taipei",
- "topic_count": 40,
- "article_count": 48,
+ "topic_count": 27,
+ "article_count": 27,
  "topics": [
   {
-   "key": "t0032",
-   "title": "1Password擴大AI代理登入支援，Muse、Grok Bot率先整合",
-   "summary": "密碼管理業者1Password發表1Password for Agents，將AI代理的登入支援從Claude擴大至其他服務。Meta Muse與SpaceXSI Grok Bot的整合功能將在未來幾天陸續推出，Anthropic Claude Duet、OpenAI ChatGPT Work及dots也列入後續支援名單。使用者同意後，AI代理便能登入網站執行任務，不必直接取得密碼。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "password",
-    "anthropic",
-    "agent",
-    "openai",
-    "skills",
-    "muse"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "iThome",
-    "TechOrange 科技報橘"
-   ],
-   "articles": [
-    {
-     "title": "1Password擴大AI代理登入支援，Muse、Grok Bot率先整合",
-     "url": "https://www.ithome.com.tw/news/179942",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-10-23T00:10:45+00:00",
-     "summary": "密碼管理業者1Password發表1Password for Agents，將AI代理的登入支援從Claude擴大至其他服務。Meta Muse與SpaceXSI Grok Bot的整合功能將在未來幾天陸續推出，Anthropic Claude Duet、OpenAI ChatGPT Work及dots也列入後續支援名單。使用者同意後，AI代理便能登入網站執行任務，不必直接取得密碼。",
-     "image": "",
-     "id": "20966b72d432",
-     "tags": []
-    },
-    {
-     "title": "AI Agent 遇到登入畫面就卡關？1Password 推免交密碼新機制，串接 Meta、OpenAI",
-     "url": "https://techorange.com/2026/10/23/1password-for-agents-ai",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-10-22T21:20:32+00:00",
-     "summary": "當使用者要求 AI Agent（AI 代理）安排活動、管理行程或處理工作任務時，Agent 可能需要登入多個網站。然而，一旦遇到登入畫面，使用者往往得接手輸入帳號密碼，或直接將密碼提供給 Agent；前者中斷自動化流程，後者則可能使敏感憑證暴露於 AI 模型及相關系統。 為解決這項難題，密碼管理業者 1Password 宣布推出 1Password for Agents，讓 AI Agent 在使用者核准後代為登入網站，卻不必直接取得帳號密碼，並將這項能力擴展至 Meta、OpenAI、Anthropic 等多個 AI 平台。不過，讓 Agent 不必接觸密碼就能登入網站，是否就代表它已獲得網站認可的操作權限？ AI Agent 為何不取得密碼，也能代替使用者登入？ 根據 1Password 官方說明，當 AI Agent 遇到登入頁面時，可以向 1Password 提出憑證使用請求。使用者確認並核准指定的登入資料後，1Password 便會直接將帳密填入目標網站，讓 Agent 繼續執行任務，而不必將明文密碼交給 AI 模型。 《TechCrunch》進一步報導，Agent 提出登入請求時，會向 1Password 傳送專屬數位金鑰，以確認代理身分，再由使用者核准。這讓 Agent 能透過指定帳戶登入網站，卻不能直接取得密碼，也無法因此存取使用者的整個密碼保險庫。 1Passwo",
-     "image": "https://techorange.com/app/uploads/2026/10/82b7b7a380005d5d-720x402.png",
-     "id": "c403c0b07fed",
-     "tags": [
-      "AI 人工智慧"
-     ]
-    },
-    {
-     "title": "Anthropic捐出Agent Skills標準，OpenAI、Google工程師也將參與維護",
-     "url": "https://www.ithome.com.tw/news/179921",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-10-22T20:10:45+00:00",
-     "summary": "Anthropic將AI代理技能開放標準Agent Skills捐給Linux基金會旗下的代理式AI基金會（AAIF），後續改由基金會管理，並由不同公司的工程師參與維護。Anthropic表示，目前已有超過70個AI代理平臺採用該標準，包括ChatGPT、Cursor、GitHub Copilot及VS Code。",
-     "image": "",
-     "id": "720ac5c930b8",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0004",
-   "title": "Kimi K3.1 Pro 正式发布：月之暗面最强 3 万亿级模型，编程智能体测评超 GPT-6",
-   "summary": "IT之家 10 月 24 日消息，今天（24 日）凌晨，月之暗面 Kimi 宣布正式推出 Kimi K3.1 系列的第一个模型 ——K3.1 Pro，也是公司 迄今能力最强的 3 万亿级参数模型 ，支持 100 万上下文。 高速版模型 Kimi K3.1 Pro Highspeed 同步推出，同等智能， 输出速度约 2~3 倍 。 即日起，用户可通过 kimi.com 、Kimi App、Kimi Work、Kimi Code 和 Kimi API ( platform.kimi.com )，使用 Kimi K3.1 Pro 和 Kimi K3.1 Pr",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "kimi",
-    "k3.1",
-    "3.1",
-    "pro",
-    "introducing",
-    "gpt-6"
-   ],
-   "image": "img/2026-10-24/67a07cba8e6732c4.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家",
-    "Simon Willison"
-   ],
-   "articles": [
-    {
-     "title": "Kimi K3.1 Pro 正式发布：月之暗面最强 3 万亿级模型，编程智能体测评超 GPT-6",
-     "url": "https://www.ithome.com/1/017/284.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T15:08:43+00:00",
-     "summary": "IT之家 10 月 24 日消息，今天（24 日）凌晨，月之暗面 Kimi 宣布正式推出 Kimi K3.1 系列的第一个模型 ——K3.1 Pro，也是公司 迄今能力最强的 3 万亿级参数模型 ，支持 100 万上下文。 高速版模型 Kimi K3.1 Pro Highspeed 同步推出，同等智能， 输出速度约 2~3 倍 。 即日起，用户可通过 kimi.com 、Kimi App、Kimi Work、Kimi Code 和 Kimi API ( platform.kimi.com )，使用 Kimi K3.1 Pro 和 Kimi K3.1 Pro Highspeed 模型。完整模型权重将于 11 月 4 日前发布。 IT之家从官方介绍获悉，在代码、Agent 和知识类基准上，K3.1 Pro 达到或接近最强闭源模型的水平 。Terminal-Bench 4.0 通过真实环境中资源受限的终端任务考察编程智能体的能力，每项任务均设有严格的专项测试。K3.1 Pro 在此项评估中得分 65.7%，超过 GPT-6 Astra（58.2%），与 Claude Opus 5.5（66.4%）仅有微弱差距。 Kimi Code Bench 3.0 Long-horizon 则是内部的基准测试，覆盖多种工程领域，重点考察编程智能体的多步执行、工具调用和端到端问题解决能力。K3.1 Pr",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/9ea45d0c-47ce-495c-939a-2dc7afde4a7e.png",
-     "id": "ff391d7bcff9",
-     "tags": []
-    },
-    {
-     "title": "Introducing Kimi K3.1 Pro",
-     "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-10-23T11:40:54+00:00",
-     "summary": "Introducing Kimi K3.1 Pro Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise \"Full model weights will be released by Nov 4, 2026\". They're also offering a \"Highspeed\" version that's 2-3x faster, at twice the price (except for input token cache hits, which are priced the same). The US dollar pricing is $2.00/million tokens for input and $10/million for output - the same as GPT-6.1 Sol and half the price of Claude Opus 5.5. Moonshot's own benchmarks show Kimi as approximately level with Opus 5.5 and GPT-6 Astra - beating them on a few benchmarks, coming ",
-     "image": "https://static.simonwillison.net/static/2026-10-23/image-2.png",
-     "id": "6c51129e93f6",
-     "tags": [
-      "ai",
-      "generative-ai",
-      "llms",
-      "llm",
-      "llm-pricing"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0005",
-   "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-   "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "models",
-    "internet",
-    "frontier",
-    "openai",
-    "longer",
-    "train"
-   ],
-   "image": "img/2026-10-24/a1238b125bd2dd0a.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-     "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-23T15:05:49+00:00",
-     "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-     "image": "",
-     "id": "f699a3e5cdaf",
-     "tags": [
-      "AI"
-     ]
-    },
-    {
-     "title": "OpenAI now trains its frontier AI models with no internet access",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-23T13:11:07+00:00",
-     "summary": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web content \"without risk of affecting external systems.\" OpenAI paused training its frontier […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK155_OPEN_AI_2025_CVirgiia_B_d6ffc8.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "f9113fa394af",
-     "tags": [
-      "AI",
-      "News",
-      "OpenAI"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0009",
-   "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-   "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or G",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "gmail",
-    "google",
-    "might",
-    "updated",
-    "privacy",
-    "policy"
-   ],
-   "image": "img/2026-10-24/f461e6cf9c53c8fd.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI",
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-     "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-10-23T12:19:55+00:00",
-     "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Google-ads-privacy.png",
-     "id": "6643f32ed82d",
-     "tags": [
-      "AI",
-      "Google",
-      "Tech",
-      "advertising",
-      "Artificial Intelligence"
-     ]
-    },
-    {
-     "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-     "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-23T08:52:55+00:00",
-     "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its promise about not using your Drive, Gmail, or Google Photos for personalized ads. While the previous […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK093_GOOGLE_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "55f38e2b0de9",
-     "tags": [
-      "AI",
-      "Google",
-      "News",
-      "Tech"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0019",
-   "title": "OpenAI 联合研究机构部署数千个 AI 智能体：32 分钟分析数百万个小鼠脑细胞，相当于人类数月时间",
-   "summary": "IT之家 10 月 23 日消息，OpenAI 联合 PerturbAI 和斯克里普斯研究所（Scripps Research），利用数千个 AI 智能体分析数百万个小鼠脑细胞的生物学数据，整个分析过程仅耗时 32 分钟。 研究团队估计，如果由人类研究人员逐项分析实验结果并检索相关文献，完成同等工作可能需要数月到一年。 根据 OpenAI 10 月 21 日发布的介绍，这项研究使用了专为生命科学研究设计的 GPT-Rosalind 模型，分析一份覆盖整个小鼠大脑的 CRISPR 图谱。该图谱记录了不同基因受到干预后，各类脑细胞产生的变化，有助于研究人员了",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "gpt-rosalind",
-    "agent",
-    "openai",
-    "perturbai",
-    "scripps"
-   ],
-   "image": "img/2026-10-24/4ea83af072b0ab35.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家",
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "OpenAI 联合研究机构部署数千个 AI 智能体：32 分钟分析数百万个小鼠脑细胞，相当于人类数月时间",
-     "url": "https://www.ithome.com/1/017/274.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T06:43:44+00:00",
-     "summary": "IT之家 10 月 23 日消息，OpenAI 联合 PerturbAI 和斯克里普斯研究所（Scripps Research），利用数千个 AI 智能体分析数百万个小鼠脑细胞的生物学数据，整个分析过程仅耗时 32 分钟。 研究团队估计，如果由人类研究人员逐项分析实验结果并检索相关文献，完成同等工作可能需要数月到一年。 根据 OpenAI 10 月 21 日发布的介绍，这项研究使用了专为生命科学研究设计的 GPT-Rosalind 模型，分析一份覆盖整个小鼠大脑的 CRISPR 图谱。该图谱记录了不同基因受到干预后，各类脑细胞产生的变化，有助于研究人员了解基因功能及其与疾病之间的潜在联系。 研究团队采用分布式 AI 智能体架构，将大量分析任务拆分后并行执行。每个智能体负责研究一种基因干预，分析相关细胞的反应，并检索科学文献，为观察到的变化寻找可能的生物学解释。 随后，研究人员将各智能体的报告整合为一份名为“Reasoning Atlas”的推理图谱，关联基因、细胞变化、参考文献和潜在作用机制。 研究人员发现，分布式智能体不仅能够复现已有研究中的部分结论，还提出了一些值得进一步验证的线索。例如，Tsc1 和 Tsc2 是共同参与调控细胞生长、代谢等过程的两个基因，但研究发现，在小脑部分神经元中，干预 Tsc2 会改变多种与神经元通信有关的基因表达，而干预 Tsc1 并未产生同等程度的",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/023a8615-55eb-4a77-8e7b-a7e82658d203.png?x-bce-process=image/format,f_auto",
-     "id": "5ed3e655fb87",
-     "tags": []
-    },
-    {
-     "title": "OpenAI 動用近 2 千個 GPT-Rosalind 代理，32 分鐘完成小鼠全腦基因圖譜分析",
-     "url": "https://technews.tw/2026/10/23/openai-runs-1946-gpt-rosalind-agents-on-a-mouse-brain-atlas",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-10-22T19:50:19+00:00",
-     "summary": "OpenAI 與藥物開發新創 PerturbAI、斯克里普斯研究所（Scripps Research）合作，讓 […]",
-     "image": "",
-     "id": "8122b5f241db",
-     "tags": [
-      "AI 人工智慧",
-      "ChatGPT",
-      "OpenAI",
-      "生物科技",
-      "GPT-Rosalind"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0042",
-   "title": "Hugging Face 推出開源模型 Carbon-X：DNA 基準測試逼近 GPT-6.1 Sol、成本估僅 1/1,800",
-   "summary": "AI 模型分享與開發平台 Hugging Face 近日推出開源 AI 模型 Carbon-X，讓研究人員能貼上 DNA 序列，以自然語言提出問題，並取得模型的解讀、預測或說明。Hugging Face 資深研究科學家 Lewis Tunstall 接受《Business Insider》採訪時表示，Carbon-X 是「首創」的模型，結合 DNA 分析與自然語言，讓研究人員基本上可以「與 DNA 對話」。 Carbon-X 由 Hugging Face、中國中關村學院（Zhongguancun Academy），以及義大利 Telethon 遺傳與醫學",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "carbon-x",
-    "dna",
-    "hugging",
-    "face",
-    "opensource"
-   ],
-   "image": "img/2026-10-24/02c126aca5f939fd.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechOrange 科技報橘",
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "Hugging Face 推出開源模型 Carbon-X：DNA 基準測試逼近 GPT-6.1 Sol、成本估僅 1/1,800",
-     "url": "https://techorange.com/2026/10/23/hugging-face-bio-carbon-x-dna",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-10-22T20:36:15+00:00",
-     "summary": "AI 模型分享與開發平台 Hugging Face 近日推出開源 AI 模型 Carbon-X，讓研究人員能貼上 DNA 序列，以自然語言提出問題，並取得模型的解讀、預測或說明。Hugging Face 資深研究科學家 Lewis Tunstall 接受《Business Insider》採訪時表示，Carbon-X 是「首創」的模型，結合 DNA 分析與自然語言，讓研究人員基本上可以「與 DNA 對話」。 Carbon-X 由 Hugging Face、中國中關村學院（Zhongguancun Academy），以及義大利 Telethon 遺傳與醫學研究所（Telethon Institute of Genetics and Medicine）與那不勒斯費德里科二世大學（University of Naples Federico II）的研究團隊共同開發。模型擁有 148 億個參數，以阿里巴巴的 Qwen3-14B 為基礎，再以 DNA 序列與自然語言進行訓練，訓練資料涵蓋人類、其他哺乳類、植物與真菌等物種的 DNA 序列。NVIDIA 已於 9 月同意以近 130 億美元收購 Hugging Face。 將 DNA 分析轉化為自然語言對話，基準測試平均得分 […]",
-     "image": "https://techorange.com/app/uploads/2026/10/a0e2c54133122699-720x466.png",
-     "id": "3e0b4b37dbfc",
-     "tags": [
-      "AI 人工智慧"
-     ]
-    },
-    {
-     "title": "用白話文與 DNA 對話，Hugging Face 發表 Carbon-X 助攻基因療法",
-     "url": "https://technews.tw/2026/10/23/hugging-faces-new-ai-model-lets-you-chat-with-dna",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-10-22T19:40:05+00:00",
-     "summary": "Hugging Face 於 10 月 22 日推出一款名為 Carbon-X 的開源 AI 生物模型，主打讓 […]",
-     "image": "",
-     "id": "ab15d390894f",
-     "tags": [
-      "AI 人工智慧",
-      "生物科技",
-      "醫療科技",
-      "Carbon-X",
-      "DNA"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0020",
-   "title": "寒武纪 2026 年第三季度归母净利润 14.04 亿元，同比增长 147.74%",
-   "summary": "IT之家 10 月 23 日消息，寒武纪今日发布 2026 年第三季度（2026 年 7 月～2026 年 9 月）报告： 营业总收入 ：35.31 亿元，同比增长 104.47% 归母净利润 ：14.04 亿元，同比增长 147.74% 扣非净利润 ：13.58 亿元，同比增长 168.13% 经营现金流 ：-8367.79 万元 加权平均净资产收益率 ：9.79% 基本每股收益 ：2.23 元，同比增长 145.05% 稀释每股收益 ：2.21 元，同比增长 145.56% AI 解读 本次财报业绩大幅超出市场预期，营收和归母净利润均实现翻倍以上增长",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "2026",
-    "dram",
-    "compute",
-    "14.04",
-    "147.74"
-   ],
-   "image": "img/2026-10-24/36bc1852dcc31fa1.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "长鑫科技：对全球和中国 DRAM 产业中长期前景保持坚定信心",
-     "url": "https://www.ithome.com/1/017/262.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T05:27:18+00:00",
-     "summary": "IT之家 10 月 23 日消息，据《科创板日报》今日报道，记者今日从长鑫科技方面了解到，从中长期看，AI 对数据吞吐的需求仍在迅速增长，DRAM 作为战略性基础设施的地位将会更加强化；中国作为全球最大的半导体应用市场，提升 DRAM 自给能力也具有重要的现实意义，发展空间广阔。其表示，“这是一个需要耐心、需要长期主义、需要永葆创业精神的行业。 我们对全球和中国 DRAM 产业的中长期前景，保持坚定信心。 ” 据IT之家此前报道， 长鑫科技于 2025 年 10 月宣布量产 LPDDR5X 产品 ，芯片形态提供了覆盖 12GB、16GB、24GB 等多个容量点的解决方案，模组形态的 LPCAMM 产品容量为 16GB 和 32GB。今年 9 月，长鑫存储官宣自主研发的 LPDDR6 芯片已实现量产商用， 首发搭载于 小米 18 Fold 折叠旗舰手机 。 长鑫科技 10 月 16 日发布 2026 年前三季度（2026 年 1 月～2026 年 9 月）业绩预告报告： 营业总收入：2650 亿元 ~2700 亿元， 同比预增 725.96%~741.54% 归母净利润：1310 亿元 ~1325 亿元，同比扭亏为盈 长鑫科技此前在公告中表示，2025 年下半年以来 AI 算力需求快速增长，全球 DRAM 行业景气度大幅提升，产品供不应求、价格大幅上涨；公司稳步推进产能建设、产品研发",
-     "image": "",
-     "id": "e5a8186e81a4",
-     "tags": []
-    },
-    {
-     "title": "寒武纪 2026 年第三季度归母净利润 14.04 亿元，同比增长 147.74%",
-     "url": "https://www.ithome.com/1/017/198.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T02:42:06+00:00",
-     "summary": "IT之家 10 月 23 日消息，寒武纪今日发布 2026 年第三季度（2026 年 7 月～2026 年 9 月）报告： 营业总收入 ：35.31 亿元，同比增长 104.47% 归母净利润 ：14.04 亿元，同比增长 147.74% 扣非净利润 ：13.58 亿元，同比增长 168.13% 经营现金流 ：-8367.79 万元 加权平均净资产收益率 ：9.79% 基本每股收益 ：2.23 元，同比增长 145.05% 稀释每股收益 ：2.21 元，同比增长 145.56% AI 解读 本次财报业绩大幅超出市场预期，营收和归母净利润均实现翻倍以上增长。 公司主营业务说明 寒武纪是本土人工智能算力芯片主要供应商，深耕人工智能芯片产品的研发与技术创新，聚焦于云端推理芯片、边缘芯片等产品的研发与市场化，服务人工智能算力需求场景。 财报核心亮点 营业收入实现大幅增长：2026 年第三季度实现 35.31 亿元，同比增长 104.47%；年初至前三季度累计实现 95.26 亿元，同比增长 106.76%。 归母净利润高速增长：2026 年第三季度实现归属于上市公司股东的净利润 14.04 亿元，同比增长 147.74%；年初至前三季度累计实现归母净利润 37.15 亿元，同比增长 131.49%。 扣非净利润表现亮眼：第三季度扣非归母净利润达到 13.58 亿元，同比增长 168.13%",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/d2328611-b37a-4eaf-8325-978318907694.png?x-bce-process=image/format,f_auto",
-     "id": "2b908b66908f",
-     "tags": []
-    }
-   ]
-  },
-  {
    "key": "t0000",
-   "title": "扎克伯格的 AI 新版图：买下 Sundial 让数据分析变成“聊天”那么简单",
-   "summary": "IT之家 10 月 24 日消息，科技媒体 axios 昨日（10 月 23 日）发布博文，报道称马克 · 扎克伯格的 Meta Platforms 公司已收购 AI 数据分析平台 Sundial，而该平台由两名前 Meta 员工创立。 值得注意的是，Sundial 的两位联合创始人均是 Meta（前 Facebook）的资深旧部：首席执行官 Julie Zhuo 曾任 Meta 产品设计副总裁，Chandra Narayanan 则曾担任 Instagram 及红杉资本的数据分析主管。 Sundial 的核心能力，是让企业通过聊天机器人插件，用自然语言",
+   "title": "PHP 基金会负责人坦言资金不足：仅 1 名全职员工",
+   "summary": "IT之家 10 月 25 日消息，本周，PHP 曝出两处高危漏洞，全球随即紧急行动，保护网站免遭黑客攻击。这件事也让人们看到，这门已有三十年历史的开源编程语言，对互联网而言有多重要。 据估算，全球最高有约七成网站依托 PHP 搭建，但负责维护 PHP 的非营利基金会，经费却十分紧张。 PHP 基金会执行董事伊丽莎白 · 巴伦（Elizabeth Barron）在当地时间周五的邮件采访中表示：“我们只有一名全职员工，也就是我，另外还有十四名大多是兼职的外包人员。”基金会董事会成员都是无薪志愿者，资金来源依靠捐赠与资助。 IT之家注意到，基金会和外部研究人员",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "sundial",
-    "narayanan",
-    "schultz",
-    "meta",
-    "robot",
-    "data"
+    "php",
+    "wiz",
+    "calif"
    ],
-   "image": "img/2026-10-24/57ccb96bfa33a671.webp",
+   "image": "img/2026-10-25/638a6b668cb9f874.webp",
    "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "扎克伯格的 AI 新版图：买下 Sundial 让数据分析变成“聊天”那么简单",
-     "url": "https://www.ithome.com/1/017/294.htm",
+     "title": "PHP 基金会负责人坦言资金不足：仅 1 名全职员工",
+     "url": "https://www.ithome.com/1/017/528.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-23T16:08:21+00:00",
-     "summary": "IT之家 10 月 24 日消息，科技媒体 axios 昨日（10 月 23 日）发布博文，报道称马克 · 扎克伯格的 Meta Platforms 公司已收购 AI 数据分析平台 Sundial，而该平台由两名前 Meta 员工创立。 值得注意的是，Sundial 的两位联合创始人均是 Meta（前 Facebook）的资深旧部：首席执行官 Julie Zhuo 曾任 Meta 产品设计副总裁，Chandra Narayanan 则曾担任 Instagram 及红杉资本的数据分析主管。 Sundial 的核心能力，是让企业通过聊天机器人插件，用自然语言向复杂数据提问，并快速获得可执行的分析结论。对于业务团队而言，无需长期等待集中式数据部门支持，即可自行完成数据洞察，从而加快产品迭代、运营决策和 AI 系统监测。 Meta 近年来持续加码数据与 AI 基础设施。今年 7 月，公司任命前营销负责人 Alex Schultz 为首任首席数据官，并组建了名为“Data Analytics Tooling & Agents”（DATA）的新部门，负责描述性分析、实验测试、AI 产品改进以及关键 AI 系统监控。 Schultz 表示，Sundial 并入后，Narayanan 将负责数据分析工具和智能体（AI agents）相关工作。他在 LinkedIn 上称：“AI 实际上带来了几乎无",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/acf5dc2c-4d13-498f-9e9e-f25cbf6ff019.png?x-bce-process=image/format,f_auto",
-     "id": "eb6185c6bd6a",
+     "published": "2026-10-24T15:27:45+00:00",
+     "summary": "IT之家 10 月 25 日消息，本周，PHP 曝出两处高危漏洞，全球随即紧急行动，保护网站免遭黑客攻击。这件事也让人们看到，这门已有三十年历史的开源编程语言，对互联网而言有多重要。 据估算，全球最高有约七成网站依托 PHP 搭建，但负责维护 PHP 的非营利基金会，经费却十分紧张。 PHP 基金会执行董事伊丽莎白 · 巴伦（Elizabeth Barron）在当地时间周五的邮件采访中表示：“我们只有一名全职员工，也就是我，另外还有十四名大多是兼职的外包人员。”基金会董事会成员都是无薪志愿者，资金来源依靠捐赠与资助。 IT之家注意到，基金会和外部研究人员以及多家企业合作，其中包括 OpenAI、网络安全公司 Wiz 和 Calif，共同排查安全漏洞、协调补丁开发，本周三发布的修复补丁就是这项合作的成果。 网络安全服务商 Cloudflare 称已经监测到数百万次攻击尝试，不过巴伦表示，基金会没有证据表明黑客在漏洞公开前就成功利用这些漏洞，或是攻击已经打好补丁的网站。 她说：“我们和 OpenAI、Wiz、Calif 在这个问题上密切协作，几家机构都没有反馈已修复系统出现异常的情况。” 人工智能对基金会而言，既是助力，也是负担。这些潜伏了十年的漏洞，正是借助人工智能才被研究人员发现，巴伦也提到，AI 提升了程序员的工作效率。 但与此同时，维护人员的工作量也因此增加。现在 PHP 项目",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/8154a0b8-984d-4b9f-bc6a-da43a1366395.png?x-bce-process=image/format,f_auto",
+     "id": "bb130969f694",
      "tags": []
     }
    ]
   },
   {
    "key": "t0001",
-   "title": "谷歌 CEO 皮查伊：距离 AI 能自我改进的“最终状态”，我们还有很长的路要走",
-   "summary": "IT之家 10 月 24 日消息，据《商业内幕》报道，谷歌 CEO 桑达尔 · 皮查伊认为， 距离 AI 能够完全自主地改进自身，还有很长的路要走 。 皮查伊透露，谷歌研究人员开始使用 AI 智能体辅助开发模型，但技术仍处于起步阶段。“我们距离递归自我改进（RSI）的最终形态还很远。准确地说，在模型研发的各个环节，AI 研究人员已经开始与自我改进循环协同工作。可以说，AI 智能体正以一定程度的自动化方式协助研究人员，共同开发模型。” 皮查伊预计，明年还将看到进一步进展。 谷歌联合创始人谢尔盖 · 布林本月早些时候曾谈到，公司的 Flash 系列模型和 G",
+   "title": "BBC《蓝色星球 3》刻意保留瑕疵镜头，和 AI“完美影像”划清界限",
+   "summary": "IT之家 10 月 25 日消息，英国广播公司（BBC）的《蓝色星球 3》纪录片打算保留那些不算完美的镜头，以此证明内容的真实性。该系列前作的标志性特点是画面精美、通透清晰，美得近乎不真实。而人工智能生成内容的一大破绽，就是画面过度精致、毫无瑕疵。为了避开这种观感，《蓝色星球 3》选择如实呈现，不刻意美化。 IT之家注意到，执行制片人伊丽莎白 · 怀特（Elizabeth White）此前接受《卫报》采访时提到，放在以往，水里漂浮的大量浮游生物之类的杂物，就足以让团队剪掉这段素材。或者他们会调整构图，把船只、浮标移出画面，又或是直接判定：“水质条件实在达",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "ceo",
-    "gemini"
+    "bbc"
    ],
-   "image": "",
+   "image": "img/2026-10-25/a0518f187d6a1abc.webp",
    "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "谷歌 CEO 皮查伊：距离 AI 能自我改进的“最终状态”，我们还有很长的路要走",
-     "url": "https://www.ithome.com/1/017/290.htm",
+     "title": "BBC《蓝色星球 3》刻意保留瑕疵镜头，和 AI“完美影像”划清界限",
+     "url": "https://www.ithome.com/1/017/527.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-23T15:37:18+00:00",
-     "summary": "IT之家 10 月 24 日消息，据《商业内幕》报道，谷歌 CEO 桑达尔 · 皮查伊认为， 距离 AI 能够完全自主地改进自身，还有很长的路要走 。 皮查伊透露，谷歌研究人员开始使用 AI 智能体辅助开发模型，但技术仍处于起步阶段。“我们距离递归自我改进（RSI）的最终形态还很远。准确地说，在模型研发的各个环节，AI 研究人员已经开始与自我改进循环协同工作。可以说，AI 智能体正以一定程度的自动化方式协助研究人员，共同开发模型。” 皮查伊预计，明年还将看到进一步进展。 谷歌联合创始人谢尔盖 · 布林本月早些时候曾谈到，公司的 Flash 系列模型和 Gemini 4 已展现出 AI 参与自身研发的能力 。目前，研究人员正与 AI 模型携手开发下一代模型。 IT之家从报道中获悉，今年 4 月，谷歌 曾披露内部新增代码已有 75% 由 AI 生成 。但在皮查伊看来，单纯统计 AI 生成代码的比例已无法准确反映实际情况。“对我们来说，这个数字已经没什么意义，因为现在 经我们处理的每一段代码，都受到 AI 的深刻影响 。” 皮查伊还提到，Gemini 4 Argon 将帮助人们处理更复杂的编程难题。谷歌因程序错误或系统故障而将软件恢复至旧版本的次数，也减少了三分之一。“因此我认为，AI 工具不仅提高了编程效率，也改善了代码质量。”",
-     "image": "",
-     "id": "c64eac541d70",
+     "published": "2026-10-24T15:19:32+00:00",
+     "summary": "IT之家 10 月 25 日消息，英国广播公司（BBC）的《蓝色星球 3》纪录片打算保留那些不算完美的镜头，以此证明内容的真实性。该系列前作的标志性特点是画面精美、通透清晰，美得近乎不真实。而人工智能生成内容的一大破绽，就是画面过度精致、毫无瑕疵。为了避开这种观感，《蓝色星球 3》选择如实呈现，不刻意美化。 IT之家注意到，执行制片人伊丽莎白 · 怀特（Elizabeth White）此前接受《卫报》采访时提到，放在以往，水里漂浮的大量浮游生物之类的杂物，就足以让团队剪掉这段素材。或者他们会调整构图，把船只、浮标移出画面，又或是直接判定：“水质条件实在达不到拍摄要求。”但这一次，他们选择把这些画面全部保留，展现更真实、更原生态的海洋面貌。 这部纪录片记录了诸多震撼的自然景象：海豚用海绵堵住洞口围猎鱼类、不同种类的鱼类之间进行交流，还有二十万只螃蟹排成队列觅食。怀特认为，真实的海洋生物，“或许比人工智能所能想象出的景象还要奇妙”。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/de985685-c855-4125-9de0-8340257c2518.jpg?x-bce-process=image/format,f_auto",
+     "id": "eddc75bba2e2",
      "tags": []
     }
    ]
   },
   {
    "key": "t0002",
-   "title": "OpenAI 为前沿 AI 训练 / 评估开启“断网闭关”模式，遏制其越狱攻击",
-   "summary": "IT之家 10 月 24 日消息，OpenAI 昨日（10 月 23 日）发布博文，宣布针对最先进“前沿模型”的训练与评估环境， 已经实施更严格的安全管控，明确在模型训练期间，不得直接访问实时互联网。 该公司称出于对 AI 安全的负责任要求，基于当前对齐研究、监测能力和互联网基础设施安全状况做出的决策，相关限制将持续到安全防护取得足够进展为止。 OpenAI 的一款内部研究模型于 9 月 20 日利用 DNS 配置漏洞，在训练过程中短暂获得有限的互联网访问权限，因此该公司于 9 月还一度暂停训练与评估前沿模型。 OpenAI 随后加强了研究环境隔离、缩小",
+   "title": "开源项目 GPU Unlock 可释放英伟达 RTX 30 系列显卡隐藏 AI 算力，实际性能提升可达 60%",
+   "summary": "IT之家 10 月 25 日消息，英伟达已经上市一段时间的 GeForce RTX 30 系列（代号安培，Ampere）显卡，显然还有大量尚未释放的计算潜力。GitHub 用户扎吉塔（Zagitta）开发了一款名为 GPU Unlock 的开源新项目，可以解除安培架构显卡上部分人为设置的性能限制，在特定负载下，张量核心的计算吞吐量几乎可以翻倍，而且不需要修改英伟达驱动，也不用永久刷写显卡的 VBIOS。 IT之家注意到，这个项目专门针对一项指令发射速率限制：在使用 FP32 累加的 FP16/BF16 张量核心运算中，消费级安培显卡的运行速率相比专业卡更",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "safety"
+    "unlock",
+    "rtx",
+    "gpu",
+    "compute",
+    "cmp"
    ],
-   "image": "img/2026-10-24/50c6da33da5ef5dd.webp",
+   "image": "img/2026-10-25/de87b6f2e32f2458.webp",
    "llm_enriched": false,
    "sources": [
     "IT之家"
    ],
    "articles": [
     {
-     "title": "OpenAI 为前沿 AI 训练 / 评估开启“断网闭关”模式，遏制其越狱攻击",
-     "url": "https://www.ithome.com/1/017/289.htm",
+     "title": "开源项目 GPU Unlock 可释放英伟达 RTX 30 系列显卡隐藏 AI 算力，实际性能提升可达 60%",
+     "url": "https://www.ithome.com/1/017/525.htm",
      "source": "IT之家",
      "lang": "zh",
-     "published": "2026-10-23T15:33:53+00:00",
-     "summary": "IT之家 10 月 24 日消息，OpenAI 昨日（10 月 23 日）发布博文，宣布针对最先进“前沿模型”的训练与评估环境， 已经实施更严格的安全管控，明确在模型训练期间，不得直接访问实时互联网。 该公司称出于对 AI 安全的负责任要求，基于当前对齐研究、监测能力和互联网基础设施安全状况做出的决策，相关限制将持续到安全防护取得足够进展为止。 OpenAI 的一款内部研究模型于 9 月 20 日利用 DNS 配置漏洞，在训练过程中短暂获得有限的互联网访问权限，因此该公司于 9 月还一度暂停训练与评估前沿模型。 OpenAI 随后加强了研究环境隔离、缩小智能体可利用的攻击面，并改进了异常行为检测与自动停止机制，于 10 月 1 日恢复强化学习训练及内部推理。 为避免模型接触真实网络，OpenAI 构建了一个“离线世界”：由大量已索引和缓存的网页内容组成，供模型在封闭环境中练习浏览、使用工具和执行代码等任务。IT之家附上相关截图如下： 智能体仍可使用浏览器、计算机操作工具和代码环境，但只能访问与实时互联网隔离的安全环境；未经授权的智能体之间通信也受到限制。 OpenAI 表示，随着 AI 智能体能力增强，其未来可能发现并利用当前尚未被识别的软件漏洞，因此必须在训练阶段切断其对外部系统的潜在影响。OpenAI 表示将在受控、离线的沙箱中推进前沿模型研发，同时继续测试虚拟机、隔离机制和监",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/8f6a2a8f-63ab-4ae9-838c-b74e927ba9d3.png?x-bce-process=image/format,f_auto",
-     "id": "dbd73ba4a677",
+     "published": "2026-10-24T15:09:54+00:00",
+     "summary": "IT之家 10 月 25 日消息，英伟达已经上市一段时间的 GeForce RTX 30 系列（代号安培，Ampere）显卡，显然还有大量尚未释放的计算潜力。GitHub 用户扎吉塔（Zagitta）开发了一款名为 GPU Unlock 的开源新项目，可以解除安培架构显卡上部分人为设置的性能限制，在特定负载下，张量核心的计算吞吐量几乎可以翻倍，而且不需要修改英伟达驱动，也不用永久刷写显卡的 VBIOS。 IT之家注意到，这个项目专门针对一项指令发射速率限制：在使用 FP32 累加的 FP16/BF16 张量核心运算中，消费级安培显卡的运行速率相比专业卡更低。解除这项限制之后，工具就能释放显卡硬件本身就具备的额外计算性能。 有意思的是，GPU Unlock 建立在早前针对英伟达 CMP 加密货币挖矿显卡的相关研究之上。它把 CMP 项目的固件解锁技术和一套提前初始化方案结合起来，依靠一个 Linux 内核模块，在英伟达显卡驱动加载之前执行操作。该模块修改对应的硬件速度选择寄存器，执行一次功能级重置（FLR），之后原版驱动就可以正常初始化显卡。 这也意味着用户每次更新驱动新版本时，都不用再给驱动打补丁。开发者目前标注支持 GA102、GA103、GA104、GA106 型号 GPU，覆盖了 RTX 30 系列里的大部分型号，不过并不是每一张显卡都一定能兼容，也不保证都能获得性能提升。 ",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/4620fdf7-473c-40de-9133-91539778aa49.jpg?x-bce-process=image/format,f_auto",
+     "id": "23942977d04c",
      "tags": []
     }
    ]
   },
   {
    "key": "t0003",
-   "title": "“行为难以预测”存在安全隐患，OpenAI 将不再在实时互联网上训练模型",
-   "summary": "IT之家 10 月 24 日消息，当地时间 23 日，OpenAI 宣布，今后将使用 缓存的网页内容和模拟互联网环境 训练模型，不再让模型直接接入真实互联网。公司认为，模型的行为仍然难以预测，直接赋予联网权限 存在安全隐患 。 竞争对手 Anthropic 两周前也开始限制旗下最新、理论上能力最强的模型直接联网。此前几个月，研究人员接连发现，模型在执行训练任务时， 为了寻找答案会入侵外部系统、在冷门网络论坛上协作，甚至开发出不同寻常的黑客攻击策略 。接连发生的事件促使两家实验室收紧模型的联网权限。 OpenAI 在博客文章中写道，根据目前 AI 对齐研究",
+   "title": "【戴季全專欄】市長要考慮的不只是 AI 園區，城市需要的是迎接 AI 時代的治理能力",
+   "summary": "台北市長選舉最近討論松山機場遷建打造 AI 園區的政策，首先要肯定實質政策的討論。這是一個值得討論的重大城市發展構想，但這個議題可能要把「松山機場遷移」與「台北發展 AI」分開成兩件事來討論與處理。無論有沒有 AI，松山機場存廢和遷移仍然可以討論。但即使松山機場不遷移，台北也不能因此停止發展 AI。 蓋 AI 園區之前，先釐清城市要發展哪幾層 AI 我們要更進一步思考的是：AI 發展真正稀缺的可能不只是土地，而是 AI 人才與各種生產要素的有效組合。從竹科到南科，台灣過去的產業發展，確實透過科學園區集結了大量企業、資本、人才與供應鏈，創造了舉世矚目的成就",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "datacenter",
-    "safety"
+    "robot",
+    "compute"
    ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "“行为难以预测”存在安全隐患，OpenAI 将不再在实时互联网上训练模型",
-     "url": "https://www.ithome.com/1/017/287.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T15:25:11+00:00",
-     "summary": "IT之家 10 月 24 日消息，当地时间 23 日，OpenAI 宣布，今后将使用 缓存的网页内容和模拟互联网环境 训练模型，不再让模型直接接入真实互联网。公司认为，模型的行为仍然难以预测，直接赋予联网权限 存在安全隐患 。 竞争对手 Anthropic 两周前也开始限制旗下最新、理论上能力最强的模型直接联网。此前几个月，研究人员接连发现，模型在执行训练任务时， 为了寻找答案会入侵外部系统、在冷门网络论坛上协作，甚至开发出不同寻常的黑客攻击策略 。接连发生的事件促使两家实验室收紧模型的联网权限。 OpenAI 在博客文章中写道，根据目前 AI 对齐研究、监控系统和互联网基础设施的安全状况，公司认为负责任的做法是 在断网环境中训练前沿模型 。 OpenAI 披露，直到 9 月 20 日，公司仍有一款前沿模型 利用系统配置失误接入互联网 。随后，OpenAI 暂停了 9 月余下时间的训练工作，转而开发和测试新的安全防护方案。 改用断网沙箱训练模型，与前沿 AI 实验室员工此前的判断形成反差。他们过去一直强调，要在完全隔离互联网的环境中开展模型训练， 实际操作起来几乎行不通 。 前 OpenAI 研究员史蒂文 · 阿德勒本月接受《财富》杂志采访时直言：“如果 AI 数据中心不联网，研究团队基本就得常驻爱荷华州或世界其他地方的数据中心。额外负担会非常大。如果一家企业独自承担如此高的代价，",
-     "image": "",
-     "id": "a362b473875b",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0006",
-   "title": "【英特爾「機器人準備度差距」報告】邊緣 AI 算力是自動化規模的後盾，專用型 AMR 與工業手臂是產出翻倍主力",
-   "summary": "英特爾（Intel）發布《機器人準備度差距報告》（The Robotics Readiness Gap Report），研究深入調查全球 800 位來自美國、中國、德國、日本、英國與韓國的企業高管、資訊科技（IT）主管，以及機器人專家；涵蓋製造業、零售業、醫療保健、國防與智慧城市等五大重要產業。 報告指出，過去大家印象中的機器人，大多是固定在工廠某個位置、只能重複做同一種動作的傳統自動化機械；但現在結合了生成式 AI 與感測技術後，機器人正快速演變為具備現場感測、獨立思考與隨機應變能力的「實體 AI（Physical AI）」系統。 簡單來說，實體 AI",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "amr",
-    "readiness",
-    "gap"
-   ],
-   "image": "img/2026-10-24/3aeed05482d0e910.webp",
+   "image": "img/2026-10-25/f8fc28e72cca1c70.webp",
    "llm_enriched": false,
    "sources": [
     "TechOrange 科技報橘"
    ],
    "articles": [
     {
-     "title": "【英特爾「機器人準備度差距」報告】邊緣 AI 算力是自動化規模的後盾，專用型 AMR 與工業手臂是產出翻倍主力",
-     "url": "https://techorange.com/2026/10/24/robotics-readiness-gap",
+     "title": "【戴季全專欄】市長要考慮的不只是 AI 園區，城市需要的是迎接 AI 時代的治理能力",
+     "url": "https://techorange.com/2026/10/25/taipei-taiwan-ai-city",
      "source": "TechOrange 科技報橘",
      "lang": "zh",
-     "published": "2026-10-23T14:29:00+00:00",
-     "summary": "英特爾（Intel）發布《機器人準備度差距報告》（The Robotics Readiness Gap Report），研究深入調查全球 800 位來自美國、中國、德國、日本、英國與韓國的企業高管、資訊科技（IT）主管，以及機器人專家；涵蓋製造業、零售業、醫療保健、國防與智慧城市等五大重要產業。 報告指出，過去大家印象中的機器人，大多是固定在工廠某個位置、只能重複做同一種動作的傳統自動化機械；但現在結合了生成式 AI 與感測技術後，機器人正快速演變為具備現場感測、獨立思考與隨機應變能力的「實體 AI（Physical AI）」系統。 簡單來說，實體 AI 就是讓 AI 不再只是住在電腦螢幕裡的軟體，而是裝上了實體機械手臂或輪子，能夠走入真實世界跟環境互動。如果企業能夠成功把這套智慧機器人系統完整導入營運中，不僅能大幅加快服務速度與產品品質，更預計能讓整體的營運產出提升高達兩倍。 《機器人準備度差距報告》主要揭露，企業在引進自動化的雄心與實際準備之間的顯著落差，並從策略、技能、安全、型態與規模等五個維度，為企業提供一套清晰且系統化的轉型架構。 📎 這份報告適合誰閱讀？ 報告所涵蓋的數據與實務架構，適合以下五類工作者與決策角色閱讀： 🔴 報告洞見 企業急著買機器人，策略與權責卻沒跟上 雖然智慧自動化的前景看起來很吸引人，但報告指出企業正面臨嚴重的「準備度差距（Readiness Gap",
-     "image": "https://techorange.com/app/uploads/2026/10/6701d25c6f4924c8-720x402.jpeg",
-     "id": "62d0e40a0964",
-     "tags": [
-      "AI 機器人"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0007",
-   "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-   "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "robots",
-    "hottest",
-    "toy",
-    "christmas",
-    "plays",
-    "adorable"
-   ],
-   "image": "img/2026-10-24/9565f0ade1e02eaf.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-     "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-23T13:59:19+00:00",
-     "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-     "image": "",
-     "id": "67ab64203109",
-     "tags": [
-      "AI",
-      "Gadgets",
-      "TC",
-      "nvidia",
-      "pollen robotics"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0008",
-   "title": "Quick Study",
-   "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercol",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "quick",
-    "study",
-    "photo",
-    "google",
-    "claude",
-    "anthropic"
-   ],
-   "image": "img/2026-10-24/6ab353f9eaaacc12.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Simon Willison"
-   ],
-   "articles": [
-    {
-     "title": "Quick Study",
-     "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter",
-     "source": "Simon Willison",
-     "lang": "en",
-     "published": "2026-10-23T13:35:13+00:00",
-     "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no external libraries beyond Google Fonts. Tags: tools",
-     "image": "https://static.simonwillison.net/static/2026/heron-oil.webp",
-     "id": "18216b018fb1",
-     "tags": [
-      "tools"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0010",
-   "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-   "summary": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, for example, shared b",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "block",
-    "jack",
-    "dorsey",
-    "awkward",
-    "model",
-    "made"
-   ],
-   "image": "img/2026-10-24/f07259b548f0c01e.webp",
-   "llm_enriched": false,
-   "sources": [
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-23T11:32:39+00:00",
-     "summary": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and uncanny. Take this one, for example, shared by Dessa lead Ragavan Thurairatnam. The conversation between […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS536_AI_HALLUCINATION_B.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "f490e9c8ed30",
-     "tags": [
-      "AI",
-      "News"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0011",
-   "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
-   "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder leadership, and scaling companies both inside and outside trad",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "founder",
-    "techcrunch",
-    "toast",
-    "bessemer",
-    "founders",
-    "hear"
-   ],
-   "image": "img/2026-10-24/ec9fcc4385eed2c8.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechCrunch AI"
-   ],
-   "articles": [
-    {
-     "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
-     "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026",
-     "source": "TechCrunch AI",
-     "lang": "en",
-     "published": "2026-10-23T11:06:23+00:00",
-     "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder leadership, and scaling companies both inside and outside traditional startup hubs.",
-     "image": "",
-     "id": "4f8bba4990b7",
-     "tags": [
-      "Startups",
-      "AI",
-      "Fundraising",
-      "TechCrunch Founder Summit"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0012",
-   "title": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
-   "summary": "Company says foreign-made robotic vehicles are crucial to US chip production.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "foreign-made",
-    "waiver",
-    "worries",
-    "fuzzy",
-    "ban",
-    "may"
-   ],
-   "image": "img/2026-10-24/34a077dc88b7c2e2.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Ars Technica AI"
-   ],
-   "articles": [
-    {
-     "title": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
-     "url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs",
-     "source": "Ars Technica AI",
-     "lang": "en",
-     "published": "2026-10-23T09:18:31+00:00",
-     "summary": "Company says foreign-made robotic vehicles are crucial to US chip production.",
-     "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Intel-fab-interior-500x500.jpg",
-     "id": "b2b7ebe6730f",
-     "tags": [
-      "AI",
-      "Tech",
-      "chip fabrication",
-      "Chip manufacturing",
-      "FCC"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0013",
-   "title": "The iPhone Duo should have been an iPad",
-   "summary": "We gave the iPhone Duo a 7 /10. But that wasn't always the score we planned, and it might not be the right score forever. Such are the challenges of reviewing - and assessing - a big, new idea about the most popular smartphone in history. On this episode of The Vergecast, David a",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "duo",
-    "apple",
-    "iphone",
-    "should",
-    "ipad",
-    "score"
-   ],
-   "image": "img/2026-10-24/4788d92823451f6d.webp",
-   "llm_enriched": false,
-   "sources": [
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "The iPhone Duo should have been an iPad",
-     "url": "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-23T09:00:18+00:00",
-     "summary": "We gave the iPhone Duo a 7 /10. But that wasn't always the score we planned, and it might not be the right score forever. Such are the challenges of reviewing - and assessing - a big, new idea about the most popular smartphone in history. On this episode of The Vergecast, David and Nilay […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/VRG_VST_102326_Site_attempt.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "9ecaeb5e8630",
-     "tags": [
-      "AI",
-      "Apple",
-      "iPhone",
-      "Podcasts",
-      "Tech"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0014",
-   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-   "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "online",
-    "storage",
-    "serve",
-    "billion",
-    "users",
-    "part"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "OpenAI"
-   ],
-   "articles": [
-    {
-     "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-     "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-10-23T09:00:00+00:00",
-     "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-     "image": "",
-     "id": "298c8de07d18",
-     "tags": [
-      "Engineering"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0015",
-   "title": "Android lets you ‘bubble’ apps for easy access now – how it works",
-   "summary": "Keep your most-used apps accessible with this new feature.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "apps",
-    "lets",
-    "bubble",
-    "easy",
-    "works",
-    "android"
-   ],
-   "image": "img/2026-10-24/c610c195809fd7e3.webp",
-   "llm_enriched": false,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "Android lets you ‘bubble’ apps for easy access now – how it works",
-     "url": "https://www.zdnet.com/tech/android-17-app-bubbles-how-to",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-10-23T08:28:46+00:00",
-     "summary": "Keep your most-used apps accessible with this new feature.",
-     "image": "https://www.zdnet.com/wp-content/uploads/sites/3/abbb415c-4966-456b-a00d-2bc9d4a14659.jpg",
-     "id": "bceb9600e7ad",
-     "tags": [
-      "Android"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0016",
-   "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-   "summary": "",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "litpivot",
-    "ideas",
-    "through",
-    "dynamic",
-    "contextualization",
-    "within"
-   ],
-   "image": "img/2026-10-24/86d2aad061597a09.webp",
-   "llm_enriched": false,
-   "sources": [
-    "Hugging Face"
-   ],
-   "articles": [
-    {
-     "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-     "url": "https://huggingface.co/blog/allenai/litpivot",
-     "source": "Hugging Face",
-     "lang": "en",
-     "published": "2026-10-23T08:15:50+00:00",
-     "summary": "",
-     "image": "",
-     "id": "d5dfb55b0129",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0017",
-   "title": "PHP2Shell: Haven’t patched yet? Take these steps now to mitigate",
-   "summary": "The PHP Project provides instructions to stop further RCE exploits in limited settings.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "php2shell",
-    "haven",
-    "patched",
-    "steps",
-    "mitigate",
-    "yet"
-   ],
-   "image": "img/2026-10-24/db0ccf095d6f24b4.webp",
-   "llm_enriched": false,
-   "sources": [
-    "ZDNet AI"
-   ],
-   "articles": [
-    {
-     "title": "PHP2Shell: Haven’t patched yet? Take these steps now to mitigate",
-     "url": "https://www.zdnet.com/tech/php2shell-php-patch-mitigation-critical-exploit",
-     "source": "ZDNet AI",
-     "lang": "en",
-     "published": "2026-10-23T07:09:47+00:00",
-     "summary": "The PHP Project provides instructions to stop further RCE exploits in limited settings.",
-     "image": "https://www.zdnet.com/wp-content/uploads/sites/3/digitallockGettyImages-2300746116.jpg",
-     "id": "668329a7835f",
-     "tags": [
-      "Security"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0018",
-   "title": "Meta delays new business terms after publisher pushback on AI scraping",
-   "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Roberts says the terms wi",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "terms",
-    "business",
-    "delays",
-    "publisher",
-    "pushback",
-    "scraping"
-   ],
-   "image": "img/2026-10-24/bdd3d044ad08d65f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Meta delays new business terms after publisher pushback on AI scraping",
-     "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-23T06:47:41+00:00",
-     "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Roberts says the terms will go into effect on November 20th \"to allow […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23951350/STK043_VRG_Illo_N_Barclay_6_Meta.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "d34a3f37bdd3",
-     "tags": [
-      "AI",
-      "Meta",
-      "News",
-      "Tech"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0021",
-   "title": "33.5 万元起，2027 款长城坦克 500 汽车正式上市",
-   "summary": "IT之家 10 月 23 日消息，长城汽车宣布旗下 2027 款坦克 500 正式上市，新车共推出 4 款车型，售价 33.5 万元起，IT之家整理价格信息如下： 2027 款坦克 500 车型 售价（万元） Hi4-T 33.5 Hi4-T 智享版 35.5 3.0T 35.5 Hi4-Z 智享版 37.5 新款坦克 500 新增“丹霞红”车色，取色于中国丹霞地貌亿万年沉积而成的赤壁丹崖，以“沉赤如岩，红而不喧”的暗调质感，演绎不张扬却自带气场的高级感。 该车前脸配备大尺寸前格栅，格栅内部搭载横向镀铬饰条，整车设计灵感取自山川地貌与中国古建筑。侧面配备",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "500",
-    "33.5",
-    "2027",
-    "hi4-t",
-    "35.5"
-   ],
-   "image": "img/2026-10-24/fbfb84044cc18f20.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "33.5 万元起，2027 款长城坦克 500 汽车正式上市",
-     "url": "https://www.ithome.com/1/017/260.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T05:24:31+00:00",
-     "summary": "IT之家 10 月 23 日消息，长城汽车宣布旗下 2027 款坦克 500 正式上市，新车共推出 4 款车型，售价 33.5 万元起，IT之家整理价格信息如下： 2027 款坦克 500 车型 售价（万元） Hi4-T 33.5 Hi4-T 智享版 35.5 3.0T 35.5 Hi4-Z 智享版 37.5 新款坦克 500 新增“丹霞红”车色，取色于中国丹霞地貌亿万年沉积而成的赤壁丹崖，以“沉赤如岩，红而不喧”的暗调质感，演绎不张扬却自带气场的高级感。 该车前脸配备大尺寸前格栅，格栅内部搭载横向镀铬饰条，整车设计灵感取自山川地貌与中国古建筑。侧面配备密辐式轮圈、车顶行李架，车窗边缘设置镀铬饰条，采用传统结构车门把手。 内饰方面，2027 款车型新增全新黑灰配色，以玄黑为底、雅灰铺陈，展现出东方水墨般的虚实层次。车辆搭载 15.6 英寸中控双联屏，配合两侧副驾头枕音响与近场定向发声技术，实现主副驾功能分区、声场独立；全车配有 22 扬声器；带有 NAPPA 真皮座椅，均配备通风、加热、按摩功能。 智能化方面，2027 款坦克 500 带有激光雷达、前向 4D 毫米波雷达在内的 27 个辅助驾驶传感器，搭载 Coffee Pilot 4 辅助驾驶系统，配合 Thor-U 高算力芯片，号称能够精准识别旁侧盲区、路口鬼探头、窄路通行等潜在风险，提前减速预留避险空间。 规格方面，该车长宽",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/ba850166-d511-4933-bc0c-885784bbb003.png",
-     "id": "8cf45c81d794",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0022",
-   "title": "东风风神 L8+ 上市：全球首搭天元智驾 T800，限时置换价 12.99 万元起",
-   "summary": "IT之家 10 月 23 日消息，东风风神 L8+ 车型今晚上市，限时置换价 12.99 万元-15.99 万元。风神 L8+ 全球首搭天元智驾 T800，并配备全球最高 4 挡马赫电混。 IT之家附价格如下： 220KM 卓越版，上市指导价 13.99 万元，限时置换价 12.99 万元 220KM 旗舰版，上市指导价 14.99 万元，限时置换价 13.99 万元 220KM 激光雷达卓越版（700TOPS 算力），上市指导价 15.99 万元，限时置换价 14.99 万元 220KM 激光雷达旗舰版（700TOPS 算力），上市指导价 16.99 ",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "l8+",
-    "t800",
-    "12.99",
-    "220",
-    "800",
-    "noa"
-   ],
-   "image": "img/2026-10-24/18d496688cf8c282.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "东风风神 L8+ 上市：全球首搭天元智驾 T800，限时置换价 12.99 万元起",
-     "url": "https://www.ithome.com/1/017/254.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T05:02:36+00:00",
-     "summary": "IT之家 10 月 23 日消息，东风风神 L8+ 车型今晚上市，限时置换价 12.99 万元-15.99 万元。风神 L8+ 全球首搭天元智驾 T800，并配备全球最高 4 挡马赫电混。 IT之家附价格如下： 220KM 卓越版，上市指导价 13.99 万元，限时置换价 12.99 万元 220KM 旗舰版，上市指导价 14.99 万元，限时置换价 13.99 万元 220KM 激光雷达卓越版（700TOPS 算力），上市指导价 15.99 万元，限时置换价 14.99 万元 220KM 激光雷达旗舰版（700TOPS 算力），上市指导价 16.99 万元，限时置换价 15.99 万元 该车尺寸为 4762×1910×1686mm， 轴距为 2825mm ，提供云绡白、耀夜灰、烟柳银、墨绢黑车色，座舱提供丹霞映雪、琥珀胡桃内饰。 座舱方面，风神 L8+ 搭载内嵌式液晶仪表以及大尺寸悬浮中控屏，并配备了三辐式多功能方向盘。此外，新车还配备了内饰氛围灯、手机无线充电、全景天窗、19 扬声器 WANOS 全景声音响和后排小桌板。 该车搭载英伟达 Thor-U700TOPS 智驾芯片，全球首搭天元智驾 T800，搭配 Momenta R7 世界模型，支持城市 NOA、高速 NOA、乡村 NOA。 动力方面，该车搭载 1.5T 涡轮增压混动专用发动机，拥有 265kW 综合功率，配备 30",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/da8a6f77-2aad-4ac7-a8a5-3d0b10b142aa.png",
-     "id": "77ae31dd0778",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0023",
-   "title": "机械革命推出极光 16 Pro 游戏本：酷睿 i7-13645HX + RTX 4050，8799 元",
-   "summary": "IT之家 10 月 23 日消息，机械革命极光产品线在极光 X 之外又上架了一款极光 16 Pro 游戏本，搭载英特尔酷睿 i7-13645HX 处理器、RTX 4050 独立显卡、16GB 内存、512GB 固态硬盘，京东显示定价 8799 元，首发价暂未公布，10 月 30 日开售。 京东 机械革命极光 16 Pro 酷睿 i7-13645HX 16G 512G RTX4050 180Hz 灰 券后 8499 元 领 300 元券 这款机型采用航空级铝镁合金机身，搭配镜面不锈钢 Logo，配备 16 英寸电竞屏，拥有 92% 屏占比、2560×160",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "i7-13645hx",
-    "13645",
-    "rtx",
-    "4050",
-    "40508799",
-    "512"
-   ],
-   "image": "img/2026-10-24/4a793e441e491cf0.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "机械革命推出极光 16 Pro 游戏本：酷睿 i7-13645HX + RTX 4050，8799 元",
-     "url": "https://www.ithome.com/1/017/253.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T04:57:16+00:00",
-     "summary": "IT之家 10 月 23 日消息，机械革命极光产品线在极光 X 之外又上架了一款极光 16 Pro 游戏本，搭载英特尔酷睿 i7-13645HX 处理器、RTX 4050 独立显卡、16GB 内存、512GB 固态硬盘，京东显示定价 8799 元，首发价暂未公布，10 月 30 日开售。 京东 机械革命极光 16 Pro 酷睿 i7-13645HX 16G 512G RTX4050 180Hz 灰 券后 8499 元 领 300 元券 这款机型采用航空级铝镁合金机身，搭配镜面不锈钢 Logo，配备 16 英寸电竞屏，拥有 92% 屏占比、2560×1600 分辨率、180Hz 刷新率、500nits 典型亮度、100% sRGB 色域，平均色准 ΔE<2。 其显卡为 NVIDIA GeForce RTX 4050 笔记本 GPU，配备 6GB 显存，支持 140W 满功耗释放。 该机采用对称式双冰鲨风扇 + 四出风口 + 六根超长导热铜管，搭配相变硅脂；支持双狂暴模式，高能狂暴模式可以让性能狂飙，满足高性能需求；静音狂暴模式可以将噪音控制在 43dB。 其他方面，其键盘采用人体工学设计，1.4mm 舒适键程，0.2mm 微弧面键帽贴合指缝，全区 1600 万色 RGB 背光可调，配备全尺寸方向键；摄像头配备物理防窥开关，支持一键翻转画面，保护隐私；音频搭载 Nahimic 专业音效",
-     "image": "https://img14.360buyimg.com/pop/jfs/t1/548980/6/4623/123178/6ad97bd3Fc758534b/0083320320ed026d.jpg",
-     "id": "7e136f411a15",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0024",
-   "title": "7.89 万元起吉利 2027 款博越车型上市，升级新一代 GEEA3.0 电子电气架构",
-   "summary": "IT之家 10 月 23 日消息，吉利 2027 款博越车型今晚正式上市，官方指导价 8.59 万元起，叠加限时优惠后 7.89 万元起。IT之家汇总价格如下： 1.5TD+7DCT 豪华版：8.59 万元，7.89 万元 1.5TD+7DCT 尊贵版：9.19 万元，8.49 万元 1.5TD+7DCT 旗舰版：9.99 万元，9.29 万元 1.5TD+7DCT 冠军荣耀版：10.69 万元，9.99 万元 外观层面，2027 款博越以新中式设计语言重新梳理了前脸与尾部。前格栅命名为“四水归堂”，搭配“飞檐斗拱”贯穿式前灯组，车尾换装“长卷流霞”贯穿",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "td+7dct",
-    "7.89",
-    "2027",
-    "1.5",
-    "geea3.0",
-    "8.59"
-   ],
-   "image": "img/2026-10-24/ec0456ea8ffdc048.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "7.89 万元起吉利 2027 款博越车型上市，升级新一代 GEEA3.0 电子电气架构",
-     "url": "https://www.ithome.com/1/017/247.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T04:28:07+00:00",
-     "summary": "IT之家 10 月 23 日消息，吉利 2027 款博越车型今晚正式上市，官方指导价 8.59 万元起，叠加限时优惠后 7.89 万元起。IT之家汇总价格如下： 1.5TD+7DCT 豪华版：8.59 万元，7.89 万元 1.5TD+7DCT 尊贵版：9.19 万元，8.49 万元 1.5TD+7DCT 旗舰版：9.99 万元，9.29 万元 1.5TD+7DCT 冠军荣耀版：10.69 万元，9.99 万元 外观层面，2027 款博越以新中式设计语言重新梳理了前脸与尾部。前格栅命名为“四水归堂”，搭配“飞檐斗拱”贯穿式前灯组，车尾换装“长卷流霞”贯穿尾灯，三处命名均取自传统建筑与山水意象，意在将家族化造型的辨识度从“线条相似”转向“语义统一”。 其车身尺寸为 4570/1865/1635mm，轴距 2707mm，车长较现款增加 21mm，高度降低 15mm，变化幅度不大，姿态上略微向低趴调整。 座舱是此次改款配置下放最集中的区域。全系标配 14.6 英寸中控屏，搭载 Flyme Auto 2.5 智能座舱系统并内置星睿 AI 大模型，自带定制版高德 850 地图，全场景 AI 语音覆盖 95% 的车控场景，全系标配 540° 高清全景影像、数字蓝牙钥匙、手机 App 远程控制、50W 风冷无线快充等。 舒适性配置方面，其后排坐垫长度 525mm，膝部空间 150mm，后备厢常规",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/410e29ed-4d47-4b7c-aa0d-eff2045cbaba.png?x-bce-process=image/format,f_auto",
-     "id": "15d4ac1c00c9",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0025",
-   "title": "Retro gaming is being overrun with AI",
-   "summary": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected projects have gone viral with incredible freq",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "retro",
-    "apple",
-    "gaming",
-    "overrun",
-    "video",
-    "everywhere"
-   ],
-   "image": "img/2026-10-24/25abba117ee3ca1f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "The Verge AI"
-   ],
-   "articles": [
-    {
-     "title": "Retro gaming is being overrun with AI",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
-     "source": "The Verge AI",
-     "lang": "en",
-     "published": "2026-10-23T04:00:00+00:00",
-     "summary": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected projects have gone viral with incredible frequency thanks to new AI tools, as […]",
-     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK465_VIDEO_GAMES_EMULATOR__CVirginia_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-     "id": "fa80f1a6b4b7",
-     "tags": [
-      "AI",
-      "Entertainment",
-      "Gaming",
-      "Report"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0026",
-   "title": "瓦尔基里 VK 99 V2 键盘发售：首发预估到手价 329.8 / 429.25 元",
-   "summary": "IT之家 10 月 23 日消息，瓦尔基里 (Valkyrie, Vk) 即将于今晚 20:00 发售 VK 99 V2 系列三模机械键盘。其中 标准版预估到手价 329.8 元 、 MAX 版预估到手价 429.25 元 。 天猫 瓦尔基里 VK 99 V2 键盘 9 月 23 日 20:00 开售 329.8 元起 直达链接 VK 99 V2 整体采用 2U0 的 98 配列， 集成天际光廊贯穿式灯柱与下灯位 RGB 背光 ，支持人工智能驱动的 AI 创想灯效、音乐律动，内部包含竖向音量旋钮。 其内部采用 Gasket 结构，搭配全键热插拔 PCB、",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "329.8",
-    "429.25",
-    "max",
-    "ghz",
-    "khz",
-    "mah"
-   ],
-   "image": "img/2026-10-24/56cf8ed04bf1aec1.webp",
-   "llm_enriched": false,
-   "sources": [
-    "IT之家"
-   ],
-   "articles": [
-    {
-     "title": "瓦尔基里 VK 99 V2 键盘发售：首发预估到手价 329.8 / 429.25 元",
-     "url": "https://www.ithome.com/1/017/235.htm",
-     "source": "IT之家",
-     "lang": "zh",
-     "published": "2026-10-23T03:29:07+00:00",
-     "summary": "IT之家 10 月 23 日消息，瓦尔基里 (Valkyrie, Vk) 即将于今晚 20:00 发售 VK 99 V2 系列三模机械键盘。其中 标准版预估到手价 329.8 元 、 MAX 版预估到手价 429.25 元 。 天猫 瓦尔基里 VK 99 V2 键盘 9 月 23 日 20:00 开售 329.8 元起 直达链接 VK 99 V2 整体采用 2U0 的 98 配列， 集成天际光廊贯穿式灯柱与下灯位 RGB 背光 ，支持人工智能驱动的 AI 创想灯效、音乐律动，内部包含竖向音量旋钮。 其内部采用 Gasket 结构，搭配全键热插拔 PCB、横向开槽 PC 定位板，配套原厂 (CHERRY) 高度键帽；在 USB-C 和 2.4GHz 模式下 均支持 8kHz 回报率 ，响应时间分别小于 0.1ms 和 0.24ms；支持系列高级按键功能。 VK 99 V2 标准版可选银翼 / 幽影配色，配备高特灰岩轴、PC 雾透键帽，集成 10000mAh 电池。 其 MAX 版可选梅林 / 洛基主题，分别配备环诺樱诺轴 / Speed Pro 轴，搭配折影五面热升华键帽，提供 1.47\" 竖向 IPS 智慧屏，集成 12000mAh 电池。开启静核模式后， 该版本在蓝牙连接下续航可达 12000hr 、在 2.4GHz 连接与 1kHz 回报率下续航可达 5500hr。 京东 11",
-     "image": "https://img.ithome.com/newsuploadfiles/2026/10/365c7774-a535-4246-acf9-8d8d2c3cb8ed.jpg?x-bce-process=image/format,f_auto",
-     "id": "c451dcfc5bab",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0027",
-   "title": "美股晶片股為何重挫？英特爾、輝達、AMD股價下跌原因解析",
-   "summary": "英特爾、超微10月22日重挫約8%，輝達跌4.4%。特斯拉下調資本支出、科林研發財測不如預期，加上Meta籌資引發AI融資疑慮，三大因素拖累晶片股。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "amd",
-    "meta",
-    "intel",
-    "chip",
-    "funding"
-   ],
-   "image": "img/2026-10-24/6302b9ccc12e9b8c.webp",
-   "llm_enriched": false,
-   "sources": [
-    "數位時代"
-   ],
-   "articles": [
-    {
-     "title": "美股晶片股為何重挫？英特爾、輝達、AMD股價下跌原因解析",
-     "url": "https://www.bnext.com.tw/article/92768/us-chip-stocks-plunge-nvidia-amd-intel",
-     "source": "數位時代",
-     "lang": "zh",
-     "published": "2026-10-23T02:54:00+00:00",
-     "summary": "英特爾、超微10月22日重挫約8%，輝達跌4.4%。特斯拉下調資本支出、科林研發財測不如預期，加上Meta籌資引發AI融資疑慮，三大因素拖累晶片股。",
-     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2023-09/img-1695170384-62492.jpg?w=900&output=webp",
-     "id": "c75ce8e0887d",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0028",
-   "title": "微軟擴大遊戲著色器預先編譯支援，Steam與Epic商店也將加入",
-   "summary": "微軟進階著色器交付（Advanced Shader Delivery，ASD）已擴大支援AMD、Intel、Nvidia及Qualcomm的顯示硬體。使用符合條件的Windows 11電腦下載支援遊戲時，可一併取得預先編譯的著色器，減少首次啟動的等待時間及遊玩時的畫面卡頓。微軟也預告，ASD將擴展至Steam與Epic Games Store，但尚未公布確切上線日期。",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "steam",
-    "epic",
-    "amd",
-    "asd",
-    "microsoft",
-    "intel"
-   ],
-   "image": "img/2026-10-24/5e86efadb55bfa97.webp",
-   "llm_enriched": false,
-   "sources": [
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "微軟擴大遊戲著色器預先編譯支援，Steam與Epic商店也將加入",
-     "url": "https://www.ithome.com.tw/news/179903",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-10-23T02:10:20+00:00",
-     "summary": "微軟進階著色器交付（Advanced Shader Delivery，ASD）已擴大支援AMD、Intel、Nvidia及Qualcomm的顯示硬體。使用符合條件的Windows 11電腦下載支援遊戲時，可一併取得預先編譯的著色器，減少首次啟動的等待時間及遊玩時的畫面卡頓。微軟也預告，ASD將擴展至Steam與Epic Games Store，但尚未公布確切上線日期。",
-     "image": "",
-     "id": "4bdd72716a2e",
-     "tags": []
-    }
-   ]
-  },
-  {
-   "key": "t0029",
-   "title": "Securing our frontier model training environment",
-   "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "securing",
-    "frontier",
-    "training",
-    "model",
-    "environment",
-    "funding"
-   ],
-   "image": "",
-   "llm_enriched": false,
-   "sources": [
-    "OpenAI"
-   ],
-   "articles": [
-    {
-     "title": "Securing our frontier model training environment",
-     "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
-     "source": "OpenAI",
-     "lang": "en",
-     "published": "2026-10-23T02:00:00+00:00",
-     "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
-     "image": "",
-     "id": "48e2274fdf2b",
-     "tags": [
-      "Security"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0030",
-   "title": "Space Bunny 身分揭曉！MiniMax 公開 M3.1 Flash 428B 模型權重",
-   "summary": "中國 AI 新創 MiniMax 今日在 Hugging Face 與 ModelScope 公開程式設計用大 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "minimax",
-    "space",
-    "bunny",
-    "m3.1",
-    "428",
-    "opensource"
-   ],
-   "image": "img/2026-10-24/2dcdc924c595ddcd.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "Space Bunny 身分揭曉！MiniMax 公開 M3.1 Flash 428B 模型權重",
-     "url": "https://technews.tw/2026/10/23/minimax-m3-1-flash",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-10-23T01:40:47+00:00",
-     "summary": "中國 AI 新創 MiniMax 今日在 Hugging Face 與 ModelScope 公開程式設計用大 […]",
-     "image": "",
-     "id": "383353441542",
-     "tags": [
-      "AI 人工智慧",
-      "開放資料",
-      "AI 代理",
-      "M3.1 Flash",
-      "MiniMax"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0031",
-   "title": "日本擬設 AI 資安專隊，以模擬攻擊對抗 AI 網攻趨勢",
-   "summary": "日本經濟產業省今日表示，將在獨立行政法人資訊處理推進機構（IPA）11 月設置一支專門團隊，用人工智慧（AI） […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "safety",
-    "ipa"
-   ],
-   "image": "img/2026-10-24/16796763185c2e3f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "日本擬設 AI 資安專隊，以模擬攻擊對抗 AI 網攻趨勢",
-     "url": "https://infosecu.technews.tw/2026/10/23/japan-to-reorganize-defense-research-around-ai-cyber",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-10-23T00:50:25+00:00",
-     "summary": "日本經濟產業省今日表示，將在獨立行政法人資訊處理推進機構（IPA）11 月設置一支專門團隊，用人工智慧（AI） […]",
-     "image": "",
-     "id": "3ebe10751e70",
-     "tags": [
-      "AI 人工智慧",
-      "科技政策",
-      "資訊安全",
-      "AI 資安",
-      "ipa"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0033",
-   "title": "576 顆 GPU 合體成一顆巨型 GPU，輝達揭露 Rubin Ultra NVL576 架構",
-   "summary": "輝達（NVIDIA）於 10 月 22 日的 OCP 2026 大會上進一步揭露了 Rubin Ultra 平 […]",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "576",
-    "gpu",
-    "rubin",
-    "ultra",
-    "nvl576",
-    "ocp"
-   ],
-   "image": "img/2026-10-24/3c43dab6050de43e.webp",
-   "llm_enriched": false,
-   "sources": [
-    "科技新報 TechNews"
-   ],
-   "articles": [
-    {
-     "title": "576 顆 GPU 合體成一顆巨型 GPU，輝達揭露 Rubin Ultra NVL576 架構",
-     "url": "https://technews.tw/2026/10/23/nvidia-to-connect-576-rubin-ultra-gpus-using-cpo-to-create-one-giant-gpu",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-10-23T00:00:47+00:00",
-     "summary": "輝達（NVIDIA）於 10 月 22 日的 OCP 2026 大會上進一步揭露了 Rubin Ultra 平 […]",
-     "image": "",
-     "id": "edd0a3f2f31e",
-     "tags": [
-      "GPU",
-      "Nvidia",
-      "半導體",
-      "AI 基礎設施",
-      "OCP 2026"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0034",
-   "title": "華為與 DeepSeek 聯手挑戰 NVIDIA，SemiAnalysis 實測：軟體接近前沿、硬體仍落後",
-   "summary": "中國 AI 新創 DeepSeek（深度求索）在 9 月 30 日為 6 個儲存庫釋出華為昇騰（Ascend）晶片支援，涵蓋 DeepGEMM、FlashMLA 等自家工具，以及第三方開源框架 TileLang。其中部分工具在 2025 年 DeepSeek「開源週」釋出時，只支援 NVIDIA 晶片。半導體研究機構 SemiAnalysis 在 10 月 21 日發布的報告中，以這次更新為例，分析華為與 DeepSeek 之間的互補關係，並實測華為的 Ascend 950PR，結論是：以 NVIDIA A100 為比較基準，華為硬體可能落後 5 年以上",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [
-    "deepseek",
-    "semianalysis",
-    "huawei",
-    "ascend",
-    "opensource"
-   ],
-   "image": "img/2026-10-24/795e45f57347308f.webp",
-   "llm_enriched": false,
-   "sources": [
-    "TechOrange 科技報橘"
-   ],
-   "articles": [
-    {
-     "title": "華為與 DeepSeek 聯手挑戰 NVIDIA，SemiAnalysis 實測：軟體接近前沿、硬體仍落後",
-     "url": "https://techorange.com/2026/10/23/huawei-deepseek-ascend",
-     "source": "TechOrange 科技報橘",
-     "lang": "zh",
-     "published": "2026-10-22T23:57:25+00:00",
-     "summary": "中國 AI 新創 DeepSeek（深度求索）在 9 月 30 日為 6 個儲存庫釋出華為昇騰（Ascend）晶片支援，涵蓋 DeepGEMM、FlashMLA 等自家工具，以及第三方開源框架 TileLang。其中部分工具在 2025 年 DeepSeek「開源週」釋出時，只支援 NVIDIA 晶片。半導體研究機構 SemiAnalysis 在 10 月 21 日發布的報告中，以這次更新為例，分析華為與 DeepSeek 之間的互補關係，並實測華為的 Ascend 950PR，結論是：以 NVIDIA A100 為比較基準，華為硬體可能落後 5 年以上，軟體卻已站上前沿。 《南華早報》引述這份報告指出，黃仁勳的「惡夢」可能正開始成真。報告關注的不只是晶片效能，還有華為與 NVIDIA 之間的 AI 晶片生態系差距：當硬體仍明顯落後、軟體卻快速追上，這道差距將怎麼變化？ 華為缺前沿實驗室、DeepSeek 缺算力，雙方互補對方的缺口 SemiAnalysis 認為，華為和 DeepSeek 都無法單靠自己走到這一步。報告指出，華為雖然有自家的盤古（Pangu）模型，卻沒有一個前沿實驗室，能證明自家晶片可以用來訓練或推論模型；DeepSeek 則有模型，卻買不到所需的算力。 因此，雙方各自補上對方缺少的部分：華為提供硬體與原生軟體堆疊，DeepSeek 帶來模型的工作負載，以及讓這些",
-     "image": "https://techorange.com/app/uploads/2026/10/f092bc91f13553ae-720x486.jpg",
-     "id": "b0fea85f4d06",
+     "published": "2026-10-24T14:00:00+00:00",
+     "summary": "台北市長選舉最近討論松山機場遷建打造 AI 園區的政策，首先要肯定實質政策的討論。這是一個值得討論的重大城市發展構想，但這個議題可能要把「松山機場遷移」與「台北發展 AI」分開成兩件事來討論與處理。無論有沒有 AI，松山機場存廢和遷移仍然可以討論。但即使松山機場不遷移，台北也不能因此停止發展 AI。 蓋 AI 園區之前，先釐清城市要發展哪幾層 AI 我們要更進一步思考的是：AI 發展真正稀缺的可能不只是土地，而是 AI 人才與各種生產要素的有效組合。從竹科到南科，台灣過去的產業發展，確實透過科學園區集結了大量企業、資本、人才與供應鏈，創造了舉世矚目的成就。AI 產業涵蓋半導體、算力基礎設施、模型、軟體、機器人到各種產業應用，不同領域對土地與實體設施的需求完全不同。 因此，我並不反對 AI 園區。相反地，產業聚落、土地、基礎建設與企業集中，在特定情境下確實能夠創造很大的產業價值。最近政府宣布將從美國德州開始布局 AI 產業園區，就是一個很好的例子。對台灣 AI 供應鏈而言，進入美國市場需要的不只是把企業搬過去，也需要土地、基礎設施、行政協調與供應鏈聚落，讓台灣企業能夠降低進入當地市場的門檻。在這樣的情境下，園區是一個合理而且有價值的政策工具。 但不同於傳統產業，AI 涵蓋的領域非常廣泛，每一種 AI 活動需要的生產要素與空間條件也不同。算力中心需要充足、穩定且具有成本競爭力的電力，機",
+     "image": "https://techorange.com/app/uploads/2026/10/6897fb6a413e63de-720x480.jpg",
+     "id": "ef48f12ed938",
      "tags": [
       "AI 人工智慧"
      ]
@@ -1370,135 +128,806 @@
    ]
   },
   {
-   "key": "t0035",
-   "title": "20 個月靠 AI 出書 371 本大賺惹議，南非作家為己發聲",
-   "summary": "自 2025 年 2 月以來，南非作家「哈特」（Coral Hart）藉助人工智慧（AI）已出版多達 371 […]",
+   "key": "t0004",
+   "title": "Blue Planet III is keeping the rough edges in the age of AI",
+   "summary": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when thing",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "371",
-    "coral",
-    "hart",
-    "2025"
+    "blue",
+    "planet",
+    "iii",
+    "keeping",
+    "rough",
+    "edges"
    ],
-   "image": "img/2026-10-24/2a4070332c4c1938.webp",
+   "image": "img/2026-10-25/c258764b52847458.webp",
    "llm_enriched": false,
    "sources": [
-    "科技新報 TechNews"
+    "The Verge AI"
    ],
    "articles": [
     {
-     "title": "20 個月靠 AI 出書 371 本大賺惹議，南非作家為己發聲",
-     "url": "https://technews.tw/2026/10/23/south-african-author-ai-books-371-20-months-profit-controversy-speaks-out",
-     "source": "科技新報 TechNews",
-     "lang": "zh",
-     "published": "2026-10-22T23:30:42+00:00",
-     "summary": "自 2025 年 2 月以來，南非作家「哈特」（Coral Hart）藉助人工智慧（AI）已出版多達 371 […]",
-     "image": "",
-     "id": "d9a07fa74dc1",
+     "title": "Blue Planet III is keeping the rough edges in the age of AI",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-10-24T13:29:12+00:00",
+     "summary": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when things look too polished and seamless. To counter that, Blue […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/blue_planet_iii_episode_03_051_screengrab.avif?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "0509c80e85fb",
      "tags": [
-      "AI 人工智慧",
-      "數位內容",
-      "AI 寫作",
-      "AI 模型",
-      "出版業"
+      "AI",
+      "Entertainment",
+      "News",
+      "Science",
+      "TV Shows"
      ]
     }
    ]
   },
   {
-   "key": "t0036",
-   "title": "黃仁勳：2029 年前記憶體難過剩，與中國企業合作持開放態度",
-   "summary": "輝達（NVIDIA）執行長黃仁勳針對近期市場對記憶體半導體供過於求的疑慮發表看法。他指出，隨著人工智慧（AI） […]",
+   "key": "t0005",
+   "title": "晶片設計機密不出內網！台大打造專用AI引擎，台灣7大前瞻技術一次看",
+   "summary": "台大洪士灝團隊打造可在企業內網部署的IC設計專用AI引擎，降低機密外洩風險；另有產線瑕疵檢測、工控資安、胰臟癌早篩等，一次看台灣7大前瞻技術。",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "hbm",
-    "2029",
+    "safety",
     "chip"
    ],
-   "image": "img/2026-10-24/ab43e9575fac42c1.webp",
+   "image": "img/2026-10-25/6bad87a579a834a1.webp",
    "llm_enriched": false,
    "sources": [
-    "科技新報 TechNews"
+    "數位時代"
    ],
    "articles": [
     {
-     "title": "黃仁勳：2029 年前記憶體難過剩，與中國企業合作持開放態度",
-     "url": "https://technews.tw/2026/10/23/memory-oversupply-is-unlikely-before-2029",
-     "source": "科技新報 TechNews",
+     "title": "晶片設計機密不出內網！台大打造專用AI引擎，台灣7大前瞻技術一次看",
+     "url": "https://www.bnext.com.tw/article/92788/ntu-ic-design-ai-engine-taiwan-7-frontier-technologies",
+     "source": "數位時代",
      "lang": "zh",
-     "published": "2026-10-22T22:15:50+00:00",
-     "summary": "輝達（NVIDIA）執行長黃仁勳針對近期市場對記憶體半導體供過於求的疑慮發表看法。他指出，隨著人工智慧（AI） […]",
-     "image": "",
-     "id": "ebf8889d4f47",
-     "tags": [
-      "中國觀察",
-      "半導體",
-      "記憶體",
-      "CoreWeave",
-      "HBM"
-     ]
-    }
-   ]
-  },
-  {
-   "key": "t0037",
-   "title": "AI訓練資料不只靠開放，數發部擬推動使用報酬機制",
-   "summary": "生成式AI時代，模型能力的競爭不只取決於算力與架構，也取決於是否擁有高品質、具代表性的訓練資料。過去大型AI模型多利用網路公開資料進行訓練，但隨著AI服務逐漸商業化，內容創作者、媒體、出版與文化產業開始關注，作品如何被AI使用，以及資料提供者是否能在AI價值鏈中獲得合理回饋。 面對AI發展帶來的資料利用與權利保障問題，數位發展部、文化部與經濟部智慧財產局在10月中首度共同召開權利人意見交流會議，邀集內容產業代表、公協會、AI應用業者與相關專家，就AI訓練資料利用、授權方式、著作權保障，以及優質語料整備等議題交換意見。 在這次的交流會中政府部會透露政府對A",
-   "category": "其他",
-   "importance": 3,
-   "keywords": [],
-   "image": "img/2026-10-24/580785c776d006b1.webp",
-   "llm_enriched": false,
-   "sources": [
-    "iThome"
-   ],
-   "articles": [
-    {
-     "title": "AI訓練資料不只靠開放，數發部擬推動使用報酬機制",
-     "url": "https://www.ithome.com.tw/news/179931",
-     "source": "iThome",
-     "lang": "zh",
-     "published": "2026-10-22T22:10:50+00:00",
-     "summary": "生成式AI時代，模型能力的競爭不只取決於算力與架構，也取決於是否擁有高品質、具代表性的訓練資料。過去大型AI模型多利用網路公開資料進行訓練，但隨著AI服務逐漸商業化，內容創作者、媒體、出版與文化產業開始關注，作品如何被AI使用，以及資料提供者是否能在AI價值鏈中獲得合理回饋。 面對AI發展帶來的資料利用與權利保障問題，數位發展部、文化部與經濟部智慧財產局在10月中首度共同召開權利人意見交流會議，邀集內容產業代表、公協會、AI應用業者與相關專家，就AI訓練資料利用、授權方式、著作權保障，以及優質語料整備等議題交換意見。 在這次的交流會中政府部會透露政府對AI資料政策的思考，資料不再只是透過開放取得的資源，而是要建立更完整的授權與回饋制度。",
-     "image": "",
-     "id": "ac928a7a92a2",
+     "published": "2026-10-24T12:52:00+00:00",
+     "summary": "台大洪士灝團隊打造可在企業內網部署的IC設計專用AI引擎，降低機密外洩風險；另有產線瑕疵檢測、工控資安、胰臟癌早篩等，一次看台灣7大前瞻技術。",
+     "image": "https://image-cdn.learnin.tw/bnextmedia/image/album/2026-10/img-mcp-11fc74aa2cc1e68d.jpg?w=900&output=webp",
+     "id": "524418c6ffaa",
      "tags": []
     }
    ]
   },
   {
-   "key": "t0038",
-   "title": "DeepSeek 與 MiniMax 獲准出海，傳配合中國 AI 技術出口新規",
-   "summary": "中國央視旗下新媒體報導，DeepSeek 與 MiniMax 兩家人工智慧企業已獲准全球使用，並已完成相關登記 […]",
+   "key": "t0006",
+   "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+   "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
    "category": "其他",
    "importance": 3,
    "keywords": [
-    "deepseek",
-    "minimax"
+    "projects",
+    "apple",
+    "graveyard",
+    "running",
+    "startups",
+    "didn"
    ],
-   "image": "img/2026-10-24/0c286c2f939c1691.webp",
+   "image": "img/2026-10-25/bdc295c2f0553b72.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+     "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-10-24T11:00:00+00:00",
+     "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+     "image": "",
+     "id": "dbe76530e989",
+     "tags": [
+      "AI",
+      "evergreens",
+      "Microsoft",
+      "OpenAI",
+      "siri ai"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0007",
+   "title": "Pennsylvania will require labels on AI-generated ads",
+   "summary": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "intel",
+    "pennsylvania",
+    "ai-generated",
+    "require",
+    "labels",
+    "ads"
+   ],
+   "image": "img/2026-10-25/baa9fa6d8832de50.webp",
+   "llm_enriched": false,
+   "sources": [
+    "The Verge AI"
+   ],
+   "articles": [
+    {
+     "title": "Pennsylvania will require labels on AI-generated ads",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+     "source": "The Verge AI",
+     "lang": "en",
+     "published": "2026-10-24T10:32:21+00:00",
+     "summary": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or generated by artificial intelligence\" to include a label in the same format as […]",
+     "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK445_ADVERTISING_STK093_GOOGLE_C.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+     "id": "09a5dda45158",
+     "tags": [
+      "AI",
+      "Law",
+      "News",
+      "Policy"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0008",
+   "title": "Block’s new voice model sounds eerily human",
+   "summary": "Block said that the voice model can run locally on a MacBook M4 Max",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "block",
+    "voice",
+    "sounds",
+    "eerily",
+    "model",
+    "human"
+   ],
+   "image": "img/2026-10-25/c2cf5f0259410a1b.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Block’s new voice model sounds eerily human",
+     "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-10-24T08:00:00+00:00",
+     "summary": "Block said that the voice model can run locally on a MacBook M4 Max",
+     "image": "",
+     "id": "688136660c10",
+     "tags": [
+      "AI",
+      "block",
+      "jack dorsey",
+      "voice AI"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0009",
+   "title": "JBL CLIPS 琉璃扣耳夹耳机新增“碧玺红色特别版”，1346 元",
+   "summary": "IT之家 10 月 24 日消息，JBL 现已为旗下 JBL CLIPS 琉璃扣耳夹耳机新增“碧玺红色特别版”，首发价 1346 元，部分地区国补后低至 949 元。 京东 JBL CLIPS 琉璃扣“碧玺红色特别版” 1346 元 点此访问 这款耳机的充电盒、本体均采用半透明设计；搭载 11mm 动圈单元，定制驱动单元加载镀钛双层振膜；支持 SonicArc 定向投送技术，可减少漏音现象，保护用户隐私。 这款耳机支持 IP54 级防尘防水；单体重量 6.5g，采用 C 形桥设计，外部为柔性 TPU 材质，适配多种耳形；内置 4 个麦克风，支持 AI 通",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "jbl",
+    "clips",
+    "1346",
+    "11.11",
+    "26888"
+   ],
+   "image": "img/2026-10-25/39c331095ef1930d.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "JBL CLIPS 琉璃扣耳夹耳机新增“碧玺红色特别版”，1346 元",
+     "url": "https://www.ithome.com/1/017/520.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-24T07:04:17+00:00",
+     "summary": "IT之家 10 月 24 日消息，JBL 现已为旗下 JBL CLIPS 琉璃扣耳夹耳机新增“碧玺红色特别版”，首发价 1346 元，部分地区国补后低至 949 元。 京东 JBL CLIPS 琉璃扣“碧玺红色特别版” 1346 元 点此访问 这款耳机的充电盒、本体均采用半透明设计；搭载 11mm 动圈单元，定制驱动单元加载镀钛双层振膜；支持 SonicArc 定向投送技术，可减少漏音现象，保护用户隐私。 这款耳机支持 IP54 级防尘防水；单体重量 6.5g，采用 C 形桥设计，外部为柔性 TPU 材质，适配多种耳形；内置 4 个麦克风，支持 AI 通话降噪及 ENC 算法，支持使用 App 校正麦克风；配合充电盒使用时续航达 24 小时，单体续航为 8 小时。 IT之家附该耳机详细参数如下： 京东 11.11 无门槛红包 面额至高 26888 元，每天抽 3 次： 点此抽红包 。 淘宝 11.11 无门槛红包 面额至高 26888 元，每天抽 1 次： 点此抽红包 。",
+     "image": "https://img14.360buyimg.com/pop/jfs/t1/533433/24/3123/476004/6ab49cafF1b9f2afb/08ee3203204abd5f.png",
+     "id": "60ba9f8c6708",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0010",
+   "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+   "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "xai",
+    "grok",
+    "forced",
+    "pick",
+    "chooses",
+    "republicans."
+   ],
+   "image": "img/2026-10-25/9423e5f767770ef7.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+     "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-10-24T07:00:00+00:00",
+     "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+     "image": "",
+     "id": "e4ac1d3f295a",
+     "tags": [
+      "AI",
+      "Government & Policy",
+      "Elon Musk",
+      "SpaceX",
+      "vote"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0011",
+   "title": "中国信通院：6 月国内词元日均消耗量约 500 万亿，是 2025 年 12 月的近 4 倍",
+   "summary": "IT之家 10 月 24 日消息，据中国信通院，随着大模型技术的迅速迭代，词元（Token）服务成为从技术走向应用的关键点，我国日均词元调用量持续攀升，2026 年 6 月， 国内词元日均消耗量约 500 万亿 ，是 2025 年 12 月的近 4 倍。产业中越来越多的 MaaS（Model as a Service，模型即服务）平台厂商通过公有云 API 方式供给大模型词元服务。然而用户对词元服务性能缺乏直观的判断依据，且面临选型困难等各类问题。 为有效衡量服务性能，中国信息通信研究院（简称“中国信通院”）人工智能研究所、人工智能大模型及软硬件评测工业",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "2025",
+    "deepseek",
+    "alibaba",
+    "2026"
+   ],
+   "image": "img/2026-10-25/90b1c1be40fbc24a.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "中国信通院：6 月国内词元日均消耗量约 500 万亿，是 2025 年 12 月的近 4 倍",
+     "url": "https://www.ithome.com/1/017/518.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-24T06:41:49+00:00",
+     "summary": "IT之家 10 月 24 日消息，据中国信通院，随着大模型技术的迅速迭代，词元（Token）服务成为从技术走向应用的关键点，我国日均词元调用量持续攀升，2026 年 6 月， 国内词元日均消耗量约 500 万亿 ，是 2025 年 12 月的近 4 倍。产业中越来越多的 MaaS（Model as a Service，模型即服务）平台厂商通过公有云 API 方式供给大模型词元服务。然而用户对词元服务性能缺乏直观的判断依据，且面临选型困难等各类问题。 为有效衡量服务性能，中国信息通信研究院（简称“中国信通院”）人工智能研究所、人工智能大模型及软硬件评测工业和信息化部重点实验室和中国人工智能产业发展联盟，自 2025 年以来持续开展公有云大模型词元服务性能监测工作，为产业应用提供重要参考，现联合发布《大模型词元服务性能监测报告（2026 年）》。 报告基于 2026 年 1-8 月的监测数据，围绕各平台词元服务调用成功率、吞吐速度、首词时延、稳定性、价格、上下文窗口等维度开展分析，对比原厂大模型官方平台，以及 DeepSeek、Qwen、GLM、Kimi 四款开源模型在第三方平台上的性能差异，进一步分析影响词元服务性能的关键因素，总结产业核心观察，明确下一步工作计划，旨在为用户选型提供参考，并为产业界优化服务能力提供方向指引。 IT之家附报告核心观点： 1. 国内词元服务每秒吞吐量较 ",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/381b39b2-9c53-4e75-84cd-deac8b3769fa.png?x-bce-process=image/format,f_auto",
+     "id": "f08042ef1865",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0012",
+   "title": "Here are the top AI agents that can live in your text messages",
+   "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "agents",
+    "live",
+    "messages",
+    "agent",
+    "text",
+    "top"
+   ],
+   "image": "img/2026-10-25/6ad3431ada9b3ce3.webp",
+   "llm_enriched": false,
+   "sources": [
+    "TechCrunch AI"
+   ],
+   "articles": [
+    {
+     "title": "Here are the top AI agents that can live in your text messages",
+     "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages",
+     "source": "TechCrunch AI",
+     "lang": "en",
+     "published": "2026-10-24T06:00:00+00:00",
+     "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+     "image": "",
+     "id": "4a535eced667",
+     "tags": [
+      "AI",
+      "instinct",
+      "AI agents"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0013",
+   "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
+   "summary": "Security researchers used AI tools to help uncover years-old vulnerabilities in the PHP web scripting language. Then the AI-assisted attacks began.",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "php",
+    "meltdown",
+    "shows",
+    "makes",
+    "bugs",
+    "exploitable"
+   ],
+   "image": "img/2026-10-25/5007023d7127290c.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Wired AI"
+   ],
+   "articles": [
+    {
+     "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
+     "url": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable",
+     "source": "Wired AI",
+     "lang": "en",
+     "published": "2026-10-24T04:00:00+00:00",
+     "summary": "Security researchers used AI tools to help uncover years-old vulnerabilities in the PHP web scripting language. Then the AI-assisted attacks began.",
+     "image": "https://media.wired.com/photos/6adbb8a7e6d0c133525c3e7c/master/pass/KernelPanic_The%20PHP%20Meltdown%20Shows%20How%20AI%20Makes%20Bugs%20More%20Exploitable.jpg",
+     "id": "bb17047188a0",
+     "tags": [
+      "Security",
+      "Security / Cyberattacks and Hacks",
+      "Kernel Panic",
+      "artificial intelligence",
+      "hacking"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0014",
+   "title": "Anthropic Claude 付款页面新增中国及港澳台地区选项，支持银联卡支付",
+   "summary": "IT之家 10 月 24 日消息，近日有用户反馈称 Anthropic 旗下 Claude 的升级支付页面出现了新的地区选项变化。 IT之家实测发现，中国大陆及港澳台地区已出现在付款页面中，支付入口也已支持绑定中国银联卡。 与此同时，社交平台和开发者社区有用户称，此前被永久封禁的 Claude 账号可以提交申诉，且已有个别用户反馈申诉成功。关于这一点，IT之家暂无法核实。 值得一提的是，Claude 支付页面出现中国地区选项，并不等于 Anthropic 已全面开放相关地区的服务。截至目前，Anthropic 官方帮助中心仍要求用户位于其支持的地区才能使",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "anthropic",
+    "claude"
+   ],
+   "image": "img/2026-10-25/573335371c37112d.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "Anthropic Claude 付款页面新增中国及港澳台地区选项，支持银联卡支付",
+     "url": "https://www.ithome.com/1/017/490.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-24T03:39:49+00:00",
+     "summary": "IT之家 10 月 24 日消息，近日有用户反馈称 Anthropic 旗下 Claude 的升级支付页面出现了新的地区选项变化。 IT之家实测发现，中国大陆及港澳台地区已出现在付款页面中，支付入口也已支持绑定中国银联卡。 与此同时，社交平台和开发者社区有用户称，此前被永久封禁的 Claude 账号可以提交申诉，且已有个别用户反馈申诉成功。关于这一点，IT之家暂无法核实。 值得一提的是，Claude 支付页面出现中国地区选项，并不等于 Anthropic 已全面开放相关地区的服务。截至目前，Anthropic 官方帮助中心仍要求用户位于其支持的地区才能使用 Claude。 本月初，Anthropic 还为 Claude 网页端新增了简体中文和繁体中文的语言选项。 对于账号解封问题，Anthropic 官方帮助中心提供了申诉渠道。用户如果认为账号遭到错误停用，可以登录被封禁的账号并填写申诉表，由安全团队进一步调查停用原因。官方列出的封禁原因包括重复违反使用政策、从不受支持的地区创建账号以及违反服务条款。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/59fb8839-3f92-4c97-9d77-47008eb119b6.jpg?x-bce-process=image/format,f_auto",
+     "id": "2a7c0291dd34",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0015",
+   "title": "消息称字节跳动 AI 短剧产品内部整合：小云雀并入即梦，仍保留独立入口",
+   "summary": "IT之家 10 月 24 日消息，据 36 氪今日报道，字节跳动内部近期完成了一次业务整合，AI 短剧创作平台小云雀并入智能创作平台即梦，产品仍保留独立入口。 此次调整以资源整合为主，即梦已经接入小云雀的短剧相关能力。调整后，小云雀的运营由即梦运营和市场负责人陈欣然负责，产品团队没有变化。 小云雀和即梦均出自字节剪映团队。小云雀定位为一站式 AI 内容创作平台，今年 3 月上线短剧 Agent，支持上传最多 10 万字剧本、一键生成视频成片，搭载了字节自研的 Seedance 2.0 模型，在短剧、漫剧的标准化生产场景中具备从剧本解析到分镜生成的完整流程",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "bytedance",
+    "agent"
+   ],
+   "image": "img/2026-10-25/6b99128a9b9eae78.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "消息称字节跳动 AI 短剧产品内部整合：小云雀并入即梦，仍保留独立入口",
+     "url": "https://www.ithome.com/1/017/480.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-24T02:59:27+00:00",
+     "summary": "IT之家 10 月 24 日消息，据 36 氪今日报道，字节跳动内部近期完成了一次业务整合，AI 短剧创作平台小云雀并入智能创作平台即梦，产品仍保留独立入口。 此次调整以资源整合为主，即梦已经接入小云雀的短剧相关能力。调整后，小云雀的运营由即梦运营和市场负责人陈欣然负责，产品团队没有变化。 小云雀和即梦均出自字节剪映团队。小云雀定位为一站式 AI 内容创作平台，今年 3 月上线短剧 Agent，支持上传最多 10 万字剧本、一键生成视频成片，搭载了字节自研的 Seedance 2.0 模型，在短剧、漫剧的标准化生产场景中具备从剧本解析到分镜生成的完整流程能力。 即梦 AI 于 2024 年 5 月推出，最初覆盖文生图、文生视频等生成能力，此后逐步向智能画布、首尾帧控制等偏专业创作的 Agent 编辑工具延伸，用户群体覆盖普通创作者与专业设计师。 IT之家注意到，两者在功能上存在重叠：都能在平台内完成“从生成到成片”的全流程，与剪映的剪辑环节形成平行的用户路径。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/e4977913-328e-40d3-9ea0-44ffac999b95.png?x-bce-process=image/format,f_auto",
+     "id": "ddad7c4ed557",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0016",
+   "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+   "summary": "Article URL: https://github.com/Zagitta/gpu-unlock Comments URL: https://news.ycombinator.com/item?id=50219700 Points: 169 # Comments: 61",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "gpu-unlock",
+    "instruction",
+    "issue",
+    "rate",
+    "cards",
+    "url"
+   ],
+   "image": "img/2026-10-25/dbe0f52fc42ea966.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Hacker News (100+)"
+   ],
+   "articles": [
+    {
+     "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+     "url": "https://github.com/Zagitta/gpu-unlock",
+     "source": "Hacker News (100+)",
+     "lang": "en",
+     "published": "2026-10-24T01:58:27+00:00",
+     "summary": "Article URL: https://github.com/Zagitta/gpu-unlock Comments URL: https://news.ycombinator.com/item?id=50219700 Points: 169 # Comments: 61",
+     "image": "",
+     "id": "8acda1e9f09f",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0017",
+   "title": "XREAL 1 Pro+ 智能眼镜国行上架：峰值亮度提升至 1200 尼特、鼻托结构重新设计，3499 元",
+   "summary": "IT之家 10 月 24 日消息，XREAL 10 月 16 日在海外发布了新款 AR 眼镜 XREAL 1 Pro+，主要提升面板亮度，同时调整人体工程学设计，目前该机国行版本已在京东上架， 定价 3499 元 ，10 月 27 日发售。 京东 XREAL 1 Pro+ 智能眼镜 3499 元 直达链接 XREAL 1 Pro+ 采用重新设计的鼻托结构，旨在改善眼镜与面部的贴合度，提升长时间观看时的舒适性。其搭载双 0.55 英寸索尼 Micro-OLED 面板，峰值亮度最高可达 1200 尼特，较前代产品的 700 尼特明显提升。 除了更高的峰值亮度",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "xreal",
+    "pro+",
+    "3499",
+    "1200"
+   ],
+   "image": "img/2026-10-25/ed059664556af31a.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "XREAL 1 Pro+ 智能眼镜国行上架：峰值亮度提升至 1200 尼特、鼻托结构重新设计，3499 元",
+     "url": "https://www.ithome.com/1/017/439.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-24T01:53:39+00:00",
+     "summary": "IT之家 10 月 24 日消息，XREAL 10 月 16 日在海外发布了新款 AR 眼镜 XREAL 1 Pro+，主要提升面板亮度，同时调整人体工程学设计，目前该机国行版本已在京东上架， 定价 3499 元 ，10 月 27 日发售。 京东 XREAL 1 Pro+ 智能眼镜 3499 元 直达链接 XREAL 1 Pro+ 采用重新设计的鼻托结构，旨在改善眼镜与面部的贴合度，提升长时间观看时的舒适性。其搭载双 0.55 英寸索尼 Micro-OLED 面板，峰值亮度最高可达 1200 尼特，较前代产品的 700 尼特明显提升。 除了更高的峰值亮度，新品还加入 AI HDR 功能，借助 AI 技术改善画面对比度，让用户通过眼镜观看内容时获得更好的视觉体验。同时眼镜新增标准、电影和阅读三种显示模式，用户可以根据日常使用、观看影片或阅读等不同场景选择合适的显示效果。 XREAL 表示，新款眼镜还改进了内置的 Real 3D 引擎，可将普通 2D 内容转换为具有空间感的 3D 画面，处理帧率最高提升至 60 FPS， 新品的其他核心硬件变化不大，仍搭载 Xreal 自研的 X1 空间计算芯片，视场角也维持在 57 度，与上一代产品相同。 京东 11.11 无门槛红包 面额至高 26888 元，每天抽 3 次： 点此抽红包 。 淘宝 11.11 无门槛红包 面额至高 26888 元，",
+     "image": "https://img14.360buyimg.com/pop/jfs/t1/545399/38/7391/45904/6ad4e0b1F6a01a2b8/008332032087731e.png",
+     "id": "05e9ac0d9758",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0018",
+   "title": "14.99 万元起，捷途山海 L7 PLUS 1.5L C-DM 智驾版新增“智享精英版”“激光雷达豪华版”上市",
+   "summary": "IT之家 10 月 24 日消息，捷途汽车宣布为旗下捷途山海 L7 PLUS 1.5L C-DM 智驾版新增“220KM 五座智享精英版”和“220KM 五座激光雷达豪华版”， 指导价分别为 14.99 万元和 15.99 万元 ，超级置换政策后售价分别为 13.99 万元和 14.99 万元。 系列车型继续延续现款车型的设计风格，星环式贯穿灯组搭配两侧 J 字形造型勾勒，封闭式前格栅搭配下方梯形进气口。车身采用半隐藏式车门把手搭配密辐式轮圈，提升车辆精致感。车尾采用贯穿式尾灯组，与车头形成视觉呼应。 该车采用 10.25 英寸全液晶仪表 +15.6 英",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "1.5",
+    "14.99",
+    "plus",
+    "c-dm",
+    "220"
+   ],
+   "image": "img/2026-10-25/e63b3e4471c33c87.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "14.99 万元起，捷途山海 L7 PLUS 1.5L C-DM 智驾版新增“智享精英版”“激光雷达豪华版”上市",
+     "url": "https://www.ithome.com/1/017/431.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-24T01:31:05+00:00",
+     "summary": "IT之家 10 月 24 日消息，捷途汽车宣布为旗下捷途山海 L7 PLUS 1.5L C-DM 智驾版新增“220KM 五座智享精英版”和“220KM 五座激光雷达豪华版”， 指导价分别为 14.99 万元和 15.99 万元 ，超级置换政策后售价分别为 13.99 万元和 14.99 万元。 系列车型继续延续现款车型的设计风格，星环式贯穿灯组搭配两侧 J 字形造型勾勒，封闭式前格栅搭配下方梯形进气口。车身采用半隐藏式车门把手搭配密辐式轮圈，提升车辆精致感。车尾采用贯穿式尾灯组，与车头形成视觉呼应。 该车采用 10.25 英寸全液晶仪表 +15.6 英寸可左右 10° 旋转向日葵中控屏，搭载高通 SA8255 芯片，匹配 24GB RAM 和 256GB 存储空间，运行 TOUR OS 3.2 车机系统，内置科大讯飞星火 AI 大模型，支持四音区语音交互，配备伯牙之音 12 扬声器音响。 规格方面，系列车型长宽高分别为 4810/1930/1705mm，轴距为 2820mm。车辆搭载鲲鹏超能混动 C‑DM6.0 系统，提供两套混动总成。其中 1.5TGDI 混动发动机版本最大功率 115kW，峰值扭矩 220N·m，发动机热效率 45.79%；综合最大功率 300kW，峰值扭矩 500N·m。1.5L 混动专用发动机，发动机热效率 46.09%，最大功率 82kW，峰值扭矩 13",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/60ef7f53-b947-4d68-89bb-215bc179afa1.png?x-bce-process=image/format,f_auto",
+     "id": "c97a4cec364d",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0019",
+   "title": "开发者成功为小米 8 手机刷入苹果 iOS 16.5 系统，将机型伪装为 iPhone X",
+   "summary": "IT之家 10 月 24 日消息，随着 AI 技术突飞猛进，许多开发者在大模型辅助加持之下对各种老旧机型进行折腾，先前便有 开发者为小米 Redmi Note 12 4G 手机刷入 iOS 系统，并开源了项目 。 IT之家注意到，目前又有开发者 Yanei 发布视频，展示其成功为一部小米 8 手机刷入 iOS 16.5 系统，参考其发布的视频，可以看到该开发者将设备机型伪装为 iPhone X，系统元素在小米 8 手机上呈现良好。 该网友在视频简介和评论区中表示，小米 8 和当年的 iPhone X 真的太像了，运行起来颇有当年的感觉，最初 GPU 存在",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "ios",
+    "iphone",
+    "samsung",
+    "xiaomi",
+    "16.5",
+    "apple"
+   ],
+   "image": "img/2026-10-25/1d606bb4aadfcf92.webp",
+   "llm_enriched": false,
+   "sources": [
+    "IT之家"
+   ],
+   "articles": [
+    {
+     "title": "开发者成功为小米 8 手机刷入苹果 iOS 16.5 系统，将机型伪装为 iPhone X",
+     "url": "https://www.ithome.com/1/017/429.htm",
+     "source": "IT之家",
+     "lang": "zh",
+     "published": "2026-10-24T01:16:32+00:00",
+     "summary": "IT之家 10 月 24 日消息，随着 AI 技术突飞猛进，许多开发者在大模型辅助加持之下对各种老旧机型进行折腾，先前便有 开发者为小米 Redmi Note 12 4G 手机刷入 iOS 系统，并开源了项目 。 IT之家注意到，目前又有开发者 Yanei 发布视频，展示其成功为一部小米 8 手机刷入 iOS 16.5 系统，参考其发布的视频，可以看到该开发者将设备机型伪装为 iPhone X，系统元素在小米 8 手机上呈现良好。 该网友在视频简介和评论区中表示，小米 8 和当年的 iPhone X 真的太像了，运行起来颇有当年的感觉，最初 GPU 存在卡顿情况，后续经过修复后流畅了不少。 目前，系统桌面显示和动画已经比较流畅，不过项目整体仍处于早期移植阶段，很多硬件驱动还需要继续适配，暂时不能作为日常系统使用。 公开信息显示，小米 8 于 2018 年 5 月 31 日推出，该机采用 6.21 英寸三星 AMOLED 异型全面屏（刘海屏），机身背部采用四曲面玻璃设计，配合 7 系铝金属中框，搭载了高通骁龙 845 移动平台，内置 3400mAh 电池。",
+     "image": "https://img.ithome.com/newsuploadfiles/2026/10/fcfd92b9-2738-4fd4-9c9d-104035485a26.png",
+     "id": "dc24e27885ad",
+     "tags": []
+    }
+   ]
+  },
+  {
+   "key": "t0020",
+   "title": "沒有指令的 AI 都在做什麼？MIT 虛擬島嶼實驗：它們會玩耍、推理，甚至做實驗",
+   "summary": "麻省理工學院（MIT）計算機科學與人工智慧實驗室（CSAIL）一項研究顯示，當 AI 代理人被放進封閉的虛擬環 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "mit",
+    "agent",
+    "csail"
+   ],
+   "image": "img/2026-10-25/2c02e69407eb5ef2.webp",
    "llm_enriched": false,
    "sources": [
     "科技新報 TechNews"
    ],
    "articles": [
     {
-     "title": "DeepSeek 與 MiniMax 獲准出海，傳配合中國 AI 技術出口新規",
-     "url": "https://technews.tw/2026/10/23/deepseek-minimax-win-approval-for-global-use-state-media-says",
+     "title": "沒有指令的 AI 都在做什麼？MIT 虛擬島嶼實驗：它們會玩耍、推理，甚至做實驗",
+     "url": "https://technews.tw/2026/10/24/researchers-stranded-an-ai-agent-on-a-virtual-island",
      "source": "科技新報 TechNews",
      "lang": "zh",
-     "published": "2026-10-22T22:10:26+00:00",
-     "summary": "中國央視旗下新媒體報導，DeepSeek 與 MiniMax 兩家人工智慧企業已獲准全球使用，並已完成相關登記 […]",
+     "published": "2026-10-24T01:00:20+00:00",
+     "summary": "麻省理工學院（MIT）計算機科學與人工智慧實驗室（CSAIL）一項研究顯示，當 AI 代理人被放進封閉的虛擬環 […]",
      "image": "",
-     "id": "f1176c0fc98e",
+     "id": "cda0b30fbf82",
      "tags": [
       "AI 人工智慧",
-      "DeepSeek",
-      "中國觀察",
-      "開放資料",
-      "AI 開源模型"
+      "科技趣聞",
+      "AI 代理",
+      "MIT"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0021",
+   "title": "非科學家團隊靠 Claude 設計抗蠍毒蛋白質，64 小時完成、實驗驗證成功",
+   "summary": "一支幾乎沒有科學背景的五人團隊，在 Anthropic 的協助下完成一項引人注目的蛋白質設計實驗：他們讓 AI […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "anthropic",
+    "claude"
+   ],
+   "image": "img/2026-10-25/436b16836f4fe65d.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "非科學家團隊靠 Claude 設計抗蠍毒蛋白質，64 小時完成、實驗驗證成功",
+     "url": "https://technews.tw/2026/10/24/ai-does-the-lab-work",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-24T00:00:32+00:00",
+     "summary": "一支幾乎沒有科學背景的五人團隊，在 Anthropic 的協助下完成一項引人注目的蛋白質設計實驗：他們讓 AI […]",
+     "image": "",
+     "id": "0bdf9f9df801",
+     "tags": [
+      "AI 人工智慧",
+      "Claude",
+      "生物科技",
+      "Anthropic",
+      "Citrini Research"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0022",
+   "title": "AMD 玩家福音！新模組讓 Radeon 也能跑 NVIDIA DLSS，首度解鎖光線重建",
+   "summary": "PC 模組社群再度突破 NVIDIA 專有技術的使用邊界。開發者 danielblnc 近日釋出 DLSS-N […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "amd",
+    "nvidia",
+    "radeon",
+    "dlss",
+    "danielblnc",
+    "dlss-n"
+   ],
+   "image": "img/2026-10-25/b2ad43976b5eb299.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "AMD 玩家福音！新模組讓 Radeon 也能跑 NVIDIA DLSS，首度解鎖光線重建",
+     "url": "https://technews.tw/2026/10/24/all-dlss-features-including-ray-reconstruction-have-been-ported-to-rdna-4-and-3",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-23T23:00:10+00:00",
+     "summary": "PC 模組社群再度突破 NVIDIA 專有技術的使用邊界。開發者 danielblnc 近日釋出 DLSS-N […]",
+     "image": "",
+     "id": "c0e2b2c021e9",
+     "tags": [
+      "GPU",
+      "Nvidia",
+      "軟體、系統",
+      "遊戲軟體",
+      "AMD"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0023",
+   "title": "美國砸 3.89 億美元扶植功率半導體，鎖定 AI 資料中心與核融合應用",
+   "summary": "美國持續擴大本土功率半導體及關鍵材料布局。美國商務部宣布，依據《晶片與科學法案》（CHIPS and Scie […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "datacenter",
+    "funding",
+    "regulation",
+    "3.89",
+    "chip",
+    "chips"
+   ],
+   "image": "img/2026-10-25/39eba04423af217f.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "美國砸 3.89 億美元扶植功率半導體，鎖定 AI 資料中心與核融合應用",
+     "url": "https://technews.tw/2026/10/24/us-invests-389-million-boost-power-semiconductors-ai-data-centers-nuclear-fusion-applications",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-23T22:07:56+00:00",
+     "summary": "美國持續擴大本土功率半導體及關鍵材料布局。美國商務部宣布，依據《晶片與科學法案》（CHIPS and Scie […]",
+     "image": "",
+     "id": "79ee1c49c4fb",
+     "tags": [
+      "半導體",
+      "GaN",
+      "功率半導體"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0024",
+   "title": "超導類神經網路晶片通過核融合測試，每秒即時分析百萬筆電漿資料",
+   "summary": "美國能源部（DOE）布魯克黑文國家實驗室（Brookhaven National Laboratory）19 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "chip",
+    "doe",
+    "brookhaven"
+   ],
+   "image": "img/2026-10-25/55a2012c770b84e9.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "超導類神經網路晶片通過核融合測試，每秒即時分析百萬筆電漿資料",
+     "url": "https://technews.tw/2026/10/24/covering-the-fastest-computers-in-the-world-and-the-people-who-run-them-13",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-23T22:00:30+00:00",
+     "summary": "美國能源部（DOE）布魯克黑文國家實驗室（Brookhaven National Laboratory）19 […]",
+     "image": "",
+     "id": "a29586e7ca40",
+     "tags": [
+      "晶片",
+      "核能",
+      "能源科技",
+      "Great Sky",
+      "核融合"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0025",
+   "title": "神經網路「沒那麼難懂」，OpenAI 前研究員 2.6 萬字長文引爆學界正反論戰",
+   "summary": "AI 新創公司 Goodfire 的研究員 Nick Cammarata 近期發表一篇長達 2.6 萬字的部落 […]",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "2.6",
+    "openai",
+    "goodfire",
+    "nick",
+    "cammarata"
+   ],
+   "image": "img/2026-10-25/edb28c5706eb74b2.webp",
+   "llm_enriched": false,
+   "sources": [
+    "科技新報 TechNews"
+   ],
+   "articles": [
+    {
+     "title": "神經網路「沒那麼難懂」，OpenAI 前研究員 2.6 萬字長文引爆學界正反論戰",
+     "url": "https://technews.tw/2026/10/24/ai-world-stunned-breakthrough-unravels-neural-network-mystery",
+     "source": "科技新報 TechNews",
+     "lang": "zh",
+     "published": "2026-10-23T21:00:23+00:00",
+     "summary": "AI 新創公司 Goodfire 的研究員 Nick Cammarata 近期發表一篇長達 2.6 萬字的部落 […]",
+     "image": "",
+     "id": "1c36f0ed10f2",
+     "tags": [
+      "AI 人工智慧",
+      "科技生活",
+      "網路",
+      "AI 代理",
+      "大型語言模型"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "t0026",
+   "title": "battledrones v14: Compass Rose, a four player map",
+   "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works wi",
+   "category": "其他",
+   "importance": 3,
+   "keywords": [
+    "four",
+    "map",
+    "player",
+    "battledrones",
+    "compass",
+    "rose"
+   ],
+   "image": "img/2026-10-25/2225255e2f36f893.webp",
+   "llm_enriched": false,
+   "sources": [
+    "Simon Willison"
+   ],
+   "articles": [
+    {
+     "title": "battledrones v14: Compass Rose, a four player map",
+     "url": "https://simonwillison.net/2026/Oct/24/battledrones",
+     "source": "Simon Willison",
+     "lang": "en",
+     "published": "2026-10-23T19:59:57+00:00",
+     "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players can join (any spare slots use AI) Claude Opus 5.5 added a new map called \"Compass Rose\" and modified the WebSockets multiplayer network code to support up to four players for that map, joining via share links or QR codes. The new teams use ro",
+     "image": "https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg",
+     "id": "5699208333bf",
+     "tags": [
+      "game-design",
+      "projects",
+      "claude"
      ]
     }
    ]
