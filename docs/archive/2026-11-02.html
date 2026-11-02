@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 每日新聞彙整 · 2026-11-02</title>
+<meta name="description" content="2026-11-02 AI 新聞彙整：30 個主題、33 篇報導，同主題不同來源已整合。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html" class="on">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+  <a href="../hamster.html">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../index.html">AI 每日新聞彙整</a></h1>
+  <div class="meta">
+    <span>2026-11-02</span>
+    <span>30 個主題 · 33 篇報導</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 11/02 08:10</span>
+    <a href="../archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+
+<nav class="tabs" aria-label="主題分類">
+  <a href="#cat0">其他<b>30</b></a>
+</nav>
+
+<section class="briefs">
+  <article class="brief">
+    <a class="brief-hero" href="#t0003">
+      <img src="../img/2026-11-02/b31f943ac6f940c0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">其他</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0003">聯發科ASIC傳言逐一拆彈　第二專案與第二客戶雙雙鎖定2028發酵</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0000">中國本土AI晶片替代H200　華為、寒武紀、平頭哥各有戰線</a></li>
+        <li><a href="#t0001">AI 寫程式又快又多，漏洞風險與「責任歸屬」成企業開發新難題</a></li>
+        <li><a href="#t0002">駭客也開始用 AI 了，企業的資安防護跟得上嗎？</a></li>
+      </ul>
+      <a class="brief-more" href="#cat0">看這個分類的 30 則 →</a>
+    </div>
+  </article>
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+
+<h2 class="cat" id="cat0">其他</h2>
+<article id="t0003">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">asic</span><span class="badge">datacenter</span><span class="badge">2028</span>      </div>
+      <h3>聯發科ASIC傳言逐一拆彈　第二專案與第二客戶雙雙鎖定2028發酵</h3>
+<p class="summary">台系IC設計龍頭聯發科最新的2026年第3季法說會，外界關注焦點幾乎集中於資料中心特用晶片（ASIC）業務上。針對市場近期對第二個AI加速器ASIC專案延遲、EMIB封裝...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/b31f943ac6f940c0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=40&amp;id=0000773050_MXCL295R6XPX6MLZ6ISCW&amp;wpidx=3" target="_blank" rel="noopener noreferrer">聯發科ASIC傳言逐一拆彈　第二專案與第二客戶雙雙鎖定2028發酵</a>
+      <time datetime="2026-11-01T16:00:00+00:00">11/02 00:00</time>
+    </li>
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/11/02/mediatek-ai-asic-google-foxconn-tpu" target="_blank" rel="noopener noreferrer">【科技早餐】聯發科 AI 晶片開始出貨！Google 攜鴻海挑戰半年部署 TPU</a>
+      <time datetime="2026-11-01T13:30:00+00:00">11/01 21:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0000">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">h200</span><span class="badge">200</span><span class="badge">300</span>      </div>
+      <h3>中國本土AI晶片替代H200　華為、寒武紀、平頭哥各有戰線</h3>
+<p class="summary">天數智芯天垓300公布部分指標超越NVIDIA H200的實測結果，讓中國本土AI晶片追趕高階GPU的進展再受關注。不過從整體產業競爭來看，中國業者正嘗試透過晶片設計、軟...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/05ad545e293b7c97.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773144_9DO2FUCT30D9XE53OBNHF&amp;wpidx=5" target="_blank" rel="noopener noreferrer">DIGITIMES Today：聯發科全面澄清ASIC業務傳言 | 台灣愈來愈重視研發 | 中國本土AI晶片替代H200</a>
+      <time datetime="2026-11-01T21:00:00+00:00">11/02 05:00</time>
+    </li>
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000772973_YZ1L24F86ZVWXV4ND75T5&amp;wpidx=5" target="_blank" rel="noopener noreferrer">中國本土AI晶片替代H200　華為、寒武紀、平頭哥各有戰線</a>
+      <time datetime="2026-11-01T16:00:00+00:00">11/02 00:00</time>
+    </li>
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000772972_FKQLJAX06N9ETY3LYM717&amp;wpidx=5" target="_blank" rel="noopener noreferrer">天數智芯天垓300實測效能部分超越H200　長上下文、MoE推論成亮點</a>
+      <time datetime="2026-11-01T16:00:00+00:00">11/02 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0001">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">agent</span>      </div>
+      <h3>AI 寫程式又快又多，漏洞風險與「責任歸屬」成企業開發新難題</h3>
+<p class="summary">生成式 AI 大幅加速程式開發，AI 代理（AI agent）也逐步自動執行任務，但出了問題該由誰負責，成為產 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/28b8b5fa30c92881.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/02/ai-makes-coding-faster-but-who-is-responsible-for-what-it-produces" target="_blank" rel="noopener noreferrer">AI 寫程式又快又多，漏洞風險與「責任歸屬」成企業開發新難題</a>
+      <time datetime="2026-11-01T16:10:01+00:00">11/02 00:10</time>
+    </li>
+  </ul>
+</article>
+<article id="t0002">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">safety</span>      </div>
+      <h3>駭客也開始用 AI 了，企業的資安防護跟得上嗎？</h3>
+<p class="summary">近年許多企業管理層積極將生成式 AI 導入日常營運，希望提升業務效率與服務品質。然而，這項技術幫企業革命生產力 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/8b194222abf41061.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://infosecu.technews.tw/2026/11/02/hackers-are-using-ai-can-corporate-cybersecurity-keep-up" target="_blank" rel="noopener noreferrer">駭客也開始用 AI 了，企業的資安防護跟得上嗎？</a>
+      <time datetime="2026-11-01T16:01:57+00:00">11/02 00:01</time>
+    </li>
+  </ul>
+</article>
+<article id="t0004">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">bmc</span><span class="badge">2027</span><span class="badge">csp</span>      </div>
+      <h3>新唐：CSP和新創等新客戶加入　2027年BMC出貨規模擴大</h3>
+<p class="summary">受惠AI需求暢旺，既有客戶需求增加，以及新客戶陸續進入量產，新唐科技預期，2027年遠端伺服器控制晶片（BMC）成長幅度將優於2026年。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/deaf06f37c3f8dbe.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&amp;cat=40&amp;id=0000773101_BTK0B5XI1UTK1F0YI801B&amp;wpidx=3" target="_blank" rel="noopener noreferrer">新唐：CSP和新創等新客戶加入　2027年BMC出貨規模擴大</a>
+      <time datetime="2026-11-01T16:00:00+00:00">11/02 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0005">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hbm</span>      </div>
+      <h3>黃欽勇：台韓合作比競爭更重要　AI狂飆下台灣靠什麼勝出？</h3>
+<p class="summary">人工智慧（AI）帶動全球半導體需求快速擴張，台灣與南韓雖然在晶圓代工、記憶體及先進封裝領域各有優勢，但AI晶片供應鏈日益複雜，兩國產業關係正從單純競爭走向合作。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/a23546307416bb91.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773094_VAG12PFK8LUZ1Z5HV71RV&amp;wpidx=5" target="_blank" rel="noopener noreferrer">黃欽勇：台韓合作比競爭更重要　AI狂飆下台灣靠什麼勝出？</a>
+      <time datetime="2026-11-01T16:00:00+00:00">11/02 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0006">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">sk-hynix</span><span class="badge">socamm2</span><span class="badge">nvidia</span>      </div>
+      <h3>SK海力士SOCAMM2訂單逐季增加　基板廠急擴產卻恐缺原料</h3>
+<p class="summary">SK海力士（SK Hynix）傳正擴大用於NVIDIA下一代AI平台Vera Rubin的SOCAMM2生產，帶動相關印刷電路板（PCB）訂單增加。然而，隨著銅箔基板（CCL）等原材料...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/963a54f6ef3bb2c5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773104_U9D0HLSU169UQL36R6WHG&amp;wpidx=5" target="_blank" rel="noopener noreferrer">SK海力士SOCAMM2訂單逐季增加　基板廠急擴產卻恐缺原料</a>
+      <time datetime="2026-11-01T16:00:00+00:00">11/02 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hhtd</span><span class="badge">token</span><span class="badge">aidc</span>      </div>
+      <h3>（HHTD 26）Token暴漲60倍推動AIDC電力轉型　施耐德與鴻海布局模組化AI工廠</h3>
+<p class="summary">生成式AI帶動資料中心建置需求快速攀升，也使電力供應、散熱與能源管理成為AI基礎設施的重要挑戰。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/157ae52f22c31037.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773098_FO4L7VHJLK2G9T7F394N7&amp;wpidx=5" target="_blank" rel="noopener noreferrer">（HHTD 26）Token暴漲60倍推動AIDC電力轉型　施耐德與鴻海布局模組化AI工廠</a>
+      <time datetime="2026-11-01T16:00:00+00:00">11/02 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0008">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hbm</span><span class="badge">wi-fi</span>      </div>
+      <h3>立積：網通需求不差卻卡記憶體供貨　Wi-Fi 7明年市佔有望5成</h3>
+<p class="summary">射頻晶片廠立積近日召開法說會，立積業務行銷處副總黃智杰表示，AI需求升溫推高供應鏈成本，記憶體、PCB與被動元件都受到影響，因此，即便整體網通的需求狀況不差，但...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/df48908a6b42a0fc.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773051_5YK1IE054Q8DQ829Y30JJ&amp;wpidx=5" target="_blank" rel="noopener noreferrer">立積：網通需求不差卻卡記憶體供貨　Wi-Fi 7明年市佔有望5成</a>
+      <time datetime="2026-11-01T16:00:00+00:00">11/02 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0009">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">nvidia</span><span class="badge">compute</span>      </div>
+      <h3>從股價剩 8 元到打入輝達供應鏈，一詮靠黑手功夫擠進 AI 散熱賽道</h3>
+<p class="summary">當 AI 晶片算力越來越強，代價之一就是越來越「燙」，近年最夯的討論，就是把散熱元件，從裝在外部、疊在晶片上方 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/e058d33c7dd1a80d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/02/ichiun" target="_blank" rel="noopener noreferrer">從股價剩 8 元到打入輝達供應鏈，一詮靠黑手功夫擠進 AI 散熱賽道</a>
+      <time datetime="2026-11-01T15:50:44+00:00">11/01 23:50</time>
+    </li>
+  </ul>
+</article>
+<article id="t0010">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">microsoft</span>      </div>
+      <h3>微软 AI 负责人苏莱曼：AI 模型没有意识，我们应确保它永远如此</h3>
+<p class="summary">IT之家 11 月 2 日消息，微软 AI 负责人（Mustafa Suleyman）昨天在 X 平台发布长文，称目前的 AI 模型并不具备意识，人们应该让这种情况一直保持下去。 IT之家了解到，苏莱曼表示：“据我了解，如果开发具有意识的 AI 是可能的，那么这么做将是鲁莽的，我们不应该开发这类 AI。如果训练过程中开始出现意识，我会呼吁所有人暂停 AI 开发，直到可以从设计层面消除这些特性。” 他认为，如果有任何证据能表明 AI 模型具备意识，就应该立即向公众披露，以便整个社会共同决定下一步怎么做。 他说道：“我们这些 AI 开发员，完全没有权利将具有</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/8268d987269bdb0f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/020/848.htm" target="_blank" rel="noopener noreferrer">微软 AI 负责人苏莱曼：AI 模型没有意识，我们应确保它永远如此</a>
+      <time datetime="2026-11-01T15:36:08+00:00">11/01 23:36</time>
+    </li>
+  </ul>
+</article>
+<article id="t0011">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">gallup</span>      </div>
+      <h3>蓋洛普調查：AI 職場紅利分配不均，高學歷與高薪族群受惠最多</h3>
+<p class="summary">美國民調機構蓋洛普（Gallup）最新調查指出，工作使用人工智慧（AI）的美國員工多數認為 AI 提升效率與創 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/a2d01844e635eab4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/11/02/gallup-ai-survey-10-findings-on-how-ai-helps-workers" target="_blank" rel="noopener noreferrer">蓋洛普調查：AI 職場紅利分配不均，高學歷與高薪族群受惠最多</a>
+      <time datetime="2026-11-01T15:20:23+00:00">11/01 23:20</time>
+    </li>
+  </ul>
+</article>
+<article id="t0012">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>AI 為什麼會數錯字母、亂引用來源？關鍵在「預測」而非「理解」</h3>
+<p class="summary">生成式人工智慧近年在寫作、翻譯、程式撰寫與資料整理等工作上表現亮眼，但最新整理也再次凸顯，這類系統在一些看似簡 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/bf740b01f9931362.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/11/02/everyday-small-tasks-ai-still-struggles-with" target="_blank" rel="noopener noreferrer">AI 為什麼會數錯字母、亂引用來源？關鍵在「預測」而非「理解」</a>
+      <time datetime="2026-11-01T15:00:09+00:00">11/01 23:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0013">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">amazon</span><span class="badge">openai</span>      </div>
+      <h3>OpenAI 即将启动大规模公关宣传，考虑将数据中心重新包装为“AI 算力园区”</h3>
+<p class="summary">IT之家 11 月 2 日消息，据外媒 Axios 昨天报道，OpenAI 正准备在周二美国中期选举结束后，发起大规模公关宣传活动。 OpenAI 首席全球事务官克里斯 · 莱汉（Chris Lehane）对此表示，此次中期选举将成为 2028 年总统大选的“预告片”。未来， 人工智能将成为大选的核心议题 。 IT之家注意到，OpenAI 准备在未来加强与公众沟通 AI 相关话题。莱汉提到，他们计划制定 AI 发展速度限制；并寻找方法，让人们认识到 AI 如何赋能日常生活；推动美国参与制定全球标准； 以及将数据中心重新包装为“AI 算力园区” 。 莱汉认</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/699550acfb81a2e2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/020/844.htm" target="_blank" rel="noopener noreferrer">OpenAI 即将启动大规模公关宣传，考虑将数据中心重新包装为“AI 算力园区”</a>
+      <time datetime="2026-11-01T14:58:19+00:00">11/01 22:58</time>
+    </li>
+  </ul>
+</article>
+<article id="t0014">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">centers</span><span class="badge">data</span><span class="badge">might</span>      </div>
+      <h3>OpenAI might rebrand its data centers as ‘AI compute campuses’</h3>
+<p class="summary">Data centers are deeply unpopular. But what if we called them something else?</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/3cc0516ee393899e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses" target="_blank" rel="noopener noreferrer">OpenAI might rebrand its data centers as ‘AI compute campuses’</a>
+      <time datetime="2026-11-01T13:55:23+00:00">11/01 21:55</time>
+    </li>
+  </ul>
+</article>
+<article id="t0015">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">tech</span><span class="badge">make</span><span class="badge">ceos</span>      </div>
+      <h3>AI can make tech CEOs’ lives easier. What about everyone else?</h3>
+<p class="summary">On Equity, we discuss why tech CEO statements can seem so tone deaf.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/01710a10f3593b05.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else" target="_blank" rel="noopener noreferrer">AI can make tech CEOs’ lives easier. What about everyone else?</a>
+      <time datetime="2026-11-01T12:57:58+00:00">11/01 20:57</time>
+    </li>
+  </ul>
+</article>
+<article id="t0016">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">kyle</span><span class="badge">kingsbury</span><span class="badge">llms</span>      </div>
+      <h3>Quoting Kyle Kingsbury</h3>
+<p class="summary">More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to coun</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Simon Willison</span>
+      <a href="https://simonwillison.net/2026/Nov/1/kyle-kingsbury" target="_blank" rel="noopener noreferrer">Quoting Kyle Kingsbury</a>
+      <time datetime="2026-11-01T08:49:04+00:00">11/01 16:49</time>
+    </li>
+  </ul>
+</article>
+<article id="t0017">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hackertube</span><span class="badge">books</span><span class="badge">mentioned</span>      </div>
+      <h3>Show HN: HackerBooks – HackerTube, but for books mentioned on HN</h3>
+<p class="summary">Saw Karpathy&#39;s HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5). It&#39;s ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the a</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://hackerbooks.org/" target="_blank" rel="noopener noreferrer">Show HN: HackerBooks – HackerTube, but for books mentioned on HN</a>
+      <time datetime="2026-11-01T07:58:28+00:00">11/01 15:58</time>
+    </li>
+  </ul>
+</article>
+<article id="t0018">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">anthropic</span><span class="badge">robot</span><span class="badge">meta</span>      </div>
+      <h3>OpenAI、谷歌、微软和 Anthropic 联手推行 AI 数据抓取退出标准</h3>
+<p class="summary">IT之家 11 月 1 日消息，OpenAI、谷歌、微软以及 Anthropic 近日宣布将采用一项新标准，内容发布方可以借助该标准选择拒绝 AI 抓取自家网站内容。借助这项管控机制，内容发布方可以一次性向多家 AI 企业统一申明自身针对 AI 模型训练的内容使用偏好，而不必为每家企业单独设置规则。 该标准由 Anthropic 技术负责人 Kevin Kelley 向互联网工程任务组（IETF）提出，并将集成在网站的 robots.txt 文件中。 长期以来， robots.txt 文件用于告知网络爬虫哪些网站内容允许抓取、哪些禁止抓取，适用场景包含搜</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/020/837.htm" target="_blank" rel="noopener noreferrer">OpenAI、谷歌、微软和 Anthropic 联手推行 AI 数据抓取退出标准</a>
+      <time datetime="2026-11-01T06:19:52+00:00">11/01 14:19</time>
+    </li>
+  </ul>
+</article>
+<article id="t0019">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">guarding</span><span class="badge">gates</span><span class="badge">knowledge</span>      </div>
+      <h3>Guarding the Gates of Knowledge</h3>
+<p class="summary">A recent scroll through social media got me thinking about trust. About half my feed was filled with AI slop that astute users would call out as being machine-generated, often to the embarrassment of the rube who unknowingly spread it and sometimes to the delight of the poster wh</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/faac82ea89b69f85.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IEEE Spectrum AI</span>
+      <a href="https://spectrum.ieee.org/ai-slop-trust-science" target="_blank" rel="noopener noreferrer">Guarding the Gates of Knowledge</a>
+      <time datetime="2026-11-01T06:00:01+00:00">11/01 14:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0020">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">clate</span><span class="badge">qml</span><span class="badge">beta</span>      </div>
+      <h3>Qt 推出零代码嵌入式界面设计工具 Clate，设计成果可直接导出 QML 代码</h3>
+<p class="summary">IT之家 11 月 1 日消息，Qt 宣布推出一款嵌入式设备界面设计工具 Clate，设计师无需编写代码，即可通过可视化编辑器或 AI 生成操作界面，并将设计成果导出为 QML 代码，供工程师集成至 Qt 应用程序。官方现已开放首个 Beta 测试版本 0.6 供用户免费下载使用，IT之家附项目地址（ https://doc.qt.io/clate/docs/release-notes/clate-0-6/ ）。 IT之家获悉，Clate 基于 Qt Quick 构建，主要面向工业设备、医疗仪器及消费电子产品的人机交互界面（HMI）设计。设计师可以调整各</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/06f818bba1ee45d3.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/020/821.htm" target="_blank" rel="noopener noreferrer">Qt 推出零代码嵌入式界面设计工具 Clate，设计成果可直接导出 QML 代码</a>
+      <time datetime="2026-11-01T04:00:37+00:00">11/01 12:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0021">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">regulation</span>      </div>
+      <h3>市场监管总局发布钢铁智能制造相关国家标准：破设计口径不一、数据互通难题</h3>
+<p class="summary">IT之家 11 月 1 日消息，据市场监管总局，为持续提升钢铁行业先进制造水平，市场监管总局日前发布《智能制 造 废 钢智能工厂设计要求》《智能制 造 钢 铁智能工厂数字孪生系统技术要求》《智能制 造 钢 铁工业多基地制造资源协同管控系统技术要求》系列国家标准。该 3 项标准分别锚定 废钢工厂、数字孪生、多基地协同 等关键环节，支撑构建钢铁先进制造技术要求体系。 IT之家从公告获悉，该 3 项标准针对钢铁行业流程长、工序多、界面复杂，以及工厂之间、工序与工序之间长期存在 设计口径不一、系统重复开发、数据难以互通、跨基地资源难以统筹 等问题，提供清晰的解决</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/020/820.htm" target="_blank" rel="noopener noreferrer">市场监管总局发布钢铁智能制造相关国家标准：破设计口径不一、数据互通难题</a>
+      <time datetime="2026-11-01T03:57:57+00:00">11/01 11:57</time>
+    </li>
+  </ul>
+</article>
+<article id="t0022">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">175</span><span class="badge">1000</span>      </div>
+      <h3>工信部赛迪研究院：我国人工智能推理数据量首超训练数据量，截至 6 月日均词元调用量超 175 万亿</h3>
+<p class="summary">IT之家 11 月 1 日消息，据央视新闻今日报道，中国电子信息产业发展研究院（简称“赛迪研究院”，英文缩写 CCID）昨日发布的《新域新质创新发展十大趋势》显示， 我国人工智能推理数据量首次超过训练数据量 ，标志着我国人工智能从模型训练研发阶段迈入规模化产业应用阶段。 数据显示，截至 2026 年 6 月， 日均词元调用量超过 175 万亿 ，相比 2024 年年初增长 1000 多倍。顶尖大模型的迭代周期也从过去的几个月压缩到几周甚至几天，人工智能正从“喂模型”的实验室阶段， 全面转入“用模型”的产业落地阶段 。 报道提到，随着“人工智能 + 制造”</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/020/809.htm" target="_blank" rel="noopener noreferrer">工信部赛迪研究院：我国人工智能推理数据量首超训练数据量，截至 6 月日均词元调用量超 175 万亿</a>
+      <time datetime="2026-11-01T02:46:02+00:00">11/01 10:46</time>
+    </li>
+  </ul>
+</article>
+<article id="t0023">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">chatbots</span><span class="badge">leading</span><span class="badge">hikers</span>      </div>
+      <h3>Chatbots Are Leading Hikers Astray, With Dangerous Consequences</h3>
+<p class="summary">Outsourcing planning to AI can lead people to surrender their own critical thinking, which can have potentially deadly results in places like the backcountry.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/738c500042db23c4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences" target="_blank" rel="noopener noreferrer">Chatbots Are Leading Hikers Astray, With Dangerous Consequences</a>
+      <time datetime="2026-11-01T02:30:00+00:00">11/01 10:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0024">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">xiaomi</span>      </div>
+      <h3>第二十四届半导体封测年会定档 11 月 4 日至 6 日举办，华为、龙芯中科、小米汽车等确认参会</h3>
+<p class="summary">IT之家 11 月 1 日消息，2026 年半导体封装测试技术与市场年会 (第二十四届) 将于 2026 年 11 月 4-6 日 在中国南京丰大国际大酒店举行。会议由中国半导体行业协会指导，中国半导体行业协会封测分会主办。 据介绍，在为期两天的会议中，来自华天科技、长电科技、通富微电、壁仞科技、京东方、云天半导体等封测领域、芯片设计领域、玻璃基板领域、TGV 领域的龙头企业的重磅嘉宾将通过主论坛、专题报告、供需对接等形式，交流先进封装的最新发展方向。 IT之家附大会主要信息如下： 1. 会议时间 ： 2026 年 11 月 4-6 日 2. 会议地点：</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/4eacb1b42faed23d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/020/803.htm" target="_blank" rel="noopener noreferrer">第二十四届半导体封测年会定档 11 月 4 日至 6 日举办，华为、龙芯中科、小米汽车等确认参会</a>
+      <time datetime="2026-11-01T02:21:26+00:00">11/01 10:21</time>
+    </li>
+  </ul>
+</article>
+<article id="t0025">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">eth</span><span class="badge">openai</span>      </div>
+      <h3>OpenAI宣稱推翻「指數時間假設」，震撼電腦科學界！ETH是什麼，為何牽動數百篇研究？</h3>
+<p class="summary">OpenAI宣稱AI模型推翻計算複雜度基石「指數時間假設」，全球數百篇論文以此為前提。成果正由ETH提出者審查，學界態度仍相當謹慎。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/eb619401d6c3cb46.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">數位時代</span>
+      <a href="https://www.bnext.com.tw/article/92849/openai-exponential-time-hypothesis-eth" target="_blank" rel="noopener noreferrer">OpenAI宣稱推翻「指數時間假設」，震撼電腦科學界！ETH是什麼，為何牽動數百篇研究？</a>
+      <time datetime="2026-11-01T01:32:00+00:00">11/01 09:32</time>
+    </li>
+  </ul>
+</article>
+<article id="t0026">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>學者授四招破解假圖，點名食物照是 AI 最大死穴</h3>
+<p class="summary">隨著生成式人工智慧（AI）快速普及，逼真的假照片在網路上流竄，如何分辨 AI 生成影像已成為大眾關注的焦點。美 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/7026144e4cbd319a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://infosecu.technews.tw/2026/11/01/identifying-flaws-ai-generated-photos" target="_blank" rel="noopener noreferrer">學者授四招破解假圖，點名食物照是 AI 最大死穴</a>
+      <time datetime="2026-11-01T01:00:03+00:00">11/01 09:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0027">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">alpha</span><span class="badge">school</span>      </div>
+      <h3>美 AI 私校 Alpha School 號稱學習快兩倍，紐時揭數據僅 42% 學生達標</h3>
+<p class="summary">主打以人工智慧（AI）教學的美國私校連鎖體系 Alpha School，對家長承諾學生每天只需 2 小時學科課 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/e4503d82a7917b08.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/11/01/alpha-school-claims-to-teach-kids-twice-as-fast-many-dont-make-it" target="_blank" rel="noopener noreferrer">美 AI 私校 Alpha School 號稱學習快兩倍，紐時揭數據僅 42% 學生達標</a>
+      <time datetime="2026-10-31T23:00:25+00:00">11/01 07:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0028">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">gemini</span><span class="badge">google</span>      </div>
+      <h3>Google工程師面試變了！求職者可用Gemini，還考你懂不懂「指揮AI」</h3>
+<p class="summary">AI不再是面試作弊。Google試辦新面試，開放應徵者用Gemini寫程式，改考提示工程、驗證輸出與除錯。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/2eadebaca8dd6707.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">數位時代</span>
+      <a href="https://www.bnext.com.tw/article/92822/google-interview-gemini-ai-fluency" target="_blank" rel="noopener noreferrer">Google工程師面試變了！求職者可用Gemini，還考你懂不懂「指揮AI」</a>
+      <time datetime="2026-10-31T22:52:00+00:00">11/01 06:52</time>
+    </li>
+  </ul>
+</article>
+<article id="t0029">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">gemma</span><span class="badge">google</span><span class="badge">datacenter</span>      </div>
+      <h3>Google 太空資料中心首顆晶片啟動，Gemma 4 模型在軌運作還寫詩</h3>
+<p class="summary">在 10 月 30 日的一篇官方部落格文章中， Google 表示已成功啟動實驗衛星上的 TPU 晶片，且讓衛 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-02/263a63a3e20f7f97.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/11/01/google-receives-first-response-from-its-project-suncatcher-prototype-satellite" target="_blank" rel="noopener noreferrer">Google 太空資料中心首顆晶片啟動，Gemma 4 模型在軌運作還寫詩</a>
+      <time datetime="2026-10-31T20:39:00+00:00">11/01 04:39</time>
+    </li>
+  </ul>
+</article>
+</div>
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
+  <div class="srcs">來源：DIGITIMES · Hacker News (100+) · IEEE Spectrum AI · IT之家 · Simon Willison · TechCrunch AI · TechOrange 科技報橘 · Wired AI · 數位時代 · 科技新報 TechNews</div>
+</footer>
+</div>
+</body>
+</html>
