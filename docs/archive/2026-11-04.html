@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 每日新聞彙整 · 2026-11-04</title>
+<meta name="description" content="2026-11-04 AI 新聞彙整：40 個主題、62 篇報導，同主題不同來源已整合。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html" class="on">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+  <a href="../hamster.html">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../index.html">AI 每日新聞彙整</a></h1>
+  <div class="meta">
+    <span>2026-11-04</span>
+    <span>40 個主題 · 62 篇報導</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 11/04 08:10</span>
+    <a href="../archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+
+<nav class="tabs" aria-label="主題分類">
+  <a href="#cat0">其他<b>40</b></a>
+</nav>
+
+<section class="briefs">
+  <article class="brief">
+    <a class="brief-hero" href="#t0019">
+      <img src="../img/2026-11-04/1c8a3276d8b102e1.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">其他</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0019">Apple’s latest watchOS beta includes its new always-on Audio Intelligence features</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0026">Google will let schools disable its AI tools, but not without sacrificing Search</a></li>
+        <li><a href="#t0012">‘Our Risk, Their Reward’: Zohran Mamdani on AI and Data Centers</a></li>
+        <li><a href="#t0049">Anthropic更新S-1招股文件！Q3營收近170億美元爆增12倍，首揭算力承諾達8954億美元</a></li>
+      </ul>
+      <a class="brief-more" href="#cat0">看這個分類的 40 則 →</a>
+    </div>
+  </article>
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+
+<h2 class="cat" id="cat0">其他</h2>
+<article id="t0019" class="hot">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">4 家媒體報導</span><span class="badge">watch</span><span class="badge">apple</span><span class="badge">features</span>      </div>
+      <h3>Apple’s latest watchOS beta includes its new always-on Audio Intelligence features</h3>
+<p class="summary">Starting today, Siri can tune into the Apple Watch&#39;s mic with Audio Intelligence features that are available in the new watchOS 27.3 developer beta rolling out now. The two new additions are Siri Recap, which uses &#34;ambient listening&#34; to generate summaries of your conversation, an</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/1c8a3276d8b102e1.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/864.htm" target="_blank" rel="noopener noreferrer">苹果 watchOS 27.3 首个开发者预览版 Beta 上线音频智能功能：支持全天谈话划重点 / 回顾 15 秒对话</a>
+      <time datetime="2026-11-03T12:01:49+00:00">11/03 20:01</time>
+    </li>
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/tech/apple-watch-siri-recap-live-rewind-available-beta-how-to-try" target="_blank" rel="noopener noreferrer">Your Apple Watch has 2 new controversial listening features – but you have to opt in</a>
+      <time datetime="2026-11-03T11:01:00+00:00">11/03 19:01</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta" target="_blank" rel="noopener noreferrer">Apple’s latest watchOS beta includes its new always-on Audio Intelligence features</a>
+      <time datetime="2026-11-03T10:31:00+00:00">11/03 18:31</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing" target="_blank" rel="noopener noreferrer">Apple Watch’s AI features for rewinding and recapping conversations begin beta testing</a>
+      <time datetime="2026-11-02T23:20:00+00:00">11/03 07:20</time>
+    </li>
+  </ul>
+</article>
+<article id="t0026" class="hot">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">4 家媒體報導</span><span class="badge">google</span><span class="badge">search</span><span class="badge">schools</span>      </div>
+      <h3>Google will let schools disable its AI tools, but not without sacrificing Search</h3>
+<p class="summary">Schools choosing to restrict AI altogether will no longer be able to access Google Search, as AI features are now integrated into the search engine.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/6f0598038831d477.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Ars Technica AI</span>
+      <a href="https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too" target="_blank" rel="noopener noreferrer">Google will let schools skip AI tools, but they have to give up search, too</a>
+      <time datetime="2026-11-03T09:54:43+00:00">11/03 17:54</time>
+    </li>
+    <li>
+      <span class="src">Google DeepMind</span>
+      <a href="https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity" target="_blank" rel="noopener noreferrer">Agentic cheminformatics with Google Antigravity</a>
+      <time datetime="2026-11-03T09:01:49+00:00">11/03 17:01</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features" target="_blank" rel="noopener noreferrer">Google is entirely disabling Search in schools that don’t want AI</a>
+      <time datetime="2026-11-03T09:00:04+00:00">11/03 17:00</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search" target="_blank" rel="noopener noreferrer">Google will let schools disable its AI tools, but not without sacrificing Search</a>
+      <time datetime="2026-11-03T08:30:34+00:00">11/03 16:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0012" class="hot">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">3 家媒體報導</span><span class="badge">data</span><span class="badge">centers</span><span class="badge">datacenter</span>      </div>
+      <h3>‘Our Risk, Their Reward’: Zohran Mamdani on AI and Data Centers</h3>
+<p class="summary">Ahead of the midterms, WIRED talked to New York City’s mayor about data centers, AI in schools, and the future of the Democratic party.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/8e2c99ffed0625e0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows" target="_blank" rel="noopener noreferrer">Data centers are turning to old jet engines as the wait for power grows</a>
+      <time datetime="2026-11-03T14:19:53+00:00">11/03 22:19</time>
+    </li>
+    <li>
+      <span class="src">Ars Technica AI</span>
+      <a href="https://arstechnica.com/ai/2026/11/russia-looks-to-hide-data-centers-underground-as-ukrainian-drones-strike-back" target="_blank" rel="noopener noreferrer">Ukraine’s drone strikes spur hasty Russian plans for underground data centers</a>
+      <time datetime="2026-11-03T12:39:55+00:00">11/03 20:39</time>
+    </li>
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/the-big-interview-podcast-nyc-mayor-zohran-mamdani" target="_blank" rel="noopener noreferrer">‘Our Risk, Their Reward’: Zohran Mamdani on AI and Data Centers</a>
+      <time datetime="2026-11-03T03:00:00+00:00">11/03 11:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0049" class="hot">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">3 家媒體報導</span><span class="badge">8954</span><span class="badge">compute</span><span class="badge">anthropic</span>      </div>
+      <h3>Anthropic更新S-1招股文件！Q3營收近170億美元爆增12倍，首揭算力承諾達8954億美元</h3>
+<p class="summary">Anthropic更新招股書，第三季營收約169.6億美元、為去年同期12倍多，但季增速降至47%，營業利益再度轉虧，並揭露8,954億美元算力承諾。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/9338a2d2395cd07d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">數位時代</span>
+      <a href="https://www.bnext.com.tw/article/92892/anthropic-s1a-q3-revenue-compute-commitments" target="_blank" rel="noopener noreferrer">Anthropic更新S-1招股文件！Q3營收近170億美元爆增12倍，首揭算力承諾達8954億美元</a>
+      <time datetime="2026-11-03T03:45:00+00:00">11/03 11:45</time>
+    </li>
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/180163" target="_blank" rel="noopener noreferrer">Anthropic第三季本業再度轉虧，算力承諾逼近9,000億美元</a>
+      <time datetime="2026-11-03T02:11:09+00:00">11/03 10:11</time>
+    </li>
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/42802-anthropic-s1a-q3-2026-revenue-operating-loss-compute" target="_blank" rel="noopener noreferrer">Anthropic 更新 IPO 招股書，揭露 8,954 億美元算力承諾與第三季營業虧損</a>
+      <time datetime="2026-11-02T20:22:00+00:00">11/03 04:22</time>
+    </li>
+  </ul>
+</article>
+<article id="t0002">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">marvell</span><span class="badge">huawei</span><span class="badge">lumentum</span>      </div>
+      <h3>華為哈勃深化光電供應鏈　22家投資企業遍及磷化銦材料、AI光互連</h3>
+<p class="summary">全球AI資料中心帶動高速光通訊需求，光電產業鏈的戰略重要性日益升溫。Marvell與Lumentum宣布合併，凸顯晶片業者加速整合光電技術的趨勢；反觀中國華為，不斷透過旗下...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/01babc48404cc17a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773378_BNR4X7G76FGPNP9XNXNZ1&amp;wpidx=5" target="_blank" rel="noopener noreferrer">華為哈勃深化光電供應鏈　22家投資企業遍及磷化銦材料、AI光互連</a>
+      <time datetime="2026-11-03T16:00:00+00:00">11/04 00:00</time>
+    </li>
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/11/03/lumentum-marvell" target="_blank" rel="noopener noreferrer">Marvell 砸 1,150 億美元收購 Lumentum，下一代光互連為何可能衝擊既有 DSP 生意？</a>
+      <time datetime="2026-11-02T19:55:50+00:00">11/03 03:55</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">chatgpt</span><span class="badge">openai</span><span class="badge">google</span>      </div>
+      <h3>OpenAI ChatGPT 最新数据：周活跃用户达 12 亿，两个月新增 2 亿</h3>
+<p class="summary">IT之家 11 月 4 日消息，当地时间 11 月 2 日 OpenAI 消费者产品负责人 Adam Fry 在纽约举行的一场 OpenAI 活动期间接受了 Big Technology 的采访。他透露，ChatGPT 每周活跃用户数量已经达到 12 亿之高。 Fry 表示，ChatGPT 的用户增长速度正在进一步加快。过去 60 天内，ChatGPT 的周活跃用户从 10 亿增长至 12 亿，新增约 2 亿用户。他将这一增长速度概括为每 30 天增加约 1 亿用户。 搜索业务方面，Fry 透露，OpenAI 对 ChatGPT 内部的搜索类查询进行了统</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/2cfc498ed46ded49.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/885.htm" target="_blank" rel="noopener noreferrer">OpenAI 证实：ChatGPT 搜索查询量已达谷歌 20%</a>
+      <time datetime="2026-11-03T15:16:23+00:00">11/03 23:16</time>
+    </li>
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/878.htm" target="_blank" rel="noopener noreferrer">OpenAI ChatGPT 最新数据：周活跃用户达 12 亿，两个月新增 2 亿</a>
+      <time datetime="2026-11-03T14:39:56+00:00">11/03 22:39</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search" target="_blank" rel="noopener noreferrer">OpenAI says ChatGPT is catching up to Google in search</a>
+      <time datetime="2026-11-03T10:30:42+00:00">11/03 18:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0017">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">amazon</span><span class="badge">homeview</span><span class="badge">arm</span>      </div>
+      <h3>Those Jeff Bezos hair transplant photos are very fake</h3>
+<p class="summary">Amazon founder Jeff Bezos and actor Jason Statham have a distinctive feature in common: They&#39;re both famously bald, and that definitely hasn&#39;t changed in the last few days. However, there are some images of the two men circulating around X, Threads, and Bluesky in which they both</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/22591edb96281163.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk" target="_blank" rel="noopener noreferrer">Those Jeff Bezos hair transplant photos are very fake</a>
+      <time datetime="2026-11-03T13:01:07+00:00">11/03 21:01</time>
+    </li>
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/home-and-office/homeview-ultra-apple-robotic-smart-display" target="_blank" rel="noopener noreferrer">HomeView with an arm? Apple reportedly plans $1,000 swiveling smart panel</a>
+      <time datetime="2026-11-03T09:33:45+00:00">11/03 17:33</time>
+    </li>
+  </ul>
+</article>
+<article id="t0018">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">apps</span><span class="badge">apple</span><span class="badge">dating</span>      </div>
+      <h3>Apple restricts dating apps and AI companions to users 18 and up</h3>
+<p class="summary">Apple&#39;s new App Store rules will require 18+ ratings for dating apps and AI companions that offer sexual or romantic content.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/6a91990e9498bf80.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps" target="_blank" rel="noopener noreferrer">Apple starts giving Siri AI access to third-party apps</a>
+      <time datetime="2026-11-03T12:16:17+00:00">11/03 20:16</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up" target="_blank" rel="noopener noreferrer">Apple restricts dating apps and AI companions to users 18 and up</a>
+      <time datetime="2026-11-03T07:38:27+00:00">11/03 15:38</time>
+    </li>
+  </ul>
+</article>
+<article id="t0021">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">iphone</span><span class="badge">apple</span><span class="badge">duo</span>      </div>
+      <h3>Want an iPhone Duo for the holidays? Apple’s latest stock update isn’t reassuring</h3>
+<p class="summary">The iPhone Duo likely won’t make it into Santa’s sleigh this year. Here’s what Apple had to say about it.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/608990425942c5f7.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/tech/apple-foldable-iphone-duo-stock-shortage" target="_blank" rel="noopener noreferrer">Want an iPhone Duo for the holidays? Apple’s latest stock update isn’t reassuring</a>
+      <time datetime="2026-11-03T11:28:32+00:00">11/03 19:28</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai" target="_blank" rel="noopener noreferrer">Apple is all in on AI — its own and everyone else’s</a>
+      <time datetime="2026-11-03T07:24:51+00:00">11/03 15:24</time>
+    </li>
+  </ul>
+</article>
+<article id="t0022">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">tab</span><span class="badge">netflix</span><span class="badge">based</span>      </div>
+      <h3>Netflix will show you themed recommendations through a new ‘AI Discover’ tab</h3>
+<p class="summary">Netflix&#39;s TV app is getting a new &#34;AI Discover&#34; tab where the company will show experimental, AI-powered features to help you find new shows and movies to watch. The first of these experiments surfaces content based around themes, like &#34;Something Light,&#34; &#34;Family Movie Night,&#34; or </p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/65710cc2df5f885b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood" target="_blank" rel="noopener noreferrer">Netflix’s new AI Discover tab helps you find something to watch based on your mood</a>
+      <time datetime="2026-11-03T10:42:16+00:00">11/03 18:42</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations" target="_blank" rel="noopener noreferrer">Netflix will show you themed recommendations through a new ‘AI Discover’ tab</a>
+      <time datetime="2026-11-03T10:00:00+00:00">11/03 18:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0041">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">intel</span><span class="badge">shouldn</span><span class="badge">vote</span>      </div>
+      <h3>Here’s Why You Shouldn’t Use AI to Vote</h3>
+<p class="summary">From hallucinations to partisan bias, artificial intelligence chatbots like ChatGPT and Claude are not helpful when it comes to Election Day.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/cbeefffbc45e5771.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/heres-why-you-shouldnt-use-ai-to-vote" target="_blank" rel="noopener noreferrer">Here’s Why You Shouldn’t Use AI to Vote</a>
+      <time datetime="2026-11-03T06:45:08+00:00">11/03 14:45</time>
+    </li>
+    <li>
+      <span class="src">MIT Technology Review AI</span>
+      <a href="https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test" target="_blank" rel="noopener noreferrer">Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test</a>
+      <time datetime="2026-11-02T20:18:47+00:00">11/03 04:18</time>
+    </li>
+  </ul>
+</article>
+<article id="t0051">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">astra</span><span class="badge">mit</span><span class="badge">gpt-6</span>      </div>
+      <h3>AI 不必重新訓練也能修補？MIT 新研究讓 GPT-6 Astra 直接修改 Qwen 權重，數學測試成績提升近 6 倍</h3>
+<p class="summary">當 AI 模型出現問題，除了重新訓練或微調，能不能直接修改內部權重來修復？美國麻省理工學院電腦科學與人工智慧實驗室（MIT CSAIL）研究團隊公布一項實驗，利用 OpenAI 的 GPT-6 Astra，僅修改阿里巴巴 Qwen3.5-0.8B 約 0.016% 的神經網路權重，就讓模型在 MATH-500 數學測試中的正確率從 7.9% 提升至 48.1%，達到原先約 6 倍。 這項研究於 11/2 公布後，迅速引起 AI 技術社群關注。研究作者武日力也（Rikiya Takehi）在 X 分享實驗成果的貼文，發布後數小時便累積超過 2.9 萬個喜歡</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/8709e0e9cdf2b888.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/11/03/weight-space-programming-mit-csail" target="_blank" rel="noopener noreferrer">AI 不必重新訓練也能修補？MIT 新研究讓 GPT-6 Astra 直接修改 Qwen 權重，數學測試成績提升近 6 倍</a>
+      <time datetime="2026-11-03T00:35:01+00:00">11/03 08:35</time>
+    </li>
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/180195" target="_blank" rel="noopener noreferrer">MIT展示權重空間程式設計，GPT-6 Astra可直接讀寫神經網路權重</a>
+      <time datetime="2026-11-03T00:11:07+00:00">11/03 08:11</time>
+    </li>
+  </ul>
+</article>
+<article id="t0000">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2022</span>      </div>
+      <h3>OpenAI 高管会议室发现“窃听”设备后，知情人士称员工多年不断反映安全漏洞</h3>
+<p class="summary">IT之家 11 月 4 日消息，今年 10 月，OpenAI 在一间高管会议室发现了被人偷偷安装的录音设备。多名前员工得知消息后却不觉得意外。 据路透社援引 5 名知情人士消息称，早在 2022 年底 ChatGPT 问世之前，就有员工对 OpenAI 的安全管理 提出质疑 ，并向公司高层和董事会反映问题。部分员工在沟通后认为，管理层 更关心如何追赶谷歌、Anthropic 等竞争对手 ，对安全问题的重视程度反倒不够。 这些员工认为，OpenAI 的安全管理十分松懈， 外部人员甚至外国政府 都能相对容易地获取公司的敏感技术信息。知情人士举例称，任何拥有代</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/892.htm" target="_blank" rel="noopener noreferrer">OpenAI 高管会议室发现“窃听”设备后，知情人士称员工多年不断反映安全漏洞</a>
+      <time datetime="2026-11-03T16:00:32+00:00">11/04 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0001">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">dsx</span><span class="badge">pod</span><span class="badge">nvidia</span>      </div>
+      <h3>Research Insight：鴻海AI布局延伸資料中心系統整合　DSX POD瞄準模組化算力交付</h3>
+<p class="summary">鴻海此次於鴻海科技日（HHTD 26）上，展示NVIDIA DSX POD貨櫃式（Container）解決方案，透過工廠預建、機電整合及預先測試，將運算機櫃、網路設備、電力分配與...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/56e969055216d31b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773425_CWA3ID443OZ5NH4QPUQNZ&amp;wpidx=5" target="_blank" rel="noopener noreferrer">Research Insight：鴻海AI布局延伸資料中心系統整合　DSX POD瞄準模組化算力交付</a>
+      <time datetime="2026-11-03T16:00:00+00:00">11/04 00:00</time>
+    </li>
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773381_3M129RQN9O0WQ207AOZE7&amp;wpidx=5" target="_blank" rel="noopener noreferrer">NVIDIA DSX POD引領模組化浪潮　台廠搶進AI資料中心整合市場</a>
+      <time datetime="2026-11-03T16:00:00+00:00">11/04 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0003">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">samsung</span><span class="badge">sam</span><span class="badge">altman</span>      </div>
+      <h3>Sam Altman密訪南韓固樁　SK搶星門商機、三星聚焦企業AX</h3>
+<p class="summary">OpenAI執行長Sam Altman時隔約1年，再度訪問南韓，與三星集團（Samsung Group）、SK集團（SK Group）高層會面，延續人工智慧（AI）基礎設施與企業應用合作。外...</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/6b70aa24196085a5.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">DIGITIMES</span>
+      <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlId=1&amp;id=0000773374_I9Z40HQN6Y169L50XBO5J&amp;wpidx=5" target="_blank" rel="noopener noreferrer">Sam Altman密訪南韓固樁　SK搶星門商機、三星聚焦企業AX</a>
+      <time datetime="2026-11-03T16:00:00+00:00">11/04 00:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0004">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">warp</span><span class="badge">science</span><span class="badge">robot</span>      </div>
+      <h3>結合 AI 與機器人技術，OpenAI 前高層領軍 Warp Science 打造全自動化實驗室加速藥物開發</h3>
+<p class="summary">OpenAI 前科學負責人 Kevin Weil 10 月 22 日宣布，正式創立全新 AI 新創公司 War […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/7a4bc89134dad759.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/11/04/warp-science" target="_blank" rel="noopener noreferrer">結合 AI 與機器人技術，OpenAI 前高層領軍 Warp Science 打造全自動化實驗室加速藥物開發</a>
+      <time datetime="2026-11-03T15:40:23+00:00">11/03 23:40</time>
+    </li>
+  </ul>
+</article>
+<article id="t0005">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">asking</span><span class="badge">bubble</span><span class="badge">please</span>      </div>
+      <h3>Please stop asking me when the AI bubble will pop</h3>
+<p class="summary">People, including on this staff, keep asking me with varying degrees of excitement or trepidation when the AI bubble will burst. I&#39;ll tell you what I tell them: If I knew that, I would make a life-changing bet on the market, levered up as far as I could, and then, after I made my</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/c09da0cc55b6a421.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds" target="_blank" rel="noopener noreferrer">Please stop asking me when the AI bubble will pop</a>
+      <time datetime="2026-11-03T15:37:45+00:00">11/03 23:37</time>
+    </li>
+  </ul>
+</article>
+<article id="t0006">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">windows</span><span class="badge">tier</span><span class="badge">microsoft</span>      </div>
+      <h3>微软 Win11 AI PC 路线图曝光：4 档硬件，8GB 内存也有 AI 入场券</h3>
+<p class="summary">IT之家 11 月 4 日消息，消息源 @9550pro 昨日（11 月 3 日）在 X 平台发布推文，分享了一张题为“Windows 是混合智能之家”的幻灯片， 展示了微软“混合智能”（Hybrid Intelligence）AI PC 路线图。 IT之家此前报道，太平洋时间 10 月 7 日上午 10 点（北京时间 10 月 8 日凌晨 1 点）在美国旧金山举办的发布会上， 微软提出“混合智能”（hybrid intelligence）理念 ，强调通过混合架构，结合云端 AI 与本地计算能力，在 Windows 11 系统上实际处理用户任务。 根据曝</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/41b80029c3fb78aa.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/886.htm" target="_blank" rel="noopener noreferrer">微软 Win11 AI PC 路线图曝光：4 档硬件，8GB 内存也有 AI 入场券</a>
+      <time datetime="2026-11-03T15:21:17+00:00">11/03 23:21</time>
+    </li>
+  </ul>
+</article>
+<article id="t0008">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hbm</span><span class="badge">cube</span><span class="badge">2027</span>      </div>
+      <h3>華邦電布局 AI 算力浪潮，矽電容與 CUBE 雙引擎 2027 年迎量產收割期</h3>
+<p class="summary">記憶體大廠華邦電子於 3 日舉行的法人說明會中，總經理陳沛銘指出，隨著全球 AI 與高階運算需求強勁，公司在高 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/4402835e4b6a6728.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/04/winbond-positions-ai-computing-power-wave-silicon-capacitors-cube-dual-engines-mass-production-harvest-2027" target="_blank" rel="noopener noreferrer">華邦電布局 AI 算力浪潮，矽電容與 CUBE 雙引擎 2027 年迎量產收割期</a>
+      <time datetime="2026-11-03T15:00:14+00:00">11/03 23:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0009">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">epyc</span><span class="badge">venice</span><span class="badge">amd</span>      </div>
+      <h3>AMD 苏姿丰官宣 EPYC Venice 处理器已赚钱出货，首批 OEM 整机第四财季上市</h3>
+<p class="summary">IT之家 11 月 4 日消息，在 2026 财年第三财季（2026 年 6 月 28 日～2026 年 9 月 26 日）财报电话会议上， AMD 首席执行官苏姿丰表示，第六代 EPYC“Venice”服务器处理器已在 2026 年第三财季开始产生营收出货 ，首批基于该处理器的 OEM 整机系统预计将于第四财季（2026 年 9 月 27 日至 2026 年 12 月 26 日）上市。 在 AMD 发布的第三季度财报中，公司整体营收达 134 亿美元 （IT之家注：现汇率约合 893.16 亿元人民币） ，其中数据中心业务营收约 85 亿美元 （现汇率</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/881.htm" target="_blank" rel="noopener noreferrer">AMD 苏姿丰官宣 EPYC Venice 处理器已赚钱出货，首批 OEM 整机第四财季上市</a>
+      <time datetime="2026-11-03T14:51:43+00:00">11/03 22:51</time>
+    </li>
+  </ul>
+</article>
+<article id="t0010">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">gemini</span><span class="badge">k-12</span><span class="badge">google</span>      </div>
+      <h3>谷歌调整 K-12 教育 AI 政策：Gemini、搜索等服务默认关闭</h3>
+<p class="summary">IT之家 11 月 4 日消息，当地时间 11 月 3 日，谷歌宣布将从 2027 年起调整面向 K-12（幼儿园至高中）教育用户的人工智能功能管理政策，学校管理员需要主动启用，学生账户才能使用 Gemini、NotebookLM、Gemini in Classroom 以及 Google Search 等相关服务。 谷歌同时明确表示，如果学校选择全面禁用 AI，学生也将无法继续使用 Google Search。 根据谷歌官方公告，该公司将在与学校、教师、研究人员及政策制定者沟通后，调整教育产品的管理方式。新政策实施后，学校管理的 K-12 学生账户中，</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/2f2132f222226e1a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/880.htm" target="_blank" rel="noopener noreferrer">谷歌调整 K-12 教育 AI 政策：Gemini、搜索等服务默认关闭</a>
+      <time datetime="2026-11-03T14:47:23+00:00">11/03 22:47</time>
+    </li>
+  </ul>
+</article>
+<article id="t0011">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">system</span><span class="badge">working</span><span class="badge">prove</span>      </div>
+      <h3>Anthropic is working on a system to prove AI models’ identity</h3>
+<p class="summary">Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/b5a0d6c1476dd88d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity" target="_blank" rel="noopener noreferrer">Anthropic is working on a system to prove AI models’ identity</a>
+      <time datetime="2026-11-03T14:41:03+00:00">11/03 22:41</time>
+    </li>
+  </ul>
+</article>
+<article id="t0013">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">ballistic</span><span class="badge">ventures</span><span class="badge">ted</span>      </div>
+      <h3>Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom</h3>
+<p class="summary">Cybersecurity-focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/ba8d4b069bdb914b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom" target="_blank" rel="noopener noreferrer">Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom</a>
+      <time datetime="2026-11-03T13:43:08+00:00">11/03 21:43</time>
+    </li>
+  </ul>
+</article>
+<article id="t0014">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">book</span><span class="badge">generative</span><span class="badge">foundations</span>      </div>
+      <h3>The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer</h3>
+<p class="summary">Article URL: https://arxiv.org/abs/2605.29713 Comments URL: https://news.ycombinator.com/item?id=50358582 Points: 159 # Comments: 19</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://arxiv.org/abs/2605.29713" target="_blank" rel="noopener noreferrer">The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer</a>
+      <time datetime="2026-11-03T13:40:53+00:00">11/03 21:40</time>
+    </li>
+  </ul>
+</article>
+<article id="t0015">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hbm</span>      </div>
+      <h3>【科技早餐】Apple 營收創高！新任執行長示警記憶體漲價，旺季毛利率估降至 45%–46%</h3>
+<p class="summary">【科技早餐】今天精選 7 則國內外重要科技新聞。 ＊Apple 營收創高！新任執行長示警記憶體漲價，旺季毛利率估降至 45%–46% 蘋果（Apple）11 月 2 日公布第四季財報，營收達 1,145 億美元、年增 12%，創歷年 9 月季度新高。上一季毛利率為 47.9%，其中約 1 個百分點來自關稅退款；公司預估 12 月旺季毛利率降至 45%–46%。今年 9 月接任的執行長約翰・特努斯（John Ternus）首次主持法說會，形容記憶體漲價前所未見，並預期採購成本持續上升。Apple 已調漲部分 Mac、iPad 與 iPhone 售價，抵銷部</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/a515178a120802b4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/11/04/apple-memory-price-surge-gross-margin-2026" target="_blank" rel="noopener noreferrer">【科技早餐】Apple 營收創高！新任執行長示警記憶體漲價，旺季毛利率估降至 45%–46%</a>
+      <time datetime="2026-11-03T13:30:00+00:00">11/03 21:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0016">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">palantir</span><span class="badge">hiding</span><span class="badge">inside</span>      </div>
+      <h3>Hiding inside Palantir’s skyrocketing quarter is a foreboding signal</h3>
+<p class="summary">Palantir&#39;s U.S. commercial revenue surpassed U.S. government revenue for the first time ever.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/99edf174e6f2aa36.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal" target="_blank" rel="noopener noreferrer">Hiding inside Palantir’s skyrocketing quarter is a foreboding signal</a>
+      <time datetime="2026-11-03T13:05:55+00:00">11/03 21:05</time>
+    </li>
+  </ul>
+</article>
+<article id="t0020">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">startup</span><span class="badge">inference</span><span class="badge">fal</span>      </div>
+      <h3>AI inference startup Fal doubles its valuation to $16B as demand surges</h3>
+<p class="summary">The five-year-old startup raised a $1.3 billion round led by Bessemer.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/767760c7b3338554.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges" target="_blank" rel="noopener noreferrer">AI inference startup Fal doubles its valuation to $16B as demand surges</a>
+      <time datetime="2026-11-03T11:34:43+00:00">11/03 19:34</time>
+    </li>
+  </ul>
+</article>
+<article id="t0023">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">launch</span><span class="badge">indie</span><span class="badge">steam</span>      </div>
+      <h3>Indie games are missing launch dates because Steam is backed up</h3>
+<p class="summary">Many indie game developers have recently posted on social media about unexpectedly long approval wait times for their game submissions on Steam, with some of the approvals causing developers to miss their planned launch dates. For example, Studio Daimon, the team behind an upcomi</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/671cbbe2dbc4e063.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/games/1025596/valve-steam-indie-games-missing-launch-dates" target="_blank" rel="noopener noreferrer">Indie games are missing launch dates because Steam is backed up</a>
+      <time datetime="2026-11-03T10:14:50+00:00">11/03 18:14</time>
+    </li>
+  </ul>
+</article>
+<article id="t0024">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">ios</span><span class="badge">iphone</span><span class="badge">app</span>      </div>
+      <h3>iOS 27.3 首个开发者预览版推送，国行 iPhone 苹果 Apple 智能将至</h3>
+<p class="summary">IT之家 11 月 4 日消息，苹果今日凌晨面向 iPhone 推送了 iOS 27.3 系统首个测试版本。 据IT之家此前报道，苹果智能（Apple Intelligence）及相关阿里千问大模型获得批准。苹果官方已宣布一系列 Apple 智能功能将自 11 月 4 日起随最新的 iOS 开发者 Beta 版开放测试，并将于 12 月 iOS 27.3 正式发布时面向中国用户推出。其他平台的支持将在获得必要审批后推出。 以下是 Apple 即将在支持的 iPhone 上向中国用户推出的首批功能： 实时翻译功能帮助用户在发送信息或交谈时跨特定语言进行交流</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/4df760ead43dc437.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/859.htm" target="_blank" rel="noopener noreferrer">iOS 27.3 首个开发者预览版推送，国行 iPhone 苹果 Apple 智能将至</a>
+      <time datetime="2026-11-03T10:14:39+00:00">11/03 18:14</time>
+    </li>
+  </ul>
+</article>
+<article id="t0025">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">layoff</span><span class="badge">suse</span><span class="badge">lays</span>      </div>
+      <h3>SUSE lays off 1 in 10 workers – citing AI and automation</h3>
+<p class="summary">Squarespace also announced layoffs this week, but explicit ties to AI remain inconsistent.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/a2766072cb0881ae.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/business/suse-lay-offs-workforce-ai-cited" target="_blank" rel="noopener noreferrer">SUSE lays off 1 in 10 workers – citing AI and automation</a>
+      <time datetime="2026-11-03T10:12:05+00:00">11/03 18:12</time>
+    </li>
+  </ul>
+</article>
+<article id="t0027">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">gpus</span><span class="badge">rtx</span><span class="badge">hit</span>      </div>
+      <h3>Nvidia RTX 50 GPUs hit with more price hikes – up to $500</h3>
+<p class="summary">Some GPUs will see bigger increases than others, while Intel and AMD remain mum on their pricing plans</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/7d5fbabab3d1cd6b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/tech/nvidia-rtx-50-cards-gpus-more-price-increases" target="_blank" rel="noopener noreferrer">Nvidia RTX 50 GPUs hit with more price hikes – up to $500</a>
+      <time datetime="2026-11-03T09:30:50+00:00">11/03 17:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0028">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">sonos</span><span class="badge">tried</span><span class="badge">upgrades</span>      </div>
+      <h3>I tried Sonos’ latest app features – these 2 small upgrades fix big annoyances</h3>
+<p class="summary">New Sonos software and firmware updates are rolling out. Here’s what you can expect.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/6ed5b08d70eb684b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/home-and-office/sonos-app-update-hands-on-11-3-2026" target="_blank" rel="noopener noreferrer">I tried Sonos’ latest app features – these 2 small upgrades fix big annoyances</a>
+      <time datetime="2026-11-03T09:26:01+00:00">11/03 17:26</time>
+    </li>
+  </ul>
+</article>
+<article id="t0029">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">antigravity</span>      </div>
+      <h3>提速抗癌药物研发：谷歌 Antigravity 上线“AI 炼丹师”，1 小时筛完数千种化合物</h3>
+<p class="summary">IT之家 11 月 4 日消息，谷歌 DeepMind 团队昨日（11 月 3 日）发布博文，宣布为 Google Antigravity 推出一套“化学信息学技能”（Cheminformatics Skills）， 帮助科研人员更快完成药物发现中的文献检索、分子分析、模型构建和新分子设计等工作。 IT之家援引博文介绍，在以肺癌药物为例的演示中，AI 智能体可在约一小时内检索数千种化合物、开展匹配分子对分析，并提出具备合成路线的新型刚性大环分子，而类似流程过去往往需要数天。 该工具将大语言模型的规划、检索与科学推理能力，与 RDKit 等确定性化学计算工</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/113931fe700d6789.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/021/858.htm" target="_blank" rel="noopener noreferrer">提速抗癌药物研发：谷歌 Antigravity 上线“AI 炼丹师”，1 小时筛完数千种化合物</a>
+      <time datetime="2026-11-03T09:19:56+00:00">11/03 17:19</time>
+    </li>
+  </ul>
+</article>
+<article id="t0030">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">statebench</span><span class="badge">track</span><span class="badge">state</span>      </div>
+      <h3>StateBench: Testing how language models track state changes over long documents</h3>
+    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/16de2b7fc059ab0f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hugging Face</span>
+      <a href="https://huggingface.co/blog/allenai/statebench" target="_blank" rel="noopener noreferrer">StateBench: Testing how language models track state changes over long documents</a>
+      <time datetime="2026-11-03T09:15:21+00:00">11/03 17:15</time>
+    </li>
+  </ul>
+</article>
+<article id="t0031">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">compute</span><span class="badge">still</span><span class="badge">grappling</span>      </div>
+      <h3>Anthropic is still grappling with the economics of compute</h3>
+<p class="summary">At a moment when Anthropic&#39;s compute margins should be getting better, they’re getting worse.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/cc1a1386d59700b2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute" target="_blank" rel="noopener noreferrer">Anthropic is still grappling with the economics of compute</a>
+      <time datetime="2026-11-03T09:07:01+00:00">11/03 17:07</time>
+    </li>
+  </ul>
+</article>
+<article id="t0032">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">windows</span><span class="badge">microsoft</span><span class="badge">pcs</span>      </div>
+      <h3>Windows 11 can run better on PCs with 8GB now, Microsoft says – here’s why</h3>
+<p class="summary">The latest updates to Windows 11 offer improvements in speed, performance, and memory management.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/84d08d40cde99cbb.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/tech/windows-11-pc-8gb-ram-update-now" target="_blank" rel="noopener noreferrer">Windows 11 can run better on PCs with 8GB now, Microsoft says – here’s why</a>
+      <time datetime="2026-11-03T09:00:00+00:00">11/03 17:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0033">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">claude</span><span class="badge">anthropic</span>      </div>
+      <h3>別讓AI只做雜事！Anthropic主管公開「野心提示詞」3招，如何徹底釋放Claude極限？</h3>
+<p class="summary">AI不只能幫你改信。Anthropic工程主管拆解高度、深度、廣度3招，附可直接複製的提示詞，教你把交給Claude的題目想得更遠、更深、更廣。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/2e7ef1b54c6fe509.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">數位時代</span>
+      <a href="https://www.bnext.com.tw/article/92896/claude-ambition-altitude-depth-range" target="_blank" rel="noopener noreferrer">別讓AI只做雜事！Anthropic主管公開「野心提示詞」3招，如何徹底釋放Claude極限？</a>
+      <time datetime="2026-11-03T08:50:00+00:00">11/03 16:50</time>
+    </li>
+  </ul>
+</article>
+<article id="t0034">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">roku</span><span class="badge">taking</span><span class="badge">fan-favorite</span>      </div>
+      <h3>Roku is taking away a fan-favorite screensaver – but you have alternatives</h3>
+<p class="summary">One of Roku’s most popular screensavers is about to make its last splash. Here’s how to switch before Dec. 1.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/5d86c5cc2d601a13.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/home-and-office/roku-aquatic-life-aquarium-screensaver-alternatives" target="_blank" rel="noopener noreferrer">Roku is taking away a fan-favorite screensaver – but you have alternatives</a>
+      <time datetime="2026-11-03T08:40:14+00:00">11/03 16:40</time>
+    </li>
+  </ul>
+</article>
+<article id="t0044">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">summit</span><span class="badge">founder</span><span class="badge">boston</span>      </div>
+      <h3>The TechCrunch Founder Summit agenda is only half the reason to be in Boston on November 4</h3>
+<p class="summary">On Nov. 4, TechCrunch Founder Summit 2026 brings founders and VCs to Boston&#39;s SoWa Power Station for practical insights and connections. Register before prices increase at the door.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-04/7814a63ec44948ec.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4" target="_blank" rel="noopener noreferrer">The TechCrunch Founder Summit agenda is only half the reason to be in Boston on November 4</a>
+      <time datetime="2026-11-03T06:30:00+00:00">11/03 14:30</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase" target="_blank" rel="noopener noreferrer">Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase</a>
+      <time datetime="2026-11-03T06:00:00+00:00">11/03 14:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0047">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">openai</span><span class="badge">physical</span><span class="badge">heimstaden</span>      </div>
+      <h3>Accelerating engineering for the physical world</h3>
+<p class="summary">Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">OpenAI</span>
+      <a href="https://openai.com/index/accelerating-engineering-for-the-physical-world" target="_blank" rel="noopener noreferrer">Accelerating engineering for the physical world</a>
+      <time datetime="2026-11-03T04:00:00+00:00">11/03 12:00</time>
+    </li>
+    <li>
+      <span class="src">OpenAI</span>
+      <a href="https://openai.com/index/heimstaden" target="_blank" rel="noopener noreferrer">Heimstaden is changing residential real estate management with AI</a>
+      <time datetime="2026-11-03T00:00:00+00:00">11/03 08:00</time>
+    </li>
+  </ul>
+</article>
+</div>
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
+  <div class="srcs">來源：Ars Technica AI · DIGITIMES · Google DeepMind · Hacker News (100+) · Hugging Face · INSIDE · IT之家 · MIT Technology Review AI · OpenAI · TechCrunch AI · TechOrange 科技報橘 · The Verge AI · Wired AI · ZDNet AI · iThome · 數位時代 · 科技新報 TechNews</div>
+</footer>
+</div>
+</body>
+</html>
