@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 每日新聞彙整 · 2026-11-07</title>
+<meta name="description" content="2026-11-07 AI 新聞彙整：40 個主題、47 篇報導，同主題不同來源已整合。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html" class="on">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+  <a href="../hamster.html">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../index.html">AI 每日新聞彙整</a></h1>
+  <div class="meta">
+    <span>2026-11-07</span>
+    <span>40 個主題 · 47 篇報導</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 11/07 08:10</span>
+    <a href="../archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+
+<nav class="tabs" aria-label="主題分類">
+  <a href="#cat0">其他<b>40</b></a>
+</nav>
+
+<section class="briefs">
+  <article class="brief">
+    <a class="brief-hero" href="#t0012">
+      <img src="../img/2026-11-07/e37c599eee4589e3.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">其他</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0012">After the midterms, is the AI industry in for a rough two years?</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0015">Meta introduces Spaces, a new way to collaborate with your Muse agent</a></li>
+        <li><a href="#t0021">Anthropic IPO buyers see valuation as low as $1.1T</a></li>
+        <li><a href="#t0030">Amazon will let you text Alexa your shopping list</a></li>
+      </ul>
+      <a class="brief-more" href="#cat0">看這個分類的 40 則 →</a>
+    </div>
+  </article>
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+
+<h2 class="cat" id="cat0">其他</h2>
+<article id="t0012">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">datacenter</span><span class="badge">data</span><span class="badge">centers</span>      </div>
+      <h3>After the midterms, is the AI industry in for a rough two years?</h3>
+<p class="summary">Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even </p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/e37c599eee4589e3.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy" target="_blank" rel="noopener noreferrer">All the latest updates on AI data centers</a>
+      <time datetime="2026-11-06T12:02:22+00:00">11/06 20:02</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry" target="_blank" rel="noopener noreferrer">How a Blue Wave midterm might reshape the AI industry</a>
+      <time datetime="2026-11-06T10:00:00+00:00">11/06 18:00</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years" target="_blank" rel="noopener noreferrer">After the midterms, is the AI industry in for a rough two years?</a>
+      <time datetime="2026-11-06T09:23:52+00:00">11/06 17:23</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast" target="_blank" rel="noopener noreferrer">Big Tech lost big in the 2026 election</a>
+      <time datetime="2026-11-06T08:38:02+00:00">11/06 16:38</time>
+    </li>
+  </ul>
+</article>
+<article id="t0015">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">meta</span><span class="badge">spaces</span><span class="badge">muse</span>      </div>
+      <h3>Meta introduces Spaces, a new way to collaborate with your Muse agent</h3>
+<p class="summary">Meta&#39;s Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/95d50735f16bf6d4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent" target="_blank" rel="noopener noreferrer">Meta introduces Spaces, a new way to collaborate with your Muse agent</a>
+      <time datetime="2026-11-06T10:44:20+00:00">11/06 18:44</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1028871/meta-muse-ai-spaces" target="_blank" rel="noopener noreferrer">Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now</a>
+      <time datetime="2026-11-06T10:10:10+00:00">11/06 18:10</time>
+    </li>
+  </ul>
+</article>
+<article id="t0021">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">ipo</span><span class="badge">spending</span><span class="badge">anthropic</span>      </div>
+      <h3>Anthropic IPO buyers see valuation as low as $1.1T</h3>
+<p class="summary">https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3... Comments URL: https://news.ycombinator.com/item?id=50394906 Points: 201 # Comments: 451</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/52b0fdc265857f2c.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout" target="_blank" rel="noopener noreferrer">Anthropic IPO buyers see valuation as low as $1.1T</a>
+      <time datetime="2026-11-06T08:54:36+00:00">11/06 16:54</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo" target="_blank" rel="noopener noreferrer">Ramp data shows AI spending stalling just as Anthropic nears its IPO</a>
+      <time datetime="2026-11-06T07:54:47+00:00">11/06 15:54</time>
+    </li>
+  </ul>
+</article>
+<article id="t0030">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">amazon</span><span class="badge">alexa</span><span class="badge">text</span>      </div>
+      <h3>Amazon will let you text Alexa your shopping list</h3>
+<p class="summary">Amazon is adding a new feature to Alexa for Shopping that allows customers to purchase items by texting the AI shopping assistant. Users can describe the products they&#39;re looking to buy and/or provide a photograph of the item, and Alexa for Shopping will search for matching resul</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/93eb2f18586ed505.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop" target="_blank" rel="noopener noreferrer">After blocking Muse, Amazon now lets users text Alexa to help them shop</a>
+      <time datetime="2026-11-06T06:10:00+00:00">11/06 14:10</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders" target="_blank" rel="noopener noreferrer">Amazon will let you text Alexa your shopping list</a>
+      <time datetime="2026-11-06T06:00:00+00:00">11/06 14:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0049">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">claude</span><span class="badge">anthropic</span><span class="badge">chatgpt</span>      </div>
+      <h3>Anthropic推出Claude個人理財功能，可連結銀行帳戶分析收支</h3>
+<p class="summary">繼OpenAI今年5月推出ChatGPT個人理財服務後，Anthropic周四（11/5）也宣布推出Claude Personal Finance，讓使用者連結銀行及信用卡帳戶，透過AI分析收支與財務狀況，進一步加入AI個人理財市場的競爭。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/5ff48e8bc982a5f3.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/180268" target="_blank" rel="noopener noreferrer">Anthropic推出Claude個人理財功能，可連結銀行帳戶分析收支</a>
+      <time datetime="2026-11-06T00:11:44+00:00">11/06 08:11</time>
+    </li>
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/42845-anthropic-claude-personal-finance-plaid-beta" target="_blank" rel="noopener noreferrer">Claude 跟進 ChatGPT 推個人理財，連結銀行帳戶就能問錢花去哪</a>
+      <time datetime="2026-11-05T23:15:00+00:00">11/06 07:15</time>
+    </li>
+  </ul>
+</article>
+<article id="t0000">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">sk-hynix</span><span class="badge">samsung</span><span class="badge">dram</span>      </div>
+      <h3>消息称台积电考虑进军先进内存芯片制造，有望为英伟达打造 3D DRAM</h3>
+<p class="summary">IT之家 11 月 7 日消息，科技媒体《The Information》昨日（11 月 6 日）援引两名知情人士报道， 台积电正考虑扩大业务版图，进军先进内存芯片制造，以在快速扩张的 AI 硬件供应链中获取更大份额。 报道称， 台积电近期已应其最大客户英伟达的要求，开始规划生产一种名为“3D DRAM”的先进内存芯片 。该架构通过垂直堆叠存储单元来提升容量，被视为应对 AI 算力对高带宽、高密度内存需求的关键方向之一。 台积电目前尚未确定量产时间，也未最终决定产能来源。IT之家援引博文介绍，台积电正在评估两条路径：一是兴建专用新厂，二是收购现有晶圆厂并</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/e7fea86fdc6776cc.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/619.htm" target="_blank" rel="noopener noreferrer">消息称台积电考虑进军先进内存芯片制造，有望为英伟达打造 3D DRAM</a>
+      <time datetime="2026-11-06T15:59:05+00:00">11/06 23:59</time>
+    </li>
+  </ul>
+</article>
+<article id="t0001">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">mega</span><span class="badge">home</span><span class="badge">mpv</span>      </div>
+      <h3>理想 Mega 新版本 MPV 谍照疑曝光，车头缩短、前三角窗加大</h3>
+<p class="summary">IT之家 11 月 7 日消息，博主 @SugarDesign 昨日分享了一组新车谍照，猜测为理想 Mega 的新版本。从图上可以看到，该车车头变短，前三角窗更大。 IT之家注意到，新一代理想 Mega Home 于 9 月 2 日发布，新车只提供一种配置，全国统一零售价 50.98 万元。 作为参考，理想 Mega Home 可选灰 / 银 / 熊猫白 / 紫晶灰 / 新大象灰 5 种车色。该车新车前、后包围增加晶辉饰条装饰，新增智能三色星环灯提升精致感，车身长宽高分别为 5355*1965*1850mm， 轴距 3300mm ，提供 2.6m 长的 </p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/dbf21665c6ae37b4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/618.htm" target="_blank" rel="noopener noreferrer">理想 Mega 新版本 MPV 谍照疑曝光，车头缩短、前三角窗加大</a>
+      <time datetime="2026-11-06T15:58:57+00:00">11/06 23:58</time>
+    </li>
+  </ul>
+</article>
+<article id="t0002">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">planet</span>      </div>
+      <h3>Planet AI 邀你“向地球提问”：超 10 年卫星影像变化，一句话就能查</h3>
+<p class="summary">IT之家 11 月 7 日消息，美国卫星数据公司 Planet 于 11 月 5 日推出 Planet AI 应用， 结合大语言模型与超过十年的全球卫星影像档案，让用户使用自然语言搜索、观察和分析地球表面的变化。 IT之家附上演示视频如下： 产品目前可通过 ai.planet.com 免费使用，用户登录 Planet Insights 账号后，未来可使用更多高级功能。Planet 强调，所有 AI 结论均以可查看的原始卫星影像为依据，以降低“AI 幻觉”带来的误判风险。用户只需用日常语言描述问题，即可在全球范围内搜索目标地点、追踪其时间变化，并生成对比图</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/a3748bf2849fcdb9.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/614.htm" target="_blank" rel="noopener noreferrer">Planet AI 邀你“向地球提问”：超 10 年卫星影像变化，一句话就能查</a>
+      <time datetime="2026-11-06T15:40:22+00:00">11/06 23:40</time>
+    </li>
+  </ul>
+</article>
+<article id="t0003">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">claude</span><span class="badge">5.5</span>      </div>
+      <h3>Anthropic 研究称 Claude AI 智能体可以靠“做梦”变得更聪明</h3>
+<p class="summary">IT之家 11 月 7 日消息，Anthropic 昨日（11 月 6 日）发布研究文章《The components of agent memory》，系统拆解 Claude 智能体如何跨会话记忆、筛选、纠错和整理知识。 该研究指出 AI 智能体可借鉴人脑“睡眠整理记忆”的机制 ，在空闲时间反思历史记录、纠错并构建知识结构，从而显著提升长周期任务表现。 该研究将智能体记忆分为会话日志、记忆笔记、知识表征（如 Wiki）和注入上下文四层，并引入“做梦”（dreaming）机制，让模型在两次交互之间的空闲时间回顾日志、修正错误、提炼规则和更新知识库。 研究</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/318fd6d6ab73f2c4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/613.htm" target="_blank" rel="noopener noreferrer">Anthropic 研究称 Claude AI 智能体可以靠“做梦”变得更聪明</a>
+      <time datetime="2026-11-06T15:25:14+00:00">11/06 23:25</time>
+    </li>
+  </ul>
+</article>
+<article id="t0004">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">110</span><span class="badge">1.25</span>      </div>
+      <h3>消息称 OpenAI 完成 110 亿美元首期新融资，估值 1.25 万亿美元</h3>
+<p class="summary">北京时间 11 月 7 日，据彭博社报道，知情人士称，OpenAI 新一轮融资已完成大约 110 亿美元的首期款项，对公司的估值为 1.25 万亿美元。 据知情人士透露，截至周五，这笔资金已汇入 OpenAI 账户。其中一位知情人士称，本轮融资的剩余部分预计将在未来几周内完成，融资总额最高可能达到 200 亿美元。 在推迟首次公开招股 (IPO) 计划后，OpenAI 已与投资者就大规模融资进行了一个多月的谈判。彭博社此前报道称，OpenAI 最初计划以 1.4 万亿美元的估值融资至少 300 亿美元。但随着 AI 股票在公开市场遭遇大幅抛售，该公司随后</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/612.htm" target="_blank" rel="noopener noreferrer">消息称 OpenAI 完成 110 亿美元首期新融资，估值 1.25 万亿美元</a>
+      <time datetime="2026-11-06T15:24:12+00:00">11/06 23:24</time>
+    </li>
+  </ul>
+</article>
+<article id="t0005">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">cursor</span><span class="badge">voice</span><span class="badge">apple</span>      </div>
+      <h3>AI 编程进入“通话时代”：Cursor 智能体可实时语音协作</h3>
+<p class="summary">IT之家 11 月 7 日消息，AI 编程工具 Cursor 昨日（11 月 6 日）宣布推出 “与智能体实时语音聊天”（Voice Chat with Agents）功能。 开发者现在可以通过语音与 Cursor 的编码智能体双向对话，例如口头描述代码修改需求、询问任务进展、查看差异和运行状态，同时让智能体继续在后台完成编码工作。 该功能支持在 Cursor 的 Agents Window、IDE、网页端及 iOS 应用中使用。当智能体空闲且输入框为空时，用户可点击“Start voice chat”启动通话。在 iPhone 上，还可通过“Hey S</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/610.htm" target="_blank" rel="noopener noreferrer">AI 编程进入“通话时代”：Cursor 智能体可实时语音协作</a>
+      <time datetime="2026-11-06T15:11:36+00:00">11/06 23:11</time>
+    </li>
+  </ul>
+</article>
+<article id="t0006">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">amp</span><span class="badge">agent</span><span class="badge">spaces</span>      </div>
+      <h3>AI 编程工具 Amp 推出 Spaces：你的 AI 项目经理上线，自主编排 / 协调 Agent 干活</h3>
+<p class="summary">IT之家 11 月 7 日消息，AI 编程协作工具 Amp 昨日（11 月 6 日）宣布推出 Spaces， 希望构建面向 AI 智能体（Agent）和团队协作的全新工作方式。 对于用户而言，不再需要手动创建、命名和管理多个 Agent 线程，只需对话一个主 Agent，由它理解需求、拆解任务，并让其自动生成和协调其他 Agent 线程。IT之家附上相关截图如下： Amp 指出在传统多 Agent 工作流中，用户往往要自己决定拆分、分派以及追踪任务，Spaces 将这一层组织工作交给 Agent：每个 Space 是用户与单个 Agent 的对话，该 A</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/441385b79b15585f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/609.htm" target="_blank" rel="noopener noreferrer">AI 编程工具 Amp 推出 Spaces：你的 AI 项目经理上线，自主编排 / 协调 Agent 干活</a>
+      <time datetime="2026-11-06T15:02:32+00:00">11/06 23:02</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">huang</span><span class="badge">intel</span><span class="badge">recruited</span>      </div>
+      <h3>China reportedly recruited AI exec to spy on Jensen Huang</h3>
+<p class="summary">China&#39;s intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and &#34;potentially influence the company to push </p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/85b01f2704adf8c6.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy" target="_blank" rel="noopener noreferrer">China reportedly recruited AI exec to spy on Jensen Huang</a>
+      <time datetime="2026-11-06T15:00:44+00:00">11/06 23:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0008">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">additional</span><span class="badge">billion</span><span class="badge">reportedly</span>      </div>
+      <h3>OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation</h3>
+<p class="summary">OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn&#39;t closed yet but is expected to in the coming weeks.</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation" target="_blank" rel="noopener noreferrer">OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation</a>
+      <time datetime="2026-11-06T14:53:46+00:00">11/06 22:53</time>
+    </li>
+  </ul>
+</article>
+<article id="t0009">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">alphabet</span><span class="badge">5.48</span><span class="badge">regulation</span>      </div>
+      <h3>谷歌母公司 Alphabet 斥资约 5.48 亿美元建仓高通，押注 AI 芯片新赛道</h3>
+<p class="summary">IT之家 11 月 7 日消息，路透社今天（11 月 7 日）发布博文，报道称谷歌母公司 Alphabet 在第三季度首次买入芯片巨头高通约 297.7 万股股票， 持仓市值约 5.48 亿美元 （IT之家注：现汇率约合 36.62 亿元人民币） ，约占高通总股本 0.5%。 根据美国证券监管文件披露，Alphabet 第三季度持仓总市值约为 883 亿美元 （现汇率约合 5,900.67 亿元人民币） ，上一季度约为 991 亿美元 （现汇率约合 6,622.38 亿元人民币） ，环比下降约 10.9%。当季新增 4 只股票持仓、增持 1 只股票、减持</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/a0da0613e96ae75b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/607.htm" target="_blank" rel="noopener noreferrer">谷歌母公司 Alphabet 斥资约 5.48 亿美元建仓高通，押注 AI 芯片新赛道</a>
+      <time datetime="2026-11-06T14:48:04+00:00">11/06 22:48</time>
+    </li>
+  </ul>
+</article>
+<article id="t0010">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">800</span><span class="badge">microsoft</span>      </div>
+      <h3>消息称微软不再续签甲骨文 AI 算力租赁协议，重新评估超 800 亿美元云合作</h3>
+<p class="summary">IT之家 11 月 7 日消息，据彭博社今日报道，微软正在逐步结束与甲骨文（Oracle）的 AI 算力租赁合作。 据介绍，微软此前已决定不再续签相关合同，然后近期开始关闭从甲骨文租用的部分计算资源。这也是微软重新评估数十亿美元云计算合作关系的一部分。 知情人士透露，由于微软自身的技术规格不断变化，原先租用的计算资源逐渐无法满足其需求。甲骨文提供的服务器使用了较早一代的英伟达 GPU 芯片，因此对微软而言，这些算力的实用价值有所下降。 甲骨文发言人表示，其 AI 基础设施需求依然强劲，其中也包括较早一代的 GPU。甲骨文此前在 9 月表示，部分使用约四年</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/e9e8665daef04993.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/606.htm" target="_blank" rel="noopener noreferrer">消息称微软不再续签甲骨文 AI 算力租赁协议，重新评估超 800 亿美元云合作</a>
+      <time datetime="2026-11-06T14:44:15+00:00">11/06 22:44</time>
+    </li>
+  </ul>
+</article>
+<article id="t0011">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>【Anthropic 機器人工作能力報告】技術已能接管全美 34% 工作，但真正「比請人便宜」的不到 1%</h3>
+<p class="summary">人工智慧研究機構 Anthropic 發布《What work can robots do?》（機器人能做哪些工作？），由學者 Russell Legate-Yang 與 Maxim Massenkoff 共同撰寫。報告內容核心在於建立了一套具備 50 年歷史驗證力的「機器人工作暴露度指標」，透過實際比對當前機器人的能力與部署成本，指出機器人技術上已能勝任許多體力工作，但成本仍高，短期內難以大規模取代人類。 很多人看到新聞展示會飛、會翻滾的人形機器人，就擔心職場很快會被機器人接管。但 Anthropic 的研究發現，雖然現在的機器人在技術上，已經能做出全</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/8bf11399c67634b8.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/11/07/what-work-can-robots-do" target="_blank" rel="noopener noreferrer">【Anthropic 機器人工作能力報告】技術已能接管全美 34% 工作，但真正「比請人便宜」的不到 1%</a>
+      <time datetime="2026-11-06T14:29:00+00:00">11/06 22:29</time>
+    </li>
+  </ul>
+</article>
+<article id="t0013">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">opus</span><span class="badge">jev</span><span class="badge">ask</span>      </div>
+      <h3>A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost</h3>
+<p class="summary">Article URL: https://hightouch.com/blog/llm-judges-identity-resolution Comments URL: https://news.ycombinator.com/item?id=50397429 Points: 279 # Comments: 61</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/37b5f4a9b169dd71.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://hightouch.com/blog/llm-judges-identity-resolution" target="_blank" rel="noopener noreferrer">A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost</a>
+      <time datetime="2026-11-06T11:48:51+00:00">11/06 19:48</time>
+    </li>
+  </ul>
+</article>
+<article id="t0014">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hundreds</span><span class="badge">artex</span><span class="badge">found</span>      </div>
+      <h3>Hundreds of Artex AI hacking tools found publicly exposed to the web</h3>
+<p class="summary">Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/3934ee68e5bbc557.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web" target="_blank" rel="noopener noreferrer">Hundreds of Artex AI hacking tools found publicly exposed to the web</a>
+      <time datetime="2026-11-06T10:44:38+00:00">11/06 18:44</time>
+    </li>
+  </ul>
+</article>
+<article id="t0016">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">deepseek</span><span class="badge">models</span><span class="badge">hacking</span>      </div>
+      <h3>Free Chinese AI Models Are Getting Scary Good at Hacking</h3>
+<p class="summary">An experiment in which AI models were asked to break into simulated networks showed the hacking skills of DeepSeek and GLM to be not far behind OpenAI’s most advanced cyber model, which isn’t public.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/4275497b2c4a452a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking" target="_blank" rel="noopener noreferrer">Free Chinese AI Models Are Getting Scary Good at Hacking</a>
+      <time datetime="2026-11-06T10:43:43+00:00">11/06 18:43</time>
+    </li>
+  </ul>
+</article>
+<article id="t0017">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">android</span><span class="badge">favorite</span><span class="badge">tracking</span>      </div>
+      <h3>Android is getting my favorite iOS tracking feature – what to expect</h3>
+<p class="summary">‘Notify when left behind’ is making its way to Android – but to limited devices for now.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/f85a12ae2fbdccfd.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/tech/android-find-hub-left-behind-upgrade" target="_blank" rel="noopener noreferrer">Android is getting my favorite iOS tracking feature – what to expect</a>
+      <time datetime="2026-11-06T09:48:15+00:00">11/06 17:48</time>
+    </li>
+  </ul>
+</article>
+<article id="t0018">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">meta</span><span class="badge">does</span><span class="badge">think</span>      </div>
+      <h3>“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.</h3>
+<p class="summary">Meta won&#39;t force Facebook page owners to allow AI training on linked content.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/c9661561f7a00b37.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Ars Technica AI</span>
+      <a href="https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update" target="_blank" rel="noopener noreferrer">“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.</a>
+      <time datetime="2026-11-06T09:43:02+00:00">11/06 17:43</time>
+    </li>
+  </ul>
+</article>
+<article id="t0019">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">open-weight</span><span class="badge">thinking</span><span class="badge">machines</span>      </div>
+      <h3>Thinking Machines’ new model takes the lead in western open-weight AI</h3>
+<p class="summary">Another competitive model developed outside of China could change the open-weight landscape.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/99d9de7028b16e80.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight" target="_blank" rel="noopener noreferrer">Thinking Machines’ new model takes the lead in western open-weight AI</a>
+      <time datetime="2026-11-06T09:08:33+00:00">11/06 17:08</time>
+    </li>
+  </ul>
+</article>
+<article id="t0020">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">dating</span><span class="badge">she</span><span class="badge">dealbreaker</span>      </div>
+      <h3>AI is the new dating dealbreaker</h3>
+<p class="summary">When Irene moved to San Francisco last year, she started using dating apps as a way to meet new people, get to know her new city, and connect with others who care about the things she does. After the 25-year-old analyst downloaded Hinge and started swiping, she noticed a trend. &#34;</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/72b95e4c96880c9f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity" target="_blank" rel="noopener noreferrer">AI is the new dating dealbreaker</a>
+      <time datetime="2026-11-06T09:00:00+00:00">11/06 17:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0022">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">youtube</span><span class="badge">claude</span><span class="badge">anthropic</span>      </div>
+      <h3>受不了YouTube推爛片？AI大神花用Claude自建「精華版YT」，如何4步驟客製化專屬推薦系統？</h3>
+<p class="summary">卡帕西嫌YouTube推薦太爛，用Claude約2小時從4,300萬則網友留言篩出6,454支好片，還公開資料包，普通人4步驟就能做自己的版本。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/53ceabddaaaa3c56.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">數位時代</span>
+      <a href="https://www.bnext.com.tw/article/92965/karpathy-hackertube-claude-youtube-alternative" target="_blank" rel="noopener noreferrer">受不了YouTube推爛片？AI大神花用Claude自建「精華版YT」，如何4步驟客製化專屬推薦系統？</a>
+      <time datetime="2026-11-06T08:50:00+00:00">11/06 16:50</time>
+    </li>
+  </ul>
+</article>
+<article id="t0023">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">akai</span><span class="badge">moog</span><span class="badge">embracing</span>      </div>
+      <h3>How Akai and Moog are embracing vibe-coded mods</h3>
+<p class="summary">inMusic, the parent company of Akai, Moog, Native Instruments, and more, has decided to embrace the modding community. In an interview with The Verge, inMusic CEO Jack O&#39;Donnell said, &#34;We&#39;re going to provide a toolbox to the community, we&#39;re going to provide the inner workings of</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/07d96a2cf1f00920.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai" target="_blank" rel="noopener noreferrer">How Akai and Moog are embracing vibe-coded mods</a>
+      <time datetime="2026-11-06T08:34:39+00:00">11/06 16:34</time>
+    </li>
+  </ul>
+</article>
+<article id="t0024">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">apple</span><span class="badge">icloud</span><span class="badge">links</span>      </div>
+      <h3>Apple will monitor your public iCloud links now, starting with iOS 27.3</h3>
+<p class="summary">Under Apple’s new policy, the company will scan publicly shared iCloud links for harmful content – and possibly ban violators.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/2af9e507eab0c8f4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/innovation/apple-monitor-public-icloud-links-27-3-harmful-content" target="_blank" rel="noopener noreferrer">Apple will monitor your public iCloud links now, starting with iOS 27.3</a>
+      <time datetime="2026-11-06T08:21:55+00:00">11/06 16:21</time>
+    </li>
+  </ul>
+</article>
+<article id="t0025">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">potential</span><span class="badge">clones</span><span class="badge">gta</span>      </div>
+      <h3>Could potential AI clones of GTA VI force a quicker official port?</h3>
+<p class="summary">A former Rockstar tech director thinks the developer is facing new time pressures.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/f5b4a90a7c296d9c.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Ars Technica AI</span>
+      <a href="https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port" target="_blank" rel="noopener noreferrer">Could potential AI clones of GTA VI force a quicker official port?</a>
+      <time datetime="2026-11-06T08:19:12+00:00">11/06 16:19</time>
+    </li>
+  </ul>
+</article>
+<article id="t0026">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">open</span><span class="badge">opensource</span><span class="badge">source</span>      </div>
+      <h3>How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks</h3>
+<p class="summary">A year ago, NVIDIA open sourced its Aerial wireless software, joining Sionna and a broader suite of open source tools for accelerating next-generation 6G network development. Together, they give researchers a foundation for testing ideas, comparing results and building on each ot</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/d64a8f63f2be23cd.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">NVIDIA Blog</span>
+      <a href="https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks" target="_blank" rel="noopener noreferrer">How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks</a>
+      <time datetime="2026-11-06T08:00:35+00:00">11/06 16:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0027">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">really</span><span class="badge">files</span><span class="badge">want</span>      </div>
+      <h3>AI Companies Really, Really Want to Buy Your Work Files and Emails</h3>
+<p class="summary">Data brokers are collecting all sorts of internal corporate files to help train AI models. Not everyone is thrilled.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/9e51d866aca02c65.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails" target="_blank" rel="noopener noreferrer">AI Companies Really, Really Want to Buy Your Work Files and Emails</a>
+      <time datetime="2026-11-06T08:00:00+00:00">11/06 16:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0028">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">xai</span><span class="badge">ceo</span>      </div>
+      <h3>OpenAI CEO 奥尔特曼警示：未来人类可能无法从 AI 手中夺回控制权</h3>
+<p class="summary">IT之家 11 月 6 日消息，OpenAI 首席执行官萨姆 · 奥尔特曼（IT之家注：Sam Altman）最近出席 Raj Shamani 播客时表示，人工智能可能通过两种方式走向失控：一是人类逐步将控制权交给自主式 AI，二是某个人或实体垄断 AI 技术。 针对第一种情况，奥尔特曼警告称：“AI 会逐渐失去控制，我们可能有意或无意地将控制权交给能力远超人类的系统，最终再也无法夺回。” 第二种情况的风险在于巨头垄断，奥尔特曼解释称：“另一种情况是，某个人、公司或国家相对于其他所有人来说过于强大。让多个不同路线的 AI 实验室相互竞争，比所有人依赖一家</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/3c6e2d9a9c8b6624.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/596.htm" target="_blank" rel="noopener noreferrer">OpenAI CEO 奥尔特曼警示：未来人类可能无法从 AI 手中夺回控制权</a>
+      <time datetime="2026-11-06T07:13:11+00:00">11/06 15:13</time>
+    </li>
+  </ul>
+</article>
+<article id="t0029">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">3.1</span><span class="badge">kimi</span><span class="badge">k3.1</span>      </div>
+      <h3>Day-0 支持：摩尔线程完成 3 万亿级参数 Kimi-K3.1 Pro 适配，支持文本与图片推理</h3>
+<p class="summary">IT之家 11 月 6 日消息， 本月 4 日，月之暗面正式公布 Kimi K3.1 Pro 完整模型权重 。在 Arena 运营的 Agent Arena 智能体排行榜中，Kimi K3.1 Pro（Max）位列开放权重模型第一、全部参评模型第 13 位，并在工作、编程与聊天三个类别中均居开放模型首位。 摩尔线程官方今日宣布，摩尔线程基于 AI 训推一体智算卡 MTT S5000 及 MUSA 软件栈， 完成 Kimi-K3.1 Pro 模型的 Day-0 适配 ，打通模型加载、服务启动及文本、图片基础推理链路。 IT之家了解到， Kimi K3.1 </p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/604dc9d16867b466.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/561.htm" target="_blank" rel="noopener noreferrer">Day-0 支持：摩尔线程完成 3 万亿级参数 Kimi-K3.1 Pro 适配，支持文本与图片推理</a>
+      <time datetime="2026-11-06T06:41:55+00:00">11/06 14:41</time>
+    </li>
+  </ul>
+</article>
+<article id="t0031">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">toyblocks</span><span class="badge">controlled</span><span class="badge">learning</span>      </div>
+      <h3>ToyBlocks: A controlled world for robot learning and evaluation</h3>
+    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/ac54d7a78f1664cb.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hugging Face</span>
+      <a href="https://huggingface.co/blog/allenai/toyblocks" target="_blank" rel="noopener noreferrer">ToyBlocks: A controlled world for robot learning and evaluation</a>
+      <time datetime="2026-11-06T06:00:48+00:00">11/06 14:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0032">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">gemini</span><span class="badge">omni</span><span class="badge">flash</span>      </div>
+      <h3>Gemini Omni 1.2 Flash</h3>
+<p class="summary">Article URL: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/ Comments URL: https://news.ycombinator.com/item?id=50392118 Points: 289 # Comments: 215</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/76e3d0235ac54ffd.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash" target="_blank" rel="noopener noreferrer">Gemini Omni 1.2 Flash</a>
+      <time datetime="2026-11-06T05:35:27+00:00">11/06 13:35</time>
+    </li>
+  </ul>
+</article>
+<article id="t0033">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">brightspeed</span><span class="badge">130</span><span class="badge">vera</span>      </div>
+      <h3>Brightspeed 与英伟达洽谈，计划将 130 多座老旧电信建筑改造为小型数据中心</h3>
+<p class="summary">IT之家 11 月 6 日消息，据 The Information 报道，互联网电信服务提供商 Brightspeed 正与英伟达洽谈，计划将多座老旧电信建筑改造为小型数据中心。 IT之家从原报道获悉， 英伟达曾在此前向 Brightspeed 母公司阿波罗全球管理提出这一设想 ，后来他们要求英伟达提交书面方案。英伟达目前已按要求提交，正进一步获取相关信息，并希望实地考察这些建筑。 Brightspeed 在美国拥有约 130 座建筑， 其中大部分用于处理数据和语音通信流量 。英伟达预计这些设施合计可提供约 1 吉瓦的算力，能容纳 2200 多个 Sup</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/ca54c3041c4546b2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/543.htm" target="_blank" rel="noopener noreferrer">Brightspeed 与英伟达洽谈，计划将 130 多座老旧电信建筑改造为小型数据中心</a>
+      <time datetime="2026-11-06T05:13:37+00:00">11/06 13:13</time>
+    </li>
+  </ul>
+</article>
+<article id="t0034">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">underdog</span><span class="badge">speech</span><span class="badge">demo</span>      </div>
+      <h3>Underdog shows off a 32MB speech model in new demo</h3>
+<p class="summary">Despite its small size, Underdog&#39;s new model can generate both speech and music.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/9869b12d9609793f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo" target="_blank" rel="noopener noreferrer">Underdog shows off a 32MB speech model in new demo</a>
+      <time datetime="2026-11-06T05:02:16+00:00">11/06 13:02</time>
+    </li>
+  </ul>
+</article>
+<article id="t0035">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">physicl</span><span class="badge">make</span><span class="badge">enough</span>      </div>
+      <h3>Physicl raises $10M to make the digital world real enough for robots</h3>
+<p class="summary">Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/282b2ecbe85184f0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots" target="_blank" rel="noopener noreferrer">Physicl raises $10M to make the digital world real enough for robots</a>
+      <time datetime="2026-11-06T05:00:00+00:00">11/06 13:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0036">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">cat</span><span class="badge">code</span><span class="badge">claude</span>      </div>
+      <h3>Claude Code明星產品經理跳槽OpenAI！Cat Wu有何本事？為何成AI巨頭搶才目標？</h3>
+<p class="summary">Claude Code產品負責人Cat Wu在Anthropic IPO前夕轉投OpenAI。模型差距拉近後，AI巨頭搶的是能把模型變成產品的人。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/5ea6d27d2c7b0157.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">數位時代</span>
+      <a href="https://www.bnext.com.tw/article/92950/cat-wu-claude-code-anthropic-openai" target="_blank" rel="noopener noreferrer">Claude Code明星產品經理跳槽OpenAI！Cat Wu有何本事？為何成AI巨頭搶才目標？</a>
+      <time datetime="2026-11-06T04:54:00+00:00">11/06 12:54</time>
+    </li>
+  </ul>
+</article>
+<article id="t0037">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">hbm</span><span class="badge">chip</span><span class="badge">phison</span>      </div>
+      <h3>強攻 AI 與企業級市場，潘健成：群聯擺脫依賴低價庫存邁入 AI 營運收割期</h3>
+<p class="summary">快閃記憶體控制晶片大廠群聯電子（Phison）舉辦法人說明會，執行長潘健成親自回覆法人提問。面對消費性電子疲軟 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/f4775f234ada5827.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/06/phison-breaks-free-from-reliance-on-low-priced-inventory-and-enters-a-period-of-reaping-the-benefits-of-ai-driven-operations" target="_blank" rel="noopener noreferrer">強攻 AI 與企業級市場，潘健成：群聯擺脫依賴低價庫存邁入 AI 營運收割期</a>
+      <time datetime="2026-11-06T04:50:00+00:00">11/06 12:50</time>
+    </li>
+  </ul>
+</article>
+<article id="t0038">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">oppo</span>      </div>
+      <h3>曝 OPPO 明年产品策略更聚焦：手机发力阔形态，代号「扶摇」的云台相机将至</h3>
+<p class="summary">IT之家 11 月 6 日消息，博主 @数码闲聊站 今日发文透露，某厂 2027 年的产品策略更聚焦了， 手机发力阔形态 ，AI 和阔形态上应该能做出新东西。从评论区讨论及暗示表情来看，预计指 OPPO。 另外，博主表示，影像也会有新形态产品， 代号「扶摇」的云台相机应该快了 ，内部还挺有信心。 据IT之家此前报道，该博主曾透露，OPPO 的 6.35 英寸阔直板产品线，明年首款新机属于高端旗舰线，后续考虑下放轻薄拍照机。该机是标准 16:9 比例，工程机测试天玑旗舰芯、3D 超声波指纹，屏幕分辨率为 2560*1440p， 采用 LIPO 极窄四等边设</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-07/aa88d444693e2f40.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/023/538.htm" target="_blank" rel="noopener noreferrer">曝 OPPO 明年产品策略更聚焦：手机发力阔形态，代号「扶摇」的云台相机将至</a>
+      <time datetime="2026-11-06T04:35:04+00:00">11/06 12:35</time>
+    </li>
+  </ul>
+</article>
+</div>
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
+  <div class="srcs">來源：Ars Technica AI · Hacker News (100+) · Hugging Face · INSIDE · IT之家 · NVIDIA Blog · TechCrunch AI · TechOrange 科技報橘 · The Verge AI · Wired AI · ZDNet AI · iThome · 數位時代 · 科技新報 TechNews</div>
+</footer>
+</div>
+</body>
+</html>
