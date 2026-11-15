@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 每日新聞彙整 · 2026-11-15</title>
+<meta name="description" content="2026-11-15 AI 新聞彙整：28 個主題、30 篇報導，同主題不同來源已整合。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html" class="on">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+  <a href="../hamster.html">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../index.html">AI 每日新聞彙整</a></h1>
+  <div class="meta">
+    <span>2026-11-15</span>
+    <span>28 個主題 · 30 篇報導</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 11/15 08:10</span>
+    <a href="../archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+
+<nav class="tabs" aria-label="主題分類">
+  <a href="#cat0">其他<b>28</b></a>
+</nav>
+
+<section class="briefs">
+  <article class="brief">
+    <a class="brief-hero" href="#t0000">
+      <img src="../img/2026-11-15/876c5c69f412de06.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">其他</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0000">Asian governments react to Nvidia CEO Jensen Huang’s exit</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0001">Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang</a></li>
+        <li><a href="#t0002">The AI graveyard: a running list of projects and startups that didn’t make it</a></li>
+        <li><a href="#t0003">The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs</a></li>
+      </ul>
+      <a class="brief-more" href="#cat0">看這個分類的 28 則 →</a>
+    </div>
+  </article>
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+
+<h2 class="cat" id="cat0">其他</h2>
+<article id="t0000">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">ceo</span><span class="badge">huang</span><span class="badge">jensen</span>      </div>
+      <h3>Asian governments react to Nvidia CEO Jensen Huang’s exit</h3>
+<p class="summary">Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/876c5c69f412de06.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/14/where-was-nvidias-security-team" target="_blank" rel="noopener noreferrer">Where was Nvidia’s security team?</a>
+      <time datetime="2026-11-14T16:08:07+00:00">11/15 00:08</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit" target="_blank" rel="noopener noreferrer">Asian governments react to Nvidia CEO Jensen Huang’s exit</a>
+      <time datetime="2026-11-14T08:34:15+00:00">11/14 16:34</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo" target="_blank" rel="noopener noreferrer">Jensen Huang and the decline of the visionary showman founder CEO</a>
+      <time datetime="2026-11-14T04:00:00+00:00">11/14 12:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0001">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">petition</span><span class="badge">elon</span><span class="badge">musk</span>      </div>
+      <h3>Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang</h3>
+<p class="summary">The petition had attracted more than 115,000 signatures as of Saturday afternoon.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/c81b97c00e75de9b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang" target="_blank" rel="noopener noreferrer">Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang</a>
+      <time datetime="2026-11-14T13:41:22+00:00">11/14 21:41</time>
+    </li>
+  </ul>
+</article>
+<article id="t0002">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">apple</span><span class="badge">projects</span><span class="badge">graveyard</span>      </div>
+      <h3>The AI graveyard: a running list of projects and startups that didn’t make it</h3>
+<p class="summary">From Apple&#39;s repeatedly delayed Siri AI to OpenAI&#39;s messy &#34;super app&#34; launch, here&#39;s a look at the AI projects that shut down or missed expectations.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/bdc295c2f0553b72.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it" target="_blank" rel="noopener noreferrer">The AI graveyard: a running list of projects and startups that didn’t make it</a>
+      <time datetime="2026-11-14T09:30:00+00:00">11/14 17:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0003">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">safety</span><span class="badge">board</span><span class="badge">member</span>      </div>
+      <h3>The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs</h3>
+<p class="summary">Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy community, though she is pe</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/08d8326f21342eec.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview" target="_blank" rel="noopener noreferrer">The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs</a>
+      <time datetime="2026-11-14T07:00:00+00:00">11/14 15:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0004">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">game</span><span class="badge">factory</span><span class="badge">amazon</span>      </div>
+      <h3>Show HN: A terminal-native idle factory game, written in Rust with ratatui</h3>
+<p class="summary">Hey HN readers! I&#39;m snipedbywifi ( https://gitlab.com/snipedbywifi ), and i&#39;ve been working on terminactory. Please try it out if you&#39;d like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs </p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/ad9d92ed9715f84c.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://gitlab.com/snipedbywifi/terminactory" target="_blank" rel="noopener noreferrer">Show HN: A terminal-native idle factory game, written in Rust with ratatui</a>
+      <time datetime="2026-11-14T06:05:54+00:00">11/14 14:05</time>
+    </li>
+  </ul>
+</article>
+<article id="t0005">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">muse</span><span class="badge">meta</span><span class="badge">google</span>      </div>
+      <h3>智能体帮你联络商家或保险公司，Meta 旗下 Muse 上线代打电话功能</h3>
+<p class="summary">IT之家 11 月 14 日消息，Meta 旗下 AI 智能体 Muse 推出代打电话功能，开通高级付费订阅后，用户就能让 Muse 代自己联系美国商家。Meta 称，Muse 可以帮助用户处理各种烦琐事务，完成待办事项。 13 日凌晨，Meta 首席 AI 官汪滔在 X 上发文宣布：“Muse 能帮你打完所有不想亲自打的电话。” 据悉，用户可以借助 Muse 联 系保险公司或有线电视服务商、预约美国车管部门的业务办理时间，或是打电话向餐厅订位 。 Muse 会使用 AI 合成语音 与商家工作人员交谈，但这类功能并非总能顺利完成任务。部分商家的工作人员听</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/138e1d6db8700257.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/238.htm" target="_blank" rel="noopener noreferrer">智能体帮你联络商家或保险公司，Meta 旗下 Muse 上线代打电话功能</a>
+      <time datetime="2026-11-14T05:46:56+00:00">11/14 13:46</time>
+    </li>
+  </ul>
+</article>
+<article id="t0006">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">regulation</span>      </div>
+      <h3>白宫“超级智能工作组”呼吁放宽问责政策，鼓励 AI 企业报告网络安全事件</h3>
+<p class="summary">IT之家 11 月 14 日消息，据彭博社报道，当地时间 13 日，美国政府新设的“超级智能工作组”在白宫开会， 建议联邦机构放宽网络安全事件的问责政策，鼓励 AI 企业主动报告重大安全事件 。 一名不愿具名的政府官员透露，工作组认为，过去处理网络安全事件时采用的监管处罚标准可能不再适用，甚至会 让企业不敢分享重要的安全信息 。 工作组因此敦促各机构，未来 12 个月内应限制企业因安全事件承担的监管责任，并考虑进一步延长期限。 此次政策建议意味着工作组的立场发生转变，从此前倾向于 依法处罚开发不安全产品的企业 ，改为通过 减轻责任鼓励 AI 开发商报告安</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/229.htm" target="_blank" rel="noopener noreferrer">白宫“超级智能工作组”呼吁放宽问责政策，鼓励 AI 企业报告网络安全事件</a>
+      <time datetime="2026-11-14T05:03:22+00:00">11/14 13:03</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">ransomware</span><span class="badge">beware</span><span class="badge">ai-fueled</span>      </div>
+      <h3>Beware the New AI-Fueled Ransomware Boom</h3>
+<p class="summary">Fully automated ransomware hasn’t arrived—yet. But seemingly unsophisticated attackers are using AI tools to wreak havoc.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/fbc5c79e5c949ff4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom" target="_blank" rel="noopener noreferrer">Beware the New AI-Fueled Ransomware Boom</a>
+      <time datetime="2026-11-14T05:00:00+00:00">11/14 13:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0008">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">ceo</span>      </div>
+      <h3>英伟达副总裁卡坦扎罗否认签署要求前 CEO 黄仁勋复职的公开信，表态支持董事会和临时 CEO 克雷斯</h3>
+<p class="summary">IT之家 11 月 14 日消息，英伟达应用深度学习研究副总裁布莱恩 · 卡坦扎罗（Bryan Catanzaro）在社交平台 X 上公开发文辟谣，否认自己参与签署网传要求前 CEO 黄仁勋复职的公开信，称该信件系伪造，并明确表态支持英伟达董事会及临时 CEO 科莱特 · 克雷斯（Colette Kress）。 布莱恩 · 卡坦扎罗声称，即便（公开信）是真的，他也不会签字。 IT之家注意到，黄仁勋离任后，网络上流传出一封公开信，以布莱恩 · 卡坦扎罗在内的多名英伟达高管与员工名义要求董事会让黄仁勋复职。 据悉，该公开信之所以很快被识破，除了布莱恩 · 卡</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/dcaf119eae8fc6c8.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/228.htm" target="_blank" rel="noopener noreferrer">英伟达副总裁卡坦扎罗否认签署要求前 CEO 黄仁勋复职的公开信，表态支持董事会和临时 CEO 克雷斯</a>
+      <time datetime="2026-11-14T04:45:55+00:00">11/14 12:45</time>
+    </li>
+  </ul>
+</article>
+<article id="t0009">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">arduino</span><span class="badge">1994</span>      </div>
+      <h3>借助 Claude 和 Arduino 开发板，达人让 1994 款切诺基通过加州排放检测</h3>
+<p class="summary">IT之家 11 月 14 日消息，当地时间 13 日，据外媒 Tom&#39;s Hardware 报道，美国的一名 AI 爱好者穆罕默德 · 祖拉利靠着 AI 和简单的电子接线操作，成功让一辆有 32 年车龄的 1994 款 Jeep 切诺基通过了美国加州的尾气检测。 这辆老车的发动机电脑功能十分有限，但祖拉利借助 Arduino Nano 开发板将其连接到笔记本电脑后， 不仅能够读取车辆数据，还逐步实现了对部分参数的控制 。 其发布的视频记录了祖拉利解决尾气排放问题的全过程：从连续检测不合格，到成功连接发动机电脑并读取数据，再到 调整发动机、解决排放超标问题</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/f21eb4c437a8b770.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/226.htm" target="_blank" rel="noopener noreferrer">借助 Claude 和 Arduino 开发板，达人让 1994 款切诺基通过加州排放检测</a>
+      <time datetime="2026-11-14T04:36:29+00:00">11/14 12:36</time>
+    </li>
+  </ul>
+</article>
+<article id="t0010">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">anthropic</span><span class="badge">mythos</span><span class="badge">compute</span>      </div>
+      <h3>前 Anthropic 研究员考克森：当今若要重新训练 Mythos，只需初始的一小部分算力</h3>
+<p class="summary">IT之家 11 月 14 日消息，曾任职于 OpenAI 和 Anthropic、因公开警告 AI 风险而受到广泛关注的研究员雅各布 · 考克森称，Anthropic 在 IPO 路演中展示的一张幻灯片，是促使他离职的重要原因。 考克森在 Anthropic 只工作了约四个月。让他决定离职的原因之一，是公司 IPO 路演中 一张展示 AI 模型训练算力需求变化的图表 。图表采用压缩坐标轴，即使算力需求增长 10 倍和 100 倍，看起来也相差不大。 即便如此，曲线依然急剧上升。考克森认为，这说明算法效率不仅在快速提高，而且提升速度还在不断加快。“这张图实</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/c77c23613f131e64.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/221.htm" target="_blank" rel="noopener noreferrer">前 Anthropic 研究员考克森：当今若要重新训练 Mythos，只需初始的一小部分算力</a>
+      <time datetime="2026-11-14T03:45:39+00:00">11/14 11:45</time>
+    </li>
+  </ul>
+</article>
+<article id="t0011">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">uber</span><span class="badge">opensource</span>      </div>
+      <h3>网约车平台 Uber 优步遭黑客攻击，致美国多州司机驾照信息外泄</h3>
+<p class="summary">IT之家 11 月 14 日消息，网约车平台 Uber 优步披露公司遭遇数据泄露事件，导致数千名司机的个人信息及驾照信息被盗，涉及美国马萨诸塞州、南卡罗来纳州、罗得岛州和伊利诺伊州等地。 IT之家参考通报获悉，黑客首先入侵了该公司的一家第三方服务供应商，并窃取员工登录凭据，随后利用这些信息访问 Uber 的系统及数据，目前 Uber 已开始通知受影响司机具体信息泄露情况。 目前，Uber 尚未说明此次事件中的服务供应商，也没有公布可能受到影响的乘客人数。截至目前，也没有网络犯罪组织宣称对此次数据窃取事件负责。 不过综合 TechCrunch 报道， 涉事</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/219.htm" target="_blank" rel="noopener noreferrer">网约车平台 Uber 优步遭黑客攻击，致美国多州司机驾照信息外泄</a>
+      <time datetime="2026-11-14T03:23:33+00:00">11/14 11:23</time>
+    </li>
+  </ul>
+</article>
+<article id="t0012">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">google</span><span class="badge">benchmark</span><span class="badge">294</span>      </div>
+      <h3>AI趨勢周報第294期：AI Agent不只要會看圖，Google新Benchmark直接考專業工作實戰</h3>
+<p class="summary">重點新聞（1106～1112）</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/246d9b6140deb3e6.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/180507" target="_blank" rel="noopener noreferrer">AI趨勢周報第294期：AI Agent不只要會看圖，Google新Benchmark直接考專業工作實戰</a>
+      <time datetime="2026-11-14T03:11:39+00:00">11/14 11:11</time>
+    </li>
+  </ul>
+</article>
+<article id="t0013">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">pilots.</span><span class="badge">few</span><span class="badge">traffic</span>      </div>
+      <h3>No Pilots. Few Air Traffic Controllers. What Could Go Wrong?</h3>
+<p class="summary">Normally, aviation is slow to embrace new technology—but AI has come for the skies.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/670fffd38bb2d836.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/no-pilots-few-air-traffic-controllers-what-could-go-wrong" target="_blank" rel="noopener noreferrer">No Pilots. Few Air Traffic Controllers. What Could Go Wrong?</a>
+      <time datetime="2026-11-14T03:00:00+00:00">11/14 11:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0014">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">cursor</span><span class="badge">5000</span><span class="badge">code</span>      </div>
+      <h3>Cursor 披露安全事件调查结果，恶意 Claude Code 扩展最多波及 5000 用户</h3>
+<p class="summary">IT之家 11 月 14 日消息，当地时间 10 月 29 日， Cursor 发布公告 ，称 Cursor VS Code 扩展市场中出现了一个恶意且未经授权的 Anthropic Claude Code 扩展副本。 当地时间 11 月 13 日，经过过去两周的全面调查， Cursor 披露了此次安全事件调查结果 。官方称绝大多数客户未受影响， 最多波及 5,000 名用户 ；对于受影响的客户，已逐一直接联系，并告知与其相关的详情。 据悉，如果用户使用隐私模式，提示词和代码不受影响；对于未使用隐私模式的用户，编程智能体链路追踪数据遭泄露的用户 占比 不</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/215.htm" target="_blank" rel="noopener noreferrer">Cursor 披露安全事件调查结果，恶意 Claude Code 扩展最多波及 5000 用户</a>
+      <time datetime="2026-11-14T02:52:39+00:00">11/14 10:52</time>
+    </li>
+  </ul>
+</article>
+<article id="t0015">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">openlab</span>      </div>
+      <h3>星闪智能家电 OpenLab 实验室正式投运：九方共建，覆盖芯片到整机全链条</h3>
+<p class="summary">IT之家 11 月 14 日消息，国际星闪联盟今日发文宣布，星闪智能家电（上海）创新实验室（简称星闪智能家电 OpenLab）此前以高分通过验收并获正式授牌，成为国际星闪联盟第四家官方授权 OpenLab，也是首个面向智能家电领域的开放创新平台。目前， 实验室已正式投入运营 。 星闪（NearLink）作为新一代无线短距通信技术，具备低时延、高可靠、精定位、抗干扰、多并发等特性。官方表示，在智能家电领域，星闪数传、感知、定位以及灵活组网能力已经催生出一批新场景： 在电视周边，星闪指向遥控为全区影音娱乐带来全新沉浸式体验； 在白电周边，星闪通感一体让全屋家</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/209.htm" target="_blank" rel="noopener noreferrer">星闪智能家电 OpenLab 实验室正式投运：九方共建，覆盖芯片到整机全链条</a>
+      <time datetime="2026-11-14T02:21:50+00:00">11/14 10:21</time>
+    </li>
+  </ul>
+</article>
+<article id="t0016">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">kitesurf</span><span class="badge">cloudflare</span><span class="badge">chromium</span>      </div>
+      <h3>Cloudflare 开源为 AI 智能体打造的浏览器 Kitesurf，消耗资源低于 Chromium</h3>
+<p class="summary">IT之家 11 月 14 日消息，今年 8 月，Cloudflare 推出专为 AI 智能体打造的浏览器 Kitesurf。当地时间 11 月 13 日，Cloudflare 宣布开源 Kitesurf。 据介绍，Kitesurf 运行在 Cloudflare Workers 之上，无需依赖传统的浏览器容器，即可完成 HTML 解析、CSS 应用、执行页面中的 JavaScript 以及网页截图渲染。 同时，它支持 Chrome 开发者工具协议（Chrome DevTools Protocol），用户可以直接使用现有工具对其进行驱动，底层完全无需依赖任何</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/464db9c7b993d04f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/197.htm" target="_blank" rel="noopener noreferrer">Cloudflare 开源为 AI 智能体打造的浏览器 Kitesurf，消耗资源低于 Chromium</a>
+      <time datetime="2026-11-14T02:06:01+00:00">11/14 10:06</time>
+    </li>
+  </ul>
+</article>
+<article id="t0017">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">9050</span><span class="badge">isp</span><span class="badge">gpu</span>      </div>
+      <h3>华为麒麟 9050 系列新马良 GPU、AI ISP 情报公开：实装二代硬件光追，首次实现 2 亿像素融合拍照</h3>
+<p class="summary">IT之家 11 月 14 日消息，华为官方今日继续揭秘首款「逻辑折叠」技术 τ 芯片 —— 麒麟 9050 系列更多配置信息， 目前最新公开了新一代马良 GPU 和麒麟 AI ISP 的情报 。 据介绍，麒麟 9050 系列搭载新一代马良 GPU，实现性能、能效与图形体验的升级。其采用第四代 GPU 微架构， GPU 性能提升 40%、功耗下降 45% 。 系列新芯支持第二代硬件光追， 光追性能提升 78% ：第二代光线追踪硬加速，拥有高性能光追硬加速计算单元；BVH 硬加速单元，支持几何加速结构实时重建；FERT 求交硬加速，支持专利求交算法与硬加速；</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/4bc57349302bd799.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/181.htm" target="_blank" rel="noopener noreferrer">华为麒麟 9050 系列新马良 GPU、AI ISP 情报公开：实装二代硬件光追，首次实现 2 亿像素融合拍照</a>
+      <time datetime="2026-11-14T01:09:09+00:00">11/14 09:09</time>
+    </li>
+  </ul>
+</article>
+<article id="t0018">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">k-ai</span><span class="badge">datacenter</span><span class="badge">intel</span>      </div>
+      <h3>英特尔联合 23 家韩国企业成立“K-AI 全栈联盟”，构建 AI 基础设施生态</h3>
+<p class="summary">IT之家 11 月 14 日消息，据韩媒 The Elec 报道，英特尔于 11 月 12 日在首尔 COEX 举办的“2026 英特尔人工智能峰会”上，宣布 联合 23 家韩国本土企业正式成立“K-AI 全栈联盟” 。 K-AI 全栈联盟是以英特尔为核心、由多家韩国本土 AI 企业组成的广泛产业联合体，旨在为韩国构建一套覆盖完整技术栈的综合性 AI 生态系统，联盟成员将在硬件、软件、行业专属 AI 解决方案及服务等全产业链领域开展合作， 旨在共同构建面向韩国市场的主权 AI 与开放式 AI 基础设施生态 。 IT之家获悉，首批加入的 23 家企业覆盖韩</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/a5bdeff2cd88da3e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/027/180.htm" target="_blank" rel="noopener noreferrer">英特尔联合 23 家韩国企业成立“K-AI 全栈联盟”，构建 AI 基础设施生态</a>
+      <time datetime="2026-11-14T01:03:04+00:00">11/14 09:03</time>
+    </li>
+  </ul>
+</article>
+<article id="t0019">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">microsoft</span>      </div>
+      <h3>微軟全球當機，傳真機、電話、藍牙成企業救命三寶</h3>
+<p class="summary">你有想過在全世界積極擁抱雲端、生成式 AI 的現代，關鍵時刻竟然還得仰賴傳統技術—傳真機、電話與藍牙來維持日常 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/e1745858e8f7d749.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/11/14/microsoft-365-fax-machine-phone-call-bluetooth" target="_blank" rel="noopener noreferrer">微軟全球當機，傳真機、電話、藍牙成企業救命三寶</a>
+      <time datetime="2026-11-14T00:36:14+00:00">11/14 08:36</time>
+    </li>
+  </ul>
+</article>
+<article id="t0020">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">xai</span>      </div>
+      <h3>馬斯克也要簽！黃仁勳辭去 NVIDIA 執行長，逾 2 萬人連署要求董事會讓他回任</h3>
+<p class="summary">黃仁勳辭去 NVIDIA 總裁、執行長與董事職務後，員工與股東發起連署要求董事會讓他回任，簽名據報導已逾 2 萬個，馬斯克 11 月 13 日在 X 表示也會簽署。董事會尚未公開回應。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/ec326f0115a87f8d.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/42914-jensen-huang-resigns-nvidia-petition-musk-signs" target="_blank" rel="noopener noreferrer">馬斯克也要簽！黃仁勳辭去 NVIDIA 執行長，逾 2 萬人連署要求董事會讓他回任</a>
+      <time datetime="2026-11-13T23:23:00+00:00">11/14 07:23</time>
+    </li>
+  </ul>
+</article>
+<article id="t0021">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">arm</span><span class="badge">nvidia</span>      </div>
+      <h3>Nvidia 接班人傳鎖定 Arm 執行長，昔日收購對象如今成救兵？</h3>
+<p class="summary">Nvidia 創辦人黃仁勳因私人關係風波辭去執行長職務後，董事會正積極尋找接班人選，如今傳出已接觸 Arm 執 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/c8359d6b69b95450.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/14/nvidia-arm-rene-haas" target="_blank" rel="noopener noreferrer">Nvidia 接班人傳鎖定 Arm 執行長，昔日收購對象如今成救兵？</a>
+      <time datetime="2026-11-13T23:21:00+00:00">11/14 07:21</time>
+    </li>
+  </ul>
+</article>
+<article id="t0022">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">xai</span>      </div>
+      <h3>馬斯克加入聲援黃仁勳行列，表態簽署請願書盼重返 Nvidia</h3>
+<p class="summary">Nvidia 創辦人黃仁勳因私人關係風波辭去執行長職務後，科技圈持續出現支持他回任的聲音，如今連特斯拉執行長馬 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/bd887f95b7e0f895.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/14/elon-musk-jensen-huang" target="_blank" rel="noopener noreferrer">馬斯克加入聲援黃仁勳行列，表態簽署請願書盼重返 Nvidia</a>
+      <time datetime="2026-11-13T23:10:31+00:00">11/14 07:10</time>
+    </li>
+  </ul>
+</article>
+<article id="t0023">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>AI 加速長壽研究，科學家從血液與基因中找出延緩老化的線索</h3>
+<p class="summary">人工智慧正將長壽研究推向全新階段。隨著 AI 與生物學的結合日益深入，科學家不僅能更精準地追蹤人體老化過程，也 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/dcfad130083809c7.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/11/14/ai-could-help-us-live-much-longer" target="_blank" rel="noopener noreferrer">AI 加速長壽研究，科學家從血液與基因中找出延緩老化的線索</a>
+      <time datetime="2026-11-13T23:00:51+00:00">11/14 07:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0024">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">caim1</span><span class="badge">lutra</span><span class="badge">deepfake</span>      </div>
+      <h3>CAIM1 與 Lutra 推「防偽相機」，以區塊鏈為照片建立數位身分證</h3>
+<p class="summary">隨著人工智慧（AI）生成的影像與深偽技術（Deepfake）日益氾濫，我們眼見的「真實」正遭遇前所未有的挑戰。 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/c6b83003eee6498b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://infosecu.technews.tw/2026/11/14/caim1-ai-anti-counterfeiting-camera" target="_blank" rel="noopener noreferrer">CAIM1 與 Lutra 推「防偽相機」，以區塊鏈為照片建立數位身分證</a>
+      <time datetime="2026-11-13T22:00:12+00:00">11/14 06:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0025">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">daybreak</span><span class="badge">defense</span><span class="badge">red</span>      </div>
+      <h3>OpenAI 推出 Daybreak Defense Factory 與 Red Team 自動找漏洞、補漏洞並模擬攻擊</h3>
+<p class="summary">OpenAI 在 11 月 12 日的 Cyber at the Frontier 活動推出 Daybreak Defense Factory 與 Daybreak Red Team。前者由 AI 代理找出漏洞並備妥修補，後者以 OpenAI 模型自動測試網頁應用程式，目前為早期試用。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/2fd434ba700d3a9a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/42910-openai-daybreak-defense-factory-red-team-automated-patching-cyber-at-the-frontier" target="_blank" rel="noopener noreferrer">OpenAI 推出 Daybreak Defense Factory 與 Red Team 自動找漏洞、補漏洞並模擬攻擊</a>
+      <time datetime="2026-11-13T19:13:00+00:00">11/14 03:13</time>
+    </li>
+  </ul>
+</article>
+<article id="t0026">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">funding</span>      </div>
+      <h3>Nvidia 機構投資人聯名信力挺黃仁勳，籲董事會保留回任可能</h3>
+<p class="summary">Nvidia 創辦人黃仁勳因私人關係風波辭去執行長職務後，外界對其去留的討論持續延燒。如今支持黃仁勳的聲音也從 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/c80a79e659464e78.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/14/nvidia-institutional-investors-issue-joint-letter-in-support-of-jensen-huang" target="_blank" rel="noopener noreferrer">Nvidia 機構投資人聯名信力挺黃仁勳，籲董事會保留回任可能</a>
+      <time datetime="2026-11-13T18:55:32+00:00">11/14 02:55</time>
+    </li>
+  </ul>
+</article>
+<article id="t0027">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">doctor</span><span class="badge">prompt-audit</span><span class="badge">claude.md</span>      </div>
+      <h3>模型更新，指令也要更新！Claude Code 可用 /doctor prompt-audit 檢查 CLAUDE.md 與 skills 裡過時的舊提示詞</h3>
+<p class="summary">Claude Code 的 /doctor prompt-audit 指令會檢查 CLAUDE.md、skills、agents 與 commands，找出為舊模型寫的提示寫法、失效路徑與互相矛盾的規則，並先產出報告，使用者確認後才會修改。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-15/524ada474e8fb9c0.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/42908-claude-code-doctor-prompt-audit-checks-claude-md-skills-agents-outdated-instructions" target="_blank" rel="noopener noreferrer">模型更新，指令也要更新！Claude Code 可用 /doctor prompt-audit 檢查 CLAUDE.md 與 skills 裡過時的舊提示詞</a>
+      <time datetime="2026-11-13T18:27:00+00:00">11/14 02:27</time>
+    </li>
+  </ul>
+</article>
+</div>
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
+  <div class="srcs">來源：Hacker News (100+) · INSIDE · IT之家 · TechCrunch AI · The Verge AI · Wired AI · iThome · 科技新報 TechNews</div>
+</footer>
+</div>
+</body>
+</html>
