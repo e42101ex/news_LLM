@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 每日新聞彙整 · 2026-11-21</title>
+<meta name="description" content="2026-11-21 AI 新聞彙整：40 個主題、51 篇報導，同主題不同來源已整合。">
+<style>
+:root{
+  --bg:#faf9f7; --card:#ffffff; --ink:#1c1b19; --muted:#6b6862; --line:#e6e2db;
+  --accent:#b4532a; --accent-soft:#f4e8e2; --badge:#efece6;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 8px 24px -16px rgba(28,27,25,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16150f; --card:#1f1e18; --ink:#efece4; --muted:#a09b90; --line:#302e26;
+    --accent:#e8875a; --accent-soft:#2c231d; --badge:#2a2822;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink); line-height:1.65;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:820px; margin:0 auto; padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px}
+h1{font-size:clamp(1.6rem,4.5vw,2.3rem); margin:0 0 6px; letter-spacing:-.02em}
+h1 a{text-decoration:none}
+.meta{color:var(--muted); font-size:.85rem; display:flex; flex-wrap:wrap; gap:6px 14px}
+.cat{
+  margin:44px 0 16px; font-size:.8rem; font-weight:700; letter-spacing:.12em;
+  color:var(--accent); text-transform:uppercase; display:flex; align-items:center; gap:12px;
+}
+.cat::after{content:""; flex:1; height:1px; background:var(--line)}
+/* 限定在 .details 內：否則 padding 會誤套到 <article class="brief"> 上，
+   讓 brief 的縮圖撐不滿卡片寬度 */
+.details article{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);
+}
+.details article.hot{border-left:3px solid var(--accent)}
+.head{display:flex; gap:16px; align-items:flex-start}
+.head .body{flex:1; min-width:0}
+.thumb{
+  flex:0 0 132px; width:132px; margin-top:2px;
+  border-radius:8px; overflow:hidden; background:var(--badge);
+}
+.thumb img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover}
+h3{font-size:1.12rem; margin:0 0 10px; line-height:1.45; letter-spacing:-.01em}
+.summary{margin:0 0 14px; color:var(--ink)}
+.row{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px}
+.badge{
+  font-size:.72rem; padding:2px 9px; border-radius:99px; background:var(--badge);
+  color:var(--muted); white-space:nowrap;
+}
+.badge.pri{background:var(--accent-soft); color:var(--accent); font-weight:600}
+.links{list-style:none; margin:0; padding:0; border-top:1px dashed var(--line); padding-top:12px}
+.links li{display:flex; gap:10px; align-items:baseline; padding:3px 0; font-size:.88rem}
+.links .src{
+  flex:0 0 auto; min-width:104px; color:var(--accent); font-weight:600; font-size:.78rem;
+}
+.links a{text-decoration:none; border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+.links time{flex:0 0 auto; margin-left:auto; color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums}
+footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem}
+footer .srcs{margin-top:8px; line-height:1.9}
+.empty{background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:40px; text-align:center; color:var(--muted)}
+/* ── 分類選單（吸頂） ── */
+.tabs{
+  position:sticky; top:0; z-index:20; margin:0 -20px 4px; padding:10px 20px;
+  background:var(--bg);
+  background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap; gap:6px; scrollbar-width:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{
+  flex:0 0 auto; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:6px 13px; border-radius:99px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.tabs a:hover{color:var(--accent); border-color:var(--accent)}
+.tabs a b{font-weight:600; opacity:.55; margin-left:4px; font-size:.78rem}
+
+/* ── 分類 brief ── */
+.briefs{
+  display:grid; gap:16px; margin:22px 0 12px;
+  grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+  /* 突破 .wrap 的 820px，讓 brief 有 4-5 欄；下方文章維持窄版好閱讀 */
+  position:relative; left:50%; transform:translateX(-50%);
+  width:min(1180px, calc(100vw - 40px));
+}
+.brief{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+}
+/* 比例放在 <img> 上而不是容器上：容器有 aspect-ratio 時，flex 版面會先決定高度
+   再用比例反推寬度，導致圖片撐不滿卡片。讓 img 自己撐出高度最穩。 */
+.brief-hero{display:block; position:relative; background:var(--badge); overflow:hidden}
+.brief-hero img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.brief-hero.broken{aspect-ratio:auto; background:none}   /* 圖掛掉時只留分類標籤 */
+.brief-hero.broken .brief-tag{position:static; display:inline-block}
+.brief-tag{
+  position:absolute; left:0; top:0; padding:4px 10px; font-size:.72rem; font-weight:700;
+  color:#fff; background:var(--accent); letter-spacing:.03em;
+}
+.brief-tag.plain{position:static; align-self:flex-start; margin-bottom:8px}  /* flex 子項要用 align-self 才不會被拉滿 */
+.brief-body{padding:12px 14px 14px; display:flex; flex-direction:column; flex:1}
+.brief-lead{
+  margin:0 0 10px; font-size:.97rem; line-height:1.42; font-weight:700; letter-spacing:-.01em;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-lead a{text-decoration:none}
+.brief-lead a:hover{color:var(--accent)}
+.brief-list{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.brief-list li{padding:8px 0; border-bottom:1px solid var(--line); font-size:.85rem; line-height:1.45}
+.brief-list a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.brief-list li:last-child{border-bottom:0}
+.brief-list a{text-decoration:none; color:var(--muted)}
+.brief-list a:hover{color:var(--accent)}
+.brief-more{
+  margin-top:auto; padding-top:10px; font-size:.78rem; color:var(--accent);
+  text-decoration:none; font-weight:600;
+}
+.brief{padding:0; margin:0}
+.details{margin-top:40px; padding-top:8px; border-top:2px solid var(--ink)}
+.details-label{font-size:.8rem; font-weight:700; letter-spacing:.12em; color:var(--muted); margin:14px 0 0}
+h2.cat{scroll-margin-top:66px}
+article{scroll-margin-top:66px}
+
+@media (max-width:520px){
+  .briefs{grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px;
+          width:calc(100vw - 32px)}
+  .brief-lead{font-size:.9rem}
+  .head{gap:12px}
+  .thumb{flex-basis:96px; width:96px}
+  .links li{flex-wrap:wrap}
+  .links .src{min-width:0}
+  .links time{margin-left:0}
+}
+
+/* ── 分頁選單（AI 新聞 / 社群熱門） ── */
+.sections{display:flex; gap:8px; margin:0 0 14px}
+.sections a{
+  text-decoration:none; font-size:.95rem; font-weight:700; letter-spacing:.01em;
+  padding:8px 2px; color:var(--muted); border-bottom:3px solid transparent;
+}
+.sections a:hover{color:var(--ink)}
+.sections a.on{color:var(--ink); border-bottom-color:var(--accent)}
+
+/* ── 社群熱門頁 ── */
+.briefs.compact{align-items:start}   /* 熱搜卡片依內容高度，不要被拉齊 */
+.trend-rank{
+  position:absolute; right:0; top:0; padding:4px 9px; font-size:.72rem; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); backdrop-filter:blur(2px);
+}
+.trend-meta{font-size:.78rem; color:var(--muted); margin:0 0 8px}
+.pills{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px}
+.pill{
+  display:flex; align-items:baseline; gap:7px; text-decoration:none;
+  background:var(--card); border:1px solid var(--line); border-radius:99px;
+  padding:7px 14px; font-size:.86rem; box-shadow:var(--shadow);
+}
+.pill:hover{border-color:var(--accent)}
+.pill b{font-weight:700}
+.pill span{font-size:.76rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.pill.hot b{color:var(--accent)}
+.kol-list{margin:0 0 4px; padding-left:0; list-style:none; counter-reset:kol}
+.kol-list li{
+  counter-increment:kol; display:flex; gap:9px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem;
+  overflow-wrap:anywhere;
+}
+.kol-list li:last-child{border-bottom:0}
+.kol-list li::before{
+  content:"No." counter(kol); flex:0 0 auto; font-size:.74rem; font-weight:700;
+  color:var(--accent); font-variant-numeric:tabular-nums;
+}
+.posts{list-style:none; margin:0; padding:0}
+.post{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:16px 18px; margin-bottom:12px; box-shadow:var(--shadow);
+  display:flex; gap:14px; align-items:flex-start;
+}
+.post-body{flex:1; min-width:0}
+.post-who{font-size:.8rem; color:var(--muted); margin-bottom:6px}
+.post-who a{color:var(--accent); font-weight:600; text-decoration:none}
+.post-text{margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6}
+.post-stats{display:flex; gap:14px; font-size:.78rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.post-stats a{color:var(--accent); text-decoration:none; margin-left:auto; font-weight:600}
+.post-thumb{flex:0 0 96px; width:96px; border-radius:8px; overflow:hidden; background:var(--badge)}
+.post-thumb img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover}
+.note{
+  background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:12px 16px; margin:0 0 18px; font-size:.83rem; color:var(--muted);
+}
+@media (max-width:520px){
+  .post{padding:14px}
+  .post-thumb{flex-basis:72px; width:72px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sections" aria-label="分頁">
+  <a href="../index.html" class="on">AI 相關新聞</a>
+  <a href="../social/index.html">社群熱門</a>
+  <a href="../hamster.html">鼠鼠天地</a>
+</nav><header>
+  <h1><a href="../index.html">AI 每日新聞彙整</a></h1>
+  <div class="meta">
+    <span>2026-11-21</span>
+    <span>40 個主題 · 51 篇報導</span>
+    <span>收錄近 30 小時</span>
+    <span>更新於 11/21 08:10</span>
+    <a href="../archive/index.html">歷史存檔</a>
+  </div>
+</header>
+
+
+<nav class="tabs" aria-label="主題分類">
+  <a href="#cat0">其他<b>40</b></a>
+</nav>
+
+<section class="briefs">
+  <article class="brief">
+    <a class="brief-hero" href="#t0009">
+      <img src="../img/2026-11-21/ec4af1d4b554d636.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.classList.add('broken'); this.remove()">
+      <span class="brief-tag">其他</span>
+    </a>
+    <div class="brief-body">
+      <h3 class="brief-lead"><a href="#t0009">Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers</a></h3>
+      <ul class="brief-list">
+        <li><a href="#t0034">全球首家前沿AI公司Anthropic上市，首日上漲17%</a></li>
+        <li><a href="#t0011">Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation</a></li>
+        <li><a href="#t0016">Signal to restrict screenshots over AI agent concerns – again</a></li>
+      </ul>
+      <a class="brief-more" href="#cat0">看這個分類的 40 則 →</a>
+    </div>
+  </article>
+</section>
+
+<div class="details">
+<p class="details-label">全部主題</p>
+
+<h2 class="cat" id="cat0">其他</h2>
+<article id="t0009" class="hot">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">3 家媒體報導</span><span class="badge">datacenter</span><span class="badge">centers</span><span class="badge">data</span>      </div>
+      <h3>Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers</h3>
+<p class="summary">Meta is “re-evaluating” 2030 sustainability goals. Will others follow?</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/ec4af1d4b554d636.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Ars Technica AI</span>
+      <a href="https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers" target="_blank" rel="noopener noreferrer">Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers</a>
+      <time datetime="2026-11-20T13:47:10+00:00">11/20 21:47</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax" target="_blank" rel="noopener noreferrer">Trump threatens ‘tremendous tax’ for moving AI data centers outside the US</a>
+      <time datetime="2026-11-20T10:50:19+00:00">11/20 18:50</time>
+    </li>
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing" target="_blank" rel="noopener noreferrer">Chips can survive the space environment — can their financing?</a>
+      <time datetime="2026-11-20T09:40:01+00:00">11/20 17:40</time>
+    </li>
+  </ul>
+</article>
+<article id="t0034" class="hot">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">3 家媒體報導</span><span class="badge">anthropic</span><span class="badge">ipo</span><span class="badge">813</span>      </div>
+      <h3>全球首家前沿AI公司Anthropic上市，首日上漲17%</h3>
+<p class="summary">Claude開發商Anthropic周四（11/19）正式在美國那斯達克（Nasdaq）掛牌，成為全球首家上市的前沿AI公司。Anthropic的股票代號為ANT，發行價為每股83美元，開盤即衝上111.5美元，最後以97.17美元作收，上漲17%，市值約1.27兆美元。 此次Anthropic IPO總計發售9.8億股，每股83美元，發售規模約813億美元，創下全球首次公開發行股票（IPO）規模紀錄。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/20b9cd693fd52ca2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/180671" target="_blank" rel="noopener noreferrer">全球首家前沿AI公司Anthropic上市，首日上漲17%</a>
+      <time datetime="2026-11-20T01:11:35+00:00">11/20 09:11</time>
+    </li>
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/42969-anthropic-ant-nasdaq-debut-1-76-trillion-7th-most-valuable" target="_blank" rel="noopener noreferrer">Anthropic 掛牌首日完全稀釋市值 1.76 兆美元，躍居全球市值第 7 大公司</a>
+      <time datetime="2026-11-19T23:37:00+00:00">11/20 07:37</time>
+    </li>
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/11/20/anthropic-ipo-pricing-moskovitz" target="_blank" rel="noopener noreferrer">Anthropic 上市募資 813 億美元，1,040 億美元淨損從何而來？</a>
+      <time datetime="2026-11-19T19:35:44+00:00">11/20 03:35</time>
+    </li>
+  </ul>
+</article>
+<article id="t0011">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">sources</span><span class="badge">nvidia</span><span class="badge">accounting</span>      </div>
+      <h3>Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation</h3>
+<p class="summary">Amid allegations of multiple affairs, including with a direct report and an alleged Chinese intelligence asset, sources tell WIRED the Nvidia board’s main issue was the former CEO’s “lack of candor.”</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/c0e9ccd72073c69e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html" target="_blank" rel="noopener noreferrer">Nvidia accounting under SEC investigation, sources say</a>
+      <time datetime="2026-11-20T12:22:41+00:00">11/20 20:22</time>
+    </li>
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation" target="_blank" rel="noopener noreferrer">Jensen Huang’s ‘Lying’ Alarmed Nvidia Board Ahead of His Resignation</a>
+      <time datetime="2026-11-20T11:52:21+00:00">11/20 19:52</time>
+    </li>
+  </ul>
+</article>
+<article id="t0016">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">signal</span><span class="badge">screenshots</span><span class="badge">agent</span>      </div>
+      <h3>Signal to restrict screenshots over AI agent concerns – again</h3>
+<p class="summary">The messaging app similarly limited screenshots because of Microsoft Recall last year.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/feaa77faae78123c.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">ZDNet AI</span>
+      <a href="https://www.zdnet.com/innovation/signal-restricts-screenshots-over-ai-agent-concerns" target="_blank" rel="noopener noreferrer">Signal to restrict screenshots over AI agent concerns – again</a>
+      <time datetime="2026-11-20T09:03:37+00:00">11/20 17:03</time>
+    </li>
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app" target="_blank" rel="noopener noreferrer">Signal is blocking Gemini and Siri AI from reading your screen</a>
+      <time datetime="2026-11-20T04:30:47+00:00">11/20 12:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0017">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">claude</span><span class="badge">riemann</span><span class="badge">mathematician</span>      </div>
+      <h3>Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude</h3>
+<p class="summary">Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics&#39;s most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world&#39;s best mathematicians for decades. If verified, it would mark </p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/ed854b3ba4b7febf.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem" target="_blank" rel="noopener noreferrer">Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude</a>
+      <time datetime="2026-11-20T08:34:13+00:00">11/20 16:34</time>
+    </li>
+    <li>
+      <span class="src">Simon Willison</span>
+      <a href="https://simonwillison.net/2026/Nov/20/levent-alpoge" target="_blank" rel="noopener noreferrer">Quoting Levent Alpöge</a>
+      <time datetime="2026-11-20T08:30:48+00:00">11/20 16:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0018">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">jensen</span><span class="badge">scandal</span><span class="badge">huang</span>      </div>
+      <h3>Regular Tech Bros Are Worried About Honeypots</h3>
+<p class="summary">The Jensen Huang scandal is the latest fuel for dating anxieties among newly rich and powerful tech workers.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/a0180b752ccc606a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues" target="_blank" rel="noopener noreferrer">The fallout from Nvidia’s Jensen Huang scandal continues</a>
+      <time datetime="2026-11-20T06:55:44+00:00">11/20 14:55</time>
+    </li>
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/regular-tech-bros-are-worried-about-honeypots" target="_blank" rel="noopener noreferrer">Regular Tech Bros Are Worried About Honeypots</a>
+      <time datetime="2026-11-20T03:00:00+00:00">11/20 11:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0026">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">2 家媒體報導</span><span class="badge">mac</span><span class="badge">gemini</span><span class="badge">google</span>      </div>
+      <h3>Google Gemini 現在能幫你操作 Mac！跨 App 點擊、填表單都交給 AI</h3>
+<p class="summary">Gemini 現在可以直接操作應用程式介面，例如點擊按鈕、切換選單及輸入資料，進一步執行需要跨越不同軟體與網站的工作。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/7a9ba08bc17581b2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/180677" target="_blank" rel="noopener noreferrer">Google跟進OpenAI、Anthropic，Gemini開始支援Mac電腦操作</a>
+      <time datetime="2026-11-20T03:11:19+00:00">11/20 11:11</time>
+    </li>
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/42967-google-gemini-computer-use-apple-mac" target="_blank" rel="noopener noreferrer">Google Gemini 現在能幫你操作 Mac！跨 App 點擊、填表單都交給 AI</a>
+      <time datetime="2026-11-19T18:20:00+00:00">11/20 02:20</time>
+    </li>
+  </ul>
+</article>
+<article id="t0000">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">lean</span><span class="badge">claude</span><span class="badge">anthropic</span>      </div>
+      <h3>AI 攻克黎曼猜想？Anthropic 数学家宣称已与 Claude 合作完成证明</h3>
+<p class="summary">IT之家 11 月 20 日消息，据《科学美国人》报道，当地时间 20 日，Anthropic 数学家莱文特 · 阿尔波格宣称，自己与 AI 模型 Claude 合作，攻克了数学界最著名的难题之一 —— 黎曼猜想。 阿尔波格在个人网站发表声明称：“我相信， 我与 Claude 合作找到了黎曼猜想的证明 。” IT之家注：黎曼猜想由德国数学家伯恩哈德 · 黎曼于 1859 年提出，认为看似随机分布在数轴上的质数，实际上遵循着复杂而有意义的规律。 此后，黎曼猜想成为整个数论研究领域的重要指引，也是数学界 最著名的未解难题 。由于长期缺乏明确的证明思路，研究进</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/51c8f43e978298a4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/297.htm" target="_blank" rel="noopener noreferrer">黎曼猜想真被 Claude 证明了？Anthropic 数学家仅发布 Lean 代码，陶哲轩称验证仍需时间</a>
+      <time datetime="2026-11-20T15:40:02+00:00">11/20 23:40</time>
+    </li>
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/278.htm" target="_blank" rel="noopener noreferrer">AI 攻克黎曼猜想？Anthropic 数学家宣称已与 Claude 合作完成证明</a>
+      <time datetime="2026-11-20T07:37:46+00:00">11/20 15:37</time>
+    </li>
+  </ul>
+</article>
+<article id="t0001">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">gpu</span><span class="badge">spacex</span><span class="badge">440</span>      </div>
+      <h3>440 亿美元！阿波罗与高盛完成迄今规模最大 GPU 融资定价，SpaceX 要买英伟达芯片</h3>
+<p class="summary">IT之家 11 月 21 日消息，当地时间 11 月 20 日，阿波罗全球管理公司与高盛宣布，已完成约 440 亿美元 （IT之家注：现汇率约合 2,944.47 亿元人民币） 优先及次级票据融资定价， 资金将用于为 SpaceX 购买 GPU 及相关设备 。该交易因投资者需求强劲而获得超额认购并扩大规模，成为迄今规模最大的 GPU 融资交易。 阿波罗与高盛共同牵头此次融资，参与方还包括贝莱德、高盛资产管理及 KKR。融资将用于采购下一代英伟达 Vera Rubin 芯片，以支持 SpaceX 在地面建设计算基础设施。 相关 GPU 及设备预计于 202</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/296.htm" target="_blank" rel="noopener noreferrer">440 亿美元！阿波罗与高盛完成迄今规模最大 GPU 融资定价，SpaceX 要买英伟达芯片</a>
+      <time datetime="2026-11-20T15:34:13+00:00">11/20 23:34</time>
+    </li>
+  </ul>
+</article>
+<article id="t0002">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">galaxy</span><span class="badge">s27</span><span class="badge">exynos</span>      </div>
+      <h3>国际版三星 Galaxy S27 Pro 手机跑分曝光：Exynos 2700 芯片、12GB 内存</h3>
+<p class="summary">IT之家 11 月 21 日消息，型号“SM-S957B”的三星手机昨日（11 月 20 日）现身 GeekBench 跑分库， 7.1.0 版本单核成绩为 3,061 分，多核成绩为 10,967 分，相关线索表明该机上市后为三星 Galaxy S27 Pro。 IT之家注：根据 GSMA IMEI 数据库此前公示的信息，SM-S957B 对应三星 Galaxy S27 Pro，且后缀“B”代表国际市场版本，覆盖欧洲、印度等市场。 根据跑分页面显示，国际版 Galaxy S27 Pro 手机芯片代号为 S5E9975，对应三星自家的 Exynos 27</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/af9666effeb6af27.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/295.htm" target="_blank" rel="noopener noreferrer">国际版三星 Galaxy S27 Pro 手机跑分曝光：Exynos 2700 芯片、12GB 内存</a>
+      <time datetime="2026-11-20T15:32:53+00:00">11/20 23:32</time>
+    </li>
+  </ul>
+</article>
+<article id="t0003">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">osta</span><span class="badge">huawei</span><span class="badge">5499</span>      </div>
+      <h3>华为星芒刘赫：OSTA O1 Pro 最受欢迎的 16G 版本已在全平台售罄，远超预期</h3>
+<p class="summary">IT之家 11 月 21 日消息，首款为 AI 而生的鸿蒙手机 —— 华为星芒 OSTA O1 Pro 已于昨日下午正式发布 ， 首发价 5499 元起、叠加国补后 4999 元起 。 ▲ IT之家开箱：华为全新子品牌星芒 OSTA O1 Pro 手机实拍 IT之家注意到，华为星芒品牌总经理刘赫已开通微博，并在 00:10 发文汇报了品牌开山之作 —— OSTA O1 Pro 新机的首销进展： 截止目前为止， 最受欢迎的 16G 版本已经在全平台售罄 ，远超我们预期！12G 版本也在各个平台持续热销中， 仅部分门店和平台合作伙伴有现货 ，目前我们正在全力</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/d131534c62d20b10.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/294.htm" target="_blank" rel="noopener noreferrer">IT早报 1121：5499 元起华为 OSTA O1 Pro 发布；腾讯因仙逆盗版起诉百度索赔 1 亿元；官方回应零跑 A10 被几箱啤酒压塌后备箱...</a>
+      <time datetime="2026-11-20T15:28:54+00:00">11/20 23:28</time>
+    </li>
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/282.htm" target="_blank" rel="noopener noreferrer">华为星芒刘赫：OSTA O1 Pro 最受欢迎的 16G 版本已在全平台售罄，远超预期</a>
+      <time datetime="2026-11-20T10:43:53+00:00">11/20 18:43</time>
+    </li>
+  </ul>
+</article>
+<article id="t0004">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">cops</span><span class="badge">pushing</span><span class="badge">extremely</span>      </div>
+      <h3>Cops Are Pushing Extremely Corny ‘Grand Theft Auto 6’ Slop</h3>
+<p class="summary">The blockbuster game makes no secret of its contempt for law enforcement. Real police departments using it to recruit new members and scold the public apparently didn’t get the memo.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/49a4a3953c0b2704.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/cops-are-being-extremely-corny-about-gta-vi" target="_blank" rel="noopener noreferrer">Cops Are Pushing Extremely Corny ‘Grand Theft Auto 6’ Slop</a>
+      <time datetime="2026-11-20T15:24:02+00:00">11/20 23:24</time>
+    </li>
+  </ul>
+</article>
+<article id="t0005">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">contra</span><span class="badge">gestalt</span><span class="badge">fable</span>      </div>
+      <h3>匿名 AI 模型 Gestalt 登顶 Contra 前沿设计榜单：性能远超 Claude Fable 5.2、GPT-6.1 Sol，Elo 评分超越人类参考作品</h3>
+<p class="summary">IT之家 11 月 21 日消息，Contra Labs 于当地时间 11 月 18 日发布 AI 设计能力评测榜单 Frontier Design Benchmark。 其中，一款代号为 Gestalt、目前处于隐身开发状态（Stealth）的匿名 AI 模型成为最大黑马，在专业设计师盲测中以明显优势登顶，超过 Anthropic 的 Claude Fable 5.2、OpenAI 的 GPT-6.1 Sol 等主流模型，甚至在设计师偏好评分中超过了人类设计师的参考作品。 根据 Contra Labs 官方公布的评测结果，Gestalt 的 Elo 评</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/13390bdab0dd085e.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/291.htm" target="_blank" rel="noopener noreferrer">匿名 AI 模型 Gestalt 登顶 Contra 前沿设计榜单：性能远超 Claude Fable 5.2、GPT-6.1 Sol，Elo 评分超越人类参考作品</a>
+      <time datetime="2026-11-20T15:17:51+00:00">11/20 23:17</time>
+    </li>
+  </ul>
+</article>
+<article id="t0006">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">chatgpt</span><span class="badge">plus</span><span class="badge">spaces</span>      </div>
+      <h3>OpenAI 宣布向 ChatGPT Plus 用户开放 Spaces 协作空间，支持多人共同编辑</h3>
+<p class="summary">IT之家 11 月 21 日消息，OpenAI 今日宣布向 ChatGPT Plus 订阅用户开放 Spaces 协作空间功能。 该功能此前仅面向 Pro、Business 和 Enterprise 等付费方案用户提供，现在每月支付 20 美元 （IT之家注：现汇率约合 133.8 元人民币） 的 Plus 用户也可以创建自己的空间，与其他用户共同整理资料、协作处理文档和文件。 ChatGPT Spaces 最早于 2026 年 9 月的 OpenAI Dev Day 活动上推出，定位为多人协作工作空间。用户可以邀请同事或朋友加入，共享信息、文档及其他文</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/f4e4df0791463214.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/288.htm" target="_blank" rel="noopener noreferrer">OpenAI 宣布向 ChatGPT Plus 用户开放 Spaces 协作空间，支持多人共同编辑</a>
+      <time datetime="2026-11-20T14:57:39+00:00">11/20 22:57</time>
+    </li>
+  </ul>
+</article>
+<article id="t0007">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>谷歌搜索首页新增 AI 侧边栏，让你“接着聊”此前提问话题</h3>
+<p class="summary">IT之家 11 月 21 日消息，谷歌搜索产品副总裁罗比 · 斯坦（Robby Stein）昨日（11 月 20 日）在 X 平台发布推文，宣布 Google Search 首页将迎来新一轮调整， 面向全球桌面端逐步推出可折叠侧边栏，让用户直接从首页查找和继续此前的 AI 搜索对话。 根据演示，用户点击页面左侧的灰色条，即可展开侧边栏，查看通过“AI 模式”（AI Mode）进行的搜索记录。面板还提供新建对话、搜索历史对话以及连接 Gemini 笔记本等入口。选择已有记录后，用户可以回到相应话题继续提问，不必重新从头搜索。 斯坦指出本次改进的重点是让搜索</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/9a46f4eac8c46c70.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/287.htm" target="_blank" rel="noopener noreferrer">谷歌搜索首页新增 AI 侧边栏，让你“接着聊”此前提问话题</a>
+      <time datetime="2026-11-20T14:53:45+00:00">11/20 22:53</time>
+    </li>
+  </ul>
+</article>
+<article id="t0008">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">search</span><span class="badge">rolls</span><span class="badge">homepage</span>      </div>
+      <h3>Google rolls out new search homepage with AI chat history and no search button</h3>
+<p class="summary">Google search is making it even easier to access AI tools on the search page.</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Ars Technica AI</span>
+      <a href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar" target="_blank" rel="noopener noreferrer">Google rolls out new search homepage with AI chat history and no search button</a>
+      <time datetime="2026-11-20T13:58:29+00:00">11/20 21:58</time>
+    </li>
+  </ul>
+</article>
+<article id="t0010">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">plants</span><span class="badge">canaries</span><span class="badge">supply</span>      </div>
+      <h3>Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.</h3>
+<p class="summary">Test using prompts with unique, trackable secrets proves that data doesn&#39;t stay private.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/b0bedf9e40f20633.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Ars Technica AI</span>
+      <a href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate" target="_blank" rel="noopener noreferrer">Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.</a>
+      <time datetime="2026-11-20T12:59:08+00:00">11/20 20:59</time>
+    </li>
+  </ul>
+</article>
+<article id="t0012">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">fusion</span><span class="badge">daniel</span><span class="badge">power</span>      </div>
+      <h3>Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.</h3>
+<p class="summary">Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here&#39;s what the startup is building.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/33ecf6ccf3997b21.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building" target="_blank" rel="noopener noreferrer">Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.</a>
+      <time datetime="2026-11-20T11:53:41+00:00">11/20 19:53</time>
+    </li>
+  </ul>
+</article>
+<article id="t0013">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">solution</span><span class="badge">human</span><span class="badge">claimed</span>      </div>
+      <h3>AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too</h3>
+<p class="summary">Mathematicians are having their minds blown by the latest AI-driven result — and there&#39;s a competing human solution, too.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/43de2bcadf99bee2.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too" target="_blank" rel="noopener noreferrer">AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too</a>
+      <time datetime="2026-11-20T11:32:08+00:00">11/20 19:32</time>
+    </li>
+  </ul>
+</article>
+<article id="t0014">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">vibecoding</span><span class="badge">inference</span><span class="badge">chip</span>      </div>
+      <h3>Vibecoding an inference chip</h3>
+<p class="summary">Article URL: https://ankitg.me/blog/vibecoding-inference-chip/ Comments URL: https://news.ycombinator.com/item?id=50579297 Points: 100 # Comments: 33</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/a70eb6649d58b5b3.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Hacker News (100+)</span>
+      <a href="https://ankitg.me/blog/vibecoding-inference-chip" target="_blank" rel="noopener noreferrer">Vibecoding an inference chip</a>
+      <time datetime="2026-11-20T10:15:16+00:00">11/20 18:15</time>
+    </li>
+  </ul>
+</article>
+<article id="t0015">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">update</span><span class="badge">misunderstood</span><span class="badge">graph</span>      </div>
+      <h3>The most misunderstood graph in AI just got a major update</h3>
+<p class="summary">A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The report is an update to the</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/e11a1c9a933b1f70.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">MIT Technology Review AI</span>
+      <a href="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update" target="_blank" rel="noopener noreferrer">The most misunderstood graph in AI just got a major update</a>
+      <time datetime="2026-11-20T10:15:15+00:00">11/20 18:15</time>
+    </li>
+  </ul>
+</article>
+<article id="t0019">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">neocloud</span><span class="badge">samsung</span><span class="badge">chip</span>      </div>
+      <h3>三星电子高管：Neocloud 风险有限，AI 投资基于实际需求</h3>
+<p class="summary">IT之家 11 月 20 日消息，据路透社当地时间 18 日报道，三星电子两位高管在本周举行的摩根士丹利会议上表示 Neocloud（新兴 AI 云服务企业）面临的不确定性对整体市场的影响有限，这轮 AI 投资基于实际需求而非投机。 三星 DS（设备解决方案，半导体板块）部门经营战略总管负责人 Kim Yong-kwan 表示，Neocloud 的“市占份额”仅约为 8%， 对此类企业的担忧不会对 AI 整体发展轨迹构成重大威胁 。这位高管并未详述作为市占计算基础的“市场”具体指什么。 三星晶圆代工销售营销主管 Kang Suk-chae 则认为，当前的</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/6ad3f3b8cff92c66.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/247.htm" target="_blank" rel="noopener noreferrer">三星电子高管：Neocloud 风险有限，AI 投资基于实际需求</a>
+      <time datetime="2026-11-20T06:09:40+00:00">11/20 14:09</time>
+    </li>
+  </ul>
+</article>
+<article id="t0020">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">week</span><span class="badge">everything</span><span class="badge">fell</span>      </div>
+      <h3>The week everything fell apart</h3>
+<p class="summary">There was a dayslong Outlook outage. A nationwide ground stop for only the second time in 25 years. Banks seemed to suddenly stop working. Even iCloud couldn&#39;t stay up and running. This week, it felt like the technological world simply collapsed. And it felt like this might be th</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/0cd6deff3c74f546.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">The Verge AI</span>
+      <a href="https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast" target="_blank" rel="noopener noreferrer">The week everything fell apart</a>
+      <time datetime="2026-11-20T06:06:59+00:00">11/20 14:06</time>
+    </li>
+  </ul>
+</article>
+<article id="t0021">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">meta</span><span class="badge">anthropic</span>      </div>
+      <h3>Anthropic 上市次日股价下跌 9%，AI 板块雪上加霜</h3>
+<p class="summary">IT之家 11 月 20 日消息，据路透社报道，当地时间 20 日，Anthropic 上市次日股价下跌，令低迷的 AI 板块雪上加霜。这场备受期待的 IPO，也没能重新点燃投资者的热情。 作为 AI 投资热潮的重要风向标，Anthropic 上市曾被寄予厚望，市场期待借此提振经历一段动荡时期后持续疲软的 AI 板块。 然而，Anthropic 股价报 88.25 美元 （IT之家注：现汇率约合 590.6 元人民币） ， 较上市首日的收盘价下跌约 9% 。公司完全稀释后的估值约为 1.6 万亿美元 （现汇率约合 10.71 万亿元人民币） ，按已发行股</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/246.htm" target="_blank" rel="noopener noreferrer">Anthropic 上市次日股价下跌 9%，AI 板块雪上加霜</a>
+      <time datetime="2026-11-20T06:05:13+00:00">11/20 14:05</time>
+    </li>
+  </ul>
+</article>
+<article id="t0022">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">six</span><span class="badge">ai-powered</span><span class="badge">gadgets</span>      </div>
+      <h3>Six AI-powered gadgets that could make your home office smarter</h3>
+<p class="summary">From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/720829db157296de.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechCrunch AI</span>
+      <a href="https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter" target="_blank" rel="noopener noreferrer">Six AI-powered gadgets that could make your home office smarter</a>
+      <time datetime="2026-11-20T06:00:00+00:00">11/20 14:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0023">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">instagram</span><span class="badge">muse</span><span class="badge">unleashing</span>      </div>
+      <h3>Muse Is Unleashing a World of Pettiness on Instagram</h3>
+<p class="summary">Meta’s AI assistant can track and unfollow Instagram users who don’t follow you back—and some people are taking full advantage.</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/fbd2d63e6ab2b9e1.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">Wired AI</span>
+      <a href="https://www.wired.com/story/muse-is-unleashing-a-world-of-pettiness-on-instagram" target="_blank" rel="noopener noreferrer">Muse Is Unleashing a World of Pettiness on Instagram</a>
+      <time datetime="2026-11-20T04:00:00+00:00">11/20 12:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0024">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">skill</span><span class="badge">kociden</span><span class="badge">257</span>      </div>
+      <h3>开发者将櫻井政博游戏制作教程整合为 Skill 技能，可供各类 AI 智能体调用</h3>
+<p class="summary">IT之家 11 月 20 日消息，日本开发者 kociden 近日在 GitHub 上公开了一款名为「sakurai-skill」的非官方项目，将知名游戏制作人樱井政博 YouTube 频道《樱井政博的游戏制作》（桜井政博のゲーム作るには）全 257 集正片及特别合作视频的字幕内容，整理为 AI 智能体 Skill 技能文件，用于辅助开发。 公开信息显示，《樱井政博的游戏制作》是《星之卡比》和《任天堂明星大乱斗》系列制作人樱井政博开设的 YouTube 频道，于 2024 年 10 月 22 日结束更新。频道主要分享樱井政博多年积累的游戏开发经验与设计理</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/73006e9af2bc4298.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/228.htm" target="_blank" rel="noopener noreferrer">开发者将櫻井政博游戏制作教程整合为 Skill 技能，可供各类 AI 智能体调用</a>
+      <time datetime="2026-11-20T03:55:46+00:00">11/20 11:55</time>
+    </li>
+  </ul>
+</article>
+<article id="t0025">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">mic</span><span class="badge">wave</span><span class="badge">workbuddy</span>      </div>
+      <h3>影石 Mic Pro、Wave 两款麦克风获升级，可原生接入腾讯 WorkBuddy</h3>
+<p class="summary">IT之家 11 月 20 日消息，影石官方宣布，即日起，影石 Insta360 旗下旗舰级无线麦克风 Mic Pro 与 AI 录音全向麦克风 Wave 完成免费固件升级，原生接入腾讯 WorkBuddy。 升级后，Mic Pro 的录音可 直接进入 AI 工作流 ，影石的音频产品也从「记录工具」延伸为 AI 办公的语音入口。 影石方面称，Mic Pro 和 Wave 凭借专业拾音与 AI 降噪能力，帮助用户清晰捕捉真实工作场景中的声音。WorkBuddy 则 进一步理解录音内容，调用 AI Agent 完成信息整理与任务处理 。AI 不再局限于电脑中的</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/4cfee6c5e61af466.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/221.htm" target="_blank" rel="noopener noreferrer">影石 Mic Pro、Wave 两款麦克风获升级，可原生接入腾讯 WorkBuddy</a>
+      <time datetime="2026-11-20T03:19:32+00:00">11/20 11:19</time>
+    </li>
+  </ul>
+</article>
+<article id="t0027">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">deepseek</span>      </div>
+      <h3>DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权</h3>
+<p class="summary">IT之家 11 月 20 日消息，工商信息显示，DeepSeek 运营主体杭州深度求索人工智能基础技术研究有限公司近日完成工商变更，新增股东杭州程砚企业管理咨询合伙企业（有限合伙）。 IT之家查询国家企业信用信息公示系统获悉，杭州深度求索注册资本由 1644.7496 万元增至 1991.8707 万元，增加 347.1211 万元，增幅约 21.1%。 据证券时报援引知情交易人士消息， DeepSeek 本轮融资募资规模区间在 1000 亿元至 1055 亿元 ，投后估值约 6155 亿元。叠加 2026 年 6 月首轮约 510 亿元融资，市场测算其</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/f47ead69cbc1c3ee.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/199.htm" target="_blank" rel="noopener noreferrer">DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权</a>
+      <time datetime="2026-11-20T02:47:45+00:00">11/20 10:47</time>
+    </li>
+  </ul>
+</article>
+<article id="t0028">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">alphabet</span>      </div>
+      <h3>自家人都看不下去了？数百谷歌员工要求公司允许中小学使用不含 AI 的谷歌搜索</h3>
+<p class="summary">IT之家 11 月 20 日消息，当地时间 19 日，据彭博社报道，超过 500 名谷歌员工和合同工联名请愿，要求公司允许中小学继续使用不含 AI 功能的谷歌搜索。 请愿书致谷歌 CEO 桑达尔 · 皮查伊、搜索业务负责人伊丽莎白 · 里德和教育业务负责人克里斯 · 菲利普斯。活动由 Alphabet 员工工会发起，其代表着 Alphabet 及旗下谷歌、YouTube 等公司的全职员工、临时工、供应商人员和合同工。 员工在请愿书中警告：如果学校不愿使用 AI，就不让它们使用谷歌搜索， 只会让谷歌更难说服用户 ，学校甚至可能因此彻底弃用谷歌产品。 此前，</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/23277b57ceab444a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/197.htm" target="_blank" rel="noopener noreferrer">自家人都看不下去了？数百谷歌员工要求公司允许中小学使用不含 AI 的谷歌搜索</a>
+      <time datetime="2026-11-20T02:42:22+00:00">11/20 10:42</time>
+    </li>
+  </ul>
+</article>
+<article id="t0029">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+      </div>
+      <h3>AI 前景疑慮罩頂族群重挫，法人：籌碼沉澱是止跌關鍵</h3>
+<p class="summary">AI 大廠 Anthropic 掛牌首日股價勁揚逾 17%，不過，並未消除市場對 AI 前景的疑慮，台股今天多 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/84b8f9329f3c1b58.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/20/ai-prospects-doubts-sectors-plunge-institutional-investors-chip-consolidation-key-stop-decline" target="_blank" rel="noopener noreferrer">AI 前景疑慮罩頂族群重挫，法人：籌碼沉澱是止跌關鍵</a>
+      <time datetime="2026-11-20T02:30:09+00:00">11/20 10:30</time>
+    </li>
+  </ul>
+</article>
+<article id="t0030">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">uber</span><span class="badge">autoclean</span>      </div>
+      <h3>Uber 清技術債，為何不全交給 AI 代理？拆解傳統工具、審查代理如何層層把關</h3>
+<p class="summary">Uber 近日在工程部落格公開 AI 程式碼清理系統 AutoClean，能自動找出已全面上線、卻仍殘留在程式碼中的過期功能開關（feature flag），並產出經過測試、可供人工審查的程式碼差異（diff）。Uber 表示，AutoClean 過去幾年已清理超過 1.6 萬個功能開關、逾 100 萬行程式碼。這套系統並非讓 AI 代理（AI agent）包辦一切，而是讓代理與傳統程式碼轉換工具分工，再以持續整合（continuous integration，CI）、靜態檢查與多個審查代理層層把關，最後交由負責團隊的工程師做最終決定。 功能開關是讓工程</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/0e24769022412b9f.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">TechOrange 科技報橘</span>
+      <a href="https://techorange.com/2026/11/20/using-ai-delete-code-agentic-tech-debt-cleanup" target="_blank" rel="noopener noreferrer">Uber 清技術債，為何不全交給 AI 代理？拆解傳統工具、審查代理如何層層把關</a>
+      <time datetime="2026-11-20T02:22:06+00:00">11/20 10:22</time>
+    </li>
+  </ul>
+</article>
+<article id="t0031">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">plan</span><span class="badge">mimo</span><span class="badge">2.6</span>      </div>
+      <h3>小米 MiMo：Token Plan 的 Pro / Max 套餐限时支持 UltraSpeed 超高速推理模型</h3>
+<p class="summary">IT之家 11 月 20 日消息，小米 MiMo 官方文档显示，11 月 19 日起， Token Plan 限时支持 UltraSpeed 超高速旗舰推理模型 。 Token Plan 的 Pro / Max 套餐现已限时开放和支持 MiMo-V2.6-Pro-UltraSpeed 超高速推理模型，兼具旗舰级智能与更快的响应速度，模型调用更高效、交互体验更流畅。 据介绍，MiMo-V2.6-Pro-UltraSpeed 兼顾 V2.6-Pro 性能， 提供最高 20 倍输出速度 ；适合量化交易、实时风控、科学研究、实时编程辅助等场景。 IT之家附小米 </p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/0336ce18bc93c3d4.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">IT之家</span>
+      <a href="https://www.ithome.com/1/030/193.htm" target="_blank" rel="noopener noreferrer">小米 MiMo：Token Plan 的 Pro / Max 套餐限时支持 UltraSpeed 超高速推理模型</a>
+      <time datetime="2026-11-20T02:11:05+00:00">11/20 10:11</time>
+    </li>
+  </ul>
+</article>
+<article id="t0032">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">adversarial</span><span class="badge">distillation</span><span class="badge">combatting</span>      </div>
+      <h3>Combatting adversarial distillation</h3>
+<p class="summary">OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.</p>    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">OpenAI</span>
+      <a href="https://openai.com/index/combatting-adversarial-distillation" target="_blank" rel="noopener noreferrer">Combatting adversarial distillation</a>
+      <time datetime="2026-11-20T02:00:00+00:00">11/20 10:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0033">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">macos</span><span class="badge">gemini</span><span class="badge">google</span>      </div>
+      <h3>macOS 版 Gemini 加入電腦使用功能，化身桌面助理代勞日常任務</h3>
+<p class="summary">macOS 版 Gemini 將具備電腦使用（computer use）能力，意味著它能協助使用者「橫跨你的地 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/f109952293495dc6.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://technews.tw/2026/11/20/gemini-for-mac-gains-computer-use-capabilities" target="_blank" rel="noopener noreferrer">macOS 版 Gemini 加入電腦使用功能，化身桌面助理代勞日常任務</a>
+      <time datetime="2026-11-20T01:49:19+00:00">11/20 09:49</time>
+    </li>
+  </ul>
+</article>
+<article id="t0035">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">code</span><span class="badge">chrome</span><span class="badge">edge</span>      </div>
+      <h3>VS Code 1.147讓AI代理操作Chrome與Edge，新增延後發送工作請求</h3>
+<p class="summary">微軟發布程式碼編輯器Visual Studio Code（VS Code）1.147穩定版，擴充AI代理的瀏覽器操作與工作排程功能。新版允許代理操作外部Chrome或Edge瀏覽器，並將工作請求安排在指定時間送出，也新增依照任務類型自動選擇AI模型的功能。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/c732f0cd5cd36657.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">iThome</span>
+      <a href="https://www.ithome.com.tw/news/180670" target="_blank" rel="noopener noreferrer">VS Code 1.147讓AI代理操作Chrome與Edge，新增延後發送工作請求</a>
+      <time datetime="2026-11-20T01:11:02+00:00">11/20 09:11</time>
+    </li>
+  </ul>
+</article>
+<article id="t0036">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">1238</span><span class="badge">78.3</span><span class="badge">1238.2</span>      </div>
+      <h3>10 月外銷訂單 1,238 億美元續創高，年增 78.3% 連 21 紅</h3>
+<p class="summary">人工智慧（AI）需求續強，經濟部今天公布 10 月外銷訂單為 1,238.2 億美元，創歷年單月新高，年增 7 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/596e35b62c507c75.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/20/october-export-orders-new-record-123-8-billion-usd-up-78-3-percent-21-consecutive-months" target="_blank" rel="noopener noreferrer">10 月外銷訂單 1,238 億美元續創高，年增 78.3% 連 21 紅</a>
+      <time datetime="2026-11-20T00:50:21+00:00">11/20 08:50</time>
+    </li>
+  </ul>
+</article>
+<article id="t0037">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">3000</span><span class="badge">3007.56</span><span class="badge">56436.65</span>      </div>
+      <h3>Anthropic 上市難救行情，日股暴跌逾 3,000 點</h3>
+<p class="summary">日本東京股市今天重挫，日經平均指數終場大跌 3,007.56 點，收在 56,436.65 點。儘管備受全球投 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/332cf33403d3809a.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://finance.technews.tw/2026/11/20/nikkei-plunges-more-than-3000-points" target="_blank" rel="noopener noreferrer">Anthropic 上市難救行情，日股暴跌逾 3,000 點</a>
+      <time datetime="2026-11-20T00:40:14+00:00">11/20 08:40</time>
+    </li>
+  </ul>
+</article>
+<article id="t0038">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">live</span><span class="badge">dictation</span><span class="badge">chatgpt</span>      </div>
+      <h3>ChatGPT 推出 Live Dictation 即時語音輸入！打破 10 分鐘限制，全平台免費上線</h3>
+<p class="summary">OpenAI 近期為 ChatGPT 迎來重大更新，正式推出名為「Live Dictation」（即時語音輸入 […]</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/eefc32e858f0cb4b.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">科技新報 TechNews</span>
+      <a href="https://infosecu.technews.tw/2026/11/20/chatgpt-voice-input-privacy-risks" target="_blank" rel="noopener noreferrer">ChatGPT 推出 Live Dictation 即時語音輸入！打破 10 分鐘限制，全平台免費上線</a>
+      <time datetime="2026-11-20T00:00:50+00:00">11/20 08:00</time>
+    </li>
+  </ul>
+</article>
+<article id="t0039">
+  <div class="head">
+    <div class="body">
+      <div class="row">
+<span class="badge">87.9</span><span class="badge">amd</span><span class="badge">nvidia</span>      </div>
+      <h3>美商務部核准逾 87.9 萬顆 AI 晶片銷中 議員質疑「出口管制失靈」</h3>
+<p class="summary">美國眾議院委員會揭露，商務部已核准大量AI晶片對中出口許可，買家含軍方關聯企業。此舉引發國安疑慮，國會正加強監督輝達與超微等公司的出口審批，並要求收緊現行管制政策。</p>    </div>
+    <div class="thumb">
+      <img src="../img/2026-11-21/1300f73e6d412700.webp"
+           alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+           onerror="this.parentNode.remove()">
+    </div>
+  </div>
+  <ul class="links">
+    <li>
+      <span class="src">INSIDE</span>
+      <a href="https://www.inside.com.tw/article/42970-us-commerce-ai-chip-export-licenses-china-nvidia-h200-879000" target="_blank" rel="noopener noreferrer">美商務部核准逾 87.9 萬顆 AI 晶片銷中 議員質疑「出口管制失靈」</a>
+      <time datetime="2026-11-19T23:37:00+00:00">11/20 07:37</time>
+    </li>
+  </ul>
+</article>
+</div>
+<footer>
+  <div>由 <code>auto_report_news</code> 自動產生 · 分群為機器判定，摘要僅供快速瀏覽，細節請點原文。</div>
+  <div class="srcs">來源：Ars Technica AI · Hacker News (100+) · INSIDE · IT之家 · MIT Technology Review AI · OpenAI · Simon Willison · TechCrunch AI · TechOrange 科技報橘 · The Verge AI · Wired AI · ZDNet AI · iThome · 科技新報 TechNews</div>
+</footer>
+</div>
+</body>
+</html>
